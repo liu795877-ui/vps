@@ -1,0 +1,935 @@
+{
+  "success": true,
+  "started_at": "2026-10-11T01:23:21.907880+00:00",
+  "production_source_changes": 0,
+  "active_client_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "traffic_ledger_restored": false,
+  "phases": [
+    {
+      "label": "bbr-before",
+      "proxy_port": 37150,
+      "strict_sequential_path": true,
+      "parallel_requests": 4,
+      "actual_download_bytes": 12484608,
+      "maximum_payload_bytes": 67108864,
+      "elapsed_seconds": 12.1241,
+      "observed_download_mbps_including_startup": 8.238,
+      "completed_full_blocks": 0,
+      "payload_successes": 4,
+      "bounded_partials": 4,
+      "requests": [
+        {
+          "target": 1,
+          "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3129344,
+          "curl_reported_download_bytes": 3129344,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1231,
+          "curl_total_seconds": 12.002785,
+          "ttfb_ms": 354.261,
+          "tls_ready_ms": 190.79,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 2,
+          "hostname": "ipv4-c308-sjc002-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3129344,
+          "curl_reported_download_bytes": 3129344,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1229,
+          "curl_total_seconds": 12.00253,
+          "ttfb_ms": 417.88,
+          "tls_ready_ms": 223.471,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 3,
+          "hostname": "ipv4-c003-sjc001-nflxoc-isp.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3112960,
+          "curl_reported_download_bytes": 3112960,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.12,
+          "curl_total_seconds": 12.000419,
+          "ttfb_ms": 365.13,
+          "tls_ready_ms": 190.84,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 4,
+          "hostname": "ipv4-c164-lax009-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Los Angeles",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3112960,
+          "curl_reported_download_bytes": 3112960,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1172,
+          "curl_total_seconds": 11.998983,
+          "ttfb_ms": 423.898,
+          "tls_ready_ms": 222.34,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        }
+      ],
+      "success": true,
+      "measurement_scope": "bounded Fast official HTTP requests; not an unrestricted browser Fast score",
+      "identity": {
+        "kind": "light",
+        "started_offset_seconds": 33.004115,
+        "ended_offset_seconds": 34.179898,
+        "wall_seconds": 1.175783,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a48a0fedbf3febed-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.337,
+        "tls_ready_ms": 839.092,
+        "pretransfer_ms": 839.304,
+        "ttfb_ms": 1074.289,
+        "curl_total_seconds": 1.074822,
+        "http_wait_after_pretransfer_ms": 234.985,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none"
+      },
+      "native_hy2_account_counter_delta": {
+        "up_bytes": 10113,
+        "down_bytes": 12926082
+      },
+      "server_negotiation": {
+        "journal_available": true,
+        "connections": [
+          {
+            "server_download_tx_bytes_per_second": 0
+          }
+        ],
+        "scope": "All admin443 client-connected events since this phase start; no raw message or auth retained."
+      },
+      "client_download_bandwidth": null,
+      "client_upload_bandwidth_present": false
+    },
+    {
+      "label": "brutal-down50",
+      "proxy_port": 57057,
+      "strict_sequential_path": true,
+      "parallel_requests": 4,
+      "actual_download_bytes": 7782400,
+      "maximum_payload_bytes": 67108864,
+      "elapsed_seconds": 12.1039,
+      "observed_download_mbps_including_startup": 5.144,
+      "completed_full_blocks": 0,
+      "payload_successes": 4,
+      "bounded_partials": 4,
+      "requests": [
+        {
+          "target": 1,
+          "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 753664,
+          "curl_reported_download_bytes": 753664,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1033,
+          "curl_total_seconds": 12.001532,
+          "ttfb_ms": 920.321,
+          "tls_ready_ms": 208.117,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 2,
+          "hostname": "ipv4-c308-sjc002-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 2637824,
+          "curl_reported_download_bytes": 2637824,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1028,
+          "curl_total_seconds": 12.00657,
+          "ttfb_ms": 333.008,
+          "tls_ready_ms": 177.433,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 3,
+          "hostname": "ipv4-c003-sjc001-nflxoc-isp.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 1589248,
+          "curl_reported_download_bytes": 1589248,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1025,
+          "curl_total_seconds": 12.010289,
+          "ttfb_ms": 3163.34,
+          "tls_ready_ms": 529.239,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 4,
+          "hostname": "ipv4-c164-lax009-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Los Angeles",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 2801664,
+          "curl_reported_download_bytes": 2801664,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1017,
+          "curl_total_seconds": 12.006629,
+          "ttfb_ms": 1407.124,
+          "tls_ready_ms": 191.991,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        }
+      ],
+      "success": true,
+      "measurement_scope": "bounded Fast official HTTP requests; not an unrestricted browser Fast score",
+      "identity": {
+        "kind": "light",
+        "started_offset_seconds": 52.512599,
+        "ended_offset_seconds": 53.583357,
+        "wall_seconds": 1.070758,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a48a10671fd2e8d8-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.334,
+        "tls_ready_ms": 760.277,
+        "pretransfer_ms": 760.49,
+        "ttfb_ms": 981.046,
+        "curl_total_seconds": 0.981702,
+        "http_wait_after_pretransfer_ms": 220.556,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none"
+      },
+      "native_hy2_account_counter_delta": {
+        "up_bytes": 3241,
+        "down_bytes": 14815357
+      },
+      "server_negotiation": {
+        "journal_available": true,
+        "connections": [
+          {
+            "server_download_tx_bytes_per_second": 6250000
+          }
+        ],
+        "scope": "All admin443 client-connected events since this phase start; no raw message or auth retained."
+      },
+      "client_download_bandwidth": "50 Mbps",
+      "client_upload_bandwidth_present": false
+    },
+    {
+      "label": "bbr-after",
+      "proxy_port": 57900,
+      "strict_sequential_path": true,
+      "parallel_requests": 4,
+      "actual_download_bytes": 12238848,
+      "maximum_payload_bytes": 67108864,
+      "elapsed_seconds": 12.1284,
+      "observed_download_mbps_including_startup": 8.073,
+      "completed_full_blocks": 0,
+      "payload_successes": 4,
+      "bounded_partials": 4,
+      "requests": [
+        {
+          "target": 1,
+          "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3063808,
+          "curl_reported_download_bytes": 3063808,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1265,
+          "curl_total_seconds": 12.013968,
+          "ttfb_ms": 426.628,
+          "tls_ready_ms": 227.441,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 2,
+          "hostname": "ipv4-c308-sjc002-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3063808,
+          "curl_reported_download_bytes": 3063808,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1252,
+          "curl_total_seconds": 12.012657,
+          "ttfb_ms": 452.277,
+          "tls_ready_ms": 229.507,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 3,
+          "hostname": "ipv4-c003-sjc001-nflxoc-isp.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3063808,
+          "curl_reported_download_bytes": 3063808,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1268,
+          "curl_total_seconds": 12.012014,
+          "ttfb_ms": 458.345,
+          "tls_ready_ms": 230.96,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 4,
+          "hostname": "ipv4-c164-lax009-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Los Angeles",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3047424,
+          "curl_reported_download_bytes": 3047424,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1238,
+          "curl_total_seconds": 12.012363,
+          "ttfb_ms": 491.54,
+          "tls_ready_ms": 250.03,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        }
+      ],
+      "success": true,
+      "measurement_scope": "bounded Fast official HTTP requests; not an unrestricted browser Fast score",
+      "identity": {
+        "kind": "light",
+        "started_offset_seconds": 73.222672,
+        "ended_offset_seconds": 74.595,
+        "wall_seconds": 1.372328,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a48a10ea4a1beb30-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 2.003,
+        "tls_ready_ms": 972.581,
+        "pretransfer_ms": 972.75,
+        "ttfb_ms": 1242.256,
+        "curl_total_seconds": 1.242796,
+        "http_wait_after_pretransfer_ms": 269.506,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none"
+      },
+      "native_hy2_account_counter_delta": {
+        "up_bytes": 2504976,
+        "down_bytes": 13260331
+      },
+      "server_negotiation": {
+        "journal_available": true,
+        "connections": [
+          {
+            "server_download_tx_bytes_per_second": 0
+          },
+          {
+            "server_download_tx_bytes_per_second": 0
+          }
+        ],
+        "scope": "All admin443 client-connected events since this phase start; no raw message or auth retained."
+      },
+      "client_download_bandwidth": null,
+      "client_upload_bandwidth_present": false
+    }
+  ],
+  "cleanup_errors": [],
+  "temporary_remote_tools": "/root/vps-hy2-bandwidth-tools-20261011-02065e64558cd8b6",
+  "private_checkpoint": "/root/vps-hy2-bandwidth-20261011-02065e64558cd8b6",
+  "rollback_limit": "try/finally restores on ordinary failure; forcibly killing this process or host requires --restore-only using private checkpoint.",
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "script_sha256": "e0ddf46b358b3b9563f1906f7adef7f48d6a88f23f2707d63e687347edf6c324",
+  "source_hashes": {
+    "tune_hy2_client_bandwidth_remote.py": "3bcd4cdcf3ed63f967dee0b847610f7209f63c648d3a05311a50d084b0444125",
+    "tune_hy2_profile_remote.py": "b2fae373df51fd2115a9808d80e9e8b9d7f955261f102a1a8785e3d882c9ef9e",
+    "optimize_udp_buffers_remote.py": "53475e9f18634ae79af92cd792942efd8b4885d777f93e66b8584b91361eb037"
+  },
+  "original_hy2_node_sha256": "9faf95b391293e51c6113d9fee1648027d38843f098987839926d2f7a3c8de24",
+  "candidate_node_sha256": "fd7afb41d957fa71ab72ade86e6acefd52856885244a474658e3c7f36f268bea",
+  "profile_sha256": "acbf21f6c6834c8433a90e5294681bbee3b19fc07853beec0292e805330014d2",
+  "uploaded_tool_hashes": {
+    "tune_hy2_client_bandwidth_remote.py": "3bcd4cdcf3ed63f967dee0b847610f7209f63c648d3a05311a50d084b0444125",
+    "tune_hy2_profile_remote.py": "b2fae373df51fd2115a9808d80e9e8b9d7f955261f102a1a8785e3d882c9ef9e",
+    "optimize_udp_buffers_remote.py": "53475e9f18634ae79af92cd792942efd8b4885d777f93e66b8584b91361eb037"
+  },
+  "snapshot_before": {
+    "action": "snapshot",
+    "binary_sha256": "907ba8c9693edb104b20582681fb7dc15639d5b64a9cbb616a7b539190a86691",
+    "ignore_client_bandwidth": true,
+    "ledger_limits_months_sha256": "79561102f41386ccc07b23de9dc248abf3ce704feff4c4dc2d419145d3248c64",
+    "port": 443,
+    "protected_identity_sha256": "51610fac463744cd7a8a172e3e91c91d5dfe2976190b7ba5b158d02aaa099020",
+    "runtime": {
+      "cpu_count": 2,
+      "cpu_one_second_percent": {
+        "busy": 0.0,
+        "iowait": 0.0,
+        "steal": 0.0
+      },
+      "hy2_udp_sockets": {
+        "1443": {
+          "drops": 0,
+          "memory": {
+            "bl": 0,
+            "d": 0,
+            "f": 4096,
+            "o": 0,
+            "r": 0,
+            "rb": 14680064,
+            "t": 0,
+            "tb": 14680064,
+            "w": 0
+          },
+          "rb": 14680064,
+          "recv_queue": 0,
+          "send_queue": 0,
+          "service_main_pid": 3408,
+          "tb": 14680064
+        },
+        "2443": {
+          "drops": 0,
+          "memory": {
+            "bl": 0,
+            "d": 0,
+            "f": 4096,
+            "o": 0,
+            "r": 0,
+            "rb": 14680064,
+            "t": 0,
+            "tb": 14680064,
+            "w": 0
+          },
+          "rb": 14680064,
+          "recv_queue": 0,
+          "send_queue": 0,
+          "service_main_pid": 3448,
+          "tb": 14680064
+        },
+        "443": {
+          "drops": 0,
+          "memory": {
+            "bl": 0,
+            "d": 0,
+            "f": 4096,
+            "o": 0,
+            "r": 0,
+            "rb": 14680064,
+            "t": 0,
+            "tb": 14680064,
+            "w": 0
+          },
+          "rb": 14680064,
+          "recv_queue": 0,
+          "send_queue": 0,
+          "service_main_pid": 9462,
+          "tb": 14680064
+        }
+      },
+      "load_averages": [
+        0.03,
+        0.08,
+        0.12
+      ],
+      "memory": {
+        "MemAvailable": "3142620 kB",
+        "MemFree": "1450824 kB",
+        "MemTotal": "3874056 kB",
+        "SwapFree": "0 kB",
+        "SwapTotal": "0 kB"
+      },
+      "qdisc": {
+        "description": "qdisc noqueue 0: dev lo root refcnt 2 \nqdisc pfifo_fast 0: dev eth0 root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1",
+        "semantic_sha256": "573e7febf9853bcd539c66b130d594e68c8c5d46bb1b48b60c6248d400e5354d",
+        "statistics": "qdisc noqueue 0: dev lo root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \nqdisc pfifo_fast 0: dev eth0 root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 21546747087 bytes 23951746 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0"
+      },
+      "scope": "UDP counters and socket drops are cumulative; one-second CPU is an idle sample.",
+      "services": {
+        "caddy.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "18166142179",
+          "MainPID": "24480",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "raksmart-hy2.service": {
+          "ActiveState": "inactive",
+          "ExecMainStartTimestampMonotonic": "0",
+          "MainPID": "0",
+          "SubState": "dead",
+          "UnitFileState": "disabled"
+        },
+        "raksmart-hy2@1443.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "107785519621",
+          "MainPID": "3408",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "raksmart-hy2@2443.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "107786947026",
+          "MainPID": "3448",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "raksmart-hy2@443.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "109829852134",
+          "MainPID": "9462",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "vps-panel.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "113422184950",
+          "MainPID": "18731",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "xray-panel@06c26698c110e726.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104739227733",
+          "MainPID": "26895",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "xray-panel@7bb5122a2ef4a515.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104738945558",
+          "MainPID": "26883",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "xray.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104738663130",
+          "MainPID": "26870",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        }
+      },
+      "sysctls": {
+        "net.core.rmem_max": 7340032,
+        "net.core.wmem_max": 7340032
+      },
+      "udp_cumulative_counters": {
+        "InCsumErrors": 0,
+        "InDatagrams": 2501901,
+        "InErrors": 2233,
+        "NoPorts": 96,
+        "OutDatagrams": 3162143,
+        "RcvbufErrors": 2233,
+        "SndbufErrors": 0
+      }
+    },
+    "runtime_sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+    "source_sha256": "e44e8528eac43dd794abe1ed595461fc0ce4ebf6fccc5717020a472c3617e0c8",
+    "success": true,
+    "remote_exit_code": 0
+  },
+  "discovery": {
+    "frontend_bytes": 26326,
+    "frontend_http_code": 200,
+    "js_bytes": 133839,
+    "js_files_fetched": 1,
+    "token_discovered": true,
+    "target_api_attempts": 1,
+    "download_payload_bytes": 0,
+    "proxy_port": 7890,
+    "api_payload_bytes": 1434,
+    "client_ip": "198.200.49.63",
+    "client_region": {
+      "city": "San Jose",
+      "country": "US"
+    },
+    "targets": [
+      {
+        "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c308-sjc002-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c003-sjc001-nflxoc-isp.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c164-lax009-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "Los Angeles",
+          "country": "US"
+        }
+      }
+    ],
+    "target_count": 4,
+    "signed_urls_saved": false,
+    "tokens_saved": false
+  },
+  "method": {
+    "signed_targets_fetched_once_kept_in_memory": true,
+    "phases": [
+      "bbr-before",
+      "brutal-down50",
+      "bbr-after"
+    ],
+    "strictly_sequential": true,
+    "maximum_payload_per_phase": 67108864,
+    "maximum_seconds_per_phase": 12,
+    "only_candidate_client_down_added": "50 Mbps",
+    "candidate_client_up_present": false,
+    "loss_compensation_setting_added": false,
+    "only_admin_server_ignoreClientBandwidth_temporarily_false": true,
+    "original_server_bytes_restored": true,
+    "user_client_profile_unchanged": true,
+    "server_restart_effect": "Only admin HY2 restarted twice; panel worker paused/restarted to protect ledger writer."
+  },
+  "apply": {
+    "accounts_auth_exit_rules_profiles_preserved": true,
+    "action": "set",
+    "ignore_client_bandwidth": false,
+    "ledger_totals_non_decreasing": true,
+    "limits_preserved": true,
+    "only_runtime_boolean_changed": true,
+    "original_runtime_sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+    "other_proxy_epochs_preserved": true,
+    "panel_ready": true,
+    "panel_session_notice": "Panel sessions require login again after worker restart.",
+    "port": 443,
+    "private_checkpoint": "/root/vps-hy2-bandwidth-20261011-02065e64558cd8b6",
+    "restart": {
+      "business_counters_stable_before_restart": false,
+      "epoch_changed": true,
+      "sample_to_restart_request_ms": 3.955,
+      "tail_accounting_limitation": "Final counters are persisted before restart; business bytes produced in the sample-to-stop interval may be unrecorded.",
+      "total_bytes_non_decreasing": true
+    },
+    "runtime_sha256": "44c59e8d28b56710207cb3ea423e76f2929655891759373eaf2b4b4e4c0b7812",
+    "success": true,
+    "traffic_ledger_restored": false,
+    "remote_exit_code": 0
+  },
+  "candidate_brutal_tx_negotiation_verified": true,
+  "restore": {
+    "accounts_auth_exit_rules_profiles_preserved": true,
+    "action": "restore",
+    "ignore_client_bandwidth": true,
+    "ledger_totals_non_decreasing": true,
+    "limits_preserved": true,
+    "only_runtime_boolean_changed": true,
+    "original_runtime_sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+    "other_proxy_epochs_preserved": true,
+    "panel_ready": true,
+    "panel_session_notice": "Panel sessions require login again after worker restart.",
+    "port": 443,
+    "private_checkpoint": "/root/vps-hy2-bandwidth-20261011-02065e64558cd8b6",
+    "restart": {
+      "business_counters_stable_before_restart": true,
+      "epoch_changed": true,
+      "sample_to_restart_request_ms": 3.656,
+      "tail_accounting_limitation": "Final counters are persisted before restart; business bytes produced in the sample-to-stop interval may be unrecorded.",
+      "total_bytes_non_decreasing": true
+    },
+    "runtime_sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+    "success": true,
+    "traffic_ledger_restored": false,
+    "remote_exit_code": 0
+  },
+  "snapshot_after": {
+    "action": "snapshot",
+    "binary_sha256": "907ba8c9693edb104b20582681fb7dc15639d5b64a9cbb616a7b539190a86691",
+    "ignore_client_bandwidth": true,
+    "ledger_limits_months_sha256": "c1a4eac8e33a78f211c2e6832420c10183ba81cf3e94f7186879252b504b618d",
+    "port": 443,
+    "protected_identity_sha256": "a79238425da47fdc8730fd60031643fc777eb25218df284b7bc02b0eb911a463",
+    "runtime": {
+      "cpu_count": 2,
+      "cpu_one_second_percent": {
+        "busy": 0.5,
+        "iowait": 0.0,
+        "steal": 0.0
+      },
+      "hy2_udp_sockets": {
+        "1443": {
+          "drops": 0,
+          "memory": {
+            "bl": 0,
+            "d": 0,
+            "f": 4096,
+            "o": 0,
+            "r": 0,
+            "rb": 14680064,
+            "t": 0,
+            "tb": 14680064,
+            "w": 0
+          },
+          "rb": 14680064,
+          "recv_queue": 0,
+          "send_queue": 0,
+          "service_main_pid": 3408,
+          "tb": 14680064
+        },
+        "2443": {
+          "drops": 0,
+          "memory": {
+            "bl": 0,
+            "d": 0,
+            "f": 4096,
+            "o": 0,
+            "r": 0,
+            "rb": 14680064,
+            "t": 0,
+            "tb": 14680064,
+            "w": 0
+          },
+          "rb": 14680064,
+          "recv_queue": 0,
+          "send_queue": 0,
+          "service_main_pid": 3448,
+          "tb": 14680064
+        },
+        "443": {
+          "drops": 0,
+          "memory": {
+            "bl": 0,
+            "d": 0,
+            "f": 4096,
+            "o": 0,
+            "r": 0,
+            "rb": 14680064,
+            "t": 0,
+            "tb": 14680064,
+            "w": 0
+          },
+          "rb": 14680064,
+          "recv_queue": 0,
+          "send_queue": 0,
+          "service_main_pid": 16110,
+          "tb": 14680064
+        }
+      },
+      "load_averages": [
+        0.18,
+        0.11,
+        0.13
+      ],
+      "memory": {
+        "MemAvailable": "3224844 kB",
+        "MemFree": "2043208 kB",
+        "MemTotal": "3874056 kB",
+        "SwapFree": "0 kB",
+        "SwapTotal": "0 kB"
+      },
+      "qdisc": {
+        "description": "qdisc noqueue 0: dev lo root refcnt 2 \nqdisc pfifo_fast 0: dev eth0 root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1",
+        "semantic_sha256": "573e7febf9853bcd539c66b130d594e68c8c5d46bb1b48b60c6248d400e5354d",
+        "statistics": "qdisc noqueue 0: dev lo root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \nqdisc pfifo_fast 0: dev eth0 root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 21676128382 bytes 24063769 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0"
+      },
+      "scope": "UDP counters and socket drops are cumulative; one-second CPU is an idle sample.",
+      "services": {
+        "caddy.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "18166142179",
+          "MainPID": "24480",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "raksmart-hy2.service": {
+          "ActiveState": "inactive",
+          "ExecMainStartTimestampMonotonic": "0",
+          "MainPID": "0",
+          "SubState": "dead",
+          "UnitFileState": "disabled"
+        },
+        "raksmart-hy2@1443.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "107785519621",
+          "MainPID": "3408",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "raksmart-hy2@2443.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "107786947026",
+          "MainPID": "3448",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "raksmart-hy2@443.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "154864532423",
+          "MainPID": "16110",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "vps-panel.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "154865054849",
+          "MainPID": "16146",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "xray-panel@06c26698c110e726.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104739227733",
+          "MainPID": "26895",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "xray-panel@7bb5122a2ef4a515.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104738945558",
+          "MainPID": "26883",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        },
+        "xray.service": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104738663130",
+          "MainPID": "26870",
+          "SubState": "running",
+          "UnitFileState": "enabled"
+        }
+      },
+      "sysctls": {
+        "net.core.rmem_max": 7340032,
+        "net.core.wmem_max": 7340032
+      },
+      "udp_cumulative_counters": {
+        "InCsumErrors": 0,
+        "InDatagrams": 2519028,
+        "InErrors": 2233,
+        "NoPorts": 96,
+        "OutDatagrams": 3249927,
+        "RcvbufErrors": 2233,
+        "SndbufErrors": 0
+      }
+    },
+    "runtime_sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+    "source_sha256": "e44e8528eac43dd794abe1ed595461fc0ce4ebf6fccc5717020a472c3617e0c8",
+    "success": true,
+    "remote_exit_code": 0
+  },
+  "original_runtime_bytes_restored": true,
+  "all_account_settings_preserved": true,
+  "trial_original_policy_restored": true,
+  "temporary_local_private_files_removed": true,
+  "own_processes_terminated": true,
+  "private_checkpoint_and_reviewed_remote_tools_retained": true,
+  "finished_at": "2026-10-11T01:25:03.120581+00:00"
+}

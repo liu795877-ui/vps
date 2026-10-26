@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-09T22:17:10+08:00",
+  "deployment_ip": "198.200.49.63",
+  "status": "deployed_and_verified_with_public_port_gate_pending",
+  "capacity": {
+    "administrator_accounts": 1,
+    "member_accounts_max": 2,
+    "member_accounts_deployed": 2,
+    "third_member_requires_new_port_and_instance_allocation": true
+  },
+  "accounts": [
+    {
+      "username": "admin",
+      "role": "admin",
+      "entry_port": 443,
+      "login_file": "panel-login.private.json",
+      "service_active": true
+    },
+    {
+      "username": "user-a",
+      "role": "member",
+      "entry_port": 1443,
+      "login_file": "multiuser-user-a-login.private.json",
+      "service_active": true,
+      "active_target": "server"
+    },
+    {
+      "username": "user-b",
+      "role": "member",
+      "entry_port": 2443,
+      "login_file": "multiuser-user-b-login.private.json",
+      "service_active": true,
+      "active_target": "server"
+    }
+  ],
+  "server_private_paths": {
+    "member_registry": "/var/lib/vps-panel/users.private.json",
+    "member_state_root": "/var/lib/vps-panel/users/",
+    "member_xray_config_root": "/usr/local/etc/xray-members/",
+    "member_service_template": "/etc/systemd/system/xray-panel@.service"
+  },
+  "isolation": {
+    "independent_xray_instances": true,
+    "independent_credentials_and_rule_subscriptions": true,
+    "member_can_access_only_own_state": true,
+    "member_cannot_manage_admin_or_other_members": true,
+    "cross_member_credentials_rejected": true,
+    "admin_state_and_protected_files_preserved": true,
+    "admin_services_restarted_during_deployment": false
+  },
+  "verification": {
+    "web_admin_and_member_sessions": true,
+    "desktop_and_mobile_layouts": true,
+    "member_configs_syntax_checked": true,
+    "member_internal_proxy_connections": true,
+    "member_observed_egress": "198.200.49.63",
+    "member_public_proxy_connections": false,
+    "public_port_probe": {
+      "1443": false,
+      "2443": false
+    },
+    "public_port_gate": {
+      "status": "pending_security_group_rule",
+      "required_inbound_tcp": [
+        1443,
+        2443
+      ],
+      "source": "0.0.0.0/0",
+      "preserve_existing_rules": true,
+      "reason": "RAKsmart security group has not exposed the member ports"
+    }
+  },
+  "reports": [
+    "multiuser-update.json",
+    "multiuser-verification.json",
+    "multiuser-clients-verification.json",
+    "multiuser-browser-verification.json",
+    "multiuser-preflight.json",
+    "multiuser-template-probe.json",
+    "multiuser-release-manifest.json"
+  ],
+  "secret_handling": {
+    "passwords_included": false,
+    "uuid_values_included": false,
+    "reality_private_keys_included": false,
+    "proxy_credentials_included": false,
+    "rule_tokens_included": false,
+    "private_login_files_listed_by_name_only": true
+  },
+  "login_file_directory": "deployments/raksmart-198.200.49.63/"
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "ready-for-integration",
+  "scope": ["member deletion", "proxy credential revocation", "full profile subscriptions"],
+  "deployment_authority": "root agent",
+  "contracts": {
+    "quota": "independent from manually enabled account status",
+    "telemetry": "loopback API.listen; retain exactly one REALITY inbound",
+    "profile_versions": "server content only; never proof of client import"
+  },
+  "validation": {
+    "command": "python -m unittest panel.test_accounts panel.test_subscriptions",
+    "result": "31 tests passed",
+    "python_compatibility": "Python 3.6 grammar parsed successfully; runtime verification belongs to publishing gate",
+    "live_account_changes": "none"
+  }
+}

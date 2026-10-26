@@ -1,0 +1,55 @@
+{
+  "success": false,
+  "checked_at": "2026-10-13T01:56:05.379Z",
+  "deployment_ip": "198.200.49.63",
+  "release_name": "console-optimization-release-20261013-05",
+  "trusted_https": true,
+  "owned_physical_wlan_proxy": true,
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "checks": [
+    "admin: trusted TLS login and isolated own state",
+    "Public HTML, JavaScript and CSS match final release SHA-256",
+    "Administrator sees three preserved accounts, both running protocols, full pool and empty tasks",
+    "Search, disabled filter and reset work entirely in the page"
+  ],
+  "assets": {
+    "index.html": {
+      "sha256": "772f47017f53c02a3b2cca25bc7b89282fce14bfe8a1612a24f6e64fecfbe3bf",
+      "release_match": true
+    },
+    "app.js": {
+      "sha256": "585b92289bf22844cfdac7f35f19b65f7c80181f173f3e920eda9287807ec7c9",
+      "release_match": true
+    },
+    "style.css": {
+      "sha256": "2582c4d0905840b37a183c5cd44e9b3e65107e5ed529d40b10a4a205b613fe52",
+      "release_match": true
+    }
+  },
+  "accounts": [
+    {
+      "account": "admin",
+      "role": "admin",
+      "port": 443,
+      "tcp_service": "running"
+    }
+  ],
+  "screenshots": [
+    "login-1440.png",
+    "login-390.png"
+  ],
+  "manifest_sha256": "5938c1af4adc70e8e323cba5998805f4c0340731f76d247b0edcae7c87a98ff6",
+  "failure": {
+    "stage": "admin_entrance_draft",
+    "message": "Reload retained unpublished port draft"
+  },
+  "network_summary": {
+    "session_posts": 1,
+    "blocked_configuration_requests": 0,
+    "external_requests": 0,
+    "profile_requests": 0,
+    "expected_403_console_entries": 0
+  },
+  "browser_errors": []
+}

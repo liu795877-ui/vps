@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "configuration_changes": 0,
+  "method": "one bounded 8MiB Cloudflare upload through active FlClash AUTO; request overhead included",
+  "maximum_upload_bytes": 8388608,
+  "maximum_request_seconds": 12,
+  "status": 200,
+  "curl_exit_code": 0,
+  "actual_upload_bytes": 8388608,
+  "elapsed_seconds": 1.7741,
+  "observed_upload_mbps_including_startup": 37.828,
+  "native_delta": {
+    "hy2": {
+      "up_bytes": 8402535,
+      "down_bytes": 9650
+    },
+    "xray": {
+      "up_bytes": 8419395,
+      "down_bytes": 790544
+    }
+  },
+  "account_settings_preserved": true
+}

@@ -1,0 +1,2 @@
+﻿name,name_zh,code,ip,sent,received,lost,loss_pct,min_ms,avg_ms,median_ms,max_ms,stdev_ms,started_at,finished_at
+Silicon Valley China Optimized VIP,硅谷 大陆优化 VIP,SVVIP,198.200.49.130,50,47,3,6.0,158,177.7,159,683,85.1,2026-10-08T16:19:30+08:00,2026-10-08T16:20:29+08:00

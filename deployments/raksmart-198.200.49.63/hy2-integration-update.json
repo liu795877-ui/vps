@@ -1,0 +1,53 @@
+{
+  "success": true,
+  "phase": "complete",
+  "deployment_ip": "198.200.49.63",
+  "stage": "/root/raksmart-proxy-deploy-20261009/hy2-integration-20261010T112448-a9d883",
+  "backup": "/root/raksmart-proxy-deploy-20261009/hy2-integration-20261010T112448-a9d883/before",
+  "identity_preserved": true,
+  "proxy_restarts": [
+    "xray.service",
+    "xray-panel@7bb5122a2ef4a515.service",
+    "xray-panel@06c26698c110e726.service"
+  ],
+  "legacy_password_revoked": true,
+  "traffic_checkpointed": true,
+  "host_verification": {
+    "binary_sha256": "907ba8c9693edb104b20582681fb7dc15639d5b64a9cbb616a7b539190a86691",
+    "certificate_sha256": "719524027ace548d1251736cb2a2f603572d380e2237f8bdf8d3a3913af2b597",
+    "host_verified": true,
+    "instances": {
+      "1443": {
+        "active": true,
+        "api_authentication": true,
+        "down_bytes": 0,
+        "enabled": true,
+        "private_listeners": true,
+        "sessions": 0,
+        "up_bytes": 0
+      },
+      "2443": {
+        "active": true,
+        "api_authentication": true,
+        "down_bytes": 0,
+        "enabled": true,
+        "private_listeners": true,
+        "sessions": 0,
+        "up_bytes": 0
+      },
+      "443": {
+        "active": true,
+        "api_authentication": true,
+        "down_bytes": 0,
+        "enabled": true,
+        "private_listeners": true,
+        "sessions": 0,
+        "up_bytes": 0
+      }
+    },
+    "legacy_revoked": true
+  },
+  "candidate_installed": true,
+  "local_acceptance": true,
+  "disabled_members_preserved": true
+}

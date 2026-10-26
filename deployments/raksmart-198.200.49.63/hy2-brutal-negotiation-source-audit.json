@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "read_only": true,
+  "network_probes": 0,
+  "configuration_changes": 0,
+  "exact_versions": {"official_server": "app/v2.13.0", "mihomo": "v1.19.31", "sing_quic": "1c242664697a441b01cfaf67bdbb7bb0d532745e"},
+  "scoped_trial_supported": true,
+  "server_yaml_candidate": {
+    "ignoreClientBandwidth": false,
+    "congestion": {"type": "bbr", "bbrProfile": "standard"},
+    "bandwidth_limits": "Preserve current omitted/empty up and down so MaxTx=MaxRx=0. Preserve existing disableLossCompensation value."
+  },
+  "isolated_mihomo_hy2_node_candidate": {"up": "20 Mbps", "down": "50 Mbps"},
+  "units": {
+    "yaml_bandwidth": "Mbps is decimal megabits per second, lowercase b.",
+    "internal_and_protocol": "bytes per second",
+    "20_Mbps_bytes_per_second": 2500000,
+    "50_Mbps_bytes_per_second": 6250000,
+    "absent_mihomo_up_or_down": 0
+  },
+  "negotiation": [
+    "Mihomo up becomes ClientOptions.SendBPS; down becomes ReceiveBPS.",
+    "sing-quic sends auth request Rx=ReceiveBPS.",
+    "Official server with IgnoreClientBandwidth=false and received Rx>0 selects Brutal for its sending/download side. MaxTx>0 can cap the negotiated value; with MaxTx=0 the requested value remains.",
+    "Official server replies Rx=server MaxRx and RxAuto=IgnoreClientBandwidth.",
+    "With Rx=0 and RxAuto=false, sing-quic uses configured client SendBPS. Positive SendBPS selects Brutal upload; zero selects the Mihomo BBR callback.",
+    "Current production profile omits both up and down, so fresh active connections remain BBR client and server even during the temporary server ignoreClientBandwidth=false setting.",
+    "Controllers are selected at authentication of a new QUIC connection. Existing connections do not renegotiate."
+  ],
+  "controller_verification": {
+    "official_server_log": "client connected includes tx in bytes per second",
+    "isolated_down_50_expected_tx": 6250000,
+    "ordinary_bandwidth_omitted_expected_tx": 0,
+    "download_only_variant": "Set down=50 Mbps and omit up to change only server/download controller while retaining client BBR."
+  },
+  "sources": [
+    "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/outbound/hysteria2.go#L46",
+    "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/outbound/hysteria2.go#L211",
+    "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/common/utils/mbps.go#L9",
+    "https://github.com/MetaCubeX/sing-quic/blob/1c242664697a441b01cfaf67bdbb7bb0d532745e/hysteria2/client.go#L536",
+    "https://github.com/MetaCubeX/sing-quic/blob/1c242664697a441b01cfaf67bdbb7bb0d532745e/hysteria2/client.go#L549",
+    "https://github.com/apernet/hysteria/blob/app/v2.13.0/core/server/server.go#L184",
+    "https://github.com/apernet/hysteria/blob/app/v2.13.0/app/cmd/server.go#L1409",
+    "https://github.com/apernet/hysteria/blob/app/v2.13.0/app/cmd/server.go#L1804",
+    "https://github.com/apernet/hysteria/blob/app/v2.13.0/core/internal/congestion/utils.go#L61"
+  ],
+  "interpretation_limit": "Brutal requests a sender rate and compensates for estimated loss; the requested rate is not guaranteed application throughput. A bounded paired trial must measure actual transferred payload, elapsed time, failure rate, and restore the original server flag if benefit is absent."
+}

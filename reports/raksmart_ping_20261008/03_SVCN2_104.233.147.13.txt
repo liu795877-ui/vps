@@ -1,0 +1,37 @@
+
+Pinging 104.233.147.13 with 32 bytes of data:
+Reply from 104.233.147.13: bytes=32 time=157ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=156ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=159ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=155ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=162ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=156ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=156ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=160ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=408ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=157ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=157ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=160ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=156ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=318ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=156ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=351ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=157ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=156ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=157ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=581ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=155ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=168ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=164ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=156ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=155ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=155ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=160ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=156ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=163ms TTL=47
+Reply from 104.233.147.13: bytes=32 time=159ms TTL=47
+
+Ping statistics for 104.233.147.13:
+    Packets: Sent = 30, Received = 30, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 155ms, Maximum = 581ms, Average = 192ms

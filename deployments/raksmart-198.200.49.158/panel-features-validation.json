@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "test_count": 57,
+  "runtime": "3.6.8",
+  "official_xray_core": true,
+  "configuration_and_exit_state_preserved": true,
+  "stage": "/root/raksmart-proxy-deploy-20261009/features-validation-20261009T110541"
+}

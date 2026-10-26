@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "configuration_changes": 0,
+  "maximum_payload_bytes": 8388608,
+  "maximum_seconds": 12,
+  "method": "one bounded rawSSH VPS-to-laptop transfer through physical WLAN on existingSSH port47650; no proxy or diskIO; timing starts before exec request",
+  "transport": "TCP/SSH",
+  "physical_wlan": true,
+  "actual_download_bytes": 2326528,
+  "elapsed_seconds": 12.0042,
+  "observed_download_mbps_including_exec": 1.55,
+  "completed_full_block": false
+}

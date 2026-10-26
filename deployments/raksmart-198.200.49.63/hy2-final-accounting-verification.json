@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "accounts": [
+    {
+      "port": 443,
+      "native_upload": 2103474,
+      "native_download": 2124851,
+      "stored_upload": 2103474,
+      "stored_download": 2124851,
+      "all_final_bytes_persisted": true
+    },
+    {
+      "port": 1443,
+      "native_upload": 1308,
+      "native_download": 7055,
+      "stored_upload": 1308,
+      "stored_download": 7055,
+      "all_final_bytes_persisted": true
+    },
+    {
+      "port": 2443,
+      "native_upload": 1308,
+      "native_download": 7053,
+      "stored_upload": 1308,
+      "stored_download": 7053,
+      "all_final_bytes_persisted": true
+    }
+  ]
+}

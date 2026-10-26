@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "checked_at": "2026-10-13T06:53:39.421806+00:00",
+  "deployment_ip": "198.200.49.158",
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "configuration_transport": "local Windows named pipe; memory only",
+  "system_proxy_changed": false,
+  "flclash_changed": false,
+  "raw_process_output_saved": false,
+  "mode": "local-synthetic",
+  "transports": {},
+  "client_binary_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "production_contacted": false,
+  "private_data_read": false
+}

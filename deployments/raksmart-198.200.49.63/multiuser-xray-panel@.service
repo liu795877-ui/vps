@@ -1,0 +1,25 @@
+[Unit]
+Description=Independent VPS console Xray instance %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/etc/xray-members/%i
+ExecStart=/usr/local/bin/xray run -config /usr/local/etc/xray-members/%i/config.json
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65536
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=full
+ProtectHome=true
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

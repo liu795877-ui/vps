@@ -1,0 +1,219 @@
+{
+  "success": true,
+  "status": "deployed_and_verified",
+  "accepted_at": "2026-10-10T11:39:49.205787+00:00",
+  "deployment_ip": "198.200.49.63",
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+  "asset_version": "integration-20261010-1",
+  "official_hy2_version": "v2.13.0",
+  "official_hy2_sha256": "907ba8c9693edb104b20582681fb7dc15639d5b64a9cbb616a7b539190a86691",
+  "architecture": "One official HY2 instance per account, with authenticated loopback SOCKS forwarding through the same account Xray AUTO route",
+  "accounts": [
+    {
+      "role": "admin",
+      "tcp_port": 443,
+      "udp_port": 443,
+      "selected_egress": "198.200.49.63"
+    },
+    {
+      "role": "member",
+      "tcp_port": 1443,
+      "udp_port": 1443,
+      "selected_egress": "43.246.197.78"
+    },
+    {
+      "role": "member",
+      "tcp_port": 2443,
+      "udp_port": 2443,
+      "selected_egress": "198.200.49.63"
+    }
+  ],
+  "client_behavior": {
+    "hy2_first": true,
+    "reality_tcp_fallback": true,
+    "initial_full_profile_update_required": true,
+    "subsequent_web_exit_switch_requires_redownload": false,
+    "local_direct_routes_preserved": true
+  },
+  "features": [
+    "Independent HY2 credentials and webpage AUTO exits",
+    "Combined HY2 and REALITY native accounting",
+    "Shared TCP and UDP quota and upload/download limits",
+    "Disable, delete and credential revoke for both protocols",
+    "Encrypted full backup of HY2 account registry and TLS identity",
+    "Official HY2 without a custom protocol fork"
+  ],
+  "preservation": {
+    "account_auth": true,
+    "reality_ids_and_keys": true,
+    "exits_and_current_selection": true,
+    "routing_rules_and_unsaved_drafts": true,
+    "subscription_tokens_and_urls": true,
+    "history": true,
+    "existing_monthly_totals": true,
+    "caddy_and_unrelated_services": true
+  },
+  "verification": {
+    "production_python_tests": {
+      "executed": 192,
+      "passed": 187,
+      "skipped": 5
+    },
+    "public_forced_protocol_connections": 6,
+    "cross_account_passwords_rejected": true,
+    "native_hy2_final_bytes_persisted": true,
+    "combined_monthly_accounting": true,
+    "private_apis_authenticated": true,
+    "private_socks_and_stats_loopback_only": true,
+    "legacy_shared_password_revoked": true,
+    "browser_accounts": 3,
+    "browser_viewports": [
+      1440,
+      390
+    ],
+    "browser_screenshots": 22,
+    "browser_errors": 0,
+    "browser_configuration_saves": 0,
+    "frozen_public_assets_verified": true,
+    "linux_controls_isolated": {
+      "combined_payload_rates": {
+        "changed_combined_download_mbps": 3.850768,
+        "download_mbps": 7.690864,
+        "tcp_only_upload_mbps": 1.867776,
+        "unrestricted_other_account_mbps": 6515.798336,
+        "upload_mbps": 7.770112
+      },
+      "controls_removed": true,
+      "independent_action_preserved": true,
+      "linux_controls_verified": true,
+      "production_network_unchanged": true,
+      "quota_blocks_both_transports": true,
+      "same_and_changed_rate_updates": true
+    },
+    "production_backup_create_export_preview": true,
+    "production_backup_restore": false,
+    "backup_restore_and_failed_lifecycle_rollback_tested_with_isolated_fixtures": true
+  },
+  "backup": {
+    "name": "HY2 多人整合部署备份",
+    "id": "3193de659f758ab39327a1648555cf12",
+    "encrypted_server_backup_retained": true,
+    "hy2_registry_and_tls_preserved": true
+  },
+  "performance": {
+    "source_report": "hy2-clients-verification.json",
+    "path": "physical WLAN -> forced single transport -> current account web-selected server exit -> Cloudflare",
+    "account_port": 443,
+    "rounds": 2,
+    "payload_bytes_each": 1048576,
+    "single_stream": true,
+    "same_payload_urls": true,
+    "alternating_order": true,
+    "all_transfers_successful": true,
+    "throughput_includes_handshake_and_http": true,
+    "sustained_bandwidth_measured": false,
+    "samples": [
+      {
+        "protocol": "hy2",
+        "direction": "download",
+        "count": 2,
+        "median_mbps_including_startup": 8.67,
+        "sample_mbps_range": [
+          5.73,
+          11.61
+        ],
+        "median_first_byte_ms": 388.41,
+        "first_byte_ms_range": [
+          388.38,
+          388.45
+        ],
+        "first_byte_semantics": "HTTP first response byte"
+      },
+      {
+        "protocol": "hy2",
+        "direction": "upload",
+        "count": 2,
+        "median_mbps_including_startup": 9.672,
+        "sample_mbps_range": [
+          6.315,
+          13.029
+        ],
+        "median_first_byte_ms": 902.37,
+        "first_byte_ms_range": [
+          552.51,
+          1252.23
+        ],
+        "first_byte_semantics": "HTTP first response byte after full POST request"
+      },
+      {
+        "protocol": "xray",
+        "direction": "download",
+        "count": 2,
+        "median_mbps_including_startup": 0.889,
+        "sample_mbps_range": [
+          0.739,
+          1.039
+        ],
+        "median_first_byte_ms": 954.48,
+        "first_byte_ms_range": [
+          926.3,
+          982.67
+        ],
+        "first_byte_semantics": "HTTP first response byte"
+      },
+      {
+        "protocol": "xray",
+        "direction": "upload",
+        "count": 2,
+        "median_mbps_including_startup": 3.586,
+        "sample_mbps_range": [
+          3.322,
+          3.85
+        ],
+        "median_first_byte_ms": 2280.22,
+        "first_byte_ms_range": [
+          2100.04,
+          2460.4
+        ],
+        "first_byte_semantics": "HTTP first response byte after full POST request"
+      }
+    ]
+  },
+  "source_sha256": {
+    "panel/server.py": "3e3a725127c2cabcf58113e9b9baeb7978dd238d60855bea2c121b95680a29d9",
+    "panel/accounts.py": "e555bf232472c73fc32ae5fd0e87befc278db8c560898aea6d015189d0356369",
+    "panel/subscriptions.py": "e04106138d932b30e5e69801d41771d2d9b6e79ba54b78ec2a93a49369fb7968",
+    "panel/telemetry.py": "7292171903358a3cb8155ec08d365d80590e741646398661edd14229e87fbeed",
+    "panel/backups.py": "291618579fc02b2b6f8bff687f77bbdfb6c941fd0e1e3a2a65ece347d26b6678",
+    "panel/hy2.py": "e44e8528eac43dd794abe1ed595461fc0ce4ebf6fccc5717020a472c3617e0c8",
+    "panel/accelerated_client.py": "35441f3ff8e4a2b206ac7c8ef8d56afbd3f24cfcee549dab7c716945bd78d9e4",
+    "panel/test_accounts.py": "26b11a9c1ea8dad0a84ca27e6e747476eab59a4ad355d0f0f0b5b691c3604d59",
+    "panel/test_operations.py": "8cc83783d8149f57139874810f0f4bfec7170cd73ce58cca4ef00398e765bdaf",
+    "panel/test_hy2_integration.py": "d55d04885c3994f463a711a4164f7dc64c0150896bfda63b88bf665a0d7cbc13",
+    "panel/test_hy2_telemetry.py": "b146c8041c7a13fef03c0290a35179a707ccdd2e877652c0d15bf21d303a24cb",
+    "panel/test_hy2_backups.py": "5b070c2b1629b493b7988109faf37eaa1037736dedec8f4c0fadfd5ea0b39454",
+    "panel/test_accelerated_client.py": "cff8df0bac5e9a41dd72533d07c4b67921869e1d6ad090476183af08a9da7204",
+    "panel/web/style.css": "d29c80a7d8112a67420095da5675c7b0bd0e59256a2ea805c5af5595a53075ed",
+    "panel/web/app.js": "3257def1d06e8c6ea0a154172e6aadc06133337fbecdd9be6f422d9c0a10f7e5",
+    "panel/web/index.html": "2222278a03d4a25f5fdf6935e112c6fd87f14c5871c069e751d3473f371fc128"
+  },
+  "reports": [
+    "hy2-integration-update.json",
+    "hy2-integration-verification.json",
+    "hy2-clients-verification.json",
+    "hy2-fair-comparison-summary.json",
+    "hy2-browser-verification.json",
+    "hy2-linux-controls-verification.json",
+    "hy2-backup-verification.json",
+    "hy2-final-accounting-verification.json",
+    "hy2-member-udp-preflight.json"
+  ],
+  "limitations": [
+    "Performance samples are two 1 MiB transfers per direction and protocol, including startup/HTTP overhead; sustained bandwidth was not measured",
+    "Local DIRECT traffic does not enter server accounting",
+    "Quota uses a 10 second sampling interval",
+    "Pre-integration standalone HY2 historical traffic cannot be reconstructed"
+  ],
+  "unfinished_requested_features": [],
+  "secrets_included": false
+}

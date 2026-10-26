@@ -1,0 +1,212 @@
+{
+  "action": "apply",
+  "backup_dir": "/root/vps-udp-buffer-optimization-20261010-2022",
+  "final_sample_limitation": "Final counters are persisted before restart; a tiny sample-to-stop interval remains.",
+  "identity_preserved": true,
+  "ledger_totals_non_decreasing": true,
+  "limits_preserved": true,
+  "panel_session_notice": "The panel worker restarts; existing browser sessions require login again.",
+  "qdisc_preserved": true,
+  "restarted": [
+    {
+      "business_counters_stable_before_restart": false,
+      "epoch_changed": true,
+      "final_sample_completed_at_unix": 1791634791.905809,
+      "final_sample_persisted": true,
+      "port": 443,
+      "restart_requested_at_unix": 1791634791.9150121,
+      "sample_to_restart_request_ms": 9.203,
+      "tail_accounting_limitation": "Final counters are persisted before restart; business bytes produced in the sample-to-stop interval may be unrecorded.",
+      "total_bytes_non_decreasing": true
+    },
+    {
+      "business_counters_stable_before_restart": true,
+      "epoch_changed": true,
+      "final_sample_completed_at_unix": 1791634793.33666,
+      "final_sample_persisted": true,
+      "port": 1443,
+      "restart_requested_at_unix": 1791634793.3466198,
+      "sample_to_restart_request_ms": 9.96,
+      "tail_accounting_limitation": "Final counters are persisted before restart; business bytes produced in the sample-to-stop interval may be unrecorded.",
+      "total_bytes_non_decreasing": true
+    },
+    {
+      "business_counters_stable_before_restart": true,
+      "epoch_changed": true,
+      "final_sample_completed_at_unix": 1791634794.75512,
+      "final_sample_persisted": true,
+      "port": 2443,
+      "restart_requested_at_unix": 1791634794.7688408,
+      "sample_to_restart_request_ms": 13.721,
+      "tail_accounting_limitation": "Final counters are persisted before restart; business bytes produced in the sample-to-stop interval may be unrecorded.",
+      "total_bytes_non_decreasing": true
+    }
+  ],
+  "runtime": {
+    "cpu_count": 2,
+    "cpu_one_second_percent": {
+      "busy": 0.5,
+      "iowait": 0.0,
+      "steal": 0.0
+    },
+    "hy2_udp_sockets": {
+      "1443": {
+        "drops": 0,
+        "memory": {
+          "bl": 0,
+          "d": 0,
+          "f": 0,
+          "o": 0,
+          "r": 0,
+          "rb": 14680064,
+          "t": 0,
+          "tb": 14680064,
+          "w": 0
+        },
+        "rb": 14680064,
+        "recv_queue": 0,
+        "send_queue": 0,
+        "service_main_pid": 3408,
+        "tb": 14680064
+      },
+      "2443": {
+        "drops": 0,
+        "memory": {
+          "bl": 0,
+          "d": 0,
+          "f": 0,
+          "o": 0,
+          "r": 0,
+          "rb": 14680064,
+          "t": 0,
+          "tb": 14680064,
+          "w": 0
+        },
+        "rb": 14680064,
+        "recv_queue": 0,
+        "send_queue": 0,
+        "service_main_pid": 3448,
+        "tb": 14680064
+      },
+      "443": {
+        "drops": 0,
+        "memory": {
+          "bl": 0,
+          "d": 0,
+          "f": 4096,
+          "o": 0,
+          "r": 0,
+          "rb": 14680064,
+          "t": 0,
+          "tb": 14680064,
+          "w": 0
+        },
+        "rb": 14680064,
+        "recv_queue": 0,
+        "send_queue": 0,
+        "service_main_pid": 3368,
+        "tb": 14680064
+      }
+    },
+    "load_averages": [
+      0.17,
+      0.09,
+      0.06
+    ],
+    "memory": {
+      "MemAvailable": "3270708 kB",
+      "MemFree": "2549024 kB",
+      "MemTotal": "3874056 kB",
+      "SwapFree": "0 kB",
+      "SwapTotal": "0 kB"
+    },
+    "qdisc": {
+      "description": "qdisc noqueue 0: dev lo root refcnt 2 \nqdisc pfifo_fast 0: dev eth0 root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1",
+      "semantic_sha256": "573e7febf9853bcd539c66b130d594e68c8c5d46bb1b48b60c6248d400e5354d",
+      "statistics": "qdisc noqueue 0: dev lo root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \nqdisc pfifo_fast 0: dev eth0 root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15133184098 bytes 17027305 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0"
+    },
+    "scope": "UDP counters and socket drops are cumulative; one-second CPU is an idle sample.",
+    "services": {
+      "caddy.service": {
+        "ActiveState": "active",
+        "ExecMainStartTimestampMonotonic": "18166142179",
+        "MainPID": "24480",
+        "SubState": "running",
+        "UnitFileState": "enabled"
+      },
+      "raksmart-hy2.service": {
+        "ActiveState": "inactive",
+        "ExecMainStartTimestampMonotonic": "0",
+        "MainPID": "0",
+        "SubState": "dead",
+        "UnitFileState": "disabled"
+      },
+      "raksmart-hy2@1443.service": {
+        "ActiveState": "active",
+        "ExecMainStartTimestampMonotonic": "107785519621",
+        "MainPID": "3408",
+        "SubState": "running",
+        "UnitFileState": "enabled"
+      },
+      "raksmart-hy2@2443.service": {
+        "ActiveState": "active",
+        "ExecMainStartTimestampMonotonic": "107786947026",
+        "MainPID": "3448",
+        "SubState": "running",
+        "UnitFileState": "enabled"
+      },
+      "raksmart-hy2@443.service": {
+        "ActiveState": "active",
+        "ExecMainStartTimestampMonotonic": "107784095964",
+        "MainPID": "3368",
+        "SubState": "running",
+        "UnitFileState": "enabled"
+      },
+      "vps-panel.service": {
+        "ActiveState": "active",
+        "ExecMainStartTimestampMonotonic": "107787445506",
+        "MainPID": "3482",
+        "SubState": "running",
+        "UnitFileState": "enabled"
+      },
+      "xray-panel@06c26698c110e726.service": {
+        "ActiveState": "active",
+        "ExecMainStartTimestampMonotonic": "104739227733",
+        "MainPID": "26895",
+        "SubState": "running",
+        "UnitFileState": "enabled"
+      },
+      "xray-panel@7bb5122a2ef4a515.service": {
+        "ActiveState": "active",
+        "ExecMainStartTimestampMonotonic": "104738945558",
+        "MainPID": "26883",
+        "SubState": "running",
+        "UnitFileState": "enabled"
+      },
+      "xray.service": {
+        "ActiveState": "active",
+        "ExecMainStartTimestampMonotonic": "104738663130",
+        "MainPID": "26870",
+        "SubState": "running",
+        "UnitFileState": "enabled"
+      }
+    },
+    "sysctls": {
+      "net.core.rmem_max": 7340032,
+      "net.core.wmem_max": 7340032
+    },
+    "udp_cumulative_counters": {
+      "InCsumErrors": 0,
+      "InDatagrams": 1580035,
+      "InErrors": 2233,
+      "NoPorts": 96,
+      "OutDatagrams": 1750315,
+      "RcvbufErrors": 2233,
+      "SndbufErrors": 0
+    }
+  },
+  "success": true,
+  "xray_epochs_preserved": true,
+  "reviewed_helper_sha256": "53475e9f18634ae79af92cd792942efd8b4885d777f93e66b8584b91361eb037",
+  "remote_exit_code": 0
+}

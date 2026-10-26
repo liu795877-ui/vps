@@ -1,0 +1,1201 @@
+{
+  "started_at": "2026-10-08T11:05:31+08:00",
+  "source": "https://greencloudvps.com/data-centers.php",
+  "method": {
+    "tool": "Windows ping.exe",
+    "count": 30,
+    "timeout_ms": 1500,
+    "payload_bytes": 32,
+    "ip_version": 4,
+    "execution": "sequential"
+  },
+  "results": [
+    {
+      "name": "Dallas",
+      "name_zh": "达拉斯",
+      "code": "TX",
+      "ip": "64.44.147.6",
+      "sent": 30,
+      "received": 27,
+      "lost": 3,
+      "loss_pct": 10.0,
+      "min_ms": 247,
+      "avg_ms": 312.6,
+      "median_ms": 306,
+      "max_ms": 600,
+      "stdev_ms": 58.9,
+      "samples_ms": [
+        313,
+        289,
+        310,
+        294,
+        304,
+        306,
+        316,
+        247,
+        269,
+        311,
+        281,
+        308,
+        330,
+        293,
+        310,
+        308,
+        600,
+        333,
+        295,
+        293,
+        315,
+        314,
+        296,
+        300,
+        294,
+        299,
+        312
+      ],
+      "ttls": [
+        41
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:05:31+08:00",
+      "finished_at": "2026-10-08T11:06:09+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "64.44.147.6"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Chicago DC1",
+      "name_zh": "芝加哥 DC1",
+      "code": "IL1",
+      "ip": "167.88.10.4",
+      "sent": 30,
+      "received": 27,
+      "lost": 3,
+      "loss_pct": 10.0,
+      "min_ms": 245,
+      "avg_ms": 259.4,
+      "median_ms": 246,
+      "max_ms": 581,
+      "stdev_ms": 63.1,
+      "samples_ms": [
+        247,
+        246,
+        245,
+        246,
+        245,
+        246,
+        246,
+        249,
+        250,
+        246,
+        245,
+        246,
+        247,
+        246,
+        247,
+        246,
+        252,
+        581,
+        245,
+        246,
+        247,
+        245,
+        246,
+        258,
+        248,
+        246,
+        246
+      ],
+      "ttls": [
+        39
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:06:09+08:00",
+      "finished_at": "2026-10-08T11:06:47+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "167.88.10.4"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Kansas City",
+      "name_zh": "堪萨斯城",
+      "code": "MO",
+      "ip": "72.18.215.71",
+      "sent": 30,
+      "received": 29,
+      "lost": 1,
+      "loss_pct": 3.33,
+      "min_ms": 232,
+      "avg_ms": 234.7,
+      "median_ms": 233,
+      "max_ms": 257,
+      "stdev_ms": 5.0,
+      "samples_ms": [
+        235,
+        232,
+        234,
+        232,
+        244,
+        233,
+        233,
+        233,
+        234,
+        233,
+        233,
+        242,
+        233,
+        232,
+        234,
+        233,
+        232,
+        233,
+        233,
+        233,
+        235,
+        235,
+        232,
+        233,
+        234,
+        233,
+        257,
+        232,
+        233
+      ],
+      "ttls": [
+        41
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:06:47+08:00",
+      "finished_at": "2026-10-08T11:07:22+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "72.18.215.71"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Jacksonville",
+      "name_zh": "杰克逊维尔",
+      "code": "JAX",
+      "ip": "64.44.162.14",
+      "sent": 30,
+      "received": 30,
+      "lost": 0,
+      "loss_pct": 0.0,
+      "min_ms": 230,
+      "avg_ms": 240.3,
+      "median_ms": 231.0,
+      "max_ms": 515,
+      "stdev_ms": 51.0,
+      "samples_ms": [
+        232,
+        231,
+        230,
+        230,
+        230,
+        230,
+        235,
+        230,
+        230,
+        231,
+        231,
+        231,
+        231,
+        230,
+        232,
+        231,
+        230,
+        230,
+        231,
+        515,
+        233,
+        230,
+        231,
+        230,
+        230,
+        231,
+        231,
+        231,
+        231,
+        230
+      ],
+      "ttls": [
+        42
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:07:22+08:00",
+      "finished_at": "2026-10-08T11:07:56+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "64.44.162.14"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Buffalo",
+      "name_zh": "布法罗",
+      "code": "NY",
+      "ip": "96.9.249.58",
+      "sent": 30,
+      "received": 29,
+      "lost": 1,
+      "loss_pct": 3.33,
+      "min_ms": 289,
+      "avg_ms": 320.2,
+      "median_ms": 310,
+      "max_ms": 510,
+      "stdev_ms": 39.7,
+      "samples_ms": [
+        312,
+        300,
+        314,
+        315,
+        316,
+        337,
+        375,
+        510,
+        331,
+        293,
+        301,
+        309,
+        298,
+        290,
+        310,
+        309,
+        334,
+        306,
+        307,
+        325,
+        300,
+        322,
+        325,
+        310,
+        330,
+        305,
+        309,
+        303,
+        289
+      ],
+      "ttls": [
+        29
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:07:56+08:00",
+      "finished_at": "2026-10-08T11:08:31+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "96.9.249.58"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Staten Island",
+      "name_zh": "纽约 Staten Island",
+      "code": "NYC",
+      "ip": "108.171.198.77",
+      "sent": 30,
+      "received": 29,
+      "lost": 1,
+      "loss_pct": 3.33,
+      "min_ms": 260,
+      "avg_ms": 261.1,
+      "median_ms": 261,
+      "max_ms": 263,
+      "stdev_ms": 0.7,
+      "samples_ms": [
+        262,
+        262,
+        262,
+        261,
+        261,
+        261,
+        260,
+        263,
+        261,
+        262,
+        262,
+        261,
+        261,
+        261,
+        261,
+        261,
+        261,
+        260,
+        260,
+        261,
+        261,
+        261,
+        261,
+        260,
+        261,
+        262,
+        261,
+        261,
+        261
+      ],
+      "ttls": [
+        46
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:08:31+08:00",
+      "finished_at": "2026-10-08T11:09:06+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "108.171.198.77"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Los Angeles",
+      "name_zh": "洛杉矶",
+      "code": "LA",
+      "ip": "64.185.232.162",
+      "sent": 30,
+      "received": 30,
+      "lost": 0,
+      "loss_pct": 0.0,
+      "min_ms": 184,
+      "avg_ms": 198.4,
+      "median_ms": 189.0,
+      "max_ms": 439,
+      "stdev_ms": 44.9,
+      "samples_ms": [
+        193,
+        439,
+        184,
+        194,
+        187,
+        185,
+        184,
+        189,
+        202,
+        186,
+        188,
+        193,
+        189,
+        198,
+        202,
+        186,
+        195,
+        192,
+        195,
+        187,
+        191,
+        189,
+        186,
+        193,
+        189,
+        186,
+        185,
+        187,
+        195,
+        184
+      ],
+      "ttls": [
+        47
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:09:06+08:00",
+      "finished_at": "2026-10-08T11:09:40+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "64.185.232.162"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "San Jose",
+      "name_zh": "圣何塞",
+      "code": "SJC",
+      "ip": "173.249.206.247",
+      "sent": 30,
+      "received": 30,
+      "lost": 0,
+      "loss_pct": 0.0,
+      "min_ms": 207,
+      "avg_ms": 240.9,
+      "median_ms": 241.0,
+      "max_ms": 259,
+      "stdev_ms": 11.5,
+      "samples_ms": [
+        253,
+        253,
+        253,
+        241,
+        231,
+        226,
+        252,
+        259,
+        231,
+        238,
+        256,
+        232,
+        241,
+        238,
+        251,
+        236,
+        225,
+        242,
+        244,
+        229,
+        227,
+        239,
+        241,
+        253,
+        250,
+        250,
+        207,
+        234,
+        248,
+        248
+      ],
+      "ttls": [
+        38
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:09:40+08:00",
+      "finished_at": "2026-10-08T11:10:13+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "173.249.206.247"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Phoenix",
+      "name_zh": "凤凰城",
+      "code": "AZ",
+      "ip": "173.249.203.193",
+      "sent": 30,
+      "received": 30,
+      "lost": 0,
+      "loss_pct": 0.0,
+      "min_ms": 219,
+      "avg_ms": 251.9,
+      "median_ms": 251.0,
+      "max_ms": 279,
+      "stdev_ms": 15.0,
+      "samples_ms": [
+        274,
+        274,
+        277,
+        219,
+        247,
+        261,
+        236,
+        247,
+        243,
+        259,
+        251,
+        258,
+        234,
+        233,
+        251,
+        259,
+        279,
+        246,
+        260,
+        263,
+        267,
+        248,
+        268,
+        238,
+        228,
+        255,
+        242,
+        261,
+        245,
+        233
+      ],
+      "ttls": [
+        40
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:10:13+08:00",
+      "finished_at": "2026-10-08T11:10:47+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "173.249.203.193"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Ogden",
+      "name_zh": "奥格登",
+      "code": "UT",
+      "ip": "108.171.216.251",
+      "sent": 30,
+      "received": 28,
+      "lost": 2,
+      "loss_pct": 6.67,
+      "min_ms": 304,
+      "avg_ms": 308.1,
+      "median_ms": 307.0,
+      "max_ms": 316,
+      "stdev_ms": 3.4,
+      "samples_ms": [
+        310,
+        305,
+        314,
+        307,
+        306,
+        305,
+        306,
+        307,
+        305,
+        304,
+        305,
+        305,
+        306,
+        305,
+        306,
+        308,
+        313,
+        309,
+        311,
+        312,
+        307,
+        312,
+        307,
+        311,
+        306,
+        315,
+        316,
+        305
+      ],
+      "ttls": [
+        42
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:10:47+08:00",
+      "finished_at": "2026-10-08T11:11:24+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "108.171.216.251"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Ashburn",
+      "name_zh": "阿什本",
+      "code": "VA",
+      "ip": "104.225.11.54",
+      "sent": 30,
+      "received": 29,
+      "lost": 1,
+      "loss_pct": 3.33,
+      "min_ms": 254,
+      "avg_ms": 255.8,
+      "median_ms": 255,
+      "max_ms": 259,
+      "stdev_ms": 1.2,
+      "samples_ms": [
+        258,
+        255,
+        255,
+        255,
+        255,
+        256,
+        254,
+        257,
+        257,
+        254,
+        257,
+        255,
+        256,
+        255,
+        255,
+        255,
+        256,
+        256,
+        255,
+        256,
+        256,
+        256,
+        255,
+        255,
+        255,
+        259,
+        255,
+        255,
+        259
+      ],
+      "ttls": [
+        47
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:11:24+08:00",
+      "finished_at": "2026-10-08T11:11:59+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "104.225.11.54"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "Chicago DC2",
+      "name_zh": "芝加哥 DC2",
+      "code": "IL2",
+      "ip": "173.249.214.11",
+      "sent": 30,
+      "received": 28,
+      "lost": 2,
+      "loss_pct": 6.67,
+      "min_ms": 252,
+      "avg_ms": 260.4,
+      "median_ms": 253.0,
+      "max_ms": 400,
+      "stdev_ms": 27.4,
+      "samples_ms": [
+        254,
+        252,
+        258,
+        256,
+        273,
+        259,
+        253,
+        252,
+        252,
+        400,
+        252,
+        252,
+        271,
+        254,
+        253,
+        254,
+        253,
+        254,
+        252,
+        261,
+        253,
+        252,
+        253,
+        254,
+        253,
+        253,
+        253,
+        254
+      ],
+      "ttls": [
+        48
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T11:11:59+08:00",
+      "finished_at": "2026-10-08T11:12:35+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "30",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "173.249.214.11"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "finished_at": "2026-10-08T11:12:35+08:00"
+}

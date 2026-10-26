@@ -1,0 +1,31 @@
+{
+  "deployment_ip": "198.200.49.63",
+  "files": [
+    "configure_static_exits.py",
+    "test_configure_static_exits.py",
+    "panel/server.py",
+    "panel/accounts.py",
+    "panel/test_accounts.py",
+    "panel/test_panel.py",
+    "panel/test_multiuser_http.py",
+    "panel/web/app.js",
+    "panel/web/index.html",
+    "panel/web/style.css"
+  ],
+  "prepared_at": "2026-10-09T13:58:23.147594+00:00",
+  "archive_sha256": "1e669deac8b7b935f467fe8db76739aaf98fe9623347c8bd437b149ec81083ab",
+  "source_sha256": {
+    "configure_static_exits.py": "903e477889509fba9a4d21e534be50088f58d6bd42e7a67ea3606a498dc11a43",
+    "test_configure_static_exits.py": "2ced04219934556c272b2f491921ae522e0fc35670d96da9ad7021a2ff469629",
+    "panel/server.py": "ba7b7f6279c54853722355ff80a84ac329681bf092c97928bc02825aa1082f79",
+    "panel/accounts.py": "7057a91057a485fa3ce47a26b35fb752169ee0116469fb004d407871135f0c45",
+    "panel/test_accounts.py": "40cd27f1b3133458d11d8fe1e30f837d80e8c30017f36e68479b288f71b287f2",
+    "panel/test_panel.py": "d51782e32b3b3e377e914871a6cc8ac7aea32dbe9c227bd80f14a3d29d6735f4",
+    "panel/test_multiuser_http.py": "bb6950a3be0489a34a4838d143f60cf46bff192fbbba647671151f88adc991d3",
+    "panel/web/app.js": "8cc0b55f29416ef30e4181f2d909e28aeff9763d55cf1d4ca7d4bb99f1b57955",
+    "panel/web/index.html": "1476bbc29c895a1454d1c6376bb433b7790d726cd8a8983d1c0a0749a197a58a",
+    "panel/web/style.css": "2a7d6c148deff54303be7f954dd2b00ab737bd99528c7fd08b703e67b20ea11f"
+  },
+  "template_sha256": "97ad6500c74b495048a08e1ef2437a40c874e0f3ffcf17eb3201576271a164f6",
+  "dropin_sha256": "5564df031ee6c924c601c61315165df214a4a61bf26041bbdd63d8ccef8752e9"
+}

@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-09T15:34:18+08:00",
+  "path": "Active FlClash",
+  "direction": "upload",
+  "parallel_streams": 1,
+  "requested_bytes_per_stream": 5000000,
+  "checks": [
+    {
+      "sample": 1,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 0,
+          "size_upload": 5000000,
+          "time_total": 4.63276,
+          "time_starttransfer": 4.632736,
+          "time_appconnect": 1.537155,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        }
+      ],
+      "actual_bytes": 5000000,
+      "wall_seconds": 4.71,
+      "mbps_including_startup": 8.493,
+      "MB_per_second": 1.062,
+      "success": true
+    }
+  ],
+  "exit_ip": "198.200.49.63",
+  "identity_exit_code": 0,
+  "identity_error": "",
+  "exit_matches_vps": true
+}

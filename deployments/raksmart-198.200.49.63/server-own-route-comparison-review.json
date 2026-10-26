@@ -1,0 +1,40 @@
+{
+  "result": "pass",
+  "reviewed_script": "run_compare_actual_routes.py",
+  "reviewed_script_sha256": "8da5de591d093cd2a44dd583ab6535dcd835b3bb2a16d34007ae4dfc4544902f",
+  "reviewer_executed_network_tests": false,
+  "reviewer_executed_server_mutations": false,
+  "scope": "Four existing server-own-exit paths, strictly sequential, same four signed Fast targets",
+  "verified_contracts": {
+    "158_existing_original_vless_identity_matches_live_inbound": true,
+    "158_original_vless_identity_is_distinct_from_static_auto_identity": true,
+    "158_original_vless_public_tcp_routes_to_default_freedom": true,
+    "158_standalone_hy2_outbound_is_direct": true,
+    "63_both_admin_paths_currently_use_server_exit": true,
+    "each_actual_egress_must_match_expected_server_ip_before_load": true,
+    "same_signed_fast_targets_discovered_once": true,
+    "four_paths_run_sequentially": true,
+    "maximum_content_bytes_all_paths": 268435456,
+    "maximum_seconds_per_path": 12,
+    "overflow_reader_detection_tolerance_bytes_all_requests": 16,
+    "quota_reserve_applied_per_server": true,
+    "no_production_config_or_service_changes": true,
+    "protected_settings_auth_runtime_cert_key_hashes_captured_before_after": true,
+    "service_epochs_and_account_limits_checked": true,
+    "monthly_totals_not_decreased_checked": true,
+    "all_private_scratch_under_acl_verified_directory": true,
+    "cleanup_actions_guarded_independently": true,
+    "no_persistent_credentials_or_signed_urls": true,
+    "historical_200_mbps_not_claimed_reproduced": true
+  },
+  "resolved_review_findings": [
+    "Allowed only the known explicit private/reserved CIDRs used in live Xray config, in addition to geoip:private, instead of rejecting the valid original direct identity.",
+    "An inbound-tag exception applies only when the selected VLESS entrance is excluded.",
+    "Added hashes of both deployments' HY2 certificate and key files to preservation snapshots."
+  ],
+  "execution_acceptance_remaining": [
+    "Actual IP identity must succeed on all four paths.",
+    "All protected-file, service-epoch, limit, monthly-total and cleanup checks must pass.",
+    "Report bounded transfer measurements as current-path evidence, not an unrestricted browser Fast score."
+  ]
+}

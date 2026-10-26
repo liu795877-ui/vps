@@ -1,0 +1,738 @@
+{
+  "success": true,
+  "label": "idle-standard",
+  "mode": "idle",
+  "started_at": "2026-10-10T12:42:14.228611+00:00",
+  "server": "198.200.49.63",
+  "configuration_changes": 0,
+  "exit_changes": 0,
+  "credential_changes": 0,
+  "client_profile": "standard",
+  "cleanup_errors": [],
+  "fresh_client": {
+    "samples": [
+      {
+        "kind": "light",
+        "started_offset_seconds": 18.60549,
+        "ended_offset_seconds": 19.932669,
+        "wall_seconds": 1.327179,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485b4957a4e9657-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.122,
+        "tls_ready_ms": 949.878,
+        "pretransfer_ms": 950.028,
+        "ttfb_ms": 1233.85,
+        "curl_total_seconds": 1.234351,
+        "http_wait_after_pretransfer_ms": 283.822,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 1,
+        "first_business_request": true,
+        "new_isolated_client": true,
+        "mihomo_startup_seconds": 0.6787,
+        "startup_warming_requests": 0
+      }
+    ],
+    "stages": {
+      "local_proxy_connect_ms": {
+        "attempts": 1,
+        "successes": 1,
+        "error_rate": 0.0,
+        "median": 1.122,
+        "range": [
+          1.122,
+          1.122
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "tls_ready_ms": {
+        "attempts": 1,
+        "successes": 1,
+        "error_rate": 0.0,
+        "median": 949.878,
+        "range": [
+          949.878,
+          949.878
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "pretransfer_ms": {
+        "attempts": 1,
+        "successes": 1,
+        "error_rate": 0.0,
+        "median": 950.028,
+        "range": [
+          950.028,
+          950.028
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "ttfb_ms": {
+        "attempts": 1,
+        "successes": 1,
+        "error_rate": 0.0,
+        "median": 1233.85,
+        "range": [
+          1233.85,
+          1233.85
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "http_wait_after_pretransfer_ms": {
+        "attempts": 1,
+        "successes": 1,
+        "error_rate": 0.0,
+        "median": 283.822,
+        "range": [
+          283.822,
+          283.822
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      }
+    }
+  },
+  "established_client": {
+    "samples": [
+      {
+        "kind": "light",
+        "started_offset_seconds": 19.945776,
+        "ended_offset_seconds": 20.541516,
+        "wall_seconds": 0.59574,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485b499483978eb-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.219,
+        "tls_ready_ms": 235.291,
+        "pretransfer_ms": 235.448,
+        "ttfb_ms": 517.922,
+        "curl_total_seconds": 0.51846,
+        "http_wait_after_pretransfer_ms": 282.474,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 1,
+        "first_business_request": false,
+        "new_isolated_client": false
+      },
+      {
+        "kind": "light",
+        "started_offset_seconds": 20.550748,
+        "ended_offset_seconds": 21.147781,
+        "wall_seconds": 0.597033,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485b49d0b93a63b-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.107,
+        "tls_ready_ms": 237.763,
+        "pretransfer_ms": 237.973,
+        "ttfb_ms": 521.61,
+        "curl_total_seconds": 0.522105,
+        "http_wait_after_pretransfer_ms": 283.637,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 2,
+        "first_business_request": false,
+        "new_isolated_client": false
+      },
+      {
+        "kind": "light",
+        "started_offset_seconds": 21.157985,
+        "ended_offset_seconds": 21.769862,
+        "wall_seconds": 0.611877,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485b4a0ea8bc685-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.135,
+        "tls_ready_ms": 238.945,
+        "pretransfer_ms": 239.167,
+        "ttfb_ms": 532.108,
+        "curl_total_seconds": 0.532628,
+        "http_wait_after_pretransfer_ms": 292.941,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 3,
+        "first_business_request": false,
+        "new_isolated_client": false
+      },
+      {
+        "kind": "light",
+        "started_offset_seconds": 21.780766,
+        "ended_offset_seconds": 22.42371,
+        "wall_seconds": 0.642944,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485b4a4eea9a6c4-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.339,
+        "tls_ready_ms": 243.964,
+        "pretransfer_ms": 244.305,
+        "ttfb_ms": 528.604,
+        "curl_total_seconds": 0.529443,
+        "http_wait_after_pretransfer_ms": 284.299,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 4,
+        "first_business_request": false,
+        "new_isolated_client": false
+      }
+    ],
+    "stages": {
+      "local_proxy_connect_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 1.177,
+        "range": [
+          1.107,
+          1.339
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "tls_ready_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 238.354,
+        "range": [
+          235.291,
+          243.964
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "pretransfer_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 238.57,
+        "range": [
+          235.448,
+          244.305
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "ttfb_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 525.107,
+        "range": [
+          517.922,
+          532.108
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "http_wait_after_pretransfer_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 283.968,
+        "range": [
+          282.474,
+          292.941
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      }
+    },
+    "startup_warming_requests": 1,
+    "label": "same client as the final fresh sample, now used once"
+  },
+  "idle_observations": [
+    {
+      "requested_idle_seconds": 30,
+      "actual_wait_seconds": 30.0,
+      "first_request_after_idle": {
+        "kind": "light",
+        "started_offset_seconds": 53.466197,
+        "ended_offset_seconds": 54.084745,
+        "wall_seconds": 0.618548,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485b56aedc4ad84-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.103,
+        "tls_ready_ms": 240.418,
+        "pretransfer_ms": 240.702,
+        "ttfb_ms": 523.969,
+        "curl_total_seconds": 0.524469,
+        "http_wait_after_pretransfer_ms": 283.267,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "after_idle_seconds": 30.0
+      },
+      "server_before_request": {
+        "server_unix_seconds": 1791636184.2319136,
+        "online_sessions": 1,
+        "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+        "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+        "server_congestion": {
+          "type": "bbr",
+          "bbrProfile": "standard"
+        },
+        "ignore_client_bandwidth": true,
+        "journal_available": true,
+        "journal_parsed_lines": 1,
+        "journal_event_scope": "all sessions on this account entrance",
+        "journal_connected_events": 1,
+        "journal_disconnected_events": 0,
+        "journal_events": [
+          {
+            "event": "connected",
+            "unix_microseconds": "1791636150185430",
+            "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+          }
+        ]
+      },
+      "server_after_request": {
+        "server_unix_seconds": 1791636185.393114,
+        "online_sessions": 1,
+        "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+        "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+        "server_congestion": {
+          "type": "bbr",
+          "bbrProfile": "standard"
+        },
+        "ignore_client_bandwidth": true,
+        "journal_available": true,
+        "journal_parsed_lines": 1,
+        "journal_event_scope": "all sessions on this account entrance",
+        "journal_connected_events": 1,
+        "journal_disconnected_events": 0,
+        "journal_events": [
+          {
+            "event": "connected",
+            "unix_microseconds": "1791636150185430",
+            "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+          }
+        ]
+      },
+      "continuity_during_idle": {
+        "isolated_client_process_alive": true,
+        "server_process_epoch_preserved": true,
+        "online_sessions_before": 1,
+        "online_sessions_after": 1,
+        "account_connected_event_delta": 0,
+        "account_disconnected_event_delta": 0,
+        "journal_observed_initial_connection": true,
+        "no_account_reconnect_event_observed": true,
+        "reconnection_event_observed": false,
+        "isolated_quic_session_reuse_conclusively_verified": false,
+        "scope_limit": "Journal and online counters cover all account sessions; time alone is not session evidence."
+      },
+      "continuity_including_request": {
+        "isolated_client_process_alive": true,
+        "server_process_epoch_preserved": true,
+        "online_sessions_before": 1,
+        "online_sessions_after": 1,
+        "account_connected_event_delta": 0,
+        "account_disconnected_event_delta": 0,
+        "journal_observed_initial_connection": true,
+        "no_account_reconnect_event_observed": true,
+        "reconnection_event_observed": false,
+        "isolated_quic_session_reuse_conclusively_verified": false,
+        "scope_limit": "Journal and online counters cover all account sessions; time alone is not session evidence."
+      }
+    },
+    {
+      "requested_idle_seconds": 60,
+      "actual_wait_seconds": 60.0,
+      "first_request_after_idle": {
+        "kind": "light",
+        "started_offset_seconds": 115.140777,
+        "ended_offset_seconds": 115.763672,
+        "wall_seconds": 0.622894,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485b6ec5da415a4-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.22,
+        "tls_ready_ms": 252.881,
+        "pretransfer_ms": 253.12,
+        "ttfb_ms": 545.206,
+        "curl_total_seconds": 0.545723,
+        "http_wait_after_pretransfer_ms": 292.086,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "after_idle_seconds": 60.0
+      },
+      "server_before_request": {
+        "server_unix_seconds": 1791636245.904251,
+        "online_sessions": 1,
+        "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+        "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+        "server_congestion": {
+          "type": "bbr",
+          "bbrProfile": "standard"
+        },
+        "ignore_client_bandwidth": true,
+        "journal_available": true,
+        "journal_parsed_lines": 1,
+        "journal_event_scope": "all sessions on this account entrance",
+        "journal_connected_events": 1,
+        "journal_disconnected_events": 0,
+        "journal_events": [
+          {
+            "event": "connected",
+            "unix_microseconds": "1791636150185430",
+            "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+          }
+        ]
+      },
+      "server_after_request": {
+        "server_unix_seconds": 1791636247.0731752,
+        "online_sessions": 1,
+        "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+        "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+        "server_congestion": {
+          "type": "bbr",
+          "bbrProfile": "standard"
+        },
+        "ignore_client_bandwidth": true,
+        "journal_available": true,
+        "journal_parsed_lines": 1,
+        "journal_event_scope": "all sessions on this account entrance",
+        "journal_connected_events": 1,
+        "journal_disconnected_events": 0,
+        "journal_events": [
+          {
+            "event": "connected",
+            "unix_microseconds": "1791636150185430",
+            "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+          }
+        ]
+      },
+      "continuity_during_idle": {
+        "isolated_client_process_alive": true,
+        "server_process_epoch_preserved": true,
+        "online_sessions_before": 1,
+        "online_sessions_after": 1,
+        "account_connected_event_delta": 0,
+        "account_disconnected_event_delta": 0,
+        "journal_observed_initial_connection": true,
+        "no_account_reconnect_event_observed": true,
+        "reconnection_event_observed": false,
+        "isolated_quic_session_reuse_conclusively_verified": false,
+        "scope_limit": "Journal and online counters cover all account sessions; time alone is not session evidence."
+      },
+      "continuity_including_request": {
+        "isolated_client_process_alive": true,
+        "server_process_epoch_preserved": true,
+        "online_sessions_before": 1,
+        "online_sessions_after": 1,
+        "account_connected_event_delta": 0,
+        "account_disconnected_event_delta": 0,
+        "journal_observed_initial_connection": true,
+        "no_account_reconnect_event_observed": true,
+        "reconnection_event_observed": false,
+        "isolated_quic_session_reuse_conclusively_verified": false,
+        "scope_limit": "Journal and online counters cover all account sessions; time alone is not session evidence."
+      }
+    },
+    {
+      "requested_idle_seconds": 180,
+      "actual_wait_seconds": 180.0,
+      "first_request_after_idle": {
+        "kind": "light",
+        "started_offset_seconds": 296.860487,
+        "ended_offset_seconds": 297.479575,
+        "wall_seconds": 0.619088,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485bb5c19158b3c-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.111,
+        "tls_ready_ms": 236.982,
+        "pretransfer_ms": 237.174,
+        "ttfb_ms": 521.251,
+        "curl_total_seconds": 0.521763,
+        "http_wait_after_pretransfer_ms": 284.077,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "after_idle_seconds": 180.0
+      },
+      "server_before_request": {
+        "server_unix_seconds": 1791636427.6196,
+        "online_sessions": 1,
+        "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+        "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+        "server_congestion": {
+          "type": "bbr",
+          "bbrProfile": "standard"
+        },
+        "ignore_client_bandwidth": true,
+        "journal_available": true,
+        "journal_parsed_lines": 1,
+        "journal_event_scope": "all sessions on this account entrance",
+        "journal_connected_events": 1,
+        "journal_disconnected_events": 0,
+        "journal_events": [
+          {
+            "event": "connected",
+            "unix_microseconds": "1791636150185430",
+            "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+          }
+        ]
+      },
+      "server_after_request": {
+        "server_unix_seconds": 1791636428.778152,
+        "online_sessions": 1,
+        "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+        "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+        "server_congestion": {
+          "type": "bbr",
+          "bbrProfile": "standard"
+        },
+        "ignore_client_bandwidth": true,
+        "journal_available": true,
+        "journal_parsed_lines": 1,
+        "journal_event_scope": "all sessions on this account entrance",
+        "journal_connected_events": 1,
+        "journal_disconnected_events": 0,
+        "journal_events": [
+          {
+            "event": "connected",
+            "unix_microseconds": "1791636150185430",
+            "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+          }
+        ]
+      },
+      "continuity_during_idle": {
+        "isolated_client_process_alive": true,
+        "server_process_epoch_preserved": true,
+        "online_sessions_before": 1,
+        "online_sessions_after": 1,
+        "account_connected_event_delta": 0,
+        "account_disconnected_event_delta": 0,
+        "journal_observed_initial_connection": true,
+        "no_account_reconnect_event_observed": true,
+        "reconnection_event_observed": false,
+        "isolated_quic_session_reuse_conclusively_verified": false,
+        "scope_limit": "Journal and online counters cover all account sessions; time alone is not session evidence."
+      },
+      "continuity_including_request": {
+        "isolated_client_process_alive": true,
+        "server_process_epoch_preserved": true,
+        "online_sessions_before": 1,
+        "online_sessions_after": 1,
+        "account_connected_event_delta": 0,
+        "account_disconnected_event_delta": 0,
+        "journal_observed_initial_connection": true,
+        "no_account_reconnect_event_observed": true,
+        "reconnection_event_observed": false,
+        "isolated_quic_session_reuse_conclusively_verified": false,
+        "scope_limit": "Journal and online counters cover all account sessions; time alone is not session evidence."
+      }
+    }
+  ],
+  "phases": [],
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "core_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "benchmark_script_sha256": "3385b21af9aeb4c574aaad890823da77e54cb01e76e377fdf94c97498f5e8b1e",
+  "plan": {
+    "version": 1,
+    "mode": "idle",
+    "light_url": "https://api.ipify.org",
+    "download_url": "https://speed.cloudflare.com/__down?bytes=8388608",
+    "upload_url": "https://speed.cloudflare.com/__up",
+    "payload_bytes": 8388608,
+    "payload_sha256": "2daeb1f36095b44b318410b3f4e8b5d989dcc7bb023d1426c492dab0a3053e74",
+    "max_blocks_per_direction": 8,
+    "max_payload_per_direction": 67108864,
+    "fresh_samples": 1,
+    "warm_samples": 4,
+    "idle_wait_seconds": [
+      30,
+      60,
+      180
+    ],
+    "idle_load_baseline_seconds": 6,
+    "load_seconds": 16,
+    "light_target_ip_pinned": false,
+    "cloudflare_region_from_response_cf_ray": true,
+    "client_startup_excluded_from_request_ttfb": true,
+    "first_business_request_has_no_identity_or_urltest_warmup": true,
+    "warm_scope": "fresh curl HTTPS connections through already-used isolated Mihomo",
+    "load_and_probes_share_client": true,
+    "never_calls_controller_delete_connections": true,
+    "tcp_scope": "physical WLAN TCP443 connect, not QUIC RTT",
+    "curl_connect_scope": "local loopback proxy, not VPS RTT",
+    "complete_page_measured": false,
+    "session_evidence_scope": "server account online count, process epoch, sanitized journal events",
+    "normal_quota_applies": true,
+    "p95_minimum_samples": 10
+  },
+  "method_sha256": "06935529097b7e3f454cb30aaf15f7aefb799bc590e556cc27f2222c89554a3c",
+  "installed_core_profile_contract": {
+    "valid": {
+      "standard": true,
+      "conservative": true,
+      "aggressive": true
+    },
+    "invalid_value_rejected": false,
+    "all_valid_profiles_accepted": true,
+    "field_consumption_demonstrated_by_negative_syntax": false,
+    "negative_syntax_limit": "Unknown values may fall back to standard. Consumption must also be checked against the exact installed version source."
+  },
+  "account_port": 443,
+  "account_identifier_sha256": "3d9a13ea8e39a9669cc31f7c8d07d051012e87bbca1e1d0df1b6dff28dd929dc",
+  "current_server_exit_ip": "198.200.49.63",
+  "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+  "node_sha256_excluding_bbr_profile": "9cbfa8410bea828b0ec60ee45662300622221c16d10138aff6b4e2440f1dcb57",
+  "isolated_node_sha256": "9faf95b391293e51c6113d9fee1648027d38843f098987839926d2f7a3c8de24",
+  "all_settings_before_sha256": "f2c81b8b835728ce0cb34c9db441a21078cc6d950f22fbbb2a5ccff88e6531f4",
+  "physical_interface": "WLAN",
+  "physical_interface_index": 12,
+  "account_limits": {
+    "quota_bytes": 0,
+    "rate_bps": 0
+  },
+  "server_initial": {
+    "server_unix_seconds": 1791636148.6289966,
+    "online_sessions": 0,
+    "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+    "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+    "server_congestion": {
+      "type": "bbr",
+      "bbrProfile": "standard"
+    },
+    "ignore_client_bandwidth": true,
+    "journal_available": true,
+    "journal_parsed_lines": 0,
+    "journal_event_scope": "all sessions on this account entrance",
+    "journal_connected_events": 0,
+    "journal_disconnected_events": 0,
+    "journal_events": []
+  },
+  "server_after_first_requests": {
+    "server_unix_seconds": 1791636153.7056012,
+    "online_sessions": 1,
+    "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+    "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+    "server_congestion": {
+      "type": "bbr",
+      "bbrProfile": "standard"
+    },
+    "ignore_client_bandwidth": true,
+    "journal_available": true,
+    "journal_parsed_lines": 1,
+    "journal_event_scope": "all sessions on this account entrance",
+    "journal_connected_events": 1,
+    "journal_disconnected_events": 0,
+    "journal_events": [
+      {
+        "event": "connected",
+        "unix_microseconds": "1791636150185430",
+        "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+      }
+    ]
+  },
+  "server_final": {
+    "server_unix_seconds": 1791636429.351028,
+    "online_sessions": 1,
+    "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+    "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+    "server_congestion": {
+      "type": "bbr",
+      "bbrProfile": "standard"
+    },
+    "ignore_client_bandwidth": true,
+    "journal_available": true,
+    "journal_parsed_lines": 1,
+    "journal_event_scope": "all sessions on this account entrance",
+    "journal_connected_events": 1,
+    "journal_disconnected_events": 0,
+    "journal_events": [
+      {
+        "event": "connected",
+        "unix_microseconds": "1791636150185430",
+        "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+      }
+    ]
+  },
+  "all_settings_after_sha256": "f2c81b8b835728ce0cb34c9db441a21078cc6d950f22fbbb2a5ccff88e6531f4",
+  "all_settings_preserved": true,
+  "normal_monthly_ledger_delta": {
+    "up_bytes": 11411646,
+    "down_bytes": 67186255
+  },
+  "measurement_completed": true,
+  "measurement_valid": true,
+  "own_mihomo_processes_terminated": true,
+  "own_curl_processes_terminated": true,
+  "temporary_private_files_removed": true,
+  "finished_at": "2026-10-10T12:47:20.069665+00:00",
+  "total_wall_seconds": 305.841
+}

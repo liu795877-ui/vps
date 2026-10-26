@@ -1,0 +1,37 @@
+
+Pinging 64.185.232.162 with 32 bytes of data:
+Reply from 64.185.232.162: bytes=32 time=193ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=439ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=184ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=194ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=187ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=185ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=184ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=189ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=202ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=186ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=188ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=193ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=189ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=198ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=202ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=186ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=195ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=192ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=195ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=187ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=191ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=189ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=186ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=193ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=189ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=186ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=185ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=187ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=195ms TTL=47
+Reply from 64.185.232.162: bytes=32 time=184ms TTL=47
+
+Ping statistics for 64.185.232.162:
+    Packets: Sent = 30, Received = 30, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 184ms, Maximum = 439ms, Average = 198ms

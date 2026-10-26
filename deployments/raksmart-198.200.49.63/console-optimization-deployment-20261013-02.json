@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "started_at": "2026-10-13T01:52:03.331804+00:00",
+  "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+  "manifest_sha256": "5938c1af4adc70e8e323cba5998805f4c0340731f76d247b0edcae7c87a98ff6",
+  "remote_helper_sha256": "b27888b329e99be8bc45130322a886cb86c099f4cbc070ae39b7904c2fc58c8c",
+  "baseline": "frozen-hy2-plus-auto-production-baseline",
+  "local_report": "D:\\CodexData\\vps\\deployments\\raksmart-198.200.49.63\\console-optimization-deployment-20261013-02.json",
+  "remote_stage": "/root/vps-console-deploy-jv0b94dh",
+  "verification": {
+    "accounts_checked": 3,
+    "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+    "bytecode_removed": [
+      "panel/__pycache__/accounts.cpython-36.pyc",
+      "panel/__pycache__/hy2.cpython-36.pyc",
+      "panel/__pycache__/routing.cpython-36.pyc",
+      "panel/__pycache__/server.cpython-36.pyc",
+      "panel/__pycache__/subscriptions.cpython-36.pyc",
+      "panel/__pycache__/telemetry.cpython-36.pyc",
+      "panel/__pycache__/test_panel.cpython-36.pyc"
+    ],
+    "changed_source_files": 32,
+    "only_panel_restarted": true,
+    "panel_enablement_preserved": true,
+    "phase": "complete",
+    "production_updated": true,
+    "protected_bytes_preserved": true,
+    "proxy_epochs_preserved": true,
+    "stage": "/root/vps-console-deploy-jv0b94dh",
+    "success": true,
+    "traffic_cumulative_non_decreasing": true
+  },
+  "remote_exit_code": 0,
+  "production_updated": true
+}

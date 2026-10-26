@@ -1,0 +1,15 @@
+{
+  "action": "apply",
+  "backup_dir": "/root/vps-udp-buffer-optimization-20261010-2013",
+  "error_type": "RuntimeError",
+  "failure": "The original panel did not become ready",
+  "rollback": {
+    "error_type": "RuntimeError",
+    "failure": "Automatic rollback requires host inspection",
+    "panel_ready": false,
+    "success": false
+  },
+  "success": false,
+  "reviewed_helper_sha256": "5ee09fe28ca87d93f972389bdda7eebbc411f7e59f085a329afde579f2029037",
+  "remote_exit_code": 1
+}

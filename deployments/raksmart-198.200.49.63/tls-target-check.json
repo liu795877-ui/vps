@@ -1,0 +1,20 @@
+[
+  {
+    "host": "www.microsoft.com",
+    "tls": "TLSv1.3",
+    "alpn": "h2",
+    "certificate_verified": true
+  },
+  {
+    "host": "www.cloudflare.com",
+    "tls": "TLSv1.3",
+    "alpn": "h2",
+    "certificate_verified": true
+  },
+  {
+    "host": "www.apple.com",
+    "tls": "TLSv1.3",
+    "alpn": "h2",
+    "certificate_verified": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "checked_at": "2026-10-13T06:58:21.678316+00:00",
+  "server": "198.200.49.158",
+  "remote_stage": "/root/vps-console-adoption-tl3qx7_u",
+  "remote_helper_sha256": "501a2bff06a83c04b174a5dce1fb006f6e0544cc529b5ee8f4ee8480ac6bdf11",
+  "production_updated": false,
+  "verification": {
+    "account_login_performed": false,
+    "bytecode_writes_disabled": true,
+    "current_target_preserved": true,
+    "dependency_files_verified": 150,
+    "original_accounts_and_identities_preserved": true,
+    "original_hy2_password_and_tls_preserved": true,
+    "phase": "complete",
+    "production_updated": false,
+    "protected_bytes_and_network_preserved": true,
+    "scope": "read-only delayed adoption verification",
+    "secrets_included": false,
+    "service_control_performed": false,
+    "service_epochs_preserved": true,
+    "source_files_verified": 41,
+    "success": true,
+    "traffic_cumulative_non_decreasing": true,
+    "unused_member_stores_absent": true
+  }
+}

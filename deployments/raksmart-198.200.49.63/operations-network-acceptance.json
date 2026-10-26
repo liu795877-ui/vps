@@ -1,0 +1,154 @@
+{
+  "success": true,
+  "isolation": "two disposable network namespaces",
+  "production_mutations": false,
+  "checks": {
+    "all_ports_initially_reachable": true,
+    "quota_blocks_new_connections": true,
+    "quota_preserves_other_ports": true,
+    "quota_resets_existing_connection": true,
+    "quota_preserves_loopback_chain_return": true,
+    "quota_zero_restores_access": true,
+    "real_htb_and_ingress_installed": true,
+    "real_filters_installed": true,
+    "download_rate_actually_limited": true,
+    "upload_rate_actually_limited": true,
+    "other_port_not_shaped": true,
+    "zero_removes_owned_qdiscs": true,
+    "zero_restores_speed": true
+  },
+  "baseline": {
+    "download": {
+      "mode": "D",
+      "port": 1443,
+      "bytes": 1048576,
+      "seconds": 0.00909531899378635,
+      "measured_bps": 922299482,
+      "completed": true
+    },
+    "upload": {
+      "mode": "U",
+      "port": 1443,
+      "bytes": 262144,
+      "seconds": 0.002392807000433095,
+      "measured_bps": 876440097,
+      "completed": true
+    }
+  },
+  "limited": {
+    "configured_bps": 4000000,
+    "download": {
+      "mode": "D",
+      "port": 1443,
+      "bytes": 1048576,
+      "seconds": 2.1896184099896345,
+      "measured_bps": 3831082,
+      "completed": true
+    },
+    "upload": {
+      "mode": "U",
+      "port": 1443,
+      "bytes": 262144,
+      "seconds": 0.8588501010090113,
+      "measured_bps": 2441813,
+      "completed": true
+    },
+    "other_port_download": {
+      "mode": "D",
+      "port": 443,
+      "bytes": 1048576,
+      "seconds": 0.008041647000936791,
+      "measured_bps": 1043145514,
+      "completed": true
+    }
+  },
+  "restored": {
+    "download": {
+      "mode": "D",
+      "port": 1443,
+      "bytes": 1048576,
+      "seconds": 0.007308152999030426,
+      "measured_bps": 1147842416,
+      "completed": true
+    },
+    "upload": {
+      "mode": "U",
+      "port": 1443,
+      "bytes": 262144,
+      "seconds": 0.0015901800070423633,
+      "measured_bps": 1318814216,
+      "completed": true
+    }
+  },
+  "cleanup_complete": true,
+  "production_unchanged": true,
+  "temporary_files_removed": true,
+  "checked_at": "2026-10-10T03:19:54.924814+00:00",
+  "telemetry_source_sha256": "f94ca1513b2be46a17fb0d05520561fa50873f81f1d42bab5b2615aaff65202d",
+  "network_fixture_success": true,
+  "production_panel_capabilities": {
+    "main_pid": 31322,
+    "active": true,
+    "net_admin_effective": true,
+    "net_admin_bounding": true,
+    "net_raw_effective": true,
+    "net_raw_bounding": true,
+    "effective_capabilities_hex": "000000000000340b",
+    "af_netlink_allowed": true,
+    "configured_address_families": [
+      {
+        "path": "/etc/systemd/system/vps-panel.service",
+        "value": "AF_UNIX AF_INET AF_INET6"
+      },
+      {
+        "path": "/etc/systemd/system/vps-panel.service.d/operations.conf",
+        "value": "AF_NETLINK"
+      }
+    ],
+    "merged_address_families": [
+      "AF_INET",
+      "AF_INET6",
+      "AF_NETLINK",
+      "AF_UNIX"
+    ],
+    "address_family_evidence": "merged fragment and drop-ins, no pending reload, process started after all unit changes",
+    "systemctl_family_property_readable": false,
+    "telemetry_sha256": "7e150aec8fe205fc7588aa73b73dcf2fd809baef746935569197f87c0649f250",
+    "telemetry_normalized_sha256": "f94ca1513b2be46a17fb0d05520561fa50873f81f1d42bab5b2615aaff65202d",
+    "quota_reset_return_present": true,
+    "restrict_address_families": [
+      "[unprintable]"
+    ],
+    "read_only": true,
+    "success": true,
+    "checked_at": "2026-10-10T03:42:00.151041+00:00",
+    "matches_prepared_manifest": true,
+    "compatible_source_matches_tested_semantics": true,
+    "tested_source_deployed": true,
+    "traffic_samples": [
+      {
+        "id": "admin",
+        "available": true,
+        "connections": 25,
+        "sampled_at": "2026-10-10T03:42:02.325118+00:00",
+        "enforcement_error": null
+      },
+      {
+        "id": "7bb5122a2ef4a515",
+        "available": true,
+        "connections": 0,
+        "sampled_at": "2026-10-10T03:42:02.325118+00:00",
+        "enforcement_error": null
+      },
+      {
+        "id": "06c26698c110e726",
+        "available": true,
+        "connections": 0,
+        "sampled_at": "2026-10-10T03:42:02.325118+00:00",
+        "enforcement_error": null
+      }
+    ],
+    "all_enabled_accounts_sampled": true,
+    "live_af_netlink_observed": true
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "status": "deployed_and_verified",
+  "target": "198.200.49.63",
+  "authorization": "All eight necessary improvements, user requested all",
+  "features": [
+    "Draft protection",
+    "Routing diagnostics and client checklist",
+    "Persistent health and optional selected failover",
+    "Encrypted full backups",
+    "Revocable per-user profile subscriptions and server versions",
+    "Real proxy counters, quotas and bandwidth",
+    "Member deletion and proxy credential revocation",
+    "Persistent scoped activity"
+  ],
+  "root_owned": [
+    "panel/server.py",
+    "panel/audit.py",
+    "panel/diagnostics.py",
+    "panel/health.py",
+    "panel/test_enhancements_http.py",
+    "deployment integration"
+  ],
+  "agent_owned": {
+    "multiuser_accounts": [
+      "panel/accounts.py",
+      "panel/subscriptions.py",
+      "account tests"
+    ],
+    "operations_modules": [
+      "panel/telemetry.py",
+      "panel/backups.py",
+      "module tests"
+    ],
+    "routing_url_web": [
+      "panel/web/app.js",
+      "panel/web/index.html",
+      "panel/web/style.css",
+      "UI tests"
+    ]
+  },
+  "deployment_constraints": [
+    "Retain deployed configure_reality.py adapter",
+    "Python 3.6 server compatibility",
+    "Never run initial multiuser installer",
+    "Preserve every current account, UUID, key, rule and selected exit",
+    "Augment private stats only; restart isolated proxy instances as needed",
+    "Do not activate limits or auto failover without account settings",
+    "Keep HY2 and Caddy unchanged",
+    "Validate before publishing",
+    "No credential output"
+  ],
+  "validation": {
+    "local_panel_regression": {
+      "passed": true,
+      "tests": 111,
+      "skipped": 4,
+      "later_incremental_http_tests": 7
+    },
+    "operations_modules": {
+      "passed": true,
+      "tests": 17
+    },
+    "frontend_enhancements": {
+      "passed": true,
+      "checks": 18
+    },
+    "arrow_guide": {
+      "passed": true,
+      "checks": 50
+    },
+    "account_subscription_tests": {
+      "passed": true,
+      "tests": 31
+    },
+    "isolated_linux_network": {
+      "passed": true,
+      "checks": 13,
+      "production_network_preserved": true
+    },
+    "server_regression": {
+      "executed": 141,
+      "passed": 137,
+      "skipped": 4
+    },
+    "public_api": {
+      "passed": true,
+      "checks": 43
+    },
+    "production_browser": {
+      "passed": true,
+      "accounts": 3,
+      "desktop_and_mobile": true
+    },
+    "actual_proxy_connections": {
+      "passed": true,
+      "ports": [
+        443,
+        1443,
+        2443
+      ],
+      "isolation": true,
+      "traffic_incremented": true
+    }
+  },
+  "release": {
+    "manifest": "operations-release-manifest.json",
+    "archive_sha256": "ea174f1a59c215b9385b6b769c369f22005ef2d846a38ff7b3d2c174cb8dc74c",
+    "asset_version": "operations-20261010-2"
+  },
+  "final_acceptance": "operations-final-acceptance.json",
+  "completed_at": "2026-10-10T03:47:14.991720+00:00",
+  "unfinished_requested_features": []
+}

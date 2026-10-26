@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-10-09T19:10:54+08:00",
+  "success": true,
+  "counts": {
+    "configured_static_exits": 1,
+    "tested_static_exits": 1,
+    "auto_clients": 1
+  },
+  "checks": {
+    "isolated_client_has_only_original_auto_node": true,
+    "physical_wlan_and_active_flclash_untouched": true,
+    "trusted_https_and_secure_login": true,
+    "auto_client_uses_previous_download": true,
+    "server_button_applied": true,
+    "static_card_applied": true,
+    "both_clicks_used_csrf": true,
+    "no_browser_errors": true,
+    "previous_profile_sha256_unchanged": true,
+    "previous_auto_uuid_unchanged": true,
+    "isolated_auto_uuid_matches_previous_download": true,
+    "isolated_client_file_sha256_unchanged": true
+  },
+  "ips": [
+    {
+      "kind": "server",
+      "ip": "198.200.49.158",
+      "expected_ip": "198.200.49.158",
+      "success": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ip": "198.200.49.158",
+          "success": true
+        }
+      ]
+    },
+    {
+      "kind": "static",
+      "ip": "128.241.19.234",
+      "expected_ip": "128.241.19.234",
+      "success": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ip": "128.241.19.234",
+          "success": true
+        }
+      ]
+    },
+    {
+      "kind": "restored",
+      "ip": "128.241.19.234",
+      "expected_ip": "128.241.19.234",
+      "success": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "ip": "128.241.19.234",
+          "success": true
+        }
+      ]
+    }
+  ],
+  "original_exit_restored": true,
+  "original_target": "static"
+}

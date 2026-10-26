@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "read_only_runtime_review": true,
+  "load_tests": 0,
+  "client_mutations": 0,
+  "server_mutations": 0,
+  "installed_core_source": "Mihomo v1.19.31, commit ab405bad5beeeac8b003bb01f60f134f6df54471",
+  "observed_client_settings": {
+    "node_protocols": ["hysteria2", "vless"],
+    "unified_delay": true,
+    "fallback_url": "https://api.ipify.org",
+    "fallback_interval": 60,
+    "fallback_lazy": true,
+    "explicit_timeout": null,
+    "default_timeout_ms": 5000
+  },
+  "verified_semantics": [
+    {
+      "source": "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/adapter.go#L46",
+      "fact": "AliveForTestUrl uses state stored for the exact URL if present; otherwise generic alive."
+    },
+    {
+      "source": "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/adapter.go#L169",
+      "fact": "Each URLTest updates generic alive/history plus only its own URL-specific state/history. A gstatic test does not overwrite an existing ipify state."
+    },
+    {
+      "source": "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/outboundgroup/fallback.go#L105",
+      "fact": "Fallback uses child AliveForTestUrl for its configured URL and preserves priority order unless a valid fixed selection exists. It does not choose the lowest latency."
+    },
+    {
+      "source": "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/adapter.go#L164",
+      "fact": "A group's proxy wrapper has independent test history; its test makes a connection through the group rather than copying a child result."
+    },
+    {
+      "source": "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/adapter.go#L259",
+      "fact": "unified-delay resets timing to the second HEAD if it succeeds; if that request fails, the first total remains. Different samples may include different startup overhead."
+    },
+    {
+      "source": "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/hub/route/groups.go#L53",
+      "fact": "The groups delay endpoint clears fixed selection and tests children; the proxies delay endpoint tests the named proxy wrapper."
+    },
+    {
+      "source": "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/provider/healthcheck.go#L44",
+      "fact": "Startup healthcheck runs regardless of lazy. Later idle checks may be skipped with lazy=true."
+    }
+  ],
+  "interpretation": [
+    "A successful manual HY2 gstatic test can coexist with AUTO selecting TCP because AUTO's ipify health state is independent. This is a mechanism, not proof of the current failure reason.",
+    "AUTO 1305ms and REALITY 169ms may describe different requests, times, child choices and cold/warm states. Delay display alone cannot identify the child used by the old AUTO test.",
+    "Read each child's exact-URL extra alive/history and timestamps plus actual business connection chains. Generic alive or isolated HY2 success alone is insufficient.",
+    "Existing isolated fresh requests had intermittent timeouts; real healthcheck failure must remain visible rather than forced healthy."
+  ],
+  "minimum_fix_candidate": {
+    "url": "https://www.gstatic.com/generate_204",
+    "expected-status": "204",
+    "interval": 30,
+    "lazy": false,
+    "timeout": 5000,
+    "preserve_hy2_first_and_reality_fallback": true,
+    "rationale": "Use the app's same real HTTPS target so manual and periodic tests update the state used by AUTO; validate 204 and check during idle for bounded recovery detection.",
+    "validation": [
+      "Valid HY2 target health gives HY2 priority and actual business HY2 chain.",
+      "Genuine HY2 failure gives REALITY and subsequent same-URL recovery restores HY2.",
+      "Website-selected exit and account routing rules remain correct."
+    ],
+    "limits": [
+      "This is a health selection improvement, not physical RTT or sustained throughput improvement.",
+      "A single external health target can fail independently of the proxy path.",
+      "The client full profile must be refreshed once to update its health URL."
+    ]
+  },
+  "changes_applied": false,
+  "not_proposed_without_evidence": [
+    "Artificial delay values or bypassing healthchecks",
+    "Extra keepalive already present",
+    "Longer handshake timeout or nonstandard 0RTT",
+    "Removing TCP fallback"
+  ]
+}

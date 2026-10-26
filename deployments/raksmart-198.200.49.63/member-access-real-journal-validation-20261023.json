@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "python_version": [
+    3,
+    6,
+    8
+  ],
+  "sqlite_version": "3.7.17",
+  "batches": 5,
+  "connections": 10000,
+  "protocol_counts": {
+    "hy2": 2444,
+    "reality": 7556
+  },
+  "administrator_records": 0,
+  "catching_up": true,
+  "database_mode": "0600",
+  "elapsed_seconds": 2.448,
+  "production_changed": false,
+  "time_utc": "2026-10-24T02:13:20.986902+00:00"
+}

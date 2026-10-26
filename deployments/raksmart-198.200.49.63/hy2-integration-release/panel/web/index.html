@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light" name="color-scheme"/>
+<title>NODE / 私人节点控制台</title>
+<link href="./mark.svg" rel="icon" type="image/svg+xml"/>
+<link href="./style.css?v=integration-20261010-1" rel="stylesheet"/>
+<script defer="" src="./app.js?v=integration-20261010-1"></script>
+</head>
+<body>
+<div class="login-screen" id="login-screen">
+<div aria-hidden="true" class="login-art">
+<div class="login-brand">NODE<span> / YOUR PRIVATE NETWORK</span></div>
+<div class="orbital orbital-one"></div><div class="orbital orbital-two"></div>
+<div class="login-art-content"><p class="eyebrow">A SMALL WINDOW TO YOUR NETWORK</p><h1>你的节点。<br/>你的出口。</h1><p>把连接留给服务器，<br/>把选择放在你的手边。</p></div>
+<div class="art-footer"><span>VPS → STATIC IP → WEB</span><span>01 / CONTROL</span></div>
+</div>
+<div class="login-form-wrap">
+<div class="mobile-brand">NODE / 控制台</div>
+<form class="login-form" id="login-form">
+<p class="eyebrow">PRIVATE ACCESS</p><h2>登录你的控制台</h2><p class="muted login-subtitle">配置出口、切换 IP，管理自己的连接。</p>
+<label for="login-user">登录账号</label><input autocomplete="username" id="login-user" name="username" required="" value="admin"/>
+<label for="login-password">登录密码</label><div class="password-wrap"><input autocomplete="current-password" id="login-password" name="password" required="" type="password"/><button aria-label="显示密码" class="password-toggle" data-toggle-password="login-password" type="button">显示</button></div>
+<p class="field-error" id="login-error" role="alert"></p>
+<button class="button primary login-submit" type="submit">进入控制台 <span aria-hidden="true">↗</span></button>
+<button class="login-guide-button" id="login-user-guide" type="button"><span aria-hidden="true" class="guide-help-symbol">?</span> 使用说明 <span aria-hidden="true">↗</span></button>
+<p class="login-footnote">初始账号信息由部署时生成。代理服务的账号密码在登录后填写。</p>
+</form>
+</div>
+</div>
+<div class="app-layout" hidden="" id="console">
+<aside class="sidebar">
+<a class="brand" href="./"><img alt="" src="./mark.svg"/><span>NODE<small>私人节点控制台</small></span></a>
+<button aria-label="退出登录" class="mobile-logout" id="logout-mobile">退出登录</button>
+<div class="sidebar-section">工作空间</div>
+<nav aria-label="主导航">
+<button class="nav-button selected" data-view="overview"><span class="nav-icon">◈</span>出口管理<span class="nav-arrow">↗</span></button>
+<button class="nav-button" data-view="routing"><span class="nav-icon">⌘</span>网站分流</button>
+<button class="nav-button" data-view="access"><span class="nav-icon">⇣</span>客户端与访问</button>
+<button class="nav-button" data-view="users" hidden="" id="users-nav"><span class="nav-icon">♧</span>用户管理</button>
+<button class="nav-button" data-view="maintenance" hidden="" id="maintenance-nav"><span class="nav-icon">◇</span>维护与记录</button>
+</nav>
+<div class="sidebar-note"><span class="live-dot"></span><strong>你的独立入口</strong><p>独立出口与分流规则，<br/>切换只影响自己的连接。</p></div>
+<div class="sidebar-bottom"><div class="admin-avatar" id="current-user-avatar">A</div><div class="identity-copy"><strong id="current-user-name">当前用户</strong><span id="current-user-role">个人空间</span></div><button aria-label="退出登录" id="logout" title="退出登录">↗</button></div>
+</aside>
+<main class="main">
+<header class="topbar has-user-guide"><div class="breadcrumb"><span id="workspace-label">个人空间</span> <span>/</span> <span id="breadcrumb-title">出口管理</span></div><div class="topbar-right"><span class="current-user-tag" id="current-user-tag"><strong id="current-user-handle"></strong><small id="current-user-space">个人空间</small></span><span class="status-pill" id="server-pill"><i></i>正在检查</span><button aria-label="使用说明" class="guide-help-button" id="open-user-guide" title="使用说明" type="button"><span aria-hidden="true" class="guide-help-symbol">?</span><span class="guide-help-label">使用说明</span></button><button aria-label="刷新状态" class="icon-button" id="refresh" title="刷新状态">↻</button></div></header>
+<div class="notice" hidden="" id="demo-banner">本地演示模式：不连接代理服务，不修改 VPS 配置。</div>
+<div class="notice error-notice" hidden="" id="global-error" role="alert"></div>
+<section class="view" id="view-overview">
+<div class="page-heading"><div><p class="eyebrow">NETWORK / OVERVIEW</p><h1>出口，由你选择<span class="heading-dot">.</span></h1><p class="muted">点击静态出口即可切换；点击中间的服务器，使用 VPS 自身出口。</p></div><button class="button primary" id="add-exit"><span>＋</span> 添加出口</button></div>
+<div class="metrics-grid overview-status-strip">
+<div class="metric"><span class="metric-label">入口服务器</span><strong id="metric-server">—</strong><span class="metric-detail" id="metric-server-detail">正在读取节点信息</span></div>
+<div class="metric"><span class="metric-label">当前出口</span><strong id="metric-active">尚未配置</strong><span class="metric-detail" id="metric-active-detail">点击服务器或静态出口开始使用</span></div>
+<div class="metric"><span class="metric-label">实际出口 IP</span><strong id="metric-ip">—</strong><span class="metric-detail" id="metric-tested">应用时会检测实际出口</span></div>
+<div class="metric metric-count"><span class="metric-label">已添加出口</span><strong><span id="metric-count">0</span><em>/ 8</em></strong><span class="metric-detail">可在多个固定 IP 之间切换</span></div>
+</div>
+<section aria-label="连接路径" class="network-card" id="network-card"><div class="card-heading"><div><p class="eyebrow">CONNECTION PATH</p><h2>一条清晰的连接路径</h2></div><span class="subtle-tag" id="path-status">等待选择出口</span></div><div class="connection-path">
+<div class="path-node path-device" id="path-device"><div class="node-icon device-icon"><span aria-hidden="true" class="device-signal signal-one"></span><span aria-hidden="true" class="device-signal signal-two"></span><svg aria-hidden="true" viewbox="0 0 64 64"><rect class="device-frame" height="34" rx="5" width="46" x="9" y="10"></rect><rect class="device-display" height="24" rx="2" width="36" x="14" y="15"></rect><path class="device-interface" d="M20 21h9m-9 5h15m-15 5h7m12-10h5m-5 5h5m-5 5h5"></path><path class="device-stand" d="M26 44v9m12-9v9m-17 2h22"></path><path class="device-scan" d="M16 19h32"></path><circle class="device-power" cx="32" cy="41.5" r="1"></circle></svg></div><div class="device-copy"><span class="path-step">01 / CLIENT</span><strong>你的设备</strong><small>FlClash · AUTO 网页切换</small><span class="device-status" id="path-device-status">代理路径待应用</span></div></div>
+<div class="path-connector" id="client-connector"><span>加密连接</span><div aria-hidden="true" class="flow-track"><i class="flow-particle"></i><i class="flow-particle"></i><i class="flow-particle"></i></div></div>
+<button aria-label="切换到服务器自身出口" aria-pressed="false" class="path-node path-server-button" id="path-server-button" type="button"><span class="node-icon server-icon"><svg aria-hidden="true" viewbox="0 0 64 64"><path class="server-case" d="M14 9h36v46H14z"></path><rect class="server-rack" height="10" rx="2" width="28" x="18" y="13"></rect><rect class="server-rack" height="10" rx="2" width="28" x="18" y="27"></rect><rect class="server-rack" height="10" rx="2" width="28" x="18" y="41"></rect><circle class="server-led led-one" cx="23" cy="18" r="1.6"></circle><circle class="server-led led-two" cx="23" cy="32" r="1.6"></circle><circle class="server-led led-three" cx="23" cy="46" r="1.6"></circle><path class="server-vents" d="M32 17h9m-9 3h9m-9 11h9m-9 3h9m-9 11h9m-9 3h9"></path></svg></span><span class="server-copy"><span class="server-heading"><span class="path-step">02 / ENTRY</span><span class="route-badge" id="path-server-badge">点击切换</span></span><strong id="path-server-name">入口 VPS</strong><small id="path-server">独立节点入口</small><span class="route-status" id="path-server-exit">点击使用 VPS 自身出口</span></span></button>
+<div class="path-connector" id="exit-connector"><span>SOCKS5 转发</span><div aria-hidden="true" class="flow-track"><i class="flow-particle"></i><i class="flow-particle"></i><i class="flow-particle"></i></div></div>
+<div class="path-exit-group" id="path-exit-group"><span class="path-step"><span id="path-exits-label">可切换的静态出口</span> <span id="path-count">0</span></span><div aria-label="点击切换静态出口" class="path-routes" id="path-routes"></div><button class="path-empty" id="path-empty" type="button"><span>＋</span><strong>添加一个静态出口</strong><small>保存后，点击出口即可检测并切换</small></button></div>
+</div><div class="path-motion-note"><span aria-hidden="true" class="motion-note-mark"></span>动效表示已应用的代理路径；设备是否连接由客户端确认。</div><div class="path-preview" hidden="" id="path-preview"><div><span class="preview-label">出口状态</span><strong id="path-preview-name"></strong><p aria-live="polite" id="path-message"></p></div><div class="path-actions"><button class="button secondary small" id="path-test" type="button">检测连接</button><button class="button primary small" id="path-apply" type="button">切换到此出口 ↗</button></div></div><p class="path-caption"><span><span id="path-routing-caption">指定网站经过这条路径；未匹配的网站直接连接。</span><small>首次在客户端选择“AUTO · 网页切换”。此后点击右侧出口或中间服务器即可切换，新增出口也无需重新下载。</small></span><button class="text-button" data-view="routing">管理分流规则 ↗</button></p></section>
+<div aria-live="polite" class="job-panel" hidden="" id="job-panel"><div class="job-heading"><strong id="job-message">正在处理</strong><span id="job-percent">0%</span></div><progress id="job-progress" max="100" value="0"></progress><p id="job-detail">配置应用期间，节点连接可能短暂重新建立。</p></div>
+<section aria-label="静态出口列表" class="overview-exits" id="exit-section"><div class="section-heading"><div><h2>静态出口 <span class="count-badge" id="exit-total">0</span></h2><p class="muted">保存后点击出口，自动检测并切换。</p></div><button class="button secondary download-button" disabled="" id="download-top">↓ 下载首次配置</button></div><div class="draft-notice" hidden="" id="draft-notice"><span>●</span><p>有尚未应用的出口修改。点击对应出口即可检测并应用；AUTO 无需重新下载配置。</p></div><div aria-live="polite" class="pending-exit-list" hidden="" id="pending-exit-list"></div><div class="exit-list" id="exit-list"></div><div class="empty-state" id="empty-state"><div class="empty-symbol">＋</div><h3>添加你的第一个静态出口</h3><p>准备服务商提供的 SOCKS5 地址、端口与认证信息，<br/>接下来通过表单完成配置。</p><button class="button primary" id="add-first">添加第一个出口 ↗</button><span>代理服务器地址不一定等于最终出口 IP。</span></div></section>
+<section class="settings-card health-card" id="health-card">
+<div class="health-card-heading"><div><p class="eyebrow">EXIT HEALTH</p><h2>当前出口健康</h2></div><button class="button secondary small" id="check-health" type="button">立即检查当前出口</button></div>
+<p class="operation-status" id="health-summary" role="status">正在读取健康状态</p>
+<dl class="operation-facts" id="health-facts"></dl>
+<p class="field-error" id="health-settings-error" role="alert"></p><details class="layout-details" id="health-settings-details"><summary><span class="layout-details-title">故障处理与备用出口</span><small class="layout-details-hint" id="health-settings-summary">仅提醒，由我手动切换</small><small class="layout-draft-indicator" hidden="" id="health-settings-draft">尚未保存</small><small class="layout-error-indicator" hidden="">操作未成功，展开查看</small><span aria-hidden="true" class="layout-details-chevron">＋</span></summary><div class="layout-details-body"><form class="layout-settings-form" id="health-settings-form"><div class="layout-form-grid"><div><label for="health-mode">故障处理</label><select id="health-mode"><option value="manual">仅提醒，由我手动切换</option><option value="auto">连续失败后切换到我指定的备用出口</option></select></div><div><label for="health-fallback">我的备用出口</label><select id="health-fallback"><option value="">请选择备用出口</option><option value="server">服务器自身出口</option></select></div></div><p class="field-hint">默认保持手动，不会自动改变固定 IP。自动切换只影响你的账号；备用出口需要可用且与当前出口不同。</p><button class="button secondary small" type="submit">保存故障处理设置</button></form></div></details>
+</section>
+<section class="settings-card traffic-card">
+<p class="eyebrow">MY NETWORK USAGE</p><h2>我的流量与连接</h2>
+<p class="operation-status" id="traffic-summary" role="status">正在读取用量</p>
+<div class="traffic-dashboard" id="traffic-facts">
+<div class="traffic-monthly">
+<div class="traffic-donut-wrap">
+<svg aria-labelledby="traffic-mix-title traffic-mix-description" class="traffic-donut" data-state="unknown" id="traffic-donut" role="img" viewbox="0 0 160 160">
+<title id="traffic-mix-title">本月上传与下载占比</title><desc id="traffic-mix-description">正在读取已记录的流量</desc>
+<circle class="traffic-donut-track" cx="80" cy="80" r="67"></circle>
+<circle class="traffic-donut-segment traffic-series-up" cx="80" cy="80" hidden="" id="traffic-donut-up" pathlength="100" r="67" stroke-dasharray="0 100"></circle>
+<circle class="traffic-donut-segment traffic-series-down" cx="80" cy="80" hidden="" id="traffic-donut-down" pathlength="100" r="67" stroke-dasharray="0 100"></circle>
+</svg>
+<div class="traffic-donut-center"><span>本月已记录</span><strong id="traffic-total">未知</strong><small id="traffic-month">UTC 月份</small></div>
+</div>
+<dl class="traffic-legend">
+<div><dt><i aria-hidden="true" class="traffic-swatch traffic-swatch-up"></i>上传</dt><dd><strong id="traffic-up-total">未知</strong><span id="traffic-up-share">占比未知</span></dd></div>
+<div><dt><i aria-hidden="true" class="traffic-swatch traffic-swatch-down"></i>下载</dt><dd><strong id="traffic-down-total">未知</strong><span id="traffic-down-share">占比未知</span></dd></div>
+</dl>
+</div>
+<div class="traffic-status-tiles">
+<div class="traffic-connection-tile"><span>当前入口连接</span><strong id="traffic-connections">未知</strong><small>本账号代理入口，非设备数</small></div>
+<div class="traffic-limit-tile"><span>最高速度</span><strong id="traffic-rate-limit">未知</strong><small id="traffic-rate-state">等待限速状态</small></div>
+</div>
+<div class="traffic-quota">
+<div class="traffic-section-heading"><h3>月额度</h3><span id="traffic-quota-label">等待额度信息</span></div>
+<progress aria-label="本月代理流量额度使用比例" hidden="" id="traffic-quota-progress" max="100" value="0"></progress>
+<p id="traffic-quota-state">等待额度状态</p>
+</div>
+<div class="traffic-realtime">
+<div class="traffic-section-heading"><h3>代理速率变化</h3><span id="traffic-sample-count">尚无采样</span></div>
+<dl class="traffic-rate-legend">
+<div><dt><i aria-hidden="true" class="traffic-swatch traffic-swatch-up"></i>上传速度</dt><dd id="traffic-up-rate">未知</dd></div>
+<div><dt><i aria-hidden="true" class="traffic-swatch traffic-swatch-down"></i>下载速度</dt><dd id="traffic-down-rate">未知</dd></div>
+</dl>
+<div class="traffic-chart-wrap">
+<svg aria-describedby="traffic-chart-status traffic-chart-help" aria-labelledby="traffic-rate-title" data-sample-count="0" id="traffic-rate-chart" role="group" viewbox="0 0 500 184">
+<title id="traffic-rate-title">打开页面后记录的服务器代理速率采样</title>
+<g aria-hidden="true" class="traffic-chart-grid"><path d="M64 20H480 M64 81H480 M64 142H480"></path></g>
+<g aria-hidden="true" class="traffic-chart-axis" id="traffic-rate-axis"></g>
+<g aria-hidden="true" id="traffic-rate-lines"></g><g id="traffic-rate-points"></g>
+<text class="traffic-chart-empty" id="traffic-chart-empty" text-anchor="middle" x="272" y="83">等待有效速率采样</text>
+</svg>
+</div>
+<p class="traffic-chart-note" id="traffic-chart-status">从打开页面开始收集采样，不补绘历史数据。</p>
+<p class="traffic-chart-note" id="traffic-sampled-at">最近服务器采样：尚无记录</p>
+<p class="traffic-chart-readout" id="traffic-chart-readout">暂无采样明细</p>
+<div aria-label="查看速率采样明细" class="traffic-sample-controls"><button disabled="" id="traffic-sample-prev" type="button">← 上次采样</button><button disabled="" id="traffic-sample-next" type="button">下次采样 →</button><button disabled="" id="traffic-sample-latest" type="button">最新采样</button></div>
+<p class="traffic-chart-help" id="traffic-chart-help">点按或移到圆点查看数值；键盘聚焦圆点后，可用方向键切换采样。</p>
+</div>
+</div>
+<p class="field-hint" id="traffic-accounting-note">统计本账号经过服务器的代理流量。国内 DIRECT 由本机出网，不计入这里。月累计按 UTC 月份结算；曲线保留本页最近 60 次有效采样，断采样处不连线。入口连接数不代表在线设备数。</p>
+</section>
+<footer class="page-footer"><span id="last-updated">尚未应用出口</span><button class="text-button" disabled="" id="rollback">恢复上次配置 ↶</button></footer>
+</section>
+<section class="view" hidden="" id="view-routing">
+<div class="page-heading"><div><p class="eyebrow">NETWORK / ROUTING</p><h1>让网站走合适的路<span class="heading-dot">.</span></h1><p class="muted" id="routing-page-description">下列域名及其子域名经过静态出口，其他网站直接连接。</p></div></div>
+<form class="settings-card" id="routing-form">
+<p class="eyebrow">ROUTING PLAN</p><h2>选择分流方案</h2>
+<label for="routing-mode">分流方案</label>
+<select id="routing-mode"><option value="smart">智能分流 · 国内直连</option><option value="manual">手动域名 · 未匹配直连</option><option value="services">服务分类分流 · 使用上传的规则</option></select>
+<p class="field-hint" id="routing-mode-hint">国内视频与国内网站走本机，海外跟随网页当前出口。</p>
+<div class="routing-domain-lists">
+<div><label for="direct-domains">强制直连 <span class="optional">可选，每行一个域名或网址</span></label><textarea aria-describedby="direct-domains-hint routing-url-hint routing-domains-hint" id="direct-domains" placeholder="https://mooc1.chaoxing.com/mycourse/studentstudy
+bilibili.com" rows="5" spellcheck="false"></textarea><p class="field-hint" id="direct-domains-hint">使用本机宽带、Wi-Fi 或移动网络。粘贴学习通课程网址后保存，会提取 mooc1.chaoxing.com；若想覆盖 chaoxing.com 及其所有子域名，请手动填 chaoxing.com。</p></div>
+<div><label for="domains">强制代理 <span class="optional">可选，每行一个域名或网址</span></label><textarea aria-describedby="proxy-domains-hint routing-url-hint routing-domains-hint" id="domains" placeholder="https://github.com/example/project
+example.com" rows="5" spellcheck="false"></textarea><p class="field-hint" id="proxy-domains-hint">跟随网页选择的服务器或静态出口。api.ipify.org 固定走此路径。同一域名及其子域名请只放在一个列表，重叠时会提示你调整。</p></div>
+</div>
+<p class="field-hint" id="routing-url-hint">可粘贴完整 HTTP / HTTPS 网址，也可填写域名。保存时只保留域名，去掉路径、参数与端口；规则匹配该域名及其子域名，不会自动扩大到父域名。</p>
+<p class="field-hint" id="routing-domains-hint">保存后，列表会显示提取出的域名。</p><button class="button primary" type="submit">保存分流规则</button>
+</form>
+<form class="settings-card" id="routing-diagnostic-form"><p class="eyebrow">RULE DIAGNOSTIC</p><h2>查询网站的分流规则</h2><label for="diagnostic-url">域名或完整网址</label><input autocomplete="off" id="diagnostic-url" placeholder="https://mooc1.chaoxing.com/mycourse/studentstudy" spellcheck="false" type="text"/><p class="field-hint">查询使用服务器已保存规则，未保存草稿不会参与。只分析域名，不访问课程、登录页面或网址参数。</p><button class="button secondary" type="submit">查询规则</button><div class="diagnostic-result" hidden="" id="diagnostic-result" role="status"></div></form>
+<div class="layout-secondary-panels"><details class="layout-details" id="routing-priority-details"><summary><span class="layout-details-title">分流优先级与服务规则</span><small class="layout-details-hint">查看当前方案的规则顺序</small><span aria-hidden="true" class="layout-details-chevron">＋</span></summary><div class="layout-details-body"><div class="routing-smart-summary" hidden="" id="routing-smart-summary">
+<strong>国内走本机，海外跟随网页</strong>
+<dl class="routing-destinations"><div><dt>本机网络</dt><dd>B站、爱奇艺、腾讯视频、优酷、国内音乐与日常网站</dd></div><div><dt>网页出口</dt><dd>YouTube、Netflix、Google、ChatGPT、海外服务与未匹配网站</dd></div></dl>
+<p class="routing-order-title">规则优先级 · 从上到下匹配</p>
+<ol class="routing-priority"><li>本机与局域网 <span>本机直连</span></li><li>强制直连、强制代理列表 <span>你的自定义例外</span></li><li>国内外服务分类 <span>海外服务优先识别</span></li><li>国内域名与中国大陆 IP <span>本机直连</span></li><li>其他流量 <span>网页当前出口</span></li></ol>
+<p class="small-note">出口检测 api.ipify.org 固定经过网页当前出口，不能加入强制直连。海外版视频服务按海外规则处理。</p>
+</div><div class="routing-service-summary" hidden="" id="routing-service-summary"><strong>沿用上传的服务分类</strong><dl><div><dt>默认代理</dt><dd>AI、国外媒体、Telegram、Microsoft、Steam、未匹配流量</dd></div><div><dt>默认直连</dt><dd>国内、亚洲媒体、Apple、PayPal、Scholar、miHoYo</dd></div></dl><p>Steam 下载域名优先直连；服务策略可在客户端中单独调整。</p></div><p class="field-hint" hidden="" id="routing-manual-explanation">手动方案按你保存的域名列表匹配；未匹配的网站由本机直接连接。强制直连与强制代理列表请避免域名重叠。</p></div></details><details class="layout-details" id="routing-sync-details"><summary><span class="layout-details-title">规则与配置如何同步</span><small class="layout-details-hint">了解首次导入与后续刷新</small><span aria-hidden="true" class="layout-details-chevron">＋</span></summary><div class="layout-details-body"><aside class="explanation-card"><div class="explanation-number">01 / 02</div><h3 id="routing-update-title">首次导入，之后自动同步</h3><p id="routing-update-description">首次选择智能分流，需要下载并导入配置一次。之后两个域名列表约每 5 分钟自动同步；可在客户端刷新规则集立即更新。切换分流方案仍需更新配置。</p><hr/><h3>出口始终在网页切换</h3><p>客户端使用规则模式，在 STATIC-SELECT 中选择“AUTO · 网页切换”。以后点击此网页的静态出口或中间服务器即可切换；添加、删除、修改出口均无需重新下载。</p><p class="small-note" id="routing-extra-note">本机网络指你当前的宽带、Wi-Fi 或移动网络。国内直连流量由本机出网。</p></aside></div></details><details class="layout-details" id="client-check-details"><summary><span class="layout-details-title">核对客户端实际路径</span><small class="layout-details-hint">以客户端连接记录为准</small><span aria-hidden="true" class="layout-details-chevron">＋</span></summary><div class="layout-details-body"><section class="layout-checklist" id="client-checklist"><p class="eyebrow">CLIENT CHECK</p><h2>核对客户端实际路径</h2><ol class="checklist"><li>启用自己的配置，使用规则模式。</li><li>STATIC-SELECT 选 AUTO · 网页切换。</li><li>在 FlClash 的连接记录中搜索目标域名，查看命中规则和 DIRECT / 代理链。</li><li>智能分流列表刚修改时，在客户端刷新 Custom Direct / Custom Proxy 规则集。</li><li>确认系统代理或 TUN 接管目标应用；已有连接需重新建立。</li></ol><p class="field-hint">网页查询给出规则判断，服务器无法看到绕过服务器的 DIRECT 请求。客户端实际记录才是本机请求路径的依据。</p></section></div></details></div>
+</section>
+<section class="view" hidden="" id="view-access">
+<div class="page-heading"><div><p class="eyebrow">NETWORK / ACCESS</p><h1>把连接带到你的设备<span class="heading-dot">.</span></h1><p class="muted">首次导入并选择 AUTO，之后在网页管理与切换出口。</p></div></div>
+<div class="access-setup-grid" id="access-setup-grid"><section class="settings-card" id="subscription-card"><p class="eyebrow">PRIVATE PROFILE SUBSCRIPTION</p><h2>我的完整配置订阅</h2><p class="operation-status" id="subscription-version">正在读取订阅状态</p><p class="transport-update-notice" id="transport-update-notice" role="status" hidden>正在读取入口协议</p><label for="subscription-url">私密订阅链接</label><div class="password-wrap"><input autocomplete="off" id="subscription-url" readonly="" spellcheck="false" type="password"/><button class="password-toggle" data-toggle-password="subscription-url" type="button">显示</button></div><div class="inline-actions"><button class="button secondary small" id="copy-subscription" type="button">复制订阅链接</button><button class="button secondary small" id="rotate-subscription" type="button">撤销旧链接并换新</button></div><p class="field-hint">在客户端添加这个账号的订阅，刷新订阅获取新配置；仍需规则模式与 AUTO。链接可读取节点配置，请只给对应使用者。网页显示服务器配置版本，无法确认客户端已导入或同步。</p></section><div class="settings-card download-card"><div class="file-icon">YML</div><p class="eyebrow">CLASH / MIHOMO</p><h2>网页切换客户端配置</h2><p class="muted" id="client-config-summary">先点击服务器或一个静态出口，然后下载并导入首次配置。</p><p class="field-hint" hidden="" id="client-config-update">固定节点列表有更新。如需在客户端使用新增的“出口 · 名称”固定节点，可下载同步；AUTO 网页切换无需更新。</p><button class="button primary download-button" disabled="">↓ 下载首次配置</button><ol class="import-steps"><li><span>01</span><div><strong>首次导入配置</strong><p>在 FlClash 的“配置”中导入下载的 YAML；也适用于 Clash Verge 等 Mihomo 客户端。</p></div></li><li><span>02</span><div><strong>选择 AUTO · 网页切换</strong><p>在 STATIC-SELECT 中选择“AUTO · 网页切换”，服务策略组也使用 STATIC-SELECT。此后点击网页的出口或服务器即可切换，新增出口也无需重新下载。</p></div></li><li><span>03</span><div><strong>核对实际出口</strong><p>开启系统代理，访问 api.ipify.org，确认显示网页中当前出口的 IP。</p></div></li></ol><p class="small-note">“出口 · 名称”固定节点供客户端手动选择，始终使用指定出口。要通过网页切换，请保持选择 AUTO。</p></div></div>
+<div class="account-settings-grid"><details class="layout-details" id="password-details"><summary><span class="layout-details-title">修改网页登录密码</span><small class="layout-details-hint">只修改当前账号的网页密码</small><small class="layout-draft-indicator" hidden="" id="password-draft-indicator">有未提交内容</small><small class="layout-error-indicator" hidden="">操作未成功，展开查看</small><span aria-hidden="true" class="layout-details-chevron">＋</span></summary><div class="layout-details-body"><form class="layout-password-form" id="password-form"><p class="eyebrow">PRIVATE ACCESS</p><h2>修改我的登录密码</h2><p class="muted">只修改当前账号的网页登录密码，与 SOCKS5 服务的密码分开设置。</p><label for="current-password">当前登录密码</label><input autocomplete="current-password" id="current-password" required="" type="password"/><label for="new-password">新登录密码</label><input autocomplete="new-password" id="new-password" maxlength="128" minlength="12" required="" type="password"/><label for="confirm-password">再次输入新密码</label><input autocomplete="new-password" id="confirm-password" maxlength="128" minlength="12" required="" type="password"/><p class="field-hint">至少 12 个字符。修改后，此账号的设备需要重新登录。</p><button class="button secondary" type="submit">更新登录密码</button><p class="field-error" id="password-error" role="alert"></p></form></div></details><details class="layout-details" id="identity-details"><summary><span class="layout-details-title">代理身份与旧配置撤销</span><small class="layout-details-hint">疑似配置泄露时使用</small><span aria-hidden="true" class="layout-details-chevron">＋</span></summary><div class="layout-details-body"><section class="layout-identity-card" id="identity-card"><p class="eyebrow">PROXY IDENTITY</p><h3>更换我的代理身份</h3><p class="field-hint">疑似配置泄露时，可撤销旧节点身份。旧配置会失效，需要重新获取并导入配置；网页登录密码保持独立。</p><button class="button secondary small" id="rotate-credentials" type="button">撤销旧节点身份</button></section></div></details></div>
+<section class="settings-card" id="personal-audit-card"><p class="eyebrow">MY OPERATION HISTORY</p><div class="section-heading"><h2>我的操作记录</h2><button class="text-button" id="refresh-audit" type="button">刷新记录</button></div><div class="audit-list" id="audit-list" role="status"></div><p class="field-hint">记录操作时间、结果和对象；不展示密码、完整订阅链接或私人网址参数。</p></section>
+</section>
+<section class="view" hidden="" id="view-maintenance">
+<div class="page-heading"><div><p class="eyebrow">ADMIN / MAINTENANCE</p><h1>备份与维护<span class="heading-dot">.</span></h1><p class="muted">管理员维护服务器配置，恢复前先预览变更。</p></div></div>
+<form class="settings-card backup-schedule-card" id="backup-schedule-form"><p class="eyebrow">BACKUP SCHEDULE</p><h2>定时加密备份</h2><p class="field-hint" id="backup-schedule-status">正在读取计划</p><p class="layout-draft-indicator" hidden="" id="backup-schedule-draft">计划有尚未保存的修改</p><label for="backup-schedule-enabled">每日备份计划</label><select id="backup-schedule-enabled"><option value="off">关闭</option><option value="on">开启，每 24 小时备份</option></select><p class="field-hint">定时备份使用服务器保护的加密密钥。下载到其他设备时，先设置独立导出密码重新加密；调度无需保存你的密码。</p><button class="button secondary" type="submit">保存备份计划</button></form>
+<section class="settings-card" id="backup-create-card"><p class="eyebrow">ENCRYPTED BACKUP</p><h2>创建加密完整备份</h2><div class="backup-workspace-grid"><form id="backup-create-form"><label for="backup-password">备份加密密码</label><input autocomplete="new-password" id="backup-password" maxlength="128" minlength="12" required="" type="password"/><label for="backup-password-confirm">再次输入加密密码</label><input autocomplete="new-password" id="backup-password-confirm" maxlength="128" minlength="12" required="" type="password"/><p class="field-hint">妥善保存加密密码，恢复时需要它。备份文件包含账号和节点资料，只下载到自己控制的设备。</p><button class="button secondary" type="submit">创建加密备份</button></form><div class="backup-library"><div class="section-heading backup-list-heading"><h3>可下载备份</h3><button class="text-button" id="refresh-backups" type="button">刷新</button></div><div class="backup-list" id="backup-list" role="status"></div></div></div></section>
+<section class="settings-card" id="backup-restore-card"><p class="eyebrow">PREVIEW BEFORE RESTORE</p><h2>导入备份并预览</h2><p class="layout-restore-notice">先选择备份并解密预览；核对变更后，再确认恢复。</p><form id="backup-preview-form"><label for="backup-file">加密备份文件</label><input accept=".nvbackup,.enc,.bin,.vpsbackup,application/octet-stream" id="backup-file" required="" type="file"/><label for="restore-password">解密密码</label><input autocomplete="off" id="restore-password" maxlength="128" required="" type="password"/><button class="button secondary" type="submit">解密并预览变更</button></form><div class="backup-preview" hidden="" id="backup-preview"><div id="backup-preview-summary" role="status"></div><label for="restore-confirmation">确认恢复</label><input autocomplete="off" id="restore-confirmation" placeholder="输入 RESTORE"/><p class="field-hint">恢复会改变备份涉及的账号、出口和配置，可能重建连接并使当前登录失效。先核对预览，确定后输入 RESTORE 再操作。</p><button class="button primary" disabled="" id="restore-backup" type="button">确认恢复此备份</button><button class="button secondary" id="cancel-restore" type="button">取消预览</button></div></section>
+<section class="settings-card" id="admin-audit-card"><p class="eyebrow">ADMIN OPERATION HISTORY</p><div class="section-heading"><h2>全部操作记录</h2><button class="text-button" id="refresh-admin-audit" type="button">刷新记录</button></div><div class="audit-list" id="admin-audit-list" role="status"></div></section>
+</section>
+<section class="view" hidden="" id="view-users">
+<div class="page-heading"><div><p class="eyebrow">PRIVATE NETWORK / MEMBERS</p><h1>一起用，各走各的路<span class="heading-dot">.</span></h1><p class="muted">同一台服务器，最多三个账号。每个人登录后管理自己的出口与分流。</p></div><span class="user-slots" id="user-slots">— / 3 个账号</span></div>
+<div class="members-summary"><div><span class="live-dot"></span><strong>切换只影响操作人的连接</strong><p>各自下载首次配置，使用自己的 AUTO · 网页切换。带宽与服务器流量额度由所有人共享。</p></div><button class="button secondary small" id="refresh-users" type="button">刷新用户</button></div>
+<p class="field-error" id="users-error" role="alert"></p>
+<details class="layout-details" id="create-user-details"><summary><span class="layout-details-title">添加一个使用者</span><small class="layout-details-hint" id="member-capacity-summary">最多三个账号</small><small class="layout-draft-indicator" hidden="" id="member-draft-indicator">有未提交内容</small><small class="layout-error-indicator" hidden="">操作未成功，展开查看</small><span aria-hidden="true" class="layout-details-chevron">＋</span></summary><div class="layout-details-body"><form class="layout-member-form" id="create-user-form"><p class="eyebrow">ADD A MEMBER</p><h2>添加一个使用者</h2><p class="muted">创建后，将账号与密码交给对应使用者。他们可在同一个网址登录。</p><label for="create-username">登录账号</label><input autocomplete="off" id="create-username" maxlength="24" minlength="3" placeholder="例如：member_a" required="" spellcheck="false"/><p class="field-hint">3–24 个字符，以小写字母开头，可用小写字母、数字、下划线和短横线。</p><label for="create-display-name">显示名称 <span class="optional">可选</span></label><input autocomplete="off" id="create-display-name" maxlength="48" placeholder="例如：小林"/><label for="create-user-password">初始登录密码</label><input autocomplete="new-password" id="create-user-password" maxlength="128" minlength="12" required="" type="password"/><p class="field-hint">12–128 个字符。密码保存后不会显示，使用者可以自行修改。</p><p class="field-error" id="create-user-error" role="alert"></p><button class="button primary" id="create-user-submit" type="submit">创建独立账号 ↗</button><p class="field-hint" hidden="" id="create-user-capacity">三个账号名额已用满。删除不再使用的成员可释放名额；停用账号会保留名额。</p></form></div></details>
+<section aria-label="服务器用户" class="settings-card members-list-card" id="members-list-card"><div class="section-heading"><div><h2>用户列表</h2><p class="muted">停用会停止该用户的代理入口，并退出其网页会话。</p></div></div><div aria-live="polite" class="user-list" id="user-list"></div><p class="field-hint" id="users-loading">正在读取用户…</p></section>
+<section class="settings-card server-traffic-card" id="users-traffic-card"><p class="eyebrow">SERVER PROXY USAGE</p><h2>全账号服务器用量</h2><p class="operation-status" id="users-traffic-summary" role="status">正在读取服务器用量</p><dl class="operation-facts" id="users-traffic-facts"></dl><p class="field-hint">包含管理员与成员经过服务器的代理流量，DIRECT 不计入。月累计按服务器已记录的数据计算，按 UTC 月份结算；只有实时采样齐全时才显示总连接与速度。页面约每 12 秒读取一次，也可点击刷新用户。</p></section>
+</section>
+</main>
+</div>
+<dialog class="exit-dialog" id="exit-dialog"><form id="exit-form"><div class="dialog-header"><div><p class="eyebrow">STATIC / SOCKS5</p><h2 id="dialog-title">添加静态出口</h2></div><button aria-label="关闭" class="icon-button" id="close-dialog" type="button">×</button></div><div class="dialog-content"><input id="exit-id" type="hidden"/>
+<div class="socks-import-card">
+<div class="socks-import-heading"><label for="exit-socks-link">SOCKS5 链接导入</label><span>快捷添加</span></div>
+<div class="password-wrap"><input aria-describedby="socks-import-hint socks-import-status" autocomplete="off" id="exit-socks-link" maxlength="4096" placeholder="socks5://账号:密码@IP:端口" spellcheck="false" type="password"/><button aria-label="显示 SOCKS5 链接" class="password-toggle" data-toggle-password="exit-socks-link" type="button">显示</button></div>
+<div class="socks-import-actions"><button class="button secondary" id="parse-socks-link" type="button">解析链接 <span aria-hidden="true">↗</span></button><p aria-live="polite" class="socks-import-status" id="socks-import-status" role="status"></p></div>
+<p class="field-hint" id="socks-import-hint">粘贴链接后自动填入下方字段，确认后保存。</p>
+</div>
+<label for="exit-name">出口名称</label><input id="exit-name" maxlength="32" placeholder="例如：美国主出口" required=""/><div class="form-row"><div><label for="exit-address">代理服务器地址</label><input id="exit-address" placeholder="IP 地址或域名" required="" spellcheck="false"/></div><div class="port-field"><label for="exit-port">端口</label><input id="exit-port" max="65535" min="1" required="" type="number" value="1080"/></div></div><label for="exit-auth">认证方式</label><select id="exit-auth"><option value="credentials">账号与密码</option><option value="none">无账号密码 / 来源 IP 白名单</option></select><div id="credential-fields"><label for="exit-user">代理账号</label><input autocomplete="off" id="exit-user" placeholder="服务商提供的账号" type="password"/><label for="exit-password">代理密码</label><div class="password-wrap"><input autocomplete="new-password" id="exit-password" placeholder="服务商提供的密码" type="password"/><button aria-label="显示代理密码" class="password-toggle" data-toggle-password="exit-password" type="button">显示</button></div><p class="field-hint" id="credential-hint">代理资料保存在服务器，不会写入下载的客户端配置。</p></div><div class="field-hint" hidden="" id="allowlist-hint">请在代理服务商的来源 IP 白名单中，允许你的 VPS 公网出口地址。</div><label for="exit-expected">预期出口 IP <span class="optional">可选</span></label><input id="exit-expected" placeholder="不知道时留空，测试后自动显示实际出口" spellcheck="false"/><p class="field-hint">填入服务商分配的最终出口 IP；代理服务器地址可能与它不同。</p><p class="field-error" id="exit-error" role="alert"></p></div><div class="dialog-footer"><button class="button secondary" id="cancel-dialog" type="button">取消</button><button class="button primary" id="save-exit" type="submit">保存出口</button></div></form></dialog>
+<dialog class="confirm-dialog" id="confirm-dialog"><form method="dialog"><p class="eyebrow">CONFIRM ACTION</p><h2 id="confirm-title">确认操作</h2><p class="muted" id="confirm-message"></p><div class="confirm-actions"><button class="button secondary" value="cancel">取消</button><button class="button primary" id="confirm-ok" value="confirm">确认</button></div></form></dialog>
+<dialog class="exit-dialog" id="user-password-dialog"><form id="user-password-form"><div class="dialog-header"><div><p class="eyebrow">MEMBER / PASSWORD</p><h2>重置用户密码</h2></div><button aria-label="关闭" class="icon-button" id="close-user-password" type="button">×</button></div><div class="dialog-content"><input id="reset-user-id" type="hidden"/><p class="field-hint" id="reset-user-label"></p><label for="reset-user-password">新登录密码</label><input autocomplete="new-password" id="reset-user-password" maxlength="128" minlength="12" required="" type="password"/><label for="reset-user-confirm">再次输入新密码</label><input autocomplete="new-password" id="reset-user-confirm" maxlength="128" minlength="12" required="" type="password"/><p class="field-hint">保存后，该账号的所有网页会话需要重新登录。密码不会显示在用户列表中。</p><p class="field-error" id="reset-user-error" role="alert"></p></div><div class="dialog-footer"><button class="button secondary" id="cancel-user-password" type="button">取消</button><button class="button primary" id="reset-user-submit" type="submit">保存新密码</button></div></form></dialog>
+<dialog aria-labelledby="draft-dialog-title" class="confirm-dialog" id="draft-dialog"><h2 id="draft-dialog-title">有未保存的内容</h2><p class="muted" id="draft-dialog-message"></p><div class="draft-dialog-actions"><button class="button primary" id="draft-save" type="button">保存并继续</button><button class="button secondary" id="draft-discard" type="button">放弃并继续</button><button class="button secondary" id="draft-stay" type="button">继续编辑</button></div></dialog>
+<dialog class="exit-dialog" id="user-limits-dialog"><form id="user-limits-form"><div class="dialog-header"><h2>成员用量与限速</h2><button aria-label="关闭" class="icon-button" id="close-user-limits" type="button">×</button></div><div class="dialog-content"><input id="limits-user-id" type="hidden"/><p class="field-hint" id="limits-user-label"></p><label for="limits-quota">每月额度（GB，0 为不限制）</label><input id="limits-quota" max="10000000" min="0" required="" step="any" type="number"/><label for="limits-rate">最高速度（Mbps，0 为不限制）</label><input id="limits-rate" max="10000" min="0" required="" step="any" type="number"/><p class="field-hint">额度按本账号经过服务器的上传与下载总量计算。限速与额度执行状态以服务器返回为准，保存后核对结果。</p><p class="field-error" id="limits-error" role="alert"></p></div><div class="dialog-footer"><button class="button primary" type="submit">保存额度设置</button></div></form></dialog>
+<dialog class="confirm-dialog" id="typed-confirm-dialog"><form method="dialog"><h2 id="typed-confirm-title"></h2><p class="muted" id="typed-confirm-message"></p><label for="typed-confirm-input">输入目标成员的登录账号确认</label><input autocomplete="off" id="typed-confirm-input" spellcheck="false"/><div class="confirm-actions"><button class="button secondary" value="cancel">取消</button><button class="button primary" disabled="" id="typed-confirm-ok" value="confirm">确认操作</button></div></form></dialog>
+<dialog class="exit-dialog" id="backup-export-dialog"><form id="backup-export-form"><div class="dialog-header"><h2>导出为可携带的加密备份</h2><button aria-label="关闭" class="icon-button" id="close-backup-export" type="button">×</button></div><div class="dialog-content"><input id="export-backup-id" type="hidden"/><label for="export-password">独立导出密码</label><input autocomplete="new-password" id="export-password" maxlength="128" minlength="12" required="" type="password"/><label for="export-password-confirm">再次输入导出密码</label><input autocomplete="new-password" id="export-password-confirm" maxlength="128" minlength="12" required="" type="password"/><p class="field-hint">下载文件始终加密。恢复到其他环境时使用此密码；请另行妥善保存。</p></div><div class="dialog-footer"><button class="button primary" type="submit">加密并下载</button></div></form></dialog>
+<dialog aria-describedby="guide-description" aria-labelledby="guide-title" class="user-guide-dialog" id="user-guide-dialog">
+<header class="guide-header">
+<div><p class="eyebrow">NODE / 使用说明</p><h2 id="guide-title">按步骤，把连接设置好<span class="heading-dot">.</span></h2><p id="guide-description">每个操作都有箭头步骤。选择一项，查看说明，或让箭头带你找到网页上的按钮。</p></div>
+<button aria-label="关闭使用说明" autofocus="" class="icon-button guide-close-button" id="guide-close" type="button">×</button>
+</header>
+<div class="guide-intro"><span aria-hidden="true" class="guide-intro-symbol">↗</span><p>先看操作顺序，再跟着页面箭头完成。需要回看时，随时打开右上角的「使用说明」。</p></div>
+<p class="guide-notice" hidden="" id="guide-notice" role="status"></p>
+<div class="guide-topics" id="guide-topics"></div>
+<footer class="guide-footer"><span aria-hidden="true" class="guide-footer-mark">→</span><p>箭头指向要操作的位置；修改内容后，请按对应页面的提示保存。</p></footer>
+</dialog>
+<dialog aria-describedby="guide-tour-body" aria-labelledby="guide-tour-title" class="guide-tour" id="guide-tour">
+<div aria-hidden="true" class="guide-tour-highlight" hidden="" id="guide-tour-highlight"></div>
+<svg aria-hidden="true" class="guide-tour-arrow" focusable="false" hidden="" id="guide-tour-arrow">
+<defs><marker id="guide-arrow-head" markerheight="12" markerunits="userSpaceOnUse" markerwidth="12" orient="auto" refx="10" refy="6" viewbox="0 0 12 12"><path class="guide-arrow-tip" d="M1 1 L10 6 L1 11 Z"></path></marker></defs>
+<path class="guide-tour-arrow-line" id="guide-tour-arrow-line" marker-end="url(#guide-arrow-head)"></path>
+</svg>
+<section aria-describedby="guide-tour-body" aria-labelledby="guide-tour-title" class="guide-tour-panel" hidden="" id="guide-tour-panel" role="region" tabindex="-1">
+<div class="guide-tour-header"><span class="guide-tour-label">跟着箭头操作</span><button aria-label="结束页面导览" class="guide-tour-exit" id="guide-tour-exit" type="button">结束导览 <span aria-hidden="true">×</span></button></div>
+<span class="guide-tour-counter" id="guide-tour-counter">1 / 1</span>
+<h2 id="guide-tour-title">找到这一步的操作位置</h2>
+<div aria-atomic="true" aria-live="polite" class="guide-tour-body" id="guide-tour-body"></div>
+<div class="guide-tour-actions"><button class="button secondary small" id="guide-tour-prev" type="button"><span aria-hidden="true">←</span> 上一步</button><button class="button primary small" id="guide-tour-next" type="button">下一步 <span aria-hidden="true">→</span></button></div>
+</section>
+</dialog>
+<div class="toast" hidden="" id="toast" role="status"></div>
+<template id="exit-template"><article class="exit-card"><div class="exit-card-top"><div class="exit-monogram"></div><span class="exit-badge"></span><button aria-label="编辑出口" class="exit-menu icon-button" data-action="edit">⋯</button></div><h3 class="exit-name"></h3><p class="exit-endpoint"></p><dl class="exit-facts"><div><dt>实际出口</dt><dd class="exit-observed">待检测</dd></div><div><dt>认证方式</dt><dd class="exit-auth-type"></dd></div></dl><div class="exit-card-actions"><button class="button secondary small" data-action="test">检测连接</button><button class="button primary small" data-action="apply">应用并切换 ↗</button></div><div class="exit-card-foot"><span class="exit-tested">尚未检测</span><button class="text-button delete-button" data-action="delete">删除</button></div></article></template>
+<template id="path-route-template"><button class="path-route" type="button"><span aria-hidden="true" class="route-line"><i class="route-particle"></i><i class="route-particle"></i></span><span class="node-icon exit-icon"><svg aria-hidden="true" viewbox="0 0 40 40"><circle class="globe-outline" cx="20" cy="20" r="12"></circle><path class="globe-grid" d="M8 20h24m-12-12c-7 8-7 16 0 24m0-24c7 8 7 16 0 24M10 14h20m-20 12h20"></path><g class="globe-orbit"><circle cx="20" cy="20" r="17"></circle><circle class="globe-marker" cx="20" cy="3" r="2"></circle></g></svg></span><span class="route-copy"><span class="route-heading"><strong class="route-name"></strong><span class="route-badge"></span></span><small class="route-ip"></small><span class="route-status"></span></span></button></template>
+<template id="user-template"><article class="user-card"><div class="user-card-heading"><div class="user-avatar"></div><div class="user-copy"><h3 class="user-display-name"></h3><p class="user-username"></p></div><span class="user-status"></span></div><dl class="user-facts"><div><dt>独立入口</dt><dd class="user-port"></dd></div><div><dt>静态出口</dt><dd class="user-exit-count"></dd></div><div><dt>当前路径</dt><dd class="user-active-target"></dd></div><div><dt>代理服务</dt><dd class="user-service"></dd></div></dl><div class="user-usage" role="status"><p class="user-usage-summary operation-status"></p><dl class="operation-facts user-traffic-facts"></dl></div><div class="user-card-actions"><span class="user-role"></span><button class="text-button" data-user-action="reset" type="button">重置密码</button><button class="button secondary small" data-user-action="enabled" type="button"></button><button class="text-button" data-user-action="limits" type="button">用量与额度</button><button class="text-button" data-user-action="rotate" type="button">更换节点身份</button><button class="text-button delete-button" data-user-action="delete" type="button">删除成员</button></div></article></template>
+</body>
+</html>
+

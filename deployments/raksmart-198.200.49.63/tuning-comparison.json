@@ -1,0 +1,1050 @@
+{
+  "reports": [
+    {
+      "label": "idle-standard",
+      "success": false,
+      "measurement_valid": null,
+      "started_at": "2026-10-10T12:38:25.551320+00:00",
+      "finished_at": "2026-10-10T12:38:51.769579+00:00",
+      "client_profile": "standard",
+      "server_profile": "standard",
+      "settings_preserved": null,
+      "cleanup_ok": true,
+      "failure_stage": "session-baseline",
+      "metrics": {
+        "warm_ttfb_ms": 516.413
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 1,
+        "successes": 1,
+        "median": 1206.054,
+        "range": [
+          1206.054,
+          1206.054
+        ],
+        "error_categories": {}
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 516.413,
+        "range": [
+          513.107,
+          519.966
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 5
+        },
+        "missing": 0
+      },
+      "load_evidence": {},
+      "idle_observations": []
+    },
+    {
+      "label": "idle-standard",
+      "success": true,
+      "measurement_valid": true,
+      "started_at": "2026-10-10T12:42:14.228611+00:00",
+      "finished_at": "2026-10-10T12:47:20.069665+00:00",
+      "client_profile": "standard",
+      "server_profile": "standard",
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "failure_stage": null,
+      "metrics": {
+        "warm_ttfb_ms": 525.107
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 1,
+        "successes": 1,
+        "median": 1233.85,
+        "range": [
+          1233.85,
+          1233.85
+        ],
+        "error_categories": {}
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 525.107,
+        "range": [
+          517.922,
+          532.108
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 5
+        },
+        "missing": 0
+      },
+      "load_evidence": {},
+      "idle_observations": [
+        {
+          "seconds": 30,
+          "request_success": true,
+          "ttfb_ms": 523.969,
+          "tls_ready_ms": 240.418,
+          "http_wait_ms": 283.267,
+          "no_account_reconnect_observed": true,
+          "connected_event_delta": 0,
+          "disconnected_event_delta": 0,
+          "isolated_session_proven": false
+        },
+        {
+          "seconds": 60,
+          "request_success": true,
+          "ttfb_ms": 545.206,
+          "tls_ready_ms": 252.881,
+          "http_wait_ms": 292.086,
+          "no_account_reconnect_observed": true,
+          "connected_event_delta": 0,
+          "disconnected_event_delta": 0,
+          "isolated_session_proven": false
+        },
+        {
+          "seconds": 180,
+          "request_success": true,
+          "ttfb_ms": 521.251,
+          "tls_ready_ms": 236.982,
+          "http_wait_ms": 284.077,
+          "no_account_reconnect_observed": true,
+          "connected_event_delta": 0,
+          "disconnected_event_delta": 0,
+          "isolated_session_proven": false
+        }
+      ]
+    },
+    {
+      "label": "standard-initial",
+      "success": false,
+      "measurement_valid": false,
+      "started_at": "2026-10-10T12:47:35.281194+00:00",
+      "finished_at": "2026-10-10T12:48:49.086014+00:00",
+      "client_profile": "standard",
+      "server_profile": "standard",
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "failure_stage": null,
+      "metrics": {
+        "warm_ttfb_ms": 447.075,
+        "idle_covered_ttfb_ms": 450.382,
+        "idle_covered_tcp_ms": 203.228,
+        "download_mbps": 48.95,
+        "download_covered_ttfb_ms": 455.648,
+        "download_covered_tcp_ms": 207.131,
+        "upload_mbps": 55.76,
+        "upload_covered_ttfb_ms": 447.132,
+        "upload_covered_tcp_ms": 178.008
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 3,
+        "successes": 2,
+        "median": 1202.95,
+        "range": [
+          1073.806,
+          1332.094
+        ],
+        "error_categories": {
+          "timeout": 1
+        }
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 447.075,
+        "range": [
+          432.494,
+          662.266
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 6
+        },
+        "missing": 1
+      },
+      "load_evidence": {
+        "idle": {
+          "full_blocks": 0,
+          "actual_bytes": 0,
+          "active_transfer_seconds": 0,
+          "phase_wall_seconds": 4.001,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 2,
+            "successes": 2,
+            "median": 450.382,
+            "range": [
+              443.004,
+              457.76
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 2,
+            "successes": 2,
+            "median": 203.228,
+            "range": [
+              201.406,
+              205.051
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 2
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {},
+            "missing": 0
+          },
+          "covered_light_successes": 2,
+          "covered_tcp_successes": 2
+        },
+        "download": {
+          "full_blocks": 8,
+          "actual_bytes": 67108864,
+          "active_transfer_seconds": 10.968,
+          "phase_wall_seconds": 14.003,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 464.095,
+            "range": [
+              444.809,
+              866.802
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 171.856,
+            "range": [
+              158.985,
+              238.119
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 7
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {
+              "SJC": 8
+            },
+            "missing": 0
+          },
+          "covered_light_successes": 4,
+          "covered_tcp_successes": 5
+        },
+        "upload": {
+          "full_blocks": 8,
+          "actual_bytes": 67108864,
+          "active_transfer_seconds": 9.628,
+          "phase_wall_seconds": 14.003,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 452.497,
+            "range": [
+              435.013,
+              578.202
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 209.559,
+            "range": [
+              168.822,
+              1176.877
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 7
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {
+              "SJC": 8
+            },
+            "missing": 0
+          },
+          "covered_light_successes": 2,
+          "covered_tcp_successes": 3
+        }
+      },
+      "idle_observations": []
+    },
+    {
+      "label": "conservative",
+      "success": false,
+      "measurement_valid": false,
+      "started_at": "2026-10-10T12:49:48.790790+00:00",
+      "finished_at": "2026-10-10T12:51:05.458467+00:00",
+      "client_profile": "conservative",
+      "server_profile": "conservative",
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "failure_stage": null,
+      "metrics": {
+        "warm_ttfb_ms": 449.512,
+        "idle_covered_ttfb_ms": 467.033,
+        "idle_covered_tcp_ms": 168.909,
+        "download_mbps": 45.965,
+        "download_covered_ttfb_ms": 629.638,
+        "download_covered_tcp_ms": 196.872,
+        "upload_mbps": 25.858,
+        "upload_covered_ttfb_ms": 454.76,
+        "upload_covered_tcp_ms": 203.083
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 3,
+        "successes": 1,
+        "median": 1095.787,
+        "range": [
+          1095.787,
+          1095.787
+        ],
+        "error_categories": {
+          "timeout": 2
+        }
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 449.512,
+        "range": [
+          442.282,
+          467.909
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 5
+        },
+        "missing": 2
+      },
+      "load_evidence": {
+        "idle": {
+          "full_blocks": 0,
+          "actual_bytes": 0,
+          "active_transfer_seconds": 0,
+          "phase_wall_seconds": 4.001,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 2,
+            "successes": 2,
+            "median": 467.033,
+            "range": [
+              464.317,
+              469.748
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 2,
+            "successes": 2,
+            "median": 168.909,
+            "range": [
+              163.654,
+              174.163
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 2
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {},
+            "missing": 0
+          },
+          "covered_light_successes": 2,
+          "covered_tcp_successes": 2
+        },
+        "download": {
+          "full_blocks": 8,
+          "actual_bytes": 67108864,
+          "active_transfer_seconds": 11.68,
+          "phase_wall_seconds": 14.003,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 603.602,
+            "range": [
+              444.7,
+              653.42
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 204.779,
+            "range": [
+              161.002,
+              300.879
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 7
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {
+              "SJC": 8
+            },
+            "missing": 0
+          },
+          "covered_light_successes": 3,
+          "covered_tcp_successes": 6
+        },
+        "upload": {
+          "full_blocks": 6,
+          "actual_bytes": 50331648,
+          "active_transfer_seconds": 15.572,
+          "phase_wall_seconds": 15.647,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 453.988,
+            "range": [
+              447.022,
+              460.032
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 203.083,
+            "range": [
+              172.842,
+              211.043
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 7
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {
+              "SJC": 6
+            },
+            "missing": 0
+          },
+          "covered_light_successes": 6,
+          "covered_tcp_successes": 7
+        }
+      },
+      "idle_observations": []
+    },
+    {
+      "label": "aggressive",
+      "success": true,
+      "measurement_valid": true,
+      "started_at": "2026-10-10T12:52:02.403509+00:00",
+      "finished_at": "2026-10-10T12:53:13.013336+00:00",
+      "client_profile": "aggressive",
+      "server_profile": "aggressive",
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "failure_stage": null,
+      "metrics": {
+        "warm_ttfb_ms": 553.637,
+        "idle_covered_ttfb_ms": 533.776,
+        "idle_covered_tcp_ms": 179.541,
+        "download_mbps": 40.819,
+        "download_covered_ttfb_ms": 545.405,
+        "download_covered_tcp_ms": 205.719,
+        "upload_mbps": 39.687,
+        "upload_covered_ttfb_ms": 530.527,
+        "upload_covered_tcp_ms": 198.612
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 3,
+        "successes": 3,
+        "median": 1282.048,
+        "range": [
+          1082.462,
+          1321.014
+        ],
+        "error_categories": {}
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 553.637,
+        "range": [
+          517.847,
+          765.888
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 7
+        },
+        "missing": 0
+      },
+      "load_evidence": {
+        "idle": {
+          "full_blocks": 0,
+          "actual_bytes": 0,
+          "active_transfer_seconds": 0,
+          "phase_wall_seconds": 4.001,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 2,
+            "successes": 2,
+            "median": 533.776,
+            "range": [
+              531.046,
+              536.506
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 2,
+            "successes": 2,
+            "median": 179.541,
+            "range": [
+              176.785,
+              182.297
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 2
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {},
+            "missing": 0
+          },
+          "covered_light_successes": 2,
+          "covered_tcp_successes": 2
+        },
+        "download": {
+          "full_blocks": 8,
+          "actual_bytes": 67108864,
+          "active_transfer_seconds": 13.153,
+          "phase_wall_seconds": 14.004,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 545.405,
+            "range": [
+              533.063,
+              661.716
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 200.759,
+            "range": [
+              158.771,
+              292.052
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 7
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {
+              "SJC": 8
+            },
+            "missing": 0
+          },
+          "covered_light_successes": 5,
+          "covered_tcp_successes": 6
+        },
+        "upload": {
+          "full_blocks": 8,
+          "actual_bytes": 67108864,
+          "active_transfer_seconds": 13.527,
+          "phase_wall_seconds": 14.003,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 534.579,
+            "range": [
+              529.412,
+              545.608
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 197.054,
+            "range": [
+              167.563,
+              234.179
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 7
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {
+              "SJC": 8
+            },
+            "missing": 0
+          },
+          "covered_light_successes": 3,
+          "covered_tcp_successes": 6
+        }
+      },
+      "idle_observations": []
+    },
+    {
+      "label": "standard-final",
+      "success": true,
+      "measurement_valid": true,
+      "started_at": "2026-10-10T12:54:15.643532+00:00",
+      "finished_at": "2026-10-10T12:55:26.264888+00:00",
+      "client_profile": "standard",
+      "server_profile": "standard",
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "failure_stage": null,
+      "metrics": {
+        "warm_ttfb_ms": 522.905,
+        "idle_covered_ttfb_ms": 671.327,
+        "idle_covered_tcp_ms": 184.075,
+        "download_mbps": 39.583,
+        "download_covered_ttfb_ms": 563.227,
+        "download_covered_tcp_ms": 207.468,
+        "upload_mbps": 37.758,
+        "upload_covered_ttfb_ms": 545.416,
+        "upload_covered_tcp_ms": 182.655
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 3,
+        "successes": 3,
+        "median": 1228.695,
+        "range": [
+          1214.399,
+          1239.746
+        ],
+        "error_categories": {}
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 522.905,
+        "range": [
+          519.618,
+          553.964
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 7
+        },
+        "missing": 0
+      },
+      "load_evidence": {
+        "idle": {
+          "full_blocks": 0,
+          "actual_bytes": 0,
+          "active_transfer_seconds": 0,
+          "phase_wall_seconds": 4.001,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 2,
+            "successes": 2,
+            "median": 671.327,
+            "range": [
+              543.972,
+              798.682
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 2,
+            "successes": 2,
+            "median": 184.075,
+            "range": [
+              164.242,
+              203.908
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 2
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {},
+            "missing": 0
+          },
+          "covered_light_successes": 2,
+          "covered_tcp_successes": 2
+        },
+        "download": {
+          "full_blocks": 8,
+          "actual_bytes": 67108864,
+          "active_transfer_seconds": 13.563,
+          "phase_wall_seconds": 14.003,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 622.325,
+            "range": [
+              551.697,
+              837.119
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 204.55,
+            "range": [
+              168.942,
+              294.361
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 7
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {
+              "SJC": 8
+            },
+            "missing": 0
+          },
+          "covered_light_successes": 5,
+          "covered_tcp_successes": 6
+        },
+        "upload": {
+          "full_blocks": 8,
+          "actual_bytes": 67108864,
+          "active_transfer_seconds": 14.219,
+          "phase_wall_seconds": 14.32,
+          "sufficient_coverage": true,
+          "expected_window_end_partials": 0,
+          "unexpected_transfer_errors": {},
+          "light_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 549.114,
+            "range": [
+              538.208,
+              818.287
+            ],
+            "error_categories": {}
+          },
+          "tcp_all": {
+            "attempts": 7,
+            "successes": 7,
+            "median": 180.843,
+            "range": [
+              160.848,
+              212.464
+            ],
+            "error_categories": {}
+          },
+          "light_regions": {
+            "counts": {
+              "SJC": 7
+            },
+            "missing": 0
+          },
+          "transfer_regions": {
+            "counts": {
+              "SJC": 8
+            },
+            "missing": 0
+          },
+          "covered_light_successes": 3,
+          "covered_tcp_successes": 6
+        }
+      },
+      "idle_observations": []
+    }
+  ],
+  "unreadable_files": [
+    "tuning-comparison.json"
+  ],
+  "comparison": {
+    "bracketing_standard_available": true,
+    "candidate_comparisons": [
+      {
+        "label": "conservative",
+        "identity_matches": true,
+        "within_baseline_time_bracket": true,
+        "measurement_success": false,
+        "metrics": {
+          "warm_ttfb_ms": {
+            "observed": 449.512,
+            "standard_initial": 447.075,
+            "standard_final": 522.905,
+            "interpolated_standard": 472.735,
+            "vs_interpolated_standard_percent": -4.91,
+            "vs_initial_percent": 0.55,
+            "vs_final_percent": -14.04
+          },
+          "idle_covered_ttfb_ms": {
+            "observed": 467.033,
+            "standard_initial": 450.382,
+            "standard_final": 671.327,
+            "interpolated_standard": 525.148,
+            "vs_interpolated_standard_percent": -11.07,
+            "vs_initial_percent": 3.7,
+            "vs_final_percent": -30.43
+          },
+          "idle_covered_tcp_ms": {
+            "observed": 168.909,
+            "standard_initial": 203.228,
+            "standard_final": 184.075,
+            "interpolated_standard": 196.747,
+            "vs_interpolated_standard_percent": -14.15,
+            "vs_initial_percent": -16.89,
+            "vs_final_percent": -8.24
+          },
+          "download_mbps": {
+            "observed": 45.965,
+            "standard_initial": 48.95,
+            "standard_final": 39.583,
+            "interpolated_standard": 45.78,
+            "vs_interpolated_standard_percent": 0.4,
+            "vs_initial_percent": -6.1,
+            "vs_final_percent": 16.12
+          },
+          "download_covered_ttfb_ms": {
+            "observed": 629.638,
+            "standard_initial": 455.648,
+            "standard_final": 563.227,
+            "interpolated_standard": 492.052,
+            "vs_interpolated_standard_percent": 27.96,
+            "vs_initial_percent": 38.19,
+            "vs_final_percent": 11.79
+          },
+          "download_covered_tcp_ms": {
+            "observed": 196.872,
+            "standard_initial": 207.131,
+            "standard_final": 207.468,
+            "interpolated_standard": 207.245,
+            "vs_interpolated_standard_percent": -5.01,
+            "vs_initial_percent": -4.95,
+            "vs_final_percent": -5.11
+          },
+          "upload_mbps": {
+            "observed": 25.858,
+            "standard_initial": 55.76,
+            "standard_final": 37.758,
+            "interpolated_standard": 49.668,
+            "vs_interpolated_standard_percent": -47.94,
+            "vs_initial_percent": -53.63,
+            "vs_final_percent": -31.52
+          },
+          "upload_covered_ttfb_ms": {
+            "observed": 454.76,
+            "standard_initial": 447.132,
+            "standard_final": 545.416,
+            "interpolated_standard": 480.391,
+            "vs_interpolated_standard_percent": -5.34,
+            "vs_initial_percent": 1.71,
+            "vs_final_percent": -16.62
+          },
+          "upload_covered_tcp_ms": {
+            "observed": 203.083,
+            "standard_initial": 178.008,
+            "standard_final": 182.655,
+            "interpolated_standard": 179.581,
+            "vs_interpolated_standard_percent": 13.09,
+            "vs_initial_percent": 14.09,
+            "vs_final_percent": 11.18
+          }
+        }
+      },
+      {
+        "label": "aggressive",
+        "identity_matches": true,
+        "within_baseline_time_bracket": true,
+        "measurement_success": true,
+        "metrics": {
+          "warm_ttfb_ms": {
+            "observed": 553.637,
+            "standard_initial": 447.075,
+            "standard_final": 522.905,
+            "interpolated_standard": 497.567,
+            "vs_interpolated_standard_percent": 11.27,
+            "vs_initial_percent": 23.84,
+            "vs_final_percent": 5.88
+          },
+          "idle_covered_ttfb_ms": {
+            "observed": 533.776,
+            "standard_initial": 450.382,
+            "standard_final": 671.327,
+            "interpolated_standard": 597.5,
+            "vs_interpolated_standard_percent": -10.67,
+            "vs_initial_percent": 18.52,
+            "vs_final_percent": -20.49
+          },
+          "idle_covered_tcp_ms": {
+            "observed": 179.541,
+            "standard_initial": 203.228,
+            "standard_final": 184.075,
+            "interpolated_standard": 190.475,
+            "vs_interpolated_standard_percent": -5.74,
+            "vs_initial_percent": -11.66,
+            "vs_final_percent": -2.46
+          },
+          "download_mbps": {
+            "observed": 40.819,
+            "standard_initial": 48.95,
+            "standard_final": 39.583,
+            "interpolated_standard": 42.713,
+            "vs_interpolated_standard_percent": -4.43,
+            "vs_initial_percent": -16.61,
+            "vs_final_percent": 3.12
+          },
+          "download_covered_ttfb_ms": {
+            "observed": 545.405,
+            "standard_initial": 455.648,
+            "standard_final": 563.227,
+            "interpolated_standard": 527.28,
+            "vs_interpolated_standard_percent": 3.44,
+            "vs_initial_percent": 19.7,
+            "vs_final_percent": -3.16
+          },
+          "download_covered_tcp_ms": {
+            "observed": 205.719,
+            "standard_initial": 207.131,
+            "standard_final": 207.468,
+            "interpolated_standard": 207.355,
+            "vs_interpolated_standard_percent": -0.79,
+            "vs_initial_percent": -0.68,
+            "vs_final_percent": -0.84
+          },
+          "upload_mbps": {
+            "observed": 39.687,
+            "standard_initial": 55.76,
+            "standard_final": 37.758,
+            "interpolated_standard": 43.773,
+            "vs_interpolated_standard_percent": -9.33,
+            "vs_initial_percent": -28.83,
+            "vs_final_percent": 5.11
+          },
+          "upload_covered_ttfb_ms": {
+            "observed": 530.527,
+            "standard_initial": 447.132,
+            "standard_final": 545.416,
+            "interpolated_standard": 512.575,
+            "vs_interpolated_standard_percent": 3.5,
+            "vs_initial_percent": 18.65,
+            "vs_final_percent": -2.73
+          },
+          "upload_covered_tcp_ms": {
+            "observed": 198.612,
+            "standard_initial": 178.008,
+            "standard_final": 182.655,
+            "interpolated_standard": 181.102,
+            "vs_interpolated_standard_percent": 9.67,
+            "vs_initial_percent": 11.57,
+            "vs_final_percent": 8.74
+          }
+        }
+      }
+    ],
+    "standard_final_vs_initial_percent": {
+      "warm_ttfb_ms": 16.96,
+      "idle_covered_ttfb_ms": 49.06,
+      "idle_covered_tcp_ms": -9.42,
+      "download_mbps": -19.14,
+      "download_covered_ttfb_ms": 23.61,
+      "download_covered_tcp_ms": 0.16,
+      "upload_mbps": -32.28,
+      "upload_covered_ttfb_ms": 21.98,
+      "upload_covered_tcp_ms": 2.61
+    }
+  },
+  "limits": [
+    "Sequential profile trials may be confounded by network drift and target/CDN changes.",
+    "Time interpolation is descriptive and cannot remove nonlinear drift.",
+    "Fresh select-only client scores do not measure production AUTO startup gain.",
+    "Load overlap proves concurrent active HTTP transfers, not sustained link saturation.",
+    "Expected transfer cutoff timeouts are reported separately from unexpected failures.",
+    "Account session counters cannot conclusively identify the isolated QUIC connection.",
+    "Small sample counts do not support p95 or long-term bandwidth claims."
+  ]
+}

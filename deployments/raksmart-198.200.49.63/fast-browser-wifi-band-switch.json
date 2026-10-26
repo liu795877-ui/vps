@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "connection_attempted": true,
+  "profile_settings_changed": false,
+  "driver_settings_changed": false,
+  "wifi_password_read": false,
+  "elevation_requested": false,
+  "before": {
+    "Name": "WLAN",
+    "State": "connected",
+    "SSID": "HONOR",
+    "Profile": "HONOR",
+    "Band": "2.4 GHz",
+    "Channel": "1"
+  },
+  "candidate_signal_percent": 94,
+  "connect_return_code": 0,
+  "after": {
+    "Name": "WLAN",
+    "State": "connected",
+    "SSID": "HONOR",
+    "Profile": "HONOR",
+    "Band": "5 GHz",
+    "Channel": "44"
+  },
+  "same_profile": true,
+  "original_access_network_retained": true
+}

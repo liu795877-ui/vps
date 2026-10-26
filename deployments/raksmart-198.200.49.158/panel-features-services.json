@@ -1,0 +1,22 @@
+{
+  "services": {
+    "xray.service": {
+      "active": true,
+      "enabled": true
+    },
+    "raksmart-hy2.service": {
+      "active": true,
+      "enabled": true
+    },
+    "vps-panel.service": {
+      "active": true,
+      "enabled": true
+    },
+    "caddy.service": {
+      "active": true,
+      "enabled": true
+    }
+  },
+  "xray_config_sha256": "704bfe6160f8f687f20eaa930539847ae9f2fb93d49edcf6714dfa6c5fe7d518",
+  "linux_validation_skipped": 2
+}

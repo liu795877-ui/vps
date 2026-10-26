@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-09T17:14:40+08:00",
+  "path": "Temporary Mihomo bound to physical WLAN -> RAKsmart-US-158-HY2 UDP443",
+  "direction": "download",
+  "parallel_streams": 1,
+  "requested_bytes_per_stream": 5000000,
+  "checks": [
+    {
+      "sample": 1,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 5000000,
+          "size_upload": 0,
+          "time_total": 2.005767,
+          "time_starttransfer": 0.429694,
+          "time_appconnect": 0.214645,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        }
+      ],
+      "actual_bytes": 5000000,
+      "wall_seconds": 2.086,
+      "mbps_including_startup": 19.171,
+      "MB_per_second": 2.396,
+      "success": true
+    }
+  ],
+  "identity_attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0,
+      "exit_ip": "198.200.49.158",
+      "error": "",
+      "matches_vps": true
+    }
+  ],
+  "exit_ip": "198.200.49.158",
+  "identity_exit_code": 0,
+  "identity_error": "",
+  "exit_matches_vps": true
+}

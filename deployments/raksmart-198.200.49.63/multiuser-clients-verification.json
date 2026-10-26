@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "checked_at": "2026-10-09T14:18:49.127432+00:00",
+  "samples": [
+    {
+      "account": "member-a",
+      "server_egress_verified": true,
+      "observed_ip": "198.200.49.63"
+    },
+    {
+      "account": "member-b",
+      "server_egress_verified": true,
+      "observed_ip": "198.200.49.63"
+    },
+    {
+      "account": "member-a",
+      "other_member_uuid_rejected": true
+    },
+    {
+      "account": "member-b",
+      "other_member_uuid_rejected": true
+    }
+  ],
+  "complete_member_profile_syntax": [
+    {
+      "account": "user-a",
+      "official_core_accepted": true,
+      "complete_smart_profile": true,
+      "rule_provider_count": 27
+    },
+    {
+      "account": "user-b",
+      "official_core_accepted": true,
+      "complete_smart_profile": true,
+      "rule_provider_count": 27
+    }
+  ],
+  "public_proxy_connections_verified": false,
+  "server_internal_proxy_connections_verified": true,
+  "transport": "physical_wlan_ssh_forward",
+  "public_ports": [
+    {
+      "port": 1443,
+      "public_tcp_reachable": false
+    },
+    {
+      "port": 2443,
+      "public_tcp_reachable": false
+    }
+  ],
+  "credentials_not_interchangeable": true
+}

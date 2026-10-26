@@ -1,0 +1,58 @@
+{
+  "success": false,
+  "started_at": "2026-10-10T13:48:41.056671+00:00",
+  "mode": "run",
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "isolated_hy2_port_changes": 2,
+  "candidate_health_policy": {
+    "url": "https://www.gstatic.com/generate_204",
+    "expected-status": "204",
+    "interval": 30,
+    "lazy": false,
+    "timeout": 5000
+  },
+  "production_policy_required": false,
+  "cleanup_errors": [],
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "script_sha256": "65c5f80177c4a4c6ec67f56c07063348d2df7195bde3a1fde273c2c6db9563d4",
+  "core_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "method": {
+    "group_from_current_full_admin_profile": true,
+    "nodes_from_current_full_admin_profile": true,
+    "rule_scope": "minimal MATCH,AUTO to isolate transport; production DNS/providers/rules unchanged",
+    "tun": false,
+    "physical_interface": "WLAN",
+    "bind_address": "127.0.0.1",
+    "only_isolated_hy2_port_broken": 65534,
+    "recovery": "same-process local controller reload",
+    "automatic_health_check_selection": true,
+    "bulk_download_bytes": 0
+  },
+  "actual_group_health_policy": {
+    "url": "https://www.gstatic.com/generate_204",
+    "expected-status": "204",
+    "interval": 30,
+    "lazy": false,
+    "timeout": 5000
+  },
+  "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+  "account_settings_sha256": "57feb39e16db705dc7a558631b469f6c6a5312efa869aa0dcbeb4ee458ba2fc8",
+  "failure_stage": "automatic-tcp-fallback",
+  "error_type": "TypeError",
+  "safe_error_location": {
+    "file": "verify_auto_transport_recovery.py",
+    "line": 106,
+    "function": "light_with_chain"
+  },
+  "own_mihomo_process_terminated": true,
+  "own_curl_processes_terminated": true,
+  "temporary_private_files_removed": true,
+  "finished_at": "2026-10-10T13:49:07.662916+00:00",
+  "total_wall_seconds": 26.606
+}

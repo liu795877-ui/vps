@@ -1,0 +1,83 @@
+{
+  "time_utc": "2026-10-24T02:00:01Z",
+  "source_files": 43,
+  "source_mismatches": [],
+  "sqlite_version": "3.7.17",
+  "members": [
+    {
+      "id": "7bb5122a2ef4a515",
+      "role": "member",
+      "enabled": true,
+      "port": 1443
+    },
+    {
+      "id": "06c26698c110e726",
+      "role": "member",
+      "enabled": true,
+      "port": 2443
+    },
+    {
+      "id": "935c2a6bef7f0dff",
+      "role": "member",
+      "enabled": false,
+      "port": 3444
+    },
+    {
+      "id": "779a54f71fae679d",
+      "role": "member",
+      "enabled": true,
+      "port": 4444
+    }
+  ],
+  "logging": [
+    {
+      "id": "7bb5122a2ef4a515",
+      "log": {
+        "loglevel": "warning"
+      },
+      "inbound_tags": [
+        "reality-in",
+        "panel-hy2-socks"
+      ]
+    },
+    {
+      "id": "06c26698c110e726",
+      "log": {
+        "loglevel": "warning"
+      },
+      "inbound_tags": [
+        "reality-in",
+        "panel-hy2-socks"
+      ]
+    },
+    {
+      "id": "935c2a6bef7f0dff",
+      "log": {
+        "loglevel": "warning"
+      },
+      "inbound_tags": [
+        "reality-in",
+        "panel-hy2-socks"
+      ]
+    },
+    {
+      "id": "779a54f71fae679d",
+      "log": {
+        "loglevel": "warning"
+      },
+      "inbound_tags": [
+        "reality-in",
+        "panel-hy2-socks"
+      ]
+    }
+  ],
+  "journal": {
+    "code": 0,
+    "rows": 60,
+    "cursor_available": true,
+    "timestamp_available": true,
+    "accepted_connection_messages": 58,
+    "unit_field_available": false
+  },
+  "disk_free_mb": 48104
+}

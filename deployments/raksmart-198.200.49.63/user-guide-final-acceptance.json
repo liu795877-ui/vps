@@ -1,0 +1,80 @@
+{
+  "status": "deployed_and_verified",
+  "success": true,
+  "deployment_ip": "198.200.49.63",
+  "accepted_at": "2026-10-10T10:06:12+08:00",
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/#help",
+  "asset_version": "user-guide-20261010-1",
+  "entry_points": [
+    "login screen: 使用说明",
+    "console topbar: 使用说明",
+    "mobile topbar: ?"
+  ],
+  "topics": [
+    "login",
+    "first-client",
+    "overview",
+    "socks-add",
+    "manual-add",
+    "edit-exit",
+    "switch-exit",
+    "server-exit",
+    "delete-recovery",
+    "smart-routing",
+    "routing-modes",
+    "password-logout",
+    "admin-create",
+    "admin-reset",
+    "admin-enabled"
+  ],
+  "visible_topics": {
+    "visitor": 1,
+    "member": 11,
+    "administrator": 14
+  },
+  "features": [
+    "Chinese instructions with an arrow on each written step",
+    "Real control highlight and SVG pointer",
+    "Previous, next, finish and Escape",
+    "Native exit dialog tours",
+    "External client instructions explicitly identified",
+    "Role permissions, empty-state instructions and unsubmitted draft protection",
+    "Mobile layout and reduced motion support"
+  ],
+  "verification": {
+    "local_browser_checks_passed": 36,
+    "all_topics_and_steps_checked_locally": true,
+    "live_browser_accounts": [
+      "admin",
+      "user-a",
+      "user-b"
+    ],
+    "desktop_and_mobile": true,
+    "real_arrow_geometry": true,
+    "trusted_public_https_assets_match_release": true,
+    "unsubmitted_drafts_preserved": true,
+    "administrator_topics_hidden_from_members": true,
+    "logout_cleanup": true,
+    "configuration_mutations_attempted": 0,
+    "proxy_switches": 0,
+    "account_changes": 0
+  },
+  "preservation": {
+    "complete_account_data": true,
+    "protected_files": 35,
+    "service_processes": 6,
+    "all_service_processes_preserved": true,
+    "services_restarted": false,
+    "backend_changed": false
+  },
+  "client_reimport_required": false,
+  "reports": [
+    "user-guide-update.json",
+    "user-guide-preservation.json",
+    "user-guide-browser-verification.json",
+    "user-guide-release-manifest.json",
+    "../../../.validation/user-guide-ui/report.json"
+  ],
+  "screenshots_directory": "user-guide-browser-ui",
+  "secrets_included": false
+}

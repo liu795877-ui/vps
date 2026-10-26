@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-09T14:52:59+08:00",
+  "server": "198.200.49.63",
+  "server_port": 443,
+  "transport": "VLESS + REALITY + Vision",
+  "test_path": "Local Xray client -> SSH direct-tcpip channel -> VPS loopback:443",
+  "public_port_verified": false,
+  "checks": [
+    {
+      "name": "exit_ip",
+      "url": "https://api.ipify.org",
+      "exit_code": 35,
+      "http_status": "000",
+      "seconds": "4.403089",
+      "error": "curl: (35) Recv failure: Connection was reset",
+      "actual_exit_ip": "",
+      "matches_vps": false
+    },
+    {
+      "name": "google",
+      "url": "https://www.google.com/generate_204",
+      "exit_code": 35,
+      "http_status": "000",
+      "seconds": "4.376154",
+      "error": "curl: (35) Recv failure: Connection was reset"
+    },
+    {
+      "name": "cloudflare",
+      "url": "https://www.cloudflare.com/cdn-cgi/trace",
+      "exit_code": 35,
+      "http_status": "000",
+      "seconds": "4.407832",
+      "error": "curl: (35) Recv failure: Connection was reset",
+      "actual_exit_ip": null,
+      "location": null,
+      "matches_vps": false
+    }
+  ],
+  "success": false,
+  "relay_errors": []
+}

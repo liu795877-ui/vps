@@ -1,0 +1,342 @@
+{
+  "at": "2026-10-19T03:02:54.128794+00:00",
+  "no_source_ip_filter": true,
+  "capture_ready_before_test": true,
+  "groups": [
+    [
+      {
+        "port": 443,
+        "attempt": 1,
+        "at_unix": 1792378954.1239667,
+        "ok": true,
+        "ms": 162
+      },
+      {
+        "port": 443,
+        "attempt": 2,
+        "at_unix": 1792378954.4861462,
+        "ok": true,
+        "ms": 210
+      },
+      {
+        "port": 443,
+        "attempt": 3,
+        "at_unix": 1792378954.8967519,
+        "ok": true,
+        "ms": 183
+      },
+      {
+        "port": 443,
+        "attempt": 4,
+        "at_unix": 1792378955.2801552,
+        "ok": true,
+        "ms": 210
+      }
+    ],
+    [
+      {
+        "port": 4444,
+        "attempt": 1,
+        "at_unix": 1792378954.124181,
+        "ok": true,
+        "ms": 206
+      },
+      {
+        "port": 4444,
+        "attempt": 2,
+        "at_unix": 1792378954.5302975,
+        "ok": false,
+        "ms": 3013
+      },
+      {
+        "port": 4444,
+        "attempt": 3,
+        "at_unix": 1792378957.7442207,
+        "ok": false,
+        "ms": 3015
+      },
+      {
+        "port": 4444,
+        "attempt": 4,
+        "at_unix": 1792378960.9592342,
+        "ok": false,
+        "ms": 3013
+      }
+    ]
+  ],
+  "packets": [
+    {
+      "at_unix": 1792378954.14425,
+      "port": 443,
+      "direction": "in",
+      "flags": "S",
+      "anonymous_peer": "6ee3b78a",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.144322,
+      "port": 443,
+      "direction": "out",
+      "flags": "S.",
+      "anonymous_peer": "6ee3b78a",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.175004,
+      "port": 4444,
+      "direction": "in",
+      "flags": "S",
+      "anonymous_peer": "709c175f",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.175045,
+      "port": 4444,
+      "direction": "out",
+      "flags": "S.",
+      "anonymous_peer": "709c175f",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.307561,
+      "port": 56722,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "64f40109",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.308845,
+      "port": 56722,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "64f40109",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.382477,
+      "port": 50866,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "153fc741",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.384559,
+      "port": 50866,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "153fc741",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.535868,
+      "port": 443,
+      "direction": "in",
+      "flags": "S",
+      "anonymous_peer": "709c175f",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.535919,
+      "port": 443,
+      "direction": "out",
+      "flags": "S.",
+      "anonymous_peer": "709c175f",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.748198,
+      "port": 50868,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "153fc741",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.749416,
+      "port": 50868,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "153fc741",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.937125,
+      "port": 443,
+      "direction": "in",
+      "flags": "S",
+      "anonymous_peer": "6ee3b78a",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378954.937174,
+      "port": 443,
+      "direction": "out",
+      "flags": "S.",
+      "anonymous_peer": "6ee3b78a",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378955.127734,
+      "port": 50870,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "153fc741",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378955.129026,
+      "port": 50870,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "153fc741",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378955.330631,
+      "port": 443,
+      "direction": "in",
+      "flags": "S",
+      "anonymous_peer": "709c175f",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378955.330697,
+      "port": 443,
+      "direction": "out",
+      "flags": "S.",
+      "anonymous_peer": "709c175f",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378955.569286,
+      "port": 50872,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "153fc741",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378955.570611,
+      "port": 50872,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "153fc741",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378960.064602,
+      "port": 49704,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "1eca0730",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378960.113179,
+      "port": 49704,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "1eca0730",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378960.591741,
+      "port": 443,
+      "direction": "in",
+      "flags": "S",
+      "anonymous_peer": "43bfd871",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378960.591829,
+      "port": 443,
+      "direction": "out",
+      "flags": "S.",
+      "anonymous_peer": "43bfd871",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378960.667566,
+      "port": 56736,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "64f40109",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378960.668939,
+      "port": 56736,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "64f40109",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378963.715299,
+      "port": 39650,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "b413892b",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378963.716673,
+      "port": 39650,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "b413892b",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378967.145591,
+      "port": 53536,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "81de856e",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378967.145688,
+      "port": 53538,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "81de856e",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378967.161788,
+      "port": 53538,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "81de856e",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378967.162,
+      "port": 53536,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "81de856e",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378969.564874,
+      "port": 60650,
+      "direction": "out",
+      "flags": "S",
+      "anonymous_peer": "fb0231e3",
+      "peer_is_vps": false
+    },
+    {
+      "at_unix": 1792378969.565746,
+      "port": 60650,
+      "direction": "in",
+      "flags": "S.",
+      "anonymous_peer": "fb0231e3",
+      "peer_is_vps": false
+    }
+  ],
+  "remote_changes": false
+}

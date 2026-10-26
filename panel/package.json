@@ -1,0 +1,6 @@
+{
+  "name": "private-node-console-tests",
+  "private": true,
+  "scripts": {"test:ui": "node smoke.mjs", "test:live": "node live-smoke.mjs"},
+  "devDependencies": {"playwright": "^1.55.0"}
+}

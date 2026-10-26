@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "audited_at": "2026-10-10T13:36:12.872767+00:00",
+  "read_only_runtime_inspection": true,
+  "network_tests": 0,
+  "live_client_changes": 0,
+  "config_sha256": "35bb09c9c79d00ff7b7ae7b08fd81cb8bcbb3e9dcf58ee1f5a762031c203521b",
+  "current_client": {
+    "mode": "rule",
+    "only_vless": true,
+    "has_hy2": false,
+    "has_fallback_group": false,
+    "node_ports": [
+      443
+    ],
+    "default_rule": "MATCH,STATIC-SELECT"
+  },
+  "hostname_rule_audit": {
+    "fast.com": [],
+    "www.fast.com": [],
+    "api.fast.com": [],
+    "api.netflix.com": [
+      {
+        "index": 38,
+        "direction": "STATIC-SELECT",
+        "provider": "Netflix",
+        "matching_payload": [
+          "DOMAIN-SUFFIX,netflix.com"
+        ]
+      }
+    ],
+    "example.1.nflxvideo.net": [
+      {
+        "index": 38,
+        "direction": "STATIC-SELECT",
+        "provider": "Netflix",
+        "matching_payload": [
+          "DOMAIN-SUFFIX,nflxvideo.net"
+        ]
+      }
+    ]
+  },
+  "unavailable_domain_providers": [],
+  "runtime_server_evidence": {
+    "source_report": "fast-regression-server-current.json",
+    "server_admin_auto_exit": {
+      "protocol": "freedom",
+      "target": "server"
+    },
+    "admin_limits": {
+      "quota_bytes": 0,
+      "rate_bps": 0
+    },
+    "all_accounts_unlimited": true,
+    "all_hy2_standard": true,
+    "all_hy2_online_zero": true,
+    "tc_classes_empty": true,
+    "tc_filters_empty": true,
+    "tc_police_empty": true,
+    "kernel_buffers": {
+      "net.core.rmem_max": 7340032,
+      "net.core.wmem_max": 7340032
+    },
+    "original_hy2_runtime_restored": true
+  },
+  "findings": [
+    "The loaded profile contains only VLESS TCP; the recent HY2 UDP-buffer and HY2 BBR changes are not applied to this client transport. This is a concrete client configuration gap, not proof that WAN caused the Fast regression.",
+    "Netflix API and nflxvideo transfer hosts match Netflix -> STATIC-SELECT before China-IP and default rules. Custom Direct and other cached domain/inline providers did not match the tested public hostnames.",
+    "fast.com/api.fast.com had no hostname-specific match in current cached providers; default is STATIC-SELECT, but earlier IP rules must be checked against actual connection destination to prove frontend direction.",
+    "Current server evidence excludes a configured 5 Mbps account cap or installed tc policer/class cap.",
+    "Old standalone and current generated HY2 use ignoreClientBandwidth=true and BBRstandard; new generated nodes have no up/down bandwidth fields.",
+    "The only retained recent runtime setting is a larger UDP socket ceiling. The apply lifecycle preserves qdisc semantics and Xray epochs. BBR trial runtime was restored byte-for-byte.",
+    "The older architecture used HY2 direct outbounds; multiuser uses authenticated loopback SOCKS/Xray AUTO. This is a real historical change to test if an updated HY2 client still underperforms, but it is not the loaded VLESS route.",
+    "Short single-stream Cloudflare measurements cannot reproduce or disprove a historical multi-stream Fast Netflix result; compare the same signed Fast target and same number of streams with forced TCP and HY2."
+  ],
+  "limits": [
+    "Hostname audit is not an observation of actual Fast connections; DNS-selected IP and client runtime chain remain necessary.",
+    "Existing reports do not reproduce the user historical 200 Mbps Fast result.",
+    "The sample nflxvideo hostname tests suffix rules, not the precise signed target currently selected by Fast.",
+    "Current idle CPU and UDP counters do not establish load capacity."
+  ]
+}

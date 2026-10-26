@@ -1,0 +1,1654 @@
+{
+  "updated_at": "2026-10-24T02:51:43+00:00",
+  "current_release": "console-optimization-release-20261023-nickname-01",
+  "member_nicknames": {
+    "status": "deployed_and_verified",
+    "verified_at": "2026-10-24T02:51:43+00:00",
+    "release": "console-optimization-release-20261023-nickname-01",
+    "prior_release": "console-optimization-release-20261023-access-01",
+    "page_version": "nickname-20261023-1",
+    "archive_sha256": "07349fb64352b76a7d99d36e858349bf1c78ad74db29867e3a0231d4e2759b48",
+    "manifest_sha256": "70bd3d5428affaafe9f09a359b213ab6148312e5df7aa9d21f82e762fc13f51e",
+    "navigation": "用户管理 → 目标成员 → 修改昵称",
+    "api": "POST /api/users/nickname",
+    "permission": "administrator only; member targets only; Origin and CSRF enforced",
+    "editable_field": "display_name",
+    "storage": "users.private.json: users[].display_name; included in existing complete backups",
+    "characters": {"min": 1, "max": 48, "trim_outer_whitespace": true},
+    "disabled_members_can_be_renamed": true,
+    "member_web_sessions_preserved": true,
+    "historical_visits_use_current_member_nickname": true,
+    "historical_database_rows_rewritten": false,
+    "real_nicknames_changed_during_verification": false,
+    "source_files_verified": 46,
+    "python36_tests": {"total": 266, "passed": 257, "skipped": 9, "failures": 0, "errors": 0},
+    "local_browser_checks": 9,
+    "production_browser_checks": 9,
+    "registered_members_checked": 4,
+    "only_panel_restarted": true,
+    "proxy_epochs_preserved": true,
+    "protected_configuration_preserved": true,
+    "existing_manual_disable_preserved": true,
+    "traffic_cumulative_non_decreasing": true,
+    "other_servers_modified": false,
+    "remote_checkpoint": "/root/vps-console-deploy-l85hx8m6",
+    "evidence": [
+      "member-nicknames-20261023.md",
+      "console-optimization-python36-validation-20261023-nickname-01.json",
+      "console-optimization-deployment-20261023-nickname-01.json",
+      "member-nickname-post-deployment-20261023.json",
+      "member-nickname-live-ui-20261023/report.json",
+      "../../.validation/member-nickname-ui-20261023/report.json"
+    ]
+  },
+  "member_access_records": {
+    "status": "deployed_and_verified",
+    "verified_at": "2026-10-24T02:27:12.454966+00:00",
+    "release": "console-optimization-release-20261023-access-01",
+    "page_version": "access-20261023-1",
+    "archive_sha256": "de42396b7ee8a570da23eb318d312ca27c766cc07008cea5d51ea62f7cc23858",
+    "manifest_sha256": "5e47d15c7fd6b0a1e761ff035668f333e231abc5ef8c4c494938f817002ae3bf",
+    "navigation": "administrator sidebar: 成员访问记录; member card: 访问记录",
+    "scope": "member accepted proxy connections only; administrator excluded at collection and query layers",
+    "protocols": ["HY2", "REALITY"],
+    "filters": ["member", "last 1 hour / 24 hours / 7 days", "protocol", "domain or IP substring"],
+    "storage": "/var/lib/vps-panel/member-access.private.sqlite3",
+    "database_mode": "0600",
+    "retention_days": 7,
+    "max_records": 100000,
+    "page_size": 50,
+    "top_destinations": 12,
+    "nominal_collection_seconds": 10,
+    "nominal_page_refresh_seconds": 12,
+    "display_timezone": "browser timezone",
+    "full_url_or_content_collected": false,
+    "client_source_ip_copied_to_database": false,
+    "client_direct_traffic_visible": false,
+    "complete_backups_include_access_database": false,
+    "initial_import": {"complete": true, "records_at_verification": 90098, "recorded_members": 3, "administrator_records": 0},
+    "source_files_verified": 46,
+    "python36_tests": {"total": 260, "passed": 251, "skipped": 9, "failures": 0, "errors": 0},
+    "local_browser_checks": 10,
+    "production_browser_checks": 8,
+    "only_panel_restarted": true,
+    "proxy_epochs_preserved": true,
+    "protected_configuration_preserved": true,
+    "existing_manual_disable_preserved": true,
+    "traffic_cumulative_non_decreasing": true,
+    "other_servers_modified": false,
+    "remote_checkpoint": "/root/vps-console-deploy-ypifbtfa",
+    "prior_proxy_timeout_investigation": "cancelled by user; not resumed",
+    "evidence": [
+      "member-access-records-20261023.md",
+      "member-access-preflight-20261023.json",
+      "member-access-real-journal-validation-20261023.json",
+      "console-optimization-python36-validation-20261023-access-01.json",
+      "console-optimization-deployment-20261023-access-01.json",
+      "member-access-initial-backfill-20261023.json",
+      "member-access-post-deployment-20261023.json",
+      "member-access-live-ui-20261023/report.json",
+      "../../.validation/member-access-ui-20261023/report.json"
+    ]
+  },
+  "membership_subscription": {
+    "status": "deployed_and_verified",
+    "verified_at": "2026-10-18T17:03:55+08:00",
+    "page_version": "membership-20261018-1",
+    "release": "console-optimization-release-20261018-membership-02",
+    "archive_sha256": "f16700616e25fe632e4f9c7f4dbc184576a1d3384572033be5ef38a29b637f66",
+    "manifest_sha256": "5e9ac0422979b8428fc3cfbb07a87cb91759d2f94428123258565584328ce7c8",
+    "source_files_verified": 43,
+    "accounts_checked": 5,
+    "existing_members_preserved_without_deadlines": 4,
+    "new_member_default_days": 30,
+    "owner_exempt": true,
+    "timezone": "Asia/Shanghai",
+    "periodic_check_seconds": 10,
+    "expired_web_login_allowed": true,
+    "expired_protocols_disabled": ["REALITY", "HY2"],
+    "renewal_request": "durable in-site request; administrator confirms renewal",
+    "storage": "users.private.json: users[].membership; included in complete encrypted backups",
+    "manual_disable_preserved_on_renewal": true,
+    "real_member_terms_changed": false,
+    "only_panel_restarted": true,
+    "proxy_epochs_preserved": true,
+    "network_policy_preserved": true,
+    "traffic_cumulative_non_decreasing": true,
+    "other_servers_modified": false,
+    "python36_tests": {"total": 247, "passed": 238, "skipped": 9, "failures": 0, "errors": 0},
+    "local_ui_flow_checks": 7,
+    "deployment_boundary_checks": 16,
+    "production_expiry_test_performed": false,
+    "remote_checkpoint": "/root/vps-console-deploy-en1pq5f1",
+    "evidence": [
+      "membership-subscriptions-20261018.md",
+      "console-optimization-python36-validation-20261018-membership-02.json",
+      "console-optimization-deployment-20261018-membership-02.json",
+      "membership-post-deployment-20261018-membership-02.json",
+      "membership-live-ui-20261018/report.json",
+      "../../.validation/membership-ui-20261018/report.json"
+    ],
+    "prior_release": "console-optimization-release-20261018-membership-01",
+    "historical_console_and_handoff_records_preserved": true
+  },
+  "server": "198.200.49.63",
+  "proxy": {
+    "status": "deployed_and_verified",
+    "port": 443,
+    "protocol": "VLESS + REALITY + Vision",
+    "target": "www.cloudflare.com",
+    "dns_servers": [
+      "https+local://1.1.1.1/dns-query",
+      "https+local://1.0.0.1/dns-query"
+    ],
+    "transport_integration": "hy2-integration-final-acceptance.json"
+  },
+  "latency_fix": {
+    "cause": "Default resolver chose a gstatic destination adding approximately 199 ms between the VPS and Google; Cloudflare DNS chose a destination reachable from the VPS in approximately 1 ms.",
+    "same_url": "https://www.gstatic.com/generate_204",
+    "before_unified_delay_samples_ms": [
+      369,
+      445,
+      410
+    ],
+    "after_unified_delay_samples_ms": [
+      162,
+      222,
+      234
+    ],
+    "verification": "Isolated official Mihomo v1.19.31 client bound to physical WLAN; same node, URL and unified-delay setting.",
+    "doh_endpoints": "Both endpoint certificates and valid IPv4 DNS answers verified.",
+    "remaining_limit": "Direct TCP median approximately 204 ms; latest 10 connections succeeded, with one 1248 ms spike. WAN jitter remains possible.",
+    "reports": [
+      "mihomo-latency-before-dns.json",
+      "mihomo-latency-verification.json",
+      "latency-after-dns.json",
+      "proxy-verification.json"
+    ]
+  },
+  "panel": {
+    "status": "deployed_and_verified",
+    "origin": "https://198-200-49-63.sslip.io:8443",
+    "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+    "chosen_access": "public_https",
+    "security_group_tcp_80_8443": "user_confirmed_and_publicly_verified",
+    "services": [
+      "vps-panel.service",
+      "caddy.service"
+    ],
+    "caddy_version": "v2.11.7",
+    "backend_listen": "127.0.0.1:18787",
+    "active_target": "server",
+    "observed_ip": "198.200.49.63",
+    "static_exit_count": 1,
+    "admin_login_file": "panel-login.private.json",
+    "client_profile_file": "clash-smart-routing.private.yaml",
+    "client_selection": "STATIC-SELECT / AUTO · 网页切换",
+    "verification": "Trusted public HTTPS, browser login and server card apply, desktop/mobile layouts, official Mihomo syntax and isolated AUTO ipify, protected configuration preservation.",
+    "reports": [
+      "panel-preparation-verification.json",
+      "panel-initialization.json",
+      "panel-verification.json",
+      "panel-browser-verification.json",
+      "panel-preservation-verification.json",
+      "user-guide-update.json",
+      "user-guide-preservation.json",
+      "user-guide-browser-verification.json",
+      "user-guide-release-manifest.json",
+      "user-guide-final-acceptance.json",
+      "operations-update.json",
+      "operations-verification.json",
+      "operations-backup-upload-update.json",
+      "operations-api-acceptance.json",
+      "operations-browser-verification.json",
+      "operations-clients-verification.json",
+      "operations-network-acceptance.json",
+      "operations-final-acceptance.json",
+      "traffic-charts-update.json",
+      "traffic-charts-preservation.json",
+      "traffic-charts-browser-verification.json",
+      "traffic-charts-release-manifest.json",
+      "traffic-charts-final-acceptance.json",
+      "page-layout-update.json",
+      "page-layout-preservation.json",
+      "page-layout-browser-verification.json",
+      "page-layout-release-manifest.json",
+      "page-layout-final-acceptance.json"
+    ],
+    "exit_accounts": "One user-provided SOCKS5 entry saved and credentials verified privately; current target remains the server.",
+    "validation_limit": "The saved static entry has not been connectivity-tested or applied. Its proxy address is not a verified actual egress IP.",
+    "next_required": [],
+    "routing_mode": "smart",
+    "frontend_motion": {
+      "status": "deployed_and_verified",
+      "asset_version": "motion-20261009-1",
+      "deployment_scope": [
+        "198.200.49.63"
+      ],
+      "other_server_frontend_unchanged": "198.200.49.158",
+      "features": [
+        "Device display scan and signal waves",
+        "Server rack LED breathing",
+        "Multiple flow points along the applied proxy path",
+        "Current exit highlight and hover, press, navigation and real exit change feedback",
+        "Checking, applying, failure and service state feedback"
+      ],
+      "semantics": "Motion represents the applied proxy path, not live traffic, device online status or measured latency. Domestic DIRECT traffic still leaves through the client network.",
+      "reduced_motion_supported": true,
+      "pause_when_background_or_outside_overview": true,
+      "client_reimport_required": false,
+      "verified_layouts": [
+        "desktop",
+        "390 px mobile"
+      ],
+      "complete_state_unchanged": true,
+      "protected_configuration_count": 10,
+      "all_protected_hashes_unchanged": true,
+      "four_service_processes_unchanged": true,
+      "services_restarted": false,
+      "configuration_mutations_attempted_during_browser_verification": 0,
+      "accepted_at": "2026-10-09T12:59:13.651954+00:00",
+      "reports": [
+        "frontend-motion-update.json",
+        "frontend-motion-browser-verification.json",
+        "frontend-motion-preservation.json",
+        "frontend-motion-final-acceptance.json"
+      ]
+    },
+    "smart_routing": {
+      "status": "deployed_and_verified",
+      "mode": "smart",
+      "ui": [
+        "智能分流 · 国内直连",
+        "强制直连",
+        "强制代理"
+      ],
+      "custom_rule_refresh_seconds": 300,
+      "maintained_sources_count": 23,
+      "maintained_source_refresh_seconds": 86400,
+      "first_import_required": true,
+      "later_domain_list_edits_require_reimport": false,
+      "current_login_saved_privately": true,
+      "complete_client_routes_verified": [
+        {
+          "domain": "api.bilibili.com",
+          "route": "DIRECT",
+          "https_connection_succeeded": true
+        },
+        {
+          "domain": "static.hdslb.com",
+          "route": "DIRECT",
+          "https_connection_succeeded": true
+        },
+        {
+          "domain": "api.ipify.org",
+          "route": "STATIC-SELECT",
+          "https_connection_succeeded": true
+        }
+      ],
+      "auto_egress": {
+        "observed_ip": "198.200.49.63",
+        "expected_ip": "198.200.49.63"
+      },
+      "reports": [
+        "smart-routing-update.json",
+        "smart-routing-activation.json",
+        "smart-routing-browser-verification.json",
+        "smart-mihomo-client-verification.json",
+        "panel-preservation-verification.json",
+        "smart-routing-core-verification.json"
+      ],
+      "url_input": {
+        "status": "deployed_and_verified",
+        "asset_version": "routing-url-20261010-1",
+        "accepts": [
+          "HTTP(S) URLs",
+          "protocol-relative URLs",
+          "domains with optional paths or ports",
+          "bare domains"
+        ],
+        "normalization": "Exact hostname; path, query, fragment and port discarded; case and IDNA normalized; duplicates removed.",
+        "parent_domain_automatically_inferred": false,
+        "custom_subscription_refresh_seconds": 300,
+        "client_reimport_required_for_existing_smart_config": false,
+        "saved_rule": {
+          "account": "admin",
+          "domain": "mooc1.chaoxing.com",
+          "direction": "DIRECT",
+          "includes_subdomains": true,
+          "all_paths_on_host_match": true,
+          "homepage_https_status": 200,
+          "matched_provider": "Custom Direct"
+        },
+        "verification": {
+          "linux_tests": {
+            "ran": 98,
+            "passed": 94,
+            "skipped": 4
+          },
+          "official_mihomo_full_profile_accepted": true,
+          "rule_provider_count": 27,
+          "trusted_https_three_account_browser_verified": true,
+          "desktop_and_mobile_verified": true,
+          "other_accounts_and_proxy_configs_preserved_after_rule_save": true,
+          "proxy_processes_preserved": true,
+          "private_course_url_requested": false
+        },
+        "reports": [
+          "routing-url-update.json",
+          "routing-url-preservation.json",
+          "routing-url-client-verification.json",
+          "routing-url-browser-verification.json",
+          "routing-url-release-manifest.json"
+        ],
+        "accepted_at": "2026-10-10T09:43:43+08:00"
+      }
+    },
+    "frontend_socks_import": {
+      "status": "deployed_and_verified",
+      "asset_version": "socks-import-20261009-1",
+      "deployment_scope": [
+        "198.200.49.63"
+      ],
+      "other_server_frontend_unchanged": "198.200.49.158",
+      "features": [
+        "Pasting a SOCKS5 URL automatically fills address, port, and authentication fields",
+        "Parse button available for typed URLs",
+        "Percent-encoded credentials, optional fragment name, and no-auth URLs supported",
+        "Review parsed fields and save before clicking the exit card to test and switch",
+        "Pasted URL and account are hidden by default; source URL is cleared after successful parsing"
+      ],
+      "client_reimport_required": false,
+      "existing_motion_and_smart_routing_preserved": true,
+      "saved_entry": {
+        "name": "SOCKS5 · 43.246.197.78",
+        "address": "43.246.197.78",
+        "port": 443,
+        "credentials_verified_privately": true,
+        "static_exit_count": 1,
+        "active_target": "server",
+        "routing_mode": "smart",
+        "applied": false,
+        "actual_egress_tested": false,
+        "proxy_address_is_not_verified_egress_ip": true,
+        "report": "socks-import-saved-exit.json"
+      },
+      "reports": [
+        "frontend-socks-import-update.json",
+        "frontend-socks-import-browser-verification.json",
+        "frontend-socks-import-preservation.json",
+        "frontend-socks-import-final-acceptance.json"
+      ],
+      "verified_layouts": [
+        "1440 px desktop",
+        "390 px mobile"
+      ],
+      "complete_state_unchanged_from_saved_entry_baseline": true,
+      "protected_configuration_count": 10,
+      "all_protected_hashes_unchanged": true,
+      "four_service_processes_unchanged": true,
+      "published_asset_count": 3,
+      "trusted_public_sources_match": true,
+      "services_restarted": false,
+      "configuration_mutations_attempted_during_browser_verification": 0,
+      "synthetic_exits_saved": 0,
+      "exit_switches_during_verification": 0,
+      "javascript_errors": 0,
+      "accepted_at": "2026-10-09T13:19:41.043961+00:00"
+    },
+    "user_guide": {
+      "status": "deployed_and_verified",
+      "success": true,
+      "deployment_ip": "198.200.49.63",
+      "accepted_at": "2026-10-10T10:06:12+08:00",
+      "url": "https://198-200-49-63.sslip.io:8443/node-console/#help",
+      "asset_version": "user-guide-20261010-1",
+      "entry_points": [
+        "login screen: 使用说明",
+        "console topbar: 使用说明",
+        "mobile topbar: ?"
+      ],
+      "topics": [
+        "login",
+        "first-client",
+        "overview",
+        "socks-add",
+        "manual-add",
+        "edit-exit",
+        "switch-exit",
+        "server-exit",
+        "delete-recovery",
+        "smart-routing",
+        "routing-modes",
+        "password-logout",
+        "admin-create",
+        "admin-reset",
+        "admin-enabled"
+      ],
+      "visible_topics": {
+        "visitor": 1,
+        "member": 11,
+        "administrator": 14
+      },
+      "features": [
+        "Chinese instructions with an arrow on each written step",
+        "Real control highlight and SVG pointer",
+        "Previous, next, finish and Escape",
+        "Native exit dialog tours",
+        "External client instructions explicitly identified",
+        "Role permissions, empty-state instructions and unsubmitted draft protection",
+        "Mobile layout and reduced motion support"
+      ],
+      "verification": {
+        "local_browser_checks_passed": 36,
+        "all_topics_and_steps_checked_locally": true,
+        "live_browser_accounts": [
+          "admin",
+          "user-a",
+          "user-b"
+        ],
+        "desktop_and_mobile": true,
+        "real_arrow_geometry": true,
+        "trusted_public_https_assets_match_release": true,
+        "unsubmitted_drafts_preserved": true,
+        "administrator_topics_hidden_from_members": true,
+        "logout_cleanup": true,
+        "configuration_mutations_attempted": 0,
+        "proxy_switches": 0,
+        "account_changes": 0
+      },
+      "preservation": {
+        "complete_account_data": true,
+        "protected_files": 35,
+        "service_processes": 6,
+        "all_service_processes_preserved": true,
+        "services_restarted": false,
+        "backend_changed": false
+      },
+      "client_reimport_required": false,
+      "reports": [
+        "user-guide-update.json",
+        "user-guide-preservation.json",
+        "user-guide-browser-verification.json",
+        "user-guide-release-manifest.json",
+        "../../../.validation/user-guide-ui/report.json"
+      ],
+      "screenshots_directory": "user-guide-browser-ui",
+      "secrets_included": false
+    },
+    "operations": {
+      "success": true,
+      "checked_at": "2026-10-10T03:47:14.991720+00:00",
+      "deployment_ip": "198.200.49.63",
+      "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+      "asset_version": "operations-20261010-2",
+      "features": [
+        "未保存内容保护",
+        "网站分流查询与客户端自检指引",
+        "持续出口健康检查与指定备用",
+        "完整加密定期备份及预览恢复",
+        "可撤销的每账号完整配置订阅与服务器版本",
+        "真实个人及全账号流量统计、月额度与限速",
+        "删除成员与旧代理凭据撤销",
+        "按权限隔离的持久操作记录"
+      ],
+      "unfinished_requested_features": [],
+      "reports": [
+        "operations-update.json",
+        "operations-verification.json",
+        "operations-backup-upload-update.json",
+        "operations-api-acceptance.json",
+        "operations-browser-verification.json",
+        "operations-clients-verification.json",
+        "operations-network-acceptance.json"
+      ],
+      "server_python_regression": {
+        "executed": 141,
+        "passed": 137,
+        "skipped": 4
+      },
+      "public_api_checks": 43,
+      "production_accounts_verified": 3,
+      "public_proxy_ports": [
+        443,
+        1443,
+        2443
+      ],
+      "actual_auto_egress": "198.200.49.63",
+      "backup_restore_in_production": false,
+      "backup_restore_tested_with_isolated_fixtures": true,
+      "backup_portable_download_and_preview_in_production": true,
+      "defaults": {
+        "failover": "manual",
+        "quota_bytes": 0,
+        "rate_bps": 0,
+        "automatic_backups": true
+      },
+      "limitations": [
+        "本机DIRECT和独立HY2不计入VLESS统计",
+        "流量从统计升级开始记录，月份使用UTC",
+        "额度使用10秒采样，可能有一周期超额",
+        "网页分流诊断无法确认客户端真实解析和策略组选择",
+        "恢复要求当前服务器IP和管理页地址一致"
+      ],
+      "preservation": {
+        "existing_account_passwords": true,
+        "existing_proxy_credentials_and_keys": true,
+        "existing_exits_rules_and_selection": true,
+        "caddy_hy2_processes": true,
+        "caddy_configuration_change": "仅备份预览上传接口单独提高请求大小限制",
+        "proxy_restart": "三个独立实例为私有统计接口顺序重启"
+      },
+      "secret_values_included": false,
+      "current_accounting_scope": "Managed HY2 and REALITY combined; local DIRECT excluded",
+      "historical_limitations_superseded_by": "hy2-integration-final-acceptance.json"
+    },
+    "traffic_charts": {
+      "success": true,
+      "checked_at": "2026-10-10T08:39:23.907894+00:00",
+      "deployment_ip": "198.200.49.63",
+      "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+      "asset_version": "traffic-charts-20261010-1",
+      "features": [
+        "Monthly upload/download donut with actual recorded totals",
+        "Live upload/download rate chart with up to 60 genuine samples",
+        "TCP connection count, monthly quota progress and rate enforcement status",
+        "Timestamp deduplication, missing-data gaps and stale telemetry notices",
+        "Independent per-session and per-account chart history",
+        "Responsive desktop/mobile charts, keyboard values and 44px sampling controls"
+      ],
+      "local_browser_checks": {
+        "traffic-charts-ui": 23,
+        "enhancements-ui": 18,
+        "user-guide-ui": 50
+      },
+      "production_accounts_verified": 3,
+      "production_viewports": [
+        1440,
+        390
+      ],
+      "actual_server_data_matches": true,
+      "physical_wlan_and_trusted_https": true,
+      "source_sha256": {
+        "panel/web/style.css": "8cd45f19f5d0e5ba4db75d544a08cca0d39af556349f115e15ab02d773fc59b2",
+        "panel/web/app.js": "1760628f641a024893d398e5e97fe91ae29b0562bd3219f7c22cdcf0d1418aa3",
+        "panel/web/index.html": "c50e0b3e6be637dcb3780bea42dc291262ba812d9fe41bcc6610858da46bcecf"
+      },
+      "deployment_scope": "frontend_only",
+      "services_restarted": false,
+      "backend_changed": false,
+      "all_account_data_preserved": true,
+      "all_service_processes_preserved": true,
+      "protected_file_count": 45,
+      "protected_service_count": 6,
+      "reports": [
+        "traffic-charts-update.json",
+        "traffic-charts-preservation.json",
+        "traffic-charts-browser-verification.json",
+        "traffic-charts-release-manifest.json",
+        "../../.validation/traffic-charts-ui/report.json",
+        "../../.validation/enhancements-ui/report.json",
+        "../../.validation/user-guide-ui/report.json"
+      ],
+      "screenshots_directory": "traffic-charts-browser-ui",
+      "limitations": [
+        "Rate history starts when the page opens and clears on logout or reload",
+        "Only the latest 60 genuine timestamped samples are retained; missing samples are not interpolated",
+        "Monthly counters use UTC; local DIRECT and independent HY2 traffic are excluded"
+      ],
+      "unfinished_requested_features": [],
+      "secrets_included": false
+    },
+    "frontend_asset_version": "integration-20261010-1",
+    "page_layout": {
+      "success": true,
+      "checked_at": "2026-10-10T09:18:48.826869+00:00",
+      "deployment_ip": "198.200.49.63",
+      "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+      "asset_version": "layout-20261010-1",
+      "deployment_scope": "frontend_only",
+      "features": [
+        "Exit management: status strip, connection path, exit cards, full-width health, visible traffic charts",
+        "Routing: editable rules and save action first, URL diagnostic second, explanatory disclosures last",
+        "Access: subscription and first import first, password and proxy identity disclosures, own audit history",
+        "Users: capacity and optional creation, member cards with limits, whole-server usage",
+        "Maintenance: schedule, create and download, separate restore preview, all audit history",
+        "Responsive mobile order, keyboard disclosures, draft and error indicators",
+        "Arrow guides reveal controls and restore disclosure states; logout clears account-specific UI"
+      ],
+      "local_browser_checks": {
+        "layout-ui": 38,
+        "traffic-charts-ui": 23,
+        "enhancements-ui": 18,
+        "user-guide-ui": 50,
+        "multiuser-ui": 10,
+        "socks-import": 6,
+        "connection-motion": 5
+      },
+      "local_checks_total": 150,
+      "production_accounts_verified": 3,
+      "production_viewports": [
+        1440,
+        1280,
+        390
+      ],
+      "physical_wlan_and_trusted_https": true,
+      "source_sha256": {
+        "panel/web/style.css": "5cc86fffd6ce518d2c06ff926de7cd6a3d09c2e9b5ce209cddc644313f4c422e",
+        "panel/web/app.js": "8312e37624bea855826b6eba8a9ebf6023aa319d6f494d05fe78955cda1b4b7f",
+        "panel/web/index.html": "d6c83e0f8586f2a3efb6456357abe8e6dd4635dc650a0f6d0d22ae56615fb3eb"
+      },
+      "services_restarted": false,
+      "backend_changed": false,
+      "all_account_data_preserved": true,
+      "all_service_processes_preserved": true,
+      "protected_file_count": 45,
+      "protected_service_count": 6,
+      "configuration_mutations": 0,
+      "reports": [
+        "page-layout-update.json",
+        "page-layout-preservation.json",
+        "page-layout-browser-verification.json",
+        "page-layout-release-manifest.json",
+        "../../.validation/layout-ui/regression-manifest.json"
+      ],
+      "screenshots_directory": "page-layout-browser-ui",
+      "acceptance_adjustments": [
+        "The initial mobile attempt used an unspecified 65%-of-viewport path threshold. Final acceptance checks the approved vertical order, single-column cards, touch controls and viewport fit; desktop still requires the complete path in its first viewport. No production source changed for this adjustment."
+      ],
+      "unfinished_requested_features": [],
+      "secrets_included": false
+    },
+    "hy2_integration": {
+      "success": true,
+      "status": "deployed_and_verified",
+      "accepted_at": "2026-10-10T11:39:49.205787+00:00",
+      "deployment_ip": "198.200.49.63",
+      "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+      "asset_version": "integration-20261010-1",
+      "official_hy2_version": "v2.13.0",
+      "official_hy2_sha256": "907ba8c9693edb104b20582681fb7dc15639d5b64a9cbb616a7b539190a86691",
+      "architecture": "One official HY2 instance per account, with authenticated loopback SOCKS forwarding through the same account Xray AUTO route",
+      "accounts": [
+        {
+          "role": "admin",
+          "tcp_port": 443,
+          "udp_port": 443,
+          "selected_egress": "198.200.49.63"
+        },
+        {
+          "role": "member",
+          "tcp_port": 1443,
+          "udp_port": 1443,
+          "selected_egress": "43.246.197.78"
+        },
+        {
+          "role": "member",
+          "tcp_port": 2443,
+          "udp_port": 2443,
+          "selected_egress": "198.200.49.63"
+        }
+      ],
+      "client_behavior": {
+        "hy2_first": true,
+        "reality_tcp_fallback": true,
+        "initial_full_profile_update_required": true,
+        "subsequent_web_exit_switch_requires_redownload": false,
+        "local_direct_routes_preserved": true
+      },
+      "features": [
+        "Independent HY2 credentials and webpage AUTO exits",
+        "Combined HY2 and REALITY native accounting",
+        "Shared TCP and UDP quota and upload/download limits",
+        "Disable, delete and credential revoke for both protocols",
+        "Encrypted full backup of HY2 account registry and TLS identity",
+        "Official HY2 without a custom protocol fork"
+      ],
+      "preservation": {
+        "account_auth": true,
+        "reality_ids_and_keys": true,
+        "exits_and_current_selection": true,
+        "routing_rules_and_unsaved_drafts": true,
+        "subscription_tokens_and_urls": true,
+        "history": true,
+        "existing_monthly_totals": true,
+        "caddy_and_unrelated_services": true
+      },
+      "verification": {
+        "production_python_tests": {
+          "executed": 192,
+          "passed": 187,
+          "skipped": 5
+        },
+        "public_forced_protocol_connections": 6,
+        "cross_account_passwords_rejected": true,
+        "native_hy2_final_bytes_persisted": true,
+        "combined_monthly_accounting": true,
+        "private_apis_authenticated": true,
+        "private_socks_and_stats_loopback_only": true,
+        "legacy_shared_password_revoked": true,
+        "browser_accounts": 3,
+        "browser_viewports": [
+          1440,
+          390
+        ],
+        "browser_screenshots": 22,
+        "browser_errors": 0,
+        "browser_configuration_saves": 0,
+        "frozen_public_assets_verified": true,
+        "linux_controls_isolated": {
+          "combined_payload_rates": {
+            "changed_combined_download_mbps": 3.850768,
+            "download_mbps": 7.690864,
+            "tcp_only_upload_mbps": 1.867776,
+            "unrestricted_other_account_mbps": 6515.798336,
+            "upload_mbps": 7.770112
+          },
+          "controls_removed": true,
+          "independent_action_preserved": true,
+          "linux_controls_verified": true,
+          "production_network_unchanged": true,
+          "quota_blocks_both_transports": true,
+          "same_and_changed_rate_updates": true
+        },
+        "production_backup_create_export_preview": true,
+        "production_backup_restore": false,
+        "backup_restore_and_failed_lifecycle_rollback_tested_with_isolated_fixtures": true
+      },
+      "backup": {
+        "name": "HY2 多人整合部署备份",
+        "id": "3193de659f758ab39327a1648555cf12",
+        "encrypted_server_backup_retained": true,
+        "hy2_registry_and_tls_preserved": true
+      },
+      "performance": {
+        "source_report": "hy2-clients-verification.json",
+        "path": "physical WLAN -> forced single transport -> current account web-selected server exit -> Cloudflare",
+        "account_port": 443,
+        "rounds": 2,
+        "payload_bytes_each": 1048576,
+        "single_stream": true,
+        "same_payload_urls": true,
+        "alternating_order": true,
+        "all_transfers_successful": true,
+        "throughput_includes_handshake_and_http": true,
+        "sustained_bandwidth_measured": false,
+        "samples": [
+          {
+            "protocol": "hy2",
+            "direction": "download",
+            "count": 2,
+            "median_mbps_including_startup": 8.67,
+            "sample_mbps_range": [
+              5.73,
+              11.61
+            ],
+            "median_first_byte_ms": 388.41,
+            "first_byte_ms_range": [
+              388.38,
+              388.45
+            ],
+            "first_byte_semantics": "HTTP first response byte"
+          },
+          {
+            "protocol": "hy2",
+            "direction": "upload",
+            "count": 2,
+            "median_mbps_including_startup": 9.672,
+            "sample_mbps_range": [
+              6.315,
+              13.029
+            ],
+            "median_first_byte_ms": 902.37,
+            "first_byte_ms_range": [
+              552.51,
+              1252.23
+            ],
+            "first_byte_semantics": "HTTP first response byte after full POST request"
+          },
+          {
+            "protocol": "xray",
+            "direction": "download",
+            "count": 2,
+            "median_mbps_including_startup": 0.889,
+            "sample_mbps_range": [
+              0.739,
+              1.039
+            ],
+            "median_first_byte_ms": 954.48,
+            "first_byte_ms_range": [
+              926.3,
+              982.67
+            ],
+            "first_byte_semantics": "HTTP first response byte"
+          },
+          {
+            "protocol": "xray",
+            "direction": "upload",
+            "count": 2,
+            "median_mbps_including_startup": 3.586,
+            "sample_mbps_range": [
+              3.322,
+              3.85
+            ],
+            "median_first_byte_ms": 2280.22,
+            "first_byte_ms_range": [
+              2100.04,
+              2460.4
+            ],
+            "first_byte_semantics": "HTTP first response byte after full POST request"
+          }
+        ]
+      },
+      "source_sha256": {
+        "panel/server.py": "3e3a725127c2cabcf58113e9b9baeb7978dd238d60855bea2c121b95680a29d9",
+        "panel/accounts.py": "e555bf232472c73fc32ae5fd0e87befc278db8c560898aea6d015189d0356369",
+        "panel/subscriptions.py": "e04106138d932b30e5e69801d41771d2d9b6e79ba54b78ec2a93a49369fb7968",
+        "panel/telemetry.py": "7292171903358a3cb8155ec08d365d80590e741646398661edd14229e87fbeed",
+        "panel/backups.py": "291618579fc02b2b6f8bff687f77bbdfb6c941fd0e1e3a2a65ece347d26b6678",
+        "panel/hy2.py": "e44e8528eac43dd794abe1ed595461fc0ce4ebf6fccc5717020a472c3617e0c8",
+        "panel/accelerated_client.py": "35441f3ff8e4a2b206ac7c8ef8d56afbd3f24cfcee549dab7c716945bd78d9e4",
+        "panel/test_accounts.py": "26b11a9c1ea8dad0a84ca27e6e747476eab59a4ad355d0f0f0b5b691c3604d59",
+        "panel/test_operations.py": "8cc83783d8149f57139874810f0f4bfec7170cd73ce58cca4ef00398e765bdaf",
+        "panel/test_hy2_integration.py": "d55d04885c3994f463a711a4164f7dc64c0150896bfda63b88bf665a0d7cbc13",
+        "panel/test_hy2_telemetry.py": "b146c8041c7a13fef03c0290a35179a707ccdd2e877652c0d15bf21d303a24cb",
+        "panel/test_hy2_backups.py": "5b070c2b1629b493b7988109faf37eaa1037736dedec8f4c0fadfd5ea0b39454",
+        "panel/test_accelerated_client.py": "cff8df0bac5e9a41dd72533d07c4b67921869e1d6ad090476183af08a9da7204",
+        "panel/web/style.css": "d29c80a7d8112a67420095da5675c7b0bd0e59256a2ea805c5af5595a53075ed",
+        "panel/web/app.js": "3257def1d06e8c6ea0a154172e6aadc06133337fbecdd9be6f422d9c0a10f7e5",
+        "panel/web/index.html": "2222278a03d4a25f5fdf6935e112c6fd87f14c5871c069e751d3473f371fc128"
+      },
+      "reports": [
+        "hy2-integration-update.json",
+        "hy2-integration-verification.json",
+        "hy2-clients-verification.json",
+        "hy2-fair-comparison-summary.json",
+        "hy2-browser-verification.json",
+        "hy2-linux-controls-verification.json",
+        "hy2-backup-verification.json",
+        "hy2-final-accounting-verification.json",
+        "hy2-member-udp-preflight.json"
+      ],
+      "limitations": [
+        "Performance samples are two 1 MiB transfers per direction and protocol, including startup/HTTP overhead; sustained bandwidth was not measured",
+        "Local DIRECT traffic does not enter server accounting",
+        "Quota uses a 10 second sampling interval",
+        "Pre-integration standalone HY2 historical traffic cannot be reconstructed"
+      ],
+      "unfinished_requested_features": [],
+      "secrets_included": false
+    },
+    "latest_hy2_auto_health_release": {
+      "status": "deployed_and_verified",
+      "published_source_sha256": {
+        "panel/accelerated_client.py": "cdca32b22fb4f0510ab2f42a952c897906d075d9964c62bbff903eefcb8ceff2",
+        "panel/test_accelerated_client.py": "7f097385a36e9c98f1b553f21937baea5ca39593004e8cb56d2ffd7070213a73"
+      },
+      "workspace_source_sha256": {
+        "panel/accelerated_client.py": "cdcdb85a7c2369ce4d827c4430b11d2d3911e61d3b9dcdd7e73487f1bc8d91f3",
+        "panel/test_accelerated_client.py": "af081a3e5c4bada5cd5c8cb48a50046f6164954bf1403966c4cdc48cd34407dc"
+      },
+      "newline_normalization_only": true,
+      "health_check": {
+        "expected-status": "204",
+        "interval": 30,
+        "lazy": false,
+        "timeout": 5000,
+        "url": "https://www.gstatic.com/generate_204"
+      },
+      "report": "hy2-auto-health-update.json",
+      "supersedes_previous_generator_hashes_for_current_source": true
+    }
+  },
+  "speed_optimization": {
+    "status": "hy2_multiuser_integrated_and_verified",
+    "report": "speed-optimization.json",
+    "tcp_config_restored": true,
+    "retained_fix": "Cloudflare DoH / UseIPv4",
+    "hy2": {
+      "enabled": true,
+      "service_template": "raksmart-hy2@PORT.service",
+      "transport": "UDP",
+      "ports": [
+        443,
+        1443,
+        2443
+      ],
+      "accounts_isolated": true,
+      "webpage_auto_exits": true,
+      "combined_accounting_and_limits": true,
+      "legacy_service_disabled": true,
+      "report": "hy2-integration-final-acceptance.json"
+    },
+    "panel": "deployed_and_verified",
+    "previous_single_instance": {
+      "service": "raksmart-hy2.service",
+      "port": 443,
+      "transport": "UDP",
+      "enabled": false,
+      "tests": [
+        "speed-bound-mihomo-download-hy2-aclfix-hysteria2.json",
+        "speed-bound-mihomo-download-hy2-large-hysteria2.json",
+        "speed-bound-mihomo-download-hy2-enabled-hysteria2.json",
+        "speed-bound-mihomo-upload-hy2-upload-hysteria2.json"
+      ],
+      "superseded_by": "hy2-integration-final-acceptance.json"
+    },
+    "fair_comparison": "hy2-fair-comparison-summary.json",
+    "latest_fast_regression_repair": {
+      "status": "deployed_and_active_client_verified",
+      "completed_at": "2026-10-10T14:07:38.110859+00:00",
+      "health_policy": {
+        "expected-status": "204",
+        "interval": 30,
+        "lazy": false,
+        "timeout": 5000,
+        "url": "https://www.gstatic.com/generate_204"
+      },
+      "profiles_refreshed": 3,
+      "active_client_refreshed": true,
+      "active_client_selection": "AUTO · 网页切换",
+      "active_download_mbps": 66.714,
+      "active_upload_mbps": 37.828,
+      "measurement_scope": "bounded64MiB Fast download and8MiB Cloudflare upload including startup; no historical200Mbps guarantee",
+      "account_settings_and_limits_preserved": true,
+      "report": "fast-regression-final.json",
+      "other_members_refresh_existing_subscription_once": true,
+      "six_transport_and_stat_sources_verified": true,
+      "transport_restarts": 0
+    },
+    "latest_browser_regression_diagnosis": {
+      "status": "server_own_exit_comparison_complete_current_browser_200mbps",
+      "performance_restored": true,
+      "checked_at": "2026-10-11T14:14:06.013370+08:00",
+      "active_fast_download_mbps": 200,
+      "server_account_caps_present": false,
+      "configuration_changes": 0,
+      "previous_auto_health_repair_retained": true,
+      "report": "fast-browser-regression-diagnosis.json",
+      "next_required": "Keep the verified HY2-priority AUTO setup for actualuse. Stability is unverified; if low-speed recurs, capture testtime, activeprotocol and actualserverexit before attributing it to configuration. No further work is required for the requested current server-config comparison.",
+      "alternate_access_network_available": false,
+      "user_response": "Cannot temporarily change network; continue within current network",
+      "official_browser_final_mbps": 200,
+      "trial_original_policy_restored": true,
+      "user_reported_fast_server": "198.200.49.158",
+      "user_reported_fast_measurement_on_same_pc_current_wifi": false,
+      "user_reported_fast_measurement_historical_other_device": true,
+      "user_required_only_server_own_egress": true,
+      "performance_restored_scope": "This afternoon completed official browser FAST result and current bounded same-target comparisons only.",
+      "durable_recovery_verified": false,
+      "active_fast_measurement_method": "official browser FAST completed final score",
+      "current_server_own_route_mbps": {
+        "158-vless-server-direct": 5.794,
+        "158-official-hy2-server-direct": 116.708,
+        "63-vless-auto-server-direct": 3.823,
+        "63-hy2-auto-server-direct": 133.382
+      },
+      "current_comparison_report": "actual-routes-158-vs-63-current.json",
+      "current_browser_report": "fast-browser-current-server-own-complete-verified.json",
+      "afternoon_server_mutations": 0,
+      "afternoon_server_restarts": 0,
+      "alternate_158_did_not_improve_in_morning_trial": true
+    }
+  },
+  "multiuser": {
+    "schema_version": 1,
+    "generated_at": "2026-10-09T22:17:10+08:00",
+    "deployment_ip": "198.200.49.63",
+    "status": "deployed_and_verified",
+    "capacity": {
+      "administrator_accounts": 1,
+      "member_accounts_max": 2,
+      "member_accounts_deployed": 2,
+      "third_member_requires_new_port_and_instance_allocation": true
+    },
+    "accounts": [
+      {
+        "username": "admin",
+        "role": "admin",
+        "entry_port": 443,
+        "login_file": "panel-login.private.json",
+        "service_active": true
+      },
+      {
+        "username": "user-a",
+        "role": "member",
+        "entry_port": 1443,
+        "login_file": "multiuser-user-a-login.private.json",
+        "service_active": true,
+        "active_target": "server"
+      },
+      {
+        "username": "user-b",
+        "role": "member",
+        "entry_port": 2443,
+        "login_file": "multiuser-user-b-login.private.json",
+        "service_active": true,
+        "active_target": "server"
+      }
+    ],
+    "server_private_paths": {
+      "member_registry": "/var/lib/vps-panel/users.private.json",
+      "member_state_root": "/var/lib/vps-panel/users/",
+      "member_xray_config_root": "/usr/local/etc/xray-members/",
+      "member_service_template": "/etc/systemd/system/xray-panel@.service"
+    },
+    "isolation": {
+      "independent_xray_instances": true,
+      "independent_credentials_and_rule_subscriptions": true,
+      "member_can_access_only_own_state": true,
+      "member_cannot_manage_admin_or_other_members": true,
+      "cross_member_credentials_rejected": true,
+      "admin_state_and_protected_files_preserved": true,
+      "admin_services_restarted_during_deployment": false
+    },
+    "verification": {
+      "web_admin_and_member_sessions": true,
+      "desktop_and_mobile_layouts": true,
+      "member_configs_syntax_checked": true,
+      "member_internal_proxy_connections": true,
+      "member_observed_egress": "198.200.49.63",
+      "member_public_proxy_connections": true,
+      "public_port_probe": {
+        "1443": true,
+        "2443": true
+      },
+      "public_port_gate": {
+        "status": "public_connections_verified",
+        "checked_at": "2026-10-10T03:47:14.991720+00:00",
+        "evidence": "operations-clients-verification.json"
+      }
+    },
+    "reports": [
+      "multiuser-update.json",
+      "multiuser-verification.json",
+      "multiuser-clients-verification.json",
+      "multiuser-browser-verification.json",
+      "multiuser-preflight.json",
+      "multiuser-template-probe.json",
+      "multiuser-release-manifest.json",
+      "operations-clients-verification.json"
+    ],
+    "secret_handling": {
+      "passwords_included": false,
+      "uuid_values_included": false,
+      "reality_private_keys_included": false,
+      "proxy_credentials_included": false,
+      "rule_tokens_included": false,
+      "private_login_files_listed_by_name_only": true
+    },
+    "summary_file": "multiuser-final-summary.json",
+    "login_file_directory": "deployments/raksmart-198.200.49.63/",
+    "hy2_integration": {
+      "status": "deployed_and_verified",
+      "udp_ports": [
+        443,
+        1443,
+        2443
+      ],
+      "independent_credential": true,
+      "same_web_selected_exit": true,
+      "combined_monthly_accounting": true
+    }
+  },
+  "latency_optimization": {
+    "status": "deployed_and_verified",
+    "completed_at": "2026-10-10T12:25:26.596206+00:00",
+    "retained_udp_buffer_ceiling_bytes": 7340032,
+    "instance_ports": [
+      443,
+      1443,
+      2443
+    ],
+    "observed_receive_buffer_errors": {
+      "before": 321,
+      "after": 0
+    },
+    "observed_multi_block_download_mbps": {
+      "before": 44.057,
+      "after": 47.832
+    },
+    "observed_multi_block_upload_mbps": {
+      "before": 59.074,
+      "after": 57.876
+    },
+    "latency_improvement_demonstrated": false,
+    "account_settings_and_limits_preserved": true,
+    "new_client_profile_required": false,
+    "report": "udp-buffer-optimization-final.json",
+    "rollback_checkpoint": "/root/vps-udp-buffer-optimization-20261010-2022",
+    "queue_and_existing_account_limits_preserved": true,
+    "bbr_followup": {
+      "status": "evaluation_completed_original_settings_retained",
+      "completed_at": "2026-10-10T12:59:17.364437+00:00",
+      "performance_gain_demonstrated": false,
+      "decision": "Keep server/client standard BBR defaults; retain verified 7 MiB UDP ceilings and existing keepalive.",
+      "original_runtime_bytes_restored": true,
+      "product_source_unchanged": true,
+      "client_subscription_refresh_required": false,
+      "all_monitor_udp_errors_zero": true,
+      "six_public_transport_and_stat_sources_verified": true,
+      "account_settings_and_limits_preserved": true,
+      "report": "hy2-tuning-final.json"
+    }
+  },
+  "handoff": {
+    "version": 1,
+    "id": "vps-handoff-20261012-01",
+    "saved_at": "2026-10-12T20:04:32+08:00",
+    "timezone": "Asia/Shanghai",
+    "scope": "save_only",
+    "status": "materials_checked_waiting_receiver_verification",
+    "project_root": "D:/CodexData/vps",
+    "document": "D:/CodexData/vps/deployments/raksmart-198.200.49.63/README.md",
+    "document_section": "项目交接 · 2026-10-12",
+    "opener": "D:/CodexData/vps/deployments/raksmart-198.200.49.63/handoff-opener.txt",
+    "source_agent": "/root",
+    "source_chat_id": null,
+    "receiver_chat_id": null,
+    "new_chat_created": false,
+    "source_state_updated_at_before_handoff": "2026-10-11T09:13:00.352050+08:00",
+    "last_remote_verified_at": "2026-10-11T14:14:06.013370+08:00",
+    "remote_verification_during_handoff": false,
+    "server_client_changes_during_handoff": false,
+    "handoff_material_is_context_not_new_authorization": true,
+    "code_version": {
+      "git_repository": false,
+      "branch": null,
+      "commit": null,
+      "git_uncommitted_change_inventory_available": false,
+      "frontend_asset_label": "integration-20261010-1",
+      "asset_label_does_not_identify_later_backend_patch": true,
+      "complete_snapshot": "deployments/raksmart-198.200.49.63/hy2-integration-release",
+      "complete_manifest": "deployments/raksmart-198.200.49.63/hy2-integration-release-manifest.json",
+      "complete_manifest_hash_field": "release_sha256",
+      "complete_frozen_files_verified": 35,
+      "incremental_snapshot": "deployments/raksmart-198.200.49.63/hy2-auto-health-release/release",
+      "incremental_manifest": "deployments/raksmart-198.200.49.63/hy2-auto-health-release/manifest.json",
+      "incremental_manifest_hash_field": "source_sha256",
+      "incremental_frozen_files_verified": 2,
+      "maintained_production_baseline": "deployments/raksmart-198.200.49.63/panel-release",
+      "baseline_is_live_verified_today": false,
+      "root_source_requires_production_port_dns_python36_adaptations": true,
+      "maintained_baseline_files_verified": 35
+    },
+    "conflicting_historical_fields": [
+      {
+        "path": "multiuser.accounts.user-a.active_target",
+        "interpretation": "Historical server value; later six-path acceptance verifies the retained static exit.",
+        "newer_evidence": "fast-regression-final-acceptance.json"
+      },
+      {
+        "path": "panel.validation_limit",
+        "interpretation": "Initial saved-static-not-tested phase; later multiuser and HY2 acceptance must be consulted.",
+        "newer_evidence": "hy2-integration-final-acceptance.json"
+      },
+      {
+        "path": "README.md earlier HY2 routing and traffic sections",
+        "interpretation": "Historical .63 architecture before multiuser HY2 integration; .158 still has the older independent HY2 architecture.",
+        "newer_evidence": "hy2-integration-final-acceptance.json"
+      }
+    ],
+    "remaining_verification": [
+      "Sustained performance and current upload capacity.",
+      "Unique cause of the morning low-speed regression.",
+      "Verified latency benefit and long-term jitter behavior.",
+      "Other members actually refreshing their full client subscriptions.",
+      "Alternate access-network comparison unavailable to the user."
+    ],
+    "first_action": "Read-only verify this handoff ID, indexed local source/evidence hashes, complete plus incremental frozen manifests, old-field conflicts and latest completed FAST result; report differences and next action.",
+    "resume_acceptance": "Correct project/ID, accessible cited files, explained source/evidence differences, unverified items retained as unverified, no credential disclosure or loss of account/exit preservation constraints.",
+    "running_work": {
+      "handoff_inventory_agents": [
+        "handoff_code_inventory",
+        "handoff_evidence_inventory"
+      ],
+      "inventory_agents_finished": true,
+      "handoff_started_remote_jobs": [],
+      "historical_test_cleanup_evidence": "fast-browser-current-server-own-complete-verified.json",
+      "existing_user_flclash_must_not_be_stopped_as_test_cleanup": true,
+      "no_receiver_assigned": true
+    },
+    "hash_index_root": "D:/CodexData/vps",
+    "hash_scope": "Local files at handoff save, plus preserved historical evidence; not a new remote deployment assertion.",
+    "files_sha256": {
+      "panel/server.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "3565562f60c433fe6d403d192f7c3e5566cafd6d4445be7a40fe2641ec29e621"
+      },
+      "panel/accounts.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "9f836bff9708e4b153fc762215c288db9f33d211d7662a58f40915766c00b7a9"
+      },
+      "panel/routing.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "b268342ce251af17ff50d9fad0b0ce6e83238498cb40553602110edcdddc111b"
+      },
+      "panel/subscriptions.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "b0cab9b8bb9385abded4f9cc8cad4cf700722172593438eb211717ae277b6d2d"
+      },
+      "panel/hy2.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "c724a558f55633a603b123c8d8de0f3269cb354fbd8dbf0c7caa59810e29a3b4"
+      },
+      "panel/accelerated_client.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "cdcdb85a7c2369ce4d827c4430b11d2d3911e61d3b9dcdd7e73487f1bc8d91f3"
+      },
+      "panel/telemetry.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "432fd837ec3c6a0d3b7da5b738a378fba9029fb5a253cf4b7db8e789665bdd4f"
+      },
+      "panel/health.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "6bba5d5376b0e2a03cd555319e603c7a466458c46ec76ef85e8ca38b1bcf345f"
+      },
+      "panel/backups.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "044a4a47eb204cf293ef157f3a97830f7b0f268f669dded801c0c18cb30207aa"
+      },
+      "panel/diagnostics.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "8ef85947c76fd4ddf378cd09fb37ec49c65d2723cdc625a420e318cb6fe85cdd"
+      },
+      "panel/audit.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "8659c672b922e92e1fd43cc469ea04341efa2cf5287c8a5978b36c4fe261ed69"
+      },
+      "panel/node_info.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "a508d5593e04d402585c8927ce7269a1546e9c8933212ff405cfc0db066a3113"
+      },
+      "panel/install.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "ab8fe6a1b090c902ee0456ec65968acdcf6342a16d86457786731a9fcee89c13"
+      },
+      "panel/deploy.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "815ccb0a3ea88e8b22511998fb49db152a0970ff92f87d66278c6cf067e308dc"
+      },
+      "panel/web/index.html": {
+        "role": "editable_source_snapshot",
+        "sha256": "2222278a03d4a25f5fdf6935e112c6fd87f14c5871c069e751d3473f371fc128"
+      },
+      "panel/web/app.js": {
+        "role": "editable_source_snapshot",
+        "sha256": "304ac956a1a05f523c0a468e221913e59978486b655a1254ba4a765941decf24"
+      },
+      "panel/web/style.css": {
+        "role": "editable_source_snapshot",
+        "sha256": "ab27ccbd29d384709cf5e3b9de70a0e63f45d9a8d8dc134952851c450513d0fe"
+      },
+      "panel/package.json": {
+        "role": "editable_source_snapshot",
+        "sha256": "7592f6e97f4f51e181923808f7ca7b964fd72176ab933782c193a231ded63ce8"
+      },
+      "configure_reality.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "c1e949741f1a3b4a1cc35c1cbfcb4ea4ca199a33ee9f9258793cff6511a134e8"
+      },
+      "configure_static_exits.py": {
+        "role": "editable_source_snapshot",
+        "sha256": "4bb4d358af4c07df51c2ba3e2c69735b3a8ec01ce700262730fcee4e907b732d"
+      },
+      "deployments/raksmart-198.200.49.63/panel-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "0903b40a71833c9b3eff715bccf79b25cf5f3f0f54f0f9b79f94ed692c6c811d"
+      },
+      "deployments/raksmart-198.200.49.63/smart-routing-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "f22757341cd59b2d79ebddc3f066afed635dde2ff533c2ba331bb7404f718142"
+      },
+      "deployments/raksmart-198.200.49.63/frontend-socks-import-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "50724e8577cd3f99fbe0e43c4f46ffd74917bdfecbd6254d9206c98b74bfa5fa"
+      },
+      "deployments/raksmart-198.200.49.63/multiuser-final-summary.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "ed156beea2e2f195e94e8f229d66cc7fe90d7be1b13d85b91c893723e0518f6b"
+      },
+      "deployments/raksmart-198.200.49.63/routing-url-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "79e320e051160f485c3835e882fc1c67c06556ee8406c74f2f031d2ee0a25819"
+      },
+      "deployments/raksmart-198.200.49.63/user-guide-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "c436de46bc7eb1ba933b57208b757c0c5b272e9c58557a6ce281a808e0f0e30f"
+      },
+      "deployments/raksmart-198.200.49.63/frontend-motion-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "1f637c121a6ef25aff7688dbdae80313ca4d055904c77d6e005fe4c5ccc76fd2"
+      },
+      "deployments/raksmart-198.200.49.63/operations-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "6d6ffe249ed05169229194a182572c277104a612a283584b3db97efb30f9b9b7"
+      },
+      "deployments/raksmart-198.200.49.63/traffic-charts-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "9f32822b3b58544003841cb594803ab7e7bf15dbd33e4af3521e8e21f7aeed0c"
+      },
+      "deployments/raksmart-198.200.49.63/page-layout-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "3cc8640a1a5be0b758c2d70bdda7d3c69f8e5c6d8c21b1abf3e6cd7d242d1cb4"
+      },
+      "deployments/raksmart-198.200.49.63/hy2-integration-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "02622ec2675c8985171cc91403e2e0b325d43d22af24d4bb0eb70ade43d714e7"
+      },
+      "deployments/raksmart-198.200.49.63/hy2-final-accounting-verification.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "980afe4982c73ef77ff7de36ee2ce8e6c61225724b2a5f5062e8ba386a274c6f"
+      },
+      "deployments/raksmart-198.200.49.63/udp-buffer-optimization-final.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "875cd86ff70ac4270c8390d9f1130ec458d6228201d5456d6750311b68b8358f"
+      },
+      "deployments/raksmart-198.200.49.63/fast-regression-final-acceptance.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "e24527517fd2b0db3a94f0dc74b87f61f370379350eb4247f0e4894a027e828d"
+      },
+      "deployments/raksmart-198.200.49.63/hy2-auto-health-update.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "694bfbae3c463b088538b0ee7d9824764eb0122865bbd1c9186838543302544f"
+      },
+      "deployments/raksmart-198.200.49.63/fast-browser-regression-diagnosis.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "0c6b39239fbe1c5bf8873dfd93a41c0ae568f14d8b091aef544abaa8b78f7847"
+      },
+      "deployments/raksmart-198.200.49.63/server-config-comparison-158-vs-63-current.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "541dbd91f5aaff084e5dd084aeccca862718d8d7ff26d8e3ed3218b8d3329475"
+      },
+      "deployments/raksmart-198.200.49.63/active-client-server-comparison-current.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "76ed3c05a987c68f739c4306f7fa137dfbfc73d39d6003735f65b8e031330d7a"
+      },
+      "deployments/raksmart-198.200.49.63/actual-routes-158-vs-63-current.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "0bf7e7ce81dfb6624a2bea297243384b02cb0efa6d11cd1e180b2478e55eb6c7"
+      },
+      "deployments/raksmart-198.200.49.63/fast-browser-current-server-own-complete-verified.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "cc574ff4bc80ba8326df25219ab7097adad98289c376b5062733a72e206a85d6"
+      },
+      "deployments/raksmart-198.200.49.63/fast-browser-current-server-own-complete.png": {
+        "role": "historical_verification_evidence",
+        "sha256": "b5c301bdb4569c2bb634fb0beb31f806740cef1893d09fc20ad4f62d604ac99c"
+      },
+      "deployments/raksmart-198.200.49.63/fast-browser-current-server-own-final-verified.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "7e22093f2192efa5c25c25938be2138ca604ad536b2fbab487edfa3f0170316c"
+      },
+      "deployments/raksmart-198.200.49.63/hy2-client-bandwidth-trial.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "062efc7251afd7e5da82c656f6fc548e2546d6b720dade3331a951eb4abde692"
+      },
+      "deployments/raksmart-198.200.49.63/hy2-tuning-final.json": {
+        "role": "historical_verification_evidence",
+        "sha256": "10c0160081866a294239498da27857f2cdd46fb79c1bf40bd8875b4f078434a1"
+      },
+      "deployments/raksmart-198.200.49.63/README.md": {
+        "role": "canonical_handoff_document",
+        "sha256": "9d2460141efe6f19eb8a8fbccfbf88feacf39e09c4ab97033b57058152105310"
+      },
+      "deployments/raksmart-198.200.49.63/handoff-opener.txt": {
+        "role": "copyable_resume_prompt",
+        "sha256": "c11cf72201d1f0c96ba82670f9cebff965b834fea890d0189308f2e357815c87"
+      },
+      "deployments/raksmart-198.200.49.63/hy2-integration-release-manifest.json": {
+        "role": "complete_release_manifest",
+        "sha256": "18cc359e1629871a6a38dc0c13090953940e7d0c793ec8ed844c48b87815d06c"
+      },
+      "deployments/raksmart-198.200.49.63/hy2-auto-health-release/manifest.json": {
+        "role": "incremental_release_manifest",
+        "sha256": "823f42c447e247230df43dff58f6a2e693239e56a9303fca26dd7cdf7267877a"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/configure_reality.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "ccd8844b284b11eed72b5c0990ddb4382c7b3364098b98d156ffd8c5af774011"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/configure_static_exits.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "903e477889509fba9a4d21e534be50088f58d6bd42e7a67ea3606a498dc11a43"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/__init__.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "f9f7f532e62d0013f201926bfe7f0593e7e19ca27a751e456ce1a3b522c09189"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/accelerated_client.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "cdca32b22fb4f0510ab2f42a952c897906d075d9964c62bbff903eefcb8ceff2"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/accounts.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "e555bf232472c73fc32ae5fd0e87befc278db8c560898aea6d015189d0356369"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/audit.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "265f15c3dced88e2d09fbac10e31499b9034c2d7a10d548977723dad41db7f44"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/backups.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "291618579fc02b2b6f8bff687f77bbdfb6c941fd0e1e3a2a65ece347d26b6678"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/diagnostics.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "641b1e397b5f0971a9ac088518ba0cb559a487af4fb3af24d0f67e1a3c7aadbf"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/health.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "b00a9bf8d404360b21057eaeb5593037decf9922e7cfc906225dcdc4a5171015"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/hy2.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "e44e8528eac43dd794abe1ed595461fc0ce4ebf6fccc5717020a472c3617e0c8"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/node_info.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "a508d5593e04d402585c8927ce7269a1546e9c8933212ff405cfc0db066a3113"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/routing.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "4d7c76ef56a9073cb0ffa9690d6468db6ce4fcdcc1d6086bba9d4ecb2a15ed9a"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/rules/domestic-dns.yaml": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "4a498d45a80fd6432949e7a9800c13c9c7caac6cdc809c78619278f2c214bf09"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/server.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "3e3a725127c2cabcf58113e9b9baeb7978dd238d60855bea2c121b95680a29d9"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/services-routing.json": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "749a2eafdec19ec16de57b7d951543719c4e564bc48edae0004964b0d7cd59ca"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/smart-routing.json": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "9a341efa0fd4afa4df365fd1af3fcf5bd61f7c0def137bdff29447bc0eb8941d"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/subscriptions.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "e04106138d932b30e5e69801d41771d2d9b6e79ba54b78ec2a93a49369fb7968"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/telemetry.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "7292171903358a3cb8155ec08d365d80590e741646398661edd14229e87fbeed"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_accelerated_client.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "7f097385a36e9c98f1b553f21937baea5ca39593004e8cb56d2ffd7070213a73"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_accounts.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "26b11a9c1ea8dad0a84ca27e6e747476eab59a4ad355d0f0f0b5b691c3604d59"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_enhancements_http.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "8189cb1e0e52e3a5892c776240307179aced3ab20f8fabf13569401d66925dc4"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_hy2_backups.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "5b070c2b1629b493b7988109faf37eaa1037736dedec8f4c0fadfd5ea0b39454"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_hy2_integration.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "d55d04885c3994f463a711a4164f7dc64c0150896bfda63b88bf665a0d7cbc13"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_hy2_telemetry.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "b146c8041c7a13fef03c0290a35179a707ccdd2e877652c0d15bf21d303a24cb"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_multiuser_http.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "bb6950a3be0489a34a4838d143f60cf46bff192fbbba647671151f88adc991d3"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_operations.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "8cc83783d8149f57139874810f0f4bfec7170cd73ce58cca4ef00398e765bdaf"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_panel.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "f301c90d1df15b7fb9f09f3d18e53ef0a2c62c43179be653804958ba3d017933"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_routing.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "c3ddf5235f4d0ddc294ef2d1705326c8396de100160c3ce4bdd85b5c103949da"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/test_subscriptions.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "bc4c6aa97e214d1667f3cfc0d913e37950b6c99149c6b31c05cfbb8328fc06bc"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/web/app.js": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "3257def1d06e8c6ea0a154172e6aadc06133337fbecdd9be6f422d9c0a10f7e5"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/web/index.html": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "2222278a03d4a25f5fdf6935e112c6fd87f14c5871c069e751d3473f371fc128"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/web/mark.svg": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "e1411d48517294ef21ecdd57a35d1d45d0dff2956d445f41f84315746d6d5ba7"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/panel/web/style.css": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "d29c80a7d8112a67420095da5675c7b0bd0e59256a2ea805c5af5595a53075ed"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/test_configure_reality.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "37db9a469a46e922641044c509c95e8054b03af1d04dcd0beacad5c2d6336c29"
+      },
+      "deployments/raksmart-198.200.49.63/panel-release/test_configure_static_exits.py": {
+        "role": "maintained_production_baseline_local_snapshot",
+        "sha256": "2ced04219934556c272b2f491921ae522e0fc35670d96da9ad7021a2ff469629"
+      },
+      "deployments/raksmart-198.200.49.158/README.md": {
+        "role": "secondary_deployment_historical_document",
+        "sha256": "348f3bd1178b78e5f0525c541bf1ae6f16b97f26a04a15afa4ecd5c77cc29759"
+      },
+      "deployments/raksmart-198.200.49.158/task-state.json": {
+        "role": "secondary_deployment_historical_state",
+        "sha256": "13552391b9c9f2deafefe5bde1ba7a08dc8419da3adca009c34f18c5725ca8ad"
+      },
+      "deployments/raksmart-198.200.49.158/smart-routing-final-acceptance.json": {
+        "role": "secondary_smart_routing_evidence",
+        "sha256": "1e8063df49547e6b14c844cade3e47bd47817167b5e8d976b0a726067f6f6cea"
+      },
+      "deployments/raksmart-198.200.49.63/ssh_access.py": {
+        "role": "existing_ssh_helper_source",
+        "sha256": "599f4d73e1c8de99046d6f70b0df0f7d21c168e0baa6a7e385485850bbbde7a8"
+      },
+      "deployments/raksmart-198.200.49.158/ssh_access.py": {
+        "role": "existing_ssh_helper_source",
+        "sha256": "d98f56c65fe40ebe786f37a89842ca9182592836334cd540b8fb75cb6402167d"
+      }
+    },
+    "secrets_included": false
+  },
+  "console_optimization": {
+    "status": "deployed_and_verified",
+    "page_version": "console-20261013-1",
+    "release": {
+      "directory": "console-optimization-release-20261013-05",
+      "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+      "manifest_sha256": "5938c1af4adc70e8e323cba5998805f4c0340731f76d247b0edcae7c87a98ff6",
+      "managed_files": 41,
+      "legacy_releases_untouched": true,
+      "superseded_candidates": [
+        "console-optimization-release-20261012-01",
+        "console-optimization-release-20261012-02",
+        "console-optimization-release-20261012-03",
+        "console-optimization-release-20261013-01",
+        "console-optimization-release-20261013-02",
+        "console-optimization-release-20261013-03",
+        "console-optimization-release-20261013-04"
+      ],
+      "final_files_and_archive_hashes_verified": true
+    },
+    "production": {
+      "deployed": true,
+      "accounts_changed": false,
+      "proxy_configuration_changed": false,
+      "firewall_changed": false,
+      "services_restarted": true,
+      "traffic_ledger_restored": false,
+      "only_panel_restarted": true,
+      "deployment_report": "console-optimization-deployment-20261013-02.json",
+      "post_deployment_verification": "console-optimization-post-deployment-verification-20261013.json",
+      "remote_stage": "/root/vps-console-deploy-jv0b94dh",
+      "remote_helper_sha256": "b27888b329e99be8bc45130322a886cb86c099f4cbc070ae39b7904c2fc58c8c",
+      "changed_source_files": 32,
+      "source_files_verified": 41,
+      "accounts_checked": 3,
+      "protected_bytes_preserved": true,
+      "proxy_epochs_preserved": true,
+      "panel_enablement_preserved": true,
+      "panel_active": true,
+      "traffic_cumulative_non_decreasing": true,
+      "entrance_pool_still_absent": true,
+      "member_task_store_still_absent": true,
+      "preservation_scope": [
+        "account registry",
+        "account state and profiles",
+        "proxy configs",
+        "TLS files",
+        "systemd units",
+        "sysctl and firewall",
+        "proxy process epochs",
+        "cumulative traffic ledger"
+      ],
+      "preservation_limit": "Existing backup files, backup settings and activity logs were not included in the preservation snapshot; no claim of complete operational-data preservation.",
+      "new_member_creation_performed": false,
+      "new_public_port_opening_performed": false,
+      "preflight_attempt": {
+        "report": "console-optimization-deployment-20261013-01.json",
+        "production_updated": false,
+        "reason": "systemd 219 does not support NRestarts; the helper was corrected before retry, release05 was unchanged."
+      },
+      "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+      "verified_at": "2026-10-13T01:59:53.788702+00:00"
+    },
+    "report": "console-optimization-acceptance-20261012.json",
+    "notes": "console-optimization-20261013.md",
+    "python36_validation": "console-optimization-python36-validation-20261013-05.json",
+    "python36": {
+      "tests_run": 234,
+      "passed": 225,
+      "skipped": 9,
+      "failures": 0,
+      "errors": 0
+    },
+    "browser": {
+      "local_checks": 94,
+      "production_checks": 15,
+      "accounts_checked": 3,
+      "production_report": "console-optimization-browser-verification.json",
+      "success": true
+    },
+    "deployment_report": "console-optimization-deployment-20261013-02.json",
+    "post_deployment_verification": "console-optimization-post-deployment-verification-20261013.json"
+  }
+}
+

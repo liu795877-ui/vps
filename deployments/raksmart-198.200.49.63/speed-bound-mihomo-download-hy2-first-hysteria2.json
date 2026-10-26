@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-09T16:05:29+08:00",
+  "path": "Temporary Mihomo bound to physical WLAN -> RAKsmart-US-HY2 UDP443",
+  "direction": "download",
+  "parallel_streams": 1,
+  "requested_bytes_per_stream": 1000000,
+  "checks": [
+    {
+      "sample": 1,
+      "streams": [
+        {
+          "output": "{\"http_code\":000,\"size_download\":0,\"size_upload\":0,\"time_total\":0.173269,\"time_starttransfer\":0.173266,\"time_appconnect\":0.000000}",
+          "exit_code": 35,
+          "error": "curl: (35) schannel: failed to receive handshake, SSL/TLS connection failed",
+          "success": false
+        }
+      ],
+      "actual_bytes": 0,
+      "wall_seconds": 0.238,
+      "mbps_including_startup": 0.0,
+      "MB_per_second": 0.0,
+      "success": false
+    }
+  ],
+  "identity_attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0,
+      "exit_ip": "198.200.49.63",
+      "error": "",
+      "matches_vps": true
+    }
+  ],
+  "exit_ip": "198.200.49.63",
+  "identity_exit_code": 0,
+  "identity_error": "",
+  "exit_matches_vps": true
+}

@@ -1,0 +1,62 @@
+{
+  "rows": [
+    {
+      "url": "https://www.gstatic.com/generate_204",
+      "exit": 0,
+      "status": 204,
+      "connect_s": 0.001181,
+      "tls_s": 0.411339,
+      "ttfb_s": 0.591102,
+      "total_s": 0.591116,
+      "native_delta": {
+        "hy2": {
+          "up_bytes": 670,
+          "down_bytes": 4925
+        },
+        "xray": {
+          "up_bytes": 5070,
+          "down_bytes": 4925
+        }
+      }
+    },
+    {
+      "url": "https://api.ipify.org",
+      "exit": 0,
+      "status": 200,
+      "connect_s": 0.001291,
+      "tls_s": 0.218958,
+      "ttfb_s": 0.467032,
+      "total_s": 0.467096,
+      "native_delta": {
+        "hy2": {
+          "up_bytes": 8836,
+          "down_bytes": 10567
+        },
+        "xray": {
+          "up_bytes": 10470,
+          "down_bytes": 7440
+        }
+      }
+    },
+    {
+      "url": "https://fast.com/",
+      "exit": 0,
+      "status": 200,
+      "connect_s": 0.001248,
+      "tls_s": 0.602976,
+      "ttfb_s": 0.780434,
+      "total_s": 0.798064,
+      "native_delta": {
+        "hy2": {
+          "up_bytes": 8335,
+          "down_bytes": 38821
+        },
+        "xray": {
+          "up_bytes": 9788,
+          "down_bytes": 38852
+        }
+      }
+    }
+  ],
+  "config_changes": 0
+}

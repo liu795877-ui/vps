@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-09T12:30:41.748224+00:00",
+  "success": true,
+  "samples": [
+    {
+      "domain": "api.bilibili.com",
+      "route": "DIRECT",
+      "https_connection_succeeded": true
+    },
+    {
+      "domain": "static.hdslb.com",
+      "route": "DIRECT",
+      "https_connection_succeeded": true
+    },
+    {
+      "domain": "api.ipify.org",
+      "route": "STATIC-SELECT",
+      "https_connection_succeeded": true
+    }
+  ],
+  "public_provider_caches_reused": 23,
+  "auto_egress": {
+    "observed_ip": "128.241.19.234",
+    "expected_ip": "128.241.19.234"
+  },
+  "complete_profile_validated": true,
+  "all_providers_loaded": true,
+  "custom_provider_refresh_succeeded": true,
+  "provider_count": 27,
+  "active_target": "static",
+  "auto_identity_preserved": true,
+  "exit_accounts_preserved": true,
+  "active_target_preserved": true
+}

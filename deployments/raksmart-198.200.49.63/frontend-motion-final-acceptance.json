@@ -1,0 +1,61 @@
+{
+  "completed_at": "2026-10-09T21:00:40+08:00",
+  "server": "198.200.49.63",
+  "success": true,
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+  "asset_version": "motion-20261009-1",
+  "updated_files": [
+    "panel/web/style.css",
+    "panel/web/app.js",
+    "panel/web/index.html"
+  ],
+  "source_sha256": {
+    "panel/web/style.css": "eeefb23ca001de7be18a4700611d226d51e6622ff6891ae48cff8b602223e137",
+    "panel/web/app.js": "a8903c69f03db2961f38d9a9681bdb6db9d0bcc964d3175e942a42277d24a28d",
+    "panel/web/index.html": "d715e9ca96337341a4130e6e4f6132d44d2fa9f9563422f200678c932081dde3"
+  },
+  "features": [
+    "device screen scan and signal waves",
+    "server rack indicators",
+    "configured path particles",
+    "active exit orbit and highlight",
+    "state and successful path change feedback",
+    "hover, press, dialog and page transitions"
+  ],
+  "animation_represents": "The applied proxy path; device connectivity and actual request routes are confirmed in the client.",
+  "routing_mode": "smart",
+  "active_target": "server",
+  "static_exit_count": 0,
+  "live_exit_switches_performed": false,
+  "configuration_mutations_attempted": 0,
+  "complete_state_unchanged": true,
+  "protected_configuration_count": 10,
+  "all_protected_hashes_unchanged": true,
+  "four_service_processes_unchanged": true,
+  "services_restarted": false,
+  "trusted_public_sources_match": true,
+  "local_state_scenarios": 32,
+  "local_viewports": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "final_1024_patch_fingerprint_verified": true,
+  "desktop_mobile_browser_verified": true,
+  "reduced_motion_dynamic_change_verified": true,
+  "hidden_view_motion_paused": true,
+  "client_config_reimport_required": false,
+  "reports": [
+    "frontend-motion-update.json",
+    "frontend-motion-browser-verification.json",
+    "frontend-motion-preservation.json",
+    "../../.validation/connection-motion/report.json",
+    "../../.validation/connection-motion/final-1024.json"
+  ],
+  "screenshots": [
+    "frontend-motion-ui/overview-desktop.png",
+    "frontend-motion-ui/overview-mobile.png",
+    "frontend-motion-ui/overview-reduced-motion.png"
+  ]
+}

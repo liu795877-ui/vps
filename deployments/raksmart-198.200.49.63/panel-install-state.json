@@ -1,0 +1,42 @@
+{
+  "phase": "complete",
+  "status": "complete",
+  "created_paths": [
+    "/opt/vps-panel",
+    "/var/lib/vps-panel",
+    "/etc/systemd/system/vps-panel.service",
+    "/usr/local/bin/caddy",
+    "/etc/caddy",
+    "/var/lib/caddy",
+    "/etc/systemd/system/caddy.service"
+  ],
+  "created_services": [
+    "vps-panel.service",
+    "caddy.service"
+  ],
+  "origin": "https://198-200-49-63.sslip.io:8443",
+  "protected_hashes": {
+    "/usr/local/etc/xray/config.json": "4784daf5743ea4a51aed1cb37774265ddd81e26983b71f4473ca7b7908236eec",
+    "/usr/local/etc/raksmart-hy2/server.yaml": "c86b1cde92a5e92823b64741cded7194473df5c66ad3839394640d84f255f09e",
+    "/etc/systemd/system/xray.service": "a19fee5a90977c29f805a0ddc18f97bf77ba59e10a9dd0e20a4561ba6439e819",
+    "/etc/systemd/system/raksmart-hy2.service": "5f9bd2c020e985dff1ef7b91ed604c4952785c54a9fd837892ad64d5165e823e",
+    "/etc/resolv.conf": "c74307cd8df8be5b9d22f0d8530ebaa1d2339a16d2513325da86eace7c7a319b"
+  },
+  "started_at": 1791545148.1787233,
+  "updated_at": 1791545174.3886697,
+  "created_caddy_user": true,
+  "result": {
+    "installed": true,
+    "origin": "https://198-200-49-63.sslip.io:8443",
+    "services": [
+      "vps-panel.service",
+      "caddy.service"
+    ],
+    "base_config_preserved": true,
+    "hy2_config_preserved": true,
+    "dns_preserved": true,
+    "initial_exit_count": 0,
+    "backend_listen": "127.0.0.1:18787",
+    "external_https_verification_pending": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T01:41:13.448981+00:00",
+  "deployment_ip": "198.200.49.63",
+  "domain": "mooc1.chaoxing.com",
+  "saved_account": "admin",
+  "rule_saved": true,
+  "new_rule_added": true,
+  "exact_hostname_scope": true,
+  "other_accounts_and_proxy_configs_preserved": true,
+  "proxy_processes_preserved": true,
+  "client_reimport_required": false,
+  "subscription_refresh_seconds": 300,
+  "domain_only_subscription_verified": true,
+  "official_mihomo_full_profile_accepted": true,
+  "provider_count": 27,
+  "actual_route_verified": "DIRECT",
+  "matched_provider": "Custom Direct",
+  "https_connection_succeeded": true,
+  "homepage_http_status": "200",
+  "private_course_url_requested": false,
+  "installed_client_unchanged": true
+}

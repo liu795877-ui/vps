@@ -1,0 +1,1772 @@
+{
+  "success": false,
+  "label": "standard-initial",
+  "mode": "profile",
+  "started_at": "2026-10-10T12:47:35.281194+00:00",
+  "server": "198.200.49.63",
+  "configuration_changes": 0,
+  "exit_changes": 0,
+  "credential_changes": 0,
+  "client_profile": "standard",
+  "cleanup_errors": [],
+  "fresh_client": {
+    "samples": [
+      {
+        "kind": "light",
+        "started_offset_seconds": 21.19412,
+        "ended_offset_seconds": 22.619547,
+        "wall_seconds": 1.425427,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485bc7bffc9c132-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.131,
+        "tls_ready_ms": 917.915,
+        "pretransfer_ms": 918.09,
+        "ttfb_ms": 1332.094,
+        "curl_total_seconds": 1.332601,
+        "http_wait_after_pretransfer_ms": 414.004,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 1,
+        "first_business_request": true,
+        "new_isolated_client": true,
+        "mihomo_startup_seconds": 0.6767,
+        "startup_warming_requests": 0
+      },
+      {
+        "kind": "light",
+        "started_offset_seconds": 23.378409,
+        "ended_offset_seconds": 28.453439,
+        "wall_seconds": 5.075031,
+        "curl_exit_code": 28,
+        "response_identifiers": {},
+        "http_code": null,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 0,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": null,
+        "tls_ready_ms": null,
+        "pretransfer_ms": null,
+        "ttfb_ms": null,
+        "curl_total_seconds": null,
+        "http_wait_after_pretransfer_ms": null,
+        "success": false,
+        "egress_matches_current_server_exit": false,
+        "error_category": "timeout",
+        "sample": 2,
+        "first_business_request": true,
+        "new_isolated_client": true,
+        "mihomo_startup_seconds": 0.6804,
+        "startup_warming_requests": 0
+      },
+      {
+        "kind": "light",
+        "started_offset_seconds": 29.1979,
+        "ended_offset_seconds": 30.351307,
+        "wall_seconds": 1.153407,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485bcad3f58fa56-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.331,
+        "tls_ready_ms": 832.337,
+        "pretransfer_ms": 832.492,
+        "ttfb_ms": 1073.806,
+        "curl_total_seconds": 1.074326,
+        "http_wait_after_pretransfer_ms": 241.314,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 3,
+        "first_business_request": true,
+        "new_isolated_client": true,
+        "mihomo_startup_seconds": 0.6724,
+        "startup_warming_requests": 0
+      }
+    ],
+    "stages": {
+      "local_proxy_connect_ms": {
+        "attempts": 3,
+        "successes": 2,
+        "error_rate": 0.3333,
+        "median": 1.231,
+        "range": [
+          1.131,
+          1.331
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "tls_ready_ms": {
+        "attempts": 3,
+        "successes": 2,
+        "error_rate": 0.3333,
+        "median": 875.126,
+        "range": [
+          832.337,
+          917.915
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "pretransfer_ms": {
+        "attempts": 3,
+        "successes": 2,
+        "error_rate": 0.3333,
+        "median": 875.291,
+        "range": [
+          832.492,
+          918.09
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "ttfb_ms": {
+        "attempts": 3,
+        "successes": 2,
+        "error_rate": 0.3333,
+        "median": 1202.95,
+        "range": [
+          1073.806,
+          1332.094
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "http_wait_after_pretransfer_ms": {
+        "attempts": 3,
+        "successes": 2,
+        "error_rate": 0.3333,
+        "median": 327.659,
+        "range": [
+          241.314,
+          414.004
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      }
+    }
+  },
+  "established_client": {
+    "samples": [
+      {
+        "kind": "light",
+        "started_offset_seconds": 30.359973,
+        "ended_offset_seconds": 31.099946,
+        "wall_seconds": 0.739973,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485bcb1c97c2385-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.143,
+        "tls_ready_ms": 407.171,
+        "pretransfer_ms": 407.315,
+        "ttfb_ms": 662.266,
+        "curl_total_seconds": 0.662952,
+        "http_wait_after_pretransfer_ms": 254.951,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 1,
+        "first_business_request": false,
+        "new_isolated_client": false
+      },
+      {
+        "kind": "light",
+        "started_offset_seconds": 31.10967,
+        "ended_offset_seconds": 31.632791,
+        "wall_seconds": 0.523121,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485bcb52b9ded3e-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.185,
+        "tls_ready_ms": 195.438,
+        "pretransfer_ms": 195.631,
+        "ttfb_ms": 445.221,
+        "curl_total_seconds": 0.445793,
+        "http_wait_after_pretransfer_ms": 249.59,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 2,
+        "first_business_request": false,
+        "new_isolated_client": false
+      },
+      {
+        "kind": "light",
+        "started_offset_seconds": 31.643065,
+        "ended_offset_seconds": 32.153777,
+        "wall_seconds": 0.510711,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485bcb87a79e9e7-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.082,
+        "tls_ready_ms": 191.183,
+        "pretransfer_ms": 191.345,
+        "ttfb_ms": 432.494,
+        "curl_total_seconds": 0.43303,
+        "http_wait_after_pretransfer_ms": 241.149,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 3,
+        "first_business_request": false,
+        "new_isolated_client": false
+      },
+      {
+        "kind": "light",
+        "started_offset_seconds": 32.166635,
+        "ended_offset_seconds": 32.697187,
+        "wall_seconds": 0.530552,
+        "curl_exit_code": 0,
+        "response_identifiers": {
+          "server": "cloudflare",
+          "cf-cache-status": "DYNAMIC",
+          "cf-ray": "a485bcbbcdbf1828-SJC"
+        },
+        "http_code": 200,
+        "actual_upload_bytes": 0,
+        "actual_download_bytes": 13,
+        "requested_bytes": 0,
+        "local_proxy_connect_ms": 1.27,
+        "tls_ready_ms": 203.194,
+        "pretransfer_ms": 203.37,
+        "ttfb_ms": 448.929,
+        "curl_total_seconds": 0.449442,
+        "http_wait_after_pretransfer_ms": 245.559,
+        "success": true,
+        "egress_matches_current_server_exit": true,
+        "error_category": "none",
+        "sample": 4,
+        "first_business_request": false,
+        "new_isolated_client": false
+      }
+    ],
+    "stages": {
+      "local_proxy_connect_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 1.164,
+        "range": [
+          1.082,
+          1.27
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "tls_ready_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 199.316,
+        "range": [
+          191.183,
+          407.171
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "pretransfer_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 199.5,
+        "range": [
+          191.345,
+          407.315
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "ttfb_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 447.075,
+        "range": [
+          432.494,
+          662.266
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "http_wait_after_pretransfer_ms": {
+        "attempts": 4,
+        "successes": 4,
+        "error_rate": 0.0,
+        "median": 247.575,
+        "range": [
+          241.149,
+          254.951
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      }
+    },
+    "startup_warming_requests": 1,
+    "label": "same client as the final fresh sample, now used once"
+  },
+  "idle_observations": [],
+  "phases": [
+    {
+      "name": "idle",
+      "requested_window_seconds": 6,
+      "phase_wall_seconds": 4.001,
+      "load_transfers": [],
+      "probes": [
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 33.290193,
+          "ended_offset_seconds": 33.491599,
+          "tcp_connect_ms": 201.406,
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 33.289593,
+          "ended_offset_seconds": 33.819454,
+          "wall_seconds": 0.529861,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bcc2dae4ab58-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.663,
+          "tls_ready_ms": 194.887,
+          "pretransfer_ms": 195.086,
+          "ttfb_ms": 443.004,
+          "curl_total_seconds": 0.443487,
+          "http_wait_after_pretransfer_ms": 247.918,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 35.289649,
+          "ended_offset_seconds": 35.4947,
+          "tcp_connect_ms": 205.051,
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 35.289289,
+          "ended_offset_seconds": 35.823262,
+          "wall_seconds": 0.533974,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bccf5fe20065-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.059,
+          "tls_ready_ms": 203.348,
+          "pretransfer_ms": 203.483,
+          "ttfb_ms": 457.76,
+          "curl_total_seconds": 0.458334,
+          "http_wait_after_pretransfer_ms": 254.277,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": true
+        }
+      ],
+      "actual_load_bytes": 0,
+      "maximum_requested_payload_bytes": 67108864,
+      "completed_full_blocks": 0,
+      "load_byte_cap_reached": false,
+      "actual_transfer_seconds": 0,
+      "observed_load_mbps_including_request_overhead": null,
+      "physical_tcp_connect_ms": {
+        "attempts": 2,
+        "successes": 2,
+        "error_rate": 0.0,
+        "median": 203.228,
+        "range": [
+          201.406,
+          205.051
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "light_request_stages": {
+        "local_proxy_connect_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 1.361,
+          "range": [
+            1.059,
+            1.663
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "tls_ready_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 199.118,
+          "range": [
+            194.887,
+            203.348
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "pretransfer_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 199.285,
+          "range": [
+            195.086,
+            203.483
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "ttfb_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 450.382,
+          "range": [
+            443.004,
+            457.76
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "http_wait_after_pretransfer_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 251.097,
+          "range": [
+            247.918,
+            254.277
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        }
+      },
+      "minimum_fully_covered_successful_probes": 2,
+      "sufficient_load_coverage": true,
+      "load_window_scope": "active request intervals including handshake/HTTP; continuous saturation is not proven"
+    },
+    {
+      "name": "download",
+      "requested_window_seconds": 16,
+      "phase_wall_seconds": 14.003,
+      "load_transfers": [
+        {
+          "kind": "download",
+          "started_offset_seconds": 37.290227,
+          "ended_offset_seconds": 39.449962,
+          "wall_seconds": 2.159735,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bcdbdda3055e-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 8388608,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.087,
+          "tls_ready_ms": 201.811,
+          "pretransfer_ms": 201.939,
+          "ttfb_ms": 407.147,
+          "curl_total_seconds": 2.075434,
+          "http_wait_after_pretransfer_ms": 205.208,
+          "success": true,
+          "mbps_including_request_overhead": 31.073,
+          "error_category": "none",
+          "block": 1,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "download",
+          "started_offset_seconds": 39.463884,
+          "ended_offset_seconds": 40.619489,
+          "wall_seconds": 1.155605,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bce96ad69cd0-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 8388608,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.117,
+          "tls_ready_ms": 205.858,
+          "pretransfer_ms": 205.983,
+          "ttfb_ms": 411.67,
+          "curl_total_seconds": 1.077714,
+          "http_wait_after_pretransfer_ms": 205.687,
+          "success": true,
+          "mbps_including_request_overhead": 58.072,
+          "error_category": "none",
+          "block": 2,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "download",
+          "started_offset_seconds": 40.630945,
+          "ended_offset_seconds": 41.890952,
+          "wall_seconds": 1.260007,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bcf0bd714900-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 8388608,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.203,
+          "tls_ready_ms": 191.875,
+          "pretransfer_ms": 192.133,
+          "ttfb_ms": 392.769,
+          "curl_total_seconds": 1.172715,
+          "http_wait_after_pretransfer_ms": 200.636,
+          "success": true,
+          "mbps_including_request_overhead": 53.261,
+          "error_category": "none",
+          "block": 3,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "download",
+          "started_offset_seconds": 41.90394,
+          "ended_offset_seconds": 43.187599,
+          "wall_seconds": 1.28366,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bcf8aca77a73-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 8388608,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.189,
+          "tls_ready_ms": 202.871,
+          "pretransfer_ms": 203.06,
+          "ttfb_ms": 408.257,
+          "curl_total_seconds": 1.206371,
+          "http_wait_after_pretransfer_ms": 205.197,
+          "success": true,
+          "mbps_including_request_overhead": 52.279,
+          "error_category": "none",
+          "block": 4,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "download",
+          "started_offset_seconds": 43.198962,
+          "ended_offset_seconds": 44.33758,
+          "wall_seconds": 1.138618,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd00bcd0eb26-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 8388608,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.079,
+          "tls_ready_ms": 195.36,
+          "pretransfer_ms": 195.495,
+          "ttfb_ms": 431.246,
+          "curl_total_seconds": 1.061971,
+          "http_wait_after_pretransfer_ms": 235.751,
+          "success": true,
+          "mbps_including_request_overhead": 58.939,
+          "error_category": "none",
+          "block": 5,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "download",
+          "started_offset_seconds": 44.352327,
+          "ended_offset_seconds": 45.659745,
+          "wall_seconds": 1.307418,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd08298f2083-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 8388608,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.517,
+          "tls_ready_ms": 207.718,
+          "pretransfer_ms": 207.932,
+          "ttfb_ms": 412.674,
+          "curl_total_seconds": 1.201572,
+          "http_wait_after_pretransfer_ms": 204.742,
+          "success": true,
+          "mbps_including_request_overhead": 51.329,
+          "error_category": "none",
+          "block": 6,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "download",
+          "started_offset_seconds": 45.672742,
+          "ended_offset_seconds": 46.842683,
+          "wall_seconds": 1.169941,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd102aea2fe9-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 8388608,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 0.971,
+          "tls_ready_ms": 192.112,
+          "pretransfer_ms": 192.256,
+          "ttfb_ms": 388.125,
+          "curl_total_seconds": 1.093249,
+          "http_wait_after_pretransfer_ms": 195.869,
+          "success": true,
+          "mbps_including_request_overhead": 57.361,
+          "error_category": "none",
+          "block": 7,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "download",
+          "started_offset_seconds": 46.85531,
+          "ended_offset_seconds": 48.347996,
+          "wall_seconds": 1.492686,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd17be124c71-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 8388608,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.352,
+          "tls_ready_ms": 206.286,
+          "pretransfer_ms": 206.462,
+          "ttfb_ms": 416.574,
+          "curl_total_seconds": 1.402448,
+          "http_wait_after_pretransfer_ms": 210.112,
+          "success": true,
+          "mbps_including_request_overhead": 44.958,
+          "error_category": "none",
+          "block": 8,
+          "expected_window_end_partial": false
+        }
+      ],
+      "probes": [
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 37.291115,
+          "ended_offset_seconds": 37.4607,
+          "tcp_connect_ms": 169.585,
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 37.290914,
+          "ended_offset_seconds": 37.818837,
+          "wall_seconds": 0.527923,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bcdbcba2cf15-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.087,
+          "tls_ready_ms": 191.862,
+          "pretransfer_ms": 192.025,
+          "ttfb_ms": 444.809,
+          "curl_total_seconds": 0.445368,
+          "http_wait_after_pretransfer_ms": 252.784,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 39.29121,
+          "ended_offset_seconds": 39.463066,
+          "tcp_connect_ms": 171.856,
+          "load_overlap_fraction": 0.9238,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 39.290842,
+          "ended_offset_seconds": 39.81912,
+          "wall_seconds": 0.528277,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bce85cc08ac8-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 0.966,
+          "tls_ready_ms": 200.074,
+          "pretransfer_ms": 200.23,
+          "ttfb_ms": 448.536,
+          "curl_total_seconds": 0.449013,
+          "http_wait_after_pretransfer_ms": 248.306,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.9736,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 41.291406,
+          "ended_offset_seconds": 41.529525,
+          "tcp_connect_ms": 238.119,
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 41.291114,
+          "ended_offset_seconds": 41.813554,
+          "wall_seconds": 0.52244,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bcf4d959cf1f-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.04,
+          "tls_ready_ms": 208.839,
+          "pretransfer_ms": 209.022,
+          "ttfb_ms": 447.2,
+          "curl_total_seconds": 0.447712,
+          "http_wait_after_pretransfer_ms": 238.178,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 43.292009,
+          "ended_offset_seconds": 43.504575,
+          "tcp_connect_ms": 212.566,
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 43.291693,
+          "ended_offset_seconds": 44.234385,
+          "wall_seconds": 0.942691,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd0149bb8b9e-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.193,
+          "tls_ready_ms": 191.006,
+          "pretransfer_ms": 191.175,
+          "ttfb_ms": 866.802,
+          "curl_total_seconds": 0.867553,
+          "http_wait_after_pretransfer_ms": 675.627,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 45.292827,
+          "ended_offset_seconds": 45.499958,
+          "tcp_connect_ms": 207.131,
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 45.292119,
+          "ended_offset_seconds": 46.22651,
+          "wall_seconds": 0.93439,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd0f099bc6bb-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.19,
+          "tls_ready_ms": 371.721,
+          "pretransfer_ms": 371.904,
+          "ttfb_ms": 833.365,
+          "curl_total_seconds": 0.833884,
+          "http_wait_after_pretransfer_ms": 461.461,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.9861,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 47.292465,
+          "ended_offset_seconds": 47.455454,
+          "tcp_connect_ms": 162.989,
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 47.292139,
+          "ended_offset_seconds": 47.83225,
+          "wall_seconds": 0.540111,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd1a695c49ec-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 0.978,
+          "tls_ready_ms": 210.598,
+          "pretransfer_ms": 210.756,
+          "ttfb_ms": 464.095,
+          "curl_total_seconds": 0.46458,
+          "http_wait_after_pretransfer_ms": 253.339,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 49.292744,
+          "ended_offset_seconds": 49.451729,
+          "tcp_connect_ms": 158.985,
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 49.292429,
+          "ended_offset_seconds": 50.014933,
+          "wall_seconds": 0.722504,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd280e097542-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.117,
+          "tls_ready_ms": 377.9,
+          "pretransfer_ms": 378.104,
+          "ttfb_ms": 617.779,
+          "curl_total_seconds": 0.618386,
+          "http_wait_after_pretransfer_ms": 239.675,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": false
+        }
+      ],
+      "actual_load_bytes": 67108864,
+      "maximum_requested_payload_bytes": 67108864,
+      "completed_full_blocks": 8,
+      "load_byte_cap_reached": true,
+      "actual_transfer_seconds": 10.968,
+      "observed_load_mbps_including_request_overhead": 48.95,
+      "physical_tcp_connect_ms": {
+        "attempts": 5,
+        "successes": 5,
+        "error_rate": 0.0,
+        "median": 207.131,
+        "range": [
+          162.989,
+          238.119
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "light_request_stages": {
+        "local_proxy_connect_ms": {
+          "attempts": 4,
+          "successes": 4,
+          "error_rate": 0.0,
+          "median": 1.063,
+          "range": [
+            0.978,
+            1.193
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "tls_ready_ms": {
+          "attempts": 4,
+          "successes": 4,
+          "error_rate": 0.0,
+          "median": 200.351,
+          "range": [
+            191.006,
+            210.598
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "pretransfer_ms": {
+          "attempts": 4,
+          "successes": 4,
+          "error_rate": 0.0,
+          "median": 200.524,
+          "range": [
+            191.175,
+            210.756
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "ttfb_ms": {
+          "attempts": 4,
+          "successes": 4,
+          "error_rate": 0.0,
+          "median": 455.648,
+          "range": [
+            444.809,
+            866.802
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "http_wait_after_pretransfer_ms": {
+          "attempts": 4,
+          "successes": 4,
+          "error_rate": 0.0,
+          "median": 253.061,
+          "range": [
+            238.178,
+            675.627
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        }
+      },
+      "minimum_fully_covered_successful_probes": 2,
+      "sufficient_load_coverage": true,
+      "load_window_scope": "active request intervals including handshake/HTTP; continuous saturation is not proven"
+    },
+    {
+      "name": "upload",
+      "requested_window_seconds": 16,
+      "phase_wall_seconds": 14.003,
+      "load_transfers": [
+        {
+          "kind": "upload",
+          "started_offset_seconds": 51.293575,
+          "ended_offset_seconds": 53.356812,
+          "wall_seconds": 2.063237,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd337bfd15c6-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 8388608,
+          "actual_download_bytes": 0,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.106,
+          "tls_ready_ms": 192.214,
+          "pretransfer_ms": 192.551,
+          "ttfb_ms": 1966.46,
+          "curl_total_seconds": 1.96789,
+          "http_wait_after_pretransfer_ms": 1773.909,
+          "success": true,
+          "mbps_including_request_overhead": 32.526,
+          "error_category": "none",
+          "block": 1,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "upload",
+          "started_offset_seconds": 53.369661,
+          "ended_offset_seconds": 54.374905,
+          "wall_seconds": 1.005245,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd406b02c6ec-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 8388608,
+          "actual_download_bytes": 0,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.015,
+          "tls_ready_ms": 205.176,
+          "pretransfer_ms": 205.462,
+          "ttfb_ms": 918.218,
+          "curl_total_seconds": 0.9192,
+          "http_wait_after_pretransfer_ms": 712.756,
+          "success": true,
+          "mbps_including_request_overhead": 66.759,
+          "error_category": "none",
+          "block": 2,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "upload",
+          "started_offset_seconds": 54.38847,
+          "ended_offset_seconds": 55.470143,
+          "wall_seconds": 1.081674,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd46ce166cb7-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 8388608,
+          "actual_download_bytes": 0,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.041,
+          "tls_ready_ms": 199.943,
+          "pretransfer_ms": 200.288,
+          "ttfb_ms": 989.947,
+          "curl_total_seconds": 0.991066,
+          "http_wait_after_pretransfer_ms": 789.659,
+          "success": true,
+          "mbps_including_request_overhead": 62.042,
+          "error_category": "none",
+          "block": 3,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "upload",
+          "started_offset_seconds": 55.482207,
+          "ended_offset_seconds": 56.489754,
+          "wall_seconds": 1.007548,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd4d9f602ca1-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 8388608,
+          "actual_download_bytes": 0,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.308,
+          "tls_ready_ms": 191.915,
+          "pretransfer_ms": 192.223,
+          "ttfb_ms": 910.183,
+          "curl_total_seconds": 0.911112,
+          "http_wait_after_pretransfer_ms": 717.96,
+          "success": true,
+          "mbps_including_request_overhead": 66.606,
+          "error_category": "none",
+          "block": 4,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "upload",
+          "started_offset_seconds": 56.502734,
+          "ended_offset_seconds": 57.557479,
+          "wall_seconds": 1.054745,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd542aa0eb2e-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 8388608,
+          "actual_download_bytes": 0,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.336,
+          "tls_ready_ms": 200.749,
+          "pretransfer_ms": 201.169,
+          "ttfb_ms": 931.285,
+          "curl_total_seconds": 0.932168,
+          "http_wait_after_pretransfer_ms": 730.116,
+          "success": true,
+          "mbps_including_request_overhead": 63.626,
+          "error_category": "none",
+          "block": 5,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "upload",
+          "started_offset_seconds": 57.567771,
+          "ended_offset_seconds": 58.851627,
+          "wall_seconds": 1.283855,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd5abef73c7d-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 8388608,
+          "actual_download_bytes": 0,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.134,
+          "tls_ready_ms": 202.062,
+          "pretransfer_ms": 202.398,
+          "ttfb_ms": 1176.726,
+          "curl_total_seconds": 1.177675,
+          "http_wait_after_pretransfer_ms": 974.328,
+          "success": true,
+          "mbps_including_request_overhead": 52.271,
+          "error_category": "none",
+          "block": 6,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "upload",
+          "started_offset_seconds": 58.862045,
+          "ended_offset_seconds": 59.856817,
+          "wall_seconds": 0.994772,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd62cf19cf17-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 8388608,
+          "actual_download_bytes": 0,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.286,
+          "tls_ready_ms": 194.089,
+          "pretransfer_ms": 194.546,
+          "ttfb_ms": 888.433,
+          "curl_total_seconds": 0.889366,
+          "http_wait_after_pretransfer_ms": 693.887,
+          "success": true,
+          "mbps_including_request_overhead": 67.462,
+          "error_category": "none",
+          "block": 7,
+          "expected_window_end_partial": false
+        },
+        {
+          "kind": "upload",
+          "started_offset_seconds": 59.867789,
+          "ended_offset_seconds": 61.005042,
+          "wall_seconds": 1.137253,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-ray": "a485bd6909ed49ec-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 8388608,
+          "actual_download_bytes": 0,
+          "requested_bytes": 8388608,
+          "local_proxy_connect_ms": 1.1,
+          "tls_ready_ms": 194.806,
+          "pretransfer_ms": 195.197,
+          "ttfb_ms": 1039.573,
+          "curl_total_seconds": 1.040499,
+          "http_wait_after_pretransfer_ms": 844.376,
+          "success": true,
+          "mbps_including_request_overhead": 59.01,
+          "error_category": "none",
+          "block": 8,
+          "expected_window_end_partial": false
+        }
+      ],
+      "probes": [
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 51.294453,
+          "ended_offset_seconds": 51.524461,
+          "tcp_connect_ms": 230.008,
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 51.294388,
+          "ended_offset_seconds": 51.819826,
+          "wall_seconds": 0.525438,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd335e083824-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.224,
+          "tls_ready_ms": 192.885,
+          "pretransfer_ms": 193.084,
+          "ttfb_ms": 440.402,
+          "curl_total_seconds": 0.441025,
+          "http_wait_after_pretransfer_ms": 247.318,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 53.29451,
+          "ended_offset_seconds": 53.490773,
+          "tcp_connect_ms": 196.263,
+          "load_overlap_fraction": 0.9345,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 53.294092,
+          "ended_offset_seconds": 53.96299,
+          "wall_seconds": 0.668898,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd3fffb17e25-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.047,
+          "tls_ready_ms": 204.557,
+          "pretransfer_ms": 204.686,
+          "ttfb_ms": 578.202,
+          "curl_total_seconds": 0.578743,
+          "http_wait_after_pretransfer_ms": 373.516,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.9808,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 55.294921,
+          "ended_offset_seconds": 56.471798,
+          "tcp_connect_ms": 1176.877,
+          "load_overlap_fraction": 0.9897,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 55.294572,
+          "ended_offset_seconds": 55.855832,
+          "wall_seconds": 0.561259,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd4c8d7f26ae-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.526,
+          "tls_ready_ms": 196.394,
+          "pretransfer_ms": 196.589,
+          "ttfb_ms": 444.137,
+          "curl_total_seconds": 0.444692,
+          "http_wait_after_pretransfer_ms": 247.548,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.9785,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 57.295198,
+          "ended_offset_seconds": 57.473206,
+          "tcp_connect_ms": 178.008,
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 57.294717,
+          "ended_offset_seconds": 57.832863,
+          "wall_seconds": 0.538146,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd58dd6215e7-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.308,
+          "tls_ready_ms": 197.372,
+          "pretransfer_ms": 197.59,
+          "ttfb_ms": 452.497,
+          "curl_total_seconds": 0.452998,
+          "http_wait_after_pretransfer_ms": 254.907,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.9809,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 59.29544,
+          "ended_offset_seconds": 59.464262,
+          "tcp_connect_ms": 168.822,
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 59.295064,
+          "ended_offset_seconds": 59.831932,
+          "wall_seconds": 0.536868,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd657f2dee14-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.659,
+          "tls_ready_ms": 209.865,
+          "pretransfer_ms": 210.023,
+          "ttfb_ms": 453.863,
+          "curl_total_seconds": 0.45456,
+          "http_wait_after_pretransfer_ms": 243.84,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 1.0,
+          "fully_within_load_window": true
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 61.295995,
+          "ended_offset_seconds": 61.505554,
+          "tcp_connect_ms": 209.559,
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 61.29566,
+          "ended_offset_seconds": 61.830735,
+          "wall_seconds": 0.535075,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd71eecb6c4d-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.137,
+          "tls_ready_ms": 194.047,
+          "pretransfer_ms": 194.283,
+          "ttfb_ms": 435.013,
+          "curl_total_seconds": 0.43567,
+          "http_wait_after_pretransfer_ms": 240.73,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "physical_tcp443_connect",
+          "success": true,
+          "started_offset_seconds": 63.296257,
+          "ended_offset_seconds": 63.560973,
+          "tcp_connect_ms": 264.716,
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": false
+        },
+        {
+          "kind": "light",
+          "started_offset_seconds": 63.29593,
+          "ended_offset_seconds": 63.852066,
+          "wall_seconds": 0.556136,
+          "curl_exit_code": 0,
+          "response_identifiers": {
+            "server": "cloudflare",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a485bd7e7874f987-SJC"
+          },
+          "http_code": 200,
+          "actual_upload_bytes": 0,
+          "actual_download_bytes": 13,
+          "requested_bytes": 0,
+          "local_proxy_connect_ms": 1.453,
+          "tls_ready_ms": 201.377,
+          "pretransfer_ms": 201.582,
+          "ttfb_ms": 456.282,
+          "curl_total_seconds": 0.456951,
+          "http_wait_after_pretransfer_ms": 254.7,
+          "success": true,
+          "egress_matches_current_server_exit": true,
+          "error_category": "none",
+          "load_overlap_fraction": 0.0,
+          "fully_within_load_window": false
+        }
+      ],
+      "actual_load_bytes": 67108864,
+      "maximum_requested_payload_bytes": 67108864,
+      "completed_full_blocks": 8,
+      "load_byte_cap_reached": true,
+      "actual_transfer_seconds": 9.628,
+      "observed_load_mbps_including_request_overhead": 55.76,
+      "physical_tcp_connect_ms": {
+        "attempts": 3,
+        "successes": 3,
+        "error_rate": 0.0,
+        "median": 178.008,
+        "range": [
+          168.822,
+          230.008
+        ],
+        "p95": null,
+        "p95_minimum_samples": 10
+      },
+      "light_request_stages": {
+        "local_proxy_connect_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 1.442,
+          "range": [
+            1.224,
+            1.659
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "tls_ready_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 201.375,
+          "range": [
+            192.885,
+            209.865
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "pretransfer_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 201.553,
+          "range": [
+            193.084,
+            210.023
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "ttfb_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 447.132,
+          "range": [
+            440.402,
+            453.863
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        },
+        "http_wait_after_pretransfer_ms": {
+          "attempts": 2,
+          "successes": 2,
+          "error_rate": 0.0,
+          "median": 245.579,
+          "range": [
+            243.84,
+            247.318
+          ],
+          "p95": null,
+          "p95_minimum_samples": 10
+        }
+      },
+      "minimum_fully_covered_successful_probes": 2,
+      "sufficient_load_coverage": true,
+      "load_window_scope": "active request intervals including handshake/HTTP; continuous saturation is not proven"
+    }
+  ],
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "core_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "benchmark_script_sha256": "3385b21af9aeb4c574aaad890823da77e54cb01e76e377fdf94c97498f5e8b1e",
+  "plan": {
+    "version": 1,
+    "mode": "profile",
+    "light_url": "https://api.ipify.org",
+    "download_url": "https://speed.cloudflare.com/__down?bytes=8388608",
+    "upload_url": "https://speed.cloudflare.com/__up",
+    "payload_bytes": 8388608,
+    "payload_sha256": "2daeb1f36095b44b318410b3f4e8b5d989dcc7bb023d1426c492dab0a3053e74",
+    "max_blocks_per_direction": 8,
+    "max_payload_per_direction": 67108864,
+    "fresh_samples": 3,
+    "warm_samples": 4,
+    "idle_wait_seconds": [],
+    "idle_load_baseline_seconds": 6,
+    "load_seconds": 16,
+    "light_target_ip_pinned": false,
+    "cloudflare_region_from_response_cf_ray": true,
+    "client_startup_excluded_from_request_ttfb": true,
+    "first_business_request_has_no_identity_or_urltest_warmup": true,
+    "warm_scope": "fresh curl HTTPS connections through already-used isolated Mihomo",
+    "load_and_probes_share_client": true,
+    "never_calls_controller_delete_connections": true,
+    "tcp_scope": "physical WLAN TCP443 connect, not QUIC RTT",
+    "curl_connect_scope": "local loopback proxy, not VPS RTT",
+    "complete_page_measured": false,
+    "session_evidence_scope": "server account online count, process epoch, sanitized journal events",
+    "normal_quota_applies": true,
+    "p95_minimum_samples": 10
+  },
+  "method_sha256": "6437530bf7839e11936097bf9f77a52cf3892b046f19a80459e37c21e23c6c1a",
+  "installed_core_profile_contract": {
+    "valid": {
+      "standard": true,
+      "conservative": true,
+      "aggressive": true
+    },
+    "invalid_value_rejected": false,
+    "all_valid_profiles_accepted": true,
+    "field_consumption_demonstrated_by_negative_syntax": false,
+    "negative_syntax_limit": "Unknown values may fall back to standard. Consumption must also be checked against the exact installed version source."
+  },
+  "account_port": 443,
+  "account_identifier_sha256": "3d9a13ea8e39a9669cc31f7c8d07d051012e87bbca1e1d0df1b6dff28dd929dc",
+  "current_server_exit_ip": "198.200.49.63",
+  "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+  "node_sha256_excluding_bbr_profile": "9cbfa8410bea828b0ec60ee45662300622221c16d10138aff6b4e2440f1dcb57",
+  "isolated_node_sha256": "9faf95b391293e51c6113d9fee1648027d38843f098987839926d2f7a3c8de24",
+  "all_settings_before_sha256": "f2c81b8b835728ce0cb34c9db441a21078cc6d950f22fbbb2a5ccff88e6531f4",
+  "physical_interface": "WLAN",
+  "physical_interface_index": 12,
+  "account_limits": {
+    "quota_bytes": 0,
+    "rate_bps": 0
+  },
+  "server_initial": {
+    "server_unix_seconds": 1791636472.2666802,
+    "online_sessions": 0,
+    "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+    "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+    "server_congestion": {
+      "type": "bbr",
+      "bbrProfile": "standard"
+    },
+    "ignore_client_bandwidth": true,
+    "journal_available": true,
+    "journal_parsed_lines": 1,
+    "journal_event_scope": "all sessions on this account entrance",
+    "journal_connected_events": 0,
+    "journal_disconnected_events": 1,
+    "journal_events": [
+      {
+        "event": "disconnected",
+        "unix_microseconds": "1791636458930282",
+        "remote_address_sha256": "487f3d836541b0ce8d67d1ce7179a9f3f793c5c65669fe5fd1e488d4e6d416cf"
+      }
+    ]
+  },
+  "server_after_first_requests": {
+    "server_unix_seconds": 1791636485.0960944,
+    "online_sessions": 2,
+    "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+    "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+    "server_congestion": {
+      "type": "bbr",
+      "bbrProfile": "standard"
+    },
+    "ignore_client_bandwidth": true,
+    "journal_available": true,
+    "journal_parsed_lines": 2,
+    "journal_event_scope": "all sessions on this account entrance",
+    "journal_connected_events": 2,
+    "journal_disconnected_events": 0,
+    "journal_events": [
+      {
+        "event": "connected",
+        "unix_microseconds": "1791636473798086",
+        "remote_address_sha256": "a0a3c1fc4795c59e32ade2c3739b36ca32b375b54ec06954dd0173c055fdcc05"
+      },
+      {
+        "event": "connected",
+        "unix_microseconds": "1791636481740198",
+        "remote_address_sha256": "081b9ceae1965c3914b6fa9500e04283c62c1d8a2a0570be10c3ac9419dfaa47"
+      }
+    ]
+  },
+  "server_final": {
+    "server_unix_seconds": 1791636517.6888785,
+    "online_sessions": 1,
+    "process_epoch_sha256": "1a1d2fb8d85d1ec5e19598ef1842772d090ef2d215dc5e8bd9a366b2c0a33c14",
+    "server_config_sha256": "89ed4f2db65e6c3be6cd242ce6e588f95bcc3319e1a570183d47a8da7b294442",
+    "server_congestion": {
+      "type": "bbr",
+      "bbrProfile": "standard"
+    },
+    "ignore_client_bandwidth": true,
+    "journal_available": true,
+    "journal_parsed_lines": 3,
+    "journal_event_scope": "all sessions on this account entrance",
+    "journal_connected_events": 2,
+    "journal_disconnected_events": 1,
+    "journal_events": [
+      {
+        "event": "connected",
+        "unix_microseconds": "1791636473798086",
+        "remote_address_sha256": "a0a3c1fc4795c59e32ade2c3739b36ca32b375b54ec06954dd0173c055fdcc05"
+      },
+      {
+        "event": "connected",
+        "unix_microseconds": "1791636481740198",
+        "remote_address_sha256": "081b9ceae1965c3914b6fa9500e04283c62c1d8a2a0570be10c3ac9419dfaa47"
+      },
+      {
+        "event": "disconnected",
+        "unix_microseconds": "1791636504648269",
+        "remote_address_sha256": "a0a3c1fc4795c59e32ade2c3739b36ca32b375b54ec06954dd0173c055fdcc05"
+      }
+    ]
+  },
+  "all_settings_after_sha256": "f2c81b8b835728ce0cb34c9db441a21078cc6d950f22fbbb2a5ccff88e6531f4",
+  "all_settings_preserved": true,
+  "normal_monthly_ledger_delta": {
+    "up_bytes": 70175658,
+    "down_bytes": 134741571
+  },
+  "measurement_completed": true,
+  "measurement_valid": false,
+  "own_mihomo_processes_terminated": true,
+  "own_curl_processes_terminated": true,
+  "temporary_private_files_removed": true,
+  "finished_at": "2026-10-10T12:48:49.086014+00:00",
+  "total_wall_seconds": 73.805
+}

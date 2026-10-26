@@ -1,0 +1,39 @@
+{
+  "completed_at": "2026-10-09T20:32:43+08:00",
+  "server": "198.200.49.158",
+  "success": true,
+  "url": "https://198-200-49-158.sslip.io:8443/node-console/",
+  "routing_mode": "smart",
+  "active_target": "static",
+  "static_exit_count": 1,
+  "auto_egress": {
+    "observed_ip": "128.241.19.234",
+    "expected_ip": "128.241.19.234"
+  },
+  "client_profile": "clash-smart-routing.private.yaml",
+  "client_profile_sha256": "c7bf0833d661c55f3313610d682298028ccaf8d163438e6faa3ab57ffac02cbd",
+  "custom_lists_refresh_seconds": 300,
+  "public_sources_refresh_seconds": 86400,
+  "live_custom_list_changes_verified": true,
+  "complete_live_profile_verified": true,
+  "domestic_https_direct_verified": true,
+  "public_sources_count": 23,
+  "provider_count": 27,
+  "all_providers_loaded": true,
+  "custom_provider_refresh_verified": true,
+  "all_original_client_identities_preserved": true,
+  "original_exit_accounts_and_active_target_preserved": true,
+  "protected_configuration_count": 10,
+  "xray_configuration_unchanged": true,
+  "auth_hy2_dns_and_history_preserved": true,
+  "all_services_active_and_enabled": true,
+  "desktop_mobile_browser_verified": true,
+  "reports": [
+    "smart-routing-update.json",
+    "smart-routing-activation.json",
+    "smart-routing-browser-verification.json",
+    "smart-mihomo-client-verification.json",
+    "smart-routing-preservation.json"
+  ],
+  "validation_scope": "Actual HTTPS direct and proxy routes were verified; complete video playback was not tested."
+}

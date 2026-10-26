@@ -1,0 +1,59 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T09:18:48.826869+00:00",
+  "deployment_ip": "198.200.49.63",
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+  "asset_version": "layout-20261010-1",
+  "deployment_scope": "frontend_only",
+  "features": [
+    "Exit management: status strip, connection path, exit cards, full-width health, visible traffic charts",
+    "Routing: editable rules and save action first, URL diagnostic second, explanatory disclosures last",
+    "Access: subscription and first import first, password and proxy identity disclosures, own audit history",
+    "Users: capacity and optional creation, member cards with limits, whole-server usage",
+    "Maintenance: schedule, create and download, separate restore preview, all audit history",
+    "Responsive mobile order, keyboard disclosures, draft and error indicators",
+    "Arrow guides reveal controls and restore disclosure states; logout clears account-specific UI"
+  ],
+  "local_browser_checks": {
+    "layout-ui": 38,
+    "traffic-charts-ui": 23,
+    "enhancements-ui": 18,
+    "user-guide-ui": 50,
+    "multiuser-ui": 10,
+    "socks-import": 6,
+    "connection-motion": 5
+  },
+  "local_checks_total": 150,
+  "production_accounts_verified": 3,
+  "production_viewports": [
+    1440,
+    1280,
+    390
+  ],
+  "physical_wlan_and_trusted_https": true,
+  "source_sha256": {
+    "panel/web/style.css": "5cc86fffd6ce518d2c06ff926de7cd6a3d09c2e9b5ce209cddc644313f4c422e",
+    "panel/web/app.js": "8312e37624bea855826b6eba8a9ebf6023aa319d6f494d05fe78955cda1b4b7f",
+    "panel/web/index.html": "d6c83e0f8586f2a3efb6456357abe8e6dd4635dc650a0f6d0d22ae56615fb3eb"
+  },
+  "services_restarted": false,
+  "backend_changed": false,
+  "all_account_data_preserved": true,
+  "all_service_processes_preserved": true,
+  "protected_file_count": 45,
+  "protected_service_count": 6,
+  "configuration_mutations": 0,
+  "reports": [
+    "page-layout-update.json",
+    "page-layout-preservation.json",
+    "page-layout-browser-verification.json",
+    "page-layout-release-manifest.json",
+    "../../.validation/layout-ui/regression-manifest.json"
+  ],
+  "screenshots_directory": "page-layout-browser-ui",
+  "acceptance_adjustments": [
+    "The initial mobile attempt used an unspecified 65%-of-viewport path threshold. Final acceptance checks the approved vertical order, single-column cards, touch controls and viewport fit; desktop still requires the complete path in its first viewport. No production source changed for this adjustment."
+  ],
+  "unfinished_requested_features": [],
+  "secrets_included": false
+}

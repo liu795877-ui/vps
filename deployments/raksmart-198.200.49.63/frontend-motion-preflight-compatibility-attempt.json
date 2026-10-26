@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "deployment_ip": "198.200.49.63",
+  "updated_files": [
+    "panel/web/style.css",
+    "panel/web/app.js",
+    "panel/web/index.html"
+  ],
+  "backup": "/root/raksmart-proxy-deploy-20261009/frontend-motion-20261009T125536-2d8ff7/before",
+  "services_restarted": false,
+  "phase": "failed"
+}

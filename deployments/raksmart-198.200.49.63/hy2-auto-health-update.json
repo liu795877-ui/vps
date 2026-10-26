@@ -1,0 +1,28 @@
+{
+  "account_settings_preserved": true,
+  "client_refresh_required": true,
+  "credentials_preserved": true,
+  "drafts_history_preserved": true,
+  "full_subscription_tokens_preserved": true,
+  "health_check": {
+    "expected-status": "204",
+    "interval": 30,
+    "lazy": false,
+    "timeout": 5000,
+    "url": "https://www.gstatic.com/generate_204"
+  },
+  "latest_native_flow_persisted": true,
+  "ledger_totals_non_decreasing": true,
+  "only_panel_restarted": true,
+  "panel_session_notice": "Panel worker restarted; browser sessions require login again.",
+  "phase": "complete",
+  "profiles_refreshed": 3,
+  "proxy_epochs_preserved": true,
+  "scope": "AUTO health check and existing full-profile refresh",
+  "stage": "/root/vps-hy2-auto-health-20261010-135334-be7dc6",
+  "success": true,
+  "traffic_ledger_restored": false,
+  "transport_restarts": 0,
+  "remote_exit_code": 0,
+  "frozen_manifest_sha256": "823f42c447e247230df43dff58f6a2e693239e56a9303fca26dd7cdf7267877a"
+}

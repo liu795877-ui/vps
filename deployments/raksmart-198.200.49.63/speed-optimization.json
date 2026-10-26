@@ -1,0 +1,122 @@
+{
+  "checked_at": "2026-10-09T16:15:25+08:00",
+  "server": "198.200.49.63",
+  "tcp_baseline_and_trials": {
+    "speed-flclash-download-cubic-baseline.json": {
+      "path": "Active FlClash",
+      "samples": [
+        {
+          "actual_bytes": 1000000,
+          "seconds": 17.694,
+          "mbps": 0.452,
+          "complete": true
+        }
+      ],
+      "exit_ip": "198.200.49.63"
+    },
+    "speed-flclash-download-westwood.json": {
+      "path": "Active FlClash",
+      "samples": [
+        {
+          "actual_bytes": 883392,
+          "seconds": 25.066,
+          "mbps": 0.282,
+          "complete": false
+        },
+        {
+          "actual_bytes": 699299,
+          "seconds": 25.047,
+          "mbps": 0.223,
+          "complete": false
+        }
+      ],
+      "exit_ip": "198.200.49.63"
+    },
+    "speed-flclash-download-hybla-probe.json": {
+      "path": "Active FlClash",
+      "samples": [
+        {
+          "actual_bytes": 972707,
+          "seconds": 25.082,
+          "mbps": 0.31,
+          "complete": false
+        }
+      ],
+      "exit_ip": "198.200.49.63"
+    },
+    "speed-bound-mihomo-download-hy2-aclfix-hysteria2.json": {
+      "path": "Temporary Mihomo bound to physical WLAN -> RAKsmart-US-HY2 UDP443",
+      "samples": [
+        {
+          "actual_bytes": 1000000,
+          "seconds": 1.832,
+          "mbps": 4.368,
+          "complete": true
+        },
+        {
+          "actual_bytes": 1000000,
+          "seconds": 0.887,
+          "mbps": 9.023,
+          "complete": true
+        }
+      ],
+      "exit_ip": "198.200.49.63"
+    },
+    "speed-bound-mihomo-download-hy2-large-hysteria2.json": {
+      "path": "Temporary Mihomo bound to physical WLAN -> RAKsmart-US-HY2 UDP443",
+      "samples": [
+        {
+          "actual_bytes": 5000000,
+          "seconds": 3.639,
+          "mbps": 10.991,
+          "complete": true
+        },
+        {
+          "actual_bytes": 5000000,
+          "seconds": 2.035,
+          "mbps": 19.656,
+          "complete": true
+        }
+      ],
+      "exit_ip": "198.200.49.63"
+    },
+    "speed-bound-mihomo-download-hy2-enabled-hysteria2.json": {
+      "path": "Temporary Mihomo bound to physical WLAN -> RAKsmart-US-HY2 UDP443",
+      "samples": [
+        {
+          "actual_bytes": 1000000,
+          "seconds": 1.619,
+          "mbps": 4.941,
+          "complete": true
+        }
+      ],
+      "exit_ip": "198.200.49.63"
+    },
+    "speed-bound-mihomo-upload-hy2-upload-hysteria2.json": {
+      "path": "Temporary Mihomo bound to physical WLAN -> RAKsmart-US-HY2 UDP443",
+      "samples": [
+        {
+          "actual_bytes": 5000000,
+          "seconds": 1.922,
+          "mbps": 20.808,
+          "complete": true
+        }
+      ],
+      "exit_ip": "198.200.49.63"
+    }
+  },
+  "conclusion": "Hysteria2 over UDP443 completed every 1MB and 5MB test with US exit verification; sustained test samples were 10.991 and 19.656 Mbps for 5MB, versus TCP CUBIC single-stream baseline 0.452 Mbps and Westwood/Hybla timed out below 1 Mbps. A 5MB upload also completed at 20.808 Mbps.",
+  "deployment": {
+    "service": "raksmart-hy2.service",
+    "transport": "UDP443",
+    "enabled": true,
+    "xray_tcp443_preserved": true,
+    "tls_pin": "Mihomo SHA256 fingerprint with skip-cert-verify false",
+    "kernel_compatibility": "QUIC GSO and ECN disabled for CentOS7 trial"
+  },
+  "limitations": [
+    "Cross-border throughput varies by time and carrier.",
+    "These tests measure one Cloudflare endpoint and one local WLAN.",
+    "UDP reachability and current speed do not guarantee all networks will permit UDP443."
+  ]
+}

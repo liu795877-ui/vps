@@ -1,0 +1,10 @@
+{
+  "public_tcp_ports": {
+    "80": false,
+    "8443": false
+  },
+  "remote": {
+    "received_ports": []
+  },
+  "temporary_listeners_closed": true
+}

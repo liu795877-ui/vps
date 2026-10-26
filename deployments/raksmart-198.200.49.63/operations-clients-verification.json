@@ -1,0 +1,86 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T03:40:32.636347+00:00",
+  "profile_read_count": 3,
+  "public_ports": [
+    {
+      "port": 443,
+      "tcp_reachable": true
+    },
+    {
+      "port": 1443,
+      "tcp_reachable": true
+    },
+    {
+      "port": 2443,
+      "tcp_reachable": true
+    }
+  ],
+  "samples": [
+    {
+      "port": 443,
+      "profile_sha256": "8701f84d991bfc451bb344c2cb9b4545cf157e988c8555b5bca8f46e79224c7d",
+      "profile_bytes": 11268,
+      "expected_ip": "198.200.49.63",
+      "public_auto_verified": true,
+      "isolation_checked": false,
+      "curl_exit_code": 0,
+      "curl_error_category": "none",
+      "observed_ip": "198.200.49.63",
+      "real_traffic_increment": true,
+      "uplink_delta_bytes": 7529082,
+      "downlink_delta_bytes": 31623,
+      "settings_preserved": true
+    },
+    {
+      "port": 1443,
+      "profile_sha256": "be257e00970b0e4498a505cbd68cd85722426335832c21fa3faa9b300112d9f5",
+      "profile_bytes": 11269,
+      "expected_ip": "198.200.49.63",
+      "public_auto_verified": true,
+      "isolation_checked": true,
+      "curl_exit_code": 0,
+      "curl_error_category": "none",
+      "observed_ip": "198.200.49.63",
+      "other_member_uuid_rejected": true,
+      "valid_identity_after_negative": true,
+      "real_traffic_increment": true,
+      "uplink_delta_bytes": 639,
+      "downlink_delta_bytes": 3527,
+      "settings_preserved": true
+    },
+    {
+      "port": 2443,
+      "profile_sha256": "fa5564747f13c2e79346acb54d5a2c0ec10e83e56bd8f6d038b36fbcbcbb8b1e",
+      "profile_bytes": 11269,
+      "expected_ip": "198.200.49.63",
+      "public_auto_verified": true,
+      "isolation_checked": true,
+      "curl_exit_code": 0,
+      "curl_error_category": "none",
+      "observed_ip": "198.200.49.63",
+      "other_member_uuid_rejected": true,
+      "valid_identity_after_negative": true,
+      "real_traffic_increment": true,
+      "uplink_delta_bytes": 1326,
+      "downlink_delta_bytes": 7056,
+      "settings_preserved": true
+    }
+  ],
+  "tun_disabled": true,
+  "physical_wlan": true,
+  "local_client_only": true,
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "core_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "official_auto_syntax_accepted": true,
+  "positive_count": 3,
+  "unreachable_port_count": 0,
+  "isolation_verified": true,
+  "all_settings_preserved": true,
+  "all_traffic_incremented": true,
+  "completed": true,
+  "core_error_categories": [],
+  "temporary_private_files_removed": true,
+  "own_client_process_terminated": true
+}

@@ -1,0 +1,189 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T03:43:38.195713+00:00",
+  "checks": [
+    {
+      "name": "Release completed before acceptance",
+      "passed": true
+    },
+    {
+      "name": "Account state includes health and traffic",
+      "passed": true
+    },
+    {
+      "name": "Default failover requires manual choice",
+      "passed": true
+    },
+    {
+      "name": "Existing accounts remain unlimited",
+      "passed": true
+    },
+    {
+      "name": "Live telemetry is readable",
+      "passed": true
+    },
+    {
+      "name": "Traffic isolation follows account role",
+      "passed": true
+    },
+    {
+      "name": "Complete profile subscription belongs to this origin",
+      "passed": true
+    },
+    {
+      "name": "Bearer subscription downloads the current complete profile",
+      "passed": true
+    },
+    {
+      "name": "Subscription and existing profile content agree",
+      "passed": true
+    },
+    {
+      "name": "Activity records have the correct scope",
+      "passed": true
+    },
+    {
+      "name": "Diagnostics strips private parameters and marks the client unverified",
+      "passed": true
+    },
+    {
+      "name": "Explicit direct domain is predicted DIRECT",
+      "passed": true
+    },
+    {
+      "name": "Account state includes health and traffic",
+      "passed": true
+    },
+    {
+      "name": "Default failover requires manual choice",
+      "passed": true
+    },
+    {
+      "name": "Existing accounts remain unlimited",
+      "passed": true
+    },
+    {
+      "name": "Live telemetry is readable",
+      "passed": true
+    },
+    {
+      "name": "Traffic isolation follows account role",
+      "passed": true
+    },
+    {
+      "name": "Complete profile subscription belongs to this origin",
+      "passed": true
+    },
+    {
+      "name": "Bearer subscription downloads the current complete profile",
+      "passed": true
+    },
+    {
+      "name": "Subscription and existing profile content agree",
+      "passed": true
+    },
+    {
+      "name": "Activity records have the correct scope",
+      "passed": true
+    },
+    {
+      "name": "Member activity does not reveal other members",
+      "passed": true
+    },
+    {
+      "name": "Diagnostics strips private parameters and marks the client unverified",
+      "passed": true
+    },
+    {
+      "name": "Explicit direct domain is predicted DIRECT",
+      "passed": true
+    },
+    {
+      "name": "Account state includes health and traffic",
+      "passed": true
+    },
+    {
+      "name": "Default failover requires manual choice",
+      "passed": true
+    },
+    {
+      "name": "Existing accounts remain unlimited",
+      "passed": true
+    },
+    {
+      "name": "Live telemetry is readable",
+      "passed": true
+    },
+    {
+      "name": "Traffic isolation follows account role",
+      "passed": true
+    },
+    {
+      "name": "Complete profile subscription belongs to this origin",
+      "passed": true
+    },
+    {
+      "name": "Bearer subscription downloads the current complete profile",
+      "passed": true
+    },
+    {
+      "name": "Subscription and existing profile content agree",
+      "passed": true
+    },
+    {
+      "name": "Activity records have the correct scope",
+      "passed": true
+    },
+    {
+      "name": "Member activity does not reveal other members",
+      "passed": true
+    },
+    {
+      "name": "Diagnostics strips private parameters and marks the client unverified",
+      "passed": true
+    },
+    {
+      "name": "All accounts have distinct subscriptions",
+      "passed": true
+    },
+    {
+      "name": "Unknown bearer subscription is rejected",
+      "passed": true
+    },
+    {
+      "name": "Daily encrypted backups are enabled",
+      "passed": true
+    },
+    {
+      "name": "Portable backup downloads as encrypted nvbackup",
+      "passed": true
+    },
+    {
+      "name": "Portable backup previews all existing accounts without restoring",
+      "passed": true
+    },
+    {
+      "name": "Acceptance preserves account exits and routing",
+      "passed": true
+    },
+    {
+      "name": "Acceptance preserves account exits and routing",
+      "passed": true
+    },
+    {
+      "name": "Acceptance preserves account exits and routing",
+      "passed": true
+    }
+  ],
+  "transport": "physical_wlan",
+  "destructive_actions": [],
+  "backup_validation": {
+    "encrypted": true,
+    "downloaded": true,
+    "previewed": true,
+    "users": 3,
+    "files": 13,
+    "restore_executed": false
+  },
+  "accounts": 3
+}

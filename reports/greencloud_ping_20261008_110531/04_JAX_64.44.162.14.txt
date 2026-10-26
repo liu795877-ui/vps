@@ -1,0 +1,37 @@
+
+Pinging 64.44.162.14 with 32 bytes of data:
+Reply from 64.44.162.14: bytes=32 time=232ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=235ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=232ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=515ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=233ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=231ms TTL=42
+Reply from 64.44.162.14: bytes=32 time=230ms TTL=42
+
+Ping statistics for 64.44.162.14:
+    Packets: Sent = 30, Received = 30, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 230ms, Maximum = 515ms, Average = 240ms

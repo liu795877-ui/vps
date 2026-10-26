@@ -1,0 +1,55 @@
+{
+  "services": {
+    "xray.service": {
+      "MainPID": "24492",
+      "ExecMainStartTimestampMonotonic": "9707667847",
+      "ActiveState": "active"
+    },
+    "raksmart-hy2.service": {
+      "MainPID": "13197",
+      "ExecMainStartTimestampMonotonic": "2495863741",
+      "ActiveState": "active"
+    },
+    "vps-panel.service": {
+      "MainPID": "24751",
+      "ExecMainStartTimestampMonotonic": "13896697852",
+      "ActiveState": "active"
+    }
+  },
+  "public_443_listeners": {
+    "tcp": true,
+    "udp": true
+  },
+  "xray_inbounds": [
+    {
+      "protocol": "vless",
+      "listen": "0.0.0.0",
+      "port": 443,
+      "security": "reality",
+      "network": "raw",
+      "configured_client_count": 3
+    }
+  ],
+  "profile_has_auto": true,
+  "profile_type_names": [
+    "vless",
+    "vless"
+  ],
+  "current_web_exit": {
+    "target": "static",
+    "observed_ip": "128.241.19.234",
+    "address": "128.241.19.234",
+    "port": 443
+  },
+  "hy2_config_public_structure": [
+    {
+      "config_path": "/usr/local/etc/raksmart-hy2/server.yaml",
+      "listen": "0.0.0.0:443",
+      "config_sha256": "9a7525b6cbf5d75051883637c2a0fba997d1dbe55b59fc65adb39327d76c0f6d",
+      "has_socks_outbound": false
+    }
+  ],
+  "state_profile_sha256": "c7bf0833d661c55f3313610d682298028ccaf8d163438e6faa3ab57ffac02cbd",
+  "configuration_changes": 0,
+  "success": true
+}

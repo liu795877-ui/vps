@@ -1,0 +1,36 @@
+{
+  "python": "3.6.8",
+  "existing_paths": {
+    "/opt/vps-panel": false,
+    "/var/lib/vps-panel": false,
+    "/usr/local/bin/caddy": false,
+    "/etc/caddy": false,
+    "/etc/systemd/system/vps-panel.service": false,
+    "/etc/systemd/system/caddy.service": false
+  },
+  "services": {
+    "xray.service": {
+      "active": true,
+      "enabled": true
+    },
+    "raksmart-hy2.service": {
+      "active": true,
+      "enabled": true
+    },
+    "vps-panel.service": {
+      "active": false,
+      "enabled": false
+    },
+    "caddy.service": {
+      "active": false,
+      "enabled": false
+    }
+  },
+  "local_ports": {
+    "80": "available",
+    "8443": "available",
+    "18787": "available"
+  },
+  "xray_config_sha256": "4784daf5743ea4a51aed1cb37774265ddd81e26983b71f4473ca7b7908236eec",
+  "xray_port": 443
+}

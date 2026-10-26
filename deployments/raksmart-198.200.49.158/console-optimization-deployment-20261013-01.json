@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "started_at": "2026-10-13T06:55:18.418133+00:00",
+  "server": "198.200.49.158",
+  "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+  "manifest_sha256": "01768927cb56c6359cd1b91f8beae9c96ed06d7b857d59fde937c2018182f9e9",
+  "vendor_archive_sha256": "1002f3c4b98a81ab427d15299138530855f6e08fb85638ca4bd6e8738e656b85",
+  "remote_helper_sha256": "501a2bff06a83c04b174a5dce1fb006f6e0544cc529b5ee8f4ee8480ac6bdf11",
+  "validation_report_sha256": "0922bdc77aef14269081aa69a792abd16809e72da430704dbf85d9b23a10fafb",
+  "preflight_sha256": "9da6a0a5c3a307c607ca9b6fc533e086cae1fa747cfba445145496a9b023db1e",
+  "migration_assets_sha256": {
+    "/etc/systemd/system/xray-panel@.service": "97ad6500c74b495048a08e1ef2437a40c874e0f3ffcf17eb3201576271a164f6",
+    "/etc/systemd/system/raksmart-hy2@.service": "6d9b0a6dd2b5b7cedc9b9205f8a09611296ca7ad8425f3a622b8676f5559d0a3",
+    "/etc/systemd/system/vps-panel.service.d/90-console-adoption.conf": "6ea9ac3a75f9ff961948e5f360d55ffd7d528f21b86d9abe50406d2cb669674d"
+  },
+  "remote_stage": "/root/vps-console-adoption-tl3qx7_u",
+  "verification": {
+    "applied_exits_rules_drafts_history_preserved": true,
+    "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+    "backup_key_traffic_audit_preserved_on_rollback": true,
+    "backup_preview_body_limit_bytes": 48000000,
+    "bytecode_removed": [
+      "__pycache__/configure_static_exits.cpython-36.pyc",
+      "panel/__pycache__/routing.cpython-36.pyc",
+      "panel/__pycache__/server.cpython-36.pyc",
+      "panel/__pycache__/test_panel.cpython-36.pyc",
+      "__pycache__/test_configure_static_exits.cpython-36.pyc"
+    ],
+    "caddy_after_sha256": "0a5ce6ae92d6c09b8a30109de948e9a0a88825379d9a598f345096529745e39d",
+    "caddy_before_sha256": "19d473e5432ab43417e9eb15cdd726e877b764f73b2bb22769adc094437525b8",
+    "caddy_epoch_preserved": true,
+    "caddy_reloaded": true,
+    "caddy_restarted": false,
+    "changed_files": 195,
+    "default_member_ports": [
+      1443,
+      2443
+    ],
+    "firewall_and_network_preserved": true,
+    "global_ipv6_address_present": false,
+    "hy2_follows_web_exit": true,
+    "member_count": 0,
+    "migration_assets_sha256": {
+      "/etc/systemd/system/raksmart-hy2@.service": "6d9b0a6dd2b5b7cedc9b9205f8a09611296ca7ad8425f3a622b8676f5559d0a3",
+      "/etc/systemd/system/vps-panel.service.d/90-console-adoption.conf": "6ea9ac3a75f9ff961948e5f360d55ffd7d528f21b86d9abe50406d2cb669674d",
+      "/etc/systemd/system/xray-panel@.service": "97ad6500c74b495048a08e1ef2437a40c874e0f3ffcf17eb3201576271a164f6"
+    },
+    "original_hy2_password_and_tls_preserved": true,
+    "original_proxy_identities_preserved": true,
+    "other_requests_body_limit_bytes": 64000,
+    "phase": "complete",
+    "production_updated": true,
+    "public_member_ingress_verification": "not_checked",
+    "stage": "/root/vps-console-adoption-tl3qx7_u",
+    "success": true,
+    "traffic_cumulative_non_decreasing": true
+  },
+  "remote_exit_code": 0,
+  "production_updated": true
+}

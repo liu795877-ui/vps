@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-09T13:17:50.415Z",
+  "deployment_ip": "198.200.49.63",
+  "success": false,
+  "checks": [
+    "Trusted HTTPS login through the physical WLAN",
+    "All three public assets match the reviewed frozen release and use no-store",
+    "Local synthetic authenticated URI decodes fields and optional name, clears the URI, then cancel clears credentials",
+    "390 px mobile dialog fits; synthetic unauthenticated paste fills locally and retains an existing custom name"
+  ],
+  "state": {
+    "active_target": "server",
+    "exit_count": 1,
+    "routing_mode": "smart"
+  },
+  "failed_stage": "state_preservation_and_logout",
+  "error": "Frontend SOCKS5 import browser acceptance failed; inspect the private diagnostic log."
+}

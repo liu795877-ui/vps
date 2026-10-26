@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T08:35:32.150Z",
+  "deployment_ip": "198.200.49.63",
+  "trusted_https": true,
+  "physical_wlan": true,
+  "server_mutations_allowed": false,
+  "secrets_included": false,
+  "checks": [
+    "admin: real server samples update trend and keyboard values",
+    "admin: real monthly totals, desktop/mobile, arrow guide and configuration preservation",
+    "user-a: real server samples update trend and keyboard values",
+    "user-a: real monthly totals, desktop/mobile, arrow guide and configuration preservation",
+    "user-b: real server samples update trend and keyboard values",
+    "user-b: real monthly totals, desktop/mobile, arrow guide and configuration preservation"
+  ],
+  "users": [
+    {
+      "account": "admin",
+      "role": "admin",
+      "port": 443,
+      "traffic_available": true,
+      "monthly_totals_match": true,
+      "desktop_and_mobile": true,
+      "sample_count": 2
+    },
+    {
+      "account": "user-a",
+      "role": "member",
+      "port": 1443,
+      "traffic_available": true,
+      "monthly_totals_match": true,
+      "desktop_and_mobile": true,
+      "sample_count": 2
+    },
+    {
+      "account": "user-b",
+      "role": "member",
+      "port": 2443,
+      "traffic_available": true,
+      "monthly_totals_match": true,
+      "desktop_and_mobile": true,
+      "sample_count": 2
+    }
+  ],
+  "screenshots": [
+    "admin-traffic-1440.png",
+    "admin-traffic-390.png",
+    "user-a-traffic-1440.png",
+    "user-a-traffic-390.png",
+    "user-b-traffic-1440.png",
+    "user-b-traffic-390.png"
+  ],
+  "assets": {
+    "panel/web/index.html": {
+      "sha256": "c50e0b3e6be637dcb3780bea42dc291262ba812d9fe41bcc6610858da46bcecf",
+      "release_match": true
+    },
+    "panel/web/app.js": {
+      "sha256": "1760628f641a024893d398e5e97fe91ae29b0562bd3219f7c22cdcf0d1418aa3",
+      "release_match": true
+    },
+    "panel/web/style.css": {
+      "sha256": "8cd45f19f5d0e5ba4db75d544a08cca0d39af556349f115e15ab02d773fc59b2",
+      "release_match": true
+    }
+  },
+  "browser_errors": [],
+  "blocked_requests": []
+}

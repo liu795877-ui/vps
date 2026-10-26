@@ -1,0 +1,79 @@
+{
+  "source_report": "hy2-clients-verification.json",
+  "path": "physical WLAN -> forced single transport -> current account web-selected server exit -> Cloudflare",
+  "account_port": 443,
+  "rounds": 2,
+  "payload_bytes_each": 1048576,
+  "single_stream": true,
+  "same_payload_urls": true,
+  "alternating_order": true,
+  "all_transfers_successful": true,
+  "throughput_includes_handshake_and_http": true,
+  "sustained_bandwidth_measured": false,
+  "samples": [
+    {
+      "protocol": "hy2",
+      "direction": "download",
+      "count": 2,
+      "median_mbps_including_startup": 8.67,
+      "sample_mbps_range": [
+        5.73,
+        11.61
+      ],
+      "median_first_byte_ms": 388.41,
+      "first_byte_ms_range": [
+        388.38,
+        388.45
+      ],
+      "first_byte_semantics": "HTTP first response byte"
+    },
+    {
+      "protocol": "hy2",
+      "direction": "upload",
+      "count": 2,
+      "median_mbps_including_startup": 9.672,
+      "sample_mbps_range": [
+        6.315,
+        13.029
+      ],
+      "median_first_byte_ms": 902.37,
+      "first_byte_ms_range": [
+        552.51,
+        1252.23
+      ],
+      "first_byte_semantics": "HTTP first response byte after full POST request"
+    },
+    {
+      "protocol": "xray",
+      "direction": "download",
+      "count": 2,
+      "median_mbps_including_startup": 0.889,
+      "sample_mbps_range": [
+        0.739,
+        1.039
+      ],
+      "median_first_byte_ms": 954.48,
+      "first_byte_ms_range": [
+        926.3,
+        982.67
+      ],
+      "first_byte_semantics": "HTTP first response byte"
+    },
+    {
+      "protocol": "xray",
+      "direction": "upload",
+      "count": 2,
+      "median_mbps_including_startup": 3.586,
+      "sample_mbps_range": [
+        3.322,
+        3.85
+      ],
+      "median_first_byte_ms": 2280.22,
+      "first_byte_ms_range": [
+        2100.04,
+        2460.4
+      ],
+      "first_byte_semantics": "HTTP first response byte after full POST request"
+    }
+  ]
+}

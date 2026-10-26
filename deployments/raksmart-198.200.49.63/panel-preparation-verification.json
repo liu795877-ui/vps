@@ -1,0 +1,11 @@
+{
+  "local_tests": 57,
+  "skipped_tests": 2,
+  "official_xray_config_accepted": true,
+  "python_syntax": "3.6",
+  "live_63_adoption_verified": true,
+  "original_config_bytes_preserved": true,
+  "dns_preserved_when_building_auto_server": true,
+  "existing_reality_identity_preserved": true,
+  "initial_exit_count": 0
+}

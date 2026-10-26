@@ -1,0 +1,20 @@
+{
+  "ready": true,
+  "target": "198.200.49.158",
+  "frozen_release": true,
+  "frozen_python_files": 10,
+  "remote_python": "3.6",
+  "adoption_tests_preserved": true,
+  "archive_has_no_private_files": true,
+  "source_files": [
+    "panel/server.py",
+    "panel/routing.py",
+    "panel/smart-routing.json",
+    "panel/test_panel.py",
+    "panel/test_routing.py",
+    "panel/web/app.js",
+    "panel/web/index.html",
+    "panel/web/style.css"
+  ],
+  "archive_sha256": "6839ce7d34409ebcf97d31f1584b050061a0181af3686813ea171c7dc77ada03"
+}

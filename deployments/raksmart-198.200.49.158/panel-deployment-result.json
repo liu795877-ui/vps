@@ -1,0 +1,10 @@
+{
+  "installed": true,
+  "origin": "https://198-200-49-158.sslip.io:8443",
+  "remote_exit_code": 0,
+  "services": [
+    "vps-panel.service",
+    "caddy.service"
+  ],
+  "external_https_verification_pending": true
+}

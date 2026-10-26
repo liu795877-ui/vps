@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "deployment_ip": "198.200.49.63",
+  "accepted_at": "2026-10-10T09:43:43+08:00",
+  "feature": {
+    "status": "deployed_and_verified",
+    "asset_version": "routing-url-20261010-1",
+    "accepts": [
+      "HTTP(S) URLs",
+      "protocol-relative URLs",
+      "domains with optional paths or ports",
+      "bare domains"
+    ],
+    "normalization": "Exact hostname; path, query, fragment and port discarded; case and IDNA normalized; duplicates removed.",
+    "parent_domain_automatically_inferred": false,
+    "custom_subscription_refresh_seconds": 300,
+    "client_reimport_required_for_existing_smart_config": false,
+    "saved_rule": {
+      "account": "admin",
+      "domain": "mooc1.chaoxing.com",
+      "direction": "DIRECT",
+      "includes_subdomains": true,
+      "all_paths_on_host_match": true,
+      "homepage_https_status": 200,
+      "matched_provider": "Custom Direct"
+    },
+    "verification": {
+      "linux_tests": {
+        "ran": 98,
+        "passed": 94,
+        "skipped": 4
+      },
+      "official_mihomo_full_profile_accepted": true,
+      "rule_provider_count": 27,
+      "trusted_https_three_account_browser_verified": true,
+      "desktop_and_mobile_verified": true,
+      "other_accounts_and_proxy_configs_preserved_after_rule_save": true,
+      "proxy_processes_preserved": true,
+      "private_course_url_requested": false
+    },
+    "reports": [
+      "routing-url-update.json",
+      "routing-url-preservation.json",
+      "routing-url-client-verification.json",
+      "routing-url-browser-verification.json",
+      "routing-url-release-manifest.json"
+    ],
+    "accepted_at": "2026-10-10T09:43:43+08:00"
+  },
+  "deployment_preservation": {
+    "only_panel_restarted": true,
+    "all_account_data_preserved_during_source_update": true,
+    "protected_file_count": 25,
+    "protected_proxy_service_count": 5
+  },
+  "local_ui_report": "D:/CodexData/vps/.validation/routing-url-ui/report.json",
+  "usage": [
+    "Open website routing in your account, choose smart routing.",
+    "Paste one URL or domain per line under force DIRECT or force PROXY, then save.",
+    "Refresh Custom Direct/Custom Proxy rules in your existing smart client or wait about 5 minutes."
+  ],
+  "scope_note": "mooc1.chaoxing.com affects every path on that host and its subdomains. Enter chaoxing.com manually to also cover sibling hosts."
+}

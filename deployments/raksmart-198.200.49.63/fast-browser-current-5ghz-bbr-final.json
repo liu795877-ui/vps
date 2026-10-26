@@ -1,0 +1,464 @@
+{
+  "success": true,
+  "mode": "http-proxy",
+  "label": "current-5ghz-bbr-final",
+  "started_at": "2026-10-11T01:30:46.672Z",
+  "browser": "msedge",
+  "headless": true,
+  "fresh_browser_context": true,
+  "personal_profile_used": false,
+  "configuration_changes": 0,
+  "fast_settings_changes": 0,
+  "signed_urls_saved": false,
+  "tokens_saved": false,
+  "requested_url": "https://fast.com/",
+  "network_mode": "explicit HTTP proxy 127.0.0.1:7890",
+  "method": {
+    "official_frontend_unmodified": true,
+    "maximum_seconds": 120,
+    "maximum_bytes": 268435456,
+    "early_stop_bytes": 251658240,
+    "byte_accounting": "Per-request maximum of CDP decoded chunks, encoded chunks and loadingFinished length.",
+    "byte_limit_scope": "Soft limit: context closes at early stop; parallel in-flight bytes may arrive before closure.",
+    "cache_disabled_for_fresh_measurement": true
+  },
+  "samples": [
+    {
+      "speed": "0",
+      "units": null,
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 0.941
+    },
+    {
+      "speed": "0",
+      "units": null,
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 1.456
+    },
+    {
+      "speed": "0",
+      "units": null,
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 1.96
+    },
+    {
+      "speed": "870",
+      "units": "Kbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 2.47
+    },
+    {
+      "speed": "3.4",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 2.973
+    },
+    {
+      "speed": "3.4",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 3.478
+    },
+    {
+      "speed": "4.9",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 3.988
+    },
+    {
+      "speed": "6.7",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 4.496
+    },
+    {
+      "speed": "8.5",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 5.008
+    },
+    {
+      "speed": "8.8",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 5.511
+    },
+    {
+      "speed": "8.3",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 6.018
+    },
+    {
+      "speed": "8.5",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 6.527
+    },
+    {
+      "speed": "8.7",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 7.031
+    },
+    {
+      "speed": "8.7",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 7.537
+    },
+    {
+      "speed": "8.8",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 8.046
+    },
+    {
+      "speed": "8.8",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 8.554
+    },
+    {
+      "speed": "8.9",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 9.063
+    },
+    {
+      "speed": "8.9",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 9.567
+    },
+    {
+      "speed": "8.9",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container"
+      ],
+      "completion_evidence": {
+        "succeeded_class": false,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": false,
+      "official_settings": {},
+      "elapsed_seconds": 10.072
+    },
+    {
+      "speed": "8.9",
+      "units": "Mbps",
+      "speed_classes": [
+        "speed-results-container",
+        "succeeded"
+      ],
+      "completion_evidence": {
+        "succeeded_class": true,
+        "refresh_visible": false,
+        "pause_visible": false,
+        "progress_visible": true
+      },
+      "completed": true,
+      "official_settings": {},
+      "elapsed_seconds": 10.576
+    }
+  ],
+  "targets": [
+    {
+      "hostname": "ipv4-c282-sjc002-ix.1.oca.nflxvideo.net",
+      "requests": 14,
+      "finished": 12,
+      "failed": 1,
+      "bytes_observed": 3577534,
+      "statuses": {
+        "200": 13
+      },
+      "protocols": {
+        "http/1.1": 13
+      }
+    },
+    {
+      "hostname": "ipv4-c003-sjc001-nflxoc-isp.1.oca.nflxvideo.net",
+      "requests": 14,
+      "finished": 11,
+      "failed": 1,
+      "bytes_observed": 2790795,
+      "statuses": {
+        "200": 12
+      },
+      "protocols": {
+        "http/1.1": 12
+      }
+    },
+    {
+      "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+      "requests": 13,
+      "finished": 10,
+      "failed": 1,
+      "bytes_observed": 2233432,
+      "statuses": {
+        "200": 11
+      },
+      "protocols": {
+        "http/1.1": 11
+      }
+    },
+    {
+      "hostname": "ipv4-c079-lax009-ix.1.oca.nflxvideo.net",
+      "requests": 1,
+      "finished": 0,
+      "failed": 0,
+      "bytes_observed": 0,
+      "statuses": {},
+      "protocols": {}
+    },
+    {
+      "hostname": "ipv4-c245-sea001-ix.1.oca.nflxvideo.net",
+      "requests": 1,
+      "finished": 0,
+      "failed": 0,
+      "bytes_observed": 0,
+      "statuses": {},
+      "protocols": {}
+    }
+  ],
+  "cleanup_errors": [],
+  "visible_result": {
+    "speed": "8.9",
+    "units": "Mbps",
+    "speed_classes": [
+      "speed-results-container",
+      "succeeded"
+    ],
+    "completion_evidence": {
+      "succeeded_class": true,
+      "refresh_visible": false,
+      "pause_visible": false,
+      "progress_visible": true
+    },
+    "completed": true,
+    "official_settings": {}
+  },
+  "official_settings": {},
+  "official_download_completed": true,
+  "screenshot": "D:\\CodexData\\vps\\deployments\\raksmart-198.200.49.63\\fast-browser-current-5ghz-bbr-final.png",
+  "browser_closed": true,
+  "stop_reason": "official-download-complete",
+  "elapsed_seconds": 11.027,
+  "total_observed_bytes": 8804406,
+  "byte_cap_exceeded": false,
+  "frontend_transfers": [
+    {
+      "hostname": "fast.com",
+      "requests": 11,
+      "finished": 11,
+      "failed": 0,
+      "bytes_observed": 199300,
+      "statuses": {
+        "200": 11
+      },
+      "protocols": {
+        "h2": 11
+      }
+    },
+    {
+      "hostname": "api.fast.com",
+      "requests": 1,
+      "finished": 1,
+      "failed": 0,
+      "bytes_observed": 1765,
+      "statuses": {
+        "200": 1
+      },
+      "protocols": {
+        "http/1.1": 1
+      }
+    }
+  ],
+  "observed_protocol_scope": "Browser-to-origin HTTP protocol; this does not identify HY2 versus REALITY transport.",
+  "partial": false,
+  "finished_at": "2026-10-11T01:30:58.731Z",
+  "report": "D:\\CodexData\\vps\\deployments\\raksmart-198.200.49.63\\fast-browser-current-5ghz-bbr-final.json"
+}

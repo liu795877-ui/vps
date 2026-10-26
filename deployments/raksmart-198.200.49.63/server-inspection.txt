@@ -1,0 +1,16 @@
+Binary checksum: 8255dd939c34cf966cc91517b6324dd3c8d0bcf49ffac8beca049a38c46845ed  /root/raksmart-proxy-deploy-20261009/xray
+Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)
+A unified platform for anti-censorship.
+
+System dependencies
+Python 3.6.8
+OpenSSL 1.0.2k-fips  26 Jan 2017
+systemd 219
+/usr/sbin/setcap
+/usr/sbin/useradd
+Disabled
+
+Outbound TLS target responses
+www.microsoft.com HTTP 200 TLS verify 0 remote 23.61.214.42
+www.cloudflare.com HTTP 200 TLS verify 0 remote 104.16.124.96
+www.apple.com HTTP 200 TLS verify 0 remote 23.61.213.25

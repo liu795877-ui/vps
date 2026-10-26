@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "checked_at": "2026-10-13T01:58:50.865Z",
+  "deployment_ip": "198.200.49.63",
+  "release_name": "console-optimization-release-20261013-05",
+  "trusted_https": true,
+  "owned_physical_wlan_proxy": true,
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "checks": [
+    "admin: trusted TLS login and isolated own state",
+    "Public HTML, JavaScript and CSS match final release SHA-256",
+    "Administrator sees three preserved accounts, both running protocols, full pool and empty tasks",
+    "Search, disabled filter and reset work entirely in the page",
+    "Capacity action prepares 3444 only in draft; server pool stays unchanged and reload discards draft",
+    "admin: desktop 1440 and phone 390 overview/access layouts fit with secrets masked",
+    "admin: logout clears password and delivery fields",
+    "user-a: trusted TLS login and isolated own state",
+    "user-a: users, entrances, provisioning and backup reads correctly return 403",
+    "user-a: desktop 1440 and phone 390 overview/access layouts fit with secrets masked",
+    "user-a: logout clears password and delivery fields",
+    "user-b: trusted TLS login and isolated own state",
+    "user-b: users, entrances, provisioning and backup reads correctly return 403",
+    "user-b: desktop 1440 and phone 390 overview/access layouts fit with secrets masked",
+    "user-b: logout clears password and delivery fields"
+  ],
+  "assets": {
+    "index.html": {
+      "sha256": "772f47017f53c02a3b2cca25bc7b89282fce14bfe8a1612a24f6e64fecfbe3bf",
+      "release_match": true
+    },
+    "app.js": {
+      "sha256": "585b92289bf22844cfdac7f35f19b65f7c80181f173f3e920eda9287807ec7c9",
+      "release_match": true
+    },
+    "style.css": {
+      "sha256": "2582c4d0905840b37a183c5cd44e9b3e65107e5ed529d40b10a4a205b613fe52",
+      "release_match": true
+    }
+  },
+  "accounts": [
+    {
+      "account": "admin",
+      "role": "admin",
+      "port": 443,
+      "tcp_service": "running"
+    },
+    {
+      "account": "user-a",
+      "role": "member",
+      "port": 1443,
+      "tcp_service": "running"
+    },
+    {
+      "account": "user-b",
+      "role": "member",
+      "port": 2443,
+      "tcp_service": "running"
+    }
+  ],
+  "screenshots": [
+    "login-1440.png",
+    "login-390.png",
+    "admin-overview-1440.png",
+    "admin-access-1440.png",
+    "admin-users-1440.png",
+    "admin-overview-390.png",
+    "admin-access-390.png",
+    "admin-users-390.png",
+    "user-a-overview-1440.png",
+    "user-a-access-1440.png",
+    "user-a-overview-390.png",
+    "user-a-access-390.png",
+    "user-b-overview-1440.png",
+    "user-b-access-1440.png",
+    "user-b-overview-390.png",
+    "user-b-access-390.png"
+  ],
+  "manifest_sha256": "5938c1af4adc70e8e323cba5998805f4c0340731f76d247b0edcae7c87a98ff6",
+  "network_summary": {
+    "session_posts": 6,
+    "blocked_configuration_requests": 0,
+    "external_requests": 0,
+    "profile_requests": 0,
+    "expected_403_console_entries": 8
+  },
+  "browser_errors": []
+}

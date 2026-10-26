@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "phase": "complete",
+  "deployment_ip": "198.200.49.63",
+  "updated_files": [
+    "panel/web/style.css",
+    "panel/web/app.js",
+    "panel/web/index.html"
+  ],
+  "backup": "/root/raksmart-proxy-deploy-20261009/traffic-charts-20261010T083437-bde511/before",
+  "stage": "/root/raksmart-proxy-deploy-20261009/traffic-charts-20261010T083437-bde511",
+  "services_restarted": false,
+  "backend_changed": false,
+  "private_configuration_untouched": true,
+  "configuration_mutations": 0,
+  "local_assets_verified": true,
+  "all_account_data_preserved": true,
+  "all_service_processes_preserved": true,
+  "chart_target_state_preserved": true,
+  "candidate_installed": true,
+  "protected_file_count": 45,
+  "protected_service_count": 6,
+  "public_assets_verified": true
+}

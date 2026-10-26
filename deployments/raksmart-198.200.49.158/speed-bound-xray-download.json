@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-09T17:14:41+08:00",
+  "server": "198.200.49.158",
+  "server_port": 443,
+  "transport": "VLESS + REALITY + Vision",
+  "test_path": "Local Xray client -> local TCP relay bound to WLAN -> public VPS:443",
+  "public_port_verified": true,
+  "checks": [
+    {
+      "name": "exit_ip",
+      "url": "https://api.ipify.org",
+      "exit_code": 0,
+      "http_status": "200",
+      "seconds": "0.833913",
+      "error": "",
+      "actual_exit_ip": "198.200.49.158",
+      "matches_vps": true
+    },
+    {
+      "name": "download_speed",
+      "url": "https://speed.cloudflare.com/__down?bytes=1000000",
+      "exit_code": 0,
+      "http_status": "200",
+      "seconds": "10.029762",
+      "error": "",
+      "actual_bytes": 1000000,
+      "success": true,
+      "mbps_observed": 0.798
+    }
+  ],
+  "success": true,
+  "relay_errors": [
+    "ConnectionResetError: [WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-09T11:29:01.353Z",
+  "success": true,
+  "checks": [
+    "Normal TLS trust over physical WLAN and authenticated login",
+    "63 server location, protocol, port and stable AUTO metadata",
+    "Real server card click successfully applies the server target",
+    "New static exit form opens and cancels without saving an account",
+    "1440px desktop and 390px mobile views have no horizontal overflow",
+    "Logout and no JavaScript exceptions"
+  ],
+  "state": {
+    "server_ip": "198.200.49.63",
+    "active_target": "server",
+    "exit_count": 0
+  },
+  "server_clicked": true
+}

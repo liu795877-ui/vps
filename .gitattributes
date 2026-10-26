@@ -1,0 +1,3 @@
+# Frozen releases validate exact source bytes against their SHA-256 manifests.
+# Preserve line endings on Windows and Linux clones.
+* -text

@@ -1,0 +1,37 @@
+
+Pinging 167.88.10.4 with 32 bytes of data:
+Reply from 167.88.10.4: bytes=32 time=247ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Request timed out.
+Reply from 167.88.10.4: bytes=32 time=245ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=245ms TTL=39
+Request timed out.
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=249ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=250ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=245ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Request timed out.
+Reply from 167.88.10.4: bytes=32 time=247ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=247ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=252ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=581ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=245ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=247ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=245ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=258ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=248ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+Reply from 167.88.10.4: bytes=32 time=246ms TTL=39
+
+Ping statistics for 167.88.10.4:
+    Packets: Sent = 30, Received = 27, Lost = 3 (10% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 245ms, Maximum = 581ms, Average = 259ms

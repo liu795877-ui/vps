@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "server_configuration_changes": 0,
+  "profile_id_preserved": true,
+  "only_flclash_ui_restarted": true,
+  "other_proxy_processes_modified": false,
+  "private_backup_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "previous_selection": "REALITY · TCP兼容",
+  "previous_auto_run": false,
+  "profile_sha256": "acbf21f6c6834c8433a90e5294681bbee3b19fc07853beec0292e805330014d2",
+  "profile_id": "1791639448254",
+  "selected_group": "AUTO · 网页切换",
+  "auto_run": true,
+  "windows_auto_launch": false,
+  "health_check": {
+    "url": "https://www.gstatic.com/generate_204",
+    "expected-status": "204",
+    "interval": 30,
+    "timeout": 5000,
+    "lazy": false
+  },
+  "current_egress": "198.200.49.63",
+  "runtime_policy_applied": true,
+  "rollback_private_directory": "D:\\CodexData\\vps\\deployments\\raksmart-198.200.49.63\\flclash-refresh-private\\8b489a386ef67af4",
+  "subscription_url_logged": false
+}

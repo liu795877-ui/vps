@@ -1,0 +1,44 @@
+{
+  "at_utc": "2026-10-19T03:07:35Z",
+  "account": {
+    "id": "779a54f71fae679d",
+    "username": "xuz",
+    "port": 4444,
+    "enabled": true,
+    "expires_at": 1794962155,
+    "suspended": false,
+    "expires_at_beijing": "2026-11-18T08:35:55+08:00"
+  },
+  "state": {
+    "active_id": "server",
+    "profile_version": 1,
+    "config_matches_managed_hash": true
+  },
+  "firewall": {
+    "code": 0,
+    "output": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT",
+    "error": ""
+  },
+  "temporary_redirects": {
+    "code": 0,
+    "output": "-P PREROUTING ACCEPT\n-P INPUT ACCEPT\n-P OUTPUT ACCEPT\n-P POSTROUTING ACCEPT",
+    "error": ""
+  },
+  "services": {
+    "xray-panel@779a54f71fae679d.service": {
+      "code": 0,
+      "output": "MainPID=26222\nExecMainStartTimestamp=Sun 2026-10-18 04:14:11 EDT\nActiveState=active\nSubState=running",
+      "error": ""
+    },
+    "raksmart-hy2@4444.service": {
+      "code": 0,
+      "output": "MainPID=17732\nExecMainStartTimestamp=Sun 2026-10-18 03:39:39 EDT\nActiveState=active\nSubState=running",
+      "error": ""
+    },
+    "vps-panel.service": {
+      "code": 0,
+      "output": "MainPID=6603\nExecMainStartTimestamp=Sun 2026-10-18 05:02:54 EDT\nActiveState=active\nSubState=running",
+      "error": ""
+    }
+  }
+}

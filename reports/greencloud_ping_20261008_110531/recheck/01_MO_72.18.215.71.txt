@@ -1,0 +1,57 @@
+
+Pinging 72.18.215.71 with 32 bytes of data:
+Reply from 72.18.215.71: bytes=32 time=331ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=347ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=308ms TTL=35
+Request timed out.
+Reply from 72.18.215.71: bytes=32 time=337ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=337ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=682ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=374ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=341ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=342ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=348ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=332ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=281ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=870ms TTL=35
+Request timed out.
+Reply from 72.18.215.71: bytes=32 time=361ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=289ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=325ms TTL=35
+Request timed out.
+Reply from 72.18.215.71: bytes=32 time=356ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=305ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=325ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=329ms TTL=35
+Request timed out.
+Reply from 72.18.215.71: bytes=32 time=371ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=330ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=337ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=366ms TTL=35
+Request timed out.
+Reply from 72.18.215.71: bytes=32 time=326ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=365ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=334ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=317ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=333ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=328ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=338ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=352ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=322ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=314ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=345ms TTL=35
+Request timed out.
+Reply from 72.18.215.71: bytes=32 time=329ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=346ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=325ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=358ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=340ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=365ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=319ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=347ms TTL=35
+Reply from 72.18.215.71: bytes=32 time=330ms TTL=35
+
+Ping statistics for 72.18.215.71:
+    Packets: Sent = 50, Received = 44, Lost = 6 (12% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 281ms, Maximum = 870ms, Average = 355ms

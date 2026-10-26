@@ -1,0 +1,87 @@
+{
+  "checked_at_utc": "2026-10-10T11:53:54Z",
+  "uptime_seconds": 106226.9,
+  "cpu_count": 2,
+  "load_averages": [
+    0.0,
+    0.03,
+    0.1
+  ],
+  "cpu_one_second_percent": {
+    "busy": 0.0,
+    "iowait": 0.0,
+    "steal": 0.0
+  },
+  "memory": {
+    "MemTotal": "3874056 kB",
+    "MemAvailable": "3294320 kB",
+    "SwapTotal": "0 kB",
+    "SwapFree": "0 kB"
+  },
+  "default_interface": "eth0",
+  "interface_cumulative_counters": {
+    "rx_packets": 13718575,
+    "tx_packets": 10721062,
+    "rx_dropped": 109727,
+    "tx_dropped": 0,
+    "rx_errors": 0,
+    "tx_errors": 0
+  },
+  "udp_cumulative_counters": {
+    "InDatagrams": 1453127,
+    "NoPorts": 96,
+    "InErrors": 1912,
+    "OutDatagrams": 1529355,
+    "RcvbufErrors": 1912,
+    "SndbufErrors": 0,
+    "InCsumErrors": 0
+  },
+  "udp_one_second_delta": {
+    "InDatagrams": 0,
+    "NoPorts": 0,
+    "InErrors": 0,
+    "OutDatagrams": 0,
+    "RcvbufErrors": 0,
+    "SndbufErrors": 0,
+    "InCsumErrors": 0
+  },
+  "socket_memory": "sockets: used 377\nTCP: inuse 99 orphan 1 tw 105 alloc 189 mem 1\nUDP: inuse 4 mem 3\nUDPLITE: inuse 0\nRAW: inuse 0\nFRAG: inuse 0 memory 0",
+  "qdisc": {
+    "code": 0,
+    "output": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 14216855782 bytes 15991071 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0",
+    "error": ""
+  },
+  "udp_buffers": {
+    "code": 0,
+    "output": "net.core.rmem_max = 212992\nnet.core.wmem_max = 212992\nnet.core.netdev_max_backlog = 1000\nnet.ipv4.udp_rmem_min = 4096\nnet.ipv4.udp_wmem_min = 4096",
+    "error": ""
+  },
+  "services": {
+    "code": 0,
+    "output": "raksmart-hy2@1443.service           loaded active running RAKsmart account Hysteria 2 UDP 1443\nraksmart-hy2@2443.service           loaded active running RAKsmart account Hysteria 2 UDP 2443\nraksmart-hy2@443.service            loaded active running RAKsmart account Hysteria 2 UDP 443\nvps-panel.service                   loaded active running Private static IP exit console\nxray-panel@06c26698c110e726.service loaded active running Independent VPS console Xray instance 06c26698c110e726\nxray-panel@7bb5122a2ef4a515.service loaded active running Independent VPS console Xray instance 7bb5122a2ef4a515\nxray.service                        loaded active running RAKsmart private VLESS REALITY proxy",
+    "error": ""
+  },
+  "scope": "Read-only idle runtime snapshot; cumulative counters do not measure current packet loss and one-second CPU data do not describe peak load.",
+  "hy2_udp_socket_memory": {
+    "code": 0,
+    "output": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb425984,t0,tb425984,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb425984,t0,tb425984,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb425984,t0,tb425984,f4096,w0,o0,bl0,d0)",
+    "error": ""
+  },
+  "filtered_hy2_logs": {
+    "443": {
+      "code": 0,
+      "output": "",
+      "error": ""
+    },
+    "1443": {
+      "code": 0,
+      "output": "",
+      "error": ""
+    },
+    "2443": {
+      "code": 0,
+      "output": "",
+      "error": ""
+    }
+  }
+}

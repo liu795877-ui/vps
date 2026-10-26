@@ -1,0 +1,73 @@
+{
+  "success": true,
+  "checked_at": "2026-10-13T06:57:00.720Z",
+  "deployment_ip": "198.200.49.158",
+  "release_name": "console-optimization-release-20261013-01",
+  "trusted_https": true,
+  "owned_physical_wlan_proxy": true,
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "checks": [
+    "All 41 local frozen application files match the target manifest",
+    "Trusted TLS, anonymous state protection, desktop/mobile login and reduced motion",
+    "Preserved administrator login and own state at TCP 443",
+    "Public HTML, JavaScript, CSS and SVG match final release SHA-256",
+    "Single existing account, running REALITY/HY2, two free member entrances and empty preparation tasks",
+    "Local member search, status filtering and reset",
+    "Quick member action reveals the form and generates a masked password without submission",
+    "3444 remains a local draft, both protocols require cloud confirmation, and refresh discards the draft",
+    "Backup library, schedule and administrator audit are readable without writes",
+    "All five administrator views fit desktop 1440 and phone 390 with masked secrets",
+    "Logout clears locally generated member password, delivery, subscription and backup fields"
+  ],
+  "assets": {
+    "index.html": {
+      "sha256": "772f47017f53c02a3b2cca25bc7b89282fce14bfe8a1612a24f6e64fecfbe3bf",
+      "release_match": true
+    },
+    "app.js": {
+      "sha256": "585b92289bf22844cfdac7f35f19b65f7c80181f173f3e920eda9287807ec7c9",
+      "release_match": true
+    },
+    "style.css": {
+      "sha256": "2582c4d0905840b37a183c5cd44e9b3e65107e5ed529d40b10a4a205b613fe52",
+      "release_match": true
+    },
+    "mark.svg": {
+      "sha256": "e1411d48517294ef21ecdd57a35d1d45d0dff2956d445f41f84315746d6d5ba7",
+      "release_match": true
+    }
+  },
+  "accounts": [
+    {
+      "account": "admin",
+      "role": "admin",
+      "port": 443,
+      "tcp_service": "running"
+    }
+  ],
+  "screenshots": [
+    "login-1440.png",
+    "login-390.png",
+    "admin-overview-1440.png",
+    "admin-routing-1440.png",
+    "admin-access-1440.png",
+    "admin-users-1440.png",
+    "admin-maintenance-1440.png",
+    "admin-overview-390.png",
+    "admin-routing-390.png",
+    "admin-access-390.png",
+    "admin-users-390.png",
+    "admin-maintenance-390.png"
+  ],
+  "manifest_sha256": "01768927cb56c6359cd1b91f8beae9c96ed06d7b857d59fde937c2018182f9e9",
+  "local_release_files_verified": 41,
+  "backup_count": 1,
+  "network_summary": {
+    "session_posts": 2,
+    "blocked_configuration_requests": 0,
+    "external_requests": 0,
+    "profile_requests": 0
+  },
+  "browser_errors": []
+}

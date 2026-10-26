@@ -1,0 +1,437 @@
+{
+  "verified_date": "2026-10-09",
+  "result": "passed",
+  "sources_http_count": 23,
+  "officialMihomo": true,
+  "officialMihomo_version": "Meta v1.19.31 windows amd64 go1.26.8",
+  "samples_count": 30,
+  "route_samples": [
+    {
+      "host": "www.bilibili.com",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "Custom Proxy"
+    },
+    {
+      "host": "cdn.bilivideo.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Bilibili"
+    },
+    {
+      "host": "static.hdslb.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Bilibili"
+    },
+    {
+      "host": "www.iqiyi.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "IQIYI"
+    },
+    {
+      "host": "pic.qiyipic.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "IQIYI"
+    },
+    {
+      "host": "v.qq.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Tencent Video"
+    },
+    {
+      "host": "v.youku.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Youku"
+    },
+    {
+      "host": "img.ykimg.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Youku"
+    },
+    {
+      "host": "www.mgtv.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Mango TV"
+    },
+    {
+      "host": "www.cctv.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "CCTV"
+    },
+    {
+      "host": "v.douyinvod.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Douyin"
+    },
+    {
+      "host": "api.kuaishou.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Kuaishou"
+    },
+    {
+      "host": "live.douyuscdn.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Douyu"
+    },
+    {
+      "host": "www.huya.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Domestic Media Supplements"
+    },
+    {
+      "host": "music.163.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Netease Music"
+    },
+    {
+      "host": "y.qq.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Domestic Media Supplements"
+    },
+    {
+      "host": "songsearch.kugou.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Kugou Kuwo"
+    },
+    {
+      "host": "www.bilibili.tv",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "Overseas Exceptions"
+    },
+    {
+      "host": "intl.iqiyi.com",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "IQ International"
+    },
+    {
+      "host": "www.iq.com",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "IQ International"
+    },
+    {
+      "host": "www.wetv.vip",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "WeTV"
+    },
+    {
+      "host": "www.kwai.com",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "Overseas Exceptions"
+    },
+    {
+      "host": "www.youtube.com",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "YouTube"
+    },
+    {
+      "host": "github.com",
+      "expected_chain": "DIRECT",
+      "matched_payload": "Custom Direct"
+    },
+    {
+      "host": "forced.cn",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "Custom Proxy"
+    },
+    {
+      "host": "www.google.cn",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "Overseas"
+    },
+    {
+      "host": "api.ipify.org",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": "api.ipify.org"
+    },
+    {
+      "host": "a-previously-unlisted.cn",
+      "expected_chain": "DIRECT",
+      "matched_payload": "China Domains"
+    },
+    {
+      "host": "china-ip.example.test",
+      "expected_chain": "DIRECT",
+      "matched_payload": "China IPs"
+    },
+    {
+      "host": "unlisted-overseas.example.test",
+      "expected_chain": "STATIC-SELECT",
+      "matched_payload": ""
+    }
+  ],
+  "cold_start": {
+    "passed": true,
+    "fresh_directory": true,
+    "preexisting_provider_cache": false,
+    "preexisting_geodata": false,
+    "geodata_downloaded": false,
+    "syntax_validation": "official Mihomo -t passed",
+    "fix": "China IPs uses an independent ipcidr/mrs HTTP provider; no GEOIP bootstrapping dependency."
+  },
+  "actual_china_ip": {
+    "passed": true,
+    "test_host": "china-ip.example.test",
+    "resolved_address": "223.5.5.5",
+    "matched_provider": "China IPs",
+    "chain": "DIRECT"
+  },
+  "same_process_custom_list_refresh": {
+    "passed": true,
+    "config_reimported": false,
+    "updated_providers": [
+      "Custom Direct",
+      "Custom Proxy"
+    ],
+    "verified_changes": [
+      "github.com: DIRECT -> STATIC-SELECT",
+      "www.bilibili.com: STATIC-SELECT -> DIRECT"
+    ]
+  },
+  "custom_payload_format": "classical line-based YAML with JSON-quoted scalar rules",
+  "tests": {
+    "suite": "panel.test_routing",
+    "passed": 8,
+    "official_runtime_tests_included": true,
+    "python_3_6_grammar_accepted": true
+  },
+  "cache_directory": "D:\\CodexData\\vps\\deployments\\raksmart-198.200.49.63\\smart-routing-validation\\core-check",
+  "sources": [
+    {
+      "name": "Bilibili",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Bilibili.yaml",
+      "http_status": 200,
+      "sha256": "7dd8b470d18709437152cbff1224f28c3e24845da1475e3c23f5097d7fe478cf",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 555,
+      "rules_count": 16
+    },
+    {
+      "name": "IQIYI",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/IQIYI.yaml",
+      "http_status": 200,
+      "sha256": "9c7f636efa4bd28a51aae3d996dc95e2cd39196ebc3402c8320140152517ca2e",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 1071,
+      "rules_count": 34
+    },
+    {
+      "name": "Tencent Video",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TencentVideo/TencentVideo.yaml",
+      "http_status": 200,
+      "sha256": "bce56e741ff1e17d6c0e9131353f16f19ae7d0e821a303b7794e512778d541cb",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 2131,
+      "rules_count": 51
+    },
+    {
+      "name": "Youku",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Youku.yaml",
+      "http_status": 200,
+      "sha256": "584d4378741c216c33604f642682fe12abd814a8d0c78f19b66af53d4f1697b9",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 104,
+      "rules_count": 3
+    },
+    {
+      "name": "Mango TV",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HunanTV/HunanTV.yaml",
+      "http_status": 200,
+      "sha256": "d13b59329242d53519d47842c4f7d8207feb2a444bf7adfe1b101ca4ed5e4908",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 365,
+      "rules_count": 7
+    },
+    {
+      "name": "CCTV",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CCTV/CCTV.yaml",
+      "http_status": 200,
+      "sha256": "4e5604afbdb701bec93bc56b00961bbe329f9340840465767338a39c018effab",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 1431,
+      "rules_count": 37
+    },
+    {
+      "name": "Douyin",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.yaml",
+      "http_status": 200,
+      "sha256": "fdfe20393b17988455f7715a8be15166b097c071551b938049874d39675dee41",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 594,
+      "rules_count": 13
+    },
+    {
+      "name": "Kuaishou",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KuaiShou/KuaiShou.yaml",
+      "http_status": 200,
+      "sha256": "a61ac9ceb3ff56c49beb176daeb93371951563828b0ee89a173d7e8b72155fbe",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 22085,
+      "rules_count": 678
+    },
+    {
+      "name": "Douyu",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu.yaml",
+      "http_status": 200,
+      "sha256": "4f6e0a84f37a57f6fc1a18e2ef9efd8a6d6dff8153268102ff489922c883caff",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 556,
+      "rules_count": 13
+    },
+    {
+      "name": "Huya",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa.yaml",
+      "http_status": 200,
+      "sha256": "cb4acc769b2af26e6c3732f3302bad7afdc424571decec4c465e98bd12d1cd95",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 281,
+      "rules_count": 4
+    },
+    {
+      "name": "Netease Music",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Netease%20Music.yaml",
+      "http_status": 200,
+      "sha256": "bffcbf0989053066817e1e7fc908b3a2410e0754ded7b28437fa3c037e35ed3c",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 93,
+      "rules_count": 2
+    },
+    {
+      "name": "Kugou Kuwo",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KugouKuwo/KugouKuwo.yaml",
+      "http_status": 200,
+      "sha256": "747eaadb1eb8f5b6bf71d8062ab1764858f357c67c4edc49b3b11970014b4b66",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 3236,
+      "rules_count": 109
+    },
+    {
+      "name": "IQ International",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/IQ.yaml",
+      "http_status": 200,
+      "sha256": "02f26af9be9a595e91dcdd58f9d78492015c06eb1cde0c53c25d1be3432a91b1",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 738,
+      "rules_count": 19
+    },
+    {
+      "name": "WeTV",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/WeTV.yaml",
+      "http_status": 200,
+      "sha256": "0b44b0e744202a99bf7b78df19922ebb29b7ac82db22dd8bbf2988e32668a842",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 118,
+      "rules_count": 3
+    },
+    {
+      "name": "Netflix",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Netflix.yaml",
+      "http_status": 200,
+      "sha256": "a2e579973bf79634b4e6b84ec2a65d2a8cb1b73f7141bdcd9a93971f2847a2b5",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 234,
+      "rules_count": 7
+    },
+    {
+      "name": "Disney",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Disney%20Plus.yaml",
+      "http_status": 200,
+      "sha256": "36b694630ee7c7e95036f4a4526ca8bb79f40622a900d8900f6ced66397fb594",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 401,
+      "rules_count": 9
+    },
+    {
+      "name": "YouTube",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/YouTube.yaml",
+      "http_status": 200,
+      "sha256": "bec671331cb35fd8137b38758dc3f96c50bc8ff4162fdcb3c6d970f65a073c98",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 5267,
+      "rules_count": 167
+    },
+    {
+      "name": "Telegram",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Telegram.yaml",
+      "http_status": 200,
+      "sha256": "cf56d88371d52d39b92664f74e504b79efaec9147ef4265bbaf7239c480b2afb",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 1135,
+      "rules_count": 32
+    },
+    {
+      "name": "Discord",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Discord.yaml",
+      "http_status": 200,
+      "sha256": "ca040ed9085646a39b8900adfe154ba0049c053b381d9e93dce9ca69052d2563",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 306,
+      "rules_count": 9
+    },
+    {
+      "name": "AI Services",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/AI%20Suite.yaml",
+      "http_status": 200,
+      "sha256": "caeea0778026eaa20abe59878e473e2f0b8d9bf00e3594955890f0c63145dd42",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 7636,
+      "rules_count": 146
+    },
+    {
+      "name": "Overseas",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Proxy.yaml",
+      "http_status": 200,
+      "sha256": "3b00e7be6aeda1a535a29100885ddd739fb92c4a06c1f24a301bb1e759656f8c",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 31859,
+      "rules_count": 1013
+    },
+    {
+      "name": "China IPs",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs",
+      "http_status": 200,
+      "sha256": "d95b3d125f6c74ce3c15e19ef794f142de91e21c3b8fb7767e76aebfabff5149",
+      "behavior": "ipcidr",
+      "format": "mrs",
+      "bytes": 37538,
+      "rules_count": null
+    },
+    {
+      "name": "China Domains",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Domestic.yaml",
+      "http_status": 200,
+      "sha256": "6cc72bd178ed1b45206fe87ef8df4eab032114fc12be2e27a5f43b5db48e14d7",
+      "behavior": "classical",
+      "format": "yaml",
+      "bytes": 8559,
+      "rules_count": 275
+    }
+  ],
+  "limitations": [
+    "Actual DNS policy resolver selection was checked by ordered configuration assertions; live route decisions were exercised against the official core.",
+    "Official-core route test used isolated test nodes, not real server credentials."
+  ],
+  "code_sha256": {
+    "panel\\routing.py": "b268342ce251af17ff50d9fad0b0ce6e83238498cb40553602110edcdddc111b",
+    "panel\\smart-routing.json": "062c497efc871adc80a9b0e3f600b89018d4080767662ad59d29085ca15a7286",
+    "panel\\test_routing.py": "7e3e77a4b5e8b41568aeac6cf05a4784f4f640fdb7f5e1e2e64f1d85de6a229d"
+  }
+}

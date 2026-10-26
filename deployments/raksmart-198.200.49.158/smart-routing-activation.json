@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-09T12:29:49.452084+00:00",
+  "success": true,
+  "routing_mode": "smart",
+  "previous_mode": "manual",
+  "active_target": "static",
+  "static_exit_count": 1,
+  "auto_identity_preserved": true,
+  "exit_accounts_preserved": true,
+  "fixed_connection_identities_preserved": true,
+  "force_direct_domains_preserved": true,
+  "force_proxy_domains_preserved": true,
+  "read_only_subscriptions_verified": true,
+  "live_list_updates_verified": true,
+  "temporary_domains_restored": true,
+  "interval_seconds": 300
+}

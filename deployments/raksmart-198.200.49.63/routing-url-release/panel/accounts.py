@@ -1,0 +1,474 @@
+"""Local accounts and isolated Xray instances for the node console.
+
+The existing administrator remains in auth.private.json. Member passwords and
+instance metadata live in a separate private registry; no proxy credentials or
+rule capabilities are returned by the account API.
+"""
+
+import base64
+import copy
+import hmac
+import json
+import os
+from pathlib import Path
+import re
+import secrets
+import shutil
+import socket
+import threading
+import time
+import uuid
+
+
+MAX_USERS = 3
+MEMBER_PORTS = (1443, 2443)
+CONFIG_ROOT = Path("/usr/local/etc/xray-members")
+MEMBER_ID = re.compile(r"[a-f0-9]{16}\Z")
+USERNAME = re.compile(r"[a-z][a-z0-9_-]{2,23}\Z")
+
+
+def _server():
+    # server.Application imports Accounts, so resolve the dependency at runtime.
+    from panel import server
+    return server
+
+
+def _private_directory(path):
+    path = Path(path)
+    if path.is_symlink():
+        raise _server().PanelError("用户数据目录需要检查，操作已停止。", 409)
+    path.mkdir(parents=True, exist_ok=True)
+    if os.name == "posix":
+        os.chmod(path, 0o700)
+    return path
+
+
+def _password(value):
+    if (not isinstance(value, str) or not 12 <= len(value) <= 128
+            or not value.strip() or any(ord(char) < 32 for char in value)):
+        raise _server().PanelError("密码需要 12 至 128 个字符，不能包含控制字符。")
+    try:
+        value.encode("utf-8")
+    except UnicodeError as error:
+        raise _server().PanelError("密码包含不支持的字符。") from error
+    return value
+
+
+class Accounts:
+    def __init__(self, owner_manager, owner_auth_path, demo=False):
+        self.owner_manager = owner_manager
+        self.owner_auth_path = Path(owner_auth_path)
+        self.users_path = owner_manager.directory / "users.private.json"
+        self.directory = owner_manager.directory / "users"
+        self.demo = bool(demo)
+        self.lock = threading.RLock()
+        self._managers = {"admin": owner_manager}
+        if self.owner_auth_path.is_symlink() or self.users_path.is_symlink():
+            raise _server().PanelError("用户账号文件需要检查，操作已停止。", 409)
+        self.owner_auth = json.loads(self.owner_auth_path.read_text(encoding="utf-8"))
+        if not isinstance(self.owner_auth.get("username"), str):
+            raise _server().PanelError("管理员账号文件需要检查。", 500)
+        if self.users_path.exists():
+            data = json.loads(self.users_path.read_text(encoding="utf-8"))
+        else:
+            data = {"version": 1, "users": []}
+            _server().atomic_write(self.users_path, _server().json_bytes(data))
+        self._validate_registry(data)
+        self.records = data["users"]
+
+    def _validate_registry(self, data):
+        server = _server()
+        if (not isinstance(data, dict) or data.get("version") != 1
+                or not isinstance(data.get("users"), list)
+                or len(data["users"]) >= MAX_USERS):
+            raise server.PanelError("用户账号记录需要检查。", 500)
+        ids, ports = set(), set()
+        names = {self.owner_auth["username"].casefold()}
+        for record in data["users"]:
+            if not isinstance(record, dict):
+                raise server.PanelError("用户账号记录需要检查。", 500)
+            identity = record.get("id")
+            username = record.get("username")
+            port = record.get("port")
+            auth = record.get("auth")
+            if (not isinstance(identity, str) or not MEMBER_ID.fullmatch(identity)
+                    or identity in ids or not isinstance(username, str)
+                    or not USERNAME.fullmatch(username) or username.casefold() in names
+                    or isinstance(port, bool) or port not in MEMBER_PORTS or port in ports
+                    or record.get("role") != "member" or type(record.get("enabled")) is not bool
+                    or not isinstance(record.get("display_name"), str)
+                    or not 1 <= len(record["display_name"].strip()) <= 48
+                    or any(ord(char) < 32 for char in record["display_name"])
+                    or not isinstance(auth, dict) or auth.get("username") != username
+                    or not isinstance(auth.get("iterations"), int)
+                    or not 100000 <= auth["iterations"] <= 2000000
+                    or not isinstance(auth.get("salt"), str)
+                    or not re.fullmatch(r"[a-f0-9]{48}", auth["salt"])
+                    or not isinstance(auth.get("hash"), str)
+                    or not re.fullmatch(r"[a-f0-9]{64}", auth["hash"])):
+                raise server.PanelError("用户账号记录需要检查。", 500)
+            ids.add(identity)
+            ports.add(port)
+            names.add(username.casefold())
+
+    def _record(self, user_id):
+        if user_id == "admin":
+            return {"id": "admin", "username": self.owner_auth["username"],
+                    "display_name": "管理员", "role": "admin", "enabled": True,
+                    "port": self.owner_manager.state["base"]["inbounds"][0]["port"]}
+        if not isinstance(user_id, str) or not MEMBER_ID.fullmatch(user_id):
+            raise _server().PanelError("没有找到这个用户。", 404)
+        record = next((item for item in self.records if item["id"] == user_id), None)
+        if record is None:
+            raise _server().PanelError("没有找到这个用户。", 404)
+        return record
+
+    def _paths(self, record):
+        identity = record["id"]
+        if not MEMBER_ID.fullmatch(identity):
+            raise _server().PanelError("用户标识需要检查。", 500)
+        directory = self.directory / identity
+        config_directory = directory if self.demo else CONFIG_ROOT / identity
+        return directory, config_directory / "config.json"
+
+    @staticmethod
+    def _service(record):
+        return "xray-panel@" + record["id"] + ".service"
+
+    def _manager(self, record):
+        if record["id"] == "admin":
+            return self.owner_manager
+        identity = record["id"]
+        manager = self._managers.get(identity)
+        if manager is None:
+            directory, config_path = self._paths(record)
+            if (directory.is_symlink() or config_path.parent.is_symlink()
+                    or config_path.is_symlink() or (directory / "state.private.json").is_symlink()
+                    or not (directory / "state.private.json").is_file()
+                    or not config_path.is_file()):
+                raise _server().PanelError("这个用户的独立节点文件需要检查。", 409)
+            self._validate_member_files(record, directory, config_path)
+            manager = _server().Manager(
+                directory, self.owner_manager.public_ip, config_path, demo=self.demo,
+                origin=self.owner_manager.origin, base_path=self.owner_manager.base_path,
+                service_name=self._service(record),
+            )
+            self._managers[identity] = manager
+        manager.account_enabled = record["enabled"]
+        manager.disabled = not record["enabled"]
+        return manager
+
+    def _validate_member_files(self, record, directory, config_path):
+        server = _server()
+        try:
+            state = json.loads((directory / "state.private.json").read_text(encoding="utf-8"))
+            payload = config_path.read_bytes()
+            running = json.loads(payload)
+            inbound = state["base"]["inbounds"][0]
+            current = running["inbounds"][0]
+            expected_ids = {str(uuid.UUID(inbound["settings"]["clients"][0]["id"])),
+                            str(uuid.UUID(state["auto_id"]))}
+            expected_ids.update(str(uuid.UUID(item["client_id"])) for item in state["applied_exits"])
+            actual_ids = {str(uuid.UUID(item["id"])) for item in current["settings"]["clients"]}
+            if (len(state["base"]["inbounds"]) != 1 or len(running["inbounds"]) != 1
+                    or inbound["port"] != record["port"] or current["port"] != record["port"]
+                    or inbound["protocol"] != "vless" or current["protocol"] != "vless"
+                    or inbound["streamSettings"]["security"] != "reality"
+                    or current["streamSettings"] != inbound["streamSettings"]
+                    or actual_ids != expected_ids
+                    or state["managed_hash"] != server.digest(payload)
+                    or not isinstance(state["rule_token"], str) or len(state["rule_token"]) < 32
+                    or not isinstance(state["public"], str)
+                    or not re.fullmatch(r"[A-Za-z0-9_-]{43}", state["public"])):
+                raise ValueError("member identity or configuration mismatch")
+        except (OSError, ValueError, TypeError, KeyError, IndexError) as error:
+            raise server.PanelError("这个用户的独立节点配置需要检查，操作已停止。", 409) from error
+
+    def manager(self, user_id):
+        with self.lock:
+            record = self._record(user_id)
+            if not record["enabled"]:
+                raise _server().PanelError("这个账号已停用，请联系管理员。", 403)
+            return self._manager(record)
+
+    def _public(self, record):
+        manager = self._manager(record)
+        with manager.lock:
+            state = manager.state
+            result = {key: record[key] for key in
+                      ("id", "username", "display_name", "role", "enabled", "port")}
+            result.update(exit_count=len(state["exits"]),
+                          active_target="server" if state["active_id"] in (None, "server") else "static")
+        result["service_active"] = (bool(record["enabled"]) if self.demo else
+            _server().base.command(["systemctl", "is-active", "--quiet",
+                                   getattr(manager, "service_name", "xray.service")], check=False).returncode == 0)
+        return result
+
+    def get(self, user_id):
+        with self.lock:
+            return self._public(self._record(user_id))
+
+    def list_users(self):
+        with self.lock:
+            return [self._public(self._record("admin"))] + [self._public(item) for item in self.records]
+
+    def authenticate(self, username, password):
+        """Return a safe user dictionary on success and None on failed login."""
+        if (not isinstance(username, str) or not isinstance(password, str)
+                or len(username) > 128 or len(password) > 128):
+            return None
+        try:
+            password.encode("utf-8")
+        except UnicodeError:
+            return None
+        with self.lock:
+            record = (self._record("admin") if username == self.owner_auth["username"] else
+                      next((item for item in self.records if item["username"] == username), None))
+            # Hash unknown usernames too, to avoid a fast username-existence check.
+            auth = (self.owner_auth if record is None or record["id"] == "admin"
+                    else record["auth"])
+            matched = _server().password_matches(password, auth)
+            if record is None or not record["enabled"] or not matched:
+                return None
+            return self._public(record)
+
+    def _save(self, records):
+        _server().atomic_write(self.users_path, _server().json_bytes({"version": 1, "users": records}))
+        self.records = records
+
+    def _keys(self):
+        if self.demo:
+            return tuple(base64.urlsafe_b64encode(os.urandom(32)).decode("ascii").rstrip("=")
+                         for _ in range(2))
+        server = _server()
+        return server.base.parse_keys(server.base.command([str(server.base.XRAY), "x25519"]).stdout)
+
+    def _new_state(self, port):
+        server = _server()
+        private, public = self._keys()
+        with self.owner_manager.lock:
+            config = copy.deepcopy(self.owner_manager.state["base"])
+        inbound = config["inbounds"][0]
+        if (inbound.get("protocol") != "vless"
+                or inbound.get("streamSettings", {}).get("security") != "reality"):
+            raise server.PanelError("基础 REALITY 节点需要检查，未创建用户。", 409)
+        config["inbounds"] = [inbound]
+        inbound["port"] = port
+        inbound["listen"] = "0.0.0.0"
+        inbound["settings"]["clients"] = [{"id": str(uuid.uuid4()), "flow": "xtls-rprx-vision"}]
+        short = secrets.token_hex(8)
+        reality = inbound["streamSettings"]["realitySettings"]
+        reality.update(privateKey=private, shortIds=[short])
+        state = {"base": config, "public": public, "short": short,
+                 "auto_id": str(uuid.uuid4()), "rule_token": secrets.token_urlsafe(32),
+                 "exits": [], "applied_exits": [], "active_id": "server",
+                 "domains": [], "direct_domains": [], "applied_domains": [],
+                 "applied_direct_domains": [], "routing_mode": "smart",
+                 "applied_routing_mode": "smart", "history": [], "updated": server.now()}
+        candidate, profile = self.owner_manager.build(state, "server")
+        payload = server.json_bytes(candidate)
+        state.update(profile=profile, managed_hash=server.digest(payload))
+        return state, payload
+
+    def _wait_ready(self, record):
+        server = _server()
+        for _ in range(20):
+            if server.base.command(["systemctl", "is-active", "--quiet", self._service(record)],
+                                   check=False).returncode == 0:
+                try:
+                    with socket.create_connection(("127.0.0.1", record["port"]), timeout=0.5):
+                        return
+                except OSError:
+                    pass
+            time.sleep(0.25)
+        raise server.PanelError("独立节点未能启动，已撤销这个用户的创建。", 500)
+
+    def _start(self, record):
+        if not self.demo:
+            server = _server()
+            server.base.command(["systemctl", "enable", self._service(record)])
+            server.base.command(["systemctl", "start", self._service(record)])
+            self._wait_ready(record)
+
+    def _stop(self, record):
+        if not self.demo:
+            server = _server()
+            server.base.command(["systemctl", "stop", self._service(record)])
+            server.base.command(["systemctl", "disable", self._service(record)])
+
+    def _remove_created(self, directory, config_path, created_state, created_config):
+        # These exact directories were created with mkdir(exist_ok=False) below;
+        # no pre-existing resource is eligible for this rollback.
+        for target, parent, created in ((directory, self.directory, created_state),
+                                        (config_path.parent, CONFIG_ROOT, created_config and not self.demo)):
+            if created and target.exists() and not target.is_symlink():
+                if target.resolve().parent != parent.resolve():
+                    raise _server().PanelError("用户目录清理需要检查。", 500)
+                shutil.rmtree(target)
+
+    def create_user(self, request):
+        server = _server()
+        if not isinstance(request, dict) or set(request) - {"username", "password", "display_name"}:
+            raise server.PanelError("只需要填写用户名、显示名称和登录密码，入口由服务器分配。")
+        username = request.get("username")
+        if not isinstance(username, str) or not USERNAME.fullmatch(username):
+            raise server.PanelError("用户名需要 3 至 24 位小写字母、数字、下划线或短横线，并以字母开头。")
+        password = _password(request.get("password"))
+        display = request.get("display_name", username)
+        if (not isinstance(display, str) or not 1 <= len(display.strip()) <= 48
+                or any(ord(char) < 32 for char in display)):
+            raise server.PanelError("显示名称需要 1 至 48 个字符。")
+        try:
+            display.encode("utf-8")
+        except UnicodeError as error:
+            raise server.PanelError("显示名称包含不支持的字符。") from error
+        with self.lock:
+            if len(self.records) + 1 >= MAX_USERS:
+                raise server.PanelError("这台服务器最多支持 3 个用户，包含管理员。", 409)
+            if username.casefold() in {self.owner_auth["username"].casefold()} | {
+                    item["username"].casefold() for item in self.records}:
+                raise server.PanelError("用户名已存在，请换一个用户名。", 409)
+            port = next(value for value in MEMBER_PORTS if value not in {item["port"] for item in self.records})
+            if not self.demo:
+                try:
+                    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as probe:
+                        probe.bind(("0.0.0.0", port))
+                except OSError as error:
+                    raise server.PanelError("分配的入口端口正在使用，未创建用户。", 409) from error
+            auth = server.password_record(password)
+            auth["username"] = username
+            record = {"id": secrets.token_hex(8), "username": username,
+                      "display_name": display.strip(), "role": "member", "enabled": True,
+                      "port": port, "created": server.now(), "auth": auth}
+            directory, config_path = self._paths(record)
+            _private_directory(self.directory)
+            if not self.demo:
+                _private_directory(CONFIG_ROOT)
+            if directory.exists() or directory.is_symlink() or config_path.parent.is_symlink():
+                raise server.PanelError("用户目录已存在，未修改已有文件。", 409)
+            created_state = created_config = started = False
+            candidate_path = config_path.with_name("candidate.private.json")
+            try:
+                state, payload = self._new_state(port)
+                directory.mkdir(mode=0o700)
+                created_state = True
+                if not self.demo:
+                    config_path.parent.mkdir(mode=0o700)
+                    created_config = True
+                    server.atomic_write(candidate_path, payload)
+                    server.base.command([str(server.base.XRAY), "run", "-test", "-config", str(candidate_path)])
+                server.atomic_write(config_path, payload)
+                server.atomic_write(directory / "state.private.json", server.json_bytes(state))
+                if candidate_path.exists():
+                    candidate_path.unlink()
+                self._manager(record)
+                # Treat enable/start as potentially partial, so rollback stops the
+                # new instance even if systemctl raises before reporting success.
+                started = True
+                self._start(record)
+                result = self._public(record)
+                self._save(self.records + [record])
+                return result
+            except Exception as error:
+                if started:
+                    try:
+                        self._stop(record)
+                    except Exception as stop_error:
+                        raise server.PanelError("新用户启动失败，独立服务清理需要检查。", 500) from stop_error
+                self._managers.pop(record["id"], None)
+                self._remove_created(directory, config_path, created_state, created_config)
+                if isinstance(error, server.PanelError):
+                    raise
+                raise server.PanelError("创建用户失败，原有账号和出口已保留。", 500) from error
+
+    def _replace_password(self, user_id, password):
+        server = _server()
+        record = self._record(user_id)
+        auth = server.password_record(_password(password))
+        auth["username"] = record["username"]
+        if user_id == "admin":
+            server.atomic_write(self.owner_auth_path, server.json_bytes(auth))
+            self.owner_auth = auth
+        else:
+            records = copy.deepcopy(self.records)
+            next(item for item in records if item["id"] == user_id)["auth"] = auth
+            self._save(records)
+        return self._public(self._record(user_id))
+
+    def reset_password(self, user_id, password):
+        with self.lock:
+            return self._replace_password(user_id, password)
+
+    def change_password(self, user_id, current, new):
+        with self.lock:
+            record = self._record(user_id)
+            auth = self.owner_auth if user_id == "admin" else record["auth"]
+            if not isinstance(current, str) or len(current) > 128:
+                raise _server().PanelError("当前密码不正确。", 403)
+            try:
+                valid = _server().password_matches(current, auth)
+            except UnicodeError:
+                valid = False
+            if not valid:
+                raise _server().PanelError("当前密码不正确。", 403)
+            return self._replace_password(user_id, new)
+
+    def set_enabled(self, user_id, enabled):
+        server = _server()
+        if type(enabled) is not bool:
+            raise server.PanelError("请设置有效的账号状态。")
+        with self.lock:
+            record = self._record(user_id)
+            if user_id == "admin":
+                raise server.PanelError("管理员账号不能停用。", 403)
+            manager = self._manager(record)
+            if record["enabled"] == enabled:
+                return self._public(record)
+            if not manager.operation.acquire(blocking=False):
+                raise server.PanelError("这个用户正在测试或切换出口，请完成后再设置账号状态。", 409)
+            changed_runtime = False
+            previously_disabled = manager.disabled
+            try:
+                if not enabled:
+                    manager.disabled = True
+                changed_runtime = True
+                (self._start if enabled else self._stop)(record)
+                records = copy.deepcopy(self.records)
+                updated = next(item for item in records if item["id"] == user_id)
+                updated["enabled"] = enabled
+                result = self._public(updated)
+                self._save(records)
+                manager.account_enabled = enabled
+                manager.disabled = not enabled
+                return result
+            except Exception as error:
+                manager.disabled = previously_disabled
+                manager.account_enabled = record["enabled"]
+                if changed_runtime:
+                    try:
+                        (self._start if record["enabled"] else self._stop)(record)
+                    except Exception as restore_error:
+                        raise server.PanelError("账号设置失败，独立节点恢复需要检查。", 500) from restore_error
+                if isinstance(error, server.PanelError):
+                    raise
+                raise server.PanelError("账号状态设置失败，已恢复原有设置。", 500) from error
+            finally:
+                manager.operation.release()
+
+    def rule_snapshot(self, token, direction):
+        if not isinstance(token, str) or direction not in ("direct", "proxy"):
+            raise _server().PanelError("页面不存在。", 404)
+        try:
+            supplied = token.encode("utf-8")
+        except UnicodeError as error:
+            raise _server().PanelError("页面不存在。", 404) from error
+        with self.lock:
+            for record in [self._record("admin")] + self.records:
+                if not record["enabled"]:
+                    continue
+                manager = self._manager(record)
+                with manager.lock:
+                    expected = manager.state["rule_token"].encode("utf-8")
+                if hmac.compare_digest(supplied, expected):
+                    return manager.rule_snapshot(token, direction)
+        raise _server().PanelError("页面不存在。", 404)

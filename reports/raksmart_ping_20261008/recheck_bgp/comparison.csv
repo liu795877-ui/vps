@@ -1,0 +1,2 @@
+﻿name,name_zh,code,ip,sent,received,lost,loss_pct,min_ms,avg_ms,median_ms,max_ms,stdev_ms,started_at,finished_at
+Silicon Valley Global BGP,硅谷 国际 BGP,SVBGP,104.233.217.190,50,49,1,2.0,206,304.7,208,1007,239.4,2026-10-08T16:21:15+08:00,2026-10-08T16:22:11+08:00

@@ -1,0 +1,94 @@
+{
+  "at": "2026-10-19T03:05:30.534543+00:00",
+  "user": "xuz",
+  "method": "temporary 5444 TCP+UDP redirect to unchanged 4444 backend",
+  "account_changes": false,
+  "tests": [
+    {
+      "protocol": "hy2",
+      "port": 4444,
+      "cold_attempt": 1,
+      "success": true,
+      "delay_ms": 1009
+    },
+    {
+      "protocol": "hy2",
+      "port": 4444,
+      "cold_attempt": 2,
+      "success": true,
+      "delay_ms": 989
+    },
+    {
+      "protocol": "hy2",
+      "port": 4444,
+      "cold_attempt": 3,
+      "success": true,
+      "delay_ms": 845
+    },
+    {
+      "protocol": "hy2",
+      "port": 5444,
+      "cold_attempt": 1,
+      "success": false,
+      "http_error": 504
+    },
+    {
+      "protocol": "hy2",
+      "port": 5444,
+      "cold_attempt": 2,
+      "success": false,
+      "http_error": 504
+    },
+    {
+      "protocol": "hy2",
+      "port": 5444,
+      "cold_attempt": 3,
+      "success": false,
+      "http_error": 504
+    },
+    {
+      "protocol": "xray",
+      "port": 4444,
+      "cold_attempt": 1,
+      "success": false,
+      "http_error": 504
+    },
+    {
+      "protocol": "xray",
+      "port": 4444,
+      "cold_attempt": 2,
+      "success": true,
+      "delay_ms": 1086
+    },
+    {
+      "protocol": "xray",
+      "port": 4444,
+      "cold_attempt": 3,
+      "success": false,
+      "http_error": 504
+    },
+    {
+      "protocol": "xray",
+      "port": 5444,
+      "cold_attempt": 1,
+      "success": false,
+      "http_error": 504
+    },
+    {
+      "protocol": "xray",
+      "port": 5444,
+      "cold_attempt": 2,
+      "success": false,
+      "http_error": 504
+    },
+    {
+      "protocol": "xray",
+      "port": 5444,
+      "cold_attempt": 3,
+      "success": false,
+      "http_error": 504
+    }
+  ],
+  "temporary_rules_removed": true,
+  "temporary_credentials_removed": true
+}

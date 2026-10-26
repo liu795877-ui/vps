@@ -1,0 +1,101 @@
+{
+  "success": false,
+  "mode": "compare",
+  "label": "regression-initial",
+  "started_at": "2026-10-10T13:37:08.779981+00:00",
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "signed_urls_saved": false,
+  "tokens_saved": false,
+  "paths": [],
+  "cleanup_errors": [],
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "script_sha256": "3358ee88b745f596a28c32f1172e9a1c9e1e2b68b6c0685801cc6922d14a86f5",
+  "method": {
+    "parallel_downloads": 4,
+    "maximum_payload_per_path": 67108864,
+    "maximum_request_seconds": 12,
+    "block_bytes": 16777216,
+    "path_order": [
+      "active-flclash",
+      "current-admin-hy2",
+      "current-admin-vless"
+    ],
+    "same_signed_targets_across_paths": true,
+    "active_flclash_port": 7890,
+    "no_controller_delete_connections": true,
+    "no_configuration_changes": true,
+    "range_in_official_path_and_http_header": true,
+    "payload_discarded_without_files": true
+  },
+  "method_sha256": "4dfd61d149ec2c21c77e08ccff265afa73245bf6384457b980c6e4f792b9e7cb",
+  "discovery": {
+    "frontend_bytes": 26326,
+    "frontend_http_code": 200,
+    "js_bytes": 133839,
+    "js_files_fetched": 1,
+    "token_discovered": true,
+    "target_api_attempts": 1,
+    "download_payload_bytes": 0,
+    "proxy_port": 7890,
+    "api_payload_bytes": 1429,
+    "client_ip": "198.200.49.63",
+    "client_region": {
+      "city": "San Jose",
+      "country": "US"
+    },
+    "targets": [
+      {
+        "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c308-sjc002-dev-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c115-lax009-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "Los Angeles",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c209-sea001-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "Seattle",
+          "country": "US"
+        }
+      }
+    ],
+    "target_count": 4,
+    "signed_urls_saved": false,
+    "tokens_saved": false
+  },
+  "current_server_exit_ip": "198.200.49.63",
+  "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+  "core_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "account_settings_sha256": "57feb39e16db705dc7a558631b469f6c6a5312efa869aa0dcbeb4ee458ba2fc8",
+  "failure_stage": "active-flclash",
+  "error_type": "SafeFailure",
+  "safe_error_detail": {
+    "stage": "fast-target-path",
+    "category": "unexpected-official-range-path"
+  },
+  "own_mihomo_processes_terminated": true,
+  "own_curl_processes_terminated": true,
+  "temporary_private_files_removed": true,
+  "finished_at": "2026-10-10T13:37:33.275399+00:00",
+  "total_wall_seconds": 24.495
+}

@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-09T15:09:30+08:00",
+  "method": "TCP connect explicitly bound to physical WLAN (IP_UNICAST_IF)",
+  "source_interface": "WLAN",
+  "source_ip": "192.168.1.112",
+  "checks": [
+    {
+      "host": "198.200.49.63",
+      "port": 443,
+      "count": 15,
+      "connected": 11,
+      "timeouts_or_errors": 4,
+      "errors": [
+        "TimeoutError",
+        "TimeoutError",
+        "TimeoutError",
+        "TimeoutError"
+      ],
+      "samples_ms": [
+        168.99,
+        236.95,
+        206.21,
+        211.05,
+        254.27,
+        188.41,
+        180.24,
+        181.41,
+        212.05,
+        182.76,
+        155.29
+      ],
+      "mean_ms": 198.0,
+      "median_ms": 188.4,
+      "min_ms": 155.29,
+      "max_ms": 254.27
+    },
+    {
+      "host": "198.200.49.63",
+      "port": 47650,
+      "count": 15,
+      "connected": 10,
+      "timeouts_or_errors": 5,
+      "errors": [
+        "TimeoutError",
+        "TimeoutError",
+        "TimeoutError",
+        "TimeoutError",
+        "TimeoutError"
+      ],
+      "samples_ms": [
+        185.69,
+        171.63,
+        177.45,
+        177.65,
+        160.7,
+        188.41,
+        159.01,
+        208.37,
+        207.39,
+        158.9
+      ],
+      "mean_ms": 179.5,
+      "median_ms": 177.6,
+      "min_ms": 158.9,
+      "max_ms": 208.37
+    },
+    {
+      "host": "192.168.1.1",
+      "port": 80,
+      "count": 5,
+      "connected": 5,
+      "timeouts_or_errors": 0,
+      "errors": [],
+      "samples_ms": [
+        22.5,
+        3.03,
+        3.09,
+        2.67,
+        3.42
+      ],
+      "mean_ms": 6.9,
+      "median_ms": 3.1,
+      "min_ms": 2.67,
+      "max_ms": 22.5
+    }
+  ]
+}

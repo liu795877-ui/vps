@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-09T17:29:22+08:00",
+  "origin": "https://198-200-49-158.sslip.io:8443",
+  "path": "Physical WLAN; normal TLS trust and hostname validation",
+  "checks": [
+    "HTTPS page and trusted certificate",
+    "Login and Secure/HttpOnly/SameSite session",
+    "CSRF and request origin enforcement",
+    "Assets, rules and logout"
+  ],
+  "state": {
+    "server_ip": "198.200.49.158",
+    "server_port": 443,
+    "exit_count": 0,
+    "service_active": true
+  },
+  "success": true
+}

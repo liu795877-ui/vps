@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-17T03:47:36.171529+00:00",
+  "success": true,
+  "samples": [
+    {
+      "domain": "api.bilibili.com",
+      "route": "DIRECT",
+      "https_connection_succeeded": true
+    },
+    {
+      "domain": "static.hdslb.com",
+      "route": "DIRECT",
+      "https_connection_succeeded": true
+    },
+    {
+      "domain": "api.ipify.org",
+      "route": "STATIC-SELECT",
+      "https_connection_succeeded": true
+    }
+  ],
+  "auto_egress": {
+    "observed_ip": "198.200.49.63",
+    "expected_ip": "198.200.49.63"
+  },
+  "complete_profile_validated": true,
+  "all_providers_loaded": true,
+  "custom_provider_refresh_succeeded": true,
+  "provider_count": 27,
+  "active_target": "server"
+}

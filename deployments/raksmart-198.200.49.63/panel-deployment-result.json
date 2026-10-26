@@ -1,0 +1,16 @@
+{
+  "installed": true,
+  "origin": "https://198-200-49-63.sslip.io:8443",
+  "services": [
+    "vps-panel.service",
+    "caddy.service"
+  ],
+  "base_config_preserved": true,
+  "hy2_config_preserved": true,
+  "dns_preserved": true,
+  "initial_exit_count": 0,
+  "backend_listen": "127.0.0.1:18787",
+  "external_https_verification_pending": false,
+  "final_verification_success": true,
+  "final_report": "panel-final-acceptance.json"
+}

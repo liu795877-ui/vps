@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "public_https_certificate_verified": true,
+  "physical_wlan": true,
+  "status": 200,
+  "session_response_authenticated": false,
+  "configuration_changes": 0
+}

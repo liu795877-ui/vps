@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-10-09T15:15:20+08:00",
+  "method": "Isolated official Mihomo URLTest, bound to physical WLAN",
+  "checks": [
+    {
+      "unified_delay": true,
+      "url": "https://www.gstatic.com/generate_204",
+      "results": [
+        {
+          "delay": 369
+        },
+        {
+          "delay": 445
+        },
+        {
+          "delay": 410
+        }
+      ],
+      "median_ms": 410
+    },
+    {
+      "unified_delay": true,
+      "url": "http://www.gstatic.com/generate_204",
+      "results": [
+        {
+          "delay": 357
+        },
+        {
+          "delay": 350
+        },
+        {
+          "delay": 377
+        }
+      ],
+      "median_ms": 357
+    },
+    {
+      "unified_delay": false,
+      "url": "https://www.gstatic.com/generate_204",
+      "results": [
+        {
+          "delay": 412
+        },
+        {
+          "delay": 403
+        },
+        {
+          "delay": 406
+        }
+      ],
+      "median_ms": 406
+    },
+    {
+      "unified_delay": false,
+      "url": "http://www.gstatic.com/generate_204",
+      "results": [
+        {
+          "delay": 377
+        },
+        {
+          "delay": 355
+        },
+        {
+          "delay": 356
+        }
+      ],
+      "median_ms": 356
+    }
+  ],
+  "version": {
+    "meta": true,
+    "version": "v1.19.31"
+  }
+}

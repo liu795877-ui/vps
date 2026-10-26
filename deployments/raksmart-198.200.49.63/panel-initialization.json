@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-10-09T11:26:54.950678+00:00",
+  "origin": "https://198-200-49-63.sslip.io:8443",
+  "success": true,
+  "active_target": "server",
+  "exit_count": 0,
+  "observed_ip": "198.200.49.63",
+  "download_ready": true
+}

@@ -1,0 +1,30 @@
+{
+  "profiles": {
+    "443": {
+      "congestion": {
+        "type": "bbr",
+        "bbrProfile": "standard"
+      },
+      "ignore_client_bandwidth": true,
+      "sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00"
+    },
+    "1443": {
+      "congestion": {
+        "type": "bbr",
+        "bbrProfile": "standard"
+      },
+      "ignore_client_bandwidth": true,
+      "sha256": "26dec394c3645183e0fbb9c1864b1a81e166bb34b307ba5e5f5347cea24fa0d3"
+    },
+    "2443": {
+      "congestion": {
+        "type": "bbr",
+        "bbrProfile": "standard"
+      },
+      "ignore_client_bandwidth": true,
+      "sha256": "91d5c9629599dd3c438c5da9042b9213620289d2066055cc223f737ab4348143"
+    }
+  },
+  "udp_buffers": "net.core.rmem_max = 7340032\nnet.core.wmem_max = 7340032",
+  "uptime": "108670.88"
+}

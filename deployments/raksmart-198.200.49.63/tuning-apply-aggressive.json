@@ -1,0 +1,22 @@
+{
+  "action": "set",
+  "backup_dir": "/root/vps-hy2-bbr-20261010-tuning",
+  "identity_preserved": true,
+  "ledger_totals_non_decreasing": true,
+  "other_instances_preserved": true,
+  "panel_session_notice": "Panel sessions require login again after its worker restart.",
+  "port": 443,
+  "profile": "aggressive",
+  "restart": {
+    "business_counters_stable_before_restart": true,
+    "epoch_changed": true,
+    "sample_to_restart_request_ms": 2.978,
+    "tail_accounting_limitation": "Final counters are persisted before restart; business bytes produced in the sample-to-stop interval may be unrecorded.",
+    "total_bytes_non_decreasing": true
+  },
+  "runtime_sha256": "ca102028587c7f75290d339e64c6c3309d351feca8c3a81228b5fc3c4c35e5d4",
+  "success": true,
+  "traffic_ledger_restored": false,
+  "helper_sha256": "b2fae373df51fd2115a9808d80e9e8b9d7f955261f102a1a8785e3d882c9ef9e",
+  "remote_exit_code": 0
+}

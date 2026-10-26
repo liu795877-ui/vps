@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-09T15:27:30+08:00",
+  "server": "198.200.49.63",
+  "path": "VPS directly downloads Cloudflare test payload",
+  "target": "https://speed.cloudflare.com",
+  "checks": [
+    {
+      "http_code": 200,
+      "size_download": 25000000,
+      "speed_download": 102987035.0,
+      "time_total": 0.243,
+      "time_starttransfer": 0.161,
+      "remote_ip": "172.66.0.218",
+      "exit_code": 0,
+      "error": "",
+      "sample": 1,
+      "success": true,
+      "mbps_including_startup": 823.05,
+      "mbps_transfer": 2439.02
+    },
+    {
+      "http_code": 200,
+      "size_download": 25000000,
+      "speed_download": 97216875.0,
+      "time_total": 0.257,
+      "time_starttransfer": 0.18,
+      "remote_ip": "162.159.140.220",
+      "exit_code": 0,
+      "error": "",
+      "sample": 2,
+      "success": true,
+      "mbps_including_startup": 778.21,
+      "mbps_transfer": 2597.4
+    }
+  ],
+  "remote_exit": 0,
+  "remote_error": ""
+}

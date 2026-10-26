@@ -1,0 +1,598 @@
+{
+  "version": 1,
+  "audited_at": "2026-10-10T12:57:20.448650+00:00",
+  "recommendation": "retain_standard",
+  "reliable_performance_gain_proven": false,
+  "input_sha256": {
+    "tuning-standard-initial.json": "366ba324eae7a6d3b623ade9068c9f5096f244e6b78a9c2f8d34368092ddb7f0",
+    "tuning-standard-initial-runtime.json": "a5da8e6e0aaae7c8d6ac703efacffede3843c7d4bbe08f71d9592c37760bbe8e",
+    "tuning-conservative.json": "c7347068e5becfafa735e87d830bd88c9b2049cdee59371de2f979fbeb8779b3",
+    "tuning-conservative-runtime.json": "5396e965d3d34074e30adf68c01c9c1e4107f1ffff286c4490024a45663be2df",
+    "tuning-aggressive.json": "51fe77b45bd17d397076fceaae8dea1aea9e90a8ce2ffa95e62cae1ec682e290",
+    "tuning-aggressive-runtime.json": "2370631d2885ef971d8247dcab42227eb6b037a16dce821b82ee2dd63b77c0c8",
+    "tuning-standard-final.json": "80d484993018baca53c0776700a3320184c9788785a15da5570a0dde4fd3d2fd",
+    "tuning-standard-final-runtime.json": "c04db9ce68c65abeface8a5082cc55c306d20a14ac52d7393504e5fdbdb802d0",
+    "tuning-idle-standard.json": "4cf78e4f51a73175cf7afb778c8291e5b29ffb722f8795d87570a9d45acb126f"
+  },
+  "comparison_controls_match": true,
+  "load_window_and_payload_checks": {
+    "standard-initial-download": {
+      "overlap_recomputed_matches": true,
+      "all_recorded_transfers_complete_expected_payload": true,
+      "covered_light_successes": 4,
+      "covered_tcp_successes": 5
+    },
+    "standard-initial-upload": {
+      "overlap_recomputed_matches": true,
+      "all_recorded_transfers_complete_expected_payload": true,
+      "covered_light_successes": 2,
+      "covered_tcp_successes": 3
+    },
+    "conservative-download": {
+      "overlap_recomputed_matches": true,
+      "all_recorded_transfers_complete_expected_payload": true,
+      "covered_light_successes": 3,
+      "covered_tcp_successes": 6
+    },
+    "conservative-upload": {
+      "overlap_recomputed_matches": true,
+      "all_recorded_transfers_complete_expected_payload": true,
+      "covered_light_successes": 6,
+      "covered_tcp_successes": 7
+    },
+    "aggressive-download": {
+      "overlap_recomputed_matches": true,
+      "all_recorded_transfers_complete_expected_payload": true,
+      "covered_light_successes": 5,
+      "covered_tcp_successes": 6
+    },
+    "aggressive-upload": {
+      "overlap_recomputed_matches": true,
+      "all_recorded_transfers_complete_expected_payload": true,
+      "covered_light_successes": 3,
+      "covered_tcp_successes": 6
+    },
+    "standard-final-download": {
+      "overlap_recomputed_matches": true,
+      "all_recorded_transfers_complete_expected_payload": true,
+      "covered_light_successes": 5,
+      "covered_tcp_successes": 6
+    },
+    "standard-final-upload": {
+      "overlap_recomputed_matches": true,
+      "all_recorded_transfers_complete_expected_payload": true,
+      "covered_light_successes": 3,
+      "covered_tcp_successes": 6
+    }
+  },
+  "runtime_monitors": {
+    "standard-initial": {
+      "success": true,
+      "duration_seconds": 90.286,
+      "samples": 45,
+      "udp_error_deltas": {
+        "InErrors": 0,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      }
+    },
+    "conservative": {
+      "success": true,
+      "duration_seconds": 90.283,
+      "samples": 45,
+      "udp_error_deltas": {
+        "InErrors": 0,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      }
+    },
+    "aggressive": {
+      "success": true,
+      "duration_seconds": 90.292,
+      "samples": 45,
+      "udp_error_deltas": {
+        "InErrors": 0,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      }
+    },
+    "standard-final": {
+      "success": true,
+      "duration_seconds": 90.287,
+      "samples": 45,
+      "udp_error_deltas": {
+        "InErrors": 0,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      }
+    }
+  },
+  "idle": {
+    "success": true,
+    "warm_ttfb_median_ms": 525.107,
+    "observations": [
+      {
+        "seconds": 30,
+        "request_success": true,
+        "ttfb_ms": 523.969,
+        "tls_ready_ms": 240.418,
+        "http_wait_ms": 283.267,
+        "no_account_reconnect_observed": true,
+        "connected_event_delta": 0,
+        "disconnected_event_delta": 0,
+        "isolated_session_proven": false
+      },
+      {
+        "seconds": 60,
+        "request_success": true,
+        "ttfb_ms": 545.206,
+        "tls_ready_ms": 252.881,
+        "http_wait_ms": 292.086,
+        "no_account_reconnect_observed": true,
+        "connected_event_delta": 0,
+        "disconnected_event_delta": 0,
+        "isolated_session_proven": false
+      },
+      {
+        "seconds": 180,
+        "request_success": true,
+        "ttfb_ms": 521.251,
+        "tls_ready_ms": 236.982,
+        "http_wait_ms": 284.077,
+        "no_account_reconnect_observed": true,
+        "connected_event_delta": 0,
+        "disconnected_event_delta": 0,
+        "isolated_session_proven": false
+      }
+    ]
+  },
+  "profile_observations": [
+    {
+      "label": "standard-initial",
+      "measurement_valid": false,
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "metrics": {
+        "warm_ttfb_ms": 447.075,
+        "idle_covered_ttfb_ms": 450.382,
+        "idle_covered_tcp_ms": 203.228,
+        "download_mbps": 48.95,
+        "download_covered_ttfb_ms": 455.648,
+        "download_covered_tcp_ms": 207.131,
+        "upload_mbps": 55.76,
+        "upload_covered_ttfb_ms": 447.132,
+        "upload_covered_tcp_ms": 178.008
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 3,
+        "successes": 2,
+        "median": 1202.95,
+        "range": [
+          1073.806,
+          1332.094
+        ],
+        "error_categories": {
+          "timeout": 1
+        }
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 447.075,
+        "range": [
+          432.494,
+          662.266
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 6
+        },
+        "missing": 1
+      },
+      "transfer_regions": {
+        "download": {
+          "counts": {
+            "SJC": 8
+          },
+          "missing": 0
+        },
+        "upload": {
+          "counts": {
+            "SJC": 8
+          },
+          "missing": 0
+        }
+      }
+    },
+    {
+      "label": "conservative",
+      "measurement_valid": false,
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "metrics": {
+        "warm_ttfb_ms": 449.512,
+        "idle_covered_ttfb_ms": 467.033,
+        "idle_covered_tcp_ms": 168.909,
+        "download_mbps": 45.965,
+        "download_covered_ttfb_ms": 629.638,
+        "download_covered_tcp_ms": 196.872,
+        "upload_mbps": 25.858,
+        "upload_covered_ttfb_ms": 454.76,
+        "upload_covered_tcp_ms": 203.083
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 3,
+        "successes": 1,
+        "median": 1095.787,
+        "range": [
+          1095.787,
+          1095.787
+        ],
+        "error_categories": {
+          "timeout": 2
+        }
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 449.512,
+        "range": [
+          442.282,
+          467.909
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 5
+        },
+        "missing": 2
+      },
+      "transfer_regions": {
+        "download": {
+          "counts": {
+            "SJC": 8
+          },
+          "missing": 0
+        },
+        "upload": {
+          "counts": {
+            "SJC": 6
+          },
+          "missing": 0
+        }
+      }
+    },
+    {
+      "label": "aggressive",
+      "measurement_valid": true,
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "metrics": {
+        "warm_ttfb_ms": 553.637,
+        "idle_covered_ttfb_ms": 533.776,
+        "idle_covered_tcp_ms": 179.541,
+        "download_mbps": 40.819,
+        "download_covered_ttfb_ms": 545.405,
+        "download_covered_tcp_ms": 205.719,
+        "upload_mbps": 39.687,
+        "upload_covered_ttfb_ms": 530.527,
+        "upload_covered_tcp_ms": 198.612
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 3,
+        "successes": 3,
+        "median": 1282.048,
+        "range": [
+          1082.462,
+          1321.014
+        ],
+        "error_categories": {}
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 553.637,
+        "range": [
+          517.847,
+          765.888
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 7
+        },
+        "missing": 0
+      },
+      "transfer_regions": {
+        "download": {
+          "counts": {
+            "SJC": 8
+          },
+          "missing": 0
+        },
+        "upload": {
+          "counts": {
+            "SJC": 8
+          },
+          "missing": 0
+        }
+      }
+    },
+    {
+      "label": "standard-final",
+      "measurement_valid": true,
+      "settings_preserved": true,
+      "cleanup_ok": true,
+      "metrics": {
+        "warm_ttfb_ms": 522.905,
+        "idle_covered_ttfb_ms": 671.327,
+        "idle_covered_tcp_ms": 184.075,
+        "download_mbps": 39.583,
+        "download_covered_ttfb_ms": 563.227,
+        "download_covered_tcp_ms": 207.468,
+        "upload_mbps": 37.758,
+        "upload_covered_ttfb_ms": 545.416,
+        "upload_covered_tcp_ms": 182.655
+      },
+      "fresh_select_only_ttfb": {
+        "attempts": 3,
+        "successes": 3,
+        "median": 1228.695,
+        "range": [
+          1214.399,
+          1239.746
+        ],
+        "error_categories": {}
+      },
+      "warm_ttfb": {
+        "attempts": 4,
+        "successes": 4,
+        "median": 522.905,
+        "range": [
+          519.618,
+          553.964
+        ],
+        "error_categories": {}
+      },
+      "light_regions": {
+        "counts": {
+          "SJC": 7
+        },
+        "missing": 0
+      },
+      "transfer_regions": {
+        "download": {
+          "counts": {
+            "SJC": 8
+          },
+          "missing": 0
+        },
+        "upload": {
+          "counts": {
+            "SJC": 8
+          },
+          "missing": 0
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "bracketing_standard_available": true,
+    "candidate_comparisons": [
+      {
+        "label": "conservative",
+        "identity_matches": true,
+        "within_baseline_time_bracket": true,
+        "measurement_success": false,
+        "metrics": {
+          "warm_ttfb_ms": {
+            "observed": 449.512,
+            "standard_initial": 447.075,
+            "standard_final": 522.905,
+            "interpolated_standard": 472.735,
+            "vs_interpolated_standard_percent": -4.91,
+            "vs_initial_percent": 0.55,
+            "vs_final_percent": -14.04
+          },
+          "idle_covered_ttfb_ms": {
+            "observed": 467.033,
+            "standard_initial": 450.382,
+            "standard_final": 671.327,
+            "interpolated_standard": 525.148,
+            "vs_interpolated_standard_percent": -11.07,
+            "vs_initial_percent": 3.7,
+            "vs_final_percent": -30.43
+          },
+          "idle_covered_tcp_ms": {
+            "observed": 168.909,
+            "standard_initial": 203.228,
+            "standard_final": 184.075,
+            "interpolated_standard": 196.747,
+            "vs_interpolated_standard_percent": -14.15,
+            "vs_initial_percent": -16.89,
+            "vs_final_percent": -8.24
+          },
+          "download_mbps": {
+            "observed": 45.965,
+            "standard_initial": 48.95,
+            "standard_final": 39.583,
+            "interpolated_standard": 45.78,
+            "vs_interpolated_standard_percent": 0.4,
+            "vs_initial_percent": -6.1,
+            "vs_final_percent": 16.12
+          },
+          "download_covered_ttfb_ms": {
+            "observed": 629.638,
+            "standard_initial": 455.648,
+            "standard_final": 563.227,
+            "interpolated_standard": 492.052,
+            "vs_interpolated_standard_percent": 27.96,
+            "vs_initial_percent": 38.19,
+            "vs_final_percent": 11.79
+          },
+          "download_covered_tcp_ms": {
+            "observed": 196.872,
+            "standard_initial": 207.131,
+            "standard_final": 207.468,
+            "interpolated_standard": 207.245,
+            "vs_interpolated_standard_percent": -5.01,
+            "vs_initial_percent": -4.95,
+            "vs_final_percent": -5.11
+          },
+          "upload_mbps": {
+            "observed": 25.858,
+            "standard_initial": 55.76,
+            "standard_final": 37.758,
+            "interpolated_standard": 49.668,
+            "vs_interpolated_standard_percent": -47.94,
+            "vs_initial_percent": -53.63,
+            "vs_final_percent": -31.52
+          },
+          "upload_covered_ttfb_ms": {
+            "observed": 454.76,
+            "standard_initial": 447.132,
+            "standard_final": 545.416,
+            "interpolated_standard": 480.391,
+            "vs_interpolated_standard_percent": -5.34,
+            "vs_initial_percent": 1.71,
+            "vs_final_percent": -16.62
+          },
+          "upload_covered_tcp_ms": {
+            "observed": 203.083,
+            "standard_initial": 178.008,
+            "standard_final": 182.655,
+            "interpolated_standard": 179.581,
+            "vs_interpolated_standard_percent": 13.09,
+            "vs_initial_percent": 14.09,
+            "vs_final_percent": 11.18
+          }
+        }
+      },
+      {
+        "label": "aggressive",
+        "identity_matches": true,
+        "within_baseline_time_bracket": true,
+        "measurement_success": true,
+        "metrics": {
+          "warm_ttfb_ms": {
+            "observed": 553.637,
+            "standard_initial": 447.075,
+            "standard_final": 522.905,
+            "interpolated_standard": 497.567,
+            "vs_interpolated_standard_percent": 11.27,
+            "vs_initial_percent": 23.84,
+            "vs_final_percent": 5.88
+          },
+          "idle_covered_ttfb_ms": {
+            "observed": 533.776,
+            "standard_initial": 450.382,
+            "standard_final": 671.327,
+            "interpolated_standard": 597.5,
+            "vs_interpolated_standard_percent": -10.67,
+            "vs_initial_percent": 18.52,
+            "vs_final_percent": -20.49
+          },
+          "idle_covered_tcp_ms": {
+            "observed": 179.541,
+            "standard_initial": 203.228,
+            "standard_final": 184.075,
+            "interpolated_standard": 190.475,
+            "vs_interpolated_standard_percent": -5.74,
+            "vs_initial_percent": -11.66,
+            "vs_final_percent": -2.46
+          },
+          "download_mbps": {
+            "observed": 40.819,
+            "standard_initial": 48.95,
+            "standard_final": 39.583,
+            "interpolated_standard": 42.713,
+            "vs_interpolated_standard_percent": -4.43,
+            "vs_initial_percent": -16.61,
+            "vs_final_percent": 3.12
+          },
+          "download_covered_ttfb_ms": {
+            "observed": 545.405,
+            "standard_initial": 455.648,
+            "standard_final": 563.227,
+            "interpolated_standard": 527.28,
+            "vs_interpolated_standard_percent": 3.44,
+            "vs_initial_percent": 19.7,
+            "vs_final_percent": -3.16
+          },
+          "download_covered_tcp_ms": {
+            "observed": 205.719,
+            "standard_initial": 207.131,
+            "standard_final": 207.468,
+            "interpolated_standard": 207.355,
+            "vs_interpolated_standard_percent": -0.79,
+            "vs_initial_percent": -0.68,
+            "vs_final_percent": -0.84
+          },
+          "upload_mbps": {
+            "observed": 39.687,
+            "standard_initial": 55.76,
+            "standard_final": 37.758,
+            "interpolated_standard": 43.773,
+            "vs_interpolated_standard_percent": -9.33,
+            "vs_initial_percent": -28.83,
+            "vs_final_percent": 5.11
+          },
+          "upload_covered_ttfb_ms": {
+            "observed": 530.527,
+            "standard_initial": 447.132,
+            "standard_final": 545.416,
+            "interpolated_standard": 512.575,
+            "vs_interpolated_standard_percent": 3.5,
+            "vs_initial_percent": 18.65,
+            "vs_final_percent": -2.73
+          },
+          "upload_covered_tcp_ms": {
+            "observed": 198.612,
+            "standard_initial": 178.008,
+            "standard_final": 182.655,
+            "interpolated_standard": 181.102,
+            "vs_interpolated_standard_percent": 9.67,
+            "vs_initial_percent": 11.57,
+            "vs_final_percent": 8.74
+          }
+        }
+      }
+    ],
+    "standard_final_vs_initial_percent": {
+      "warm_ttfb_ms": 16.96,
+      "idle_covered_ttfb_ms": 49.06,
+      "idle_covered_tcp_ms": -9.42,
+      "download_mbps": -19.14,
+      "download_covered_ttfb_ms": 23.61,
+      "download_covered_tcp_ms": 0.16,
+      "upload_mbps": -32.28,
+      "upload_covered_ttfb_ms": 21.98,
+      "upload_covered_tcp_ms": 2.61
+    }
+  },
+  "reasons": [
+    "Standard repeated observations drifted: download -19.14%, upload -32.28%, warm first-byte +16.96%.",
+    "Aggressive versus nearby standard-final offered only +3.12% download and +5.11% upload, while warm first-byte was 5.88% slower. These observations do not establish a benefit.",
+    "Conservative upload was below both standard observations and did not demonstrate a compensating latency gain.",
+    "Initial standard had one fresh-client timeout and conservative had two; aggregate measurement_valid is false. Their successful warm and payload phases remain bounded observations, not a clean full-trial comparison.",
+    "All successful response CF-Ray regions were SJC, but resolved destination addresses were not pinned. Region consistency does not remove target or route drift.",
+    "Idle observations do not show a return to cold-request latency; retain existing keepalive and timeout."
+  ],
+  "limits": [
+    "Tests were sequential and sample counts are small; no reliable causal winner or p95 is established.",
+    "Time-interpolated standard is descriptive and cannot remove nonlinear time drift.",
+    "Measured transfer rates include HTTP/TLS overhead over short bounded payloads; these are not long-term bandwidth guarantees.",
+    "Active transfer overlap is verified; continuous saturation of the physical link is not proven.",
+    "Fresh requests used select-only isolated clients, not production AUTO with startup healthchecks.",
+    "Account-wide online and journal evidence does not uniquely identify one isolated QUIC connection.",
+    "Mihomo client and HY2 server profiles both changed per trial; the results evaluate each paired profile, not either sender independently."
+  ]
+}

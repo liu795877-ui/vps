@@ -1,0 +1,15 @@
+{
+  "capsh_available": true,
+  "namespace": "vpnraw1f8a2803",
+  "production_mutations": false,
+  "without_net_raw": {
+    "rc": 3,
+    "error": "iptables v1.4.21: can't initialize iptables table `filter': Permission denied (you must be root)\nPerhaps iptables or your kernel needs to be upgraded.\n"
+  },
+  "with_net_raw": {
+    "rc": 0,
+    "error": ""
+  },
+  "net_raw_required": true,
+  "cleanup_complete": true
+}

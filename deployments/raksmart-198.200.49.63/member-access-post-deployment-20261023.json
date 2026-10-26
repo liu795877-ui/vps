@@ -1,0 +1,57 @@
+{
+  "success": true,
+  "source_files_verified": 46,
+  "source_mismatches": [],
+  "records": 90098,
+  "recorded_members": 3,
+  "administrator_records": 0,
+  "protocol_counts": {
+    "hy2": 56043,
+    "reality": 34055
+  },
+  "database_mode": "0o600",
+  "database_bytes": 46743552,
+  "last_scan_age_seconds": 2.886,
+  "retention_days": 7,
+  "max_records": 100000,
+  "services": {
+    "vps-panel.service": "active",
+    "xray.service": "active",
+    "raksmart-hy2.service": "unknown",
+    "caddy.service": "active",
+    "xray-panel@7bb5122a2ef4a515.service": "active",
+    "xray-panel@06c26698c110e726.service": "active",
+    "xray-panel@935c2a6bef7f0dff.service": "unknown",
+    "xray-panel@779a54f71fae679d.service": "active",
+    "raksmart-hy2@1443.service": "active",
+    "raksmart-hy2@2443.service": "active",
+    "raksmart-hy2@3444.service": "unknown",
+    "raksmart-hy2@4444.service": "active"
+  },
+  "members": [
+    {
+      "id": "7bb5122a2ef4a515",
+      "enabled": true,
+      "port": 1443
+    },
+    {
+      "id": "06c26698c110e726",
+      "enabled": true,
+      "port": 2443
+    },
+    {
+      "id": "935c2a6bef7f0dff",
+      "enabled": false,
+      "port": 3444
+    },
+    {
+      "id": "779a54f71fae679d",
+      "enabled": true,
+      "port": 4444
+    }
+  ],
+  "production_configuration_changed_by_verification": false,
+  "private_values_included": false,
+  "release": "console-optimization-release-20261023-access-01",
+  "checked_at": "2026-10-24T02:27:12.454966+00:00"
+}

@@ -1,0 +1,67 @@
+{
+  "started_at": "2026-10-08T16:26:42+08:00",
+  "finished_at": "2026-10-08T16:29:31+08:00",
+  "packets_total": 150,
+  "method": {
+    "tool": "Windows ping.exe",
+    "count": 50,
+    "timeout_ms": 1500,
+    "payload_bytes": 32,
+    "ip_version": 4,
+    "execution": "sequential"
+  },
+  "comparison": [
+    {
+      "线路": "硅谷 大陆优化 VIP",
+      "测试IP": "198.200.49.130",
+      "本轮发包": 50,
+      "本轮回复": 47,
+      "本轮未响应": 3,
+      "本轮丢包百分比": 6.0,
+      "本轮平均ms": 188.7,
+      "本轮中位数ms": 159,
+      "本轮最低ms": 158,
+      "本轮最高ms": 696,
+      "本轮路由网卡": "WLAN",
+      "上一轮样本数": 50,
+      "上一轮丢包百分比": 6.0,
+      "上一轮平均ms": 177.7,
+      "上一轮路由网卡": "FlClash"
+    },
+    {
+      "线路": "硅谷 国际 BGP",
+      "测试IP": "104.233.217.190",
+      "本轮发包": 50,
+      "本轮回复": 49,
+      "本轮未响应": 1,
+      "本轮丢包百分比": 2.0,
+      "本轮平均ms": 187.4,
+      "本轮中位数ms": 163,
+      "本轮最低ms": 160,
+      "本轮最高ms": 826,
+      "本轮路由网卡": "WLAN",
+      "上一轮样本数": 50,
+      "上一轮丢包百分比": 2.0,
+      "上一轮平均ms": 304.7,
+      "上一轮路由网卡": "FlClash"
+    },
+    {
+      "线路": "硅谷 精品 CN2",
+      "测试IP": "104.233.147.13",
+      "本轮发包": 50,
+      "本轮回复": 49,
+      "本轮未响应": 1,
+      "本轮丢包百分比": 2.0,
+      "本轮平均ms": 291.9,
+      "本轮中位数ms": 202,
+      "本轮最低ms": 183,
+      "本轮最高ms": 995,
+      "本轮路由网卡": "WLAN",
+      "上一轮样本数": 30,
+      "上一轮丢包百分比": 0.0,
+      "上一轮平均ms": 192.2,
+      "上一轮路由网卡": "FlClash"
+    }
+  ],
+  "scope": "Current Windows routing via WLAN and local gateway; no FlClash TUN in route snapshots. ICMP probes against official Silicon Valley network test points. This does not establish throughput or long-term reliability. Prior samples used FlClash and were taken earlier; changes cannot be attributed to the routing change alone."
+}

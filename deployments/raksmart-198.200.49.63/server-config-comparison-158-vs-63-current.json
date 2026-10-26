@@ -1,0 +1,1700 @@
+{
+  "started_at": "2026-10-11T05:58:23.956756+00:00",
+  "read_only": true,
+  "speed_tests": 0,
+  "server_mutations": 0,
+  "servers": {
+    "198.200.49.158": {
+      "host": "198.200.49.158",
+      "before": {
+        "services": [
+          {
+            "service": "caddy.service",
+            "MainPID": "13337",
+            "ExecMainStartTimestampMonotonic": "2861284651",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "caddy",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/caddy",
+            "config_paths": []
+          },
+          {
+            "service": "raksmart-hy2.service",
+            "MainPID": "13197",
+            "ExecMainStartTimestampMonotonic": "2495863741",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "hy2",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/raksmart-hysteria2",
+            "config_paths": [
+              "/usr/local/etc/raksmart-hy2/server.yaml"
+            ]
+          },
+          {
+            "service": "vps-panel.service",
+            "MainPID": "24751",
+            "ExecMainStartTimestampMonotonic": "13896697852",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1035",
+            "AmbientCapabilities": "0",
+            "User": "root",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/bin/python3.6",
+            "config_paths": []
+          },
+          {
+            "service": "xray.service",
+            "MainPID": "24492",
+            "ExecMainStartTimestampMonotonic": "9707667847",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "xray",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/xray",
+            "config_paths": [
+              "/usr/local/etc/xray/config.json"
+            ]
+          }
+        ],
+        "protected_sha256": {
+          "/usr/local/etc/raksmart-hy2/server.yaml": "28b7516129c1f0f373c226f1512e1ae0acf1daddeebd79db09eef0c2d665e8c7",
+          "/usr/local/etc/xray/config.json": "704bfe6160f8f687f20eaa930539847ae9f2fb93d49edcf6714dfa6c5fe7d518",
+          "/var/lib/vps-panel/auth.private.json": "0c5667f93a7a1cd75fb1a6a535bed0f7ffb65a277e717f62b2366f6a5efc7d0c",
+          "/var/lib/vps-panel/state.private.json": "2347d294651ce0528b84a57f7523407125d0a3e46822df266707d2625312361c"
+        },
+        "account_limits": {},
+        "system": {
+          "kernel": "3.10.0-957.el7.x86_64",
+          "uptime": "01:58:29 up 1 day, 21:20,  0 users,  load average: 0.00, 0.01, 0.05",
+          "cpu_count": 2,
+          "loadavg": "0.00 0.01 0.05 1/134 26091",
+          "cpu_stat": "cpu  27991 189 18745 32533575 12239 0 1628 6142 0 0",
+          "sysctl": {
+            "net.core.rmem_max": "212992",
+            "net.core.wmem_max": "212992",
+            "net.core.rmem_default": "212992",
+            "net.core.wmem_default": "212992",
+            "net.core.netdev_max_backlog": "1000",
+            "net.ipv4.tcp_congestion_control": "cubic",
+            "net.ipv4.tcp_available_congestion_control": "cubic reno",
+            "net.core.default_qdisc": "pfifo_fast",
+            "net.ipv4.tcp_rmem": "4096\t87380\t6291456",
+            "net.ipv4.tcp_wmem": "4096\t16384\t4194304",
+            "net.ipv4.udp_rmem_min": "4096",
+            "net.ipv4.udp_wmem_min": "4096",
+            "net.ipv4.ip_local_port_range": "32768\t60999",
+            "net.ipv4.tcp_mtu_probing": "0",
+            "net.ipv4.tcp_fastopen": "0"
+          },
+          "interfaces": {
+            "eth0": {
+              "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 8216740065 bytes 8526888 pkt (dropped 0, overlimits 0 requeues 5) \n backlog 0b 0p requeues 5",
+              "class": "",
+              "filter": "",
+              "mtu": "1450"
+            }
+          }
+        },
+        "versions": {
+          "/usr/local/bin/raksmart-hysteria2": "░█░█░█░█░█▀▀░▀█▀░█▀▀░█▀▄░▀█▀░█▀█░░░▀▀▄\n░█▀█░░█░░▀▀█░░█░░█▀▀░█▀▄░░█░░█▀█░░░▄▀░\n░▀░▀░░▀░░▀▀▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░▀░░░▀▀▀\n\na powerful, lightning fast and censorship resistant proxy\nAperture Internet Laboratory <https://github.com/apernet>\n\nVersion:\tv2.13.0\nBuildDate:\t2026-10-05T04:16:24Z\nBuildType:\trelease\nToolchain:\tgo1.26.8 linux/amd64\nCommitHash:\tca8fbd874fd6ca82413948de6dc5924405e103e1\nPlatform:\tlinux\nArchitecture:\tamd64\nLibraries:\tquic-go=v0.63.1-0.20261004180939-a10df75c260c",
+          "/usr/local/bin/xray": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)\nA unified platform for anti-censorship."
+        }
+      },
+      "configs": {
+        "/usr/local/etc/raksmart-hy2/server.yaml": {
+          "kind": "hy2",
+          "sha256": "28b7516129c1f0f373c226f1512e1ae0acf1daddeebd79db09eef0c2d665e8c7",
+          "safe": {
+            "listen": "0.0.0.0:443",
+            "ignoreClientBandwidth": true,
+            "disableUDP": null,
+            "congestion": {
+              "type": "bbr",
+              "bbrProfile": "standard"
+            },
+            "bandwidth": {},
+            "obfuscation_type": null,
+            "ignoreClientBandwidth_effective": true,
+            "auth_type": "password",
+            "tls": {
+              "configured": true,
+              "certificate_file": "/usr/local/etc/raksmart-hy2/server.crt.pem",
+              "acme": false
+            },
+            "resolver": {
+              "type": "https"
+            },
+            "traffic_stats": {
+              "enabled": false,
+              "listen": null
+            },
+            "outbounds": [
+              {
+                "name": "direct",
+                "type": "direct",
+                "mode": "4",
+                "authentication_configured": false
+              }
+            ]
+          }
+        },
+        "/usr/local/etc/xray/config.json": {
+          "kind": "xray",
+          "sha256": "704bfe6160f8f687f20eaa930539847ae9f2fb93d49edcf6714dfa6c5fe7d518",
+          "safe": {
+            "inbounds": [
+              {
+                "tag": "reality-in",
+                "listen": "0.0.0.0",
+                "port": 443,
+                "protocol": "vless",
+                "clients_count": 3,
+                "client_flows": [
+                  "xtls-rprx-vision"
+                ],
+                "authentication_type": null,
+                "udp": null,
+                "stream": {
+                  "network": "raw",
+                  "security": "reality",
+                  "reality": {
+                    "target": "www.cloudflare.com:443",
+                    "serverNames": [
+                      "www.cloudflare.com"
+                    ],
+                    "xver": 0,
+                    "show": false
+                  }
+                },
+                "sniffing": {}
+              }
+            ],
+            "outbounds": [
+              {
+                "tag": "direct",
+                "protocol": "freedom",
+                "domain_strategy": "UseIPv4",
+                "servers": [],
+                "mux": {},
+                "stream": {}
+              },
+              {
+                "tag": "block",
+                "protocol": "blackhole",
+                "domain_strategy": null,
+                "servers": [],
+                "mux": {},
+                "stream": {}
+              },
+              {
+                "tag": "static-EBAC830BF646822E4",
+                "protocol": "socks",
+                "domain_strategy": null,
+                "servers": [
+                  {
+                    "address": "128.241.19.234",
+                    "port": 443,
+                    "authentication_configured": true
+                  }
+                ],
+                "mux": {},
+                "stream": {}
+              }
+            ],
+            "routing": {
+              "domainStrategy": "IPIfNonMatch",
+              "rules": [
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "ip": [
+                    "0.0.0.0/8",
+                    "10.0.0.0/8",
+                    "100.64.0.0/10",
+                    "127.0.0.0/8",
+                    "169.254.0.0/16",
+                    "172.16.0.0/12",
+                    "192.168.0.0/16",
+                    "198.18.0.0/15",
+                    "224.0.0.0/4",
+                    "240.0.0.0/4",
+                    "::/128",
+                    "::1/128",
+                    "fc00::/7",
+                    "fe80::/10",
+                    "ff00::/8"
+                  ]
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "network": "udp",
+                  "user_match_count": 1
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "static-EBAC830BF646822E4",
+                  "network": "tcp",
+                  "user_match_count": 1
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "network": "udp",
+                  "user_match_count": 1
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "static-EBAC830BF646822E4",
+                  "network": "tcp",
+                  "user_match_count": 1
+                }
+              ]
+            },
+            "dns": {
+              "queryStrategy": "UseIPv4",
+              "servers": [
+                {
+                  "scheme": "https+local",
+                  "hostname": "1.1.1.1",
+                  "port": null
+                },
+                {
+                  "scheme": "https+local",
+                  "hostname": "1.0.0.1",
+                  "port": null
+                }
+              ]
+            },
+            "stats_configured": false,
+            "policy": {},
+            "api_services": []
+          }
+        }
+      },
+      "profiles": {
+        "admin": {
+          "nodes": [
+            {
+              "type": "vless",
+              "name": "AUTO · 网页切换",
+              "server": "198.200.49.158",
+              "port": 443,
+              "network": "tcp",
+              "tls": true,
+              "udp": false,
+              "flow": "xtls-rprx-vision",
+              "client-fingerprint": "chrome",
+              "certificate_pin_configured": false,
+              "reality_key_configured": true,
+              "mux": {}
+            },
+            {
+              "type": "vless",
+              "name": "出口 · 美国洛杉矶静态isp",
+              "server": "198.200.49.158",
+              "port": 443,
+              "network": "tcp",
+              "tls": true,
+              "udp": false,
+              "flow": "xtls-rprx-vision",
+              "client-fingerprint": "chrome",
+              "certificate_pin_configured": false,
+              "reality_key_configured": true,
+              "mux": {}
+            }
+          ],
+          "groups": [
+            {
+              "name": "STATIC-SELECT",
+              "type": "select",
+              "proxies": [
+                "AUTO · 网页切换",
+                "出口 · 美国洛杉矶静态isp"
+              ]
+            }
+          ],
+          "dns": {
+            "enable": true,
+            "enhanced-mode": "fake-ip",
+            "nameserver": [
+              "https://1.1.1.1/dns-query#STATIC-SELECT",
+              "https://8.8.8.8/dns-query#STATIC-SELECT"
+            ],
+            "default-nameserver": [
+              "https://223.5.5.5/dns-query"
+            ],
+            "direct-nameserver": [
+              "https://223.5.5.5/dns-query#DIRECT",
+              "https://1.12.12.12/dns-query#DIRECT"
+            ],
+            "proxy-server-nameserver": [
+              "https://223.5.5.5/dns-query#DIRECT"
+            ],
+            "ipv6": false
+          },
+          "rules_count": 49
+        }
+      },
+      "schema": 1,
+      "after": {
+        "services": [
+          {
+            "service": "caddy.service",
+            "MainPID": "13337",
+            "ExecMainStartTimestampMonotonic": "2861284651",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "caddy",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/caddy",
+            "config_paths": []
+          },
+          {
+            "service": "raksmart-hy2.service",
+            "MainPID": "13197",
+            "ExecMainStartTimestampMonotonic": "2495863741",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "hy2",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/raksmart-hysteria2",
+            "config_paths": [
+              "/usr/local/etc/raksmart-hy2/server.yaml"
+            ]
+          },
+          {
+            "service": "vps-panel.service",
+            "MainPID": "24751",
+            "ExecMainStartTimestampMonotonic": "13896697852",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1035",
+            "AmbientCapabilities": "0",
+            "User": "root",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/bin/python3.6",
+            "config_paths": []
+          },
+          {
+            "service": "xray.service",
+            "MainPID": "24492",
+            "ExecMainStartTimestampMonotonic": "9707667847",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "xray",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/xray",
+            "config_paths": [
+              "/usr/local/etc/xray/config.json"
+            ]
+          }
+        ],
+        "protected_sha256": {
+          "/usr/local/etc/raksmart-hy2/server.yaml": "28b7516129c1f0f373c226f1512e1ae0acf1daddeebd79db09eef0c2d665e8c7",
+          "/usr/local/etc/xray/config.json": "704bfe6160f8f687f20eaa930539847ae9f2fb93d49edcf6714dfa6c5fe7d518",
+          "/var/lib/vps-panel/auth.private.json": "0c5667f93a7a1cd75fb1a6a535bed0f7ffb65a277e717f62b2366f6a5efc7d0c",
+          "/var/lib/vps-panel/state.private.json": "2347d294651ce0528b84a57f7523407125d0a3e46822df266707d2625312361c"
+        },
+        "account_limits": {},
+        "system": {
+          "kernel": "3.10.0-957.el7.x86_64",
+          "uptime": "01:58:32 up 1 day, 21:20,  0 users,  load average: 0.00, 0.01, 0.05",
+          "cpu_count": 2,
+          "loadavg": "0.00 0.01 0.05 1/135 26140",
+          "cpu_stat": "cpu  28004 189 18756 32534277 12244 0 1628 6142 0 0",
+          "sysctl": {
+            "net.core.rmem_max": "212992",
+            "net.core.wmem_max": "212992",
+            "net.core.rmem_default": "212992",
+            "net.core.wmem_default": "212992",
+            "net.core.netdev_max_backlog": "1000",
+            "net.ipv4.tcp_congestion_control": "cubic",
+            "net.ipv4.tcp_available_congestion_control": "cubic reno",
+            "net.core.default_qdisc": "pfifo_fast",
+            "net.ipv4.tcp_rmem": "4096\t87380\t6291456",
+            "net.ipv4.tcp_wmem": "4096\t16384\t4194304",
+            "net.ipv4.udp_rmem_min": "4096",
+            "net.ipv4.udp_wmem_min": "4096",
+            "net.ipv4.ip_local_port_range": "32768\t60999",
+            "net.ipv4.tcp_mtu_probing": "0",
+            "net.ipv4.tcp_fastopen": "0"
+          },
+          "interfaces": {
+            "eth0": {
+              "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 8216801661 bytes 8526952 pkt (dropped 0, overlimits 0 requeues 5) \n backlog 0b 0p requeues 5",
+              "class": "",
+              "filter": "",
+              "mtu": "1450"
+            }
+          }
+        },
+        "versions": {
+          "/usr/local/bin/raksmart-hysteria2": "░█░█░█░█░█▀▀░▀█▀░█▀▀░█▀▄░▀█▀░█▀█░░░▀▀▄\n░█▀█░░█░░▀▀█░░█░░█▀▀░█▀▄░░█░░█▀█░░░▄▀░\n░▀░▀░░▀░░▀▀▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░▀░░░▀▀▀\n\na powerful, lightning fast and censorship resistant proxy\nAperture Internet Laboratory <https://github.com/apernet>\n\nVersion:\tv2.13.0\nBuildDate:\t2026-10-05T04:16:24Z\nBuildType:\trelease\nToolchain:\tgo1.26.8 linux/amd64\nCommitHash:\tca8fbd874fd6ca82413948de6dc5924405e103e1\nPlatform:\tlinux\nArchitecture:\tamd64\nLibraries:\tquic-go=v0.63.1-0.20261004180939-a10df75c260c",
+          "/usr/local/bin/xray": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)\nA unified platform for anti-censorship."
+        }
+      },
+      "protected_files_unchanged": true,
+      "all_account_limits_unchanged": true,
+      "service_epochs_unchanged": true,
+      "success": true
+    },
+    "198.200.49.63": {
+      "host": "198.200.49.63",
+      "before": {
+        "services": [
+          {
+            "service": "caddy.service",
+            "MainPID": "24480",
+            "ExecMainStartTimestampMonotonic": "18166142179",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "caddy",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/caddy",
+            "config_paths": []
+          },
+          {
+            "service": "raksmart-hy2@1443.service",
+            "MainPID": "3408",
+            "ExecMainStartTimestampMonotonic": "107785519621",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "hy2",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/raksmart-hysteria2",
+            "config_paths": [
+              "/usr/local/etc/raksmart-hy2/accounts/1443.yaml"
+            ]
+          },
+          {
+            "service": "raksmart-hy2@2443.service",
+            "MainPID": "3448",
+            "ExecMainStartTimestampMonotonic": "107786947026",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "hy2",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/raksmart-hysteria2",
+            "config_paths": [
+              "/usr/local/etc/raksmart-hy2/accounts/2443.yaml"
+            ]
+          },
+          {
+            "service": "raksmart-hy2@443.service",
+            "MainPID": "16110",
+            "ExecMainStartTimestampMonotonic": "154864532423",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "hy2",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/raksmart-hysteria2",
+            "config_paths": [
+              "/usr/local/etc/raksmart-hy2/accounts/443.yaml"
+            ]
+          },
+          {
+            "service": "vps-panel.service",
+            "MainPID": "16146",
+            "ExecMainStartTimestampMonotonic": "154865054849",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "13323",
+            "AmbientCapabilities": "0",
+            "User": "root",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/bin/python3.6",
+            "config_paths": []
+          },
+          {
+            "service": "xray-panel@06c26698c110e726.service",
+            "MainPID": "26895",
+            "ExecMainStartTimestampMonotonic": "104739227733",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "root",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/xray",
+            "config_paths": [
+              "/usr/local/etc/xray-members/06c26698c110e726/config.json"
+            ]
+          },
+          {
+            "service": "xray-panel@7bb5122a2ef4a515.service",
+            "MainPID": "26883",
+            "ExecMainStartTimestampMonotonic": "104738945558",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "root",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/xray",
+            "config_paths": [
+              "/usr/local/etc/xray-members/7bb5122a2ef4a515/config.json"
+            ]
+          },
+          {
+            "service": "xray.service",
+            "MainPID": "26994",
+            "ExecMainStartTimestampMonotonic": "159505251275",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "xray",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/xray",
+            "config_paths": [
+              "/usr/local/etc/xray/config.json"
+            ]
+          }
+        ],
+        "protected_sha256": {
+          "/usr/local/etc/raksmart-hy2/accounts/1443.yaml": "26dec394c3645183e0fbb9c1864b1a81e166bb34b307ba5e5f5347cea24fa0d3",
+          "/usr/local/etc/raksmart-hy2/accounts/2443.yaml": "91d5c9629599dd3c438c5da9042b9213620289d2066055cc223f737ab4348143",
+          "/usr/local/etc/raksmart-hy2/accounts/443.yaml": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+          "/usr/local/etc/xray-members/06c26698c110e726/config.json": "be50ff0b6a3e8b452eb10d38531859d4b03b89e1c8e7d8c020771f4db6830fe0",
+          "/usr/local/etc/xray-members/7bb5122a2ef4a515/config.json": "c0eb34f774bda4d362b6e2490eba2ddd1bc1e8e61b4a963334837a477717b231",
+          "/usr/local/etc/xray/config.json": "6a97b2776c29ff6312507bf235fd8d1f83a3c91112bf706f8f4bc39564f46f45",
+          "/var/lib/vps-panel/auth.private.json": "fe8918e90723afdf373fc9c31202818d98fbeafae1f1a5d760fae59bb3019479",
+          "/var/lib/vps-panel/hy2.private.json": "c6f03091559e90c2fce3706933f169143628a690430d23e386e403f06eafae59",
+          "/var/lib/vps-panel/state.private.json": "ee3f84b5cf83715bfffcc9a6def6062ce8d7b41a14e39b0900b1818925e63be8",
+          "/var/lib/vps-panel/users.private.json": "687e6fdc29bbf705bda6d53f6825b4020a97b39aa6541ac1b4e8b2a1b35af153",
+          "/var/lib/vps-panel/users/06c26698c110e726/state.private.json": "d3afe2f5759445057b75276deb45c93cf4b6c3cea679210836e7bd41e4fac043",
+          "/var/lib/vps-panel/users/7bb5122a2ef4a515/state.private.json": "86424e0e7667f2bb4a15c265ed5c3ebb08176784f37551f84e6218ef99857d11"
+        },
+        "account_limits": {
+          "admin": {
+            "quota_bytes": 0,
+            "rate_bps": 0
+          },
+          "7bb5122a2ef4a515": {
+            "quota_bytes": 0,
+            "rate_bps": 0
+          },
+          "06c26698c110e726": {
+            "quota_bytes": 0,
+            "rate_bps": 0
+          }
+        },
+        "system": {
+          "kernel": "3.10.0-957.el7.x86_64",
+          "uptime": "01:58:28 up 1 day, 23:35,  0 users,  load average: 0.03, 0.20, 0.17",
+          "cpu_count": 2,
+          "loadavg": "0.03 0.20 0.17 1/166 21509",
+          "cpu_stat": "cpu  266093 193 139438 33659009 49955 0 9367 6253 0 0",
+          "sysctl": {
+            "net.core.rmem_max": "7340032",
+            "net.core.wmem_max": "7340032",
+            "net.core.rmem_default": "212992",
+            "net.core.wmem_default": "212992",
+            "net.core.netdev_max_backlog": "1000",
+            "net.ipv4.tcp_congestion_control": "cubic",
+            "net.ipv4.tcp_available_congestion_control": "cubic reno westwood hybla",
+            "net.core.default_qdisc": "pfifo_fast",
+            "net.ipv4.tcp_rmem": "4096\t87380\t6291456",
+            "net.ipv4.tcp_wmem": "4096\t16384\t4194304",
+            "net.ipv4.udp_rmem_min": "4096",
+            "net.ipv4.udp_wmem_min": "4096",
+            "net.ipv4.ip_local_port_range": "32768\t60999",
+            "net.ipv4.tcp_mtu_probing": "0",
+            "net.ipv4.tcp_fastopen": "0"
+          },
+          "interfaces": {
+            "eth0": {
+              "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 24358039688 bytes 26996825 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0",
+              "class": "",
+              "filter": "",
+              "mtu": "1450"
+            }
+          }
+        },
+        "versions": {
+          "/usr/local/bin/raksmart-hysteria2": "░█░█░█░█░█▀▀░▀█▀░█▀▀░█▀▄░▀█▀░█▀█░░░▀▀▄\n░█▀█░░█░░▀▀█░░█░░█▀▀░█▀▄░░█░░█▀█░░░▄▀░\n░▀░▀░░▀░░▀▀▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░▀░░░▀▀▀\n\na powerful, lightning fast and censorship resistant proxy\nAperture Internet Laboratory <https://github.com/apernet>\n\nVersion:\tv2.13.0\nBuildDate:\t2026-10-05T04:16:24Z\nBuildType:\trelease\nToolchain:\tgo1.26.8 linux/amd64\nCommitHash:\tca8fbd874fd6ca82413948de6dc5924405e103e1\nPlatform:\tlinux\nArchitecture:\tamd64\nLibraries:\tquic-go=v0.63.1-0.20261004180939-a10df75c260c",
+          "/usr/local/bin/xray": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)\nA unified platform for anti-censorship."
+        }
+      },
+      "configs": {
+        "/usr/local/etc/raksmart-hy2/accounts/1443.yaml": {
+          "kind": "hy2",
+          "sha256": "26dec394c3645183e0fbb9c1864b1a81e166bb34b307ba5e5f5347cea24fa0d3",
+          "safe": {
+            "listen": "0.0.0.0:1443",
+            "ignoreClientBandwidth": true,
+            "disableUDP": true,
+            "congestion": {
+              "type": "bbr",
+              "bbrProfile": "standard"
+            },
+            "bandwidth": {},
+            "obfuscation_type": null,
+            "ignoreClientBandwidth_effective": true,
+            "auth_type": "password",
+            "tls": {
+              "configured": true,
+              "certificate_file": "/var/lib/vps-panel/hy2-server.crt.pem",
+              "acme": false
+            },
+            "traffic_stats": {
+              "enabled": true,
+              "listen": "127.0.0.1:20043"
+            },
+            "outbounds": [
+              {
+                "name": "account-auto",
+                "type": "socks5",
+                "addr": "127.0.0.1:17043",
+                "authentication_configured": true
+              }
+            ]
+          }
+        },
+        "/usr/local/etc/raksmart-hy2/accounts/2443.yaml": {
+          "kind": "hy2",
+          "sha256": "91d5c9629599dd3c438c5da9042b9213620289d2066055cc223f737ab4348143",
+          "safe": {
+            "listen": "0.0.0.0:2443",
+            "ignoreClientBandwidth": true,
+            "disableUDP": true,
+            "congestion": {
+              "type": "bbr",
+              "bbrProfile": "standard"
+            },
+            "bandwidth": {},
+            "obfuscation_type": null,
+            "ignoreClientBandwidth_effective": true,
+            "auth_type": "password",
+            "tls": {
+              "configured": true,
+              "certificate_file": "/var/lib/vps-panel/hy2-server.crt.pem",
+              "acme": false
+            },
+            "traffic_stats": {
+              "enabled": true,
+              "listen": "127.0.0.1:21043"
+            },
+            "outbounds": [
+              {
+                "name": "account-auto",
+                "type": "socks5",
+                "addr": "127.0.0.1:18043",
+                "authentication_configured": true
+              }
+            ]
+          }
+        },
+        "/usr/local/etc/raksmart-hy2/accounts/443.yaml": {
+          "kind": "hy2",
+          "sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+          "safe": {
+            "listen": "0.0.0.0:443",
+            "ignoreClientBandwidth": true,
+            "disableUDP": true,
+            "congestion": {
+              "type": "bbr",
+              "bbrProfile": "standard"
+            },
+            "bandwidth": {},
+            "obfuscation_type": null,
+            "ignoreClientBandwidth_effective": true,
+            "auth_type": "password",
+            "tls": {
+              "configured": true,
+              "certificate_file": "/var/lib/vps-panel/hy2-server.crt.pem",
+              "acme": false
+            },
+            "traffic_stats": {
+              "enabled": true,
+              "listen": "127.0.0.1:19043"
+            },
+            "outbounds": [
+              {
+                "name": "account-auto",
+                "type": "socks5",
+                "addr": "127.0.0.1:16043",
+                "authentication_configured": true
+              }
+            ]
+          }
+        },
+        "/usr/local/etc/xray-members/06c26698c110e726/config.json": {
+          "kind": "xray",
+          "sha256": "be50ff0b6a3e8b452eb10d38531859d4b03b89e1c8e7d8c020771f4db6830fe0",
+          "safe": {
+            "inbounds": [
+              {
+                "tag": "reality-in",
+                "listen": "0.0.0.0",
+                "port": 2443,
+                "protocol": "vless",
+                "clients_count": 2,
+                "client_flows": [
+                  "xtls-rprx-vision"
+                ],
+                "authentication_type": null,
+                "udp": null,
+                "stream": {
+                  "network": "raw",
+                  "security": "reality",
+                  "reality": {
+                    "target": "www.cloudflare.com:443",
+                    "serverNames": [
+                      "www.cloudflare.com"
+                    ],
+                    "xver": 0,
+                    "show": false
+                  }
+                },
+                "sniffing": {}
+              },
+              {
+                "tag": "panel-hy2-socks",
+                "listen": "127.0.0.1",
+                "port": 18043,
+                "protocol": "socks",
+                "clients_count": 0,
+                "client_flows": [],
+                "authentication_type": "password",
+                "udp": false,
+                "stream": {},
+                "sniffing": {}
+              }
+            ],
+            "outbounds": [
+              {
+                "tag": "direct",
+                "protocol": "freedom",
+                "domain_strategy": "UseIPv4",
+                "servers": [],
+                "mux": {},
+                "stream": {}
+              },
+              {
+                "tag": "block",
+                "protocol": "blackhole",
+                "domain_strategy": null,
+                "servers": [],
+                "mux": {},
+                "stream": {}
+              }
+            ],
+            "routing": {
+              "domainStrategy": "IPIfNonMatch",
+              "rules": [
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "ip": [
+                    "0.0.0.0/8",
+                    "10.0.0.0/8",
+                    "100.64.0.0/10",
+                    "127.0.0.0/8",
+                    "169.254.0.0/16",
+                    "172.16.0.0/12",
+                    "192.168.0.0/16",
+                    "198.18.0.0/15",
+                    "224.0.0.0/4",
+                    "240.0.0.0/4",
+                    "::/128",
+                    "::1/128",
+                    "fc00::/7",
+                    "fe80::/10",
+                    "ff00::/8"
+                  ]
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "network": "udp",
+                  "user_match_count": 1
+                },
+                {
+                  "type": "field",
+                  "inboundTag": [
+                    "panel-hy2-socks"
+                  ],
+                  "outboundTag": "direct",
+                  "network": "tcp"
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "direct",
+                  "network": "tcp",
+                  "user_match_count": 1
+                }
+              ]
+            },
+            "dns": {
+              "queryStrategy": "UseIPv4",
+              "servers": [
+                {
+                  "scheme": "https+local",
+                  "hostname": "1.1.1.1",
+                  "port": null
+                },
+                {
+                  "scheme": "https+local",
+                  "hostname": "1.0.0.1",
+                  "port": null
+                }
+              ]
+            },
+            "stats_configured": true,
+            "policy": {
+              "levels": {
+                "0": {
+                  "statsUserUplink": true,
+                  "statsUserDownlink": true,
+                  "statsUserOnline": true
+                }
+              }
+            },
+            "api_services": [
+              "StatsService"
+            ]
+          }
+        },
+        "/usr/local/etc/xray-members/7bb5122a2ef4a515/config.json": {
+          "kind": "xray",
+          "sha256": "c0eb34f774bda4d362b6e2490eba2ddd1bc1e8e61b4a963334837a477717b231",
+          "safe": {
+            "inbounds": [
+              {
+                "tag": "reality-in",
+                "listen": "0.0.0.0",
+                "port": 1443,
+                "protocol": "vless",
+                "clients_count": 3,
+                "client_flows": [
+                  "xtls-rprx-vision"
+                ],
+                "authentication_type": null,
+                "udp": null,
+                "stream": {
+                  "network": "raw",
+                  "security": "reality",
+                  "reality": {
+                    "target": "www.cloudflare.com:443",
+                    "serverNames": [
+                      "www.cloudflare.com"
+                    ],
+                    "xver": 0,
+                    "show": false
+                  }
+                },
+                "sniffing": {}
+              },
+              {
+                "tag": "panel-hy2-socks",
+                "listen": "127.0.0.1",
+                "port": 17043,
+                "protocol": "socks",
+                "clients_count": 0,
+                "client_flows": [],
+                "authentication_type": "password",
+                "udp": false,
+                "stream": {},
+                "sniffing": {}
+              }
+            ],
+            "outbounds": [
+              {
+                "tag": "direct",
+                "protocol": "freedom",
+                "domain_strategy": "UseIPv4",
+                "servers": [],
+                "mux": {},
+                "stream": {}
+              },
+              {
+                "tag": "block",
+                "protocol": "blackhole",
+                "domain_strategy": null,
+                "servers": [],
+                "mux": {},
+                "stream": {}
+              },
+              {
+                "tag": "static-E4AECCBC4CB04D809",
+                "protocol": "socks",
+                "domain_strategy": null,
+                "servers": [
+                  {
+                    "address": "43.246.197.78",
+                    "port": 443,
+                    "authentication_configured": true
+                  }
+                ],
+                "mux": {},
+                "stream": {}
+              }
+            ],
+            "routing": {
+              "domainStrategy": "IPIfNonMatch",
+              "rules": [
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "ip": [
+                    "0.0.0.0/8",
+                    "10.0.0.0/8",
+                    "100.64.0.0/10",
+                    "127.0.0.0/8",
+                    "169.254.0.0/16",
+                    "172.16.0.0/12",
+                    "192.168.0.0/16",
+                    "198.18.0.0/15",
+                    "224.0.0.0/4",
+                    "240.0.0.0/4",
+                    "::/128",
+                    "::1/128",
+                    "fc00::/7",
+                    "fe80::/10",
+                    "ff00::/8"
+                  ]
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "network": "udp",
+                  "user_match_count": 1
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "static-E4AECCBC4CB04D809",
+                  "network": "tcp",
+                  "user_match_count": 1
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "network": "udp",
+                  "user_match_count": 1
+                },
+                {
+                  "type": "field",
+                  "inboundTag": [
+                    "panel-hy2-socks"
+                  ],
+                  "outboundTag": "static-E4AECCBC4CB04D809",
+                  "network": "tcp"
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "static-E4AECCBC4CB04D809",
+                  "network": "tcp",
+                  "user_match_count": 1
+                }
+              ]
+            },
+            "dns": {
+              "queryStrategy": "UseIPv4",
+              "servers": [
+                {
+                  "scheme": "https+local",
+                  "hostname": "1.1.1.1",
+                  "port": null
+                },
+                {
+                  "scheme": "https+local",
+                  "hostname": "1.0.0.1",
+                  "port": null
+                }
+              ]
+            },
+            "stats_configured": true,
+            "policy": {
+              "levels": {
+                "0": {
+                  "statsUserUplink": true,
+                  "statsUserDownlink": true,
+                  "statsUserOnline": true
+                }
+              }
+            },
+            "api_services": [
+              "StatsService"
+            ]
+          }
+        },
+        "/usr/local/etc/xray/config.json": {
+          "kind": "xray",
+          "sha256": "6a97b2776c29ff6312507bf235fd8d1f83a3c91112bf706f8f4bc39564f46f45",
+          "safe": {
+            "inbounds": [
+              {
+                "tag": "reality-in",
+                "listen": "0.0.0.0",
+                "port": 443,
+                "protocol": "vless",
+                "clients_count": 2,
+                "client_flows": [
+                  "xtls-rprx-vision"
+                ],
+                "authentication_type": null,
+                "udp": null,
+                "stream": {
+                  "network": "raw",
+                  "security": "reality",
+                  "reality": {
+                    "target": "www.cloudflare.com:443",
+                    "serverNames": [
+                      "www.cloudflare.com"
+                    ],
+                    "xver": 0,
+                    "show": false
+                  }
+                },
+                "sniffing": {}
+              },
+              {
+                "tag": "panel-hy2-socks",
+                "listen": "127.0.0.1",
+                "port": 16043,
+                "protocol": "socks",
+                "clients_count": 0,
+                "client_flows": [],
+                "authentication_type": "password",
+                "udp": false,
+                "stream": {},
+                "sniffing": {}
+              }
+            ],
+            "outbounds": [
+              {
+                "tag": "direct",
+                "protocol": "freedom",
+                "domain_strategy": "UseIPv4",
+                "servers": [],
+                "mux": {},
+                "stream": {}
+              },
+              {
+                "tag": "block",
+                "protocol": "blackhole",
+                "domain_strategy": null,
+                "servers": [],
+                "mux": {},
+                "stream": {}
+              }
+            ],
+            "routing": {
+              "domainStrategy": "IPIfNonMatch",
+              "rules": [
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "ip": [
+                    "0.0.0.0/8",
+                    "10.0.0.0/8",
+                    "100.64.0.0/10",
+                    "127.0.0.0/8",
+                    "169.254.0.0/16",
+                    "172.16.0.0/12",
+                    "192.168.0.0/16",
+                    "198.18.0.0/15",
+                    "224.0.0.0/4",
+                    "240.0.0.0/4",
+                    "::/128",
+                    "::1/128",
+                    "fc00::/7",
+                    "fe80::/10",
+                    "ff00::/8"
+                  ]
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "block",
+                  "network": "udp",
+                  "user_match_count": 1
+                },
+                {
+                  "type": "field",
+                  "inboundTag": [
+                    "panel-hy2-socks"
+                  ],
+                  "outboundTag": "direct",
+                  "network": "tcp"
+                },
+                {
+                  "type": "field",
+                  "outboundTag": "direct",
+                  "network": "tcp",
+                  "user_match_count": 1
+                }
+              ]
+            },
+            "dns": {
+              "queryStrategy": "UseIPv4",
+              "servers": [
+                {
+                  "scheme": "https+local",
+                  "hostname": "1.1.1.1",
+                  "port": null
+                },
+                {
+                  "scheme": "https+local",
+                  "hostname": "1.0.0.1",
+                  "port": null
+                }
+              ]
+            },
+            "stats_configured": true,
+            "policy": {
+              "levels": {
+                "0": {
+                  "statsUserUplink": true,
+                  "statsUserDownlink": true,
+                  "statsUserOnline": true
+                }
+              }
+            },
+            "api_services": [
+              "StatsService"
+            ]
+          }
+        }
+      },
+      "profiles": {
+        "admin": {
+          "nodes": [
+            {
+              "type": "hysteria2",
+              "name": "HY2 · 网页切换",
+              "server": "198.200.49.63",
+              "port": 443,
+              "sni": "raksmart-hy2.local",
+              "skip-cert-verify": false,
+              "bbr-profile": "standard",
+              "udp": false,
+              "certificate_pin_configured": true,
+              "reality_key_configured": false,
+              "mux": {}
+            },
+            {
+              "type": "vless",
+              "name": "REALITY · TCP兼容",
+              "server": "198.200.49.63",
+              "port": 443,
+              "network": "tcp",
+              "tls": true,
+              "udp": false,
+              "flow": "xtls-rprx-vision",
+              "client-fingerprint": "chrome",
+              "certificate_pin_configured": false,
+              "reality_key_configured": true,
+              "mux": {}
+            }
+          ],
+          "groups": [
+            {
+              "name": "STATIC-SELECT",
+              "type": "select",
+              "proxies": [
+                "AUTO · 网页切换",
+                "REALITY · TCP兼容"
+              ]
+            },
+            {
+              "name": "AUTO · 网页切换",
+              "type": "fallback",
+              "proxies": [
+                "HY2 · 网页切换",
+                "REALITY · TCP兼容"
+              ],
+              "interval": 30,
+              "timeout": 5000,
+              "lazy": false,
+              "expected-status": "204",
+              "health_check_target": {
+                "scheme": "https",
+                "hostname": "www.gstatic.com",
+                "port": null
+              }
+            }
+          ],
+          "dns": {
+            "enable": true,
+            "enhanced-mode": "fake-ip",
+            "nameserver": [
+              "https://1.1.1.1/dns-query#STATIC-SELECT",
+              "https://8.8.8.8/dns-query#STATIC-SELECT"
+            ],
+            "default-nameserver": [
+              "https://223.5.5.5/dns-query"
+            ],
+            "direct-nameserver": [
+              "https://223.5.5.5/dns-query#DIRECT",
+              "https://1.12.12.12/dns-query#DIRECT"
+            ],
+            "proxy-server-nameserver": [
+              "https://223.5.5.5/dns-query#DIRECT"
+            ],
+            "ipv6": false
+          },
+          "rules_count": 49
+        },
+        "member-06c26698c110e726": {
+          "nodes": [
+            {
+              "type": "hysteria2",
+              "name": "HY2 · 网页切换",
+              "server": "198.200.49.63",
+              "port": 2443,
+              "sni": "raksmart-hy2.local",
+              "skip-cert-verify": false,
+              "bbr-profile": "standard",
+              "udp": false,
+              "certificate_pin_configured": true,
+              "reality_key_configured": false,
+              "mux": {}
+            },
+            {
+              "type": "vless",
+              "name": "REALITY · TCP兼容",
+              "server": "198.200.49.63",
+              "port": 2443,
+              "network": "tcp",
+              "tls": true,
+              "udp": false,
+              "flow": "xtls-rprx-vision",
+              "client-fingerprint": "chrome",
+              "certificate_pin_configured": false,
+              "reality_key_configured": true,
+              "mux": {}
+            }
+          ],
+          "groups": [
+            {
+              "name": "STATIC-SELECT",
+              "type": "select",
+              "proxies": [
+                "AUTO · 网页切换",
+                "REALITY · TCP兼容"
+              ]
+            },
+            {
+              "name": "AUTO · 网页切换",
+              "type": "fallback",
+              "proxies": [
+                "HY2 · 网页切换",
+                "REALITY · TCP兼容"
+              ],
+              "interval": 30,
+              "timeout": 5000,
+              "lazy": false,
+              "expected-status": "204",
+              "health_check_target": {
+                "scheme": "https",
+                "hostname": "www.gstatic.com",
+                "port": null
+              }
+            }
+          ],
+          "dns": {
+            "enable": true,
+            "enhanced-mode": "fake-ip",
+            "nameserver": [
+              "https://1.1.1.1/dns-query#STATIC-SELECT",
+              "https://8.8.8.8/dns-query#STATIC-SELECT"
+            ],
+            "default-nameserver": [
+              "https://223.5.5.5/dns-query"
+            ],
+            "direct-nameserver": [
+              "https://223.5.5.5/dns-query#DIRECT",
+              "https://1.12.12.12/dns-query#DIRECT"
+            ],
+            "proxy-server-nameserver": [
+              "https://223.5.5.5/dns-query#DIRECT"
+            ],
+            "ipv6": false
+          },
+          "rules_count": 49
+        },
+        "member-7bb5122a2ef4a515": {
+          "nodes": [
+            {
+              "type": "hysteria2",
+              "name": "HY2 · 网页切换",
+              "server": "198.200.49.63",
+              "port": 1443,
+              "sni": "raksmart-hy2.local",
+              "skip-cert-verify": false,
+              "bbr-profile": "standard",
+              "udp": false,
+              "certificate_pin_configured": true,
+              "reality_key_configured": false,
+              "mux": {}
+            },
+            {
+              "type": "vless",
+              "name": "REALITY · TCP兼容",
+              "server": "198.200.49.63",
+              "port": 1443,
+              "network": "tcp",
+              "tls": true,
+              "udp": false,
+              "flow": "xtls-rprx-vision",
+              "client-fingerprint": "chrome",
+              "certificate_pin_configured": false,
+              "reality_key_configured": true,
+              "mux": {}
+            },
+            {
+              "type": "vless",
+              "name": "出口 · 日本",
+              "server": "198.200.49.63",
+              "port": 1443,
+              "network": "tcp",
+              "tls": true,
+              "udp": false,
+              "flow": "xtls-rprx-vision",
+              "client-fingerprint": "chrome",
+              "certificate_pin_configured": false,
+              "reality_key_configured": true,
+              "mux": {}
+            }
+          ],
+          "groups": [
+            {
+              "name": "STATIC-SELECT",
+              "type": "select",
+              "proxies": [
+                "AUTO · 网页切换",
+                "REALITY · TCP兼容",
+                "出口 · 日本"
+              ]
+            },
+            {
+              "name": "AUTO · 网页切换",
+              "type": "fallback",
+              "proxies": [
+                "HY2 · 网页切换",
+                "REALITY · TCP兼容"
+              ],
+              "interval": 30,
+              "timeout": 5000,
+              "lazy": false,
+              "expected-status": "204",
+              "health_check_target": {
+                "scheme": "https",
+                "hostname": "www.gstatic.com",
+                "port": null
+              }
+            }
+          ],
+          "dns": {
+            "enable": true,
+            "enhanced-mode": "fake-ip",
+            "nameserver": [
+              "https://1.1.1.1/dns-query#STATIC-SELECT",
+              "https://8.8.8.8/dns-query#STATIC-SELECT"
+            ],
+            "default-nameserver": [
+              "https://223.5.5.5/dns-query"
+            ],
+            "direct-nameserver": [
+              "https://223.5.5.5/dns-query#DIRECT",
+              "https://1.12.12.12/dns-query#DIRECT"
+            ],
+            "proxy-server-nameserver": [
+              "https://223.5.5.5/dns-query#DIRECT"
+            ],
+            "ipv6": false
+          },
+          "rules_count": 49
+        }
+      },
+      "schema": 1,
+      "after": {
+        "services": [
+          {
+            "service": "caddy.service",
+            "MainPID": "24480",
+            "ExecMainStartTimestampMonotonic": "18166142179",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "caddy",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/caddy",
+            "config_paths": []
+          },
+          {
+            "service": "raksmart-hy2@1443.service",
+            "MainPID": "3408",
+            "ExecMainStartTimestampMonotonic": "107785519621",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "hy2",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/raksmart-hysteria2",
+            "config_paths": [
+              "/usr/local/etc/raksmart-hy2/accounts/1443.yaml"
+            ]
+          },
+          {
+            "service": "raksmart-hy2@2443.service",
+            "MainPID": "3448",
+            "ExecMainStartTimestampMonotonic": "107786947026",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "hy2",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/raksmart-hysteria2",
+            "config_paths": [
+              "/usr/local/etc/raksmart-hy2/accounts/2443.yaml"
+            ]
+          },
+          {
+            "service": "raksmart-hy2@443.service",
+            "MainPID": "16110",
+            "ExecMainStartTimestampMonotonic": "154864532423",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "hy2",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/raksmart-hysteria2",
+            "config_paths": [
+              "/usr/local/etc/raksmart-hy2/accounts/443.yaml"
+            ]
+          },
+          {
+            "service": "vps-panel.service",
+            "MainPID": "16146",
+            "ExecMainStartTimestampMonotonic": "154865054849",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "13323",
+            "AmbientCapabilities": "0",
+            "User": "root",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/bin/python3.6",
+            "config_paths": []
+          },
+          {
+            "service": "xray-panel@06c26698c110e726.service",
+            "MainPID": "26895",
+            "ExecMainStartTimestampMonotonic": "104739227733",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "root",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/xray",
+            "config_paths": [
+              "/usr/local/etc/xray-members/06c26698c110e726/config.json"
+            ]
+          },
+          {
+            "service": "xray-panel@7bb5122a2ef4a515.service",
+            "MainPID": "26883",
+            "ExecMainStartTimestampMonotonic": "104738945558",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "root",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/xray",
+            "config_paths": [
+              "/usr/local/etc/xray-members/7bb5122a2ef4a515/config.json"
+            ]
+          },
+          {
+            "service": "xray.service",
+            "MainPID": "26994",
+            "ExecMainStartTimestampMonotonic": "159505251275",
+            "CPUQuotaPerSecUSec": "infinity",
+            "MemoryLimit": "18446744073709551615",
+            "TasksMax": "18446744073709551615",
+            "LimitNOFILE": "65536",
+            "CapabilityBoundingSet": "1024",
+            "AmbientCapabilities": "0",
+            "User": "xray",
+            "ActiveState": "active",
+            "SubState": "running",
+            "binary": "/usr/local/bin/xray",
+            "config_paths": [
+              "/usr/local/etc/xray/config.json"
+            ]
+          }
+        ],
+        "protected_sha256": {
+          "/usr/local/etc/raksmart-hy2/accounts/1443.yaml": "26dec394c3645183e0fbb9c1864b1a81e166bb34b307ba5e5f5347cea24fa0d3",
+          "/usr/local/etc/raksmart-hy2/accounts/2443.yaml": "91d5c9629599dd3c438c5da9042b9213620289d2066055cc223f737ab4348143",
+          "/usr/local/etc/raksmart-hy2/accounts/443.yaml": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+          "/usr/local/etc/xray-members/06c26698c110e726/config.json": "be50ff0b6a3e8b452eb10d38531859d4b03b89e1c8e7d8c020771f4db6830fe0",
+          "/usr/local/etc/xray-members/7bb5122a2ef4a515/config.json": "c0eb34f774bda4d362b6e2490eba2ddd1bc1e8e61b4a963334837a477717b231",
+          "/usr/local/etc/xray/config.json": "6a97b2776c29ff6312507bf235fd8d1f83a3c91112bf706f8f4bc39564f46f45",
+          "/var/lib/vps-panel/auth.private.json": "fe8918e90723afdf373fc9c31202818d98fbeafae1f1a5d760fae59bb3019479",
+          "/var/lib/vps-panel/hy2.private.json": "c6f03091559e90c2fce3706933f169143628a690430d23e386e403f06eafae59",
+          "/var/lib/vps-panel/state.private.json": "ee3f84b5cf83715bfffcc9a6def6062ce8d7b41a14e39b0900b1818925e63be8",
+          "/var/lib/vps-panel/users.private.json": "687e6fdc29bbf705bda6d53f6825b4020a97b39aa6541ac1b4e8b2a1b35af153",
+          "/var/lib/vps-panel/users/06c26698c110e726/state.private.json": "d3afe2f5759445057b75276deb45c93cf4b6c3cea679210836e7bd41e4fac043",
+          "/var/lib/vps-panel/users/7bb5122a2ef4a515/state.private.json": "86424e0e7667f2bb4a15c265ed5c3ebb08176784f37551f84e6218ef99857d11"
+        },
+        "account_limits": {
+          "admin": {
+            "quota_bytes": 0,
+            "rate_bps": 0
+          },
+          "7bb5122a2ef4a515": {
+            "quota_bytes": 0,
+            "rate_bps": 0
+          },
+          "06c26698c110e726": {
+            "quota_bytes": 0,
+            "rate_bps": 0
+          }
+        },
+        "system": {
+          "kernel": "3.10.0-957.el7.x86_64",
+          "uptime": "01:58:39 up 1 day, 23:35,  0 users,  load average: 0.02, 0.20, 0.16",
+          "cpu_count": 2,
+          "loadavg": "0.02 0.20 0.16 1/167 21584",
+          "cpu_stat": "cpu  266123 193 139466 33661075 49955 0 9368 6254 0 0",
+          "sysctl": {
+            "net.core.rmem_max": "7340032",
+            "net.core.wmem_max": "7340032",
+            "net.core.rmem_default": "212992",
+            "net.core.wmem_default": "212992",
+            "net.core.netdev_max_backlog": "1000",
+            "net.ipv4.tcp_congestion_control": "cubic",
+            "net.ipv4.tcp_available_congestion_control": "cubic reno westwood hybla",
+            "net.core.default_qdisc": "pfifo_fast",
+            "net.ipv4.tcp_rmem": "4096\t87380\t6291456",
+            "net.ipv4.tcp_wmem": "4096\t16384\t4194304",
+            "net.ipv4.udp_rmem_min": "4096",
+            "net.ipv4.udp_wmem_min": "4096",
+            "net.ipv4.ip_local_port_range": "32768\t60999",
+            "net.ipv4.tcp_mtu_probing": "0",
+            "net.ipv4.tcp_fastopen": "0"
+          },
+          "interfaces": {
+            "eth0": {
+              "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 24358725470 bytes 26997702 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0",
+              "class": "",
+              "filter": "",
+              "mtu": "1450"
+            }
+          }
+        },
+        "versions": {
+          "/usr/local/bin/raksmart-hysteria2": "░█░█░█░█░█▀▀░▀█▀░█▀▀░█▀▄░▀█▀░█▀█░░░▀▀▄\n░█▀█░░█░░▀▀█░░█░░█▀▀░█▀▄░░█░░█▀█░░░▄▀░\n░▀░▀░░▀░░▀▀▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░▀░░░▀▀▀\n\na powerful, lightning fast and censorship resistant proxy\nAperture Internet Laboratory <https://github.com/apernet>\n\nVersion:\tv2.13.0\nBuildDate:\t2026-10-05T04:16:24Z\nBuildType:\trelease\nToolchain:\tgo1.26.8 linux/amd64\nCommitHash:\tca8fbd874fd6ca82413948de6dc5924405e103e1\nPlatform:\tlinux\nArchitecture:\tamd64\nLibraries:\tquic-go=v0.63.1-0.20261004180939-a10df75c260c",
+          "/usr/local/bin/xray": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)\nA unified platform for anti-censorship."
+        }
+      },
+      "protected_files_unchanged": true,
+      "all_account_limits_unchanged": true,
+      "service_epochs_unchanged": true,
+      "success": true
+    }
+  },
+  "success": true,
+  "finished_at": "2026-10-11T05:58:40.313352+00:00"
+}

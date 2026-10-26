@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-09T12:30:50.086Z",
+  "success": true,
+  "checks": [
+    "Trusted HTTPS login over physical WLAN",
+    "Both 300-second rule subscriptions match the existing domain lists over trusted HTTPS",
+    "Smart mode and both domain lists agree with the authenticated API",
+    "Saving the existing values preserves domain lists, active exit and AUTO UUID; feedback explains automatic updates",
+    "Smart routing and client import guidance fit 1440 px desktop and 390 px mobile without horizontal overflow",
+    "Logout succeeds and the page reports no JavaScript exceptions"
+  ],
+  "state": {
+    "server_ip": "198.200.49.158",
+    "active_target": "static",
+    "exit_count": 1,
+    "direct_domain_count": 0,
+    "proxy_domain_count": 0,
+    "subscription_interval_seconds": 300
+  },
+  "preservation": {
+    "domain_lists": true,
+    "active_exit": true,
+    "exit_list": true,
+    "auto_uuid": true,
+    "client_metadata": true
+  }
+}

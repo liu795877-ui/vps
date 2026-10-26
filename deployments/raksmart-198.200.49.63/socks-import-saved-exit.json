@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-09T13:14:36.280296+00:00",
+  "success": true,
+  "server": "198.200.49.63",
+  "name": "SOCKS5 · 43.246.197.78",
+  "address": "43.246.197.78",
+  "port": 443,
+  "credentials_verified": true,
+  "static_exit_count": 1,
+  "active_target": "server",
+  "current_exit_preserved": true,
+  "other_exits_preserved": true,
+  "routing_settings_preserved": true,
+  "applied": false,
+  "actual_egress_not_yet_tested": true
+}

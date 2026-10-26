@@ -1,0 +1,23 @@
+{
+  "files": [
+    "panel/server.py",
+    "panel/routing.py",
+    "panel/smart-routing.json",
+    "panel/test_panel.py",
+    "panel/test_routing.py",
+    "panel/web/app.js",
+    "panel/web/index.html",
+    "panel/web/style.css"
+  ],
+  "archive_sha256": "40c5ceec71a43d00b1ba98493ccd462abf1a5a5668e0f4e5ed3de2106b2c25bc",
+  "source_sha256": {
+    "panel/server.py": "21ee8911d1aaf3a507aaee73b93503368364b190e8a9a21dc527da1ac658d5ba",
+    "panel/routing.py": "4d7c76ef56a9073cb0ffa9690d6468db6ce4fcdcc1d6086bba9d4ecb2a15ed9a",
+    "panel/smart-routing.json": "9a341efa0fd4afa4df365fd1af3fcf5bd61f7c0def137bdff29447bc0eb8941d",
+    "panel/test_panel.py": "d51782e32b3b3e377e914871a6cc8ac7aea32dbe9c227bd80f14a3d29d6735f4",
+    "panel/test_routing.py": "c3ddf5235f4d0ddc294ef2d1705326c8396de100160c3ce4bdd85b5c103949da",
+    "panel/web/app.js": "8b59b762f9c7167a4709b6f81dd10ee702e3f4e837e2bc4ec8378f370829b976",
+    "panel/web/index.html": "0b350da1343965fe73867f3de3ea76f262c9d6a79041fc1217b815f271604c1f",
+    "panel/web/style.css": "8c01991f6a77fb65b1396f28b8e2bcf6129dff5530fe1d6e419937afbc5174b0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "result": "pass",
+  "reviewer_executed_load": false,
+  "fast_browser_probe_sha256": "115e7ecc74f0effc328f982784b013ea04452f53ff96aad472e29ebf9cb1f638",
+  "verify_wrapper_sha256": "9edeb84754fe9ad408e2a14cd20df026ebba674758c4908053cc763d2a17954a",
+  "review_scope": "New optional browser byte budget, propagation, quota guard, time/byte bounds and original fresh browser cleanup",
+  "verified": {
+    "python_and_javascript_accept_only_256_or_1024_mib": true,
+    "selected_budget_is_passed_to_node_exactly": true,
+    "default_mib": 256,
+    "final_selected_maximum_bytes": 1073741824,
+    "final_early_stop_bytes": 1056964608,
+    "maximum_browser_seconds": 120,
+    "finite_quota_remaining_must_exceed_selected_budget_plus_64_mib": true,
+    "unlimited_quota_zero_is_respected": true,
+    "soft_limit_and_parallel_inflight_tolerance_explicit": true,
+    "fresh_edge_context_without_personal_profile": true,
+    "no_fast_setting_or_production_config_changes": true,
+    "raw_signed_urls_and_tokens_not_retained_in_reports": true,
+    "browser_close_awaited": true,
+    "wrapper_finally_kills_only_own_live_node_pid_tree_if_needed": true,
+    "ssh_and_sftp_close_independently_guarded": true,
+    "success_requires_node_terminated_and_no_wrapper_cleanup_errors": true
+  },
+  "resolved_finding": "Guarded wrapper cleanup and ensured timeout/error paths can terminate and reap only the owned fresh browser process tree without skipping remaining cleanup or the verified report."
+}

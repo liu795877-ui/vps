@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-09T20:03:35+08:00",
+  "server_ip": "198.200.49.63",
+  "success": true,
+  "checks": {
+    "baseline_matches_preflight": true,
+    "four_services_active_and_enabled": true,
+    "xray_first_identity_preserved": true,
+    "xray_immutable_inbound_preserved": true,
+    "xray_reality_preserved": true,
+    "xray_dns_preserved": true,
+    "panel_saved_original_base": true,
+    "hy2_config_preserved": true,
+    "xray_unit_preserved": true,
+    "hy2_unit_preserved": true,
+    "resolv_conf_preserved": true,
+    "auto_profile_ready": true,
+    "auto_identity_installed": true,
+    "manager_tracks_current_config": true
+  },
+  "services": {
+    "xray.service": {
+      "active": true,
+      "enabled": true
+    },
+    "raksmart-hy2.service": {
+      "active": true,
+      "enabled": true
+    },
+    "vps-panel.service": {
+      "active": true,
+      "enabled": true
+    },
+    "caddy.service": {
+      "active": true,
+      "enabled": true
+    }
+  },
+  "active_target": "server",
+  "static_exit_count": 0,
+  "xray_config_changed_for_auto": true
+}

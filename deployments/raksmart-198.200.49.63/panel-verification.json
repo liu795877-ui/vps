@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-09T19:30:59+08:00",
+  "origin": "https://198-200-49-63.sslip.io:8443",
+  "success": true,
+  "checks": [
+    "Trusted HTTPS and unauthenticated API rejection",
+    "Authenticated live node and automatic location identify 198.200.49.63",
+    "Secure session, CSRF enforcement and public assets",
+    "Downloaded complete profile passes official Mihomo validation",
+    "Isolated AUTO client matches active target with stable AUTO identity",
+    "Logout revokes authenticated access"
+  ],
+  "transport": "Physical WLAN with normal TLS trust",
+  "state": {
+    "server_ip": "198.200.49.63",
+    "server_port": 443,
+    "exit_count": 0,
+    "active_target": "server",
+    "service_active": true
+  },
+  "auto_egress": {
+    "observed_ip": "198.200.49.63",
+    "expected_ip": "198.200.49.63",
+    "active_target": "server",
+    "success": true
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T11:30:06.437613+00:00",
+  "server": "198.200.49.63",
+  "physical_wlan": true,
+  "tun_disabled": true,
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "samples": [
+    {
+      "port": 443,
+      "account": "admin",
+      "protocol": "hy2",
+      "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+      "expected_ip": "198.200.49.63",
+      "native_counter_delta": {
+        "up_bytes": 654,
+        "down_bytes": 3526
+      },
+      "native_counter_incremented": true,
+      "curl_exit_code": 0,
+      "observed_ip": "198.200.49.63",
+      "public_exit_verified": true
+    },
+    {
+      "port": 443,
+      "account": "admin",
+      "protocol": "xray",
+      "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+      "expected_ip": "198.200.49.63",
+      "native_counter_delta": {
+        "up_bytes": 4123,
+        "down_bytes": 6584
+      },
+      "native_counter_incremented": true,
+      "curl_exit_code": 0,
+      "observed_ip": "198.200.49.63",
+      "public_exit_verified": true
+    },
+    {
+      "port": 1443,
+      "account": "7bb5122a2ef4a515",
+      "protocol": "hy2",
+      "profile_sha256": "cd6479a982095752f5f4218ea59d6edd22cae6d34eb5162eea2b582a0aa60d93",
+      "expected_ip": "43.246.197.78",
+      "native_counter_delta": {
+        "up_bytes": 654,
+        "down_bytes": 3528
+      },
+      "native_counter_incremented": true,
+      "curl_exit_code": 0,
+      "observed_ip": "43.246.197.78",
+      "public_exit_verified": true
+    },
+    {
+      "port": 1443,
+      "account": "7bb5122a2ef4a515",
+      "protocol": "xray",
+      "profile_sha256": "cd6479a982095752f5f4218ea59d6edd22cae6d34eb5162eea2b582a0aa60d93",
+      "expected_ip": "43.246.197.78",
+      "native_counter_delta": {
+        "up_bytes": 752,
+        "down_bytes": 3608
+      },
+      "native_counter_incremented": true,
+      "curl_exit_code": 0,
+      "observed_ip": "43.246.197.78",
+      "public_exit_verified": true
+    },
+    {
+      "port": 2443,
+      "account": "06c26698c110e726",
+      "protocol": "hy2",
+      "profile_sha256": "17fb12f2c782b07b28d709a988ef0d92a8e13cd8eeb591c66ae80b5ea354cddd",
+      "expected_ip": "198.200.49.63",
+      "native_counter_delta": {
+        "up_bytes": 654,
+        "down_bytes": 3526
+      },
+      "native_counter_incremented": true,
+      "curl_exit_code": 0,
+      "observed_ip": "198.200.49.63",
+      "public_exit_verified": true
+    },
+    {
+      "port": 2443,
+      "account": "06c26698c110e726",
+      "protocol": "xray",
+      "profile_sha256": "17fb12f2c782b07b28d709a988ef0d92a8e13cd8eeb591c66ae80b5ea354cddd",
+      "expected_ip": "198.200.49.63",
+      "native_counter_delta": {
+        "up_bytes": 654,
+        "down_bytes": 3528
+      },
+      "native_counter_incremented": true,
+      "curl_exit_code": 0,
+      "observed_ip": "198.200.49.63",
+      "public_exit_verified": true
+    }
+  ],
+  "isolation": [
+    {
+      "port": 1443,
+      "wrong_password_curl_exit_code": 28,
+      "other_account_password_rejected": true,
+      "valid_password_after_negative": true
+    },
+    {
+      "port": 2443,
+      "wrong_password_curl_exit_code": 28,
+      "other_account_password_rejected": true,
+      "valid_password_after_negative": true
+    }
+  ],
+  "comparison": [
+    {
+      "direction": "download",
+      "requested_bytes": 1048576,
+      "actual_bytes": 1048576,
+      "curl_exit_code": 0,
+      "http_code": 200,
+      "first_byte_ms": 388.38,
+      "curl_total_seconds": 1.385275,
+      "wall_seconds": 1.4639,
+      "mbps_including_startup": 5.73,
+      "success": true,
+      "round": 1,
+      "protocol": "hy2"
+    },
+    {
+      "direction": "download",
+      "requested_bytes": 1048576,
+      "actual_bytes": 1048576,
+      "curl_exit_code": 0,
+      "http_code": 200,
+      "first_byte_ms": 926.3,
+      "curl_total_seconds": 11.29041,
+      "wall_seconds": 11.3528,
+      "mbps_including_startup": 0.739,
+      "success": true,
+      "round": 1,
+      "protocol": "xray"
+    },
+    {
+      "direction": "upload",
+      "requested_bytes": 1048576,
+      "actual_bytes": 1048576,
+      "curl_exit_code": 0,
+      "http_code": 200,
+      "first_byte_ms": 1252.23,
+      "curl_total_seconds": 1.252255,
+      "wall_seconds": 1.3283,
+      "mbps_including_startup": 6.315,
+      "success": true,
+      "round": 1,
+      "protocol": "hy2"
+    },
+    {
+      "direction": "upload",
+      "requested_bytes": 1048576,
+      "actual_bytes": 1048576,
+      "curl_exit_code": 0,
+      "http_code": 200,
+      "first_byte_ms": 2460.4,
+      "curl_total_seconds": 2.460426,
+      "wall_seconds": 2.525,
+      "mbps_including_startup": 3.322,
+      "success": true,
+      "round": 1,
+      "protocol": "xray"
+    },
+    {
+      "direction": "download",
+      "requested_bytes": 1048576,
+      "actual_bytes": 1048576,
+      "curl_exit_code": 0,
+      "http_code": 200,
+      "first_byte_ms": 982.67,
+      "curl_total_seconds": 8.004811,
+      "wall_seconds": 8.0762,
+      "mbps_including_startup": 1.039,
+      "success": true,
+      "round": 2,
+      "protocol": "xray"
+    },
+    {
+      "direction": "download",
+      "requested_bytes": 1048576,
+      "actual_bytes": 1048576,
+      "curl_exit_code": 0,
+      "http_code": 200,
+      "first_byte_ms": 388.45,
+      "curl_total_seconds": 0.643817,
+      "wall_seconds": 0.7225,
+      "mbps_including_startup": 11.61,
+      "success": true,
+      "round": 2,
+      "protocol": "hy2"
+    },
+    {
+      "direction": "upload",
+      "requested_bytes": 1048576,
+      "actual_bytes": 1048576,
+      "curl_exit_code": 0,
+      "http_code": 200,
+      "first_byte_ms": 2100.04,
+      "curl_total_seconds": 2.100069,
+      "wall_seconds": 2.1788,
+      "mbps_including_startup": 3.85,
+      "success": true,
+      "round": 2,
+      "protocol": "xray"
+    },
+    {
+      "direction": "upload",
+      "requested_bytes": 1048576,
+      "actual_bytes": 1048576,
+      "curl_exit_code": 0,
+      "http_code": 200,
+      "first_byte_ms": 552.51,
+      "curl_total_seconds": 0.552532,
+      "wall_seconds": 0.6438,
+      "mbps_including_startup": 13.029,
+      "success": true,
+      "round": 2,
+      "protocol": "hy2"
+    }
+  ],
+  "core_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "official_current_nodes_accepted": true,
+  "comparison_method": {
+    "account_port": 443,
+    "rounds": 2,
+    "bytes_per_transfer": 1048576,
+    "streams": 1,
+    "same_payload_and_urls": true,
+    "alternating_protocol_order": true,
+    "throughput_includes_handshake_and_http": true,
+    "only_current_selected_exit_used": true
+  },
+  "comparison_completed": true,
+  "monthly_traffic_deltas": [
+    {
+      "account": "admin",
+      "month": "2026-10",
+      "up_bytes": 14517224,
+      "down_bytes": 5395024
+    },
+    {
+      "account": "7bb5122a2ef4a515",
+      "month": "2026-10",
+      "up_bytes": 71862,
+      "down_bytes": 2110726
+    },
+    {
+      "account": "06c26698c110e726",
+      "month": "2026-10",
+      "up_bytes": 3270,
+      "down_bytes": 17634
+    }
+  ],
+  "persisted_source_counter_deltas": [
+    {
+      "account": "admin",
+      "protocol": "hy2",
+      "up_bytes": 1052728,
+      "down_bytes": 2120385
+    },
+    {
+      "account": "admin",
+      "protocol": "xray",
+      "up_bytes": 13464496,
+      "down_bytes": 3274639
+    },
+    {
+      "account": "7bb5122a2ef4a515",
+      "protocol": "hy2",
+      "up_bytes": 1308,
+      "down_bytes": 7055
+    },
+    {
+      "account": "7bb5122a2ef4a515",
+      "protocol": "xray",
+      "up_bytes": 70554,
+      "down_bytes": 2103671
+    },
+    {
+      "account": "06c26698c110e726",
+      "protocol": "hy2",
+      "up_bytes": 1308,
+      "down_bytes": 7053
+    },
+    {
+      "account": "06c26698c110e726",
+      "protocol": "xray",
+      "up_bytes": 1962,
+      "down_bytes": 10581
+    }
+  ],
+  "combined_monthly_traffic_recorded": true,
+  "settings_preserved": true,
+  "completed": true,
+  "forced_public_protocol_count": 6,
+  "ssh_proxy_fallback_used": false,
+  "temporary_private_files_removed": true,
+  "own_client_process_terminated": true
+}

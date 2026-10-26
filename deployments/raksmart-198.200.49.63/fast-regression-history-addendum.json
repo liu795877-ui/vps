@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "audited_at": "2026-10-10T13:39:56.815661+00:00",
+  "network_tests": 0,
+  "live_client_changes": 0,
+  "scope": "Only named sanitized historical speed reports in the two RAKsmart deployment directories were read. No private profile traversal.",
+  "historical_fast_200_mbps_reproduced_in_reviewed_reports": false,
+  "historical_fast_200_result_server_protocol_and_time_known": false,
+  "user_historical_200_mbps_report_disputed": false,
+  "observations": [
+    {
+      "report": "speed-flclash-download-parallel4.json",
+      "checked_at": "2026-10-09T15:34:33+08:00",
+      "server": "198.200.49.63",
+      "path": "Active FlClash, server exit confirmed",
+      "target": "Cloudflare",
+      "streams": 4,
+      "payload_bytes_each": 500000,
+      "download_mbps_including_startup": 1.642
+    },
+    {
+      "report": "speed-bound-mihomo-download-hy2-large-hysteria2.json",
+      "checked_at": "2026-10-09T16:10:02+08:00",
+      "server": "198.200.49.63",
+      "path": "Isolated official Mihomo, physical WLAN, old standalone HY2 UDP443, server exit confirmed",
+      "target": "Cloudflare",
+      "streams": 1,
+      "payload_bytes_each": 5000000,
+      "download_mbps_samples": [
+        10.991,
+        19.656
+      ]
+    },
+    {
+      "report": "speed-bound-mihomo-download-fallback-probe-via-tokyo.json",
+      "checked_at": "2026-10-09T15:51:55+08:00",
+      "server": "198.200.49.63",
+      "path": "Physical WLAN -> Tokyo VPS -> RAKsmart-US",
+      "target": "Cloudflare",
+      "streams": 1,
+      "payload_bytes_each": 1000000,
+      "download_mbps_including_startup": 0.468
+    },
+    {
+      "report": "../raksmart-198.200.49.158/speed-bound-mihomo-download-deployment-hysteria2.json",
+      "checked_at": "2026-10-09T17:14:40+08:00",
+      "server": "198.200.49.158",
+      "path": "Other VPS HY2",
+      "target": "Cloudflare",
+      "streams": 1,
+      "payload_bytes_each": 5000000,
+      "download_mbps_including_startup": 19.171
+    },
+    {
+      "report": "speed-remote.json",
+      "checked_at": "2026-10-09T15:27:30+08:00",
+      "server": "198.200.49.63",
+      "path": "VPS directly downloads, excludes client -> VPS transport",
+      "target": "Cloudflare",
+      "payload_bytes_each": 25000000,
+      "download_mbps_samples": [
+        823.05,
+        778.21
+      ]
+    },
+    {
+      "report": "tuning-standard-initial.json / tuning-standard-final.json",
+      "checked_at": "2026-10-10T12:47:35Z / 2026-10-10T12:54:15Z",
+      "server": "198.200.49.63",
+      "path": "Updated multiuser HY2 -> authenticated loopback SOCKS -> admin Xray server AUTO exit",
+      "target": "Cloudflare",
+      "streams": 1,
+      "payload_bytes_each": 8388608,
+      "download_mbps_samples": [
+        48.95,
+        39.583
+      ]
+    }
+  ],
+  "interpretation": [
+    "The current VLESS-only application profile is a verified configuration gap; it does not establish what protocol, exit, mode or target produced the previous user-observed Fast 200 Mbps.",
+    "The reviewed historical tests use Cloudflare or an SSH transfer, not a historical Fast/Netflix endpoint. Their bounded startup-inclusive rates cannot identify or invalidate the user Fast result.",
+    "Do not attribute the full 200 -> 5.2 Mbps change solely to TCP selection without establishing the prior measurement path.",
+    "The bounded current Fast comparison can show current same-target TCP versus HY2 behavior; it cannot retroactively establish the historical 200 Mbps path.",
+    "Delivering a prepared HY2 full profile is an initial configuration fix. It is distinct from changing the active FlClash profile, which remains unchanged by this audit."
+  ],
+  "recommended_final_wording": "当前确认客户端仍在使用旧 TCP 配置，HY2 尚未启用。我已准备完整新配置。此前 Fast 200 Mbps 的协议、出口和测试时间暂未核实，所以不会把全部下降归因于这一项；本轮相同 Fast 目标对照用于判断当前 HY2 是否有改善。"
+}

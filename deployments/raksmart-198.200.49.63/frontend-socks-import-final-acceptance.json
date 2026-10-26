@@ -1,0 +1,54 @@
+{
+  "completed_at": "2026-10-09T21:21:01+08:00",
+  "server": "198.200.49.63",
+  "success": true,
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+  "asset_version": "socks-import-20261009-1",
+  "source_sha256": {
+    "panel/web/style.css": "308beee3a1ba95c759bfe3706ad7eec1a6581d621bc23d8246a0730d46f3dbbf",
+    "panel/web/app.js": "50912112fd3332b85df1786994fedd4191739542fc0cbf8c641e4d78e712fb7a",
+    "panel/web/index.html": "22ef3c6859f10bf952731065199cc7c3e165443dfbcb1d9e6b754c096f195690"
+  },
+  "features": [
+    "automatic paste parsing",
+    "explicit parse button",
+    "IPv4, IPv6 and hostname input",
+    "percent encoded credentials",
+    "optional fragment name",
+    "authenticated and unauthenticated links",
+    "invalid links preserve previous fields",
+    "sensitive fields masked and cleared"
+  ],
+  "save_requires_confirmation_in_form": true,
+  "saved_exit": {
+    "name": "SOCKS5 · 43.246.197.78",
+    "address": "43.246.197.78",
+    "port": 443,
+    "credentials_verified": true,
+    "applied": false,
+    "actual_egress_verified": false
+  },
+  "static_exit_count": 1,
+  "active_target": "server",
+  "routing_mode": "smart",
+  "release_preserves_authorized_saved_exit": true,
+  "complete_state_unchanged_during_release": true,
+  "protected_configuration_count": 10,
+  "all_protected_hashes_unchanged": true,
+  "four_service_processes_unchanged": true,
+  "services_restarted": false,
+  "desktop_mobile_browser_verified": true,
+  "local_parser_and_save_cases_verified": true,
+  "trusted_public_sources_match": true,
+  "reports": [
+    "frontend-socks-import-update.json",
+    "frontend-socks-import-browser-verification.json",
+    "frontend-socks-import-preservation.json",
+    "socks-import-saved-exit.json",
+    "../../.validation/socks-import/report.json"
+  ],
+  "screenshots": [
+    "frontend-socks-import-ui/add-exit-desktop.png",
+    "frontend-socks-import-ui/add-exit-mobile.png"
+  ]
+}

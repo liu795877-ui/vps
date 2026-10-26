@@ -1,0 +1,37 @@
+
+Pinging 64.44.147.6 with 32 bytes of data:
+Reply from 64.44.147.6: bytes=32 time=313ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=289ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=310ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=294ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=304ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=306ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=316ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=247ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=269ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=311ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=281ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=308ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=330ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=293ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=310ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=308ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=600ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=333ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=295ms TTL=41
+Request timed out.
+Reply from 64.44.147.6: bytes=32 time=293ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=315ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=314ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=296ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=300ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=294ms TTL=41
+Request timed out.
+Reply from 64.44.147.6: bytes=32 time=299ms TTL=41
+Reply from 64.44.147.6: bytes=32 time=312ms TTL=41
+Request timed out.
+
+Ping statistics for 64.44.147.6:
+    Packets: Sent = 30, Received = 27, Lost = 3 (10% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 247ms, Maximum = 600ms, Average = 312ms

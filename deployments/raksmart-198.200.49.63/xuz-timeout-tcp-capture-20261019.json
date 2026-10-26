@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-19T02:54:48.901027+00:00",
+  "capture_ready_before_test": true,
+  "groups": [
+    [
+      {
+        "port": 443,
+        "attempt": 1,
+        "ok": true,
+        "ms": 226
+      },
+      {
+        "port": 443,
+        "attempt": 2,
+        "ok": true,
+        "ms": 178
+      },
+      {
+        "port": 443,
+        "attempt": 3,
+        "ok": true,
+        "ms": 183
+      },
+      {
+        "port": 443,
+        "attempt": 4,
+        "ok": true,
+        "ms": 211
+      }
+    ],
+    [
+      {
+        "port": 4444,
+        "attempt": 1,
+        "ok": true,
+        "ms": 212
+      },
+      {
+        "port": 4444,
+        "attempt": 2,
+        "ok": false,
+        "ms": 3006
+      },
+      {
+        "port": 4444,
+        "attempt": 3,
+        "ok": false,
+        "ms": 3006
+      },
+      {
+        "port": 4444,
+        "attempt": 4,
+        "ok": true,
+        "ms": 1211
+      }
+    ]
+  ],
+  "packets": {
+    "443": {
+      "inbound_syn": 2,
+      "outbound_synack": 2
+    },
+    "4444": {
+      "inbound_syn": 3,
+      "outbound_synack": 3
+    }
+  },
+  "packet_lines": 11,
+  "source_address_redacted": true,
+  "remote_changes": false
+}

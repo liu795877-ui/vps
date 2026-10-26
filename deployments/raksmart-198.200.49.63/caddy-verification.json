@@ -1,0 +1,8 @@
+{
+  "version": "v2.11.7",
+  "archive_sha256": "727b91701a392de6ebc5027509f548bf39979e5216340d0faed8fa5e69c84f8b",
+  "binary_sha256": "678ade3bfc088749c81a681adc603333ee0bb023b6a6cfe3c0f58bef8ff854e9",
+  "official_checksums_verified": true,
+  "release_url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.7",
+  "binary": "/root/raksmart-proxy-deploy-20261009/caddy/caddy"
+}

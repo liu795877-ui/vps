@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "checked_at": "2026-10-18T09:03:51.678Z",
+  "release": "console-optimization-release-20261018-membership-02",
+  "checks": [
+    "administrator reads all live terms and opens subscription editor without saving",
+    "existing member 1 retains access and can open renewal form on mobile",
+    "existing member 2 retains access and can open renewal form on mobile"
+  ],
+  "errors": [],
+  "configuration_mutations": 0,
+  "private_values_included": false,
+  "account_count": 5,
+  "member_count": 4
+}

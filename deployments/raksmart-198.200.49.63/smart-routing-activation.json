@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-09T12:09:41.422499+00:00",
+  "success": true,
+  "routing_mode": "smart",
+  "previous_mode": "smart",
+  "active_target": "server",
+  "static_exit_count": 0,
+  "auto_identity_preserved": true,
+  "exit_accounts_preserved": true,
+  "read_only_subscriptions_verified": true,
+  "live_list_updates_verified": true,
+  "temporary_domains_restored": true,
+  "interval_seconds": 300
+}

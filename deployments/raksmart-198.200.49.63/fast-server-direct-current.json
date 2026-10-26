@@ -1,0 +1,189 @@
+{
+  "success": true,
+  "started_at": "2026-10-11T01:04:30.116241+00:00",
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "signed_urls_saved": false,
+  "tokens_saved": false,
+  "script_sha256": "e0ce14ce94ae2d4b41688345a885a5bc56681f7710c5f39e09661a64b68961f7",
+  "remote_program_sha256": "065862a00b82bb2343141934c9afe21800f0cb765ab609f08dcac3591115d798",
+  "discovery": {
+    "frontend_bytes": 26326,
+    "frontend_http_code": 200,
+    "js_bytes": 133839,
+    "js_files_fetched": 1,
+    "token_discovered": true,
+    "target_api_attempts": 1,
+    "download_payload_bytes": 0,
+    "proxy_port": 7890,
+    "api_payload_bytes": 1438,
+    "client_ip": "198.200.49.63",
+    "client_region": {
+      "city": "San Jose",
+      "country": "US"
+    },
+    "targets": [
+      {
+        "hostname": "ipv4-c003-sjc001-nflxoc-isp.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c248-sjc002-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c137-lax009-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "Los Angeles",
+          "country": "US"
+        }
+      }
+    ],
+    "target_count": 4,
+    "signed_urls_saved": false,
+    "tokens_saved": false
+  },
+  "accounts_before_sha256": "796206b5e9388eaee4b69c90965c1adc1f4f8cd1799351eb7490b1ced1f8422a",
+  "server_direct": {
+    "fast": {
+      "parallel_requests": 4,
+      "actual_download_bytes": 67108864,
+      "maximum_payload_bytes": 67108864,
+      "elapsed_seconds": 0.332,
+      "observed_server_direct_mbps_including_startup": 1617.174,
+      "requests": [
+        {
+          "hostname": "ipv4-c003-sjc001-nflxoc-isp.1.oca.nflxvideo.net",
+          "maximum_payload_bytes": 16777216,
+          "actual_download_bytes": 16777216,
+          "http_code": 200,
+          "tls_certificate_verification": true,
+          "headers_ready_ms": 55.609,
+          "ttfb_ms": 60.152,
+          "completed_full_block": true,
+          "bounded_partial": false,
+          "error_category": "none",
+          "wall_seconds": 0.3253,
+          "response_payload_received": true,
+          "observed_mbps_including_startup": 412.557
+        },
+        {
+          "hostname": "ipv4-c248-sjc002-ix.1.oca.nflxvideo.net",
+          "maximum_payload_bytes": 16777216,
+          "actual_download_bytes": 16777216,
+          "http_code": 200,
+          "tls_certificate_verification": true,
+          "headers_ready_ms": 63.128,
+          "ttfb_ms": 63.529,
+          "completed_full_block": true,
+          "bounded_partial": false,
+          "error_category": "none",
+          "wall_seconds": 0.3058,
+          "response_payload_received": true,
+          "observed_mbps_including_startup": 438.899
+        },
+        {
+          "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+          "maximum_payload_bytes": 16777216,
+          "actual_download_bytes": 16777216,
+          "http_code": 200,
+          "tls_certificate_verification": true,
+          "headers_ready_ms": 46.143,
+          "ttfb_ms": 46.633,
+          "completed_full_block": true,
+          "bounded_partial": false,
+          "error_category": "none",
+          "wall_seconds": 0.2761,
+          "response_payload_received": true,
+          "observed_mbps_including_startup": 486.103
+        },
+        {
+          "hostname": "ipv4-c137-lax009-ix.1.oca.nflxvideo.net",
+          "maximum_payload_bytes": 16777216,
+          "actual_download_bytes": 16777216,
+          "http_code": 200,
+          "tls_certificate_verification": true,
+          "headers_ready_ms": 82.224,
+          "ttfb_ms": 86.903,
+          "completed_full_block": true,
+          "bounded_partial": false,
+          "error_category": "none",
+          "wall_seconds": 0.3189,
+          "response_payload_received": true,
+          "observed_mbps_including_startup": 420.821
+        }
+      ],
+      "full_blocks": 4,
+      "payload_successes": 4,
+      "target_regions": [
+        {
+          "hostname": "ipv4-c003-sjc001-nflxoc-isp.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          }
+        },
+        {
+          "hostname": "ipv4-c248-sjc002-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          }
+        },
+        {
+          "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          }
+        },
+        {
+          "hostname": "ipv4-c137-lax009-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Los Angeles",
+            "country": "US"
+          }
+        }
+      ]
+    },
+    "proxy_used": false,
+    "configuration_changes": 0,
+    "url_tokens_saved": false,
+    "payload_files_written": 0,
+    "method_scope": "Server-direct verified HTTPS with stdlib reader; bounded payload/window, not browser Fast score.",
+    "cloudflare": {
+      "hostname": "speed.cloudflare.com",
+      "maximum_payload_bytes": 8388608,
+      "actual_download_bytes": 8388608,
+      "http_code": 200,
+      "tls_certificate_verification": true,
+      "headers_ready_ms": 74.692,
+      "ttfb_ms": 74.814,
+      "completed_full_block": true,
+      "bounded_partial": false,
+      "error_category": "none",
+      "wall_seconds": 0.1233,
+      "response_payload_received": true,
+      "observed_mbps_including_startup": 544.345
+    },
+    "success": true
+  },
+  "all_account_settings_preserved": true,
+  "accounts_after_sha256": "796206b5e9388eaee4b69c90965c1adc1f4f8cd1799351eb7490b1ced1f8422a",
+  "remote_payload_files_written": 0,
+  "finished_at": "2026-10-11T01:05:03.124772+00:00"
+}

@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-19T02:33:42.936276+00:00",
+  "user": "xuz",
+  "remote_changes": false,
+  "local_live_client_changed": false,
+  "tests": [
+    {
+      "protocol": "hy2",
+      "kind": "exit_identity",
+      "code": 0,
+      "response": "198.200.49.63\nDIAG=200 0.938977",
+      "stderr": "",
+      "elapsed": 1.052
+    },
+    {
+      "protocol": "hy2",
+      "kind": "mihomo_delay",
+      "target": "https://www.gstatic.com/generate_204",
+      "result": {
+        "delay": 463
+      },
+      "elapsed": 0.466
+    },
+    {
+      "protocol": "hy2",
+      "kind": "mihomo_delay",
+      "target": "https://cp.cloudflare.com/generate_204",
+      "result": {
+        "delay": 349
+      },
+      "elapsed": 0.353
+    },
+    {
+      "protocol": "xray",
+      "kind": "exit_identity",
+      "code": 0,
+      "response": "198.200.49.63\nDIAG=200 0.965004",
+      "stderr": "",
+      "elapsed": 1.04
+    },
+    {
+      "protocol": "xray",
+      "kind": "mihomo_delay",
+      "target": "https://www.gstatic.com/generate_204",
+      "http_error": 504,
+      "result": "{\"message\":\"Timeout\"}\n",
+      "elapsed": 5.002
+    },
+    {
+      "protocol": "xray",
+      "kind": "mihomo_delay",
+      "target": "https://cp.cloudflare.com/generate_204",
+      "http_error": 504,
+      "result": "{\"message\":\"Timeout\"}\n",
+      "elapsed": 5.002
+    }
+  ],
+  "profile_identity_verified": true,
+  "port": 4444,
+  "engine": {
+    "meta": true,
+    "version": "v1.19.31"
+  },
+  "temporary_credentials_removed": true
+}

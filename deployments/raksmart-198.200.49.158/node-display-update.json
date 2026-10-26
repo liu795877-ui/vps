@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "updated_files": [
+    "panel/node_info.py",
+    "panel/server.py",
+    "panel/web/index.html",
+    "panel/web/app.js",
+    "panel/web/style.css"
+  ],
+  "console_active": true,
+  "configuration_and_exit_state_preserved": true,
+  "backup": "/root/raksmart-proxy-deploy-20261009/node-display-20261009T110844/before"
+}

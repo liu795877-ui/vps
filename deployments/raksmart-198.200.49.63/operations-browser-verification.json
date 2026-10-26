@@ -1,0 +1,81 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T03:40:23.951Z",
+  "deployment_ip": "198.200.49.63",
+  "trusted_https": true,
+  "safety": {
+    "server_mutations_allowed": false,
+    "subscription_tokens_redacted": true,
+    "profile_downloads": false,
+    "physical_wlan": true
+  },
+  "checks": [
+    "admin: own subscription and scoped history, protected drafts, all new guides, desktop/mobile views and preserved configuration",
+    "user-a: own subscription and scoped history, protected drafts, all new guides, desktop/mobile views and preserved configuration",
+    "user-b: own subscription and scoped history, protected drafts, all new guides, desktop/mobile views and preserved configuration",
+    "Three independent subscription URLs and deployed asset hashes match frozen release"
+  ],
+  "users": [
+    {
+      "account": "admin",
+      "role": "admin",
+      "port": 443,
+      "service_active": true,
+      "exit_count": 1,
+      "health_status": "healthy",
+      "traffic_available": true
+    },
+    {
+      "account": "user-a",
+      "role": "member",
+      "port": 1443,
+      "service_active": true,
+      "exit_count": 0,
+      "health_status": "healthy",
+      "traffic_available": true
+    },
+    {
+      "account": "user-b",
+      "role": "member",
+      "port": 2443,
+      "service_active": true,
+      "exit_count": 0,
+      "health_status": "healthy",
+      "traffic_available": true
+    }
+  ],
+  "screenshots": [
+    "admin-overview-1440.png",
+    "admin-access-1440.png",
+    "admin-maintenance-1440.png",
+    "admin-users-1440.png",
+    "admin-overview-390.png",
+    "admin-access-390.png",
+    "admin-maintenance-390.png",
+    "admin-users-390.png",
+    "user-a-overview-1440.png",
+    "user-a-access-1440.png",
+    "user-a-overview-390.png",
+    "user-a-access-390.png",
+    "user-b-overview-1440.png",
+    "user-b-access-1440.png",
+    "user-b-overview-390.png",
+    "user-b-access-390.png"
+  ],
+  "assets": {
+    "panel/web/index.html": {
+      "sha256": "257923b51bfa6edaece0f03c9bbc8da88e93d7a064537cb384765f90897f8792",
+      "release_match": true
+    },
+    "panel/web/app.js": {
+      "sha256": "7d63fc9bc862024d32c496a001745847fd03fc10b82f59073144f044f084ccb7",
+      "release_match": true
+    },
+    "panel/web/style.css": {
+      "sha256": "043e2e3dd4dbe5a9e367866c891a1b46c18804d00f4017bf64b7ad7eca1fbc74",
+      "release_match": true
+    }
+  },
+  "browser_errors": [],
+  "blocked_requests": []
+}

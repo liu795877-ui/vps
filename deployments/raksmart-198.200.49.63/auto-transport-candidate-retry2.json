@@ -1,0 +1,282 @@
+{
+  "success": true,
+  "started_at": "2026-10-10T13:49:21.952258+00:00",
+  "mode": "run",
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "isolated_hy2_port_changes": 2,
+  "candidate_health_policy": {
+    "url": "https://www.gstatic.com/generate_204",
+    "expected-status": "204",
+    "interval": 30,
+    "lazy": false,
+    "timeout": 5000
+  },
+  "production_policy_required": false,
+  "cleanup_errors": [],
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "script_sha256": "81bf830d9a1bcf4a884956a46f202d1c9de27b7a2eb4a7fd62ab4c5fed81b264",
+  "core_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "method": {
+    "group_from_current_full_admin_profile": true,
+    "nodes_from_current_full_admin_profile": true,
+    "rule_scope": "minimal MATCH,AUTO to isolate transport; production DNS/providers/rules unchanged",
+    "tun": false,
+    "physical_interface": "WLAN",
+    "bind_address": "127.0.0.1",
+    "only_isolated_hy2_port_broken": 65534,
+    "recovery": "same-process local controller reload",
+    "automatic_health_check_selection": true,
+    "bulk_download_bytes": 0
+  },
+  "actual_group_health_policy": {
+    "url": "https://www.gstatic.com/generate_204",
+    "expected-status": "204",
+    "interval": 30,
+    "lazy": false,
+    "timeout": 5000
+  },
+  "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+  "account_settings_sha256": "57feb39e16db705dc7a558631b469f6c6a5312efa869aa0dcbeb4ee458ba2fc8",
+  "automatic_tcp_fallback": {
+    "selection": {
+      "selected": "REALITY \u00b7 TCP\u517c\u5bb9",
+      "observations": [
+        {
+          "selected": "HY2 \u00b7 \u7f51\u9875\u5207\u6362",
+          "nodes": {
+            "HY2 \u00b7 \u7f51\u9875\u5207\u6362": {
+              "alive": true,
+              "history": []
+            },
+            "REALITY \u00b7 TCP\u517c\u5bb9": {
+              "alive": true,
+              "history": []
+            }
+          },
+          "at": "2026-10-10T13:49:39.521258+00:00"
+        },
+        {
+          "selected": "HY2 \u00b7 \u7f51\u9875\u5207\u6362",
+          "nodes": {
+            "HY2 \u00b7 \u7f51\u9875\u5207\u6362": {
+              "alive": true,
+              "history": []
+            },
+            "REALITY \u00b7 TCP\u517c\u5bb9": {
+              "alive": true,
+              "history": [
+                {
+                  "delay": 1257,
+                  "time": "2026-10-10T21:49:40.3560783+08:00"
+                }
+              ]
+            }
+          },
+          "at": "2026-10-10T13:49:41.549095+00:00"
+        },
+        {
+          "selected": "HY2 \u00b7 \u7f51\u9875\u5207\u6362",
+          "nodes": {
+            "HY2 \u00b7 \u7f51\u9875\u5207\u6362": {
+              "alive": true,
+              "history": []
+            },
+            "REALITY \u00b7 TCP\u517c\u5bb9": {
+              "alive": true,
+              "history": [
+                {
+                  "delay": 1257,
+                  "time": "2026-10-10T21:49:40.3560783+08:00"
+                }
+              ]
+            }
+          },
+          "at": "2026-10-10T13:49:43.552652+00:00"
+        },
+        {
+          "selected": "REALITY \u00b7 TCP\u517c\u5bb9",
+          "nodes": {
+            "HY2 \u00b7 \u7f51\u9875\u5207\u6362": {
+              "alive": false,
+              "history": [
+                {
+                  "delay": 0,
+                  "time": "2026-10-10T21:49:44.0979107+08:00"
+                }
+              ]
+            },
+            "REALITY \u00b7 TCP\u517c\u5bb9": {
+              "alive": true,
+              "history": [
+                {
+                  "delay": 1257,
+                  "time": "2026-10-10T21:49:40.3560783+08:00"
+                }
+              ]
+            }
+          },
+          "at": "2026-10-10T13:49:45.556256+00:00"
+        }
+      ],
+      "automatic_healthcheck_used": true
+    },
+    "business_identity": {
+      "kind": "light",
+      "started_offset_seconds": 24.841551,
+      "ended_offset_seconds": 25.869245,
+      "wall_seconds": 1.027694,
+      "curl_exit_code": 0,
+      "response_identifiers": {
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a486170f5964e8c2-SJC"
+      },
+      "http_code": 200,
+      "actual_upload_bytes": 0,
+      "actual_download_bytes": 13,
+      "requested_bytes": 0,
+      "local_proxy_connect_ms": 1.24,
+      "tls_ready_ms": 654.538,
+      "pretransfer_ms": 654.696,
+      "ttfb_ms": 934.073,
+      "curl_total_seconds": 0.93458,
+      "http_wait_after_pretransfer_ms": 279.377,
+      "success": true,
+      "egress_matches_current_server_exit": true,
+      "error_category": "none",
+      "observed_business_connection_chains": [
+        [
+          "REALITY \u00b7 TCP\u517c\u5bb9",
+          "AUTO \u00b7 \u7f51\u9875\u5207\u6362"
+        ]
+      ]
+    },
+    "health_url_request": {
+      "success": true,
+      "http_code": 204,
+      "curl_exit_code": 0,
+      "ttfb_ms": 930.381
+    },
+    "native_account_counter_delta": {
+      "hy2": {
+        "up_bytes": 0,
+        "down_bytes": 0
+      },
+      "xray": {
+        "up_bytes": 460726,
+        "down_bytes": 13564
+      }
+    },
+    "native_counter_scope": "all admin traffic during requests, not isolated-client-only",
+    "expected_business_transport_chain_observed": true,
+    "success": true
+  },
+  "same_isolated_process_after_reload": true,
+  "automatic_hy2_recovery": {
+    "selection": {
+      "selected": "HY2 \u00b7 \u7f51\u9875\u5207\u6362",
+      "observations": [
+        {
+          "selected": "HY2 \u00b7 \u7f51\u9875\u5207\u6362",
+          "nodes": {
+            "HY2 \u00b7 \u7f51\u9875\u5207\u6362": {
+              "alive": true,
+              "history": []
+            },
+            "REALITY \u00b7 TCP\u517c\u5bb9": {
+              "alive": true,
+              "history": []
+            }
+          },
+          "at": "2026-10-10T13:49:50.144789+00:00"
+        },
+        {
+          "selected": "HY2 \u00b7 \u7f51\u9875\u5207\u6362",
+          "nodes": {
+            "HY2 \u00b7 \u7f51\u9875\u5207\u6362": {
+              "alive": true,
+              "history": [
+                {
+                  "delay": 1235,
+                  "time": "2026-10-10T21:49:51.3756508+08:00"
+                }
+              ]
+            },
+            "REALITY \u00b7 TCP\u517c\u5bb9": {
+              "alive": true,
+              "history": []
+            }
+          },
+          "at": "2026-10-10T13:49:52.148719+00:00"
+        }
+      ],
+      "automatic_healthcheck_used": true
+    },
+    "business_identity": {
+      "kind": "light",
+      "started_offset_seconds": 31.434353,
+      "ended_offset_seconds": 32.145061,
+      "wall_seconds": 0.710707,
+      "curl_exit_code": 0,
+      "response_identifiers": {
+        "server": "cloudflare",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4861735ae2d2523-SJC"
+      },
+      "http_code": 200,
+      "actual_upload_bytes": 0,
+      "actual_download_bytes": 13,
+      "requested_bytes": 0,
+      "local_proxy_connect_ms": 1.311,
+      "tls_ready_ms": 205.386,
+      "pretransfer_ms": 205.583,
+      "ttfb_ms": 605.453,
+      "curl_total_seconds": 0.606174,
+      "http_wait_after_pretransfer_ms": 399.87,
+      "success": true,
+      "egress_matches_current_server_exit": true,
+      "error_category": "none",
+      "observed_business_connection_chains": [
+        [
+          "HY2 \u00b7 \u7f51\u9875\u5207\u6362",
+          "AUTO \u00b7 \u7f51\u9875\u5207\u6362"
+        ]
+      ]
+    },
+    "health_url_request": {
+      "success": true,
+      "http_code": 204,
+      "curl_exit_code": 0,
+      "ttfb_ms": 408.364
+    },
+    "native_account_counter_delta": {
+      "hy2": {
+        "up_bytes": 1324,
+        "down_bytes": 8453
+      },
+      "xray": {
+        "up_bytes": 1973353,
+        "down_bytes": 168881
+      }
+    },
+    "native_counter_scope": "all admin traffic during requests, not isolated-client-only",
+    "expected_business_transport_chain_observed": true,
+    "success": true
+  },
+  "all_settings_preserved": true,
+  "normal_monthly_ledger_delta": {
+    "up_bytes": 6245272,
+    "down_bytes": 230129
+  },
+  "own_mihomo_process_terminated": true,
+  "own_curl_processes_terminated": true,
+  "temporary_private_files_removed": true,
+  "finished_at": "2026-10-10T13:50:03.471622+00:00",
+  "total_wall_seconds": 41.519
+}

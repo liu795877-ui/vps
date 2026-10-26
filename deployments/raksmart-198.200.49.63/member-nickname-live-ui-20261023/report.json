@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "release": "console-optimization-release-20261023-nickname-01",
+  "checked_at": "2026-10-24T02:49:31.587Z",
+  "checks": [
+    "four public assets match the frozen nickname release",
+    "administrator can open nickname editor for all registered members",
+    "editor prefills the current nickname and keeps the login account read-only",
+    "nickname dialog fits a mobile viewport",
+    "same-value save succeeds while preserving every real nickname and account state",
+    "existing visit records resolve member names from the current account registry",
+    "member 1 cannot rename accounts",
+    "member 2 cannot rename accounts",
+    "anonymous users are rejected and logout clears nickname fields"
+  ],
+  "errors": [],
+  "configuration_mutations": 0,
+  "real_nicknames_changed": false,
+  "private_values_included": false,
+  "registered_members": 4
+}

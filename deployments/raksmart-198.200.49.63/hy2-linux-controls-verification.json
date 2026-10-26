@@ -1,0 +1,18 @@
+{
+  "remote_exit_code": 0,
+  "result": {
+    "combined_payload_rates": {
+      "changed_combined_download_mbps": 3.850768,
+      "download_mbps": 7.690864,
+      "tcp_only_upload_mbps": 1.867776,
+      "unrestricted_other_account_mbps": 6515.798336,
+      "upload_mbps": 7.770112
+    },
+    "controls_removed": true,
+    "independent_action_preserved": true,
+    "linux_controls_verified": true,
+    "production_network_unchanged": true,
+    "quota_blocks_both_transports": true,
+    "same_and_changed_rate_updates": true
+  }
+}

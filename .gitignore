@@ -1,0 +1,67 @@
+.validation/
+__pycache__/
+clash-reality.yaml
+clash-static-exits.yaml
+clash-node-console.yaml
+*.private.*
+vps-login.key
+*.pem
+panel-data/
+node_modules/
+
+# Local credentials and runtime state (including encrypted credentials).
+.runtime/
+.venv/
+.demo-data/
+.env
+.env.*
+!.env.example
+*.private
+*.dpapi
+*.key
+*.pfx
+*.p12
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+*.jsonl
+*.log
+*.pyc
+*.pyo
+**/*-private/
+**/hy2-draft/
+**/latency-client/
+**/speed-client/
+**/web-switch-validation/
+**/smart-routing-validation/
+**/unified-profile-validation/
+**/*-client-validation/
+**/panel-adoption-check/
+
+# Downloaded runtimes, package caches and incomplete downloads.
+**/artifacts/
+**/operations-wheels/
+**/vendor.tar.gz
+deployments/raksmart-198.200.49.63/operations-release.tar.gz
+*.exe
+*.whl
+*.zip
+*.partial
+*.metadb
+*.mrs
+
+# Downloaded provider pages contain transient form/session tokens.
+/*_raw.html
+/us_*_page_agent.html
+/raksmart_docs_agent.html
+
+# Browser screenshots can contain account or connection details.
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Local upload review files.
+.github-upload/

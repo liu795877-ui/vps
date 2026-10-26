@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-09T11:12:55.206Z",
+  "success": true,
+  "checks": [
+    "Automatic server location, protocol and port",
+    "Unified configuration metadata and client instructions",
+    "Trusted HTTPS",
+    "Login",
+    "Node running",
+    "Exit form opens",
+    "Desktop/mobile layout",
+    "Logout",
+    "No JavaScript errors"
+  ],
+  "server_location": {
+    "ip": "198.200.49.158",
+    "country_code": "US",
+    "provider": "ipwho.is",
+    "country": "United States",
+    "region": "California",
+    "city": "San Jose",
+    "looked_up_at": 1791542651.5163302,
+    "status": "ready"
+  },
+  "applied_exit_count": 1,
+  "added_or_switched_exits": false
+}

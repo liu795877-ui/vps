@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-09T15:51:55+08:00",
+  "path": "Temporary Mihomo bound to physical WLAN -> TOKYO-VPS -> RAKsmart-US",
+  "direction": "download",
+  "parallel_streams": 1,
+  "requested_bytes_per_stream": 1000000,
+  "checks": [
+    {
+      "sample": 1,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 1000000,
+          "size_upload": 0,
+          "time_total": 17.011926,
+          "time_starttransfer": 1.18474,
+          "time_appconnect": 0.633101,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        }
+      ],
+      "actual_bytes": 1000000,
+      "wall_seconds": 17.076,
+      "mbps_including_startup": 0.468,
+      "MB_per_second": 0.059,
+      "success": true
+    }
+  ],
+  "identity_attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0,
+      "exit_ip": "198.200.49.63",
+      "error": "",
+      "matches_vps": true
+    }
+  ],
+  "exit_ip": "198.200.49.63",
+  "identity_exit_code": 0,
+  "identity_error": "",
+  "exit_matches_vps": true
+}

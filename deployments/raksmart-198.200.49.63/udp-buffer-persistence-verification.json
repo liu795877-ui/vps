@@ -1,0 +1,7 @@
+{
+  "persistent_settings_verified": true,
+  "path": "/etc/sysctl.d/90-vps-hy2-udp-buffers.conf",
+  "sha256": "95cd82ac623983193be86665a4e3a68f40dd83bbe9dd2685ce26cf4faaf2c5f9",
+  "mode": "0644",
+  "uid": 0
+}

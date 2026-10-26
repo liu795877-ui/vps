@@ -1,0 +1,57 @@
+
+Pinging 198.200.49.130 with 32 bytes of data:
+Reply from 198.200.49.130: bytes=32 time=160ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=164ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=158ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=182ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=181ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=164ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=161ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=161ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Request timed out.
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=443ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=164ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=683ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=158ms TTL=45
+Request timed out.
+Reply from 198.200.49.130: bytes=32 time=158ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=160ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Request timed out.
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=160ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=160ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=160ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=160ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=161ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+Reply from 198.200.49.130: bytes=32 time=159ms TTL=45
+
+Ping statistics for 198.200.49.130:
+    Packets: Sent = 50, Received = 47, Lost = 3 (6% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 158ms, Maximum = 683ms, Average = 177ms

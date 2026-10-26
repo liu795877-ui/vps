@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-10T18:31:45+08:00",
+  "method": "TCP connect explicitly bound to physical WLAN (IP_UNICAST_IF)",
+  "source_interface": "WLAN",
+  "source_ip": "192.168.1.112",
+  "checks": [
+    {
+      "host": "198.200.49.63",
+      "port": 443,
+      "count": 20,
+      "connected": 20,
+      "timeouts_or_errors": 0,
+      "errors": [],
+      "samples_ms": [
+        206.92,
+        222.06,
+        194.27,
+        208.76,
+        216.44,
+        194.35,
+        209.76,
+        216.4,
+        186.13,
+        164.95,
+        207.45,
+        180.74,
+        176.24,
+        205.86,
+        156.77,
+        211.21,
+        168.1,
+        266.07,
+        202.55,
+        175.1
+      ],
+      "mean_ms": 198.5,
+      "median_ms": 204.2,
+      "min_ms": 156.77,
+      "max_ms": 266.07
+    },
+    {
+      "host": "192.168.1.1",
+      "port": 80,
+      "count": 5,
+      "connected": 5,
+      "timeouts_or_errors": 0,
+      "errors": [],
+      "samples_ms": [
+        19.55,
+        6.51,
+        3.16,
+        3.53,
+        5.36
+      ],
+      "mean_ms": 7.6,
+      "median_ms": 5.4,
+      "min_ms": 3.16,
+      "max_ms": 19.55
+    }
+  ]
+}

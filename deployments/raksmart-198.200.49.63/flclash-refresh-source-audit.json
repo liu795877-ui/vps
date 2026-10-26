@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "installed_app": "FlClash 0.8.91+2025122201",
+  "public_source_tag": "v0.8.91",
+  "source_commit": "6e404ab19c74a9b8e2e7122b7d0210fe1582cdf2",
+  "read_only_client_review": true,
+  "client_mutations": 0,
+  "client_or_core_starts": 0,
+  "load_tests": 0,
+  "native_refresh": {
+    "profile_storage": "Application support directory/profiles/<profile ID>.yaml",
+    "procedure": "Profile.update fetches subscription bytes, validates through the core, writes the same profile file, returns metadata with current lastUpdateDate. AppController.updateProfile stores returned metadata and reapplies the profile when it is current.",
+    "sources": [
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/models/profile.dart#L196",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/controller.dart#L175",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/common/path.dart#L84"
+    ]
+  },
+  "auto_refresh": {
+    "duration_json_unit": "microseconds",
+    "default_duration_days": 1,
+    "due_check_at_app_start": true,
+    "due_check_timer_minutes": 20,
+    "url_profiles_only": true,
+    "sources": [
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/models/generated/profile.g.dart#L33",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/common/constant.dart#L40",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/controller.dart#L360",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/controller.dart#L554",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/application.dart#L61"
+    ]
+  },
+  "persistence": {
+    "config": "Config serialized as JSON string by SharedPreferences under config key; actual platform file shape must be preserved.",
+    "initialization": "GlobalState reads preferences at app startup. Core initialization reapplies current profile from disk and selectedMap.",
+    "live_edit_risk": "App provider changes schedule a preferences save after 3 seconds. External edits while the app is running can be overwritten by its in-memory config.",
+    "sources": [
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/common/preferences.dart#L35",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/state.dart#L131",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/state.dart#L302",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/controller.dart#L538",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/controller.dart#L58",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/manager/app_manager.dart#L40"
+    ]
+  },
+  "unsafe_guessed_ipc": {
+    "fact": "The app loopback TCP listener is the CoreService channel that accepts a core connection. Connecting another socket calls _destroySocket before replacing it, detaching the current core. It is not an app HTTP refresh endpoint.",
+    "standalone_core_cli": "FlClashCore accepts one app socket endpoint argument. It has no standard Mihomo -v/-t/-f CLI; passing -v is interpreted as a Unix socket path.",
+    "sources": [
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/core/service.dart#L41",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/core/service.dart#L66",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/core/main.go#L10",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/core/server.go#L38"
+    ]
+  },
+  "relaunch": {
+    "windows_listener_start": "Desktop startTime is new/null; _initStatus takes appSetting.autoRun. With autoRun=false, relaunch loads/applies the new config but stops listeners until native start is invoked.",
+    "helper": "Helper /start hash-validates the core binary, stops the prior owned child, and launches the core with the new app socket port. Native app performs this; no direct SYSTEM child termination is needed.",
+    "start_actions": [
+      "Dashboard StartButton",
+      "Tray Start menu",
+      "Existing user-configured global hotKeyActions entry with action=start"
+    ],
+    "fixed_start_shortcut": false,
+    "sources": [
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/controller.dart#L588",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/services/helper/src/service/hub.rs#L41",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/common/tray.dart#L70",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/manager/hotkey_manager.dart#L38"
+    ]
+  },
+  "deep_link": {
+    "registered_scheme": "clash",
+    "accepted_host": "install-config",
+    "url_query": "url",
+    "behavior": "Displays confirmation, then adds a new subscription profile. It is not a silent refresh or start action; an existing current profile remains selected.",
+    "start_uri": false,
+    "start_cli": false,
+    "sources": [
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/common/window.dart#L17",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/common/link.dart#L25",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/controller.dart#L614",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/controller.dart#L142",
+      "https://github.com/chen08209/FlClash/blob/v0.8.91/lib/main.dart#L14"
+    ]
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "name": "智能分流 · 国内直连",
+  "sources_checked": "2026-10-09",
+  "description": "Private networks and custom overrides first; international variants precede mainland media; independent China domain rules precede resolved China IPs; unmatched traffic follows STATIC-SELECT.",
+  "local_rules": [
+    "DOMAIN,localhost,DIRECT",
+    "DOMAIN-SUFFIX,localhost,DIRECT",
+    "DOMAIN-SUFFIX,lan,DIRECT",
+    "DOMAIN-SUFFIX,local,DIRECT",
+    "DOMAIN-SUFFIX,home.arpa,DIRECT",
+    "IP-CIDR,0.0.0.0/8,DIRECT,no-resolve",
+    "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve",
+    "IP-CIDR,100.64.0.0/10,DIRECT,no-resolve",
+    "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve",
+    "IP-CIDR,169.254.0.0/16,DIRECT,no-resolve",
+    "IP-CIDR,172.16.0.0/12,DIRECT,no-resolve",
+    "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
+    "IP-CIDR,224.0.0.0/4,DIRECT,no-resolve",
+    "IP-CIDR,255.255.255.255/32,DIRECT,no-resolve",
+    "IP-CIDR6,::/128,DIRECT,no-resolve",
+    "IP-CIDR6,::1/128,DIRECT,no-resolve",
+    "IP-CIDR6,fc00::/7,DIRECT,no-resolve",
+    "IP-CIDR6,fe80::/10,DIRECT,no-resolve",
+    "IP-CIDR6,ff00::/8,DIRECT,no-resolve"
+  ],
+  "rules": [
+    "RULE-SET,Overseas Exceptions,STATIC-SELECT",
+    "RULE-SET,IQ International,STATIC-SELECT",
+    "RULE-SET,WeTV,STATIC-SELECT",
+    "RULE-SET,Domestic Media Supplements,DIRECT",
+    "RULE-SET,Bilibili,DIRECT",
+    "RULE-SET,IQIYI,DIRECT",
+    "RULE-SET,Tencent Video,DIRECT",
+    "RULE-SET,Youku,DIRECT",
+    "RULE-SET,Mango TV,DIRECT",
+    "RULE-SET,CCTV,DIRECT",
+    "RULE-SET,Douyin,DIRECT",
+    "RULE-SET,Kuaishou,DIRECT",
+    "RULE-SET,Douyu,DIRECT",
+    "RULE-SET,Huya,DIRECT",
+    "RULE-SET,Netease Music,DIRECT",
+    "RULE-SET,Kugou Kuwo,DIRECT",
+    "RULE-SET,Netflix,STATIC-SELECT",
+    "RULE-SET,Disney,STATIC-SELECT",
+    "RULE-SET,YouTube,STATIC-SELECT",
+    "RULE-SET,Telegram,STATIC-SELECT",
+    "RULE-SET,Discord,STATIC-SELECT",
+    "RULE-SET,AI Services,STATIC-SELECT",
+    "RULE-SET,Overseas,STATIC-SELECT",
+    "RULE-SET,China Domains,DIRECT",
+    "DOMAIN-SUFFIX,cn,DIRECT",
+    "RULE-SET,China IPs,DIRECT",
+    "MATCH,STATIC-SELECT"
+  ],
+  "providers": {
+    "Bilibili": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/bilibili.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Bilibili.yaml"
+    },
+    "IQIYI": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/iqiyi.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/IQIYI.yaml"
+    },
+    "Tencent Video": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/tencent-video.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TencentVideo/TencentVideo.yaml"
+    },
+    "Youku": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/youku.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Youku.yaml"
+    },
+    "Mango TV": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/mango-tv.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HunanTV/HunanTV.yaml"
+    },
+    "CCTV": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/cctv.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CCTV/CCTV.yaml"
+    },
+    "Douyin": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/douyin.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.yaml"
+    },
+    "Kuaishou": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/kuaishou.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KuaiShou/KuaiShou.yaml"
+    },
+    "Douyu": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/douyu.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu.yaml"
+    },
+    "Huya": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/huya.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa.yaml"
+    },
+    "Netease Music": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/netease-music.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Netease%20Music.yaml"
+    },
+    "Kugou Kuwo": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/kugou-kuwo.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KugouKuwo/KugouKuwo.yaml"
+    },
+    "IQ International": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/iq-international.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/IQ.yaml"
+    },
+    "WeTV": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/wetv.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/WeTV.yaml"
+    },
+    "Netflix": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/netflix.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Netflix.yaml"
+    },
+    "Disney": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/disney.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Disney%20Plus.yaml"
+    },
+    "YouTube": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/youtube.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/YouTube.yaml"
+    },
+    "Telegram": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/telegram.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Telegram.yaml"
+    },
+    "Discord": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/discord.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Discord.yaml"
+    },
+    "AI Services": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/ai-services.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/AI%20Suite.yaml"
+    },
+    "Overseas": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/overseas.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Proxy.yaml"
+    },
+    "China IPs": {
+      "type": "http",
+      "behavior": "ipcidr",
+      "format": "mrs",
+      "interval": 86400,
+      "path": "./rules/smart/china-ips.mrs",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
+    },
+    "China Domains": {
+      "type": "http",
+      "behavior": "classical",
+      "format": "yaml",
+      "interval": 86400,
+      "path": "./rules/smart/china-domains.yaml",
+      "proxy": "STATIC-SELECT",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Domestic.yaml"
+    },
+    "Overseas Exceptions": {
+      "type": "inline",
+      "behavior": "classical",
+      "payload": [
+        "DOMAIN-SUFFIX,bilibili.tv",
+        "DOMAIN-SUFFIX,biliintl.com",
+        "PROCESS-NAME,com.bilibili.app.in",
+        "PROCESS-NAME,com.bilibili.comic.intl",
+        "DOMAIN-SUFFIX,kwai.com",
+        "PROCESS-NAME,com.kwai.video"
+      ]
+    },
+    "Domestic Media Supplements": {
+      "type": "inline",
+      "behavior": "classical",
+      "payload": [
+        "DOMAIN-SUFFIX,y.qq.com",
+        "DOMAIN-SUFFIX,music.qq.com",
+        "DOMAIN-SUFFIX,qqmusic.qq.com",
+        "DOMAIN-SUFFIX,douyin.com",
+        "DOMAIN-SUFFIX,huya.com"
+      ]
+    }
+  },
+  "dns": {
+    "enable": true,
+    "enhanced-mode": "fake-ip",
+    "fake-ip-range": "198.18.0.1/16",
+    "ipv6": false,
+    "use-hosts": true,
+    "use-system-hosts": true,
+    "default-nameserver": [
+      "https://223.5.5.5/dns-query"
+    ],
+    "proxy-server-nameserver": [
+      "https://223.5.5.5/dns-query#DIRECT"
+    ],
+    "direct-nameserver": [
+      "https://223.5.5.5/dns-query#DIRECT",
+      "https://1.12.12.12/dns-query#DIRECT"
+    ],
+    "direct-nameserver-follow-policy": true,
+    "nameserver": [
+      "https://1.1.1.1/dns-query#STATIC-SELECT",
+      "https://8.8.8.8/dns-query#STATIC-SELECT"
+    ],
+    "nameserver-policy": {
+      "rule-set:Custom Direct": [
+        "https://223.5.5.5/dns-query#DIRECT",
+        "https://1.12.12.12/dns-query#DIRECT"
+      ],
+      "rule-set:Custom Proxy": [
+        "https://1.1.1.1/dns-query#STATIC-SELECT",
+        "https://8.8.8.8/dns-query#STATIC-SELECT"
+      ],
+      "rule-set:Overseas Exceptions,IQ International,WeTV": [
+        "https://1.1.1.1/dns-query#STATIC-SELECT",
+        "https://8.8.8.8/dns-query#STATIC-SELECT"
+      ],
+      "rule-set:Domestic Media Supplements,Bilibili,IQIYI,Tencent Video,Youku,Mango TV,CCTV,Douyin,Kuaishou,Douyu,Huya,Netease Music,Kugou Kuwo": [
+        "https://223.5.5.5/dns-query#DIRECT",
+        "https://1.12.12.12/dns-query#DIRECT"
+      ],
+      "rule-set:Netflix,Disney,YouTube,Telegram,Discord,AI Services,Overseas": [
+        "https://1.1.1.1/dns-query#STATIC-SELECT",
+        "https://8.8.8.8/dns-query#STATIC-SELECT"
+      ],
+      "rule-set:China Domains": [
+        "https://223.5.5.5/dns-query#DIRECT",
+        "https://1.12.12.12/dns-query#DIRECT"
+      ],
+      "+.cn": [
+        "https://223.5.5.5/dns-query#DIRECT",
+        "https://1.12.12.12/dns-query#DIRECT"
+      ]
+    },
+    "fake-ip-filter": [
+      "localhost",
+      "*.localhost",
+      "*.lan",
+      "*.local",
+      "*.localdomain",
+      "*.home.arpa",
+      "*.invalid",
+      "+.pool.ntp.org",
+      "time.*.com",
+      "ntp.*.com",
+      "+.music.163.com",
+      "+.music.126.net",
+      "+.y.qq.com",
+      "+.qqmusic.qq.com",
+      "+.kugou.com",
+      "+.kuwo.cn"
+    ]
+  },
+  "profile": {
+    "store-selected": true,
+    "store-fake-ip": true
+  }
+}

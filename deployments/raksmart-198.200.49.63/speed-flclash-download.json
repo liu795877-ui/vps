@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-09T15:29:14+08:00",
+  "path": "Active FlClash",
+  "direction": "download",
+  "parallel_streams": 1,
+  "requested_bytes_per_stream": 2000000,
+  "checks": [
+    {
+      "sample": 1,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 1014464,
+          "size_upload": 0,
+          "time_total": 35.010073,
+          "time_starttransfer": 6.03233,
+          "exit_code": 28,
+          "error": "curl: (28) Operation timed out after 35009 milliseconds with 1014464 out of 2000000 bytes received",
+          "success": false
+        }
+      ],
+      "actual_bytes": 1014464,
+      "wall_seconds": 35.078,
+      "mbps_including_startup": 0.231,
+      "MB_per_second": 0.029,
+      "success": false
+    }
+  ],
+  "exit_ip": "198.200.49.63",
+  "identity_exit_code": 0,
+  "identity_error": "",
+  "exit_matches_vps": true
+}

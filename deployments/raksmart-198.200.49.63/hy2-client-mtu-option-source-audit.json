@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "read_only": true,
+  "network_probes": 0,
+  "configuration_changes": 0,
+  "source_versions": {
+    "mihomo": "v1.19.31",
+    "sing_quic": "1c242664697a441b01cfaf67bdbb7bb0d532745e",
+    "quic_go": "2548683b76f4",
+    "official_hysteria_server": "app/v2.13.0"
+  },
+  "disable_mtu_discovery": {
+    "mihomo_hysteria2_yaml_option_supported": false,
+    "facts": [
+      "Mihomo Hysteria2Option has no disable-mtu-discovery or disable-path-mtu-discovery field.",
+      "Mihomo constructs a quic.Config with only the four receive-window fields.",
+      "sing-quic NewClient sets DisablePathMTUDiscovery from operating system, overriding any incoming value. On Windows the resulting value is false.",
+      "QUIC PMTU discovery controls packets sent by the endpoint containing that configuration. A client-only change would not directly lower the server's download packet size. ACK-path effects may exist but would need evidence."
+    ],
+    "sources": [
+      "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/outbound/hysteria2.go#L39",
+      "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/outbound/hysteria2.go#L201",
+      "https://github.com/MetaCubeX/sing-quic/blob/1c242664697a441b01cfaf67bdbb7bb0d532745e/hysteria2/client.go#L87",
+      "https://github.com/MetaCubeX/quic-go/blob/2548683b76f4/connection.go#L1001",
+      "https://github.com/MetaCubeX/quic-go/blob/2548683b76f4/connection.go#L2880"
+    ]
+  },
+  "udp_mtu": {
+    "supported": true,
+    "default": 1197,
+    "scope": "Proxied application UDP datagram fragmentation in HY2 udpPacketConn. Fast HTTPS/TCP uses DialConn QUIC streams and does not use this option.",
+    "sources": [
+      "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/adapter/outbound/hysteria2.go#L195",
+      "https://github.com/MetaCubeX/sing-quic/blob/1c242664697a441b01cfaf67bdbb7bb0d532745e/hysteria2/client.go#L581",
+      "https://github.com/MetaCubeX/sing-quic/blob/1c242664697a441b01cfaf67bdbb7bb0d532745e/hysteria2/client.go#L608",
+      "https://github.com/MetaCubeX/sing-quic/blob/1c242664697a441b01cfaf67bdbb7bb0d532745e/hysteria2/packet.go#L87"
+    ]
+  },
+  "bandwidth_negotiation": {
+    "current_server_ignore_client_bandwidth": true,
+    "source_confirmed_behavior": "Official server ignores requested client RX bandwidth and uses its configured congestion controller when IgnoreClientBandwidth is true. Merely adding client down/up fields does not force server download Brutal.",
+    "source": "https://github.com/apernet/hysteria/blob/app/v2.13.0/core/server/server.go#L184"
+  },
+  "decision": "Do not run a guessed Mihomo client disable-MTU-discovery trial or change udp-mtu for the Fast TCP throughput issue. Current cross-protocol and fresh-client measurements motivate examining the client-to-VPS path; they do not by themselves identify ISP throttling or a specific route fault."
+}

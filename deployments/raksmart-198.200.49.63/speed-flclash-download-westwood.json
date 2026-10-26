@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-10-09T15:54:46+08:00",
+  "path": "Active FlClash",
+  "direction": "download",
+  "parallel_streams": 1,
+  "requested_bytes_per_stream": 1000000,
+  "checks": [
+    {
+      "sample": 1,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 883392,
+          "size_upload": 0,
+          "time_total": 25.005067,
+          "time_starttransfer": 2.713575,
+          "time_appconnect": 0.773149,
+          "exit_code": 28,
+          "error": "curl: (28) Operation timed out after 25004 milliseconds with 883392 out of 1000000 bytes received",
+          "success": false
+        }
+      ],
+      "actual_bytes": 883392,
+      "wall_seconds": 25.066,
+      "mbps_including_startup": 0.282,
+      "MB_per_second": 0.035,
+      "success": false
+    },
+    {
+      "sample": 2,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 699299,
+          "size_upload": 0,
+          "time_total": 25.002294,
+          "time_starttransfer": 0.900307,
+          "time_appconnect": 0.651716,
+          "exit_code": 28,
+          "error": "curl: (28) Operation timed out after 25001 milliseconds with 699299 out of 1000000 bytes received",
+          "success": false
+        }
+      ],
+      "actual_bytes": 699299,
+      "wall_seconds": 25.047,
+      "mbps_including_startup": 0.223,
+      "MB_per_second": 0.028,
+      "success": false
+    }
+  ],
+  "identity_attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0,
+      "exit_ip": "198.200.49.63",
+      "error": "",
+      "matches_vps": true
+    }
+  ],
+  "exit_ip": "198.200.49.63",
+  "identity_exit_code": 0,
+  "identity_error": "",
+  "exit_matches_vps": true
+}

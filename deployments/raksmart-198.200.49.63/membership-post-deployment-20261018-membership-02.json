@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "source_files_verified": 43,
+  "accounts_checked": 5,
+  "existing_members_without_deadlines": 4,
+  "protected_bytes_preserved": true,
+  "proxy_epochs_preserved": true,
+  "network_policy_preserved": true,
+  "traffic_cumulative_non_decreasing": true,
+  "panel_active": true,
+  "service_control_performed": false,
+  "account_login_performed": false,
+  "production_mutated": false,
+  "release": "console-optimization-release-20261018-membership-02",
+  "checked_at": "2026-10-18T09:03:55.334444+00:00",
+  "archive_sha256": "f16700616e25fe632e4f9c7f4dbc184576a1d3384572033be5ef38a29b637f66",
+  "remote_checkpoint": "/root/vps-console-deploy-en1pq5f1"
+}

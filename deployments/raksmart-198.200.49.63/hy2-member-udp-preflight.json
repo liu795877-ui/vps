@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-10-10T11:05:15.699766+00:00",
+  "server": "198.200.49.63",
+  "physical_wlan": true,
+  "configuration_mutations": 0,
+  "checks": [
+    {
+      "port": 1443,
+      "samples": [
+        {
+          "bytes": 128,
+          "success": true,
+          "rtt_ms": 155.66
+        },
+        {
+          "bytes": 1200,
+          "success": true,
+          "rtt_ms": 155.09
+        },
+        {
+          "bytes": 1400,
+          "success": true,
+          "rtt_ms": 156.94
+        },
+        {
+          "bytes": 128,
+          "success": true,
+          "rtt_ms": 155.16
+        },
+        {
+          "bytes": 1200,
+          "success": true,
+          "rtt_ms": 156.62
+        },
+        {
+          "bytes": 1400,
+          "success": true,
+          "rtt_ms": 154.76
+        }
+      ],
+      "reachable": true
+    },
+    {
+      "port": 2443,
+      "samples": [
+        {
+          "bytes": 128,
+          "success": true,
+          "rtt_ms": 159.07
+        },
+        {
+          "bytes": 1200,
+          "success": true,
+          "rtt_ms": 159.62
+        },
+        {
+          "bytes": 1400,
+          "success": true,
+          "rtt_ms": 160.11
+        },
+        {
+          "bytes": 128,
+          "success": true,
+          "rtt_ms": 158.96
+        },
+        {
+          "bytes": 1200,
+          "success": true,
+          "rtt_ms": 159.39
+        },
+        {
+          "bytes": 1400,
+          "success": true,
+          "rtt_ms": 159.52
+        }
+      ],
+      "reachable": true
+    }
+  ],
+  "completion": {
+    "counts": {
+      "1443": 6,
+      "2443": 6
+    },
+    "listeners_closed": true
+  },
+  "remote_exit_code": 0,
+  "all_member_ports_reachable": true
+}

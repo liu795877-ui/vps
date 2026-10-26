@@ -1,0 +1,111 @@
+{
+  "front_end_source": "https://cn.raksmart.com/static/js/global.js?v=1.0.0",
+  "renderer_reads_w_name": false,
+  "renderer_snippet": "function updateNetworkInfo(region, type) {\n            const nodeInfo = newNetwork[region][type][0];\n            currentRegion  = region;\n            currentType    = type;\n            currentIp4     = nodeInfo.w_ip   || '';\n            currentIp6     = nodeInfo.w_ipv6 || '';\n\n            checkpointEl.textContent = i18n.checkpointLabel + getRegionLabel(region) + ' - ' + getTypeLabel(type);\n            document.getElementById('mtr-ip4').textContent = currentIp4 || '-';\n            document.getElementById('mtr-ip6').textContent = currentIp6 || '-';\n\n            downloadSelect.innerHTML = '';\n            function addOpt(label, url) {\n                if (!url) return;\n                const opt = document.createElement('option');\n                opt.value = url;\n                opt.textContent = label;\n                downloadSelect.appendChild(opt);\n            }\n            addOpt((nodeInfo.w_speed   || '') + ' - IPv4', nodeInfo.w_url);\n            addOpt((nodeInfo.w_speed_2 || '') + ' - IPv6', nodeInfo.w_url_1000m);\n\n            ",
+  "product_options": [
+    {
+      "id": 373843,
+      "name": "International_ISP^Global BGP 5G 10T",
+      "rawName": "2,5120,10240,all|International_ISP^Global BGP 5G 10T",
+      "required": "2,5120,10240,all",
+      "hidden": 0,
+      "product_name": "SV-VPS/Cloud-VM(Shared)",
+      "product_whmcs_id": "1889",
+      "path": "root/0/activity/price_list/metadata/configoption_price/4"
+    },
+    {
+      "id": 376151,
+      "name": "All_ISP_VIP^China Optimized VIP 5G 3T",
+      "rawName": "2,5120,3072,all|All_ISP_VIP^China Optimized VIP 5G 3T",
+      "required": "2,5120,3072,all",
+      "hidden": 0,
+      "product_name": "SV-VPS/Cloud-VM(Shared)",
+      "product_whmcs_id": "1889",
+      "path": "root/0/activity/price_list/metadata/configoption_price/5"
+    },
+    {
+      "id": 376152,
+      "name": "All_ISP_VIP^China Optimized VIP 5G 5T",
+      "rawName": "2,5120,5120,all|All_ISP_VIP^China Optimized VIP 5G 5T",
+      "required": "2,5120,5120,all",
+      "hidden": 0,
+      "product_name": "SV-VPS/Cloud-VM(Shared)",
+      "product_whmcs_id": "1889",
+      "path": "root/0/activity/price_list/metadata/configoption_price/6"
+    },
+    {
+      "id": 386738,
+      "name": "CN2_Only^Enterprise CN2 G 1T",
+      "rawName": "2,1024,1024,all|CN2_Only^Enterprise CN2 G 1T",
+      "required": "2,1024,1024,all",
+      "hidden": 0,
+      "product_name": "SV-VPS/Cloud-VM(Shared)",
+      "product_whmcs_id": "1889",
+      "path": "root/0/activity/price_list/metadata/configoption_price/7"
+    },
+    {
+      "id": 346148,
+      "name": "大陆优化VIP",
+      "rawName": "All_ISP_VIP|大陆优化VIP|1-500,0.36^501-5000,0.8",
+      "required": "All_ISP_VIP",
+      "hidden": 0,
+      "product_name": "SV-VPS/Cloud-VM(Shared)",
+      "product_whmcs_id": "1889",
+      "path": "root/0/activity/price_list/metadata/configoption_price/10"
+    },
+    {
+      "id": 346151,
+      "name": "精品CN2",
+      "rawName": "CN2_Only|精品CN2|1-100,2.5^101-1000,4",
+      "required": "CN2_Only",
+      "hidden": 0,
+      "product_name": "SV-VPS/Cloud-VM(Shared)",
+      "product_whmcs_id": "1889",
+      "path": "root/0/activity/price_list/metadata/configoption_price/11"
+    },
+    {
+      "id": 346152,
+      "name": "国际BGP",
+      "rawName": "International_ISP|国际BGP|1-5000,0.05",
+      "required": "International_ISP",
+      "hidden": 0,
+      "product_name": "SV-VPS/Cloud-VM(Shared)",
+      "product_whmcs_id": "1889",
+      "path": "root/0/activity/price_list/metadata/configoption_price/12"
+    },
+    {
+      "id": 346150,
+      "name": "大陆优化CN2",
+      "rawName": "CN2_CMI_CU|大陆优化CN2|硅谷|1-5001",
+      "required": "CN2_CMI_CU",
+      "hidden": 1,
+      "product_name": "SV-VPS/Cloud-VM(Shared)",
+      "product_whmcs_id": "1889",
+      "path": "root/0/activity/price_list/metadata/configoption_price/14"
+    }
+  ],
+  "product_doc_source": "https://docs.raksmart.com/raksmart/zh/vps/%E4%BA%A7%E5%93%81%E4%BB%8B%E7%BB%8D/%E4%BA%A7%E5%93%81%E7%B1%BB%E5%9E%8B.md",
+  "product_doc_cn2_excerpt": "- 精品 CN2：<br>采用 CN2 等优质 3C 直连线路，中国流量首选三大运营商二代网络，延迟最低、抖动最小，高峰期依然保持高稳定性与连通质量。适用于金融、电商、游戏、实时交互等高要求业务；",
+  "vps_product_explicit_gia_evidence": null,
+  "sv_cn2_test_node": {
+    "id": 129,
+    "w_region": "硅谷",
+    "w_type": "精品CN2",
+    "w_speed": "200M",
+    "w_name": "deprecated",
+    "w_operator": "7,9,12,19,20",
+    "w_ip": "104.233.147.13",
+    "w_url": "https://SV27.raksmart.com/200mb.test",
+    "addtime": "2026-03-30 14:44",
+    "status": 1,
+    "site": 1,
+    "w_region_image": "/static/images/flag/usa.png",
+    "w_ipv6": "",
+    "w_url_1000m": "",
+    "w_speed_2": "",
+    "w_operator_name": "CMI、CU、CN2 GIA、Cogent、Telia",
+    "source": "https://cn.raksmart.com/ddos/global.html?region=SV",
+    "scope": "官网全球网络机房/线路测试点；尚未证实对应低价活动VPS同一线路"
+  },
+  "scope_conclusion": "活动 VPS 的选项内部代码 CN2_Only 对应中文精品CN2，All_ISP_VIP 对应大陆优化VIP，International_ISP 对应国际BGP；全球网络页面测试点有相同中文机房/线路类别，可用于同类别比较。测试节点运营商列表含 CN2 GIA，但未发现低价 VPS 本身保证 CN2 GIA 或三网均 GIA 的官方文字。"
+}

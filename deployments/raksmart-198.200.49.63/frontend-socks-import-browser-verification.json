@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-09T13:19:12.103Z",
+  "deployment_ip": "198.200.49.63",
+  "success": true,
+  "checks": [
+    "Trusted HTTPS login through the physical WLAN",
+    "All three public assets match the reviewed frozen release and use no-store",
+    "Local synthetic authenticated URI decodes fields and optional name, clears the URI, then cancel clears credentials",
+    "390 px mobile dialog fits; synthetic unauthenticated paste fills locally and retains an existing custom name",
+    "Complete public state is unchanged; no saves, switches, configuration POSTs or JavaScript exceptions; logout succeeds"
+  ],
+  "state": {
+    "active_target": "server",
+    "exit_count": 1,
+    "routing_mode": "smart"
+  },
+  "complete_public_state_unchanged": true,
+  "configuration_mutations_attempted": 0,
+  "synthetic_exits_saved": 0,
+  "exit_switches": 0
+}

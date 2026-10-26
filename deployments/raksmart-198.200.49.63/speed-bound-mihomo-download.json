@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-09T15:28:05+08:00",
+  "path": "Temporary Mihomo bound to physical WLAN",
+  "direction": "download",
+  "parallel_streams": 1,
+  "requested_bytes_per_stream": 2000000,
+  "checks": [],
+  "exit_ip": "",
+  "exit_matches_vps": false
+}

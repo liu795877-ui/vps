@@ -1,0 +1,87 @@
+{
+  "python": "3.6.8",
+  "tools": {
+    "openssl": "/usr/bin/openssl",
+    "tc": "/usr/sbin/tc",
+    "iptables": "/usr/sbin/iptables",
+    "ip": "/usr/sbin/ip",
+    "ss": "/usr/sbin/ss"
+  },
+  "xray_version": {
+    "rc": 0,
+    "text": "Xray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)\nA unified platform for anti-censorship.\n"
+  },
+  "statsquery_help": {
+    "rc": 2,
+    "text": "usage: xray api statsquery [--server=127.0.0.1:8080] [-pattern '']\nRun 'xray help api statsquery' for details.\n"
+  },
+  "stats_help": {
+    "rc": 2,
+    "text": "usage: xray api stats [--server=127.0.0.1:8080] [-name '']\nRun 'xray help api stats' for details.\n"
+  },
+  "online_help": {
+    "rc": 2,
+    "text": "usage: xray api statsonline [--server=127.0.0.1:8080] [-email '']\nRun 'xray help api statsonline' for details.\n"
+  },
+  "qdisc": {
+    "rc": 0,
+    "text": "qdisc noqueue 0: dev lo root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \nqdisc pfifo_fast 0: dev eth0 root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 7204464403 bytes 7979239 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+  },
+  "route": {
+    "rc": 255,
+    "text": "Option \"-json\" is unknown, try \"ip -help\".\n"
+  },
+  "cryptography_error": "ModuleNotFoundError",
+  "xray.service": [
+    "User=xray",
+    "CapabilityBoundingSet=CAP_NET_BIND_SERVICE",
+    "ProtectSystem=full"
+  ],
+  "vps-panel.service": [
+    "User=root",
+    "ProtectSystem=full",
+    "ReadWriteDirectories=/var/lib/vps-panel /usr/local/etc/xray",
+    "CapabilityBoundingSet=CAP_CHOWN CAP_DAC_OVERRIDE CAP_FOWNER CAP_NET_BIND_SERVICE"
+  ],
+  "configs": [
+    {
+      "inbounds": [
+        {
+          "listen": "0.0.0.0",
+          "port": 443,
+          "tag": "reality-in",
+          "clients": 2
+        }
+      ],
+      "api": null,
+      "policy": null,
+      "stats": null
+    },
+    {
+      "inbounds": [
+        {
+          "listen": "0.0.0.0",
+          "port": 1443,
+          "tag": "reality-in",
+          "clients": 2
+        }
+      ],
+      "api": null,
+      "policy": null,
+      "stats": null
+    },
+    {
+      "inbounds": [
+        {
+          "listen": "0.0.0.0",
+          "port": 2443,
+          "tag": "reality-in",
+          "clients": 2
+        }
+      ],
+      "api": null,
+      "policy": null,
+      "stats": null
+    }
+  ]
+}

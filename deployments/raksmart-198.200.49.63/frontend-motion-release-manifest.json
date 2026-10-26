@@ -1,0 +1,15 @@
+{
+  "deployment_ip": "198.200.49.63",
+  "files": [
+    "panel/web/style.css",
+    "panel/web/app.js",
+    "panel/web/index.html"
+  ],
+  "prepared_at": "2026-10-09T12:54:26.019984+00:00",
+  "archive_sha256": "a0d21e4ca3400f6c595de9f75cf9b92bcb3df03c8e5ebc1833c5774afd5910c1",
+  "source_sha256": {
+    "panel/web/style.css": "eeefb23ca001de7be18a4700611d226d51e6622ff6891ae48cff8b602223e137",
+    "panel/web/app.js": "a8903c69f03db2961f38d9a9681bdb6db9d0bcc964d3175e942a42277d24a28d",
+    "panel/web/index.html": "d715e9ca96337341a4130e6e4f6132d44d2fa9f9563422f200678c932081dde3"
+  }
+}

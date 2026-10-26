@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "deployment_ip": "198.200.49.63",
+  "updated_files": [
+    "panel/web/style.css",
+    "panel/web/app.js",
+    "panel/web/index.html"
+  ],
+  "backup": "/root/raksmart-proxy-deploy-20261009/frontend-motion-20261009T125755-6b1f5a/before",
+  "services_restarted": false,
+  "phase": "complete",
+  "complete_state_unchanged": true,
+  "all_protected_hashes_unchanged": true,
+  "protected_configuration_count": 10,
+  "four_service_processes_unchanged": true,
+  "worker_sources_match": true,
+  "source_sha256": {
+    "panel/web/style.css": "eeefb23ca001de7be18a4700611d226d51e6622ff6891ae48cff8b602223e137",
+    "panel/web/app.js": "a8903c69f03db2961f38d9a9681bdb6db9d0bcc964d3175e942a42277d24a28d",
+    "panel/web/index.html": "d715e9ca96337341a4130e6e4f6132d44d2fa9f9563422f200678c932081dde3"
+  },
+  "trusted_public_sources_match": true,
+  "accepted_at": "2026-10-09T12:58:14.085982+00:00"
+}

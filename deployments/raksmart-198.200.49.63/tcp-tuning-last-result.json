@@ -1,0 +1,12 @@
+{
+  "algorithm": null,
+  "allowed_policy": "cubic reno",
+  "config_sha256": "4784daf5743ea4a51aed1cb37774265ddd81e26983b71f4473ca7b7908236eec",
+  "mode": "restore",
+  "original_restored": true,
+  "persistent": false,
+  "success": true,
+  "tcp_default": "cubic",
+  "xray_active_and_443_listening": true,
+  "remote_exit_code": 0
+}

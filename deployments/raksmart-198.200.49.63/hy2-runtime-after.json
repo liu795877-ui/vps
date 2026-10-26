@@ -1,0 +1,1403 @@
+{
+  "success": true,
+  "duration_seconds": 150.478,
+  "initial_udp": {
+    "InDatagrams": 1580219,
+    "NoPorts": 96,
+    "InErrors": 2233,
+    "OutDatagrams": 1750418,
+    "RcvbufErrors": 2233,
+    "SndbufErrors": 0,
+    "InCsumErrors": 0
+  },
+  "final_udp": {
+    "InDatagrams": 1688248,
+    "NoPorts": 96,
+    "InErrors": 2233,
+    "OutDatagrams": 1873751,
+    "RcvbufErrors": 2233,
+    "SndbufErrors": 0,
+    "InCsumErrors": 0
+  },
+  "udp_total_delta": {
+    "InDatagrams": 108029,
+    "NoPorts": 0,
+    "InErrors": 0,
+    "OutDatagrams": 123333,
+    "RcvbufErrors": 0,
+    "SndbufErrors": 0,
+    "InCsumErrors": 0
+  },
+  "samples": [
+    {
+      "at_utc": "2026-10-10T12:20:20Z",
+      "elapsed_seconds": 2.004,
+      "cpu_percent": {
+        "busy": 2.76,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 5,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 5,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15138333300 bytes 17035254 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:22Z",
+      "elapsed_seconds": 4.012,
+      "cpu_percent": {
+        "busy": 2.76,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 71,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 107,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:24Z",
+      "elapsed_seconds": 6.017,
+      "cpu_percent": {
+        "busy": 6.58,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 431,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 556,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:27Z",
+      "elapsed_seconds": 8.023,
+      "cpu_percent": {
+        "busy": 8.77,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 360,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 393,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:29Z",
+      "elapsed_seconds": 10.03,
+      "cpu_percent": {
+        "busy": 0.25,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 4,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 4,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15141143443 bytes 17040312 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:31Z",
+      "elapsed_seconds": 12.038,
+      "cpu_percent": {
+        "busy": 5.05,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 527,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 486,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:33Z",
+      "elapsed_seconds": 14.044,
+      "cpu_percent": {
+        "busy": 4.03,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 369,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 404,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:35Z",
+      "elapsed_seconds": 16.05,
+      "cpu_percent": {
+        "busy": 2.53,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 101,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 186,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:37Z",
+      "elapsed_seconds": 18.056,
+      "cpu_percent": {
+        "busy": 7.05,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 123,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 149,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15146336080 bytes 17048011 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:39Z",
+      "elapsed_seconds": 20.062,
+      "cpu_percent": {
+        "busy": 2.52,
+        "steal": 0.25
+      },
+      "udp_delta": {
+        "InDatagrams": 71,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 210,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:41Z",
+      "elapsed_seconds": 22.066,
+      "cpu_percent": {
+        "busy": 2.27,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 103,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 177,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:43Z",
+      "elapsed_seconds": 24.072,
+      "cpu_percent": {
+        "busy": 1.5,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 20,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 30,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:45Z",
+      "elapsed_seconds": 26.078,
+      "cpu_percent": {
+        "busy": 1.26,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 19,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 18,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15149741442 bytes 17052508 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:47Z",
+      "elapsed_seconds": 28.087,
+      "cpu_percent": {
+        "busy": 4.25,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 12,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 12,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:49Z",
+      "elapsed_seconds": 30.092,
+      "cpu_percent": {
+        "busy": 1.0,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 12,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 14,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:51Z",
+      "elapsed_seconds": 32.098,
+      "cpu_percent": {
+        "busy": 1.78,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 72,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 253,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:53Z",
+      "elapsed_seconds": 34.105,
+      "cpu_percent": {
+        "busy": 10.74,
+        "steal": 0.26
+      },
+      "udp_delta": {
+        "InDatagrams": 636,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 8708,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15165885381 bytes 17066655 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:55Z",
+      "elapsed_seconds": 36.113,
+      "cpu_percent": {
+        "busy": 8.88,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 550,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 10186,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:57Z",
+      "elapsed_seconds": 38.119,
+      "cpu_percent": {
+        "busy": 12.24,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 334,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 12303,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:20:59Z",
+      "elapsed_seconds": 40.125,
+      "cpu_percent": {
+        "busy": 6.82,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 512,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 8563,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:01Z",
+      "elapsed_seconds": 42.13,
+      "cpu_percent": {
+        "busy": 9.9,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 471,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 13711,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15233349423 bytes 17117689 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:03Z",
+      "elapsed_seconds": 44.138,
+      "cpu_percent": {
+        "busy": 7.83,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 330,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 8893,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:05Z",
+      "elapsed_seconds": 46.145,
+      "cpu_percent": {
+        "busy": 8.44,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 492,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 11816,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:07Z",
+      "elapsed_seconds": 48.151,
+      "cpu_percent": {
+        "busy": 11.45,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 297,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 9297,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:09Z",
+      "elapsed_seconds": 50.159,
+      "cpu_percent": {
+        "busy": 7.85,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 265,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 9736,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15294700588 bytes 17165495 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:11Z",
+      "elapsed_seconds": 52.165,
+      "cpu_percent": {
+        "busy": 8.61,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 567,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 8201,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:13Z",
+      "elapsed_seconds": 54.171,
+      "cpu_percent": {
+        "busy": 6.35,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 331,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 6304,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:15Z",
+      "elapsed_seconds": 56.177,
+      "cpu_percent": {
+        "busy": 1.01,
+        "steal": 0.25
+      },
+      "udp_delta": {
+        "InDatagrams": 18,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 16,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:17Z",
+      "elapsed_seconds": 58.182,
+      "cpu_percent": {
+        "busy": 4.52,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 12,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 12,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15315902371 bytes 17182568 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:19Z",
+      "elapsed_seconds": 60.188,
+      "cpu_percent": {
+        "busy": 4.07,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 530,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 230,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:21Z",
+      "elapsed_seconds": 62.194,
+      "cpu_percent": {
+        "busy": 13.54,
+        "steal": 0.26
+      },
+      "udp_delta": {
+        "InDatagrams": 11829,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 1356,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:23Z",
+      "elapsed_seconds": 64.2,
+      "cpu_percent": {
+        "busy": 9.51,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 9558,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 1048,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:25Z",
+      "elapsed_seconds": 66.204,
+      "cpu_percent": {
+        "busy": 14.55,
+        "steal": 0.26
+      },
+      "udp_delta": {
+        "InDatagrams": 10963,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 1491,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15367883395 bytes 17227508 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:27Z",
+      "elapsed_seconds": 68.212,
+      "cpu_percent": {
+        "busy": 18.49,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 11041,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 1487,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:29Z",
+      "elapsed_seconds": 70.219,
+      "cpu_percent": {
+        "busy": 15.03,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 12512,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 1531,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:31Z",
+      "elapsed_seconds": 72.225,
+      "cpu_percent": {
+        "busy": 13.14,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 12397,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 1341,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:33Z",
+      "elapsed_seconds": 74.229,
+      "cpu_percent": {
+        "busy": 11.57,
+        "steal": 0.26
+      },
+      "udp_delta": {
+        "InDatagrams": 10288,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 1092,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15436048737 bytes 17284376 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:35Z",
+      "elapsed_seconds": 76.237,
+      "cpu_percent": {
+        "busy": 12.34,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 12375,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 1203,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:37Z",
+      "elapsed_seconds": 78.243,
+      "cpu_percent": {
+        "busy": 12.53,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 8361,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 748,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:39Z",
+      "elapsed_seconds": 80.249,
+      "cpu_percent": {
+        "busy": 1.5,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 33,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 30,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:41Z",
+      "elapsed_seconds": 82.255,
+      "cpu_percent": {
+        "busy": 0.75,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 14,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 14,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15467050447 bytes 17308901 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:43Z",
+      "elapsed_seconds": 84.263,
+      "cpu_percent": {
+        "busy": 1.25,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 14,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 14,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:45Z",
+      "elapsed_seconds": 86.267,
+      "cpu_percent": {
+        "busy": 0.51,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 24,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 20,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:47Z",
+      "elapsed_seconds": 88.273,
+      "cpu_percent": {
+        "busy": 5.5,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 6,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 6,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:49Z",
+      "elapsed_seconds": 90.28,
+      "cpu_percent": {
+        "busy": 3.27,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 48,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 23,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15469563096 bytes 17311932 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:51Z",
+      "elapsed_seconds": 92.288,
+      "cpu_percent": {
+        "busy": 0.25,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:53Z",
+      "elapsed_seconds": 94.294,
+      "cpu_percent": {
+        "busy": 3.79,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 312,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 327,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:55Z",
+      "elapsed_seconds": 96.3,
+      "cpu_percent": {
+        "busy": 1.51,
+        "steal": 0.25
+      },
+      "udp_delta": {
+        "InDatagrams": 126,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 113,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:57Z",
+      "elapsed_seconds": 98.306,
+      "cpu_percent": {
+        "busy": 4.53,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 76,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 131,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15470262709 bytes 17313290 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:21:59Z",
+      "elapsed_seconds": 100.314,
+      "cpu_percent": {
+        "busy": 1.0,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 16,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 11,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:01Z",
+      "elapsed_seconds": 102.32,
+      "cpu_percent": {
+        "busy": 0.25,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 4,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 4,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:03Z",
+      "elapsed_seconds": 104.326,
+      "cpu_percent": {
+        "busy": 0.75,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 4,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 4,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:05Z",
+      "elapsed_seconds": 106.332,
+      "cpu_percent": {
+        "busy": 0.0,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 4,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 4,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15471491222 bytes 17315362 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:07Z",
+      "elapsed_seconds": 108.338,
+      "cpu_percent": {
+        "busy": 2.01,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 6,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 6,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:09Z",
+      "elapsed_seconds": 110.345,
+      "cpu_percent": {
+        "busy": 6.3,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 166,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 206,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:11Z",
+      "elapsed_seconds": 112.351,
+      "cpu_percent": {
+        "busy": 2.0,
+        "steal": 0.25
+      },
+      "udp_delta": {
+        "InDatagrams": 53,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 11,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:13Z",
+      "elapsed_seconds": 114.357,
+      "cpu_percent": {
+        "busy": 1.75,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 44,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 19,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15471849838 bytes 17316284 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:15Z",
+      "elapsed_seconds": 116.365,
+      "cpu_percent": {
+        "busy": 0.5,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:17Z",
+      "elapsed_seconds": 118.371,
+      "cpu_percent": {
+        "busy": 0.5,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:19Z",
+      "elapsed_seconds": 120.377,
+      "cpu_percent": {
+        "busy": 4.0,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 0,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 0,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:21Z",
+      "elapsed_seconds": 122.383,
+      "cpu_percent": {
+        "busy": 0.5,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 0,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 0,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15473010038 bytes 17317933 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:23Z",
+      "elapsed_seconds": 124.391,
+      "cpu_percent": {
+        "busy": 0.25,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:25Z",
+      "elapsed_seconds": 126.397,
+      "cpu_percent": {
+        "busy": 0.75,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:27Z",
+      "elapsed_seconds": 128.403,
+      "cpu_percent": {
+        "busy": 0.5,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:29Z",
+      "elapsed_seconds": 130.409,
+      "cpu_percent": {
+        "busy": 4.98,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 0,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 0,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15476057176 bytes 17322330 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:31Z",
+      "elapsed_seconds": 132.417,
+      "cpu_percent": {
+        "busy": 0.75,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:33Z",
+      "elapsed_seconds": 134.423,
+      "cpu_percent": {
+        "busy": 0.25,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:35Z",
+      "elapsed_seconds": 136.429,
+      "cpu_percent": {
+        "busy": 0.75,
+        "steal": 0.25
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:37Z",
+      "elapsed_seconds": 138.435,
+      "cpu_percent": {
+        "busy": 5.26,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 12,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 17,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15478396767 bytes 17325802 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:39Z",
+      "elapsed_seconds": 140.442,
+      "cpu_percent": {
+        "busy": 13.35,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 24,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 17,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:41Z",
+      "elapsed_seconds": 142.448,
+      "cpu_percent": {
+        "busy": 9.25,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 4,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 3,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:43Z",
+      "elapsed_seconds": 144.454,
+      "cpu_percent": {
+        "busy": 0.75,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 17,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 23,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:45Z",
+      "elapsed_seconds": 146.461,
+      "cpu_percent": {
+        "busy": 8.77,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 7,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 8,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n",
+      "qdisc": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 15479568442 bytes 17327475 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0 \n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:47Z",
+      "elapsed_seconds": 148.468,
+      "cpu_percent": {
+        "busy": 7.27,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 2,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 2,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f0,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    },
+    {
+      "at_utc": "2026-10-10T12:22:49Z",
+      "elapsed_seconds": 150.475,
+      "cpu_percent": {
+        "busy": 13.07,
+        "steal": 0.0
+      },
+      "udp_delta": {
+        "InDatagrams": 26,
+        "NoPorts": 0,
+        "InErrors": 0,
+        "OutDatagrams": 25,
+        "RcvbufErrors": 0,
+        "SndbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "sockets": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\n"
+    }
+  ],
+  "scope": "Read-only 2-second server counters during the corresponding test; global UDP counters include all users and services."
+}

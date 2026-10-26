@@ -1,0 +1,37 @@
+
+Pinging 173.249.214.11 with 32 bytes of data:
+Reply from 173.249.214.11: bytes=32 time=254ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=252ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=258ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=256ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=273ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=259ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=253ms TTL=48
+Request timed out.
+Request timed out.
+Reply from 173.249.214.11: bytes=32 time=252ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=252ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=400ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=252ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=252ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=271ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=254ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=253ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=254ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=253ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=254ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=252ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=261ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=253ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=252ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=253ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=254ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=253ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=253ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=253ms TTL=48
+Reply from 173.249.214.11: bytes=32 time=254ms TTL=48
+
+Ping statistics for 173.249.214.11:
+    Packets: Sent = 30, Received = 28, Lost = 2 (6% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 252ms, Maximum = 400ms, Average = 260ms

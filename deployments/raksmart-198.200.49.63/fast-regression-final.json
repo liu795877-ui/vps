@@ -1,0 +1,118 @@
+{
+  "success": true,
+  "completed_at": "2026-10-10T14:07:38.110859+00:00",
+  "server": "198.200.49.63",
+  "scope": "Publish AUTO health repair and refresh/verify current FlClash; preserve and verify existing three-account deployment",
+  "changes": {
+    "health_check": {
+      "expected-status": "204",
+      "interval": 30,
+      "lazy": false,
+      "timeout": 5000,
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    "profiles_refreshed": 3,
+    "only_panel_restarted": true,
+    "transport_restarts": 0,
+    "bbr": "standard",
+    "udp_buffer_ceiling_retained_bytes": 7340032,
+    "active_profile_id_preserved": true,
+    "active_selection": "STATIC-SELECT / AUTO · 网页切换",
+    "active_auto_run": true,
+    "windows_auto_launch": false,
+    "active_profile_sha256": "acbf21f6c6834c8433a90e5294681bbee3b19fc07853beec0292e805330014d2"
+  },
+  "verification": {
+    "real_active_hy2_payload_verified": true,
+    "real_active_fast_download": {
+      "mbps": 66.714,
+      "payload_bytes": 67108864,
+      "elapsed_seconds": 8.0473,
+      "complete_requests": 4,
+      "native_hy2_download_delta": 67241249,
+      "scope": "bounded Fast official HTTP requests; not an unrestricted browser Fast score"
+    },
+    "real_active_upload": {
+      "success": true,
+      "configuration_changes": 0,
+      "method": "one bounded 8MiB Cloudflare upload through active FlClash AUTO; request overhead included",
+      "maximum_upload_bytes": 8388608,
+      "maximum_request_seconds": 12,
+      "status": 200,
+      "curl_exit_code": 0,
+      "actual_upload_bytes": 8388608,
+      "elapsed_seconds": 1.7741,
+      "observed_upload_mbps_including_startup": 37.828,
+      "native_delta": {
+        "hy2": {
+          "up_bytes": 8402535,
+          "down_bytes": 9650
+        },
+        "xray": {
+          "up_bytes": 8419395,
+          "down_bytes": 790544
+        }
+      },
+      "account_settings_preserved": true
+    },
+    "six_public_account_protocol_exits_and_sources_verified": true,
+    "account_settings_limits_credentials_exits_rules_drafts_history_preserved": true,
+    "monthly_totals_non_decreasing": true,
+    "trusted_https_panel_200": true,
+    "test_processes_and_temporary_files_cleaned": true,
+    "frozen_source_matches_workspace_after_newline_normalization": true
+  },
+  "diagnosis": {
+    "server_fixed_5_mbps_limit_found": false,
+    "previous_active_selection": "REALITY · TCP兼容",
+    "old_auto_health_target": "https://api.ipify.org",
+    "manual_delay_target": "https://www.gstatic.com/generate_204",
+    "url_specific_health_state_and_independent_histories_confirmed": true,
+    "1305_vs_169_not_same_target_same_time_comparison": true,
+    "unique_cause_of_historical_200_to_5_2_proven": false
+  },
+  "limits": [
+    "Download64MiB Fast official HTTP traffic and upload8MiB Cloudflare HTTP traffic include request overhead; neither is a browser Fast final score or sustained200Mbps guarantee.",
+    "The previous same-target three-path comparison measured activeTCP2.234Mbps, isolatedHY2 89.862Mbps and isolatedTCP3.971Mbps. Final active measurement used fresh signed CDN targets; it is not a strict same-target before/after.",
+    "First post-refresh Fast frontend discovery timed out. Subsequent gstatic/ipify/Fast probes and bounded download/upload passed; intermittent physical-WAN or first-request delays are not proven eliminated.",
+    "AUTO checks every30seconds with5second timeout. ExistingTCP connections do not migrate. Recovery evidence used one isolated process with the restored server-port configuration reloaded before automatic health checks.",
+    "Current Windows client already refreshed. Other members must refresh their existing full subscription once for this health policy.",
+    "Panel restart invalidates old browser sessions; log in again if prompted."
+  ],
+  "reports": {
+    "publish": "hy2-auto-health-update.json",
+    "recovery": "auto-transport-production.json",
+    "active_client": "fast-regression-active-client-update.json",
+    "active_download": "fast-after-auto-health-active-retry.json",
+    "active_upload": "fast-regression-active-upload.json",
+    "accounts": "fast-regression-final-acceptance.json",
+    "panel": "fast-regression-public-panel.json"
+  },
+  "report_sha256": {
+    "publish": "694bfbae3c463b088538b0ee7d9824764eb0122865bbd1c9186838543302544f",
+    "recovery": "518c33e26e347b679f0f8a460e817775326f5522d38f789aecea332e9a1856b8",
+    "active_client": "27c06a466d72a2a9fa8e2537a132359821acbef9480a20ef0781decb79d733b3",
+    "active_download": "ed83d0309dfb718c5e72ce3a05c46ca75e11fa811dd0e8463fbcd45036be7bab",
+    "active_upload": "a9af027be10a71bed5e2617414d1894313601d2485b1e187c8982722eb8c41a9",
+    "accounts": "e24527517fd2b0db3a94f0dc74b87f61f370379350eb4247f0e4894a027e828d",
+    "panel": "e32021d87481efaf86fbf8297e15dcddc2b3bd9ec00425b5262ddb4a9036db58"
+  },
+  "retained_failure_reports": [
+    "fast-after-auto-health-active.json"
+  ],
+  "additional_evidence": [
+    "fast-regression-retry.json",
+    "fast-regression-active-probes.json",
+    "auto-fallback-health-source-audit.json",
+    "flclash-refresh-source-audit.json"
+  ],
+  "published_source_sha256": {
+    "panel/accelerated_client.py": "cdca32b22fb4f0510ab2f42a952c897906d075d9964c62bbff903eefcb8ceff2",
+    "panel/test_accelerated_client.py": "7f097385a36e9c98f1b553f21937baea5ca39593004e8cb56d2ffd7070213a73"
+  },
+  "workspace_source_sha256": {
+    "panel/accelerated_client.py": "cdcdb85a7c2369ce4d827c4430b11d2d3911e61d3b9dcdd7e73487f1bc8d91f3",
+    "panel/test_accelerated_client.py": "af081a3e5c4bada5cd5c8cb48a50046f6164954bf1403966c4cdc48cd34407dc"
+  },
+  "secrets_included": false
+}

@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "phase": "complete",
+  "deployment_ip": "198.200.49.63",
+  "updated_files": [
+    "configure_static_exits.py",
+    "test_configure_static_exits.py",
+    "panel/server.py",
+    "panel/accounts.py",
+    "panel/test_accounts.py",
+    "panel/test_panel.py",
+    "panel/test_multiuser_http.py",
+    "panel/web/app.js",
+    "panel/web/index.html",
+    "panel/web/style.css"
+  ],
+  "backup": "/root/raksmart-proxy-deploy-20261009/multiuser-20261009T135914-be188e/before",
+  "admin_xray_restarted": false,
+  "local_firewall_changed": false,
+  "created_users": [
+    {
+      "id": "7bb5122a2ef4a515",
+      "username": "user-a",
+      "display_name": "\u7528\u6237 A",
+      "role": "member",
+      "enabled": true,
+      "port": 1443,
+      "exit_count": 0,
+      "active_target": "server",
+      "service_active": true
+    },
+    {
+      "id": "06c26698c110e726",
+      "username": "user-b",
+      "display_name": "\u7528\u6237 B",
+      "role": "member",
+      "enabled": true,
+      "port": 2443,
+      "exit_count": 0,
+      "active_target": "server",
+      "service_active": true
+    }
+  ],
+  "complete_admin_state_preserved": true,
+  "protected_hashes_preserved": true,
+  "admin_service_processes_preserved": true,
+  "existing_admin_account_preserved": true,
+  "independent_member_instances": true
+}

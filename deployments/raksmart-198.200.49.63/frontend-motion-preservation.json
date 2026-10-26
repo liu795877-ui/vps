@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "deployment_ip": "198.200.49.63",
+  "complete_state_unchanged": true,
+  "protected_configuration_count": 10,
+  "all_protected_hashes_unchanged": true,
+  "four_service_processes_unchanged": true,
+  "published_sources_match": true,
+  "services_restarted": false,
+  "trusted_public_sources_match": true,
+  "checked_at": "2026-10-09T12:59:13.651954+00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-09T14:07:13.161Z",
+  "deployment_ip": "198.200.49.63",
+  "success": true,
+  "trusted_https": true,
+  "transport": "physical WLAN; restricted CONNECT proxy",
+  "checks": [
+    "admin: trusted login, own identity/navigation and isolated 443 profile",
+    "Administrator sees three accounts, protected admin controls, masked empty forms and capacity limit",
+    "All three public assets match the frozen reviewed release",
+    "admin: desktop/mobile fit, own routing/access views, SOCKS5 import preserved, state unchanged",
+    "user-a: trusted login, own identity/navigation and isolated 1443 profile",
+    "user-a: desktop/mobile fit, own routing/access views, SOCKS5 import preserved, state unchanged",
+    "user-b: trusted login, own identity/navigation and isolated 2443 profile",
+    "user-b: desktop/mobile fit, own routing/access views, SOCKS5 import preserved, state unchanged",
+    "Three independent contexts retain states and credentials, clear user data on logout, and make no configuration mutations"
+  ],
+  "screenshots": [
+    "admin-overview-desktop.png",
+    "admin-overview-mobile.png",
+    "admin-users-mobile.png",
+    "admin-users-desktop.png",
+    "user-a-overview-desktop.png",
+    "user-a-overview-mobile.png",
+    "user-b-overview-desktop.png",
+    "user-b-overview-mobile.png"
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "role": "admin",
+      "port": 443,
+      "exit_count": 1,
+      "active_target": "server",
+      "service_active": true
+    },
+    {
+      "username": "user-a",
+      "role": "member",
+      "port": 1443,
+      "exit_count": 0,
+      "active_target": "server",
+      "service_active": true
+    },
+    {
+      "username": "user-b",
+      "role": "member",
+      "port": 2443,
+      "exit_count": 0,
+      "active_target": "server",
+      "service_active": true
+    }
+  ],
+  "independent_node_credentials": true,
+  "all_public_states_preserved": true,
+  "configuration_mutations_attempted": 0,
+  "exit_switches": 0,
+  "account_changes": 0
+}

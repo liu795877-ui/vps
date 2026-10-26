@@ -1,0 +1,19 @@
+{
+  "completed_at": "2026-10-09T19:32:31+08:00",
+  "server": "198.200.49.63",
+  "success": true,
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+  "active_target": "server",
+  "observed_ip": "198.200.49.63",
+  "static_exit_count": 0,
+  "https_and_actual_auto_client_verified": true,
+  "browser_desktop_mobile_and_server_click_verified": true,
+  "four_services_active_and_enabled": true,
+  "original_xray_identity_reality_dns_and_hy2_preserved": true,
+  "reports": [
+    "panel-verification.json",
+    "panel-browser-verification.json",
+    "panel-preservation-verification.json"
+  ],
+  "validation_limit": "No external static SOCKS5 account has been configured on this new server; static switching is covered by the application regression tests."
+}

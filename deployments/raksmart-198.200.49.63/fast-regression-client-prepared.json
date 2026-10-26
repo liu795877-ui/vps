@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "full_profile_syntax_accepted": true,
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "private_export": "D:\\CodexData\\vps\\deployments\\raksmart-198.200.49.63\\client-profile-private\\79ea4619a2422b41\\198.200.49.63-smart-hy2.private.yaml",
+  "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+  "profile_version": 2,
+  "active_local_profile_id": "1791548013464",
+  "active_local_profile_has_hy2": false,
+  "local_tcp_identity_matches_current_admin": true,
+  "current_expected_exit": "198.200.49.63",
+  "live_client_modified": false,
+  "server_modified": false,
+  "export_is_intentionally_retained_for_user_import": true
+}

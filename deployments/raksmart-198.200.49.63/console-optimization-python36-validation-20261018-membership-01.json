@@ -1,0 +1,200 @@
+{
+  "success": true,
+  "release_tests_run": true,
+  "remote_stage": "/tmp/vps-console-validation-zeh_1ees",
+  "started_at": "2026-10-18T08:35:34.675510+00:00",
+  "helper_sha256": "50c8ab54f05c78c5bcc5ca7afa61dc1172688e9388ac83d40b08d880949b9ea3",
+  "environment": {
+    "python_version": [
+      3,
+      6,
+      8
+    ],
+    "python_executable": "/usr/bin/python3",
+    "vendor_directory": "/opt/vps-panel/vendor",
+    "cryptography_version": "3.3.2",
+    "cryptography_file": "/opt/vps-panel/vendor/cryptography/__init__.py",
+    "aesgcm_imported": true,
+    "pbkdf2_imported": true,
+    "x509_imported": true,
+    "dont_write_bytecode": true
+  },
+  "archive_sha256": "a97fe970eb0ca0071857e3bb2a3121a9a7fcfd801831787c0feb34b80708267b",
+  "manifest_sha256": "573ce4c08bb34268931e4ded6b97146cc26ada5e4ce03b4e10ae7ade27c4ceb1",
+  "test_source_review": [
+    {
+      "module": "panel.test_accelerated_client",
+      "sha256": "af081a3e5c4bada5cd5c8cb48a50046f6164954bf1403966c4cdc48cd34407dc",
+      "review": "Pure client-profile data; optional Mihomo validation disabled."
+    },
+    {
+      "module": "panel.test_accounts",
+      "sha256": "456b6ee9391af727d51f6af02c49278286100e6d74933de0e86bb774c53588ff",
+      "review": "Temporary demo; production fixture redirects CONFIG_ROOT and mocks commands/listeners."
+    },
+    {
+      "module": "panel.test_enhancements_http",
+      "sha256": "f0a9394d50b9dccc39fc09afaf066296ee5aa83341aeb39e41cbadbb3203c399",
+      "review": "Temporary demo/loopback HTTP; rotation/deletion telemetry reads blocked by runner guard."
+    },
+    {
+      "module": "panel.test_entrance_backups",
+      "sha256": "6a1049e5ec09eda56bb409001c2fd838505032d40958492d186912ac75416833",
+      "review": "Temporary demo, synthetic credentials/TLS and local restore-failure callbacks."
+    },
+    {
+      "module": "panel.test_entrances",
+      "sha256": "83935dbdf31436437ea2f29906e924a8f7f0b523901a60e0b27cb138067e2fa8",
+      "review": "Temporary demo; non-demo binds mocked and LinuxControls runner injected."
+    },
+    {
+      "module": "panel.test_hy2_backups",
+      "sha256": "c7a0189e0091f28262cbb16030c066a15fa4ef21f7e50e576ee29e658f5da68a",
+      "review": "Temporary demo, generated synthetic TLS identity, injected runtime failures."
+    },
+    {
+      "module": "panel.test_hy2_integration",
+      "sha256": "02ee5fc08da971b02e3b9e5c5613d8b4187eec74908f9e62b5dc6bf86e9fff7f",
+      "review": "Temporary account fixture; non-demo validation, service callbacks and query APIs mocked."
+    },
+    {
+      "module": "panel.test_hy2_telemetry",
+      "sha256": "edc8196ef5c4d53453d7f8d2f5f620abefdd65b3b3695da48090310796c20181",
+      "review": "Temporary demo with synthetic provider, statistics runner and controls."
+    },
+    {
+      "module": "panel.test_membership",
+      "sha256": "4727ce05cdfc649f9eaec3bbffa620a1df2d4330e5fb5b22d924f4af538e7b17",
+      "review": "Temporary demo/loopback HTTP; injected clock, controls, counters and mocked systemd only."
+    },
+    {
+      "module": "panel.test_multiuser_http",
+      "sha256": "ab3dbc1a289f0d519390853912b6b55f126297d0e05eae572ae15ca8dd4cc689",
+      "review": "Temporary demo/loopback HTTP; stop telemetry can attempt reads, blocked by runner guard."
+    },
+    {
+      "module": "panel.test_operations",
+      "sha256": "59a4ac2e5fb5bcad65a3c82e54e46a770ab4d68f989227901280cd364d1233bb",
+      "review": "Temporary demo; telemetry and LinuxControls use injected runners; restore callbacks are fake."
+    },
+    {
+      "module": "panel.test_panel",
+      "sha256": "efe9d71bf17b24592e1795999472018e45d6ebcccba01328215917f5faa67f62",
+      "review": "Temporary demo/loopback HTTP; .63 adoption fixture uses explicit temporary paths."
+    },
+    {
+      "module": "panel.test_provisioning",
+      "sha256": "be27ea089a1d9476e23c6680e1db83233bdc1e679169680a958d1fe193644760",
+      "review": "Temporary demo and loopback HTTP; creation/start remains demo."
+    },
+    {
+      "module": "panel.test_routing",
+      "sha256": "7e3e77a4b5e8b41568aeac6cf05a4784f4f640fdb7f5e1e2e64f1d85de6a229d",
+      "review": "Pure configuration; optional core and external route tests disabled."
+    },
+    {
+      "module": "panel.test_service_status",
+      "sha256": "c2a0abb901d527286558c7bb700961f7325334a5f70a86d828836dabb12fa643",
+      "review": "Temporary demo; service status commands are mocked to synthetic systemd results."
+    },
+    {
+      "module": "panel.test_subscriptions",
+      "sha256": "c88b90ebd1ba0d5059fe58e12a8ff77e31d56615fdc546af49182e224cef2f44",
+      "review": "In-memory hash/token/state operations only."
+    },
+    {
+      "module": "test_configure_reality",
+      "sha256": "37db9a469a46e922641044c509c95e8054b03af1d04dcd0beacad5c2d6336c29",
+      "review": "Pure config; optional official-core tests disabled."
+    },
+    {
+      "module": "test_configure_static_exits",
+      "sha256": "2ced04219934556c272b2f491921ae522e0fc35670d96da9ad7021a2ff469629",
+      "review": "Temporary file transactions and mocked commands; core tests disabled."
+    }
+  ],
+  "verification": {
+    "archive_sha256": "a97fe970eb0ca0071857e3bb2a3121a9a7fcfd801831787c0feb34b80708267b",
+    "blocked_unmocked_subprocesses": {
+      "ldconfig": 2,
+      "systemctl": 1
+    },
+    "bytecode_writes_disabled": true,
+    "elapsed_seconds": 363.479,
+    "error_tests": [],
+    "errors": 0,
+    "failure_tests": [],
+    "failures": 0,
+    "log": "/tmp/vps-console-validation-zeh_1ees/validation.log",
+    "manifest_sha256": "573ce4c08bb34268931e4ded6b97146cc26ada5e4ce03b4e10ae7ade27c4ceb1",
+    "network_guard": "fresh ephemeral loopback test listeners only",
+    "optional_core_tests_disabled": [
+      "XRAY_TEST_BINARY",
+      "MIHOMO_TEST_BINARY",
+      "SMART_ROUTING_CORE",
+      "SMART_ROUTING_CACHE"
+    ],
+    "passed": 236,
+    "production_acceptance_performed": false,
+    "production_application_updated": false,
+    "production_data_updated": false,
+    "proxy_or_firewall_commands_executed": false,
+    "python_executable": "/usr/bin/python3",
+    "python_version": [
+      3,
+      6,
+      8
+    ],
+    "scope": "isolated actual Python 3.6 unittest",
+    "skip_details": [
+      {
+        "reason": "No official Mihomo test binary",
+        "test": "panel.test_accelerated_client.AcceleratedProfileTests.test_official_mihomo_accepts_the_generated_dual_protocol_profile"
+      },
+      {
+        "reason": "No official test binary",
+        "test": "panel.test_panel.PanelTests.test_official_core_accepts_web_managed_config"
+      },
+      {
+        "reason": "No official Mihomo test binary",
+        "test": "panel.test_panel.PanelTests.test_official_mihomo_accepts_two_exit_unified_profile"
+      },
+      {
+        "reason": "Set SMART_ROUTING_CORE and SMART_ROUTING_CACHE for isolated official core tests.",
+        "test": "panel.test_routing.OfficialMihomoTests.test_fresh_directory_syntax_without_geodata_or_cached_rules"
+      },
+      {
+        "reason": "Set SMART_ROUTING_CORE and SMART_ROUTING_CACHE for isolated official core tests.",
+        "test": "panel.test_routing.OfficialMihomoTests.test_provider_loading_and_actual_route_selection"
+      },
+      {
+        "reason": "No official test binary",
+        "test": "test_configure_reality.OfficialCoreTests.test_official_core_accepts_generated_config"
+      },
+      {
+        "reason": "No official test binary",
+        "test": "test_configure_static_exits.OfficialCoreTests.test_official_core_accepts_two_authenticated_socks_exits"
+      },
+      {
+        "reason": "No official test binary",
+        "test": "test_configure_static_exits.OfficialCoreTests.test_real_core_routes_each_identity_to_its_exit_and_blocks_private_targets"
+      },
+      {
+        "reason": "Build the console artifact first",
+        "test": "test_configure_static_exits.StaticPolicyTests.test_generated_console_payload_loads_both_modules_without_running_setup"
+      }
+    ],
+    "skipped": 9,
+    "stage": "/tmp/vps-console-validation-zeh_1ees",
+    "stage_retained": true,
+    "success": true,
+    "tests_run": 245,
+    "vendor": {
+      "file": "/opt/vps-panel/vendor/cryptography/__init__.py",
+      "version": "3.3.2"
+    },
+    "write_guard_enforced": true
+  },
+  "remote_exit_code": 0,
+  "remote_stage_retained": true
+}

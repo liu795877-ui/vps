@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "phase": "complete",
+  "deployment_ip": "198.200.49.63",
+  "updated_files": [
+    "panel/server.py",
+    "panel/accounts.py",
+    "panel/subscriptions.py",
+    "panel/audit.py",
+    "panel/diagnostics.py",
+    "panel/health.py",
+    "panel/telemetry.py",
+    "panel/backups.py",
+    "panel/test_panel.py",
+    "panel/test_accounts.py",
+    "panel/test_subscriptions.py",
+    "panel/test_multiuser_http.py",
+    "panel/test_operations.py",
+    "panel/test_enhancements_http.py",
+    "panel/web/style.css",
+    "panel/web/app.js",
+    "panel/web/index.html"
+  ],
+  "stage": "/root/raksmart-proxy-deploy-20261009/operations-20261010T033421-7dd32e",
+  "backup": "/root/raksmart-proxy-deploy-20261009/operations-20261010T033421-7dd32e/before",
+  "proxy_restarts": [
+    "xray.service",
+    "xray-panel@7bb5122a2ef4a515.service",
+    "xray-panel@06c26698c110e726.service"
+  ],
+  "identity_preserved": true,
+  "caddy_hy2_preserved": true,
+  "candidate_installed": true,
+  "local_acceptance": true,
+  "disabled_members_preserved": true,
+  "public_assets_verified": true
+}

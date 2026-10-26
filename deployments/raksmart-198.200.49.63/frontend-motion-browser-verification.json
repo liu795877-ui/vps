@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-09T12:58:42.690Z",
+  "deployment_ip": "198.200.49.63",
+  "success": true,
+  "checks": [
+    "Trusted HTTPS login through the physical WLAN",
+    "All three public assets match the reviewed frozen release and use no-store",
+    "Desktop device, server indicators and configured path animations render; hover and focus remain read-only",
+    "Overview, routing and access fit desktop and 390 px mobile without horizontal overflow",
+    "The operating system reduced motion preference disables ongoing motion and preserves navigation",
+    "Complete public state is unchanged; no configuration POSTs or JavaScript exceptions; logout succeeds"
+  ],
+  "state": {
+    "active_target": "server",
+    "exit_count": 0,
+    "routing_mode": "smart"
+  },
+  "motion": {
+    "device": "screen-scan",
+    "server": "rack-breathe",
+    "path": "path-particle"
+  },
+  "complete_public_state_unchanged": true,
+  "configuration_mutations_attempted": 0
+}

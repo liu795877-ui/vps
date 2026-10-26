@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "time_utc": "2026-10-24T02:26:15.078763+00:00",
+  "runs": [
+    {
+      "batches": 32,
+      "records": 90098,
+      "administrator_records": 0,
+      "catching_up": false,
+      "latest_record_age_seconds": 24882.71,
+      "source_scan_lag_seconds": 1701.349,
+      "elapsed_seconds": 15.214
+    }
+  ],
+  "proxy_or_account_configuration_changed": false,
+  "private_values_included": false
+}

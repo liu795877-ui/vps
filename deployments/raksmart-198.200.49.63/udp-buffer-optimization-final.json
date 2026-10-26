@@ -1,0 +1,120 @@
+{
+  "success": true,
+  "completed_at": "2026-10-10T12:25:26.596206+00:00",
+  "server": "198.200.49.63",
+  "retained_changes": {
+    "net.core.rmem_max": 7340032,
+    "net.core.wmem_max": 7340032,
+    "persistent_file": "/etc/sysctl.d/90-vps-hy2-udp-buffers.conf",
+    "accounts_ports": [
+      443,
+      1443,
+      2443
+    ],
+    "actual_socket_rb_tb_bytes": {
+      "1443": {
+        "rb": 14680064,
+        "tb": 14680064
+      },
+      "2443": {
+        "rb": 14680064,
+        "tb": 14680064
+      },
+      "443": {
+        "rb": 14680064,
+        "tb": 14680064
+      }
+    },
+    "linux_socket_buffer_display": "Linux ss rb/tb values include the kernel buffer accounting multiplier; sysctl ceilings are 7 MiB each."
+  },
+  "checks": {
+    "settings_applied": true,
+    "persistent_file_verified": true,
+    "same_benchmark_method": true,
+    "valid_baseline_and_after": true,
+    "six_transports_and_sources_verified": true,
+    "public_https_panel_ready": true,
+    "identity_preserved": true,
+    "limits_preserved": true,
+    "ledger_totals_non_decreasing": true,
+    "xray_epochs_preserved": true,
+    "temporary_clients_removed": true,
+    "no_new_udp_buffer_errors_after": true
+  },
+  "observed_comparison": [
+    {
+      "metric": "new_client_first_request_ttfb_ms",
+      "before": 1107.196,
+      "after": 1204.476
+    },
+    {
+      "metric": "warmed_client_new_https_ttfb_ms",
+      "before": 435.514,
+      "after": 509.111
+    },
+    {
+      "metric": "idle_proxy_ttfb_ms",
+      "before": 448.015,
+      "after": 510.304
+    },
+    {
+      "metric": "download_proxy_ttfb_ms",
+      "before": 453.309,
+      "after": 524.865
+    },
+    {
+      "metric": "download_multiblock_mbps_including_request_overhead",
+      "before": 44.057,
+      "after": 47.832,
+      "payload_per_stage_bytes": 134217728,
+      "full_blocks_per_stage": 16
+    },
+    {
+      "metric": "upload_proxy_ttfb_ms",
+      "before": 458.693,
+      "after": 532.667
+    },
+    {
+      "metric": "upload_multiblock_mbps_including_request_overhead",
+      "before": 59.074,
+      "after": 57.876,
+      "payload_per_stage_bytes": 134217728,
+      "full_blocks_per_stage": 16
+    }
+  ],
+  "server_udp_receive_buffer_errors_per_150_second_monitor": {
+    "before": 321,
+    "after": 0
+  },
+  "server_received_udp_datagrams_per_monitor": {
+    "before": 104366,
+    "after": 108029
+  },
+  "decision": "Retain larger UDP buffer ceilings: measured reception overflow disappeared at comparable traffic volumes. Do not add fixed limits or replace the existing queue without evidence of harmful queuing.",
+  "latency_result": "No proven reduction of idle network or HTTPS latency. Warmed first response increased from 435.514 to 509.111 ms in this pair; path and destination were not pinned and the sessions were not concurrent.",
+  "limitations": [
+    "Single sequential before/after pair; changing WAN conditions and other user traffic were not isolated.",
+    "Sixteen 8 MiB requests per direction include setup overhead and gaps; the result is not a long-running saturated bandwidth guarantee.",
+    "The warm measurement uses new curl HTTPS requests; it does not prove uninterrupted QUIC session reuse or measure a complete web page.",
+    "Global UDP counters cover all services; the baseline UDP443 socket drop counter also rose by 321 in the upload window.",
+    "The normal lifecycle final sample precedes service restart by a short interval; bytes produced in that interval may not be recorded."
+  ],
+  "browser_action": "The panel worker restarted; sign in again if the browser session expired. Client profile re-download is unnecessary.",
+  "rollback": {
+    "checkpoint_dir": "/root/vps-udp-buffer-optimization-20261010-2022",
+    "local_runner": "run_udp_buffer_optimization.py",
+    "action": "rollback",
+    "preserves_current_ledger": true
+  },
+  "maintenance_note": "The first run used an incorrect backend readiness path and restored the original ceilings and services. The corrected readiness check and final apply passed.",
+  "evidence_files": [
+    "hy2-latency-baseline.json",
+    "hy2-latency-after.json",
+    "hy2-runtime-baseline.json",
+    "hy2-runtime-after.json",
+    "udp-buffer-optimization-applied.json",
+    "udp-buffer-acceptance.json",
+    "udp-buffer-persistence-verification.json",
+    "udp-buffer-panel-readiness.json"
+  ]
+}

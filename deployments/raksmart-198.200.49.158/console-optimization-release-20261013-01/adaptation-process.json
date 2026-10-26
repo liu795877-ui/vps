@@ -1,0 +1,23 @@
+{
+  "application_source": "Exact .63 release05 bytes; no runtime edits.",
+  "host": "198.200.49.158 comes from its preserved panel unit and migration context.",
+  "static_exits": "The .63 member service/port/config-mode API replaces the .158 single-user API.",
+  "python36": "All .63 release05 Python 3.6 adapters and their 234-test suite are retained.",
+  "private_state": "No source or dependency package contains .63 account/identity/state data.",
+  "baseline": "All 17 frozen .158 baseline source hashes match the completed read-only production preflight.",
+  "dependencies": "Four hash-pinned wheels copied verbatim into vendor layout; no pip execution.",
+  "production_baseline_verification": {
+    "format": "vps-console-production-baseline-verification-v1",
+    "deployment_ip": "198.200.49.158",
+    "preflight_file": "console-optimization-preflight-20261013.json",
+    "preflight_sha256": "9da6a0a5c3a307c607ca9b6fc533e086cae1fa747cfba445145496a9b023db1e",
+    "verified_source_files": 17,
+    "source_baseline_matches_production": true,
+    "active_target": "server",
+    "active_target_preservation": "Preserve the live server target; historical README target is stale.",
+    "source_archive_unchanged": true,
+    "manifest_unchanged_for_running_validation": true,
+    "production_updated": false
+  },
+  "active_target": "Preserve the verified current server target; one configured static exit remains available."
+}

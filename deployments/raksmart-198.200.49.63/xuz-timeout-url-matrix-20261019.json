@@ -1,0 +1,141 @@
+{
+  "at": "2026-10-19T02:38:32.802491+00:00",
+  "user": "xuz",
+  "remote_changes": false,
+  "live_client_changed": false,
+  "protocols": [
+    {
+      "protocol": "hy2",
+      "tests": [
+        {
+          "protocol": "hy2",
+          "kind": "delay",
+          "target": "https://www.gstatic.com/generate_204",
+          "result": {
+            "delay": 970
+          },
+          "seconds": 0.972
+        },
+        {
+          "protocol": "hy2",
+          "kind": "curl",
+          "target": "https://www.gstatic.com/generate_204",
+          "code": 0,
+          "metrics": "204 0.218844 0.392578 0.392597",
+          "error": ""
+        },
+        {
+          "protocol": "hy2",
+          "kind": "curl",
+          "target": "http://www.gstatic.com/generate_204",
+          "code": 0,
+          "metrics": "204 0.000000 0.178075 0.178095",
+          "error": ""
+        },
+        {
+          "protocol": "hy2",
+          "kind": "curl",
+          "target": "https://cp.cloudflare.com/generate_204",
+          "code": 0,
+          "metrics": "204 0.209146 0.394501 0.394532",
+          "error": ""
+        },
+        {
+          "protocol": "hy2",
+          "kind": "curl",
+          "target": "https://www.google.com/",
+          "code": 0,
+          "metrics": "200 0.228477 0.453139 0.830312",
+          "error": ""
+        },
+        {
+          "protocol": "hy2",
+          "kind": "curl",
+          "target": "https://api.ipify.org",
+          "code": 0,
+          "metrics": "200 0.204175 0.461508 0.461567",
+          "error": ""
+        },
+        {
+          "protocol": "hy2",
+          "kind": "delay",
+          "target": "https://api.ipify.org",
+          "result": {
+            "delay": 1366
+          },
+          "seconds": 1.367
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "protocol": "xray",
+      "tests": [
+        {
+          "protocol": "xray",
+          "kind": "delay",
+          "target": "https://www.gstatic.com/generate_204",
+          "result": {
+            "delay": 1001
+          },
+          "seconds": 1.003
+        },
+        {
+          "protocol": "xray",
+          "kind": "curl",
+          "target": "https://www.gstatic.com/generate_204",
+          "code": 28,
+          "metrics": "000 0.000000 5.002647 5.002651",
+          "error": "curl: (28) Connection timed out after 5002 milliseconds\r\n"
+        },
+        {
+          "protocol": "xray",
+          "kind": "curl",
+          "target": "http://www.gstatic.com/generate_204",
+          "code": 0,
+          "metrics": "204 0.000000 0.571368 0.571390",
+          "error": ""
+        },
+        {
+          "protocol": "xray",
+          "kind": "curl",
+          "target": "https://cp.cloudflare.com/generate_204",
+          "code": 0,
+          "metrics": "204 0.841266 1.055494 1.055520",
+          "error": ""
+        },
+        {
+          "protocol": "xray",
+          "kind": "curl",
+          "target": "https://www.google.com/",
+          "code": 28,
+          "metrics": "000 0.000000 5.002659 5.002663",
+          "error": "curl: (28) Connection timed out after 5003 milliseconds\r\n"
+        },
+        {
+          "protocol": "xray",
+          "kind": "curl",
+          "target": "https://api.ipify.org",
+          "code": 28,
+          "metrics": "000 0.000000 5.002579 5.002584",
+          "error": "curl: (28) Connection timed out after 5002 milliseconds\r\n"
+        },
+        {
+          "protocol": "xray",
+          "kind": "delay",
+          "target": "https://api.ipify.org",
+          "result": {
+            "delay": 1929
+          },
+          "seconds": 1.931
+        }
+      ],
+      "warnings": [
+        "time=\"2026-10-19T10:38:39.755724100+08:00\" level=warning msg=\"[TCP] dial VERIFY (match Match/) 127.0.0.1:12197 --> www.gstatic.com:443 error: 198.200.49.63:4444 connect error: dial tcp 198.200.49.63:4444: i/o timeout\"",
+        "time=\"2026-10-19T10:38:46.643360800+08:00\" level=warning msg=\"[TCP] dial VERIFY (match Match/) 127.0.0.1:24334 --> www.google.com:443 error: 198.200.49.63:4444 connect error: dial tcp 198.200.49.63:4444: i/o timeout\"",
+        "time=\"2026-10-19T10:38:51.737472800+08:00\" level=warning msg=\"[TCP] dial VERIFY (match Match/) 127.0.0.1:64246 --> api.ipify.org:443 error: 198.200.49.63:4444 connect error: dial tcp 198.200.49.63:4444: i/o timeout\""
+      ]
+    }
+  ],
+  "temporary_credentials_removed": true
+}

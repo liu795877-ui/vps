@@ -1,0 +1,57 @@
+
+Pinging 104.233.217.190 with 32 bytes of data:
+Reply from 104.233.217.190: bytes=32 time=946ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=998ms TTL=43
+Request timed out.
+Reply from 104.233.217.190: bytes=32 time=926ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=1002ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=1007ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=529ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=660ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=212ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=214ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=206ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=210ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=275ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=210ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=208ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=209ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=206ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=206ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=211ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=209ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=209ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=212ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=213ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=208ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=215ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=208ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=210ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=223ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=239ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=209ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+Reply from 104.233.217.190: bytes=32 time=207ms TTL=43
+
+Ping statistics for 104.233.217.190:
+    Packets: Sent = 50, Received = 49, Lost = 1 (2% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 206ms, Maximum = 1007ms, Average = 304ms

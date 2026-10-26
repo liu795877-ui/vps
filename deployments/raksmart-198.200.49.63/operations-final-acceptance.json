@@ -1,0 +1,65 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T03:47:14.991720+00:00",
+  "deployment_ip": "198.200.49.63",
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+  "asset_version": "operations-20261010-2",
+  "features": [
+    "未保存内容保护",
+    "网站分流查询与客户端自检指引",
+    "持续出口健康检查与指定备用",
+    "完整加密定期备份及预览恢复",
+    "可撤销的每账号完整配置订阅与服务器版本",
+    "真实个人及全账号流量统计、月额度与限速",
+    "删除成员与旧代理凭据撤销",
+    "按权限隔离的持久操作记录"
+  ],
+  "unfinished_requested_features": [],
+  "reports": [
+    "operations-update.json",
+    "operations-verification.json",
+    "operations-backup-upload-update.json",
+    "operations-api-acceptance.json",
+    "operations-browser-verification.json",
+    "operations-clients-verification.json",
+    "operations-network-acceptance.json"
+  ],
+  "server_python_regression": {
+    "executed": 141,
+    "passed": 137,
+    "skipped": 4
+  },
+  "public_api_checks": 43,
+  "production_accounts_verified": 3,
+  "public_proxy_ports": [
+    443,
+    1443,
+    2443
+  ],
+  "actual_auto_egress": "198.200.49.63",
+  "backup_restore_in_production": false,
+  "backup_restore_tested_with_isolated_fixtures": true,
+  "backup_portable_download_and_preview_in_production": true,
+  "defaults": {
+    "failover": "manual",
+    "quota_bytes": 0,
+    "rate_bps": 0,
+    "automatic_backups": true
+  },
+  "limitations": [
+    "本机DIRECT和独立HY2不计入VLESS统计",
+    "流量从统计升级开始记录，月份使用UTC",
+    "额度使用10秒采样，可能有一周期超额",
+    "网页分流诊断无法确认客户端真实解析和策略组选择",
+    "恢复要求当前服务器IP和管理页地址一致"
+  ],
+  "preservation": {
+    "existing_account_passwords": true,
+    "existing_proxy_credentials_and_keys": true,
+    "existing_exits_rules_and_selection": true,
+    "caddy_hy2_processes": true,
+    "caddy_configuration_change": "仅备份预览上传接口单独提高请求大小限制",
+    "proxy_restart": "三个独立实例为私有统计接口顺序重启"
+  },
+  "secret_values_included": false
+}

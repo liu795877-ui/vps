@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-10-09T16:08:47+08:00",
+  "path": "Temporary Mihomo bound to physical WLAN -> RAKsmart-US-HY2 UDP443",
+  "direction": "download",
+  "parallel_streams": 1,
+  "requested_bytes_per_stream": 1000000,
+  "checks": [
+    {
+      "sample": 1,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 1000000,
+          "size_upload": 0,
+          "time_total": 1.769065,
+          "time_starttransfer": 0.513424,
+          "time_appconnect": 0.23969,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        }
+      ],
+      "actual_bytes": 1000000,
+      "wall_seconds": 1.832,
+      "mbps_including_startup": 4.368,
+      "MB_per_second": 0.546,
+      "success": true
+    },
+    {
+      "sample": 2,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 1000000,
+          "size_upload": 0,
+          "time_total": 0.85097,
+          "time_starttransfer": 0.485883,
+          "time_appconnect": 0.238126,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        }
+      ],
+      "actual_bytes": 1000000,
+      "wall_seconds": 0.887,
+      "mbps_including_startup": 9.023,
+      "MB_per_second": 1.128,
+      "success": true
+    }
+  ],
+  "identity_attempts": [
+    {
+      "attempt": 1,
+      "exit_code": 0,
+      "exit_ip": "198.200.49.63",
+      "error": "",
+      "matches_vps": true
+    }
+  ],
+  "exit_ip": "198.200.49.63",
+  "identity_exit_code": 0,
+  "identity_error": "",
+  "exit_matches_vps": true
+}

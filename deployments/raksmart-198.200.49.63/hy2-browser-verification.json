@@ -1,0 +1,104 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T11:32:45.028Z",
+  "deployment_ip": "198.200.49.63",
+  "trusted_https": true,
+  "physical_wlan": true,
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "checks": [
+    "admin 1440: dual entrance notices, permitted page order, charts and arrows are usable",
+    "admin 390: dual entrance notices, permitted page order, charts and arrows are usable",
+    "user-a 1440: dual entrance notices, permitted page order, charts and arrows are usable",
+    "user-a 390: dual entrance notices, permitted page order, charts and arrows are usable",
+    "user-b 1440: dual entrance notices, permitted page order, charts and arrows are usable",
+    "user-b 390: dual entrance notices, permitted page order, charts and arrows are usable"
+  ],
+  "users": [
+    {
+      "account": "admin",
+      "role": "admin",
+      "port": 443,
+      "traffic_sources": [
+        "hy2",
+        "xray"
+      ],
+      "traffic_scope_verified": true,
+      "dual_transport_notice_verified": true,
+      "desktop_and_mobile": true,
+      "settings_preserved": true,
+      "permitted_page_count": 5,
+      "guide_verified": true
+    },
+    {
+      "account": "user-a",
+      "role": "member",
+      "port": 1443,
+      "traffic_sources": [
+        "hy2",
+        "xray"
+      ],
+      "traffic_scope_verified": true,
+      "dual_transport_notice_verified": true,
+      "desktop_and_mobile": true,
+      "settings_preserved": true,
+      "permitted_page_count": 3,
+      "guide_verified": true
+    },
+    {
+      "account": "user-b",
+      "role": "member",
+      "port": 2443,
+      "traffic_sources": [
+        "hy2",
+        "xray"
+      ],
+      "traffic_scope_verified": true,
+      "dual_transport_notice_verified": true,
+      "desktop_and_mobile": true,
+      "settings_preserved": true,
+      "permitted_page_count": 3,
+      "guide_verified": true
+    }
+  ],
+  "screenshots": [
+    "admin-overview-1440.png",
+    "admin-routing-1440.png",
+    "admin-access-1440.png",
+    "admin-users-1440.png",
+    "admin-maintenance-1440.png",
+    "admin-overview-390.png",
+    "admin-routing-390.png",
+    "admin-access-390.png",
+    "admin-users-390.png",
+    "admin-maintenance-390.png",
+    "user-a-overview-1440.png",
+    "user-a-routing-1440.png",
+    "user-a-access-1440.png",
+    "user-a-overview-390.png",
+    "user-a-routing-390.png",
+    "user-a-access-390.png",
+    "user-b-overview-1440.png",
+    "user-b-routing-1440.png",
+    "user-b-access-1440.png",
+    "user-b-overview-390.png",
+    "user-b-routing-390.png",
+    "user-b-access-390.png"
+  ],
+  "assets": {
+    "panel/web/index.html": {
+      "sha256": "2222278a03d4a25f5fdf6935e112c6fd87f14c5871c069e751d3473f371fc128",
+      "freeze_match": true
+    },
+    "panel/web/app.js": {
+      "sha256": "3257def1d06e8c6ea0a154172e6aadc06133337fbecdd9be6f422d9c0a10f7e5",
+      "freeze_match": true
+    },
+    "panel/web/style.css": {
+      "sha256": "d29c80a7d8112a67420095da5675c7b0bd0e59256a2ea805c5af5595a53075ed",
+      "freeze_match": true
+    }
+  },
+  "browser_errors": [],
+  "blocked_requests": []
+}

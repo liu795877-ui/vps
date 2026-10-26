@@ -1,0 +1,225 @@
+{
+  "updated_at": "2026-10-13T07:02:06.971618+00:00",
+  "server": "198.200.49.158",
+  "ssh_port": 62970,
+  "status": "deployed_and_verified",
+  "proxy": {
+    "reality": {
+      "port": 443,
+      "transport": "TCP",
+      "version": "26.3.27"
+    },
+    "hysteria2": {
+      "port": 443,
+      "transport": "UDP",
+      "version": "2.13.0"
+    },
+    "exit_ip": "198.200.49.158",
+    "download_5mb_mbps": 19.171,
+    "client_profile": "raksmart-158-client.private.yaml",
+    "historical_download_benchmark_date": "2026-10-09",
+    "xray_config_sha256_before_console_adoption": "a6f4947414c24da82625beb07599d797541e35bfb8de21200440c959f9aaa9d9",
+    "current_config_binding_verified": true,
+    "initial_deployment_xray_config_sha256": "704bfe6160f8f687f20eaa930539847ae9f2fb93d49edcf6714dfa6c5fe7d518"
+  },
+  "panel": {
+    "origin": "https://198-200-49-158.sslip.io:8443",
+    "url": "https://198-200-49-158.sslip.io:8443/node-console/",
+    "login_file": "panel-login.private.json",
+    "backend": "127.0.0.1:18787",
+    "static_exit_count": 1,
+    "provider_credentials": "Existing configured exits are managed through the console; credentials stay on the server.",
+    "server_location": {
+      "ip": "198.200.49.158",
+      "country_code": "US",
+      "provider": "ipwho.is",
+      "country": "United States",
+      "region": "California",
+      "city": "San Jose",
+      "looked_up_at": 1791542651.5163302,
+      "status": "ready"
+    },
+    "unified_client_profile": "clash-unified-exits.private.yaml",
+    "client_selection_group": "STATIC-SELECT",
+    "automatic_selection_node": "AUTO · 网页切换",
+    "web_switch": {
+      "server_target": "server",
+      "supports_click_to_switch": true,
+      "auto_profile_updates_required": false,
+      "last_verified_target": "server",
+      "last_verified_ip": "198.200.49.158"
+    },
+    "routing_mode": "smart",
+    "client_profile_file": "clash-smart-routing.private.yaml",
+    "active_target": "server",
+    "observed_ip": "198.200.49.158",
+    "smart_routing": {
+      "status": "deployed_and_verified",
+      "mode": "smart",
+      "previous_mode": "manual",
+      "ui": [
+        "智能分流 · 国内直连",
+        "强制直连",
+        "强制代理"
+      ],
+      "client_mode": "rule",
+      "client_selection": "STATIC-SELECT / AUTO · 网页切换",
+      "custom_rule_refresh_seconds": 300,
+      "maintained_sources_count": 23,
+      "maintained_source_refresh_seconds": 86400,
+      "total_rule_providers": 27,
+      "first_import_required": true,
+      "later_domain_list_edits_require_reimport": false,
+      "later_web_exit_switches_require_reimport": false,
+      "routing_mode_changes_require_reimport": true,
+      "hy2_independent": false,
+      "complete_client_routes_verified": [
+        {
+          "domain": "api.bilibili.com",
+          "route": "DIRECT",
+          "https_connection_succeeded": true
+        },
+        {
+          "domain": "static.hdslb.com",
+          "route": "DIRECT",
+          "https_connection_succeeded": true
+        },
+        {
+          "domain": "api.ipify.org",
+          "route": "STATIC-SELECT",
+          "https_connection_succeeded": true
+        }
+      ],
+      "auto_egress": {
+        "observed_ip": "198.200.49.158",
+        "expected_ip": "198.200.49.158",
+        "report": "console-optimization-clients-verification.json"
+      },
+      "active_target_preserved": true,
+      "auto_and_fixed_node_identities_preserved": true,
+      "exit_accounts_preserved": true,
+      "original_domain_lists_preserved": true,
+      "history_preserved": true,
+      "protected_configuration_count": 10,
+      "xray_configuration_unchanged": true,
+      "auth_hy2_and_dns_preserved": true,
+      "reports": [
+        "smart-routing-update.json",
+        "smart-routing-activation.json",
+        "smart-routing-browser-verification.json",
+        "smart-mihomo-client-verification.json",
+        "smart-routing-preservation.json",
+        "smart-routing-final-acceptance.json"
+      ],
+      "final_acceptance_report": "smart-routing-final-acceptance.json",
+      "observed_current_egress": "198.200.49.158",
+      "historical_routing_validation_date": "2026-10-09",
+      "historical_auto_egress_20261009": {
+        "observed_ip": "128.241.19.234",
+        "expected_ip": "128.241.19.234"
+      }
+    },
+    "console_release": "console-20261013-1",
+    "console_optimization_release": "console-optimization-release-20261013-01",
+    "current_profile_source": "管理页的客户端与访问页面：当前完整配置或订阅",
+    "multiuser": {
+      "enabled": true,
+      "administrator_count": 1,
+      "member_count": 0,
+      "member_ports": [
+        1443,
+        2443
+      ],
+      "available_member_entrances": 2,
+      "public_member_ingress_verified": false,
+      "cloud_firewall_action": "使用新成员入口前，按网页清单放行其 TCP 和 UDP。"
+    },
+    "hy2_integration": {
+      "enabled": true,
+      "follows_web_exit": true,
+      "original_password_and_tls_preserved": true,
+      "service": "raksmart-hy2@443.service"
+    },
+    "client_profile_file_is_historical": true,
+    "current_client_profile_endpoint": "/node-console/api/profile"
+  },
+  "services": {
+    "xray.service": {
+      "active": true,
+      "enabled": true
+    },
+    "raksmart-hy2.service": {
+      "active": false,
+      "enabled": false,
+      "superseded_by": "raksmart-hy2@443.service"
+    },
+    "vps-panel.service": {
+      "active": true,
+      "enabled": true
+    },
+    "caddy.service": {
+      "active": true,
+      "enabled": true
+    },
+    "raksmart-hy2@443.service": {
+      "active": true,
+      "enabled": true
+    }
+  },
+  "verification": {
+    "linux_backend_and_official_core": "Current console: 234 actual Python 3.6.8 tests, 225 passed, 9 skipped, zero failures; adopted configuration passed official Xray validation.",
+    "public_https": "Trusted certificate; authenticated session, CSRF, origin enforcement, assets and logout passed over physical WLAN",
+    "browser": "Desktop/mobile layout, exit form, login/logout, no JavaScript errors",
+    "proxy_reports": [
+      "speed-bound-xray-download.json",
+      "speed-bound-mihomo-download-deployment-hysteria2.json",
+      "console-optimization-clients-verification.json"
+    ],
+    "panel_reports": [
+      "panel-verification.json",
+      "panel-browser-verification.json",
+      "node-display-update.json",
+      "panel-features-validation.json",
+      "panel-features-services.json",
+      "unified-profile-verification.json",
+      "web-switch-verification.json",
+      "smart-routing-update.json",
+      "smart-routing-activation.json",
+      "smart-routing-browser-verification.json",
+      "smart-mihomo-client-verification.json",
+      "smart-routing-preservation.json",
+      "smart-routing-final-acceptance.json",
+      "console-optimization-deployment-20261013-01.json",
+      "console-optimization-python36-validation-20261013-01.json",
+      "console-optimization-browser-verification.json",
+      "console-optimization-clients-verification.json",
+      "console-optimization-ingress-verification.json",
+      "console-optimization-post-deployment-verification-20261013.json",
+      "console-optimization-final-acceptance-20261013.json"
+    ],
+    "automatic_location": "Online server IP location, protocol, port and desktop/mobile rendering passed.",
+    "unified_profile": "All applied static exits in one YAML; official Mihomo validation and real AUTO/fixed-node IP probes passed. Two distinct exits additionally validated with local synthetic upstreams.",
+    "web_switch": "Real server and static card clicks changed the old unchanged AUTO client IP; prior static exit restored.",
+    "smart_routing": "Complete official Mihomo profile and all 27 providers passed; Bilibili API/CDN HTTPS uses local DIRECT; AUTO ipify matches the preserved active static exit. Stable custom rule subscriptions and dynamic list refresh passed.",
+    "smart_routing_browser": "Trusted HTTPS login, smart mode and both lists, same-value save, 1440px desktop/390px mobile with no overflow or JavaScript errors, and logout passed.",
+    "smart_routing_preservation": "All 10 protected configuration hashes, node identities, exit accounts, active target, original domain lists, history, auth, HY2 and DNS preserved; all four services active and enabled.",
+    "console_optimization": {
+      "accepted_at": "2026-10-13T07:02:06.971618+00:00",
+      "final_acceptance_report": "console-optimization-final-acceptance-20261013.json",
+      "python36": "225 passed, 9 skipped, zero failures/errors (234 total)",
+      "migration_fixtures": "13 passed",
+      "browser": "11 checks; trusted HTTPS; 1440/390 layouts; zero JS/CSP errors",
+      "clients": "Legacy REALITY, AUTO REALITY and retained HY2 authenticate and reach the current server exit",
+      "backup_ingress": "98,364-byte invalid preview reaches application JSON 400; ordinary API still returns 413",
+      "protection": "41 sources, 150 dependencies, identity, TLS, network and service epochs preserved; traffic non-decreasing",
+      "reports": [
+        "console-optimization-deployment-20261013-01.json",
+        "console-optimization-python36-validation-20261013-01.json",
+        "console-optimization-browser-verification.json",
+        "console-optimization-clients-verification.json",
+        "console-optimization-ingress-verification.json",
+        "console-optimization-post-deployment-verification-20261013.json"
+      ]
+    }
+  }
+}

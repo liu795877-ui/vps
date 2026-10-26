@@ -1,0 +1,132 @@
+{
+  "started_at": "2026-10-08T16:19:30+08:00",
+  "source": "https://cn.raksmart.com/ddos/global.html?region=SV",
+  "method": {
+    "tool": "Windows ping.exe",
+    "count": 50,
+    "timeout_ms": 1500,
+    "payload_bytes": 32,
+    "ip_version": 4,
+    "execution": "sequential"
+  },
+  "results": [
+    {
+      "name": "Silicon Valley China Optimized VIP",
+      "name_zh": "硅谷 大陆优化 VIP",
+      "code": "SVVIP",
+      "ip": "198.200.49.130",
+      "sent": 50,
+      "received": 47,
+      "lost": 3,
+      "loss_pct": 6.0,
+      "min_ms": 158,
+      "avg_ms": 177.7,
+      "median_ms": 159,
+      "max_ms": 683,
+      "stdev_ms": 85.1,
+      "samples_ms": [
+        160,
+        159,
+        159,
+        159,
+        159,
+        164,
+        158,
+        182,
+        181,
+        164,
+        161,
+        159,
+        159,
+        159,
+        159,
+        159,
+        161,
+        159,
+        159,
+        159,
+        159,
+        159,
+        443,
+        159,
+        159,
+        164,
+        683,
+        158,
+        158,
+        160,
+        159,
+        159,
+        159,
+        160,
+        160,
+        159,
+        160,
+        159,
+        159,
+        159,
+        159,
+        159,
+        160,
+        161,
+        159,
+        159,
+        159
+      ],
+      "ttls": [
+        45
+      ],
+      "route_before": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "route_after": [
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": "198.18.0.1",
+          "DestinationPrefix": null,
+          "NextHop": null,
+          "RouteMetric": null
+        },
+        {
+          "InterfaceAlias": "FlClash",
+          "InterfaceIndex": 70,
+          "IPAddress": null,
+          "DestinationPrefix": "0.0.0.0/0",
+          "NextHop": "198.18.0.2",
+          "RouteMetric": 0
+        }
+      ],
+      "started_at": "2026-10-08T16:19:30+08:00",
+      "finished_at": "2026-10-08T16:20:29+08:00",
+      "command": [
+        "ping.exe",
+        "-4",
+        "-n",
+        "50",
+        "-w",
+        "1500",
+        "-l",
+        "32",
+        "198.200.49.130"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "finished_at": "2026-10-08T16:20:29+08:00"
+}

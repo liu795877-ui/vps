@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "started_at": "2026-10-18T09:02:32.678246+00:00",
+  "archive_sha256": "f16700616e25fe632e4f9c7f4dbc184576a1d3384572033be5ef38a29b637f66",
+  "manifest_sha256": "5e9ac0422979b8428fc3cfbb07a87cb91759d2f94428123258565584328ce7c8",
+  "remote_helper_sha256": "2e5389c5ec8089e4471fd67eac0df08a452361b7fc4046025514a1be81b49284",
+  "baseline": "console-optimization-release-20261018-membership-01",
+  "local_report": "D:\\CodexData\\vps\\deployments\\raksmart-198.200.49.63\\console-optimization-deployment-20261018-membership-02.json",
+  "remote_stage": "/root/vps-console-deploy-en1pq5f1",
+  "verification": {
+    "accounts_checked": 5,
+    "archive_sha256": "f16700616e25fe632e4f9c7f4dbc184576a1d3384572033be5ef38a29b637f66",
+    "bytecode_removed": [],
+    "changed_source_files": 3,
+    "only_panel_restarted": true,
+    "panel_enablement_preserved": true,
+    "phase": "complete",
+    "production_updated": true,
+    "protected_bytes_preserved": true,
+    "proxy_epochs_preserved": true,
+    "stage": "/root/vps-console-deploy-en1pq5f1",
+    "success": true,
+    "traffic_cumulative_non_decreasing": true
+  },
+  "remote_exit_code": 0,
+  "production_updated": true
+}

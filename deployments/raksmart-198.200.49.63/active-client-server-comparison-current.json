@@ -1,0 +1,375 @@
+{
+  "observed_utc": "2026-10-11T05:56:16.751039+00:00",
+  "read_only": true,
+  "active_profile_id": "1791639448254",
+  "profiles": [
+    {
+      "profile_id": "1791548013464",
+      "is_active": false,
+      "selected_groups": {
+        "GLOBAL": "AUTO · 网页切换",
+        "STATIC-SELECT": "AUTO · 网页切换"
+      },
+      "last_update_date": "2026-10-09T20:13:33.501314",
+      "subscription_url_present": false,
+      "config": {
+        "sha256": "8701f84d991bfc451bb344c2cb9b4545cf157e988c8555b5bca8f46e79224c7d",
+        "mode": "rule",
+        "tun": {
+          "enable": null,
+          "stack": null,
+          "auto-route": null,
+          "auto-detect-interface": null,
+          "strict-route": null,
+          "mtu": null
+        },
+        "target_nodes": [
+          {
+            "name": "AUTO · 网页切换",
+            "type": "vless",
+            "server": "198.200.49.63",
+            "port": 443,
+            "network": "tcp",
+            "flow": "xtls-rprx-vision",
+            "udp": false
+          }
+        ],
+        "target_groups": [
+          {
+            "name": "STATIC-SELECT",
+            "type": "select",
+            "members": [
+              "AUTO · 网页切换"
+            ]
+          }
+        ],
+        "rules_count": 49,
+        "fast_related_rules": [
+          "RULE-SET,Netflix,STATIC-SELECT"
+        ],
+        "final_rules": [
+          "DOMAIN-SUFFIX,cn,DIRECT",
+          "RULE-SET,China IPs,DIRECT",
+          "MATCH,STATIC-SELECT"
+        ],
+        "dns": {
+          "enable": true,
+          "enhanced-mode": "fake-ip",
+          "nameserver": [
+            "https://1.1.1.1",
+            "https://8.8.8.8"
+          ],
+          "proxy-server-nameserver": [
+            "https://223.5.5.5"
+          ],
+          "direct-nameserver": [
+            "https://223.5.5.5",
+            "https://1.12.12.12"
+          ],
+          "direct-nameserver-follow-policy": true
+        }
+      }
+    },
+    {
+      "profile_id": "1791639448254",
+      "is_active": true,
+      "selected_groups": {
+        "STATIC-SELECT": "AUTO · 网页切换",
+        "AUTO · 网页切换": "HY2 · 网页切换"
+      },
+      "last_update_date": "2026-10-10T21:58:06.382172",
+      "subscription_url_present": true,
+      "config": {
+        "sha256": "acbf21f6c6834c8433a90e5294681bbee3b19fc07853beec0292e805330014d2",
+        "mode": "rule",
+        "tun": {
+          "enable": null,
+          "stack": null,
+          "auto-route": null,
+          "auto-detect-interface": null,
+          "strict-route": null,
+          "mtu": null
+        },
+        "target_nodes": [
+          {
+            "name": "HY2 · 网页切换",
+            "type": "hysteria2",
+            "server": "198.200.49.63",
+            "port": 443,
+            "udp": false,
+            "skip-cert-verify": false
+          },
+          {
+            "name": "REALITY · TCP兼容",
+            "type": "vless",
+            "server": "198.200.49.63",
+            "port": 443,
+            "network": "tcp",
+            "flow": "xtls-rprx-vision",
+            "udp": false
+          }
+        ],
+        "target_groups": [
+          {
+            "name": "STATIC-SELECT",
+            "type": "select",
+            "members": [
+              "AUTO · 网页切换",
+              "REALITY · TCP兼容"
+            ]
+          },
+          {
+            "name": "AUTO · 网页切换",
+            "type": "fallback",
+            "interval": 30,
+            "timeout": 5000,
+            "lazy": false,
+            "expected-status": "204",
+            "members": [
+              "HY2 · 网页切换",
+              "REALITY · TCP兼容"
+            ]
+          }
+        ],
+        "rules_count": 49,
+        "fast_related_rules": [
+          "RULE-SET,Netflix,STATIC-SELECT"
+        ],
+        "final_rules": [
+          "DOMAIN-SUFFIX,cn,DIRECT",
+          "RULE-SET,China IPs,DIRECT",
+          "MATCH,STATIC-SELECT"
+        ],
+        "dns": {
+          "enable": true,
+          "enhanced-mode": "fake-ip",
+          "nameserver": [
+            "https://1.1.1.1",
+            "https://8.8.8.8"
+          ],
+          "proxy-server-nameserver": [
+            "https://223.5.5.5"
+          ],
+          "direct-nameserver": [
+            "https://223.5.5.5",
+            "https://1.12.12.12"
+          ],
+          "direct-nameserver-follow-policy": true
+        }
+      }
+    }
+  ],
+  "generated_core": {
+    "sha256": "19781b3b884f889b4ff6ab13f24687e00107ca6a4ec3d22935842d0b32a10c17",
+    "mode": "rule",
+    "tun": {
+      "enable": true,
+      "stack": "mixed",
+      "auto-route": true,
+      "auto-detect-interface": null,
+      "strict-route": null,
+      "mtu": null
+    },
+    "target_nodes": [
+      {
+        "name": "HY2 · 网页切换",
+        "type": "hysteria2",
+        "server": "198.200.49.63",
+        "port": 443,
+        "udp": false,
+        "skip-cert-verify": false
+      },
+      {
+        "name": "REALITY · TCP兼容",
+        "type": "vless",
+        "server": "198.200.49.63",
+        "port": 443,
+        "network": "tcp",
+        "flow": "xtls-rprx-vision",
+        "udp": false
+      }
+    ],
+    "target_groups": [
+      {
+        "name": "STATIC-SELECT",
+        "type": "select",
+        "members": [
+          "AUTO · 网页切换",
+          "REALITY · TCP兼容"
+        ]
+      },
+      {
+        "name": "AUTO · 网页切换",
+        "type": "fallback",
+        "interval": 30,
+        "timeout": 5000,
+        "lazy": false,
+        "expected-status": "204",
+        "members": [
+          "HY2 · 网页切换",
+          "REALITY · TCP兼容"
+        ]
+      }
+    ],
+    "rules_count": 49,
+    "fast_related_rules": [
+      "RULE-SET,Netflix,STATIC-SELECT"
+    ],
+    "final_rules": [
+      "DOMAIN-SUFFIX,cn,DIRECT",
+      "RULE-SET,China IPs,DIRECT",
+      "MATCH,STATIC-SELECT"
+    ],
+    "dns": {
+      "enable": true,
+      "enhanced-mode": "fake-ip",
+      "respect-rules": false,
+      "nameserver": [
+        "https://1.1.1.1",
+        "https://8.8.8.8"
+      ],
+      "fallback": "NoneType",
+      "proxy-server-nameserver": [
+        "https://223.5.5.5"
+      ],
+      "direct-nameserver": [
+        "https://223.5.5.5",
+        "https://1.12.12.12"
+      ],
+      "direct-nameserver-follow-policy": true
+    }
+  },
+  "app_patch": {
+    "mode": "rule",
+    "unified-delay": true,
+    "tcp-concurrent": true
+  },
+  "windows_socket_limit": "Get-NetTCPConnection reports TCP remotes; Get-NetUDPEndpoint does not expose QUIC remote destinations.",
+  "observation_conclusion": "FlClash persisted selection and generated core use .63 HY2 via AUTO; no .158 profile appears in FlClash or Clash Verge. Workspace .158 node references exist, but the app/node/protocol used for the reported 200 Mbps remains unidentified. TCP snapshot alone cannot prove the actual HY2 UDP remote destination.",
+  "flclash_process_sockets": [
+    {
+      "pid": 55672,
+      "name": "FlClash",
+      "udp_local": [],
+      "public_tcp_connection_count": 0,
+      "target_server_tcp_connections": []
+    },
+    {
+      "pid": 17300,
+      "name": "FlClashCore",
+      "udp_local": [
+        {
+          "LocalAddress": "::",
+          "LocalPort": 60113
+        },
+        {
+          "LocalAddress": "127.0.0.1",
+          "LocalPort": 7890
+        }
+      ],
+      "public_tcp_connection_count": 34,
+      "target_server_tcp_connections": []
+    },
+    {
+      "pid": 6032,
+      "name": "FlClashHelperService",
+      "udp_local": [],
+      "public_tcp_connection_count": 0,
+      "target_server_tcp_connections": []
+    }
+  ],
+  "workspace_158_deployment_references": [
+    {
+      "deployment_reference": "raksmart-158-client.private.yaml",
+      "sha256": "6e73ddbb7faa2bc6c684f073f79c5104304defdc53b412a77c9264f749af14c6",
+      "target_nodes": [
+        {
+          "name": "RAKsmart-US-158-HY2",
+          "type": "hysteria2",
+          "server": "198.200.49.158",
+          "port": 443,
+          "skip-cert-verify": false,
+          "up_down_configured": false,
+          "obfs_present": false,
+          "mux_present": false,
+          "dialer_proxy_present": false
+        },
+        {
+          "name": "RAKsmart-US-158",
+          "type": "vless",
+          "server": "198.200.49.158",
+          "port": 443,
+          "network": "tcp",
+          "flow": "xtls-rprx-vision",
+          "up_down_configured": false,
+          "obfs_present": false,
+          "mux_present": false,
+          "dialer_proxy_present": false
+        }
+      ]
+    },
+    {
+      "deployment_reference": "hy2-draft/mihomo.private.yaml",
+      "sha256": "ca0942de29f914238eb35843f40808436fd4512c64366024a901f069fe8ba0c9",
+      "target_nodes": [
+        {
+          "name": "RAKsmart-US-158-HY2",
+          "type": "hysteria2",
+          "server": "198.200.49.158",
+          "port": 443,
+          "skip-cert-verify": false,
+          "up_down_configured": false,
+          "obfs_present": false,
+          "mux_present": false,
+          "dialer_proxy_present": false
+        }
+      ]
+    },
+    {
+      "deployment_reference": "clash-smart-routing.private.yaml",
+      "sha256": "c7bf0833d661c55f3313610d682298028ccaf8d163438e6faa3ab57ffac02cbd",
+      "target_nodes": [
+        {
+          "name": "AUTO · 网页切换",
+          "type": "vless",
+          "server": "198.200.49.158",
+          "port": 443,
+          "network": "tcp",
+          "flow": "xtls-rprx-vision",
+          "up_down_configured": false,
+          "obfs_present": false,
+          "mux_present": false,
+          "dialer_proxy_present": false
+        },
+        {
+          "name": "出口 · 美国洛杉矶静态isp",
+          "type": "vless",
+          "server": "198.200.49.158",
+          "port": 443,
+          "network": "tcp",
+          "flow": "xtls-rprx-vision",
+          "up_down_configured": false,
+          "obfs_present": false,
+          "mux_present": false,
+          "dialer_proxy_present": false
+        }
+      ]
+    }
+  ],
+  "clash_verge_inspection": {
+    "current_profile": null,
+    "items_types": [
+      "merge",
+      "script"
+    ],
+    "stored_158_or_63_nodes_present": false,
+    "generated_tun_enabled": false,
+    "ui_process_running": false,
+    "service_process_running": true
+  },
+  "other_visible_clients": {
+    "v2rayn_nekobox_hiddify_singbox_shadowsocks_running_or_common_dirs_found": false,
+    "inspection_scope": "Only process names and immediate common app directories, no broad userdata search."
+  },
+  "need_user_detail_to_match_fast_node": "Application name and exact selected .158 node name/protocol, if not inferable from another source."
+}

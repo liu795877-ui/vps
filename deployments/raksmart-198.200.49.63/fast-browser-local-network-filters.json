@@ -1,0 +1,99 @@
+{
+  "checked_at_utc": "2026-10-11T01:29:35.803318+00:00",
+  "read_only": true,
+  "speed_tests": 0,
+  "configuration_changes": 0,
+  "elevation_requested": false,
+  "interface": {
+    "alias": "WLAN",
+    "status": "Up",
+    "adapter_description": "Intel(R) Wi-Fi 6 AX200 160MHz",
+    "reported_phy_link_speed": "2.2 Gbps",
+    "scope": "Driver link speed does not establish measured Internet throughput."
+  },
+  "idle_interface_observation": {
+    "duration_seconds": 3,
+    "received_byte_delta": 83230,
+    "sent_byte_delta": 17625,
+    "received_discard_delta": 0,
+    "received_error_delta": 0,
+    "sent_error_delta": 0,
+    "approx_received_mbps": 0.222,
+    "approx_sent_mbps": 0.047,
+    "scope": "One short passive interval; does not measure other devices on the same router or background traffic at earlier test times."
+  },
+  "enabled_adapter_filters": [
+    {
+      "component": "nt_nnndisfilter",
+      "display_name": "Leigod Network Technology LightWeight Filter",
+      "binding_enabled": true,
+      "kernel_driver_name": "nnndisfilter",
+      "kernel_driver_state": "Running",
+      "kernel_driver_started": true,
+      "kernel_driver_start_mode": "System"
+    },
+    {
+      "component": "vmware_bridge",
+      "display_name": "VMware Bridge Protocol",
+      "binding_enabled": true
+    },
+    {
+      "component": "ms_l2bridge",
+      "display_name": "Windows bridge driver",
+      "binding_enabled": true
+    },
+    {
+      "component": "ms_l1vhlwf",
+      "display_name": "Nested network virtualization",
+      "binding_enabled": true
+    },
+    {
+      "component": "ms_pacer",
+      "display_name": "QoS packet scheduler",
+      "binding_enabled": true
+    }
+  ],
+  "leigod_user_activation": {
+    "matching_user_processes": [],
+    "matching_user_services": [],
+    "kernel_filter_bound_and_running": true,
+    "acceleration_or_rate_policy_activation_established": false,
+    "process_name_or_product_path_match_performed": true,
+    "visibility_limit": "No elevation; protected executable paths may be unavailable. A running bound kernel filter does not prove an accelerator session or rate limit is active."
+  },
+  "public_windows_qos_policy_registry": {
+    "machine_store_exists": false,
+    "user_store_exists": false,
+    "active_store_query": "unknown-access-denied",
+    "absence_excludes_all_qos_policies": false
+  },
+  "other_visible_proxy_service_processes": [
+    "clash-verge-service",
+    "FlClash",
+    "FlClashCore",
+    "FlClashHelperService"
+  ],
+  "route_observation": {
+    "ipv4_default_route_interfaces": [
+      "WLAN",
+      "FlClash"
+    ],
+    "specific_host_route_to_test_servers_observed": false,
+    "active_proxy_routing_works_in_prior_isolated_tests": true,
+    "scope": "An OS TUN default route and physical default route can legitimately coexist; this observation does not establish a conflict."
+  },
+  "prior_fast_transfer_shape": {
+    "four_streams": "Each stream ended at the shared 12-second deadline, generally 2.8 to 3.2 MB received.",
+    "exact_per_stream_byte_limit_found": false,
+    "interpretation": "Similar stream shares are compatible with a common bottleneck; they do not identify a configured limiter. Byte alignment can arise from network/read chunking and does not prove a rate policy.",
+    "helper_max_read_chunk_bytes": 65536,
+    "observed_transfer_byte_multiple": 16384
+  },
+  "findings": [
+    "No measured heavy background traffic in this passive WLAN interval.",
+    "No matching Leigod user process/service was observed, while its WLAN binding and kernel driver were enabled.",
+    "No public machine/user Windows QoS policy registry was present; ActiveStore could not be inspected without elevation.",
+    "These observations do not prove router, Wi-Fi, filter, ISP or overseas-route causation."
+  ],
+  "next_useful_experiment": "One small direct transfer from a domestic HTTPS source through an isolated WLAN-bound direct node, compared with the already measured overseas paths, can separate a general local access bottleneck from an overseas-only one without modifying the active client."
+}

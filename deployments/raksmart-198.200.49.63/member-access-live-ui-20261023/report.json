@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "checked_at": "2026-10-24T02:27:09.146Z",
+  "release": "console-optimization-release-20261023-access-01",
+  "checks": [
+    "all four public assets match the frozen release",
+    "administrator can read real member metadata with owner excluded",
+    "member filter returns only the selected member",
+    "HY2 and REALITY filters preserve protocol attribution",
+    "production access records page fits a mobile viewport",
+    "member 1 cannot view the page or read the API",
+    "member 2 cannot view the page or read the API",
+    "logout clears connection rows and revokes the session"
+  ],
+  "errors": [],
+  "configuration_mutations": 0,
+  "private_values_included": false,
+  "visible_connection_count": 90098,
+  "member_count": 4,
+  "catching_up": false
+}

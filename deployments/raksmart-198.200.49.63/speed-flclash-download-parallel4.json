@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-09T15:34:33+08:00",
+  "path": "Active FlClash",
+  "direction": "download",
+  "parallel_streams": 4,
+  "requested_bytes_per_stream": 500000,
+  "checks": [
+    {
+      "sample": 1,
+      "streams": [
+        {
+          "http_code": 200,
+          "size_download": 500000,
+          "size_upload": 0,
+          "time_total": 9.226356,
+          "time_starttransfer": 1.18427,
+          "time_appconnect": 0.863024,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        },
+        {
+          "http_code": 200,
+          "size_download": 500000,
+          "size_upload": 0,
+          "time_total": 9.548286,
+          "time_starttransfer": 0.901364,
+          "time_appconnect": 0.651179,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        },
+        {
+          "http_code": 200,
+          "size_download": 500000,
+          "size_upload": 0,
+          "time_total": 5.469466,
+          "time_starttransfer": 0.69892,
+          "time_appconnect": 0.509992,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        },
+        {
+          "http_code": 200,
+          "size_download": 500000,
+          "size_upload": 0,
+          "time_total": 9.673814,
+          "time_starttransfer": 1.200542,
+          "time_appconnect": 0.869589,
+          "exit_code": 0,
+          "error": "",
+          "success": true
+        }
+      ],
+      "actual_bytes": 2000000,
+      "wall_seconds": 9.743,
+      "mbps_including_startup": 1.642,
+      "MB_per_second": 0.205,
+      "success": true
+    }
+  ],
+  "exit_ip": "198.200.49.63",
+  "identity_exit_code": 0,
+  "identity_error": "",
+  "exit_matches_vps": true
+}

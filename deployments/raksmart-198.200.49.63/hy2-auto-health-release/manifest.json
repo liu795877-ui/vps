@@ -1,0 +1,40 @@
+{
+  "format": "vps-hy2-auto-health-v1",
+  "files": [
+    "panel/accelerated_client.py",
+    "panel/test_accelerated_client.py"
+  ],
+  "deployment_ip": "198.200.49.63",
+  "prepared_at": "2026-10-10T13:51:40.151568+00:00",
+  "python_syntax": "3.6",
+  "source_sha256": {
+    "panel/accelerated_client.py": "cdca32b22fb4f0510ab2f42a952c897906d075d9964c62bbff903eefcb8ceff2",
+    "panel/test_accelerated_client.py": "7f097385a36e9c98f1b553f21937baea5ca39593004e8cb56d2ffd7070213a73"
+  },
+  "baseline_sha256": {
+    "panel/accelerated_client.py": "35441f3ff8e4a2b206ac7c8ef8d56afbd3f24cfcee549dab7c716945bd78d9e4",
+    "panel/test_accelerated_client.py": "cff8df0bac5e9a41dd72533d07c4b67921869e1d6ad090476183af08a9da7204"
+  },
+  "helper_sha256": {
+    "publish_hy2_auto_health_remote.py": "d3c0a6b2fbd1a3e4479bf286094422da5d0517c22c2238f642e11b9b739fb4ac",
+    "optimize_udp_buffers_remote.py": "53475e9f18634ae79af92cd792942efd8b4885d777f93e66b8584b91361eb037"
+  },
+  "private_state_allowed_changes": [
+    "profile",
+    "profile_version",
+    "profile_hash",
+    "profile_updated"
+  ],
+  "transport_restarts": 0,
+  "only_panel_restarted": true,
+  "credential_rotation": false,
+  "traffic_ledger_restored": false,
+  "health_check": {
+    "url": "https://www.gstatic.com/generate_204",
+    "expected-status": "204",
+    "interval": 30,
+    "timeout": 5000,
+    "lazy": false
+  },
+  "bbr_server_and_client": "standard"
+}

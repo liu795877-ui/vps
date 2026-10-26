@@ -1,0 +1,25 @@
+{
+  "origin": "https://198-200-49-63.sslip.io:8443",
+  "python_syntax": "3.6",
+  "application_files": [
+    "configure_reality.py",
+    "configure_static_exits.py",
+    "panel/__init__.py",
+    "panel/node_info.py",
+    "panel/routing.py",
+    "panel/rules/domestic-dns.yaml",
+    "panel/server.py",
+    "panel/services-routing.json",
+    "panel/test_panel.py",
+    "panel/web/app.js",
+    "panel/web/index.html",
+    "panel/web/mark.svg",
+    "panel/web/style.css",
+    "test_configure_reality.py",
+    "test_configure_static_exits.py"
+  ],
+  "archive_sha256": "816ddbf329140af525a4a98833affb7ce9a7034b7ef0bed340b3dd1ddee61775",
+  "adoption_config_sha256": "4784daf5743ea4a51aed1cb37774265ddd81e26983b71f4473ca7b7908236eec",
+  "initial_exit_count": 0,
+  "identities_from_158_copied": false
+}

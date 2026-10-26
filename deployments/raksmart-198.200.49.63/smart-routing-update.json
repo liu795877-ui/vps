@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "phase": "complete",
+  "updated_files": [
+    "panel/server.py",
+    "panel/routing.py",
+    "panel/smart-routing.json",
+    "panel/test_panel.py",
+    "panel/test_routing.py",
+    "panel/web/app.js",
+    "panel/web/index.html",
+    "panel/web/style.css"
+  ],
+  "backup": "/root/raksmart-proxy-deploy-20261009/smart-routing-20261009T120846-25ebdc/before",
+  "configuration_and_accounts_preserved": true,
+  "auto_identity_preserved": true,
+  "exit_state_preserved": true,
+  "rule_subscription_token_initialized": true
+}

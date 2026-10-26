@@ -1,0 +1,99 @@
+{
+  "format": "vps-console-adoption-acceptance-v1",
+  "success": true,
+  "accepted_at": "2026-10-13T07:02:06.971618+00:00",
+  "server": "198.200.49.158",
+  "production_updated": true,
+  "url": "https://198-200-49-158.sslip.io:8443/node-console/",
+  "source_server": "198.200.49.63",
+  "source_release": "console-optimization-release-20261013-05",
+  "target_release": "console-optimization-release-20261013-01",
+  "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+  "manifest_sha256": "01768927cb56c6359cd1b91f8beae9c96ed06d7b857d59fde937c2018182f9e9",
+  "vendor_archive_sha256": "1002f3c4b98a81ab427d15299138530855f6e08fb85638ca4bd6e8738e656b85",
+  "remote_helper_sha256": "501a2bff06a83c04b174a5dce1fb006f6e0544cc529b5ee8f4ee8480ac6bdf11",
+  "rollback_checkpoint": "/root/vps-console-adoption-tl3qx7_u",
+  "application_files": 41,
+  "dependency_files": 150,
+  "private_data_copied_from_source_server": false,
+  "source_server_modified": false,
+  "configuration": {
+    "account_count": 1,
+    "member_count": 0,
+    "default_member_ports": [
+      1443,
+      2443
+    ],
+    "public_member_ingress_verified": false,
+    "current_web_target": "server",
+    "observed_current_egress": "198.200.49.158",
+    "hy2_follows_web_exit": true,
+    "administrator_auth_preserved": true,
+    "existing_proxy_identities_preserved": true,
+    "legacy_hy2_password_and_tls_preserved": true,
+    "exit_accounts_rules_drafts_history_preserved": true,
+    "firewall_and_network_policy_preserved": true,
+    "traffic_cumulative_non_decreasing": true,
+    "backup_preview_ingress_limit_bytes": 48000000,
+    "ordinary_request_limit_bytes": 64000,
+    "legacy_hy2_service": "inactive and disabled",
+    "managed_hy2_service": "raksmart-hy2@443.service"
+  },
+  "validation": {
+    "python36": {
+      "tests": 234,
+      "passed": 225,
+      "skipped": 9,
+      "failures": 0,
+      "errors": 0
+    },
+    "migration_and_rollback_fixtures": {
+      "tests": 13,
+      "passed": 13
+    },
+    "browser_checks": 11,
+    "browser_viewports": [
+      1440,
+      390
+    ],
+    "javascript_errors": 0,
+    "real_client_transports": [
+      "reality_legacy",
+      "reality",
+      "hy2"
+    ],
+    "public_tcp443_verified": true,
+    "public_udp443_verified": true,
+    "backup_ingress_checks": 5,
+    "delayed_protection_verification_passed": true,
+    "production_members_created_for_testing": 0,
+    "new_download_benchmark_performed": false
+  },
+  "reports": {
+    "deployment": {
+      "file": "console-optimization-deployment-20261013-01.json",
+      "sha256": "7f1725d8ab2e94a766f90737e1471955fbf254410bd5c17878737b8985d579d5"
+    },
+    "python36": {
+      "file": "console-optimization-python36-validation-20261013-01.json",
+      "sha256": "0922bdc77aef14269081aa69a792abd16809e72da430704dbf85d9b23a10fafb"
+    },
+    "browser": {
+      "file": "console-optimization-browser-verification.json",
+      "sha256": "be0f903e00aa41bdfb56db0bd7ede2448cd5359c773657de1292ae4350ca10fd"
+    },
+    "clients": {
+      "file": "console-optimization-clients-verification.json",
+      "sha256": "59afc1346508ce352ded9aa1a66c3d09767ba5353f29a89ff35f3dfeb991b71d"
+    },
+    "ingress": {
+      "file": "console-optimization-ingress-verification.json",
+      "sha256": "3f9f722624f3723421f9bf4f4372e366fbc2196c1d67f3055690fd5cdc6801fe"
+    },
+    "postverification": {
+      "file": "console-optimization-post-deployment-verification-20261013.json",
+      "sha256": "9584c7548842220951d47e04ae2d123938de95b3f7d5f5167c57a78927386c84"
+    }
+  },
+  "secrets_included": false
+}

@@ -1,0 +1,13 @@
+{
+  "prepared_at": "2026-10-10T11:32:40.196856+00:00",
+  "deployment_ip": "198.200.49.63",
+  "expected_frontend_source": "hy2-integration-release-manifest.json",
+  "frozen_frontend_sha256": {
+    "panel/web/index.html": "2222278a03d4a25f5fdf6935e112c6fd87f14c5871c069e751d3473f371fc128",
+    "panel/web/app.js": "3257def1d06e8c6ea0a154172e6aadc06133337fbecdd9be6f422d9c0a10f7e5",
+    "panel/web/style.css": "d29c80a7d8112a67420095da5675c7b0bd0e59256a2ea805c5af5595a53075ed"
+  },
+  "scenario_sha256": "6d30ac7fdf508a0e22c8391e40cac3dc89c81e8c82025803de40293fdbfdb561",
+  "server_requests": 0,
+  "configuration_mutations": 0
+}

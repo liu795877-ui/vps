@@ -1,0 +1,13 @@
+{
+  "format": "vps-console-production-baseline-verification-v1",
+  "deployment_ip": "198.200.49.158",
+  "preflight_file": "console-optimization-preflight-20261013.json",
+  "preflight_sha256": "9da6a0a5c3a307c607ca9b6fc533e086cae1fa747cfba445145496a9b023db1e",
+  "verified_source_files": 17,
+  "source_baseline_matches_production": true,
+  "active_target": "server",
+  "active_target_preservation": "Preserve the live server target; historical README target is stale.",
+  "source_archive_unchanged": true,
+  "manifest_unchanged_for_running_validation": true,
+  "production_updated": false
+}

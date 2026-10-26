@@ -1,0 +1,181 @@
+{
+  "at": "2026-10-19T02:44:43.333586+00:00",
+  "physical_interface": "WLAN",
+  "groups": [
+    [
+      {
+        "port": 443,
+        "attempt": 1,
+        "connected": true,
+        "ms": 162
+      },
+      {
+        "port": 443,
+        "attempt": 2,
+        "connected": true,
+        "ms": 161
+      },
+      {
+        "port": 443,
+        "attempt": 3,
+        "connected": true,
+        "ms": 176
+      },
+      {
+        "port": 443,
+        "attempt": 4,
+        "connected": true,
+        "ms": 172
+      },
+      {
+        "port": 443,
+        "attempt": 5,
+        "connected": true,
+        "ms": 207
+      },
+      {
+        "port": 443,
+        "attempt": 6,
+        "connected": true,
+        "ms": 157
+      }
+    ],
+    [
+      {
+        "port": 1443,
+        "attempt": 1,
+        "connected": true,
+        "ms": 182
+      },
+      {
+        "port": 1443,
+        "attempt": 2,
+        "connected": true,
+        "ms": 160
+      },
+      {
+        "port": 1443,
+        "attempt": 3,
+        "connected": true,
+        "ms": 165
+      },
+      {
+        "port": 1443,
+        "attempt": 4,
+        "connected": true,
+        "ms": 158
+      },
+      {
+        "port": 1443,
+        "attempt": 5,
+        "connected": true,
+        "ms": 191
+      },
+      {
+        "port": 1443,
+        "attempt": 6,
+        "connected": true,
+        "ms": 199
+      }
+    ],
+    [
+      {
+        "port": 3444,
+        "attempt": 1,
+        "connected": true,
+        "ms": 161
+      },
+      {
+        "port": 3444,
+        "attempt": 2,
+        "connected": true,
+        "ms": 205
+      },
+      {
+        "port": 3444,
+        "attempt": 3,
+        "connected": true,
+        "ms": 211
+      },
+      {
+        "port": 3444,
+        "attempt": 4,
+        "connected": true,
+        "ms": 159
+      },
+      {
+        "port": 3444,
+        "attempt": 5,
+        "connected": true,
+        "ms": 212
+      },
+      {
+        "port": 3444,
+        "attempt": 6,
+        "connected": true,
+        "ms": 178
+      }
+    ],
+    [
+      {
+        "port": 4444,
+        "attempt": 1,
+        "connected": true,
+        "ms": 224
+      },
+      {
+        "port": 4444,
+        "attempt": 2,
+        "connected": false,
+        "error": "TimeoutError",
+        "ms": 3005
+      },
+      {
+        "port": 4444,
+        "attempt": 3,
+        "connected": false,
+        "error": "TimeoutError",
+        "ms": 3008
+      },
+      {
+        "port": 4444,
+        "attempt": 4,
+        "connected": true,
+        "ms": 210
+      },
+      {
+        "port": 4444,
+        "attempt": 5,
+        "connected": true,
+        "ms": 212
+      },
+      {
+        "port": 4444,
+        "attempt": 6,
+        "connected": false,
+        "error": "TimeoutError",
+        "ms": 3010
+      }
+    ]
+  ],
+  "server_syn_capture": {
+    "443": {
+      "syn_in": 2,
+      "synack_out": 2
+    },
+    "1443": {
+      "syn_in": 0,
+      "synack_out": 0
+    },
+    "3444": {
+      "syn_in": 2,
+      "synack_out": 2
+    },
+    "4444": {
+      "syn_in": 3,
+      "synack_out": 3
+    }
+  },
+  "capture_packet_lines": 15,
+  "remote_changes": false
+}

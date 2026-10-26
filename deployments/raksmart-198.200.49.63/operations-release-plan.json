@@ -1,0 +1,44 @@
+{
+  "prepared": true,
+  "deployment_executed": false,
+  "changed_source_files": [
+    "panel/server.py",
+    "panel/accounts.py",
+    "panel/subscriptions.py",
+    "panel/audit.py",
+    "panel/diagnostics.py",
+    "panel/health.py",
+    "panel/telemetry.py",
+    "panel/backups.py",
+    "panel/test_panel.py",
+    "panel/test_accounts.py",
+    "panel/test_subscriptions.py",
+    "panel/test_multiuser_http.py",
+    "panel/test_operations.py",
+    "panel/test_enhancements_http.py",
+    "panel/web/style.css",
+    "panel/web/app.js",
+    "panel/web/index.html"
+  ],
+  "new_source_files": [
+    "panel/audit.py",
+    "panel/backups.py",
+    "panel/diagnostics.py",
+    "panel/health.py",
+    "panel/subscriptions.py",
+    "panel/telemetry.py",
+    "panel/test_enhancements_http.py",
+    "panel/test_operations.py",
+    "panel/test_subscriptions.py"
+  ],
+  "offline_dependency": "cryptography 3.3.2 and three frozen dependencies, isolated vendor directory",
+  "mutable_existing_data": "managed_hash and subscription metadata only; read-only statistics in proxy config",
+  "service_changes": "restart panel and each enabled proxy sequentially; disabled members stay stopped",
+  "unchanged_services": [
+    "caddy.service",
+    "raksmart-hy2.service"
+  ],
+  "dropin": "append CAP_NET_ADMIN, CAP_NET_RAW and AF_NETLINK; preserve existing writable paths",
+  "rollback": "compare expected installed bytes before restoring source/config/state/vendor/dropin",
+  "archive_sha256": "ea174f1a59c215b9385b6b769c369f22005ef2d846a38ff7b3d2c174cb8dc74c"
+}

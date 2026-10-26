@@ -1,0 +1,25 @@
+{
+  "success": false,
+  "checked_at": "2026-10-10T09:10:53.868Z",
+  "deployment_ip": "198.200.49.63",
+  "trusted_https": true,
+  "physical_wlan": true,
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "checks": [],
+  "users": [],
+  "screenshots": [
+    "admin-overview-1440.png",
+    "admin-routing-1440.png",
+    "admin-access-1440.png",
+    "admin-users-1440.png",
+    "admin-maintenance-1440.png"
+  ],
+  "assets": {},
+  "failure": {
+    "stage": "viewports_admin_390",
+    "message": "Connection path starts in the first viewport"
+  },
+  "browser_errors": [],
+  "blocked_requests": []
+}

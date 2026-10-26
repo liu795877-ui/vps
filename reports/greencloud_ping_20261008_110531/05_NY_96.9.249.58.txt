@@ -1,0 +1,37 @@
+
+Pinging 96.9.249.58 with 32 bytes of data:
+Request timed out.
+Reply from 96.9.249.58: bytes=32 time=312ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=300ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=314ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=315ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=316ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=337ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=375ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=510ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=331ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=293ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=301ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=309ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=298ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=290ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=310ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=309ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=334ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=306ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=307ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=325ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=300ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=322ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=325ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=310ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=330ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=305ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=309ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=303ms TTL=29
+Reply from 96.9.249.58: bytes=32 time=289ms TTL=29
+
+Ping statistics for 96.9.249.58:
+    Packets: Sent = 30, Received = 29, Lost = 1 (3% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 289ms, Maximum = 510ms, Average = 320ms

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>NODE / 私人节点控制台</title>
+  <link rel="icon" href="./mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css?v=motion-20261009-1">
+  <script src="./app.js?v=motion-20261009-1" defer></script>
+</head>
+<body>
+  <div id="login-screen" class="login-screen">
+    <div class="login-art" aria-hidden="true">
+      <div class="login-brand">NODE<span> / YOUR PRIVATE NETWORK</span></div>
+      <div class="orbital orbital-one"></div><div class="orbital orbital-two"></div>
+      <div class="login-art-content"><p class="eyebrow">A SMALL WINDOW TO YOUR NETWORK</p><h1>你的节点。<br>你的出口。</h1><p>把连接留给服务器，<br>把选择放在你的手边。</p></div>
+      <div class="art-footer"><span>VPS → STATIC IP → WEB</span><span>01 / CONTROL</span></div>
+    </div>
+    <div class="login-form-wrap">
+      <div class="mobile-brand">NODE / 控制台</div>
+      <form id="login-form" class="login-form">
+        <p class="eyebrow">PRIVATE ACCESS</p><h2>登录你的控制台</h2><p class="muted login-subtitle">配置出口、切换 IP，管理自己的连接。</p>
+        <label for="login-user">管理账号</label><input id="login-user" name="username" value="admin" autocomplete="username" required>
+        <label for="login-password">管理密码</label><div class="password-wrap"><input id="login-password" name="password" type="password" autocomplete="current-password" required><button type="button" class="password-toggle" data-toggle-password="login-password" aria-label="显示密码">显示</button></div>
+        <p id="login-error" class="field-error" role="alert"></p>
+        <button type="submit" class="button primary login-submit">进入控制台 <span aria-hidden="true">↗</span></button>
+        <p class="login-footnote">初始账号信息由部署时生成。代理服务的账号密码在登录后填写。</p>
+      </form>
+    </div>
+  </div>
+
+  <div id="console" class="app-layout" hidden>
+    <aside class="sidebar">
+      <a class="brand" href="./"><img src="./mark.svg" alt=""><span>NODE<small>私人节点控制台</small></span></a>
+      <button id="logout-mobile" class="mobile-logout" aria-label="退出登录">退出登录</button>
+      <div class="sidebar-section">工作空间</div>
+      <nav aria-label="主导航">
+        <button class="nav-button selected" data-view="overview"><span class="nav-icon">◈</span>出口管理<span class="nav-arrow">↗</span></button>
+        <button class="nav-button" data-view="routing"><span class="nav-icon">⌘</span>网站分流</button>
+        <button class="nav-button" data-view="access"><span class="nav-icon">⇣</span>客户端与访问</button>
+      </nav>
+      <div class="sidebar-note"><span class="live-dot"></span><strong>你的独立入口</strong><p>一个 VPS，<br>多个可以选择的出口。</p></div>
+      <div class="sidebar-bottom"><div class="admin-avatar">A</div><div><strong>管理员</strong><span>私人工作空间</span></div><button id="logout" aria-label="退出登录" title="退出登录">↗</button></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><div class="breadcrumb">工作空间 <span>/</span> <span id="breadcrumb-title">出口管理</span></div><div class="topbar-right"><span id="server-pill" class="status-pill"><i></i>正在检查</span><button id="refresh" class="icon-button" aria-label="刷新状态" title="刷新状态">↻</button></div></header>
+      <div id="demo-banner" class="notice" hidden>本地演示模式：不连接代理服务，不修改 VPS 配置。</div>
+      <div id="global-error" class="notice error-notice" role="alert" hidden></div>
+
+      <section id="view-overview" class="view">
+        <div class="page-heading"><div><p class="eyebrow">NETWORK / OVERVIEW</p><h1>出口，由你选择<span class="heading-dot">.</span></h1><p class="muted">点击静态出口即可切换；点击中间的服务器，使用 VPS 自身出口。</p></div><button id="add-exit" class="button primary"><span>＋</span> 添加出口</button></div>
+
+        <div class="metrics-grid">
+          <div class="metric"><span class="metric-label">入口服务器</span><strong id="metric-server">—</strong><span id="metric-server-detail" class="metric-detail">正在读取节点信息</span></div>
+          <div class="metric"><span class="metric-label">当前出口</span><strong id="metric-active">尚未配置</strong><span id="metric-active-detail" class="metric-detail">点击服务器或静态出口开始使用</span></div>
+          <div class="metric"><span class="metric-label">实际出口 IP</span><strong id="metric-ip">—</strong><span id="metric-tested" class="metric-detail">应用时会检测实际出口</span></div>
+          <div class="metric metric-count"><span class="metric-label">已添加出口</span><strong><span id="metric-count">0</span><em>/ 8</em></strong><span class="metric-detail">可在多个固定 IP 之间切换</span></div>
+        </div>
+
+        <section id="network-card" class="network-card" aria-label="连接路径"><div class="card-heading"><div><p class="eyebrow">CONNECTION PATH</p><h2>一条清晰的连接路径</h2></div><span id="path-status" class="subtle-tag">等待选择出口</span></div><div class="connection-path">
+          <div id="path-device" class="path-node path-device"><div class="node-icon device-icon"><span class="device-signal signal-one" aria-hidden="true"></span><span class="device-signal signal-two" aria-hidden="true"></span><svg viewBox="0 0 64 64" aria-hidden="true"><rect class="device-frame" x="9" y="10" width="46" height="34" rx="5"/><rect class="device-display" x="14" y="15" width="36" height="24" rx="2"/><path class="device-interface" d="M20 21h9m-9 5h15m-15 5h7m12-10h5m-5 5h5m-5 5h5"/><path class="device-stand" d="M26 44v9m12-9v9m-17 2h22"/><path class="device-scan" d="M16 19h32"/><circle class="device-power" cx="32" cy="41.5" r="1"/></svg></div><div class="device-copy"><span class="path-step">01 / CLIENT</span><strong>你的设备</strong><small>FlClash · AUTO 网页切换</small><span id="path-device-status" class="device-status">代理路径待应用</span></div></div>
+          <div id="client-connector" class="path-connector"><span>加密连接</span><div class="flow-track" aria-hidden="true"><i class="flow-particle"></i><i class="flow-particle"></i><i class="flow-particle"></i></div></div>
+          <button id="path-server-button" class="path-node path-server-button" type="button" aria-label="切换到服务器自身出口" aria-pressed="false"><span class="node-icon server-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path class="server-case" d="M14 9h36v46H14z"/><rect class="server-rack" x="18" y="13" width="28" height="10" rx="2"/><rect class="server-rack" x="18" y="27" width="28" height="10" rx="2"/><rect class="server-rack" x="18" y="41" width="28" height="10" rx="2"/><circle class="server-led led-one" cx="23" cy="18" r="1.6"/><circle class="server-led led-two" cx="23" cy="32" r="1.6"/><circle class="server-led led-three" cx="23" cy="46" r="1.6"/><path class="server-vents" d="M32 17h9m-9 3h9m-9 11h9m-9 3h9m-9 11h9m-9 3h9"/></svg></span><span class="server-copy"><span class="server-heading"><span class="path-step">02 / ENTRY</span><span id="path-server-badge" class="route-badge">点击切换</span></span><strong id="path-server-name">入口 VPS</strong><small id="path-server">独立节点入口</small><span id="path-server-exit" class="route-status">点击使用 VPS 自身出口</span></span></button>
+          <div id="exit-connector" class="path-connector"><span>SOCKS5 转发</span><div class="flow-track" aria-hidden="true"><i class="flow-particle"></i><i class="flow-particle"></i><i class="flow-particle"></i></div></div>
+          <div id="path-exit-group" class="path-exit-group"><span class="path-step"><span id="path-exits-label">可切换的静态出口</span> <span id="path-count">0</span></span><div id="path-routes" class="path-routes" aria-label="点击切换静态出口"></div><button id="path-empty" class="path-empty" type="button"><span>＋</span><strong>添加一个静态出口</strong><small>保存后，点击出口即可检测并切换</small></button></div>
+        </div><div class="path-motion-note"><span class="motion-note-mark" aria-hidden="true"></span>动效表示已应用的代理路径；设备是否连接由客户端确认。</div><div id="path-preview" class="path-preview" hidden><div><span class="preview-label">出口状态</span><strong id="path-preview-name"></strong><p id="path-message" aria-live="polite"></p></div><div class="path-actions"><button id="path-test" type="button" class="button secondary small">检测连接</button><button id="path-apply" type="button" class="button primary small">切换到此出口 ↗</button></div></div><p class="path-caption"><span><span id="path-routing-caption">指定网站经过这条路径；未匹配的网站直接连接。</span><small>首次在客户端选择“AUTO · 网页切换”。此后点击右侧出口或中间服务器即可切换，新增出口也无需重新下载。</small></span><button class="text-button" data-view="routing">管理分流规则 ↗</button></p></section>
+
+        <div class="section-heading"><div><h2>静态出口 <span id="exit-total" class="count-badge">0</span></h2><p class="muted">保存后点击出口，自动检测并切换。</p></div><button id="download-top" class="button secondary download-button" disabled>↓ 下载首次配置</button></div>
+        <div id="draft-notice" class="draft-notice" hidden><span>●</span><p>有尚未应用的出口修改。点击对应出口即可检测并应用；AUTO 无需重新下载配置。</p></div>
+        <div id="exit-list" class="exit-list"></div>
+        <div id="empty-state" class="empty-state"><div class="empty-symbol">＋</div><h3>添加你的第一个静态出口</h3><p>准备服务商提供的 SOCKS5 地址、端口与认证信息，<br>接下来通过表单完成配置。</p><button id="add-first" class="button primary">添加第一个出口 ↗</button><span>代理服务器地址不一定等于最终出口 IP。</span></div>
+
+        <div id="job-panel" class="job-panel" aria-live="polite" hidden><div class="job-heading"><strong id="job-message">正在处理</strong><span id="job-percent">0%</span></div><progress id="job-progress" max="100" value="0"></progress><p id="job-detail">配置应用期间，节点连接可能短暂重新建立。</p></div>
+        <footer class="page-footer"><span id="last-updated">尚未应用出口</span><button id="rollback" class="text-button" disabled>恢复上次配置 ↶</button></footer>
+      </section>
+
+      <section id="view-routing" class="view" hidden>
+        <div class="page-heading"><div><p class="eyebrow">NETWORK / ROUTING</p><h1>让网站走合适的路<span class="heading-dot">.</span></h1><p id="routing-page-description" class="muted">下列域名及其子域名经过静态出口，其他网站直接连接。</p></div></div>
+        <div class="settings-grid">
+          <form id="routing-form" class="settings-card">
+            <p class="eyebrow">ROUTING PLAN</p><h2>选择分流方案</h2>
+            <label for="routing-mode">分流方案</label>
+            <select id="routing-mode"><option value="smart">智能分流 · 国内直连</option><option value="manual">手动域名 · 未匹配直连</option><option value="services">服务分类分流 · 使用上传的规则</option></select>
+            <p id="routing-mode-hint" class="field-hint">国内视频与国内网站走本机，海外跟随网页当前出口。</p>
+            <div id="routing-smart-summary" class="routing-smart-summary" hidden>
+              <strong>国内走本机，海外跟随网页</strong>
+              <dl class="routing-destinations"><div><dt>本机网络</dt><dd>B站、爱奇艺、腾讯视频、优酷、国内音乐与日常网站</dd></div><div><dt>网页出口</dt><dd>YouTube、Netflix、Google、ChatGPT、海外服务与未匹配网站</dd></div></dl>
+              <p class="routing-order-title">规则优先级 · 从上到下匹配</p>
+              <ol class="routing-priority"><li>本机与局域网 <span>本机直连</span></li><li>强制直连、强制代理列表 <span>你的自定义例外</span></li><li>国内外服务分类 <span>海外服务优先识别</span></li><li>国内域名与中国大陆 IP <span>本机直连</span></li><li>其他流量 <span>网页当前出口</span></li></ol>
+              <p class="small-note">出口检测 api.ipify.org 固定经过网页当前出口，不能加入强制直连。海外版视频服务按海外规则处理。</p>
+            </div>
+            <div id="routing-service-summary" class="routing-service-summary" hidden><strong>沿用上传的服务分类</strong><dl><div><dt>默认代理</dt><dd>AI、国外媒体、Telegram、Microsoft、Steam、未匹配流量</dd></div><div><dt>默认直连</dt><dd>国内、亚洲媒体、Apple、PayPal、Scholar、miHoYo</dd></div></dl><p>Steam 下载域名优先直连；服务策略可在客户端中单独调整。</p></div>
+            <div class="routing-domain-lists">
+              <div><label for="direct-domains">强制直连 <span class="optional">可选，每行一个域名</span></label><textarea id="direct-domains" rows="5" spellcheck="false" placeholder="bilibili.com&#10;example.cn"></textarea><p class="field-hint">始终使用本机网络。同一域名及其子域名请只放在一个列表，重叠时会提示你调整。</p></div>
+              <div><label for="domains">强制代理 <span class="optional">可选，每行一个域名</span></label><textarea id="domains" rows="5" spellcheck="false" placeholder="github.com&#10;example.com"></textarea><p class="field-hint">始终跟随网页选择的服务器或静态出口。api.ipify.org 固定走此路径。</p></div>
+            </div>
+            <p id="routing-domains-hint" class="field-hint">填写域名即可同时匹配它的子域名。</p><button class="button primary" type="submit">保存分流规则</button>
+          </form>
+          <aside class="explanation-card"><div class="explanation-number">01 / 02</div><h3 id="routing-update-title">首次导入，之后自动同步</h3><p id="routing-update-description">首次选择智能分流，需要下载并导入配置一次。之后两个域名列表约每 5 分钟自动同步；可在客户端刷新规则集立即更新。切换分流方案仍需更新配置。</p><hr><h3>出口始终在网页切换</h3><p>客户端使用规则模式，在 STATIC-SELECT 中选择“AUTO · 网页切换”。以后点击此网页的静态出口或中间服务器即可切换；添加、删除、修改出口均无需重新下载。</p><p id="routing-extra-note" class="small-note">本机网络指你当前的宽带、Wi-Fi 或移动网络。国内直连流量由本机出网。</p></aside>
+        </div>
+      </section>
+
+      <section id="view-access" class="view" hidden>
+        <div class="page-heading"><div><p class="eyebrow">NETWORK / ACCESS</p><h1>把连接带到你的设备<span class="heading-dot">.</span></h1><p class="muted">首次导入并选择 AUTO，之后在网页管理与切换出口。</p></div></div>
+        <div class="settings-grid"><div class="settings-card download-card"><div class="file-icon">YML</div><p class="eyebrow">CLASH / MIHOMO</p><h2>网页切换客户端配置</h2><p id="client-config-summary" class="muted">先点击服务器或一个静态出口，然后下载并导入首次配置。</p><p id="client-config-update" class="field-hint" hidden>固定节点列表有更新。如需在客户端使用新增的“出口 · 名称”固定节点，可下载同步；AUTO 网页切换无需更新。</p><button class="button primary download-button" disabled>↓ 下载首次配置</button><ol class="import-steps"><li><span>01</span><div><strong>首次导入配置</strong><p>在 FlClash 的“配置”中导入下载的 YAML；也适用于 Clash Verge 等 Mihomo 客户端。</p></div></li><li><span>02</span><div><strong>选择 AUTO · 网页切换</strong><p>在 STATIC-SELECT 中选择“AUTO · 网页切换”，服务策略组也使用 STATIC-SELECT。此后点击网页的出口或服务器即可切换，新增出口也无需重新下载。</p></div></li><li><span>03</span><div><strong>核对实际出口</strong><p>开启系统代理，访问 api.ipify.org，确认显示网页中当前出口的 IP。</p></div></li></ol><p class="small-note">“出口 · 名称”固定节点供客户端手动选择，始终使用指定出口。要通过网页切换，请保持选择 AUTO。</p></div>
+        <form id="password-form" class="settings-card"><p class="eyebrow">PRIVATE ACCESS</p><h2>修改管理密码</h2><p class="muted">管理密码用于登录这个网页，与 SOCKS5 服务的密码分开设置。</p><label for="current-password">当前管理密码</label><input id="current-password" type="password" autocomplete="current-password" required><label for="new-password">新管理密码</label><input id="new-password" type="password" minlength="12" maxlength="128" autocomplete="new-password" required><label for="confirm-password">再次输入新密码</label><input id="confirm-password" type="password" minlength="12" maxlength="128" autocomplete="new-password" required><p class="field-hint">至少 12 个字符。修改后需要重新登录。</p><button class="button secondary" type="submit">更新管理密码</button></form></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="exit-dialog" class="exit-dialog"><form id="exit-form"><div class="dialog-header"><div><p class="eyebrow">STATIC / SOCKS5</p><h2 id="dialog-title">添加静态出口</h2></div><button id="close-dialog" class="icon-button" type="button" aria-label="关闭">×</button></div><div class="dialog-content"><input id="exit-id" type="hidden"><label for="exit-name">出口名称</label><input id="exit-name" maxlength="32" placeholder="例如：美国主出口" required><div class="form-row"><div><label for="exit-address">代理服务器地址</label><input id="exit-address" placeholder="IP 地址或域名" required spellcheck="false"></div><div class="port-field"><label for="exit-port">端口</label><input id="exit-port" type="number" min="1" max="65535" value="1080" required></div></div><label for="exit-auth">认证方式</label><select id="exit-auth"><option value="credentials">账号与密码</option><option value="none">无账号密码 / 来源 IP 白名单</option></select><div id="credential-fields"><label for="exit-user">代理账号</label><input id="exit-user" type="password" autocomplete="off" placeholder="服务商提供的账号"><label for="exit-password">代理密码</label><div class="password-wrap"><input id="exit-password" type="password" autocomplete="new-password" placeholder="服务商提供的密码"><button class="password-toggle" data-toggle-password="exit-password" type="button" aria-label="显示代理密码">显示</button></div><p id="credential-hint" class="field-hint">代理资料保存在服务器，不会写入下载的客户端配置。</p></div><div id="allowlist-hint" class="field-hint" hidden>请在代理服务商的来源 IP 白名单中，允许你的 VPS 公网出口地址。</div><label for="exit-expected">预期出口 IP <span class="optional">可选</span></label><input id="exit-expected" placeholder="不知道时留空，测试后自动显示实际出口" spellcheck="false"><p class="field-hint">填入服务商分配的最终出口 IP；代理服务器地址可能与它不同。</p><p id="exit-error" class="field-error" role="alert"></p></div><div class="dialog-footer"><button id="cancel-dialog" class="button secondary" type="button">取消</button><button id="save-exit" class="button primary" type="submit">保存出口</button></div></form></dialog>
+  <dialog id="confirm-dialog" class="confirm-dialog"><form method="dialog"><p class="eyebrow">CONFIRM ACTION</p><h2 id="confirm-title">确认操作</h2><p id="confirm-message" class="muted"></p><div class="confirm-actions"><button class="button secondary" value="cancel">取消</button><button id="confirm-ok" class="button primary" value="confirm">确认</button></div></form></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <template id="exit-template"><article class="exit-card"><div class="exit-card-top"><div class="exit-monogram"></div><span class="exit-badge"></span><button class="exit-menu icon-button" data-action="edit" aria-label="编辑出口">⋯</button></div><h3 class="exit-name"></h3><p class="exit-endpoint"></p><dl class="exit-facts"><div><dt>实际出口</dt><dd class="exit-observed">待检测</dd></div><div><dt>认证方式</dt><dd class="exit-auth-type"></dd></div></dl><div class="exit-card-actions"><button class="button secondary small" data-action="test">检测连接</button><button class="button primary small" data-action="apply">应用并切换 ↗</button></div><div class="exit-card-foot"><span class="exit-tested">尚未检测</span><button class="text-button delete-button" data-action="delete">删除</button></div></article></template>
+  <template id="path-route-template"><button class="path-route" type="button"><span class="route-line" aria-hidden="true"><i class="route-particle"></i><i class="route-particle"></i></span><span class="node-icon exit-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><circle class="globe-outline" cx="20" cy="20" r="12"/><path class="globe-grid" d="M8 20h24m-12-12c-7 8-7 16 0 24m0-24c7 8 7 16 0 24M10 14h20m-20 12h20"/><g class="globe-orbit"><circle cx="20" cy="20" r="17"/><circle class="globe-marker" cx="20" cy="3" r="2"/></g></svg></span><span class="route-copy"><span class="route-heading"><strong class="route-name"></strong><span class="route-badge"></span></span><small class="route-ip"></small><span class="route-status"></span></span></button></template>
+</body>
+</html>

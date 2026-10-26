@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "checked_at": "2026-10-09T14:03:20.643422+00:00",
+  "preservation_before": {
+    "success": true,
+    "admin_complete_state_preserved": true,
+    "protected_hashes_preserved": true,
+    "admin_service_processes_preserved": true,
+    "independent_node_auto_and_rule_identities": true,
+    "independent_reality_keys_and_short_ids": true,
+    "members": [
+      {
+        "username": "user-a",
+        "port": 1443,
+        "active": true,
+        "root_private_files": true,
+        "config_matches_state": true,
+        "pid": "26913",
+        "start_monotonic": "27449214539",
+        "state_sha256": "26f2903165eb1cf0629932b8130c8d4e4140ef675705d9967a6665852b320247",
+        "config_sha256": "fe84a589875310a6c9926d4a6379923de02c15b8908fe5d9e2c239898af9955c"
+      },
+      {
+        "username": "user-b",
+        "port": 2443,
+        "active": true,
+        "root_private_files": true,
+        "config_matches_state": true,
+        "pid": "26951",
+        "start_monotonic": "27450294658",
+        "state_sha256": "a5eb8f61b845165580c5f7151237eebc54af1f37db2693b0480f16f4a98e9fcc",
+        "config_sha256": "54797289817b5b29096336addc733ae3e7b8cea84e19d1181c50f88d02c9c361"
+      }
+    ]
+  },
+  "account_scope_and_admin_restrictions": true,
+  "stable_independent_rule_subscriptions": true,
+  "member_a_service_switch": {
+    "success": true,
+    "only_member_a_restarted": true,
+    "member_a_exact_state_restored": true,
+    "member_a_exact_config_restored": true,
+    "admin_and_member_b_unchanged": true,
+    "web_worker_not_restarted": true
+  },
+  "member_public_ports": [
+    {
+      "port": 1443,
+      "public_tcp_reachable": false
+    },
+    {
+      "port": 2443,
+      "public_tcp_reachable": false
+    }
+  ],
+  "preservation_after": {
+    "success": true,
+    "admin_complete_state_preserved": true,
+    "protected_hashes_preserved": true,
+    "admin_service_processes_preserved": true,
+    "independent_node_auto_and_rule_identities": true,
+    "independent_reality_keys_and_short_ids": true,
+    "members": [
+      {
+        "username": "user-a",
+        "port": 1443,
+        "active": true,
+        "root_private_files": true,
+        "config_matches_state": true,
+        "pid": "27320",
+        "start_monotonic": "27642479622",
+        "state_sha256": "803783496020ba6c0eda4d1e61eb6333cda828acbc12a135b294129314966d8a",
+        "config_sha256": "fe84a589875310a6c9926d4a6379923de02c15b8908fe5d9e2c239898af9955c"
+      },
+      {
+        "username": "user-b",
+        "port": 2443,
+        "active": true,
+        "root_private_files": true,
+        "config_matches_state": true,
+        "pid": "26951",
+        "start_monotonic": "27450294658",
+        "state_sha256": "a5eb8f61b845165580c5f7151237eebc54af1f37db2693b0480f16f4a98e9fcc",
+        "config_sha256": "54797289817b5b29096336addc733ae3e7b8cea84e19d1181c50f88d02c9c361"
+      }
+    ]
+  }
+}

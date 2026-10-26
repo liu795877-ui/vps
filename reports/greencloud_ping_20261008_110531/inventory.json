@@ -1,0 +1,623 @@
+{
+  "queried_at_utc": "2026-10-08T03:04:52.529147+00:00",
+  "queried_at_Asia_Shanghai": "2026-10-08T11:04:52.529147+08:00",
+  "sources": [
+    "https://greencloudvps.com/data-centers.php",
+    "https://greencloudvps.com/billing/store/budget-kvm-sale"
+  ],
+  "retrieval": "requests HTTPS with browser User-Agent; both HTTP 200; saved original HTML",
+  "stock_note": "Stock is a point-in-time snapshot and may change before ordering.",
+  "american_locations": [
+    {
+      "official_datacenter_label": "Los Angeles Datacenter WebNX LA",
+      "official_test_ipv4": "64.185.232.162",
+      "official_test_ipv6": "2607:f2d8:6065:1000::1",
+      "test_download_label": "1GB",
+      "test_download_url": "https://lax-lg.webnx.com/1G.img",
+      "budget_product_prefix": "BudgetKVMLA",
+      "budget_products": [
+        {
+          "name": "BudgetKVMLA-2",
+          "stock_available": 0,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmla-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB NVMe RAID-10",
+            "CPU": "2 cores @ EPYC Rome",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Los Angeles, CA",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMLA-3",
+          "stock_available": 0,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmla-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB NVMe RAID-10",
+            "CPU": "4 cores @ EPYC Rome",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Los Angeles, CA",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "San Jose Datacenter OpenColo",
+      "official_test_ipv4": "173.249.206.247",
+      "official_test_ipv6": "2607:9000:800:53a0::a",
+      "test_download_label": "100MB",
+      "test_download_url": "http://173.249.206.247/100MB.test",
+      "budget_product_prefix": "BudgetKVMSJC",
+      "budget_products": [
+        {
+          "name": "BudgetKVMSJC-2",
+          "stock_available": 0,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmsjc-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB SSD RAID-10",
+            "CPU": "2 core @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "San Jose, CA",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMSJC-3",
+          "stock_available": 0,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmsjc-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB SSD RAID-10",
+            "CPU": "4 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "San Jose, CA",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Phoenix Datacenter Phoenixnap",
+      "official_test_ipv4": "173.249.203.193",
+      "official_test_ipv6": "2607:9000:700:10df::a",
+      "test_download_label": "100MB",
+      "test_download_url": "http://173.249.203.193/100MB.test",
+      "budget_product_prefix": "BudgetKVMAZ",
+      "budget_products": [
+        {
+          "name": "BudgetKVMAZ-2",
+          "stock_available": 0,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmaz-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB NVMe RAID-10",
+            "CPU": "2 cores @ EPYC Rome",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Phoenix, AZ",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMAZ-3",
+          "stock_available": 0,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmaz-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB NVMe RAID-10",
+            "CPU": "4 core @ EPYC Rome",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Phoenix, AZ",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Seattle Datacenter Wowrack",
+      "official_test_ipv4": "208.115.113.1",
+      "official_test_ipv6": "Updating",
+      "test_download_label": null,
+      "test_download_url": null,
+      "budget_product_prefix": null,
+      "budget_products": []
+    },
+    {
+      "official_datacenter_label": "Ashburn Datacenter NetActuate DC",
+      "official_test_ipv4": "104.225.11.54",
+      "official_test_ipv6": "2607:9000:9000:1000::1",
+      "test_download_label": "100MB",
+      "test_download_url": "http://lg-iad3.netactuate.com/100mb.test",
+      "budget_product_prefix": "BudgetKVMVA",
+      "budget_products": [
+        {
+          "name": "BudgetKVMVA-2",
+          "stock_available": 0,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmva-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB NVMe RAID-10",
+            "CPU": "2 cores @ EPYC Rome",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Ashburn, VA",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMVA-3",
+          "stock_available": 0,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmva-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB NVMe RAID-10",
+            "CPU": "4 cores @ EPYC Rome",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Ashburn, VA",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Dallas Datacenter Carrier-1",
+      "official_test_ipv4": "64.44.147.6",
+      "official_test_ipv6": "2602:ffc8:4:4::2",
+      "test_download_label": "100MB",
+      "test_download_url": "http://64.44.147.6/100MB.test",
+      "budget_product_prefix": "BudgetKVMTX",
+      "budget_products": [
+        {
+          "name": "BudgetKVMTX-2",
+          "stock_available": 3,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmtx-2",
+          "features": {
+            "RAM": "4096MB",
+            "SWAP": "2048MB",
+            "Hard drive": "35GB SSD RAID-10",
+            "CPU": "2 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Dallas, TX",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMTX-3",
+          "stock_available": 1,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmtx-3",
+          "features": {
+            "RAM": "8192MB",
+            "SWAP": "4096MB",
+            "Hard drive": "60GB SSD RAID-10",
+            "CPU": "4 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Dallas, TX",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Chicago DC1 New Continuum",
+      "official_test_ipv4": "167.88.10.4",
+      "official_test_ipv6": "2602:ffc8:1::2",
+      "test_download_label": "100MB",
+      "test_download_url": "http://167.88.10.4/100MB.test",
+      "budget_product_prefix": "BudgetKVMIL1",
+      "budget_products": [
+        {
+          "name": "BudgetKVMIL1-2",
+          "stock_available": 1,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmil1-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB SSD RAID-10",
+            "CPU": "2 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Chicago, IL DC1",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMIL1-3",
+          "stock_available": 7,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmil1-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB SSD RAID-10",
+            "CPU": "4 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Chicago, IL DC1",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Chicago DC2 Tzulo",
+      "official_test_ipv4": "173.249.214.11",
+      "official_test_ipv6": "2607:9000:1000:8002::a",
+      "test_download_label": "100MB",
+      "test_download_url": "http://173.249.214.11/100MB.test",
+      "budget_product_prefix": "BudgetKVMIL2",
+      "budget_products": [
+        {
+          "name": "BudgetKVMIL2-2",
+          "stock_available": 0,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmil2-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB SSD RAID-10",
+            "CPU": "2 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Chicago, IL DC2",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMIL2-3",
+          "stock_available": 5,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmil2-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB SSD RAID-10",
+            "CPU": "4 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Chicago, IL DC2",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Jacksonville Datacenter GoRACK",
+      "official_test_ipv4": "64.44.162.14",
+      "official_test_ipv6": "2602:ffc8:5:1::2",
+      "test_download_label": "100MB",
+      "test_download_url": "http://lg.jax1.as20278.net/100MB.test",
+      "budget_product_prefix": "BudgetKVMJAX",
+      "budget_products": [
+        {
+          "name": "BudgetKVMJAX-2",
+          "stock_available": 4,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmjax-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB SSD RAID-10",
+            "CPU": "2 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Jacksonville, FL",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMJAX-3",
+          "stock_available": 7,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmjax-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB SSD RAID-10",
+            "CPU": "4 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Jacksonville, FL",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Buffalo Datacenter Nexeon BUF-1",
+      "official_test_ipv4": "96.9.249.58",
+      "official_test_ipv6": "2602:ffc8:2:102::2",
+      "test_download_label": "100MB",
+      "test_download_url": "http://lg.buf1.nexeon.com/100MB.test",
+      "budget_product_prefix": "BudgetKVMNY",
+      "budget_products": [
+        {
+          "name": "BudgetKVMNY-2",
+          "stock_available": 6,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmny-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB SSD RAID-10",
+            "CPU": "2 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Buffalo, NY",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMNY-3",
+          "stock_available": 3,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmny-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB SSD RAID-10",
+            "CPU": "4 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Buffalo, NY",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Kansas City Datacenter WSI",
+      "official_test_ipv4": "72.18.215.71",
+      "official_test_ipv6": "2604:4300:a:224::170:43a2",
+      "test_download_label": "100MB",
+      "test_download_url": "http://72.18.215.71/100MB.test",
+      "budget_product_prefix": "BudgetKVMMO",
+      "budget_products": [
+        {
+          "name": "BudgetKVMMO-2",
+          "stock_available": 4,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmmo-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB SSD RAID-10",
+            "CPU": "2 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/112",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Kansas City, MO",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMMO-3",
+          "stock_available": 0,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmmo-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB SSD RAID-10",
+            "CPU": "4 cores @ E5v4",
+            "IPv4": "1",
+            "IPv6": "/112",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Kansas City, MO",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Ogden, UT Datacenter WebNX UT",
+      "official_test_ipv4": "108.171.216.251",
+      "official_test_ipv6": "2607:f2d8:401b::1",
+      "test_download_label": "100MB",
+      "test_download_url": "https://og1-lg.webnx.com/100M.img",
+      "budget_product_prefix": "BudgetKVMUT",
+      "budget_products": [
+        {
+          "name": "BudgetKVMUT-2",
+          "stock_available": 0,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmut-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB NVMe RAID-10",
+            "CPU": "2 cores @ EPYC Milan",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Location: Ogden, UT",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMUT-3",
+          "stock_available": 0,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmut-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB NVMe RAID-10",
+            "CPU": "4 cores @ EPYC Milan",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Ogden, UT",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    },
+    {
+      "official_datacenter_label": "Staten Island, NY Datacenter WebNX NY",
+      "official_test_ipv4": "108.171.198.77",
+      "official_test_ipv6": "2607:f2d8:8405:1::2",
+      "test_download_label": "100MB",
+      "test_download_url": "https://ny2-lg.webnx.com/100M.img",
+      "budget_product_prefix": "BudgetKVMNYC",
+      "budget_products": [
+        {
+          "name": "BudgetKVMNYC-2",
+          "stock_available": 1,
+          "annual_price_usd": 25.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmnyc-2",
+          "features": {
+            "RAM": "4096MB",
+            "Hard drive": "35GB NVMe RAID-10",
+            "CPU": "2 cores @ EPYC Rome",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "4TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Staten Island, NY",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        },
+        {
+          "name": "BudgetKVMNYC-3",
+          "stock_available": 1,
+          "annual_price_usd": 45.0,
+          "order_url": "https://greencloudvps.com/billing/store/budget-kvm-sale/budgetkvmnyc-3",
+          "features": {
+            "RAM": "8192MB",
+            "Hard drive": "60GB NVMe RAID-10",
+            "CPU": "4 cores @ EPYC Rome",
+            "IPv4": "1",
+            "IPv6": "/64",
+            "Bandwidth": "8TB",
+            "Port": "10Gbps",
+            "OS": "Linux",
+            "Location": "Staten Island, NY",
+            "Control Panel": "Virtfusion",
+            "Backup/Snapshot": "1 Free"
+          },
+          "description": "No refund/Money back on this plan"
+        }
+      ]
+    }
+  ]
+}

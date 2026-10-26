@@ -1,0 +1,118 @@
+{
+  "protected_sha256": {
+    "/usr/local/etc/xray/config.json": "b0b8b46a3decce49d4ee4632b6c8e58be1ff685b9b6093825e3db78d850180a6",
+    "/usr/local/etc/raksmart-hy2/server.yaml": "c86b1cde92a5e92823b64741cded7194473df5c66ad3839394640d84f255f09e",
+    "/etc/systemd/system/xray.service": "a19fee5a90977c29f805a0ddc18f97bf77ba59e10a9dd0e20a4561ba6439e819",
+    "/etc/systemd/system/raksmart-hy2.service": "5f9bd2c020e985dff1ef7b91ed604c4952785c54a9fd837892ad64d5165e823e",
+    "/etc/systemd/system/vps-panel.service": "3e3b3b5d8bbf60bec972de30447fb088001d918af671ca5b29241aa713a19e20",
+    "/etc/systemd/system/caddy.service": "334e48d5a52c2a12ca81c1011b0b26bd02c91cfb1c92f646a96444a1cbc0952a",
+    "/etc/caddy/Caddyfile": "f82bce056b9729d0e1757911dccab9051969efb2450135ecf5702e659ef73e23",
+    "/var/lib/vps-panel/auth.private.json": "fe8918e90723afdf373fc9c31202818d98fbeafae1f1a5d760fae59bb3019479",
+    "/etc/resolv.conf": "c74307cd8df8be5b9d22f0d8530ebaa1d2339a16d2513325da86eace7c7a319b",
+    "/var/lib/vps-panel/base.private.yaml": "bad789b23000383d927d3b862e410d7c1a9f66a2b80a9355039f0f9199752bcb"
+  },
+  "missing_paths": [],
+  "resources": {
+    "cpu_count": 2,
+    "mem_total_kib": 3874056,
+    "mem_available_kib": 3358112,
+    "load_average": [
+      0.0,
+      0.01,
+      0.05
+    ],
+    "disk_free_bytes": 50762674176
+  },
+  "ports": {
+    "1443": {
+      "local_bind_available": true
+    },
+    "2443": {
+      "local_bind_available": true
+    }
+  },
+  "services": {
+    "xray.service": {
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "MainPID": "24628",
+      "ActiveEnterTimestampMonotonic": "18349601193",
+      "ExecMainStartTimestampMonotonic": "18349601113"
+    },
+    "raksmart-hy2.service": {
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "MainPID": "24006",
+      "ActiveEnterTimestampMonotonic": "6470287581",
+      "ExecMainStartTimestampMonotonic": "6470287480"
+    },
+    "vps-panel.service": {
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "MainPID": "25205",
+      "ActiveEnterTimestampMonotonic": "20757054911",
+      "ExecMainStartTimestampMonotonic": "20757054791"
+    },
+    "caddy.service": {
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "MainPID": "24480",
+      "ActiveEnterTimestampMonotonic": "18166142293",
+      "ExecMainStartTimestampMonotonic": "18166142179"
+    }
+  },
+  "firewall": {
+    "firewall-cmd": true,
+    "iptables": true,
+    "nft": false,
+    "firewalld.service": "unknown",
+    "iptables.service": "inactive",
+    "iptables_command_success": true,
+    "policies": [
+      "-P INPUT ACCEPT",
+      "-P FORWARD ACCEPT",
+      "-P OUTPUT ACCEPT"
+    ],
+    "rule_count": 0,
+    "ports_1443_2443_mentions": 0
+  },
+  "xray_safe_unit_fields": {
+    "Type": "simple",
+    "User": "xray",
+    "Group": "xray",
+    "WorkingDirectory": "/usr/local/etc/xray",
+    "Restart": "on-failure",
+    "RestartSec": "3",
+    "LimitNOFILE": "65536",
+    "CapabilityBoundingSet": "CAP_NET_BIND_SERVICE",
+    "PrivateTmp": "true",
+    "ProtectSystem": "full",
+    "ProtectHome": "true"
+  },
+  "panel_safe_unit_fields": {
+    "Type": "simple",
+    "User": "root",
+    "WorkingDirectory": "/opt/vps-panel",
+    "Restart": "on-failure",
+    "RestartSec": "2",
+    "PrivateTmp": "true",
+    "PrivateDevices": "true",
+    "ProtectSystem": "full",
+    "ProtectHome": "true",
+    "ReadWriteDirectories": "/var/lib/vps-panel /usr/local/etc/xray",
+    "RestrictAddressFamilies": "AF_UNIX AF_INET AF_INET6",
+    "CapabilityBoundingSet": "CAP_CHOWN CAP_DAC_OVERRIDE CAP_FOWNER CAP_NET_BIND_SERVICE",
+    "LimitNOFILE": "65536"
+  },
+  "python_version": "3.6.8",
+  "checked_at": "2026-10-09T13:33:31.471867+00:00",
+  "success": true,
+  "existing_exit_count": 1,
+  "active_target": "server",
+  "active_id_preserved": true,
+  "registry_exists": null
+}

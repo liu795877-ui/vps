@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "phase": "verified",
+  "deployment_ip": "198.200.49.63",
+  "updated_files": [
+    "panel/server.py",
+    "panel/test_panel.py",
+    "panel/web/app.js",
+    "panel/web/index.html"
+  ],
+  "backup": "/root/raksmart-proxy-deploy-20261009/routing-url-20261010T013806-973647/before",
+  "stage": "/root/raksmart-proxy-deploy-20261009/routing-url-20261010T013806-973647",
+  "only_panel_restarted": false,
+  "proxy_processes_preserved": true,
+  "private_configuration_untouched": true,
+  "all_account_data_preserved": true,
+  "published_sources_verified": true,
+  "protected_file_count": 25,
+  "protected_proxy_service_count": 5
+}

@@ -1,0 +1,41 @@
+{
+  "success": false,
+  "checked_at": "2026-10-13T01:52:55.345Z",
+  "deployment_ip": "198.200.49.63",
+  "release_name": "console-optimization-release-20261013-05",
+  "trusted_https": true,
+  "owned_physical_wlan_proxy": true,
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "checks": [
+    "admin: trusted TLS login and isolated own state"
+  ],
+  "assets": {},
+  "accounts": [
+    {
+      "account": "admin",
+      "role": "admin",
+      "port": 443,
+      "tcp_service": "running"
+    }
+  ],
+  "screenshots": [
+    "login-1440.png",
+    "login-390.png"
+  ],
+  "manifest_sha256": "5938c1af4adc70e8e323cba5998805f4c0340731f76d247b0edcae7c87a98ff6",
+  "failure": {
+    "stage": "public_assets",
+    "message": "Browser acceptance assertion or operation failed"
+  },
+  "network_summary": {
+    "session_posts": 1,
+    "blocked_configuration_requests": 0,
+    "external_requests": 0,
+    "profile_requests": 0,
+    "expected_403_console_entries": 0
+  },
+  "browser_errors": [
+    "Browser console error"
+  ]
+}

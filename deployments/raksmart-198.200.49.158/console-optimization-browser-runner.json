@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "release_name": "console-optimization-release-20261013-01",
+  "owned_connect_proxy": true,
+  "target": "198.200.49.158:8443",
+  "physical_wlan": true,
+  "secrets_included": false,
+  "raw_process_output_saved": false
+}

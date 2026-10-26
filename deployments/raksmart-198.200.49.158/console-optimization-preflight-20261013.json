@@ -1,0 +1,336 @@
+{
+  "authenticated": {
+    "active_target": "server",
+    "admin_login_passed": true,
+    "exit_count": 1,
+    "exit_job_idle": true,
+    "server_port": 443
+  },
+  "binary_sha256": {
+    "/usr/local/bin/raksmart-hysteria2": "907ba8c9693edb104b20582681fb7dc15639d5b64a9cbb616a7b539190a86691",
+    "/usr/local/bin/xray": "8255dd939c34cf966cc91517b6324dd3c8d0bcf49ffac8beca049a38c46845ed"
+  },
+  "infrastructure_present": {
+    "/etc/systemd/system/raksmart-hy2@.service": false,
+    "/etc/systemd/system/xray-panel@.service": false,
+    "/opt/vps-panel/vendor": false,
+    "/usr/local/etc/raksmart-hy2/accounts": false,
+    "/usr/local/etc/xray-members": false
+  },
+  "legacy_hy2": {
+    "certificate_sha256": "c67b5a6478a10c75582a4ae6779e9a27fa744582b5b354ef81f634ae40193505",
+    "password_compatible": true,
+    "password_length": 43,
+    "password_sha256": "0810b8be29bcbaaabecdfc568bb008da5663504471fb98a097cc035d95e2825a",
+    "sni": "raksmart-hy2.local"
+  },
+  "network": {
+    "ip6tables": {
+      "exit_code": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "iptables": {
+      "exit_code": 0,
+      "sha256": "8d950e18c63aa3699834b9cca227c25af3c5f1288f4d72c49038a1426a9998de"
+    },
+    "listeners": {
+      "exit_code": 0,
+      "rows": [
+        "udp    UNCONN     0      0      127.0.0.1:323                   *:*                  ",
+        "udp    UNCONN     0      0         *:443                   *:*                  ",
+        "udp    UNCONN     0      0       ::1:323                  :::*                  ",
+        "tcp    LISTEN     0      100    127.0.0.1:25                    *:*                  ",
+        "tcp    LISTEN     0      128       *:62970                 *:*                  ",
+        "tcp    LISTEN     0      5      127.0.0.1:18787                 *:*                  ",
+        "tcp    LISTEN     0      128    127.0.0.1:2019                  *:*                  ",
+        "tcp    LISTEN     0      128      :::80                   :::*                  ",
+        "tcp    LISTEN     0      100     ::1:25                   :::*                  ",
+        "tcp    LISTEN     0      128      :::62970                :::*                  ",
+        "tcp    LISTEN     0      128      :::8443                 :::*                  ",
+        "tcp    LISTEN     0      128      :::443                  :::*                  "
+      ],
+      "sha256": "b9b7294aa1688420cd4dde69bcc42c2a00a5c2ee7543c525c8ad02b4659cdfc6"
+    },
+    "qdisc": {
+      "exit_code": 0,
+      "sha256": "b3b9e156e3b96a650fa9cbcbb3e6660a9b007f84fd5a53e3c7e76ad7690b3b7f"
+    }
+  },
+  "origin": "https://198-200-49-158.sslip.io:8443",
+  "phase": "complete",
+  "production_updated": false,
+  "protected_files": {
+    "/etc/caddy/Caddyfile": {
+      "exists": true,
+      "gid": 993,
+      "mode": "0o640",
+      "sha256": "19d473e5432ab43417e9eb15cdd726e877b764f73b2bb22769adc094437525b8",
+      "size": 779,
+      "uid": 0
+    },
+    "/etc/resolv.conf": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o644",
+      "sha256": "c74307cd8df8be5b9d22f0d8530ebaa1d2339a16d2513325da86eace7c7a319b",
+      "size": 120,
+      "uid": 0
+    },
+    "/etc/sysctl.conf": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o644",
+      "sha256": "51d16ee2e7eef12dd42e924af6b835861e8b79d11921ba0418d7d0aec7a2a93b",
+      "size": 449,
+      "uid": 0
+    },
+    "/etc/sysctl.d/90-vps-hy2-udp-buffers.conf": {
+      "exists": false
+    },
+    "/etc/systemd/system/raksmart-hy2.service": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o644",
+      "sha256": "5f9bd2c020e985dff1ef7b91ed604c4952785c54a9fd837892ad64d5165e823e",
+      "size": 558,
+      "uid": 0
+    },
+    "/etc/systemd/system/vps-panel.service": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o644",
+      "sha256": "4d0e40274d24f7600e456f74cb32980140a2e63c6279fcda08408a9016343a86",
+      "size": 812,
+      "uid": 0
+    },
+    "/etc/systemd/system/xray.service": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o644",
+      "sha256": "a19fee5a90977c29f805a0ddc18f97bf77ba59e10a9dd0e20a4561ba6439e819",
+      "size": 461,
+      "uid": 0
+    },
+    "/usr/local/etc/raksmart-hy2/server.crt.pem": {
+      "exists": true,
+      "gid": 994,
+      "mode": "0o644",
+      "sha256": "7a7e126a1009c4d08a9966edd3f36761224869614899f3d2f137640c8ae49773",
+      "size": 1135,
+      "uid": 0
+    },
+    "/usr/local/etc/raksmart-hy2/server.key.pem": {
+      "exists": true,
+      "gid": 994,
+      "mode": "0o640",
+      "sha256": "7100cde931c56b0fdb9989889442fc20affb4ece7ce64bbbabc41b639d011c58",
+      "size": 1704,
+      "uid": 0
+    },
+    "/usr/local/etc/raksmart-hy2/server.yaml": {
+      "exists": true,
+      "gid": 994,
+      "mode": "0o640",
+      "sha256": "28b7516129c1f0f373c226f1512e1ae0acf1daddeebd79db09eef0c2d665e8c7",
+      "size": 992,
+      "uid": 0
+    },
+    "/usr/local/etc/xray/config.json": {
+      "exists": true,
+      "gid": 995,
+      "mode": "0o640",
+      "sha256": "a6f4947414c24da82625beb07599d797541e35bfb8de21200440c959f9aaa9d9",
+      "size": 3173,
+      "uid": 0
+    },
+    "/var/lib/vps-panel/auth.private.json": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o600",
+      "sha256": "0c5667f93a7a1cd75fb1a6a535bed0f7ffb65a277e717f62b2366f6a5efc7d0c",
+      "size": 179,
+      "uid": 0
+    },
+    "/var/lib/vps-panel/base.private.yaml": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o600",
+      "sha256": "c6560dab46b00a2e9104b37a8668d24e109f99dbaa4eb0d0c9a3057dc77201e3",
+      "size": 929,
+      "uid": 0
+    },
+    "/var/lib/vps-panel/entrance-pool.private.json": {
+      "exists": false
+    },
+    "/var/lib/vps-panel/hy2.private.json": {
+      "exists": false
+    },
+    "/var/lib/vps-panel/member-tasks.private.json": {
+      "exists": false
+    },
+    "/var/lib/vps-panel/node-info.json": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o600",
+      "sha256": "f1db4739615cdea0c0ec82aaa1f6a20f2547515159319678b7105522e4ee7610",
+      "size": 178,
+      "uid": 0
+    },
+    "/var/lib/vps-panel/state.private.json": {
+      "exists": true,
+      "gid": 0,
+      "mode": "0o600",
+      "sha256": "da9aad2f921101002d7c2b9c46ef3716706075f474751b6c61db25cdf81b09ac",
+      "size": 58586,
+      "uid": 0
+    },
+    "/var/lib/vps-panel/traffic.private.json": {
+      "exists": false
+    },
+    "/var/lib/vps-panel/users.private.json": {
+      "exists": false
+    }
+  },
+  "python": "3.6.8",
+  "secrets_included": false,
+  "server": "198.200.49.158",
+  "service_control_performed": false,
+  "services": {
+    "caddy.service": {
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/caddy.service",
+      "Group": "caddy",
+      "LoadState": "loaded",
+      "MainPID": "13337",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "User": "caddy",
+      "argv": [
+        "/usr/local/bin/caddy",
+        "run",
+        "--config",
+        "/etc/caddy/Caddyfile",
+        "--adapter",
+        "caddyfile"
+      ]
+    },
+    "raksmart-hy2.service": {
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/raksmart-hy2.service",
+      "Group": "hy2",
+      "LoadState": "loaded",
+      "MainPID": "13197",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "User": "hy2",
+      "argv": [
+        "/usr/local/bin/raksmart-hysteria2",
+        "server",
+        "--config",
+        "/usr/local/etc/raksmart-hy2/server.yaml"
+      ]
+    },
+    "vps-panel.service": {
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/vps-panel.service",
+      "Group": "",
+      "LoadState": "loaded",
+      "MainPID": "24751",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "User": "root",
+      "argv": [
+        "/usr/bin/python3",
+        "/opt/vps-panel/panel/server.py",
+        "--directory",
+        "/var/lib/vps-panel",
+        "--public-ip",
+        "198.200.49.158",
+        "--origin",
+        "https://198-200-49-158.sslip.io:8443",
+        "--port",
+        "18787"
+      ]
+    },
+    "xray.service": {
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/xray.service",
+      "Group": "xray",
+      "LoadState": "loaded",
+      "MainPID": "27160",
+      "SubState": "running",
+      "UnitFileState": "enabled",
+      "User": "xray",
+      "argv": [
+        "/usr/local/bin/xray",
+        "run",
+        "-config",
+        "/usr/local/etc/xray/config.json"
+      ]
+    }
+  },
+  "source_file_count": 17,
+  "source_sha256": {
+    "configure_reality.py": "ccd8844b284b11eed72b5c0990ddb4382c7b3364098b98d156ffd8c5af774011",
+    "configure_static_exits.py": "670d6d76533ba36e5a91b3c4ffd1a20141f090b8e1d38ca5185c889e4a4eec9d",
+    "panel/__init__.py": "f9f7f532e62d0013f201926bfe7f0593e7e19ca27a751e456ce1a3b522c09189",
+    "panel/node_info.py": "a508d5593e04d402585c8927ce7269a1546e9c8933212ff405cfc0db066a3113",
+    "panel/routing.py": "4d7c76ef56a9073cb0ffa9690d6468db6ce4fcdcc1d6086bba9d4ecb2a15ed9a",
+    "panel/rules/domestic-dns.yaml": "4a498d45a80fd6432949e7a9800c13c9c7caac6cdc809c78619278f2c214bf09",
+    "panel/server.py": "21ee8911d1aaf3a507aaee73b93503368364b190e8a9a21dc527da1ac658d5ba",
+    "panel/services-routing.json": "749a2eafdec19ec16de57b7d951543719c4e564bc48edae0004964b0d7cd59ca",
+    "panel/smart-routing.json": "9a341efa0fd4afa4df365fd1af3fcf5bd61f7c0def137bdff29447bc0eb8941d",
+    "panel/test_panel.py": "d51782e32b3b3e377e914871a6cc8ac7aea32dbe9c227bd80f14a3d29d6735f4",
+    "panel/test_routing.py": "c3ddf5235f4d0ddc294ef2d1705326c8396de100160c3ce4bdd85b5c103949da",
+    "panel/web/app.js": "8b59b762f9c7167a4709b6f81dd10ee702e3f4e837e2bc4ec8378f370829b976",
+    "panel/web/index.html": "0b350da1343965fe73867f3de3ea76f262c9d6a79041fc1217b815f271604c1f",
+    "panel/web/mark.svg": "e1411d48517294ef21ecdd57a35d1d45d0dff2956d445f41f84315746d6d5ba7",
+    "panel/web/style.css": "8c01991f6a77fb65b1396f28b8e2bcf6129dff5530fe1d6e419937afbc5174b0",
+    "test_configure_reality.py": "37db9a469a46e922641044c509c95e8054b03af1d04dcd0beacad5c2d6336c29",
+    "test_configure_static_exits.py": "bdaf3d213de55fc9e657f75e83199d5fe8b22d841caf8a5f65e685e0e6642098"
+  },
+  "ssh_port": 62970,
+  "state": {
+    "active_target": null,
+    "auto_identity_sha256": "cccd874ae94e8065678fd489a7d95dc90c6586d52a0f6d7eaffab311b6a308bc",
+    "base_sha256": "156aa8ee80dfe00d1446c9d5fa245a60be58512338ae77ee0275eb652cd48c2b",
+    "exit_accounts_sha256": "2c5007047f0bc91d7978058fdeab5fe59f99163fd53591de7d6abda466bd751f",
+    "exit_count": 1,
+    "field_names": [
+      "active_id",
+      "applied_direct_domains",
+      "applied_domains",
+      "applied_exits",
+      "applied_routing_mode",
+      "auto_id",
+      "base",
+      "direct_domains",
+      "domains",
+      "exits",
+      "history",
+      "managed_hash",
+      "profile",
+      "public",
+      "routing_mode",
+      "rule_token",
+      "short",
+      "updated"
+    ],
+    "history_count": 5,
+    "history_sha256": "0ba421713eac2cadcdf620b38d1a2efbf9e60aa3f5bdaf9232d6a315fb8b3f39",
+    "managed_hash_matches": true,
+    "routing_mode": "smart",
+    "rules_sha256": "9c1742f16169bc0ed22fd8459bf8bccb678a60c9a73107095c940d1b12b7fb5a"
+  },
+  "success": true,
+  "xray": {
+    "inbound_count": 1,
+    "outbound_count": 3,
+    "outbounds_sha256": "0539bd08e4ae7f88417f1c81f0da9c0b680c22766095fb8667330364403496d9",
+    "reality_inbound_sha256": "642d5b557a9c1a8606d17ad924251bd82dc2d0abefc50a0907c2f967ec60da4e",
+    "routing_sha256": "f97732c1309c278c620dd8bc0f61f0c7b814ded2dea68a2ee4c60d137456f1d4",
+    "stats_api_present": false
+  },
+  "checked_at": "2026-10-13T06:36:22.435992+00:00",
+  "ssh_hostkey_sha256": "IteVQXuF4cffrUYsYkgkpc/m5pTp/2n0CLVK0ej9pzs"
+}

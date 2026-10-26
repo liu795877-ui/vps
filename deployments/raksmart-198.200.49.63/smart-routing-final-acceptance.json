@@ -1,0 +1,33 @@
+{
+  "completed_at": "2026-10-09T20:11:41+08:00",
+  "server": "198.200.49.63",
+  "success": true,
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+  "routing_mode": "smart",
+  "active_target": "server",
+  "static_exit_count": 0,
+  "auto_egress": {
+    "observed_ip": "198.200.49.63",
+    "expected_ip": "198.200.49.63"
+  },
+  "custom_lists_refresh_seconds": 300,
+  "live_custom_list_changes_verified": true,
+  "complete_live_profile_verified": true,
+  "domestic_https_direct_verified": true,
+  "sources_count": 23,
+  "core_route_samples": 30,
+  "cold_start_without_geodb_verified": true,
+  "original_node_accounts_and_auto_identity_preserved": true,
+  "reports": [
+    "smart-routing-update.json",
+    "smart-routing-activation.json",
+    "smart-routing-browser-verification.json",
+    "smart-mihomo-client-verification.json",
+    "panel-preservation-verification.json",
+    "smart-routing-core-verification.json"
+  ],
+  "limits": [
+    "Actual HTTPS routes were verified; complete video playback was not tested.",
+    "A real external static SOCKS5 exit is not configured on this server."
+  ]
+}

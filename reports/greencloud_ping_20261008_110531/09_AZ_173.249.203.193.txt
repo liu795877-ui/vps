@@ -1,0 +1,37 @@
+
+Pinging 173.249.203.193 with 32 bytes of data:
+Reply from 173.249.203.193: bytes=32 time=274ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=274ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=277ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=219ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=247ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=261ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=236ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=247ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=243ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=259ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=251ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=258ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=234ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=233ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=251ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=259ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=279ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=246ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=260ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=263ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=267ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=248ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=268ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=238ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=228ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=255ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=242ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=261ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=245ms TTL=40
+Reply from 173.249.203.193: bytes=32 time=233ms TTL=40
+
+Ping statistics for 173.249.203.193:
+    Packets: Sent = 30, Received = 30, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 219ms, Maximum = 279ms, Average = 251ms

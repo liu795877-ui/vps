@@ -1,0 +1,109 @@
+{
+  "started_at": "2026-10-08T16:17:30+08:00",
+  "finished_at": "2026-10-08T16:22:11+08:00",
+  "count_total": 190,
+  "test_source": "https://cn.raksmart.com/ddos/global.html?region=SV",
+  "timeout_ms": 1500,
+  "comparison": [
+    {
+      "线路": "硅谷 大陆优化 VIP",
+      "测试IPv4": "198.200.49.130",
+      "首轮次数": 30,
+      "首轮平均ms": 189.7,
+      "首轮最低ms": 158,
+      "首轮最高ms": 457,
+      "首轮未响应数": 0,
+      "首轮未响应百分比": 0.0,
+      "复测次数": 50,
+      "复测平均ms": 177.7,
+      "复测最低ms": 158,
+      "复测最高ms": 683,
+      "复测未响应数": 3,
+      "复测未响应百分比": 6.0
+    },
+    {
+      "线路": "硅谷 国际 BGP",
+      "测试IPv4": "104.233.217.190",
+      "首轮次数": 30,
+      "首轮平均ms": 182.6,
+      "首轮最低ms": 161,
+      "首轮最高ms": 334,
+      "首轮未响应数": 0,
+      "首轮未响应百分比": 0.0,
+      "复测次数": 50,
+      "复测平均ms": 304.7,
+      "复测最低ms": 206,
+      "复测最高ms": 1007,
+      "复测未响应数": 1,
+      "复测未响应百分比": 2.0
+    },
+    {
+      "线路": "硅谷 精品 CN2",
+      "测试IPv4": "104.233.147.13",
+      "首轮次数": 30,
+      "首轮平均ms": 192.2,
+      "首轮最低ms": 155,
+      "首轮最高ms": 581,
+      "首轮未响应数": 0,
+      "首轮未响应百分比": 0.0,
+      "复测次数": "",
+      "复测平均ms": "",
+      "复测最低ms": "",
+      "复测最高ms": "",
+      "复测未响应数": "",
+      "复测未响应百分比": ""
+    }
+  ],
+  "products": [
+    {
+      "name": "SV-VPS-2Cores-2GB-50G HDD-Global BGP 5G/10T-1IP ",
+      "monthly_usd": 2.99,
+      "billing_unit": "月",
+      "specification": "2 Cores,2 G",
+      "disk": " HDD 标准策略 5000IOPS，200MB/s^50G",
+      "network": " International  _  ISP^Global BGP 5G 10T",
+      "ip_count": 1,
+      "activity_status": "started",
+      "activity_page": "https://cn.raksmart.com/activity/index/page/activitypage_9.html#title106",
+      "sample_id": "psam_01M1DA9YHEQF6Z4SVTQTX52VH8"
+    },
+    {
+      "name": "SV-VPS-2Cores-2GB-50G HDD-China Optimized VIP 5G/3T-1IP",
+      "monthly_usd": 2.99,
+      "billing_unit": "月",
+      "specification": "2 Cores,2 G",
+      "disk": " HDD 标准策略 5000IOPS，200MB/s^50G",
+      "network": " All  _  ISP  _  VIP^China Optimized VIP 5G 3T",
+      "ip_count": 1,
+      "activity_status": "started",
+      "activity_page": "https://cn.raksmart.com/activity/index/page/activitypage_9.html#title106",
+      "sample_id": "psam_01M1DBZGY649T2TS6EKN6TTY8K"
+    },
+    {
+      "name": "SV-VPS-1Core-1GB-50G HDD-Enterprise CN2 1G/1T-1IP",
+      "monthly_usd": 3.99,
+      "billing_unit": "月",
+      "specification": "1 Core,1 G",
+      "disk": " HDD 标准策略 5000IOPS，200MB/s^50G",
+      "network": " CN2  _  Only^Enterprise CN2 G 1T",
+      "ip_count": 1,
+      "activity_status": "started",
+      "activity_page": "https://cn.raksmart.com/activity/index/page/activitypage_9.html#title106",
+      "sample_id": "psam_01M1DC6AC3EQZB6EHJMEKN7J4E"
+    },
+    {
+      "name": "SV-VPS-2Cores-2GB-50G HDD-Enterprise CN2 1G/1T-1IP",
+      "monthly_usd": 4.99,
+      "billing_unit": "月",
+      "specification": "2 Cores,2 G",
+      "disk": " HDD 标准策略 5000IOPS，200MB/s^50G",
+      "network": " CN2  _  Only^Enterprise CN2 G 1T",
+      "ip_count": 1,
+      "activity_status": "started",
+      "activity_page": "https://cn.raksmart.com/activity/index/page/activitypage_9.html#title106",
+      "sample_id": "psam_01M1DCAZ9M39Y4VX31G2ZZAA1F"
+    }
+  ],
+  "note": "All probes used current Windows routing through FlClash TUN; per-target direct/proxy behavior was not verified. Official region/network test points are not individual purchased VPS instances. Short ICMP samples do not establish throughput or long-term loss.",
+  "pricing_note": "The Silicon Valley module106 option price list quotes the 2-core 2GB specification at USD2.99/month or USD29.90/year; VIP3TB and BGP10TB network options have zero surcharge in that activity price list. Daily remaining sale stock is not independently confirmed."
+}

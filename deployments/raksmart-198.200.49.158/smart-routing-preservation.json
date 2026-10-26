@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-10-09T12:30:42.743827+00:00",
+  "success": true,
+  "legacy_auto_identity_preserved": true,
+  "legacy_profile_sha256": "e78843f8fde0e88f6dfdfa15158fdb794f7ad53caca605d07bb9f3bc92ce9e8b",
+  "protected_configuration_count": 10,
+  "protected_hash_baseline": "deployment-stop",
+  "xray_configuration_unchanged": true,
+  "node_identities_preserved": true,
+  "all_exit_credentials_and_state_preserved": true,
+  "active_exit_preserved": true,
+  "existing_domain_lists_preserved": true,
+  "history_preserved": true,
+  "dns_preserved": true,
+  "auth_and_hy2_preserved": true,
+  "all_services_active_and_enabled": true,
+  "services": {
+    "xray.service": {
+      "is-active": "active",
+      "is-enabled": "enabled"
+    },
+    "raksmart-hy2.service": {
+      "is-active": "active",
+      "is-enabled": "enabled"
+    },
+    "vps-panel.service": {
+      "is-active": "active",
+      "is-enabled": "enabled"
+    },
+    "caddy.service": {
+      "is-active": "active",
+      "is-enabled": "enabled"
+    }
+  },
+  "static_exit_count": 1,
+  "active_target": "static",
+  "verified_active_ip": "128.241.19.234",
+  "all_client_node_identities_preserved": true,
+  "auto_identity_preserved": true
+}

@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "checked_at": "2026-10-13T06:56:56.400330+00:00",
+  "deployment_ip": "198.200.49.158",
+  "origin": "https://198-200-49-158.sslip.io:8443",
+  "secrets_included": false,
+  "physical_wlan": true,
+  "trusted_https": true,
+  "configuration_mutations": 0,
+  "synthetic_failed_preview_only": true,
+  "backup_created": false,
+  "restore_attempted": false,
+  "audit_may_grow": true,
+  "checks": [
+    "Trusted HTTPS administrator session and protected cookie",
+    "Preview accepts more than 64KB through Caddy and rejects invalid data with panel JSON 400",
+    "The same oversized synthetic JSON remains rejected with 413 on an ordinary nonexistent API",
+    "Routing, exit, account, entrance pool and preparation tasks retain their previous values",
+    "Temporary administrator session logged out"
+  ],
+  "synthetic_request_bytes": 98364,
+  "preview_status": 400,
+  "panel_preview_validator_reached": true,
+  "ordinary_api_status": 413,
+  "protected_semantic_sha256": {
+    "state": "c4c56881d9c2db59502064516ec499639d878c890bae121e3ccebd0224738db7",
+    "entrances": "d26cd5e7e3deedcbb0a2ef822184f5d3716dd914de7879214faf0071b2428f99",
+    "tasks": "b8cce95f94bb3842447a35cad31d68789df636e11353ab4a75179d86761d804c"
+  },
+  "logout_completed": true
+}

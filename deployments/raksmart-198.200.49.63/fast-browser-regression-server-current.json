@@ -1,0 +1,279 @@
+{
+  "accounts": [
+    {
+      "auto_route": {
+        "protocol": "freedom",
+        "target": "server"
+      },
+      "client_bbr_profiles": [
+        "standard"
+      ],
+      "enabled": true,
+      "hy2_congestion": {
+        "bbrProfile": "standard",
+        "type": "bbr"
+      },
+      "hy2_disable_business_udp": true,
+      "hy2_runtime_sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+      "ignore_client_bandwidth": true,
+      "month_total_bytes": 11132381083,
+      "port": 443,
+      "quota_bytes": 0,
+      "quota_exhausted": false,
+      "rate_bps": 0,
+      "services": {
+        "hy2": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "109829852134",
+          "MainPID": "9462",
+          "UnitFileState": "enabled"
+        },
+        "xray": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104738663130",
+          "MainPID": "26870",
+          "UnitFileState": "enabled"
+        }
+      },
+      "state_config_hash_matches": true,
+      "xray_config_sha256": "6a97b2776c29ff6312507bf235fd8d1f83a3c91112bf706f8f4bc39564f46f45"
+    },
+    {
+      "auto_route": {
+        "address": "43.246.197.78",
+        "port": 443,
+        "protocol": "socks",
+        "target": "static"
+      },
+      "client_bbr_profiles": [
+        "standard"
+      ],
+      "enabled": true,
+      "hy2_congestion": {
+        "bbrProfile": "standard",
+        "type": "bbr"
+      },
+      "hy2_disable_business_udp": true,
+      "hy2_runtime_sha256": "26dec394c3645183e0fbb9c1864b1a81e166bb34b307ba5e5f5347cea24fa0d3",
+      "ignore_client_bandwidth": true,
+      "month_total_bytes": 2274973606,
+      "port": 1443,
+      "quota_bytes": 0,
+      "quota_exhausted": false,
+      "rate_bps": 0,
+      "services": {
+        "hy2": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "107785519621",
+          "MainPID": "3408",
+          "UnitFileState": "enabled"
+        },
+        "xray": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104738945558",
+          "MainPID": "26883",
+          "UnitFileState": "enabled"
+        }
+      },
+      "state_config_hash_matches": true,
+      "xray_config_sha256": "c0eb34f774bda4d362b6e2490eba2ddd1bc1e8e61b4a963334837a477717b231"
+    },
+    {
+      "auto_route": {
+        "protocol": "freedom",
+        "target": "server"
+      },
+      "client_bbr_profiles": [
+        "standard"
+      ],
+      "enabled": true,
+      "hy2_congestion": {
+        "bbrProfile": "standard",
+        "type": "bbr"
+      },
+      "hy2_disable_business_udp": true,
+      "hy2_runtime_sha256": "91d5c9629599dd3c438c5da9042b9213620289d2066055cc223f737ab4348143",
+      "ignore_client_bandwidth": true,
+      "month_total_bytes": 55847429,
+      "port": 2443,
+      "quota_bytes": 0,
+      "quota_exhausted": false,
+      "rate_bps": 0,
+      "services": {
+        "hy2": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "107786947026",
+          "MainPID": "3448",
+          "UnitFileState": "enabled"
+        },
+        "xray": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104739227733",
+          "MainPID": "26895",
+          "UnitFileState": "enabled"
+        }
+      },
+      "state_config_hash_matches": true,
+      "xray_config_sha256": "be50ff0b6a3e8b452eb10d38531859d4b03b89e1c8e7d8c020771f4db6830fe0"
+    }
+  ],
+  "checked_at_utc": "2026-10-11T01:00:43Z",
+  "checkpoint_comparisons": [
+    {
+      "pending_trial": false,
+      "port": 443,
+      "protected_difference_types": [
+        "account-state",
+        "account-state",
+        "account-state"
+      ],
+      "runtime_matches_expected": true,
+      "runtime_matches_original": true
+    }
+  ],
+  "cpu_percent": {
+    "busy": 2.03,
+    "iowait": 0.0,
+    "steal": 0.0
+  },
+  "interface": "eth0",
+  "interface_counter_delta": {
+    "rx_bytes": 2435391,
+    "rx_dropped": 8,
+    "rx_errors": 0,
+    "rx_packets": 2606,
+    "tx_bytes": 2332669,
+    "tx_dropped": 0,
+    "tx_errors": 0,
+    "tx_packets": 1835
+  },
+  "interface_rx_mbps": 2.434,
+  "interface_tx_mbps": 2.331,
+  "link_speed_mbps": null,
+  "load_averages": [
+    0.23,
+    0.13,
+    0.08
+  ],
+  "load_tests": 0,
+  "native_transport_activity": [
+    {
+      "available": true,
+      "down_bytes_delta": 310282,
+      "down_mbps": 0.31,
+      "epoch_unchanged": true,
+      "online_clients": 1,
+      "port": 443,
+      "protocol": "hy2",
+      "up_bytes_delta": 1866729,
+      "up_mbps": 1.866
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 191887,
+      "down_mbps": 0.192,
+      "epoch_unchanged": true,
+      "port": 443,
+      "protocol": "xray",
+      "up_bytes_delta": 1897261,
+      "up_mbps": 1.896
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 0,
+      "down_mbps": 0.0,
+      "epoch_unchanged": true,
+      "online_clients": 0,
+      "port": 1443,
+      "protocol": "hy2",
+      "up_bytes_delta": 0,
+      "up_mbps": 0.0
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 0,
+      "down_mbps": 0.0,
+      "epoch_unchanged": true,
+      "port": 1443,
+      "protocol": "xray",
+      "up_bytes_delta": 0,
+      "up_mbps": 0.0
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 0,
+      "down_mbps": 0.0,
+      "epoch_unchanged": true,
+      "online_clients": 0,
+      "port": 2443,
+      "protocol": "hy2",
+      "up_bytes_delta": 0,
+      "up_mbps": 0.0
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 0,
+      "down_mbps": 0.0,
+      "epoch_unchanged": true,
+      "port": 2443,
+      "protocol": "xray",
+      "up_bytes_delta": 0,
+      "up_mbps": 0.0
+    }
+  ],
+  "netfilter": {
+    "filter": {
+      "exit_code": 0,
+      "output": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT"
+    },
+    "mangle": {
+      "exit_code": 0,
+      "output": "-P PREROUTING ACCEPT\n-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n-P POSTROUTING ACCEPT"
+    }
+  },
+  "read_only": true,
+  "sample_seconds": 8.004,
+  "scope": "Global interface/UDP/CPU counters include all services; native snapshots bracket an 8-second idle observation and are not a throughput capacity test.",
+  "source_sha256": {
+    "panel/accelerated_client.py": "cdca32b22fb4f0510ab2f42a952c897906d075d9964c62bbff903eefcb8ceff2",
+    "panel/hy2.py": "e44e8528eac43dd794abe1ed595461fc0ce4ebf6fccc5717020a472c3617e0c8",
+    "panel/telemetry.py": "7292171903358a3cb8155ec08d365d80590e741646398661edd14229e87fbeed"
+  },
+  "success": true,
+  "sysctls": {
+    "net.core.rmem_max": 7340032,
+    "net.core.wmem_max": 7340032
+  },
+  "tc": {
+    "class": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "filter": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "ingress_filter": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "police": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "qdisc": {
+      "exit_code": 0,
+      "output": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 20583517378 bytes 22878282 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0"
+    }
+  },
+  "udp_delta": {
+    "InCsumErrors": 0,
+    "InDatagrams": 1522,
+    "InErrors": 0,
+    "NoPorts": 0,
+    "OutDatagrams": 1001,
+    "RcvbufErrors": 0,
+    "SndbufErrors": 0
+  },
+  "udp_socket_buffers": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)"
+}

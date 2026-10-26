@@ -1,0 +1,50 @@
+{
+  "success": false,
+  "mode": "targets",
+  "label": "regression",
+  "started_at": "2026-10-10T13:40:44.738249+00:00",
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "signed_urls_saved": false,
+  "tokens_saved": false,
+  "paths": [],
+  "cleanup_errors": [],
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "script_sha256": "b4937053fd0a9732b40fd660c1d07d35e477b47edb4f22ecf27b4e21bdd59fec",
+  "method": {
+    "parallel_downloads": 4,
+    "maximum_payload_per_path": 67108864,
+    "maximum_request_seconds": 12,
+    "block_bytes": 16777216,
+    "path_order": [
+      "active-flclash",
+      "current-admin-hy2",
+      "current-admin-vless"
+    ],
+    "same_signed_targets_across_paths": true,
+    "active_flclash_port": 7890,
+    "all_parallel_downloads_share_12_second_deadline": true,
+    "no_controller_delete_connections": true,
+    "no_configuration_changes": true,
+    "range_in_official_path_and_http_header": true,
+    "payload_discarded_without_files": true,
+    "range_assembly": "current official JS: /speedtest -> /speedtest/range/0-N, query unchanged"
+  },
+  "method_sha256": "d6b991286b02c1e5b62433a36449789c2631a03d6621c24e5c3ce403d0cf7296",
+  "failure_stage": "fast-target-discovery",
+  "error_type": "SafeFailure",
+  "safe_error_detail": {
+    "stage": "fast-frontend",
+    "category": "timeout"
+  },
+  "own_mihomo_processes_terminated": true,
+  "own_curl_processes_terminated": true,
+  "temporary_private_files_removed": true,
+  "finished_at": "2026-10-10T13:40:50.634923+00:00",
+  "total_wall_seconds": 5.897
+}

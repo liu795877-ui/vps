@@ -1,0 +1,212 @@
+--- source/panel/server.py
++++ release/panel/server.py
+@@ -6,7 +6,14 @@
+ import hashlib
+ import hmac
+ from http import cookies
+-from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
++from http.server import BaseHTTPRequestHandler, HTTPServer
++try:
++    from http.server import ThreadingHTTPServer
++except ImportError:
++    from socketserver import ThreadingMixIn
++
++    class ThreadingHTTPServer(ThreadingMixIn, HTTPServer):
++        daemon_threads = True
+ import ipaddress
+ import json
+ import os
+@@ -75,7 +82,7 @@
+             os.fsync(stream.fileno())
+         os.replace(temporary, path)
+     finally:
+-        temporary.unlink(missing_ok=True)
++        _compat_unlink_if_exists(temporary)
+ 
+ 
+ def json_bytes(value):
+@@ -525,7 +532,7 @@
+                 config_mode=0o600 if self.service_name != "xray.service" else 0o640,
+             )
+         finally:
+-            temporary_profile.unlink(missing_ok=True)
++            _compat_unlink_if_exists(temporary_profile)
+ 
+     def apply(self, identity, active_id):
+         with self.lock:
+@@ -1261,5 +1268,15 @@
+     server.serve_forever()
+ 
+ 
++
++
++def _compat_unlink_if_exists(path):
++    # Path.unlink(missing_ok=True) was introduced after Python 3.6.
++    try:
++        path.unlink()
++    except FileNotFoundError:
++        pass
++
++
+ if __name__ == "__main__":
+     main()
+--- source/panel/test_accounts.py
++++ release/panel/test_accounts.py
+@@ -257,7 +257,7 @@
+     def test_production_validates_then_starts_only_new_template_instance(self):
+         instance, command = self.production_fixture()
+         member = instance.create_user({"username": "member_a", "password": "member-password-2026"})
+-        calls = [call.args[0] for call in command.call_args_list]
++        calls = [call[0][0] for call in command.call_args_list]
+         service = "xray-panel@" + member["id"] + ".service"
+         self.assertEqual(calls[0][1:4], ["run", "-test", "-config"])
+         self.assertIn(["systemctl", "enable", service], calls)
+@@ -271,7 +271,7 @@
+         instance._wait_ready.side_effect = RuntimeError("simulated listener failure")
+         with self.assertRaises(server.PanelError):
+             instance.create_user({"username": "member_a", "password": "member-password-2026"})
+-        calls = [call.args[0] for call in command.call_args_list]
++        calls = [call[0][0] for call in command.call_args_list]
+         self.assertTrue(any(call[:2] == ["systemctl", "stop"] for call in calls))
+         self.assertTrue(any(call[:2] == ["systemctl", "disable"] for call in calls))
+         self.assertFalse(any("xray.service" in call for call in calls))
+@@ -289,7 +289,7 @@
+         with mock.patch.object(instance, "_save", side_effect=OSError("disk full")):
+             with self.assertRaises(server.PanelError):
+                 instance.create_user({"username": "member_b", "password": "member-password-2026"})
+-        calls = [call.args[0] for call in command.call_args_list]
++        calls = [call[0][0] for call in command.call_args_list]
+         self.assertFalse(any(first_manager.service_name in call for call in calls))
+         self.assertEqual(instance.users_path.read_bytes(), registry)
+         self.assertEqual(len(instance.records), 1)
+@@ -363,7 +363,7 @@
+         self.assertFalse(first_manager.disabled)
+         self.assertEqual(len(instance.records), 2)
+         self.assertTrue(second_manager.config_path.is_file())
+-        calls = [call.args[0] for call in command.call_args_list]
++        calls = [call[0][0] for call in command.call_args_list]
+         self.assertIn(["systemctl", "stop", first_manager.service_name], calls)
+         self.assertIn(["systemctl", "start", first_manager.service_name], calls)
+         self.assertFalse(any(second_manager.service_name in call or "xray.service" in call for call in calls))
+@@ -559,7 +559,7 @@
+         with mock.patch.object(manager, "install") as install:
+             instance.rotate_credentials(member["id"])
+             install.assert_not_called()
+-        calls = [call.args[0] for call in command.call_args_list]
++        calls = [call[0][0] for call in command.call_args_list]
+         self.assertTrue(any(call[1:4] == ["run", "-test", "-config"] for call in calls))
+         self.assertFalse(any(call[:2] in (["systemctl", "start"], ["systemctl", "restart"]) for call in calls))
+         self.assertFalse(instance.get(member["id"])["enabled"])
+--- source/panel/test_entrances.py
++++ release/panel/test_entrances.py
+@@ -115,10 +115,10 @@
+         with mock.patch.object(socket, "socket") as factory:
+             probe = factory.return_value.__enter__.return_value
+             self.expand()
+-        self.assertEqual([call.args[0] for call in factory.call_args_list], [socket.AF_INET] * 5)
+-        self.assertEqual([call.args[1] for call in factory.call_args_list],
++        self.assertEqual([call[0][0] for call in factory.call_args_list], [socket.AF_INET] * 5)
++        self.assertEqual([call[0][1] for call in factory.call_args_list],
+                          [socket.SOCK_STREAM, socket.SOCK_DGRAM] + [socket.SOCK_STREAM] * 3)
+-        self.assertEqual([call.args[0] for call in probe.bind.call_args_list],
++        self.assertEqual([call[0][0] for call in probe.bind.call_args_list],
+                          [("0.0.0.0", 3444), ("0.0.0.0", 3444),
+                           ("127.0.0.1", 18444), ("127.0.0.1", 19044), ("127.0.0.1", 22044)])
+         self.assertEqual(self.accounts.entrance_summary()["public_verification"], "not_checked")
+--- source/panel/test_panel.py
++++ release/panel/test_panel.py
+@@ -1,3 +1,4 @@
++import base64
+ import copy
+ import http.client
+ import json
+@@ -73,6 +74,69 @@
+             with self.subTest(values=values):
+                 with self.assertRaises(server.PanelError):
+                     server.clean_domains(values)
++
++
++class ExistingRaksmartNodeTests(unittest.TestCase):
++    def setUp(self):
++        self.temporary = tempfile.TemporaryDirectory(prefix="raksmart-adoption-test-")
++        self.addCleanup(self.temporary.cleanup)
++        self.directory = Path(self.temporary.name)
++        self.identity = "22d0b41d-2eec-437b-b87d-e3e1a64d88a6"
++        self.private = base64.urlsafe_b64encode(bytes(range(32))).decode().rstrip("=")
++        self.public = base64.urlsafe_b64encode(bytes(range(32, 64))).decode().rstrip("=")
++        self.short = "0123456789abcdef"
++        self.config = self.directory / "xray.json"
++        self.source_profile = self.directory / "base.private.yaml"
++        self.original = base.server_config(self.identity, self.private, self.short,
++                                           target="www.cloudflare.com")
++        self.config.write_bytes(server.json_bytes(self.original))
++        self.source_profile.write_text(base.client_profile(
++            "8.8.8.8", self.identity, self.public, self.short, target="www.cloudflare.com"
++        ), encoding="utf-8")
++
++    def adopt(self):
++        return server.Manager(self.directory / "data", "8.8.8.8", self.config,
++                              self.source_profile)
++
++    def test_adopt_443_ipv4_without_replacing_existing_node_then_extend(self):
++        before = self.config.read_bytes()
++        manager = self.adopt()
++        self.assertEqual(self.config.read_bytes(), before)
++        self.assertEqual(manager.state["base"], self.original)
++        self.assertEqual(self.original["inbounds"][0]["port"], 443)
++        self.assertEqual(self.original["outbounds"][0]["settings"],
++                         {"domainStrategy": "UseIPv4"})
++        exit_id = manager.edit_exit({"name": "Test static exit", "address": "8.8.4.4",
++                                     "port": 1080, "auth": "none", "username": "",
++                                     "password": "", "expected_ip": ""})["id"]
++        extended, profile = manager.build(manager.state, exit_id)
++        primary = extended["inbounds"][0]["settings"]["clients"][0]
++        self.assertEqual({key: value for key, value in primary.items() if key != "email"},
++                         self.original["inbounds"][0]["settings"]["clients"][0])
++        self.assertEqual(primary["email"], "panel-primary@stats.invalid")
++        self.assertEqual(len(extended["inbounds"]), 1)
++        self.assertEqual(extended["api"], {"tag": "panel-stats-api",
++                         "listen": "127.0.0.1:15443", "services": ["StatsService"]})
++        self.assertEqual(extended["inbounds"][0]["streamSettings"],
++                         self.original["inbounds"][0]["streamSettings"])
++        self.assertEqual(extended["outbounds"][:2], self.original["outbounds"])
++        self.assertEqual(extended["routing"]["rules"][0], self.original["routing"]["rules"][0])
++        self.assertIn("port: 443", profile)
++        self.assertIn('servername: "www.cloudflare.com"', profile)
++        self.assertEqual(self.config.read_bytes(), before)
++
++    def test_adoption_rejects_unexpected_port_or_direct_outbound(self):
++        changed_port = copy.deepcopy(self.original)
++        changed_port["inbounds"][0]["port"] = 8443
++        changed_direct = copy.deepcopy(self.original)
++        changed_direct["outbounds"][0]["settings"]["domainStrategy"] = "UseIPv6"
++        for candidate in (changed_port, changed_direct):
++            payload = server.json_bytes(candidate)
++            self.config.write_bytes(payload)
++            with self.assertRaises(RuntimeError):
++                self.adopt()
++            self.assertEqual(self.config.read_bytes(), payload)
++            self.assertFalse((self.directory / "data" / "state.private.json").exists())
+ 
+ 
+ class PanelTests(unittest.TestCase):
+@@ -652,7 +716,7 @@
+         path.write_text(profile, encoding="utf-8")
+         result = subprocess.run(
+             [os.environ["MIHOMO_TEST_BINARY"], "-t", "-d", str(self.directory), "-f", str(path)],
+-            capture_output=True, text=True, timeout=30, check=False,
++            stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True, timeout=30, check=False,
+         )
+         self.assertEqual(result.returncode, 0, "Official Mihomo core rejected the unified two-exit profile.")
+ 
+--- source/panel/test_service_status.py
++++ release/panel/test_service_status.py
+@@ -44,7 +44,7 @@
+                 result = self.accounts.get(member["id"])
+                 self.assertEqual((result["service_active"], result["hy2_service_active"]), expected)
+                 self.assertEqual(result["hy2_port"], member["port"])
+-                self.assertEqual({call.args[0][-2] for call in command.call_args_list}, {reality, accelerated})
++                self.assertEqual({call[0][0][-2] for call in command.call_args_list}, {reality, accelerated})
+         self.assertEqual(self.accounts.entrance_summary()["public_verification"], "not_checked")
+ 
+     def test_failed_command_or_unknown_unit_remains_unknown_without_hiding_other_transport(self):

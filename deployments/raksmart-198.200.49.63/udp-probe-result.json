@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-10-09T16:03:15+08:00",
+  "server": {
+    "address": "198.200.49.63",
+    "ready": true,
+    "udp_port": 443,
+    "server_loopback_success": true
+  },
+  "port": 443,
+  "transport": "UDP",
+  "path": "Physical WLAN; active FlClash untouched",
+  "samples": [
+    {
+      "sequence": 0,
+      "payload_bytes": 128,
+      "success": true,
+      "round_trip_ms": 213.0
+    },
+    {
+      "sequence": 1,
+      "payload_bytes": 1200,
+      "success": true,
+      "round_trip_ms": 213.8
+    },
+    {
+      "sequence": 2,
+      "payload_bytes": 1400,
+      "success": true,
+      "round_trip_ms": 213.1
+    },
+    {
+      "sequence": 3,
+      "payload_bytes": 128,
+      "success": true,
+      "round_trip_ms": 213.7
+    },
+    {
+      "sequence": 4,
+      "payload_bytes": 1200,
+      "success": true,
+      "round_trip_ms": 213.9
+    },
+    {
+      "sequence": 5,
+      "payload_bytes": 1400,
+      "success": true,
+      "round_trip_ms": 212.9
+    },
+    {
+      "sequence": 6,
+      "payload_bytes": 128,
+      "success": true,
+      "round_trip_ms": 211.9
+    },
+    {
+      "sequence": 7,
+      "payload_bytes": 1200,
+      "success": true,
+      "round_trip_ms": 214.6
+    },
+    {
+      "sequence": 8,
+      "payload_bytes": 1400,
+      "success": true,
+      "round_trip_ms": 212.2
+    }
+  ],
+  "server_completion": {
+    "server_counts": {
+      "valid_remote_packets": 9,
+      "valid_remote_bytes": 8184,
+      "loopback_packets": 1,
+      "ignored_packets": 0,
+      "ssh_source_match_packets": 0,
+      "ssh_source_different_packets": 9
+    },
+    "listener_closed": true
+  },
+  "remote_exit_code": 0,
+  "reply_count": 9,
+  "median_round_trip_ms": 213.1,
+  "public_udp_round_trip_verified": true,
+  "limitations": "Small UDP echo samples verify reachability and packet sizes, not QUIC compatibility or sustained throughput."
+}

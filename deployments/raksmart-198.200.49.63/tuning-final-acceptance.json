@@ -1,0 +1,155 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T12:56:11.779503+00:00",
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "speed_or_load_tests": 0,
+  "web_logins": 0,
+  "samples": [
+    {
+      "port": 443,
+      "protocol": "hy2",
+      "public_exit_verified": true,
+      "native_counter_incremented": true,
+      "native_counter_delta": {
+        "up_bytes": 654,
+        "down_bytes": 3527
+      },
+      "expected_ip": "198.200.49.63",
+      "observed_ip": "198.200.49.63"
+    },
+    {
+      "port": 443,
+      "protocol": "xray",
+      "public_exit_verified": true,
+      "native_counter_incremented": true,
+      "native_counter_delta": {
+        "up_bytes": 881,
+        "down_bytes": 3527
+      },
+      "expected_ip": "198.200.49.63",
+      "observed_ip": "198.200.49.63"
+    },
+    {
+      "port": 1443,
+      "protocol": "hy2",
+      "public_exit_verified": true,
+      "native_counter_incremented": true,
+      "native_counter_delta": {
+        "up_bytes": 654,
+        "down_bytes": 3527
+      },
+      "expected_ip": "43.246.197.78",
+      "observed_ip": "43.246.197.78"
+    },
+    {
+      "port": 1443,
+      "protocol": "xray",
+      "public_exit_verified": true,
+      "native_counter_incremented": true,
+      "native_counter_delta": {
+        "up_bytes": 13975,
+        "down_bytes": 3831071
+      },
+      "expected_ip": "43.246.197.78",
+      "observed_ip": "43.246.197.78"
+    },
+    {
+      "port": 2443,
+      "protocol": "hy2",
+      "public_exit_verified": true,
+      "native_counter_incremented": true,
+      "native_counter_delta": {
+        "up_bytes": 654,
+        "down_bytes": 3528
+      },
+      "expected_ip": "198.200.49.63",
+      "observed_ip": "198.200.49.63"
+    },
+    {
+      "port": 2443,
+      "protocol": "xray",
+      "public_exit_verified": true,
+      "native_counter_incremented": true,
+      "native_counter_delta": {
+        "up_bytes": 654,
+        "down_bytes": 3527
+      },
+      "expected_ip": "198.200.49.63",
+      "observed_ip": "198.200.49.63"
+    }
+  ],
+  "physical_wlan": true,
+  "statistics_method": "Read-only native APIs and fresh persisted samples; no web session.",
+  "temporary_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "source_checks": [
+    {
+      "port": 443,
+      "protocol": "hy2",
+      "native_source_readable": true,
+      "process_epoch_matches": true,
+      "normal_sample_fresh": true,
+      "native_bytes_recorded": true,
+      "monthly_delta_recorded": true
+    },
+    {
+      "port": 443,
+      "protocol": "xray",
+      "native_source_readable": true,
+      "process_epoch_matches": true,
+      "normal_sample_fresh": true,
+      "native_bytes_recorded": true,
+      "monthly_delta_recorded": true
+    },
+    {
+      "port": 1443,
+      "protocol": "hy2",
+      "native_source_readable": true,
+      "process_epoch_matches": true,
+      "normal_sample_fresh": true,
+      "native_bytes_recorded": true,
+      "monthly_delta_recorded": true
+    },
+    {
+      "port": 1443,
+      "protocol": "xray",
+      "native_source_readable": true,
+      "process_epoch_matches": true,
+      "normal_sample_fresh": true,
+      "native_bytes_recorded": true,
+      "monthly_delta_recorded": true
+    },
+    {
+      "port": 2443,
+      "protocol": "hy2",
+      "native_source_readable": true,
+      "process_epoch_matches": true,
+      "normal_sample_fresh": true,
+      "native_bytes_recorded": true,
+      "monthly_delta_recorded": true
+    },
+    {
+      "port": 2443,
+      "protocol": "xray",
+      "native_source_readable": true,
+      "process_epoch_matches": true,
+      "normal_sample_fresh": true,
+      "native_bytes_recorded": true,
+      "monthly_delta_recorded": true
+    }
+  ],
+  "sources_verified": 6,
+  "public_exit_requests": 6,
+  "settings_preserved": true,
+  "limits_preserved": true,
+  "protected_files_preserved": true,
+  "monthly_totals_non_decreasing": true,
+  "no_transport_restarts_during_acceptance": true,
+  "temporary_private_files_removed": true,
+  "own_client_process_terminated": true
+}

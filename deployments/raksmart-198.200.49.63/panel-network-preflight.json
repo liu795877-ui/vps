@@ -1,0 +1,12 @@
+{
+  "hostname_resolves_to": [
+    "198.200.49.63"
+  ],
+  "selinux": "Disabled",
+  "firewalld_active": false,
+  "iptables_policy": [
+    "-P INPUT ACCEPT",
+    "-P FORWARD ACCEPT",
+    "-P OUTPUT ACCEPT"
+  ]
+}

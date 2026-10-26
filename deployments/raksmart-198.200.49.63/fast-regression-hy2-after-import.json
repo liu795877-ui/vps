@@ -1,0 +1,359 @@
+{
+  "accounts": [
+    {
+      "auto_route": {
+        "protocol": "freedom",
+        "target": "server"
+      },
+      "client_bbr_profiles": [
+        "standard"
+      ],
+      "enabled": true,
+      "hy2_congestion": {
+        "bbrProfile": "standard",
+        "type": "bbr"
+      },
+      "hy2_disable_business_udp": true,
+      "hy2_runtime_sha256": "c65c72a017fc10a05f71f14e7fe94144272373c0802c3d6ebf1cf048a630af00",
+      "ignore_client_bandwidth": true,
+      "month_total_bytes": 9050800112,
+      "port": 443,
+      "quota_bytes": 0,
+      "quota_exhausted": false,
+      "rate_bps": 0,
+      "services": {
+        "hy2": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "109829852134",
+          "MainPID": "9462",
+          "UnitFileState": "enabled"
+        },
+        "xray": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104738663130",
+          "MainPID": "26870",
+          "UnitFileState": "enabled"
+        }
+      },
+      "state_config_hash_matches": true,
+      "xray_config_sha256": "6a97b2776c29ff6312507bf235fd8d1f83a3c91112bf706f8f4bc39564f46f45"
+    },
+    {
+      "auto_route": {
+        "address": "43.246.197.78",
+        "port": 443,
+        "protocol": "socks",
+        "target": "static"
+      },
+      "client_bbr_profiles": [
+        "standard"
+      ],
+      "enabled": true,
+      "hy2_congestion": {
+        "bbrProfile": "standard",
+        "type": "bbr"
+      },
+      "hy2_disable_business_udp": true,
+      "hy2_runtime_sha256": "26dec394c3645183e0fbb9c1864b1a81e166bb34b307ba5e5f5347cea24fa0d3",
+      "ignore_client_bandwidth": true,
+      "month_total_bytes": 1625270996,
+      "port": 1443,
+      "quota_bytes": 0,
+      "quota_exhausted": false,
+      "rate_bps": 0,
+      "services": {
+        "hy2": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "107785519621",
+          "MainPID": "3408",
+          "UnitFileState": "enabled"
+        },
+        "xray": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104738945558",
+          "MainPID": "26883",
+          "UnitFileState": "enabled"
+        }
+      },
+      "state_config_hash_matches": true,
+      "xray_config_sha256": "c0eb34f774bda4d362b6e2490eba2ddd1bc1e8e61b4a963334837a477717b231"
+    },
+    {
+      "auto_route": {
+        "protocol": "freedom",
+        "target": "server"
+      },
+      "client_bbr_profiles": [
+        "standard"
+      ],
+      "enabled": true,
+      "hy2_congestion": {
+        "bbrProfile": "standard",
+        "type": "bbr"
+      },
+      "hy2_disable_business_udp": true,
+      "hy2_runtime_sha256": "91d5c9629599dd3c438c5da9042b9213620289d2066055cc223f737ab4348143",
+      "ignore_client_bandwidth": true,
+      "month_total_bytes": 55834886,
+      "port": 2443,
+      "quota_bytes": 0,
+      "quota_exhausted": false,
+      "rate_bps": 0,
+      "services": {
+        "hy2": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "107786947026",
+          "MainPID": "3448",
+          "UnitFileState": "enabled"
+        },
+        "xray": {
+          "ActiveState": "active",
+          "ExecMainStartTimestampMonotonic": "104739227733",
+          "MainPID": "26895",
+          "UnitFileState": "enabled"
+        }
+      },
+      "state_config_hash_matches": true,
+      "xray_config_sha256": "be50ff0b6a3e8b452eb10d38531859d4b03b89e1c8e7d8c020771f4db6830fe0"
+    }
+  ],
+  "checked_at_utc": "2026-10-10T13:43:07Z",
+  "checkpoint_comparisons": [
+    {
+      "pending_trial": false,
+      "port": 443,
+      "protected_difference_types": [],
+      "runtime_matches_expected": true,
+      "runtime_matches_original": true
+    }
+  ],
+  "cpu_percent": {
+    "busy": 1.01,
+    "iowait": 0.0,
+    "steal": 0.0
+  },
+  "hy2_recent_log_categories": [
+    {
+      "journal_read_exit_code": 0,
+      "last_10_minutes_reason_categories": {
+        "authentication_rejected": 0,
+        "client_connected": 2,
+        "client_disconnected": 0,
+        "connection_error_other": 15,
+        "timeout_or_idle": 0,
+        "tls_or_certificate": 0,
+        "udp_buffer_warning": 0
+      },
+      "port": 443,
+      "scope": "Aggregate text categories may overlap; no addresses, users, secrets or raw log messages are retained.",
+      "severity_counts": {
+        "error": 15,
+        "warning": 0
+      }
+    },
+    {
+      "journal_read_exit_code": 0,
+      "last_10_minutes_reason_categories": {
+        "authentication_rejected": 0,
+        "client_connected": 0,
+        "client_disconnected": 0,
+        "connection_error_other": 0,
+        "timeout_or_idle": 0,
+        "tls_or_certificate": 0,
+        "udp_buffer_warning": 0
+      },
+      "port": 1443,
+      "scope": "Aggregate text categories may overlap; no addresses, users, secrets or raw log messages are retained.",
+      "severity_counts": {
+        "error": 0,
+        "warning": 0
+      }
+    },
+    {
+      "journal_read_exit_code": 0,
+      "last_10_minutes_reason_categories": {
+        "authentication_rejected": 0,
+        "client_connected": 0,
+        "client_disconnected": 0,
+        "connection_error_other": 0,
+        "timeout_or_idle": 0,
+        "tls_or_certificate": 0,
+        "udp_buffer_warning": 0
+      },
+      "port": 2443,
+      "scope": "Aggregate text categories may overlap; no addresses, users, secrets or raw log messages are retained.",
+      "severity_counts": {
+        "error": 0,
+        "warning": 0
+      }
+    }
+  ],
+  "interface": "eth0",
+  "interface_counter_delta": {
+    "rx_bytes": 15247000,
+    "rx_dropped": 9,
+    "rx_errors": 0,
+    "rx_packets": 5412,
+    "tx_bytes": 9981083,
+    "tx_dropped": 0,
+    "tx_errors": 0,
+    "tx_packets": 6486
+  },
+  "interface_rx_mbps": 15.228,
+  "interface_tx_mbps": 9.969,
+  "link_speed_mbps": null,
+  "load_averages": [
+    0.06,
+    0.08,
+    0.07
+  ],
+  "load_tests": 0,
+  "local_import_validation": {
+    "certificate_verification_enabled": true,
+    "fingerprint_matches_certificate": true,
+    "fingerprint_matches_registry": true,
+    "has_current_server_node": true,
+    "password_matches": true,
+    "server_and_port_match": true,
+    "sni_matches": true
+  },
+  "native_transport_activity": [
+    {
+      "available": true,
+      "down_bytes_delta": 0,
+      "down_mbps": 0.0,
+      "epoch_unchanged": true,
+      "online_clients": 2,
+      "port": 443,
+      "protocol": "hy2",
+      "up_bytes_delta": 0,
+      "up_mbps": 0.0
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 698067,
+      "down_mbps": 0.697,
+      "epoch_unchanged": true,
+      "port": 443,
+      "protocol": "xray",
+      "up_bytes_delta": 3577855,
+      "up_mbps": 3.573
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 0,
+      "down_mbps": 0.0,
+      "epoch_unchanged": true,
+      "online_clients": 0,
+      "port": 1443,
+      "protocol": "hy2",
+      "up_bytes_delta": 0,
+      "up_mbps": 0.0
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 635198,
+      "down_mbps": 0.634,
+      "epoch_unchanged": true,
+      "port": 1443,
+      "protocol": "xray",
+      "up_bytes_delta": 196969,
+      "up_mbps": 0.197
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 0,
+      "down_mbps": 0.0,
+      "epoch_unchanged": true,
+      "online_clients": 0,
+      "port": 2443,
+      "protocol": "hy2",
+      "up_bytes_delta": 0,
+      "up_mbps": 0.0
+    },
+    {
+      "available": true,
+      "down_bytes_delta": 0,
+      "down_mbps": 0.0,
+      "epoch_unchanged": true,
+      "port": 2443,
+      "protocol": "xray",
+      "up_bytes_delta": 0,
+      "up_mbps": 0.0
+    }
+  ],
+  "netfilter": {
+    "filter": {
+      "exit_code": 0,
+      "output": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT"
+    },
+    "mangle": {
+      "exit_code": 0,
+      "output": "-P PREROUTING ACCEPT\n-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n-P POSTROUTING ACCEPT"
+    }
+  },
+  "read_only": true,
+  "sample_seconds": 8.01,
+  "scope": "Global interface/UDP/CPU counters include all services; native snapshots bracket an 8-second idle observation and are not a throughput capacity test.",
+  "source_sha256": {
+    "panel/accelerated_client.py": "35441f3ff8e4a2b206ac7c8ef8d56afbd3f24cfcee549dab7c716945bd78d9e4",
+    "panel/hy2.py": "e44e8528eac43dd794abe1ed595461fc0ce4ebf6fccc5717020a472c3617e0c8",
+    "panel/telemetry.py": "7292171903358a3cb8155ec08d365d80590e741646398661edd14229e87fbeed"
+  },
+  "success": true,
+  "sysctls": {
+    "net.core.rmem_max": 7340032,
+    "net.core.wmem_max": 7340032
+  },
+  "tc": {
+    "class": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "filter": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "ingress_filter": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "police": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "qdisc": {
+      "exit_code": 0,
+      "output": "qdisc pfifo_fast 0: root refcnt 2 bands 3 priomap  1 2 2 2 1 2 0 0 1 1 1 1 1 1 1 1\n Sent 18525030180 bytes 20462135 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0"
+    }
+  },
+  "udp_delta": {
+    "InCsumErrors": 0,
+    "InDatagrams": 23,
+    "InErrors": 0,
+    "NoPorts": 0,
+    "OutDatagrams": 23,
+    "RcvbufErrors": 0,
+    "SndbufErrors": 0
+  },
+  "udp_socket_buffers": "State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              \nUNCONN     0      0            *:1443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:2443                     *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)\nUNCONN     0      0            *:443                      *:*                  \n\t skmem:(r0,rb14680064,t0,tb14680064,f4096,w0,o0,bl0,d0)",
+  "local_profile_metadata": {
+    "active_profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+    "has_admin_hy2_node": true,
+    "has_auto_fallback": true
+  },
+  "hy2_admin_error_detail_categories": {
+    "exit_code": 0,
+    "port": 443,
+    "error_term_counts": {
+      "timeout": 1
+    },
+    "json_log_field_names": [
+      "addr",
+      "error",
+      "id",
+      "reqAddr"
+    ],
+    "recognized_sanitized_error_categories": {}
+  }
+}

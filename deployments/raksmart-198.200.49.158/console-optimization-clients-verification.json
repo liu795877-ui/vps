@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "checked_at": "2026-10-13T06:56:56.398980+00:00",
+  "deployment_ip": "198.200.49.158",
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "configuration_transport": "local Windows named pipe; memory only",
+  "system_proxy_changed": false,
+  "flclash_changed": false,
+  "raw_process_output_saved": false,
+  "mode": "public-real-clients",
+  "transports": {
+    "reality": {
+      "success": true,
+      "http_status": 200,
+      "observed_ip": "198.200.49.158",
+      "expected_ip": "198.200.49.158",
+      "seconds": 1.265
+    },
+    "reality_legacy": {
+      "success": true,
+      "http_status": 200,
+      "observed_ip": "198.200.49.158",
+      "expected_ip": "198.200.49.158",
+      "seconds": 1.152
+    },
+    "hy2": {
+      "success": true,
+      "http_status": 200,
+      "observed_ip": "198.200.49.158",
+      "expected_ip": "198.200.49.158",
+      "seconds": 1.355
+    }
+  },
+  "client_binary_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "physical_wlan": true,
+  "public_tcp443_verified": true,
+  "public_udp443_verified": true,
+  "old_reality_identity_preserved": true,
+  "old_primary_reality_identity_preserved": true,
+  "old_hy2_password_preserved": true,
+  "old_hy2_tls_pin_preserved": true,
+  "web_exit_preserved": true,
+  "hy2_follows_web_exit": true,
+  "expected_current_egress": "198.200.49.158",
+  "source_signatures_preserved": true
+}

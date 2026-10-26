@@ -1,0 +1,17 @@
+{
+  "vps-panel.service": "MainPID=2312\nActiveState=active",
+  "raksmart-hy2@443.service": "MainPID=2215\nActiveState=active",
+  "raksmart-hy2@1443.service": "MainPID=2253\nActiveState=active",
+  "raksmart-hy2@2443.service": "MainPID=2291\nActiveState=active",
+  "xray.service": "MainPID=26870\nActiveState=active",
+  "backend_status_codes": {
+    "/api/session": 200,
+    "/node-console/": {
+      "type": "HTTPError",
+      "status": 401
+    },
+    "/": 200
+  },
+  "sysctls": "net.core.rmem_max = 212992\nnet.core.wmem_max = 212992",
+  "sysctl_file_exists": false
+}

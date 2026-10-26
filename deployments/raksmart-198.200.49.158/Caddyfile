@@ -1,0 +1,37 @@
+# Independent RAKsmart management site; Xray keeps public TCP 443.
+{
+	admin 127.0.0.1:2019
+	acme_ca https://acme-v02.api.letsencrypt.org/directory
+	https_port 8443
+	auto_https disable_redirects
+	storage file_system /var/lib/caddy/storage
+	servers {
+		protocols h1 h2
+	}
+}
+
+https://198-200-49-158.sslip.io:8443 {
+	tls {
+		issuer acme {
+			disable_tlsalpn_challenge
+		}
+	}
+
+	redir /node-console /node-console/ 308
+	handle_path /node-console/* {
+		request_body {
+			max_size 64KB
+		}
+		reverse_proxy 127.0.0.1:18787 {
+			header_up X-Real-IP {remote_host}
+		}
+	}
+	handle {
+		respond "Not found" 404
+	}
+}
+
+# TCP 80 is needed for ACME HTTP-01 issuance and renewal only.
+http://198-200-49-158.sslip.io {
+	respond "Use the HTTPS management URL." 404
+}

@@ -1,0 +1,19 @@
+{
+  "python_version": [
+    3,
+    6,
+    8
+  ],
+  "python_executable": "/usr/bin/python3",
+  "vendor_directory": "/opt/vps-panel/vendor",
+  "cryptography_version": "3.3.2",
+  "cryptography_file": "/opt/vps-panel/vendor/cryptography/__init__.py",
+  "aesgcm_imported": true,
+  "pbkdf2_imported": true,
+  "x509_imported": true,
+  "dont_write_bytecode": true,
+  "read_only": true,
+  "release_uploaded": false,
+  "release_tests_run": false,
+  "known_host_required": true
+}

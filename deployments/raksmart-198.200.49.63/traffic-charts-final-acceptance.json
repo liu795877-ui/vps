@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T08:39:23.907894+00:00",
+  "deployment_ip": "198.200.49.63",
+  "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+  "asset_version": "traffic-charts-20261010-1",
+  "features": [
+    "Monthly upload/download donut with actual recorded totals",
+    "Live upload/download rate chart with up to 60 genuine samples",
+    "TCP connection count, monthly quota progress and rate enforcement status",
+    "Timestamp deduplication, missing-data gaps and stale telemetry notices",
+    "Independent per-session and per-account chart history",
+    "Responsive desktop/mobile charts, keyboard values and 44px sampling controls"
+  ],
+  "local_browser_checks": {
+    "traffic-charts-ui": 23,
+    "enhancements-ui": 18,
+    "user-guide-ui": 50
+  },
+  "production_accounts_verified": 3,
+  "production_viewports": [
+    1440,
+    390
+  ],
+  "actual_server_data_matches": true,
+  "physical_wlan_and_trusted_https": true,
+  "source_sha256": {
+    "panel/web/style.css": "8cd45f19f5d0e5ba4db75d544a08cca0d39af556349f115e15ab02d773fc59b2",
+    "panel/web/app.js": "1760628f641a024893d398e5e97fe91ae29b0562bd3219f7c22cdcf0d1418aa3",
+    "panel/web/index.html": "c50e0b3e6be637dcb3780bea42dc291262ba812d9fe41bcc6610858da46bcecf"
+  },
+  "deployment_scope": "frontend_only",
+  "services_restarted": false,
+  "backend_changed": false,
+  "all_account_data_preserved": true,
+  "all_service_processes_preserved": true,
+  "protected_file_count": 45,
+  "protected_service_count": 6,
+  "reports": [
+    "traffic-charts-update.json",
+    "traffic-charts-preservation.json",
+    "traffic-charts-browser-verification.json",
+    "traffic-charts-release-manifest.json",
+    "../../.validation/traffic-charts-ui/report.json",
+    "../../.validation/enhancements-ui/report.json",
+    "../../.validation/user-guide-ui/report.json"
+  ],
+  "screenshots_directory": "traffic-charts-browser-ui",
+  "limitations": [
+    "Rate history starts when the page opens and clears on logout or reload",
+    "Only the latest 60 genuine timestamped samples are retained; missing samples are not interpolated",
+    "Monthly counters use UTC; local DIRECT and independent HY2 traffic are excluded"
+  ],
+  "unfinished_requested_features": [],
+  "secrets_included": false
+}

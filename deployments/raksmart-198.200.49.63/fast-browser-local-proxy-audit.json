@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "observed_local_date": "2026-10-11",
+  "read_only": true,
+  "network_probes": 0,
+  "load_tests": 0,
+  "process_or_setting_mutations": 0,
+  "app_core_ipc_connections": 0,
+  "active_flclash": {
+    "profile_id": "1791639448254",
+    "selection": {"STATIC-SELECT": "AUTO", "AUTO": "HY2"},
+    "tun": true,
+    "mode": "rule",
+    "mixed_port": 7890,
+    "hy2_server": "198.200.49.63",
+    "hy2_port": 443,
+    "hy2_bbr_profile": "standard",
+    "node_interface_name": null,
+    "auto_health": {"url": "https://www.gstatic.com/generate_204", "expected-status": "204", "interval": 30, "lazy": false},
+    "auto_run": true,
+    "windows_auto_launch": false
+  },
+  "windows_user_proxy": {
+    "enabled": true,
+    "server": "127.0.0.1:7890",
+    "pac_url": null,
+    "fast_or_netflix_bypass": false,
+    "connection_flags": 3,
+    "winhttp": "Direct"
+  },
+  "observed_browser_network_connections": {
+    "chrome_network_service_pid": 32480,
+    "edge_network_service_pid": 38140,
+    "combined_established_count": 11,
+    "all_established_destination": "127.0.0.1:7890",
+    "limits": "Snapshot identifies client-to-core connections; it does not identify each Fast request's selected outbound chain."
+  },
+  "browser_configuration": {
+    "root_process_proxy_quic_dns_override_flags": [],
+    "relevant_enterprise_policy_keys_found": false,
+    "chrome": [
+      {"extension": "FoxyProxy", "disable_reasons": [], "persisted_controlled_proxy_mode": "system"},
+      {"extension": "Proxy SwitchyOmega 3 (ZeroOmega)", "disable_reasons": [], "persisted_proxy_control": null},
+      {"extension": "VeePN", "disable_reasons": [1], "persisted_proxy_control": null}
+    ],
+    "edge_proxy_extensions": []
+  },
+  "other_proxy_components": {
+    "codex_cockpit_mihomo_pid": 26688,
+    "codex_cockpit_listener_ports": [29495, 29496],
+    "codex_cockpit_is_windows_user_proxy": false,
+    "clash_verge_service_running": true,
+    "second_active_tun_adapter_found": false,
+    "uu_tap_adapter": "Disconnected",
+    "other_tap_adapter": "Disconnected",
+    "physical_adapter": "WLAN"
+  },
+  "routing": {
+    "process_specific_rules": [],
+    "netflix_api_and_payload_suffixes": "Netflix provider to STATIC-SELECT before China IP rule",
+    "gstatic": "Overseas provider to STATIC-SELECT",
+    "fast_com_explicit_domain_rule": false,
+    "fast_com_direction_limit": "Current resolved destination can still select China IP direct rule or final STATIC-SELECT. No live resolution was performed."
+  },
+  "conclusion": "No concrete local browser bypass or second proxy/TUN conflict found. Browser flows observed use FlClash. This does not establish the source of low Fast throughput; correlate a controlled actual browser test with native HY2 counters and per-request connection chains."
+}

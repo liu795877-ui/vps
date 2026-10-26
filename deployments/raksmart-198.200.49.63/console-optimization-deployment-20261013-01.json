@@ -1,0 +1,20 @@
+{
+  "success": false,
+  "started_at": "2026-10-13T01:48:18.596560+00:00",
+  "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+  "manifest_sha256": "5938c1af4adc70e8e323cba5998805f4c0340731f76d247b0edcae7c87a98ff6",
+  "remote_helper_sha256": "18dfd10c2f07f704699b75600878c65752a05cf8b7f2c0516d8d2d1ce38e6446",
+  "baseline": "frozen-hy2-plus-auto-production-baseline",
+  "local_report": "D:\\CodexData\\vps\\deployments\\raksmart-198.200.49.63\\console-optimization-deployment-20261013-01.json",
+  "remote_stage": "/root/vps-console-deploy-g9sa8sl2",
+  "verification": {
+    "error_type": "RuntimeError",
+    "failure": "Host command failed: systemctl",
+    "phase": "preflight",
+    "production_updated": false,
+    "stage": "/root/vps-console-deploy-g9sa8sl2",
+    "success": false
+  },
+  "remote_exit_code": 1,
+  "production_updated": false
+}

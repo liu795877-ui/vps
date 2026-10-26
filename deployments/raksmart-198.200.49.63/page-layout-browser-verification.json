@@ -1,0 +1,199 @@
+{
+  "success": true,
+  "checked_at": "2026-10-10T09:16:32.120Z",
+  "deployment_ip": "198.200.49.63",
+  "trusted_https": true,
+  "physical_wlan": true,
+  "secrets_included": false,
+  "configuration_mutations": 0,
+  "checks": [
+    "admin: approved reading order, first viewport path, full-width health, mobile layouts, drafts and folded guides",
+    "user-a: approved reading order, first viewport path, full-width health, mobile layouts, drafts and folded guides",
+    "user-b: approved reading order, first viewport path, full-width health, mobile layouts, drafts and folded guides"
+  ],
+  "users": [
+    {
+      "account": "admin",
+      "role": "admin",
+      "port": 443,
+      "service_active": true,
+      "viewports": [
+        1440,
+        1280,
+        390
+      ],
+      "own_settings_preserved": true,
+      "all_permitted_pages_verified": true,
+      "disclosure_guides_verified": true
+    },
+    {
+      "account": "user-a",
+      "role": "member",
+      "port": 1443,
+      "service_active": true,
+      "viewports": [
+        1440,
+        1280,
+        390
+      ],
+      "own_settings_preserved": true,
+      "all_permitted_pages_verified": true,
+      "disclosure_guides_verified": true
+    },
+    {
+      "account": "user-b",
+      "role": "member",
+      "port": 2443,
+      "service_active": true,
+      "viewports": [
+        1440,
+        1280,
+        390
+      ],
+      "own_settings_preserved": true,
+      "all_permitted_pages_verified": true,
+      "disclosure_guides_verified": true
+    }
+  ],
+  "screenshots": [
+    "admin-overview-1440.png",
+    "admin-routing-1440.png",
+    "admin-access-1440.png",
+    "admin-users-1440.png",
+    "admin-maintenance-1440.png",
+    "admin-overview-390.png",
+    "admin-routing-390.png",
+    "admin-access-390.png",
+    "admin-users-390.png",
+    "admin-maintenance-390.png",
+    "user-a-overview-1440.png",
+    "user-a-routing-1440.png",
+    "user-a-access-1440.png",
+    "user-a-overview-390.png",
+    "user-a-routing-390.png",
+    "user-a-access-390.png",
+    "user-b-overview-1440.png",
+    "user-b-routing-1440.png",
+    "user-b-access-1440.png",
+    "user-b-overview-390.png",
+    "user-b-routing-390.png",
+    "user-b-access-390.png"
+  ],
+  "assets": {
+    "panel/web/index.html": {
+      "sha256": "d6c83e0f8586f2a3efb6456357abe8e6dd4635dc650a0f6d0d22ae56615fb3eb",
+      "release_match": true
+    },
+    "panel/web/app.js": {
+      "sha256": "8312e37624bea855826b6eba8a9ebf6023aa319d6f494d05fe78955cda1b4b7f",
+      "release_match": true
+    },
+    "panel/web/style.css": {
+      "sha256": "5cc86fffd6ce518d2c06ff926de7cd6a3d09c2e9b5ce209cddc644313f4c422e",
+      "release_match": true
+    }
+  },
+  "layout_measurements": [
+    {
+      "stage": "viewports_admin_1440",
+      "width": 1440,
+      "pathTop": 364.1875,
+      "pathBottom": 782.328125,
+      "viewportHeight": 1000,
+      "pathDirection": "row",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": false
+    },
+    {
+      "stage": "viewports_admin_390",
+      "width": 390,
+      "pathTop": 566.640625,
+      "pathBottom": 1372.25,
+      "viewportHeight": 844,
+      "pathDirection": "column",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": true
+    },
+    {
+      "stage": "folded_guides_admin_390",
+      "width": 1280,
+      "pathTop": 364.1875,
+      "pathBottom": 782.328125,
+      "viewportHeight": 1000,
+      "pathDirection": "row",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": false
+    },
+    {
+      "stage": "viewports_user-a_1440",
+      "width": 1440,
+      "pathTop": 364.1875,
+      "pathBottom": 782.328125,
+      "viewportHeight": 1000,
+      "pathDirection": "row",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": false
+    },
+    {
+      "stage": "viewports_user-a_390",
+      "width": 390,
+      "pathTop": 532.234375,
+      "pathBottom": 1363.84375,
+      "viewportHeight": 844,
+      "pathDirection": "column",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": true
+    },
+    {
+      "stage": "folded_guides_user-a_390",
+      "width": 1280,
+      "pathTop": 364.1875,
+      "pathBottom": 782.328125,
+      "viewportHeight": 1000,
+      "pathDirection": "row",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": false
+    },
+    {
+      "stage": "viewports_user-b_1440",
+      "width": 1440,
+      "pathTop": 364.1875,
+      "pathBottom": 782.328125,
+      "viewportHeight": 1000,
+      "pathDirection": "row",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": true
+    },
+    {
+      "stage": "viewports_user-b_390",
+      "width": 390,
+      "pathTop": 532.234375,
+      "pathBottom": 1344.421875,
+      "viewportHeight": 844,
+      "pathDirection": "column",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": true
+    },
+    {
+      "stage": "folded_guides_user-b_390",
+      "width": 1280,
+      "pathTop": 364.1875,
+      "pathBottom": 782.328125,
+      "viewportHeight": 1000,
+      "pathDirection": "row",
+      "serverControlVisible": true,
+      "fullHealth": true,
+      "oneColumn": true
+    }
+  ],
+  "browser_errors": [],
+  "blocked_requests": []
+}

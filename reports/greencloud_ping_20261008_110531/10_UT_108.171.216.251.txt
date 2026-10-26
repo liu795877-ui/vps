@@ -1,0 +1,37 @@
+
+Pinging 108.171.216.251 with 32 bytes of data:
+Reply from 108.171.216.251: bytes=32 time=310ms TTL=42
+Request timed out.
+Reply from 108.171.216.251: bytes=32 time=305ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=314ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=307ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=306ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=305ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=306ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=307ms TTL=42
+Request timed out.
+Reply from 108.171.216.251: bytes=32 time=305ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=304ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=305ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=305ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=306ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=305ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=306ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=308ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=313ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=309ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=311ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=312ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=307ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=312ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=307ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=311ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=306ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=315ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=316ms TTL=42
+Reply from 108.171.216.251: bytes=32 time=305ms TTL=42
+
+Ping statistics for 108.171.216.251:
+    Packets: Sent = 30, Received = 28, Lost = 2 (6% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 304ms, Maximum = 316ms, Average = 308ms

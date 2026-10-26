@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-09T18:52:18+08:00",
+  "success": true,
+  "counts": {
+    "fixed_exits": 1,
+    "auto_nodes": 1,
+    "proxies": 2,
+    "selection_options": 2
+  },
+  "ips": [
+    {
+      "success": true,
+      "ip": "128.241.19.234",
+      "expected_ip": "128.241.19.234",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ip": "128.241.19.234",
+          "success": true
+        }
+      ],
+      "kind": "auto",
+      "index": 0
+    },
+    {
+      "success": true,
+      "ip": "128.241.19.234",
+      "expected_ip": "128.241.19.234",
+      "attempts": [
+        {
+          "attempt": 1,
+          "ip": "128.241.19.234",
+          "success": true
+        }
+      ],
+      "kind": "fixed",
+      "index": 1
+    }
+  ],
+  "full_config_valid": true
+}

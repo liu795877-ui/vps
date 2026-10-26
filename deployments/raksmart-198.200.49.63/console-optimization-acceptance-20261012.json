@@ -1,0 +1,289 @@
+{
+  "format": "vps-console-optimization-acceptance-v1",
+  "updated_at": "2026-10-13T10:02:47+08:00",
+  "server": "198.200.49.63",
+  "status": "deployed_and_verified",
+  "page_version": "console-20261013-1",
+  "style": "existing green and cream, subtle motion",
+  "features": [
+    "login feedback and motion preference",
+    "admin shortcuts",
+    "durable idempotent member preparation",
+    "in-memory initial-password delivery",
+    "dynamic validated entrance pool",
+    "expanded-pool and legacy backup compatibility",
+    "service-aware REALITY and HY2 local status with not_checked public verification",
+    "member search and enabled-state filtering",
+    "one-click next entrance draft with synchronized TCP and UDP firewall list",
+    "failed-task retry with a fresh request id and credential-safe delivery invalidation",
+    "isolated telemetry runners in HTTP regression fixtures",
+    "systemd LoadState and ActiveState observations with unknown transitional or unavailable state",
+    "authoritative server task snapshots remove missing tasks and invalidate their in-memory delivery"
+  ],
+  "default_capacity": 3,
+  "maximum_supported_capacity": 8,
+  "supported_member_ports": [
+    1443,
+    2443,
+    3444,
+    4444,
+    5444,
+    6445,
+    7445
+  ],
+  "cloud_firewall_automation": false,
+  "new_public_entrances_verified": false,
+  "release": {
+    "directory": "console-optimization-release-20261013-05",
+    "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+    "manifest_sha256": "5938c1af4adc70e8e323cba5998805f4c0340731f76d247b0edcae7c87a98ff6",
+    "managed_files": 41,
+    "legacy_releases_untouched": true,
+    "superseded_candidates": [
+      "console-optimization-release-20261012-01",
+      "console-optimization-release-20261012-02",
+      "console-optimization-release-20261012-03",
+      "console-optimization-release-20261013-01",
+      "console-optimization-release-20261013-02",
+      "console-optimization-release-20261013-03",
+      "console-optimization-release-20261013-04"
+    ],
+    "final_files_and_archive_hashes_verified": true
+  },
+  "local_python": {
+    "version": "3.13.0",
+    "tests_in_full_run": 193,
+    "passed_initially": 192,
+    "initial_failures": 1,
+    "initial_failure_reason": "Incorrect test cache root lacked the Bilibili provider; product source was not changed.",
+    "failed_test_passed_on_recheck": true,
+    "final_provisioning_and_logout_tests": 7,
+    "logs": [
+      "../../.validation/console-optimization-python-full.log",
+      "../../.validation/console-optimization-routing-recheck.log"
+    ],
+    "official_xray_and_mihomo_checks_passed": true,
+    "second_round": {
+      "tests_in_full_run": 203,
+      "passed": 198,
+      "skipped": 5,
+      "failures": 0,
+      "errors": 0,
+      "focused_tests_after_final_fixes": 29,
+      "focused_tests_passed": 29,
+      "notes": "Historical second-round full suite: 203 total, 198 passed, 5 skipped; it predates the final service-state parser and UI task-snapshot fixes."
+    },
+    "final_service_status_regression": {
+      "tests_run": 85,
+      "passed": 85,
+      "failures": 0,
+      "errors": 0,
+      "modules": [
+        "panel.test_service_status",
+        "panel.test_accounts",
+        "panel.test_hy2_integration",
+        "panel.test_provisioning",
+        "panel.test_multiuser_http",
+        "panel.test_enhancements_http",
+        "panel.test_operations"
+      ]
+    }
+  },
+  "browser": {
+    "checks": 94,
+    "mock_api": true,
+    "asset_hashes_match_final_source": true,
+    "reports": [
+      "../../.validation/optimization-ui/report.json",
+      "../../.validation/multiuser-ui/report.json",
+      "../../.validation/enhancements-ui/report.json",
+      "../../.validation/user-guide-ui/report.json"
+    ],
+    "additional_motion_checks": 5,
+    "final_asset_verification": "All four final-source reports match release05 app.js, style.css and index.html: optimization 16/16, multiuser 10/10, enhancements 18/18, guide 50/50.",
+    "suites": [
+      {
+        "suite": "optimization-ui",
+        "checks": 16,
+        "passed": 16,
+        "checked_at": "2026-10-13T01:34:57.110Z"
+      },
+      {
+        "suite": "multiuser-ui",
+        "checks": 10,
+        "passed": 10,
+        "checked_at": "2026-10-13T01:40:41.323Z"
+      },
+      {
+        "suite": "enhancements-ui",
+        "checks": 18,
+        "passed": 18,
+        "checked_at": "2026-10-13T01:40:41.313Z"
+      },
+      {
+        "suite": "user-guide-ui",
+        "checks": 50,
+        "passed": 50,
+        "checked_at": "2026-10-13T01:40:41.325Z"
+      }
+    ]
+  },
+  "real_local_api": {
+    "checks": 4,
+    "passed": true,
+    "report": "../../.validation/console-optimization-live/report.json",
+    "synthetic_demo_only": true,
+    "origin": "http://127.0.0.1:9027",
+    "tested_package": "console-optimization-release-20261012-02",
+    "evidence_scope": "Historical preliminary candidate only; current production browser evidence is recorded separately."
+  },
+  "python36": {
+    "status": "final_candidate_runtime_passed",
+    "inspection": "console-optimization-runtime-inspection-20261012-01.json",
+    "validation": "console-optimization-python36-validation-20261013-05.json",
+    "local_review_passed": true,
+    "isolated_tmp_only": true,
+    "unmocked_subprocesses_blocked": true,
+    "current_candidate_runtime_tests_run": true,
+    "previous_candidate_runtime_evidence": {
+      "validation": "console-optimization-python36-validation-20261012-02.json",
+      "release": "console-optimization-release-20261012-02",
+      "tests_run": 221,
+      "passed": 212,
+      "skipped": 9,
+      "failures": 0,
+      "errors": 0,
+      "backend_hashes_identical_to_that_previous_candidate": false,
+      "difference_note": "Historical preliminary candidate; final release05 was independently rerun with actual .63 Python 3.6.8 and vendor cryptography 3.3.2."
+    },
+    "skip_details": [
+      {
+        "reason": "No official Mihomo test binary",
+        "test": "panel.test_accelerated_client.AcceleratedProfileTests.test_official_mihomo_accepts_the_generated_dual_protocol_profile"
+      },
+      {
+        "reason": "No official test binary",
+        "test": "panel.test_panel.PanelTests.test_official_core_accepts_web_managed_config"
+      },
+      {
+        "reason": "No official Mihomo test binary",
+        "test": "panel.test_panel.PanelTests.test_official_mihomo_accepts_two_exit_unified_profile"
+      },
+      {
+        "reason": "Set SMART_ROUTING_CORE and SMART_ROUTING_CACHE for isolated official core tests.",
+        "test": "panel.test_routing.OfficialMihomoTests.test_fresh_directory_syntax_without_geodata_or_cached_rules"
+      },
+      {
+        "reason": "Set SMART_ROUTING_CORE and SMART_ROUTING_CACHE for isolated official core tests.",
+        "test": "panel.test_routing.OfficialMihomoTests.test_provider_loading_and_actual_route_selection"
+      },
+      {
+        "reason": "No official test binary",
+        "test": "test_configure_reality.OfficialCoreTests.test_official_core_accepts_generated_config"
+      },
+      {
+        "reason": "No official test binary",
+        "test": "test_configure_static_exits.OfficialCoreTests.test_official_core_accepts_two_authenticated_socks_exits"
+      },
+      {
+        "reason": "No official test binary",
+        "test": "test_configure_static_exits.OfficialCoreTests.test_real_core_routes_each_identity_to_its_exit_and_blocks_private_targets"
+      },
+      {
+        "reason": "Build the console artifact first",
+        "test": "test_configure_static_exits.StaticPolicyTests.test_generated_console_payload_loads_both_modules_without_running_setup"
+      }
+    ],
+    "current_candidate_local_review": "console-optimization-release-20261013-05",
+    "tests_run": 234,
+    "passed": 225,
+    "skipped": 9,
+    "failures": 0,
+    "errors": 0,
+    "python_version": [
+      3,
+      6,
+      8
+    ],
+    "cryptography_version": "3.3.2",
+    "remote_stage": "/tmp/vps-console-validation-auk0vfp4",
+    "archive_sha256": "5ca5449342fda0b2ea892166a44af23730ee3996e48c8d7a6f80704014f04b67",
+    "manifest_sha256": "5938c1af4adc70e8e323cba5998805f4c0340731f76d247b0edcae7c87a98ff6"
+  },
+  "production": {
+    "deployed": true,
+    "accounts_changed": false,
+    "proxy_configuration_changed": false,
+    "firewall_changed": false,
+    "services_restarted": true,
+    "traffic_ledger_restored": false,
+    "only_panel_restarted": true,
+    "deployment_report": "console-optimization-deployment-20261013-02.json",
+    "post_deployment_verification": "console-optimization-post-deployment-verification-20261013.json",
+    "remote_stage": "/root/vps-console-deploy-jv0b94dh",
+    "remote_helper_sha256": "b27888b329e99be8bc45130322a886cb86c099f4cbc070ae39b7904c2fc58c8c",
+    "changed_source_files": 32,
+    "source_files_verified": 41,
+    "accounts_checked": 3,
+    "protected_bytes_preserved": true,
+    "proxy_epochs_preserved": true,
+    "panel_enablement_preserved": true,
+    "panel_active": true,
+    "traffic_cumulative_non_decreasing": true,
+    "entrance_pool_still_absent": true,
+    "member_task_store_still_absent": true,
+    "preservation_scope": [
+      "account registry",
+      "account state and profiles",
+      "proxy configs",
+      "TLS files",
+      "systemd units",
+      "sysctl and firewall",
+      "proxy process epochs",
+      "cumulative traffic ledger"
+    ],
+    "preservation_limit": "Existing backup files, backup settings and activity logs were not included in the preservation snapshot; no claim of complete operational-data preservation.",
+    "new_member_creation_performed": false,
+    "new_public_port_opening_performed": false,
+    "preflight_attempt": {
+      "report": "console-optimization-deployment-20261013-01.json",
+      "production_updated": false,
+      "reason": "systemd 219 does not support NRestarts; the helper was corrected before retry, release05 was unchanged."
+    },
+    "url": "https://198-200-49-63.sslip.io:8443/node-console/",
+    "verified_at": "2026-10-13T01:59:53.788702+00:00"
+  },
+  "notes": "console-optimization-20261013.md",
+  "historical_handoff_id": "vps-handoff-20261012-01",
+  "historical_handoff_hash_index_unchanged": true,
+  "local_preview_runtime": {
+    "owned_demo_origin": "http://127.0.0.1:9027",
+    "running": false,
+    "screenshots": "../../.validation/console-optimization-live/",
+    "synthetic_accounts_only": true
+  },
+  "production_browser": {
+    "report": "console-optimization-browser-verification.json",
+    "success": true,
+    "checked_at": "2026-10-13T01:58:50.865Z",
+    "checks": 15,
+    "accounts_checked": 3,
+    "screenshots": 16,
+    "viewports": [
+      1440,
+      390
+    ],
+    "trusted_https": true,
+    "asset_hashes_match_release": true,
+    "configuration_mutations": 0,
+    "browser_errors": 0,
+    "external_requests": 0,
+    "expected_permission_denials": 8,
+    "previous_attempts": [
+      "console-optimization-browser-attempt-01.json",
+      "console-optimization-browser-attempt-02.json"
+    ],
+    "previous_attempt_note": "Only verification-script asset paths and asynchronous readiness waits were corrected; product files were unchanged.",
+    "session_posts": 6
+  }
+}

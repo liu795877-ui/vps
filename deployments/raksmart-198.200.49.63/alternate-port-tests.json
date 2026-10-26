@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "port": 8443,
+      "path": "WLAN",
+      "seconds": 6.004,
+      "result": "timed out"
+    },
+    {
+      "port": 25443,
+      "path": "WLAN",
+      "seconds": 6.004,
+      "result": "timed out"
+    }
+  ],
+  "remote_output": "",
+  "remote_error": ""
+}

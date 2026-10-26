@@ -1,0 +1,117 @@
+{
+  "success": true,
+  "status": "evaluation_completed_original_settings_retained",
+  "server": "198.200.49.63",
+  "completed_at": "2026-10-10T12:59:17.364437+00:00",
+  "performance_gain_demonstrated": false,
+  "decision": "Keep server/client standard BBR defaults; retain verified 7 MiB UDP ceilings and existing keepalive.",
+  "reason": "Time drift exceeded the small apparent aggressive advantage over the final standard run; no reliable combined winner.",
+  "original_runtime_bytes_restored": true,
+  "product_source_unchanged": true,
+  "client_subscription_refresh_required": false,
+  "rows": [
+    {
+      "label": "standard-initial",
+      "server_profile": "standard",
+      "client_profile": "standard",
+      "complete_round_valid": false,
+      "fresh_attempts": 3,
+      "fresh_timeouts": 1,
+      "warm_ttfb_ms": 447.075,
+      "download_mbps": 48.95,
+      "upload_mbps": 55.76,
+      "udp_buffer_errors": 0
+    },
+    {
+      "label": "conservative",
+      "server_profile": "conservative",
+      "client_profile": "conservative",
+      "complete_round_valid": false,
+      "fresh_attempts": 3,
+      "fresh_timeouts": 2,
+      "warm_ttfb_ms": 449.512,
+      "download_mbps": 45.965,
+      "upload_mbps": 25.858,
+      "udp_buffer_errors": 0
+    },
+    {
+      "label": "aggressive",
+      "server_profile": "aggressive",
+      "client_profile": "aggressive",
+      "complete_round_valid": true,
+      "fresh_attempts": 3,
+      "fresh_timeouts": 0,
+      "warm_ttfb_ms": 553.637,
+      "download_mbps": 40.819,
+      "upload_mbps": 39.687,
+      "udp_buffer_errors": 0
+    },
+    {
+      "label": "standard-final",
+      "server_profile": "standard",
+      "client_profile": "standard",
+      "complete_round_valid": true,
+      "fresh_attempts": 3,
+      "fresh_timeouts": 0,
+      "warm_ttfb_ms": 522.905,
+      "download_mbps": 39.583,
+      "upload_mbps": 37.758,
+      "udp_buffer_errors": 0
+    }
+  ],
+  "idle_observations": [
+    {
+      "seconds": 30,
+      "ttfb_ms": 523.969,
+      "account_reconnect_events_observed": false
+    },
+    {
+      "seconds": 60,
+      "ttfb_ms": 545.206,
+      "account_reconnect_events_observed": false
+    },
+    {
+      "seconds": 180,
+      "ttfb_ms": 521.251,
+      "account_reconnect_events_observed": false
+    }
+  ],
+  "idle_warm_ttfb_ms": 525.107,
+  "server_cpu_peak_percent": 20.89,
+  "all_monitor_udp_errors_zero": true,
+  "buffer_ceiling_bytes": 7340032,
+  "six_public_transport_and_stat_sources_verified": true,
+  "account_settings_and_limits_preserved": true,
+  "public_panel_https_status": 200,
+  "checkpoint": "/root/vps-hy2-bbr-20261010-tuning",
+  "traffic_ledger_restored": false,
+  "restart_accounting_limit": "Final counters are persisted before restart; business bytes produced in the sample-to-stop interval may be unrecorded.",
+  "limits": [
+    "Sequential WAN/CDN tests cannot establish small causal improvements.",
+    "Initial standard and conservative rounds include 1 and 2 fresh timeouts; they did not pass complete-round validity.",
+    "Fresh select-only clients are not production AUTO startup measurements.",
+    "Short bounded multiblock speeds include HTTP/TLS overhead, not long-term saturated bandwidth.",
+    "Account journal continuity does not uniquely identify the isolated QUIC session."
+  ],
+  "evidence_sha256": {
+    "tuning-standard-initial.json": "366ba324eae7a6d3b623ade9068c9f5096f244e6b78a9c2f8d34368092ddb7f0",
+    "tuning-standard-initial-runtime.json": "a5da8e6e0aaae7c8d6ac703efacffede3843c7d4bbe08f71d9592c37760bbe8e",
+    "tuning-conservative.json": "c7347068e5becfafa735e87d830bd88c9b2049cdee59371de2f979fbeb8779b3",
+    "tuning-conservative-runtime.json": "5396e965d3d34074e30adf68c01c9c1e4107f1ffff286c4490024a45663be2df",
+    "tuning-aggressive.json": "51fe77b45bd17d397076fceaae8dea1aea9e90a8ce2ffa95e62cae1ec682e290",
+    "tuning-aggressive-runtime.json": "2370631d2885ef971d8247dcab42227eb6b037a16dce821b82ee2dd63b77c0c8",
+    "tuning-standard-final.json": "80d484993018baca53c0776700a3320184c9788785a15da5570a0dde4fd3d2fd",
+    "tuning-standard-final-runtime.json": "c04db9ce68c65abeface8a5082cc55c306d20a14ac52d7393504e5fdbdb802d0",
+    "tuning-server-snapshot.json": "713ebae21547f1edb1e5d6c166ffba4437e0466bcf30fc5544d89afd75db8a0d",
+    "tuning-server-final.json": "f48dc9922280481cf233c16c47e6e5e2a077bdc198156830fd13009e2bca5869",
+    "tuning-idle-standard.json": "4cf78e4f51a73175cf7afb778c8291e5b29ffb722f8795d87570a9d45acb126f",
+    "tuning-apply-conservative.json": "579eaafef5810544881ec0c99f0d369b2a073cb6217c895276f77f1c2f7a1867",
+    "tuning-apply-aggressive.json": "1cb9730b862e1c5226e4ef75119fbd13847ce5d7083823333dbcd8dae592df2f",
+    "tuning-restore-standard.json": "af668c850c2b73af9034a596764b11f0010fe15efcf39c6ba32a04d60dfcf583",
+    "tuning-final-acceptance.json": "eed7ad794d95ed04bced2b10e108155fd0e05ab1edfc9e142641bc1b0990059e",
+    "tuning-public-panel.json": "6ef6e4714ba07b190e43d3e0b7b676d905c83c4ce6c5481fcecede7f21c281dd",
+    "tuning-comparison.json": "27d707f1cd5bcb452c012f3c821745a76e1fa716e50df8b7dc512de983e2d210",
+    "tuning-evidence-audit.json": "671c9607835235f995f2df339b0d0d6f0484c2f57c27d03699136f50304f5b1f",
+    "tuning-idle-standard-failed-snapshot-20261010.json": "b0130f96ed2844e69012907a7cd14941920809c778358e0f0afb55a75aa578f6"
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "success": true,
+  "mode": "compare",
+  "label": "regression-retry",
+  "started_at": "2026-10-10T13:42:09.627399+00:00",
+  "configuration_changes": 0,
+  "credential_changes": 0,
+  "exit_changes": 0,
+  "signed_urls_saved": false,
+  "tokens_saved": false,
+  "paths": [
+    {
+      "label": "active-flclash",
+      "proxy_port": 7890,
+      "strict_sequential_path": true,
+      "parallel_requests": 4,
+      "actual_download_bytes": 3391488,
+      "maximum_payload_bytes": 67108864,
+      "elapsed_seconds": 12.1441,
+      "observed_download_mbps_including_startup": 2.234,
+      "completed_full_blocks": 0,
+      "payload_successes": 4,
+      "bounded_partials": 4,
+      "requests": [
+        {
+          "target": 1,
+          "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 245760,
+          "curl_reported_download_bytes": 245760,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1292,
+          "curl_total_seconds": 12.003306,
+          "ttfb_ms": 801.524,
+          "tls_ready_ms": 605.205,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 2,
+          "hostname": "ipv4-c320-sjc002-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 720896,
+          "curl_reported_download_bytes": 720896,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.143,
+          "curl_total_seconds": 12.014532,
+          "ttfb_ms": 867.081,
+          "tls_ready_ms": 695.129,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 3,
+          "hostname": "ipv4-c110-lax009-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Los Angeles",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 835584,
+          "curl_reported_download_bytes": 835584,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1279,
+          "curl_total_seconds": 11.99995,
+          "ttfb_ms": 1031.006,
+          "tls_ready_ms": 818.7,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 4,
+          "hostname": "ipv4-c201-sea001-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Seattle",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 1589248,
+          "curl_reported_download_bytes": 1589248,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1276,
+          "curl_total_seconds": 11.999773,
+          "ttfb_ms": 1068.187,
+          "tls_ready_ms": 848.395,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        }
+      ],
+      "success": true,
+      "measurement_scope": "bounded Fast official HTTP requests; not an unrestricted browser Fast score",
+      "native_account_counter_delta": {
+        "hy2": {
+          "up_bytes": 0,
+          "down_bytes": 0
+        },
+        "xray": {
+          "up_bytes": 2803138,
+          "down_bytes": 4494722
+        }
+      },
+      "native_counter_scope": "all admin account traffic during this bounded path, including unrelated activity"
+    },
+    {
+      "label": "current-admin-hy2",
+      "proxy_port": 16002,
+      "strict_sequential_path": true,
+      "parallel_requests": 4,
+      "actual_download_bytes": 67108864,
+      "maximum_payload_bytes": 67108864,
+      "elapsed_seconds": 5.9744,
+      "observed_download_mbps_including_startup": 89.862,
+      "completed_full_blocks": 4,
+      "payload_successes": 4,
+      "bounded_partials": 0,
+      "requests": [
+        {
+          "target": 1,
+          "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 0,
+          "http_code": 200,
+          "actual_download_bytes": 16777216,
+          "curl_reported_download_bytes": 16777216,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 5.9533,
+          "curl_total_seconds": 5.840495,
+          "ttfb_ms": 1214.883,
+          "tls_ready_ms": 996.924,
+          "completed_full_block": true,
+          "bounded_partial": false,
+          "response_payload_received": true,
+          "error_category": "none"
+        },
+        {
+          "target": 2,
+          "hostname": "ipv4-c320-sjc002-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 0,
+          "http_code": 200,
+          "actual_download_bytes": 16777216,
+          "curl_reported_download_bytes": 16777216,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 5.9567,
+          "curl_total_seconds": 5.852958,
+          "ttfb_ms": 1215.211,
+          "tls_ready_ms": 1005.824,
+          "completed_full_block": true,
+          "bounded_partial": false,
+          "response_payload_received": true,
+          "error_category": "none"
+        },
+        {
+          "target": 3,
+          "hostname": "ipv4-c110-lax009-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Los Angeles",
+            "country": "US"
+          },
+          "curl_exit_code": 0,
+          "http_code": 200,
+          "actual_download_bytes": 16777216,
+          "curl_reported_download_bytes": 16777216,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 5.9725,
+          "curl_total_seconds": 5.851038,
+          "ttfb_ms": 1268.246,
+          "tls_ready_ms": 1030.39,
+          "completed_full_block": true,
+          "bounded_partial": false,
+          "response_payload_received": true,
+          "error_category": "none"
+        },
+        {
+          "target": 4,
+          "hostname": "ipv4-c201-sea001-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Seattle",
+            "country": "US"
+          },
+          "curl_exit_code": 0,
+          "http_code": 200,
+          "actual_download_bytes": 16777216,
+          "curl_reported_download_bytes": 16777216,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 5.9347,
+          "curl_total_seconds": 5.825912,
+          "ttfb_ms": 1292.804,
+          "tls_ready_ms": 1031.255,
+          "completed_full_block": true,
+          "bounded_partial": false,
+          "response_payload_received": true,
+          "error_category": "none"
+        }
+      ],
+      "success": true,
+      "measurement_scope": "bounded Fast official HTTP requests; not an unrestricted browser Fast score",
+      "native_account_counter_delta": {
+        "hy2": {
+          "up_bytes": 3322,
+          "down_bytes": 67213922
+        },
+        "xray": {
+          "up_bytes": 1037386,
+          "down_bytes": 67294909
+        }
+      },
+      "native_counter_scope": "all admin account traffic during this bounded path, including unrelated activity"
+    },
+    {
+      "label": "current-admin-vless",
+      "proxy_port": 1217,
+      "strict_sequential_path": true,
+      "parallel_requests": 4,
+      "actual_download_bytes": 6012928,
+      "maximum_payload_bytes": 67108864,
+      "elapsed_seconds": 12.1127,
+      "observed_download_mbps_including_startup": 3.971,
+      "completed_full_blocks": 0,
+      "payload_successes": 4,
+      "bounded_partials": 4,
+      "requests": [
+        {
+          "target": 1,
+          "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 3932160,
+          "curl_reported_download_bytes": 3932160,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1092,
+          "curl_total_seconds": 12.002427,
+          "ttfb_ms": 1000.529,
+          "tls_ready_ms": 825.89,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 2,
+          "hostname": "ipv4-c320-sjc002-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "San Jose",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 638976,
+          "curl_reported_download_bytes": 638976,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1114,
+          "curl_total_seconds": 12.014105,
+          "ttfb_ms": 1166.321,
+          "tls_ready_ms": 965.467,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 3,
+          "hostname": "ipv4-c110-lax009-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Los Angeles",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 901120,
+          "curl_reported_download_bytes": 901120,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1048,
+          "curl_total_seconds": 12.003947,
+          "ttfb_ms": 981.138,
+          "tls_ready_ms": 804.582,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        },
+        {
+          "target": 4,
+          "hostname": "ipv4-c201-sea001-ix.1.oca.nflxvideo.net",
+          "region": {
+            "city": "Seattle",
+            "country": "US"
+          },
+          "curl_exit_code": 28,
+          "http_code": 200,
+          "actual_download_bytes": 540672,
+          "curl_reported_download_bytes": 540672,
+          "maximum_download_bytes": 16777216,
+          "wall_seconds": 12.1061,
+          "curl_total_seconds": 12.003124,
+          "ttfb_ms": 1128.899,
+          "tls_ready_ms": 917.457,
+          "completed_full_block": false,
+          "bounded_partial": true,
+          "response_payload_received": true,
+          "error_category": "timeout"
+        }
+      ],
+      "success": true,
+      "measurement_scope": "bounded Fast official HTTP requests; not an unrestricted browser Fast score",
+      "native_account_counter_delta": {
+        "hy2": {
+          "up_bytes": 0,
+          "down_bytes": 0
+        },
+        "xray": {
+          "up_bytes": 4812127,
+          "down_bytes": 7773020
+        }
+      },
+      "native_counter_scope": "all admin account traffic during this bounded path, including unrelated activity"
+    }
+  ],
+  "cleanup_errors": [],
+  "private_directory_acl": {
+    "verified": true,
+    "protected_dacl": true,
+    "allow_entries": 2
+  },
+  "script_sha256": "b4937053fd0a9732b40fd660c1d07d35e477b47edb4f22ecf27b4e21bdd59fec",
+  "method": {
+    "parallel_downloads": 4,
+    "maximum_payload_per_path": 67108864,
+    "maximum_request_seconds": 12,
+    "block_bytes": 16777216,
+    "path_order": [
+      "active-flclash",
+      "current-admin-hy2",
+      "current-admin-vless"
+    ],
+    "same_signed_targets_across_paths": true,
+    "active_flclash_port": 7890,
+    "all_parallel_downloads_share_12_second_deadline": true,
+    "no_controller_delete_connections": true,
+    "no_configuration_changes": true,
+    "range_in_official_path_and_http_header": true,
+    "payload_discarded_without_files": true,
+    "range_assembly": "current official JS: /speedtest -> /speedtest/range/0-N, query unchanged"
+  },
+  "method_sha256": "d6b991286b02c1e5b62433a36449789c2631a03d6621c24e5c3ce403d0cf7296",
+  "discovery": {
+    "frontend_bytes": 26326,
+    "frontend_http_code": 200,
+    "js_bytes": 133839,
+    "js_files_fetched": 1,
+    "token_discovered": true,
+    "target_api_attempts": 1,
+    "download_payload_bytes": 0,
+    "proxy_port": 7890,
+    "api_payload_bytes": 1419,
+    "client_ip": "198.200.49.63",
+    "client_region": {
+      "city": "San Jose",
+      "country": "US"
+    },
+    "targets": [
+      {
+        "hostname": "ipv4-c658-sjc002-dev-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c320-sjc002-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "San Jose",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c110-lax009-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "Los Angeles",
+          "country": "US"
+        }
+      },
+      {
+        "hostname": "ipv4-c201-sea001-ix.1.oca.nflxvideo.net",
+        "region": {
+          "city": "Seattle",
+          "country": "US"
+        }
+      }
+    ],
+    "target_count": 4,
+    "signed_urls_saved": false,
+    "tokens_saved": false,
+    "official_range_paths_validated_without_payload": true
+  },
+  "current_server_exit_ip": "198.200.49.63",
+  "profile_sha256": "1b4ef64b3c0caa75a419a87d6d211dc88dbd5555a64faf2838759dd596c6ff30",
+  "core_sha256": "9f2ad8968022eae9b972c01a87de1a4dc19c949834db899d732bc0129b103478",
+  "account_settings_sha256": "57feb39e16db705dc7a558631b469f6c6a5312efa869aa0dcbeb4ee458ba2fc8",
+  "account_settings_preserved": true,
+  "own_mihomo_processes_terminated": true,
+  "own_curl_processes_terminated": true,
+  "temporary_private_files_removed": true,
+  "finished_at": "2026-10-10T13:43:14.321521+00:00",
+  "total_wall_seconds": 64.694
+}

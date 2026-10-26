@@ -1,0 +1,5 @@
+{
+  "remote_exit": 0,
+  "stdout": "/root/raksmart-proxy-deploy-20261009/xray-ready: OK\nXray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)\nA unified platform for anti-censorship.\n2026/10/09 02:45:08.333594 [Info] infra/conf/serial: Reading config: &{Name:/root/raksmart-proxy-deploy-20261009/config.json Format:json}\nConfiguration OK.\nXray 26.3.27 (Xray, Penetrates Everything.) d2758a0 (go1.26.1 linux/amd64)\nA unified platform for anti-censorship.\n2026/10/09 02:45:10.075743 [Info] infra/conf/serial: Reading config: &{Name:/usr/local/etc/xray/config.json Format:json}\nConfiguration OK.\n\nService status\nactive\nenabled\nMainPID=12846\nExecMainStatus=0\nUser=xray\nGroup=xray\n\nTCP listener\nLISTEN     0      128         :::443                     :::*                   users:((\"xray\",pid=12846,fd=5))\n\nConfig ownership and binary capability\n640 root:xray /usr/local/etc/xray/config.json\n/usr/local/bin/xray = cap_net_bind_service+ep\n\nSUCCESS: Xray is running on TCP 443.\n",
+  "stderr": "Created symlink from /etc/systemd/system/multi-user.target.wants/xray.service to /etc/systemd/system/xray.service.\n"
+}
